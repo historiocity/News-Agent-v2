@@ -11,15 +11,7 @@ import re
 import json
 from pathlib import Path
 from html.parser import HTMLParser
-from collections import defaultdict
 
-PRIMARY_DOMAINS = {
-    "whitehouse.gov", "congress.gov", "supremecourt.gov", "sec.gov", "bls.gov",
-    "eia.gov", "treasury.gov", "census.gov", "federalregister.gov", "govinfo.gov",
-    "cbo.gov", "gao.gov", "federalreserve.gov", "fdic.gov", "occ.gov",
-    "nytimes.com",  # not primary; example of how to keep the list short
-}
-# Real primary/near-primary domains (extend as needed)
 PRIMARY_DOMAINS = {
     "whitehouse.gov", "congress.gov", "supremecourt.gov", "sec.gov", "bls.gov",
     "eia.gov", "treasury.gov", "census.gov", "federalregister.gov", "govinfo.gov",
@@ -36,14 +28,21 @@ class StoryExtractor(HTMLParser):
         self.current = None
         self.in_lead = False
         self.capture = []
-        self.links = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag == "h3":
             if self.current:
                 self._finish_story()
-            self.current = {"title": "", "html": "", "links": [], "marker": None, "is_continuation": False, "divergence": False}
+            self.current = {
+                "title": "",
+                "html": "",
+                "links": [],
+                "marker": None,
+                "is_continuation": False,
+                "divergence": False,
+                "radio_names": set(),
+            }
             self.in_lead = True
             self.capture = []
         if tag == "a" and "href" in attrs and self.current is not None:
@@ -51,9 +50,10 @@ class StoryExtractor(HTMLParser):
             domain = self._domain(href)
             if domain:
                 self.current["links"].append(domain)
-        if tag == "details" and self.current is not None:
-            # rough flag for dig-deeper or divergence
-            pass
+        if tag == "input" and attrs.get("type") == "radio" and self.current is not None:
+            name = attrs.get("name", "")
+            if name:
+                self.current["radio_names"].add(name)
 
     def handle_data(self, data):
         if self.current is not None:
@@ -131,18 +131,35 @@ def main():
         if err:
             failures.append(f"Story '{s.get('title','')[:60]}': {err}")
 
-    # Divergence boxes (rough: presence of the word + three part keywords)
-    if "divergence" in html.lower():
-        if not all(k in html.lower() for k in ["dispute", "vantage", "means for"]):
-            # soft for now; tighten once HTML structure is stable
-            warnings.append("Divergence language present but three-part structure not clearly detected")
+    # Per-lead radio buttons (hard gate)
+    # Expect 2–4 distinct radio groups per lead story (name starting with fb- or similar)
+    leads_missing_radios = []
+    for s in stories:
+        # Treat stories that look like leads (have a marker and substantial text) as requiring radios
+        if s.get("marker") and len(s.get("html", "")) > 200:
+            radio_count = len(s.get("radio_names", set()))
+            if radio_count < 2:
+                leads_missing_radios.append(s.get("title", "")[:50])
+    if leads_missing_radios:
+        failures.append(
+            f"Per-lead radio buttons missing or insufficient on {len(leads_missing_radios)} lead(s): "
+            + "; ".join(leads_missing_radios)
+        )
 
-    # Process log
+    # Source count target (~40). Hard fail only if extremely low and no underreported judgment noted.
+    # Prefer process log; fall back to provenance text.
+    sources_total = None
+    underreported_judgment = False
     if len(sys.argv) > 2:
         log_path = Path(sys.argv[2])
         if log_path.exists():
             try:
                 log = json.loads(log_path.read_text())
+                sources_total = log.get("sources_checked_total")
+                # Look for explicit underreported judgment
+                neg = log.get("negative_check", {})
+                if isinstance(neg, dict) and "underreported" in str(neg).lower():
+                    underreported_judgment = True
                 required = ["outside_watchlist_first", "broad_sweeps", "negative_check", "beat_coverage"]
                 for r in required:
                     if r not in log:
@@ -154,19 +171,38 @@ def main():
     else:
         warnings.append("No process log supplied")
 
-    # Self-report consistency (very light: look for provenance numbers)
-    prov = re.search(r"(\d+)\s+sources", html, re.I)
-    if prov:
-        # could cross-check against log if present
-        pass
+    if sources_total is None:
+        m = re.search(r"(\d+)\s+sources checked", html, re.I)
+        if m:
+            sources_total = int(m.group(1))
 
-    # Layout presence
+    if sources_total is not None:
+        if sources_total < 15 and not underreported_judgment:
+            failures.append(
+                f"Source count {sources_total} is far below target (~40) and no underreported-judgment note found. "
+                "Gather more or explicitly record why significant thin stories were still included."
+            )
+        elif sources_total < 30:
+            warnings.append(
+                f"Source count {sources_total} is below the ~40 target. Acceptable only if further sources could not be found "
+                "or thin coverage was judged underreported-but-significant."
+            )
+    else:
+        warnings.append("Could not determine total sources checked")
+
+    # Divergence (still warning)
+    if "divergence" in html.lower():
+        if not all(k in html.lower() for k in ["dispute", "vantage", "means for"]):
+            warnings.append("Divergence language present but three-part structure not clearly detected")
+
+    # Layout
     for section in ["Also today", "Also noted"]:
         if section.lower() not in html.lower():
             warnings.append(f"Section '{section}' not found (may be optional)")
 
     print(f"Stories parsed: {len(stories)}")
     print(f"Continuations: {len(continuations)}")
+    print(f"Sources checked: {sources_total}")
     if warnings:
         print("WARNINGS:")
         for w in warnings:
