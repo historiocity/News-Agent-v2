@@ -1,0 +1,298 @@
+{
+  "date": "2026-11-07",
+  "edition": "v2b-evening",
+  "filename": "issues/2026-11-07b-v2.html",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Opened with Anadolu/AP afternoon summaries, Guardian world and US, Al Jazeera, Axios, Times of Israel, Mississippi Free Press, WEAR/PNJ, Aviation Week, Alliance PIT analysis, X news sweeps, then CENTCOM/FAA/HUD/AAA and national political desks.",
+  "broad_sweeps": [
+    {
+      "source": "WebSearch breaking news Sat afternoon US",
+      "outside": true
+    },
+    {
+      "source": "AP News Summary ~4pm EST via Guard Online",
+      "outside": true
+    },
+    {
+      "source": "Guardian US 7 Nov index",
+      "outside": true
+    },
+    {
+      "source": "World Brief Now Saturday digest",
+      "outside": true
+    },
+    {
+      "source": "X search_news breaking Nov 7",
+      "outside": true
+    },
+    {
+      "source": "X search_news Dana White/Eisenkot/FAA/Hormuz",
+      "outside": true
+    },
+    {
+      "source": "X US trends WOEID",
+      "outside": true
+    },
+    {
+      "source": "The Hill live Melania/Dana White",
+      "outside": true
+    },
+    {
+      "source": "CBS News Dana White 5:27pm",
+      "outside": false
+    },
+    {
+      "source": "Washington Post Dana White",
+      "outside": true
+    },
+    {
+      "source": "USA Today AK/MS legal fights",
+      "outside": false
+    },
+    {
+      "source": "Mississippi Free Press affidavit analysis",
+      "outside": true
+    },
+    {
+      "source": "Election Central AK/MS",
+      "outside": true
+    },
+    {
+      "source": "ABC News race tallies",
+      "outside": false
+    },
+    {
+      "source": "Guardian Eisenkot",
+      "outside": true
+    },
+    {
+      "source": "Al Jazeera Eisenkot",
+      "outside": true
+    },
+    {
+      "source": "Axios Eisenkot",
+      "outside": true
+    },
+    {
+      "source": "Times of Israel liveblog",
+      "outside": true
+    },
+    {
+      "source": "Guardian Hormuz Qatar plan",
+      "outside": true
+    },
+    {
+      "source": "AAA gasprices.aaa.com",
+      "outside": true
+    },
+    {
+      "source": "Energy Factbook diesel explainer",
+      "outside": true
+    },
+    {
+      "source": "Al Jazeera Qeshm/UKMTO",
+      "outside": true
+    },
+    {
+      "source": "CENTCOM Iron Gate release",
+      "outside": false
+    },
+    {
+      "source": "CNBC Iron Gate",
+      "outside": false
+    },
+    {
+      "source": "UPI Iron Gate",
+      "outside": true
+    },
+    {
+      "source": "Washington Post Iron Gate",
+      "outside": true
+    },
+    {
+      "source": "FAA digital towers release",
+      "outside": true
+    },
+    {
+      "source": "Guardian FAA towers",
+      "outside": true
+    },
+    {
+      "source": "Aviation Week digital towers",
+      "outside": true
+    },
+    {
+      "source": "AvWeb digital towers",
+      "outside": true
+    },
+    {
+      "source": "KFF Health News Dem agenda",
+      "outside": true
+    },
+    {
+      "source": "Washington Post ACA/Medicaid",
+      "outside": false
+    },
+    {
+      "source": "Axios Dem health divisions",
+      "outside": true
+    },
+    {
+      "source": "HUD homelessness release",
+      "outside": false
+    },
+    {
+      "source": "National Alliance End Homelessness PIT",
+      "outside": true
+    },
+    {
+      "source": "IBTimes HUD/Alliance",
+      "outside": true
+    },
+    {
+      "source": "WEAR Escambia recount",
+      "outside": false
+    },
+    {
+      "source": "PNJ Escambia recount",
+      "outside": false
+    },
+    {
+      "source": "NBC Dhillon resignation",
+      "outside": false
+    },
+    {
+      "source": "Washington Post Dhillon",
+      "outside": true
+    },
+    {
+      "source": "Politico DeSantis extinction",
+      "outside": true
+    },
+    {
+      "source": "WUSF DeSantis",
+      "outside": false
+    }
+  ],
+  "sources_checked_total": 42,
+  "sources_outside_watchlist": 24,
+  "negative_check": {
+    "question": "What is the biggest story today not on my standing beats, and why is it not?",
+    "candidate": "HUD/Alliance January 2026 Point-in-Time homelessness drop (~6.3\u20136.7%)",
+    "why_not_on_list": "Public-health/social-policy statistics sit adjacent to domestic institutions but are not a named standing beat; drowned by Cos/midterm/Iran saturation.",
+    "underreported": "Judged underreported relative to Cos and midterm noise despite primary HUD release plus independent Alliance analysis and a clear credit dispute \u2014 promoted to a lead.",
+    "disposition": "Cleared absolute bar; became a lead with divergence box.",
+    "declined": [
+      "Rockefeller Center Christmas tree raise \u2014 no policy consequence",
+      "Indian Muhurat trading tips \u2014 no US channel",
+      "Chennai reservoir rain colour \u2014 no US channel",
+      "BTS MAMA voting drives \u2014 anti-topic entertainment"
+    ]
+  },
+  "beat_coverage": [
+    {
+      "beat": "Elections and electoral process",
+      "sources_checked": [
+        "USA Today",
+        "Mississippi Free Press",
+        "Election Central",
+        "ABC tallies",
+        "WEAR/PNJ Escambia"
+      ],
+      "strongest_candidate": "AK/MS affidavit litigation + Escambia recount",
+      "cleared_or_failed": "AK/MS cleared as follow-up with new litigation trigger; Escambia cleared as short on local bar."
+    },
+    {
+      "beat": "Domestic institutional developments",
+      "sources_checked": [
+        "CBS/Hill/WaPo Dana White",
+        "KFF/WaPo/Axios healthcare",
+        "HUD/Alliance homelessness",
+        "NBC/WaPo Dhillon"
+      ],
+      "strongest_candidate": "Dem healthcare stack; HUD PIT drop; Dana White offer",
+      "cleared_or_failed": "All three cleared leads; Dhillon short."
+    },
+    {
+      "beat": "International items with clear US consequences",
+      "sources_checked": [
+        "Guardian/Al Jazeera/Axios/ToI Eisenkot",
+        "Guardian Hormuz",
+        "CENTCOM/CNBC Iron Gate"
+      ],
+      "strongest_candidate": "Eisenkot mandate; Qatar Hormuz plan; Iron Gate",
+      "cleared_or_failed": "All cleared \u2014 Iran war / ally / energy channels."
+    },
+    {
+      "beat": "Florida / Tampa Bay",
+      "sources_checked": [
+        "CENTCOM Tampa",
+        "FAA Bartow",
+        "WEAR/PNJ Escambia",
+        "WUSF DeSantis",
+        "Guardian FAA"
+      ],
+      "strongest_candidate": "Iron Gate Tampa; FAA Bartow; Escambia recount",
+      "cleared_or_failed": "Iron Gate and FAA cleared as leads; Escambia short; DeSantis colour short."
+    },
+    {
+      "beat": "Data centers / power / AI infrastructure",
+      "sources_checked": [
+        "Also-noted retention of TX pause/Google/Loudoun from morning context",
+        "no fresh Saturday primary"
+      ],
+      "strongest_candidate": "No new Saturday verifiable trigger beyond morning Texas pause",
+      "cleared_or_failed": "Failed bar for a new lead \u2014 parked pointers in Also noted. Diesel/Hormuz covered under energy chain instead of splitting."
+    },
+    {
+      "beat": "AI and financial services",
+      "sources_checked": [
+        "SEC small-entity primary (no Saturday movement)",
+        "AAA diesel as household financial meter"
+      ],
+      "strongest_candidate": "AAA diesel $6.21 paired with Hormuz diplomacy",
+      "cleared_or_failed": "Cleared only as part of Hormuz/diesel lead; SEC retained as thin short."
+    }
+  ],
+  "per_article_independent_source_counts": {
+    "ak-ms": 4,
+    "eisenkot": 4,
+    "hormuz-diesel": 4,
+    "iron-gate": 3,
+    "faa-towers": 3,
+    "dem-health": 3,
+    "homeless": 3,
+    "dana-white": 3,
+    "also-escambia": 2,
+    "also-dhillon": 2,
+    "also-desantis": 2,
+    "also-healey": 1,
+    "also-golf": 1,
+    "also-sec-note": 1
+  },
+  "continuations": 2,
+  "continuation_triggers": [
+    {
+      "id": "ak-ms",
+      "trigger": "new verifiable fact / litigation threshold"
+    },
+    {
+      "id": "hormuz-diesel",
+      "trigger": "new verifiable fact (Qatar proposal detail + AAA print)"
+    }
+  ],
+  "feedback_applied": {
+    "open_brief_feedback": [],
+    "recently_closed_brief_feedback": [],
+    "config_changes": "None \u2014 no brief-feedback issues."
+  },
+  "marker_counts": {
+    "Primary source": 1,
+    "Independent corroboration": 11,
+    "Single-sourced": 2,
+    "Unconfirmed": 0
+  },
+  "divergence_boxes": 5,
+  "also_noted_items": 10,
+  "radio_groups_note": "2\u20133 unique fb-* radio name groups per story; one Also-today tier group"
+}

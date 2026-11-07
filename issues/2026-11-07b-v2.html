@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 7 November 2026 (News Bot 2.0 · evening)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 7 November 2026 &middot; evening edition</div>
+  <h1>Senate margins harden into lawsuits, Eisenkot gets the Israeli mandate, Tampa hosts Iron Gate, and diesel still sits at $6.21</h1>
+  <p class="sub">Second v2 edition of the day — delta since <a href="2026-11-07-v2.html">this morning&rsquo;s issue</a>. Eight leads, six shorts, Also noted after the footer. Filename: <code>2026-11-07b-v2.html</code>.</p>
+  <p class="prov"><b>42 sources checked, 24 of them outside standing watchlist threads.</b> Outside-first gather: Anadolu/AP afternoon summaries, Guardian world/US, Al Jazeera, Axios, Times of Israel, Mississippi Free Press, WEAR/PNJ Florida locals, Aviation Week/AvWeb, Alliance PIT analysis, then CENTCOM/FAA/HUD/AAA primaries and national desks. Two follow-ups only (AK/MS legal fight; Hormuz/diesel meter), under the cap of four.<br><br>
+  <b>Negative check:</b> the biggest story not already on the standing-beat menu was the HUD/Alliance homelessness drop — underreported relative to Cos and midterm noise, verified on primary and independent analyses, and promoted to a lead. Declined for altitude or missing US channel: Rockefeller Center tree raise; Muhurat trading tips; Chennai reservoir rain colour; BTS MAMA voting drives.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#ak-ms">Alaska and Mississippi harden into affidavit fights and a lawsuit over rejected absentees</a></li>
+    <li><a href="#eisenkot">Herzog tasks Eisenkot with forming Israel&rsquo;s next government</a></li>
+    <li><a href="#hormuz-diesel">Qatar floats a Hormuz-for-inspections path; AAA diesel is $6.21</a></li>
+    <li><a href="#iron-gate">CENTCOM stands up Task Force Iron Gate in Tampa</a></li>
+    <li><a href="#faa-towers">FAA&rsquo;s first digital towers go live in Bartow and Kenai</a></li>
+    <li><a href="#dem-health">House Democrats put ACA subsidies and Medicaid first</a></li>
+    <li><a href="#homeless">Homelessness fell on the January count — HUD and the Alliance disagree on why</a></li>
+    <li><a href="#dana-white">Trump offers Dana White the press podium; acceptance still murky</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (6)</a> &middot; <a href="#also-noted">Also noted</a></p>
+</nav>
+
+<article id="ak-ms">
+  <h3>Alaska and Mississippi harden into affidavit fights and a lawsuit over rejected absentees</h3>
+  <div class="meta">
+    <span class="chip">Elections</span>
+    <span class="chip fu">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Trigger: new litigation steps and county-level affidavit tallies since morning.</p>
+  <p>Chamber control is settled; the size of the Democratic Senate majority is not. <a href="https://www.usatoday.com/story/news/politics/elections/2026/11/07/mississippi-alaska-senate-races-still-undecided-as-legal-fights-loom/92659758007/">USA Today</a> reports Scott Colom leads Cindy Hyde-Smith by roughly 2,500 votes with affidavit (provisional) ballots still being cured through 10 November and county reports due 13 November. Mississippi has no statewide recount statute. Hyde-Smith&rsquo;s campaign and the NRSC have asked all 82 counties to set affidavit ballots aside — prelude to scattered county suits — while Colom&rsquo;s lawyers say pulling already-processed ballots would itself violate state law.</p>
+  <p>The <a href="https://www.mississippifreepress.org/scott-colom-is-overperforming-affidavit-ballots-in-north-mississippi-even-in-hyde-smith-friendly-counties/">Mississippi Free Press</a> finds Colom overperforming among accepted affidavits even in Hyde-Smith counties (Chickasaw affidavits 77.1% Colom). In Alaska, Mary Peltola leads Dan Sullivan by 637 with about 74% in; ranked-choice tabulation is set for 18 November. On 6 November Peltola&rsquo;s side sued for names of voters whose absentees were rejected; the state refused, citing confidentiality. <a href="https://www.uspresidentialelectionnews.com/2026/11/alaska-and-mississippi-senate-race-update-theyre-still-counting-votes/">Election Central</a> notes a Democratic sweep of both would make the chamber 56–44; both Republican holds would leave 54–46.</p>
+  <p><b>What to watch:</b> Mississippi affidavit accept/reject rates by county; Alaska Division counts on 10 and 13 November; whether any county court enjoins counting.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; ordinary curing, or a manufactured contest?</span>
+    <p><b>What is in dispute.</b> Significance dispute more than facts: both sides accept the published margins; they disagree on whether affidavit volume and the other Dan Sullivan on Alaska&rsquo;s ballot justify extraordinary process.</p>
+    <p><b>Why the vantage differs.</b> Party lawyers optimise for courthouse options before certification. Local reporting (Free Press) is measuring ballot-type splits the national desks summarise. Timing: morning tallies were static; Saturday added litigation posture.</p>
+    <p><b>What it means for the reader.</b> Price the Senate at 54-plus Democrats. Treat both races as margin fights, not chamber flips. The observation that settles Mississippi is the 13 November county packages; for Alaska, the 18 November ranked-choice run.</p>
+  </div>
+<div class="fb"><p>Keep following these two unfinished Senate races?</p>
+<label><input type="radio" name="fb-akms-1" value="v0"> Yes — until certification</label>
+<label><input type="radio" name="fb-akms-1" value="v1"> Only if a lead flips</label>
+<label><input type="radio" name="fb-akms-1" value="v2"> Drop once chamber math is final</label>
+<p>Cadence on election-count follow-ups?</p>
+<label><input type="radio" name="fb-akms-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-akms-2" value="v1"> Too often</label>
+<label><input type="radio" name="fb-akms-2" value="v2"> Want more county-level detail</label>
+<p>Angle preference?</p>
+<label><input type="radio" name="fb-akms-3" value="v0"> Litigation and process</label>
+<label><input type="radio" name="fb-akms-3" value="v1"> Demographic/historic firsts</label>
+<label><input type="radio" name="fb-akms-3" value="v2"> National majority math</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.usatoday.com/story/news/politics/elections/2026/11/07/mississippi-alaska-senate-races-still-undecided-as-legal-fights-loom/92659758007/">USA Today</a> &middot;
+    <a href="https://www.mississippifreepress.org/scott-colom-is-overperforming-affidavit-ballots-in-north-mississippi-even-in-hyde-smith-friendly-counties/">Mississippi Free Press</a> &middot;
+    <a href="https://www.uspresidentialelectionnews.com/2026/11/alaska-and-mississippi-senate-race-update-theyre-still-counting-votes/">Election Central</a> &middot;
+    <a href="https://abcnews.com/Politics/republicans-clinch-senate-control-key-flips/story?id=115549706">ABC News tallies</a>
+  </p>
+</article>
+
+<article id="eisenkot">
+  <h3>Herzog tasks Eisenkot with forming Israel&rsquo;s next government</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics — US channel</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4.</p>
+  <p>Israeli President Isaac Herzog informed Gadi Eisenkot on Saturday that he will receive the formal mandate on Sunday to form a government, passing over Benjamin Netanyahu after the deadlocked 27 October election. <a href="https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government">The Guardian</a>, <a href="https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government">Al Jazeera</a> and <a href="https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog">Axios</a> agree on the arithmetic: Eisenkot&rsquo;s bloc holds 48 seats; Netanyahu&rsquo;s 53; both short of 61. During consultations 67 Knesset members recommended Eisenkot and 46 Netanyahu. Eisenkot has 28 days, plus a possible 14-day extension.</p>
+  <p>The US channel is the Iran war: a change of Israeli premier mid-conflict reshapes mediation leverage with Washington, already under midterm pressure over Hormuz and diesel. Eisenkot has ruled out a coalition with Arab-led parties that backed his nomination, leaving ultra-Orthodox partners as the likelier path to 61 — and a fracture risk inside his own bloc.</p>
+  <p><b>What to watch:</b> Sunday&rsquo;s formal ceremony; whether United Torah Judaism or Shas actually join; any US readout tying the Israeli transition to Hormuz talks.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; Netanyahu&rsquo;s brink, or another caretaker stretch?</span>
+    <p><b>What is in dispute.</b> Significance dispute: Axios calls this the closest Netanyahu has been to losing power since 2021; Al Jazeera emphasises that failure returns the mandate and can force another election with Netanyahu as caretaker.</p>
+    <p><b>Why the vantage differs.</b> Domestic Israeli desks count coalition maths; US-facing desks price the Iran war partner. Access: Herzog&rsquo;s office statement is shared; private partner talks are not.</p>
+    <p><b>What it means for the reader.</b> Treat a government as unformed until a confidence vote. For US policy, the near-term meter is whether Israeli negotiating posture on Iran softens or hardens during the 28-day clock — watch State/White House language after Sunday.</p>
+  </div>
+<div class="fb"><p>Follow the Israeli government-formation clock?</p>
+<label><input type="radio" name="fb-eisenkot-1" value="v0"> Yes — through the 28 days</label>
+<label><input type="radio" name="fb-eisenkot-1" value="v1"> Only if it changes Iran talks</label>
+<label><input type="radio" name="fb-eisenkot-1" value="v2"> Skip foreign coalition maths</label>
+<p>Is the US-channel framing right?</p>
+<label><input type="radio" name="fb-eisenkot-2" value="v0"> Yes — Iran/Hormuz is the link</label>
+<label><input type="radio" name="fb-eisenkot-2" value="v1"> Want more domestic Israeli detail</label>
+<label><input type="radio" name="fb-eisenkot-2" value="v2"> Too much foreign coverage</label>
+<p>Frequency?</p>
+<label><input type="radio" name="fb-eisenkot-3" value="v0"> About right</label>
+<label><input type="radio" name="fb-eisenkot-3" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government">Guardian</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government">Al Jazeera</a> &middot;
+    <a href="https://www.axios.com/2026/11/07/israel-eisenkot-netanyahu-government-herzog">Axios</a> &middot;
+    <a href="https://www.timesofisrael.com/liveblog-november-07-2026/">Times of Israel liveblog</a>
+  </p>
+</article>
+
+<article id="hormuz-diesel">
+  <h3>Qatar floats a Hormuz-for-inspections path; AAA diesel is $6.21</h3>
+  <div class="meta">
+    <span class="chip">Energy &amp; Iran war</span>
+    <span class="chip fu">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Trigger: Saturday mediation detail + fresh AAA pump print.</p>
+  <p><a href="https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections">The Guardian</a> reports Qatar&rsquo;s proposal: the US would lift the Hormuz naval blockade and release part of roughly $8bn in frozen Iranian assets; Iran would admit IAEA inspectors to bombed nuclear sites and reopen the strait on day two via an Oman-agreed route lodged with the IMO. The emir spoke with Trump on Friday. Iran has not accepted; Trump still publicly leaves room for further strikes even as JD Vance tied the war to the midterm loss.</p>
+  <p>The household meter moved only a little: <a href="https://gasprices.aaa.com/">AAA</a> shows national diesel at <b>$6.2075</b> on 7 November (regular $4.0371), down a few cents on the day but still far above last year&rsquo;s diesel average near $3.71. <a href="https://energyfactbook.com/why-is-diesel-so-expensive/">Energy Factbook</a> ties the diesel premium to lost Gulf and Russian distillate exports, not just crude. <a href="https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation">Al Jazeera</a> still has UKMTO transit roughly 65% below pre-conflict levels after eleven ship attacks in the prior week.</p>
+  <p><b>What to watch:</b> any written MOU language; AAA diesel direction next week; whether further &ldquo;minor strikes&rdquo; land during mediation.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; diplomacy clock vs. pump clock</span>
+    <p><b>What is in dispute.</b> Significance dispute: mediators sell a two-day sequencing deal; pump prices show the war&rsquo;s diesel damage is already capitalised and sticky.</p>
+    <p><b>Why the vantage differs.</b> Diplomatic desks report proposal architecture; AAA measures retail. Access and timing diverge — a proposal can exist on Saturday while diesel still reflects months of lost distillate.</p>
+    <p><b>What it means for the reader.</b> Do not price a Hormuz reopen into the household budget until transit volumes and AAA diesel both move. The settling observation is UKMTO weekly transit plus Monday&rsquo;s AAA print after any announced deal.</p>
+  </div>
+<div class="fb"><p>Keep oil/diesel/Hormuz as one chain?</p>
+<label><input type="radio" name="fb-hormuz-1" value="v0"> Yes — one causal chain</label>
+<label><input type="radio" name="fb-hormuz-1" value="v1"> Split diplomacy from pump prices</label>
+<label><input type="radio" name="fb-hormuz-1" value="v2"> Less energy coverage</label>
+<p>Follow mediation detail this closely?</p>
+<label><input type="radio" name="fb-hormuz-2" value="v0"> Yes</label>
+<label><input type="radio" name="fb-hormuz-2" value="v1"> Only on signed deals</label>
+<label><input type="radio" name="fb-hormuz-2" value="v2"> About right</label>
+<p>Frequency?</p>
+<label><input type="radio" name="fb-hormuz-3" value="v0"> About right</label>
+<label><input type="radio" name="fb-hormuz-3" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections">Guardian</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA fuel prices</a> &middot;
+    <a href="https://energyfactbook.com/why-is-diesel-so-expensive/">Energy Factbook</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation">Al Jazeera / UKMTO</a>
+  </p>
+</article>
+
+<article id="iron-gate">
+  <h3>CENTCOM stands up Task Force Iron Gate in Tampa</h3>
+  <div class="meta">
+    <span class="chip">Florida &amp; Iran war</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>On 7 November Adm. Brad Cooper directed Task Force Iron Gate — about 20 civilian and military staff in <b>Tampa</b> — to coordinate interagency work against Iranian ground and Caspian routes for advanced weapons, dual-use tech, sanctioned goods and illegal revenue, per the <a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644250/centcom-launches-task-force-to-disrupt-iranian-ground-transit-routes-supporting/">CENTCOM release</a>. Cooper said the naval blockade has already blocked more than $25bn in Iranian crude exports; Iron Gate extends pressure inland. <a href="https://www.cnbc.com/2026/11/07/iran-us-task-force-land-commerce.html">CNBC</a> and <a href="https://www.upi.com/Top_News/US/2026/11/07/centcom-iran-ground-routes/2781794067160/">UPI</a> place the move against mediation talks and midterm blowback over the war.</p>
+  <p><b>What to watch:</b> named Treasury/State/Justice partners; any Caspian interdiction claims; whether Tampa staffing stays a headquarters cell or grows into a visible ops hub.</p>
+<div class="fb"><p>Follow Tampa-based CENTCOM tasking?</p>
+<label><input type="radio" name="fb-irongate-1" value="v0"> Yes — Florida + Iran channel</label>
+<label><input type="radio" name="fb-irongate-1" value="v1"> Only major kinetic news</label>
+<label><input type="radio" name="fb-irongate-1" value="v2"> Less war process coverage</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-irongate-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-irongate-2" value="v1"> Too often</label>
+<label><input type="radio" name="fb-irongate-2" value="v2"> Want more local Tampa angle</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644250/centcom-launches-task-force-to-disrupt-iranian-ground-transit-routes-supporting/">CENTCOM</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/07/iran-us-task-force-land-commerce.html">CNBC</a> &middot;
+    <a href="https://www.upi.com/Top_News/US/2026/11/07/centcom-iran-ground-routes/2781794067160/">UPI</a>
+  </p>
+</article>
+
+<article id="faa-towers">
+  <h3>FAA&rsquo;s first digital towers go live in Bartow and Kenai</h3>
+  <div class="meta">
+    <span class="chip">Florida / institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>The <a href="https://www.faa.gov/newsroom/faa-deploys-first-digital-air-traffic-control-towers-florida-and-alaska-equipping">FAA</a> says digital towers are operational at Bartow Executive Airport in Florida and Kenai Municipal in Alaska — camera-and-display systems giving controllers a continuous 360-degree view while humans still separate traffic. Five more sites are queued, including Winter Haven and Venice in Florida. <a href="https://www.theguardian.com/us-news/2026/nov/07/faa-digital-air-traffic-control-tower-technology">The Guardian</a> notes Congress&rsquo;s $12.5bn modernisation pot and the administration&rsquo;s ask for another $30bn; Administrator Bryan Bedford faces House transportation questions next week. <a href="https://aviationweek.com/business-aviation/safety-ops-regulation/faa-activates-first-digital-towers-alaska-florida">Aviation Week</a> confirms the first-of-seven remote-ops rollout.</p>
+  <p><b>What to watch:</b> Bedford&rsquo;s hearing; Winter Haven/Venice go-live dates; any controller-union safety filings.</p>
+<div class="fb"><p>Want more Florida infrastructure/FAA items?</p>
+<label><input type="radio" name="fb-faa-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-faa-1" value="v1"> Only when safety incidents attach</label>
+<label><input type="radio" name="fb-faa-1" value="v2"> About right</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-faa-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-faa-2" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.faa.gov/newsroom/faa-deploys-first-digital-air-traffic-control-towers-florida-and-alaska-equipping">FAA</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/07/faa-digital-air-traffic-control-tower-technology">Guardian</a> &middot;
+    <a href="https://aviationweek.com/business-aviation/safety-ops-regulation/faa-activates-first-digital-towers-alaska-florida">Aviation Week</a>
+  </p>
+</article>
+
+<article id="dem-health">
+  <h3>House Democrats put ACA subsidies and Medicaid first</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p><a href="https://kffhealthnews.org/insurance/post-midterm-election-healthcare-agenda-democratic-congress/">KFF Health News</a> and <a href="https://www.washingtonpost.com/health/2026/11/04/democrats-aim-restore-aca-subsidies-medicaid-funding-next-year/">The Washington Post</a> describe the incoming majority&rsquo;s early stack: restore enhanced ACA marketplace subsidies that lapsed, reverse Medicaid cuts and work requirements from the 2025 package, and use January open-enrollment timing as leverage. Jeffries has also previewed Iran-war and tariff votes. <a href="https://www.axios.com/2026/11/04/democrats-election-health-care-agenda-divisions">Axios</a> flags caucus splits on Medicare-for-All ambition versus veto-constrained incrementalism — Trump still must sign anything that becomes law.</p>
+  <p><b>What to watch:</b> whether a December lame-duck CR sets up a March funding fight on Medicaid; ACA subsidy text in the first week of the new Congress; Oversight subpoenas on drug-pricing deals.</p>
+<div class="fb"><p>Follow the Democratic healthcare stack into January?</p>
+<label><input type="radio" name="fb-health-1" value="v0"> Yes — ACA/Medicaid first</label>
+<label><input type="radio" name="fb-health-1" value="v1"> Only enacted bills</label>
+<label><input type="radio" name="fb-health-1" value="v2"> Less process coverage</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-health-2" value="v0"> Legislative mechanics</label>
+<label><input type="radio" name="fb-health-2" value="v1"> Premium/cost impact</label>
+<label><input type="radio" name="fb-health-2" value="v2"> Oversight of HHS/RFK Jr.</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-health-3" value="v0"> About right</label>
+<label><input type="radio" name="fb-health-3" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://kffhealthnews.org/insurance/post-midterm-election-healthcare-agenda-democratic-congress/">KFF Health News</a> &middot;
+    <a href="https://www.washingtonpost.com/health/2026/11/04/democrats-aim-restore-aca-subsidies-medicaid-funding-next-year/">Washington Post</a> &middot;
+    <a href="https://www.axios.com/2026/11/04/democrats-election-health-care-agenda-divisions">Axios</a>
+  </p>
+</article>
+
+<article id="homeless">
+  <h3>Homelessness fell on the January count — HUD and the Alliance disagree on why</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3. Negative-check / underreported lead.</p>
+  <p><a href="https://www.hud.gov/news/hud-no-26-090">HUD</a> says the January 2026 Point-in-Time count found 698,425 people homeless on a single night — a 6.3% drop since January 2025 and, in the department&rsquo;s framing, the largest decrease on record — and credits border enforcement plus a shift from Housing First to &ldquo;Treatment First.&rdquo; The <a href="https://endhomelessness.org/resources/research-and-analysis/2026-national-homelessness-estimate/">National Alliance to End Homelessness</a> independently estimates a 6.7% drop (to about 693,000), notes decreases began before the current administration, and says HUD issued a hastily drafted Friday release without subpopulation data after learning the Alliance would publish. <a href="https://www.ibtimes.com/hud-2026-pit-count-homelessness-decline-3809530">IBTimes</a> covers both claims.</p>
+  <p><b>What to watch:</b> HUD&rsquo;s full CoC tables; chronic homelessness (Alliance flags a 1% rise); whether Congress funds Treatment First grants or Housing First restorations.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who gets credit for the drop?</span>
+    <p><b>What is in dispute.</b> Facts dispute on exact national totals (698k vs ~693k) and a significance dispute on causation (border/Treatment First vs provider-system momentum that predated 2025).</p>
+    <p><b>Why the vantage differs.</b> HUD is an administration press release with policy branding. The Alliance is an advocacy research shop publishing a modeled CoC sample and contesting the credit narrative. Timing: both dropped around 6 November; HUD&rsquo;s statement arrived after the Alliance signalled publication.</p>
+    <p><b>What it means for the reader.</b> Treat the direction (down, second year) as solid; treat the causal story as unsettled until full HUD microdata and independent replication land. Chronic homelessness ticking up is the counter-signal inside the same Alliance release.</p>
+  </div>
+<div class="fb"><p>Want more underreported statistical releases like this?</p>
+<label><input type="radio" name="fb-homeless-1" value="v0"> Yes — keep hunting them</label>
+<label><input type="radio" name="fb-homeless-1" value="v1"> Only with primary + independent</label>
+<label><input type="radio" name="fb-homeless-1" value="v2"> Prefer headline politics</label>
+<p>Cadence on homelessness/housing?</p>
+<label><input type="radio" name="fb-homeless-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-homeless-2" value="v1"> Too often</label>
+<label><input type="radio" name="fb-homeless-2" value="v2"> Increase</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-homeless-3" value="v0"> Numbers and methods</label>
+<label><input type="radio" name="fb-homeless-3" value="v1"> Policy credit fights</label>
+<label><input type="radio" name="fb-homeless-3" value="v2"> Local Florida homelessness</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.hud.gov/news/hud-no-26-090">HUD release</a> &middot;
+    <a href="https://endhomelessness.org/resources/research-and-analysis/2026-national-homelessness-estimate/">National Alliance to End Homelessness</a> &middot;
+    <a href="https://www.ibtimes.com/hud-2026-pit-count-homelessness-decline-3809530">IBTimes</a>
+  </p>
+</article>
+
+<article id="dana-white">
+  <h3>Trump offers Dana White the press podium; acceptance still murky</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>On Saturday Trump posted that he had offered UFC chief Dana White the vacant White House press secretary job, asking him to bring a slate of fighters as &ldquo;assistants.&rdquo; <a href="https://www.cbsnews.com/news/trump-offers-white-house-press-secretary-role-dana-white/">CBS News</a> (updated 5:27&nbsp;p.m. ET) says White posted an Instagram story of himself at the briefing lectern captioned &ldquo;On to the next chapter,&rdquo; and that it remained unclear whether he had accepted; CBS had reached out to the White House and UFC. <a href="https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/">The Hill</a> and <a href="https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/">The Washington Post</a> likewise treat the offer as confirmed and the reply as ambiguous. Some secondary outlets, citing an unnamed source, say White declined; that is not yet on-record from White or the White House.</p>
+  <p><b>What to watch:</b> an on-record accept/decline; who actually fills the podium left empty since Katie Zacharia&rsquo;s five-day tenure ended 16 October.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; tease, accept, or decline?</span>
+    <p><b>What is in dispute.</b> Facts dispute on White&rsquo;s decision. National desks with White House access say unclear; a thinner secondary layer asserts a private decline.</p>
+    <p><b>Why the vantage differs.</b> Access: nobody has a White quote on the record. Timing: Instagram landed before confirmation calls finished. Mundane reading first — the podium photo may be humour.</p>
+    <p><b>What it means for the reader.</b> Do not treat the job as filled. The settling observation is an on-record statement from White or a White House personnel announcement naming someone else.</p>
+  </div>
+<div class="fb"><p>Follow personnel-colour stories like this?</p>
+<label><input type="radio" name="fb-dana-1" value="v0"> Yes if they signal governing posture</label>
+<label><input type="radio" name="fb-dana-1" value="v1"> Only confirmed appointments</label>
+<label><input type="radio" name="fb-dana-1" value="v2"> Skip celebrity-adjacent personnel</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-dana-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-dana-2" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/trump-offers-white-house-press-secretary-role-dana-white/">CBS News</a> &middot;
+    <a href="https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/">The Hill</a> &middot;
+    <a href="https://www.washingtonpost.com/politics/2026/11/07/ufc-dana-white-offered-white-house-press-secretary-role-trump-says/">Washington Post</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Delta shorts. Each carries a marker and feedback radios.</p>
+
+<article id="also-escambia">
+  <h3>Escambia District 4 heads to a Saturday machine recount with Vinson up 19</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (WEAR primary local; PNJ timeline).</p>
+  <p>After provisional and cured mail review, nonparty Joe Vinson leads incumbent Ashlee Hofberger by 19 votes (50.04%–49.96%) in Escambia County&rsquo;s District 4 commission race; a machine recount was set for Saturday, with possible manual recount and overseas ballots through 13 November, per <a href="https://weartv.com/news/local/vinson-pulls-ahead-in-escambia-county-district-4-race-recount-set-for-saturday">WEAR</a> and <a href="https://www.pnj.com/story/news/local/escambia-county/2026/11/04/hofberger-vinson-recount-in-escambia-commissioner-race/92610246007/">PNJ</a>.</p>
+  <p class="btl"><b>Below the line:</b> real local process, narrow geography.</p>
+<div class="fb"><p>More Panhandle/local recount items?</p>
+<label><input type="radio" name="fb-escambia-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-escambia-1" value="v1"> Only statewide</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-escambia-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-escambia-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-dhillon">
+  <h3>Harmeet Dhillon resigns as DOJ Civil Rights chief</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p><a href="https://www.nbcnews.com/politics/justice-department/head-doj-civil-rights-division-resigns-gop-midterms-loss-rcna607697">NBC News</a> and <a href="https://www.washingtonpost.com/national-security/2026/11/05/harmeet-dhillon-resigns-head-justice-depts-civil-rights-division/">The Washington Post</a> report Dhillon stepped down after the midterms; AG Todd Blanche accepted. She said she had planned a post-election exit to private practice.</p>
+  <p class="btl"><b>Below the line:</b> personnel without a named successor policy shift.</p>
+<div class="fb"><p>Follow DOJ personnel exits into the lame duck?</p>
+<label><input type="radio" name="fb-dhillon-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-dhillon-1" value="v1"> Only if cases move</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-dhillon-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-dhillon-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-desantis">
+  <h3>DeSantis calls the midterm wipeout near an &ldquo;extinction-level event&rdquo;</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Outgoing Florida Gov. Ron DeSantis described Republican losses as close to an &ldquo;extinction-level event&rdquo; in much of the country while arguing Florida held the line, per <a href="https://www.politico.com/news/2026/11/04/desantis-calls-midterm-bloodbath-an-extinction-level-event-for-republicans-01148705">Politico</a> and <a href="https://www.wusf.org/politics-issues/2026-11-05/desantis-midterm-elections-meteor-strike-republicans">WUSF</a>.</p>
+  <p class="btl"><b>Below the line:</b> characterisation, not a new formal trigger.</p>
+<div class="fb"><p>Keep Florida GOP reaction colour?</p>
+<label><input type="radio" name="fb-desantis-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-desantis-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-desantis-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-desantis-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-healey">
+  <h3>Massachusetts Gov. Healey uses an emergency declaration to activate a new abortion statute</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Healey filed an emergency declaration to put a post-24-week physician-judgment abortion law into force immediately, bypassing a citizen petition aimed at a 2028 referendum, per Saturday national digests summarising the Friday filing. Link held to the circulating national wrap pending a primary PDF.</p>
+  <p class="btl"><b>Below the line:</b> state policy with thin same-day multi-desk stand-up at gather time.</p>
+<div class="fb"><p>Follow state abortion-procedure fights?</p>
+<label><input type="radio" name="fb-healey-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-healey-1" value="v1"> Only Supreme Court</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-healey-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-healey-2" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b> <a href="https://usnewsamerica.com/the-morning-briefing-november-7-2026/">national morning briefing wrap</a></p>
+</article>
+
+<article id="also-golf">
+  <h3>Judge will appoint a special master over Trump golf-course renovation claims</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Judge Ana Reyes intends to appoint a special master to test whether federal lawyers misled the court about East Potomac golf-course renovation plans, per <a href="https://www.theguardian.com/us-news/2026/nov/07/all">Guardian US roundup</a>.</p>
+  <p class="btl"><b>Below the line:</b> process story, limited policy consequence.</p>
+<div class="fb"><p>Follow litigation-process colour?</p>
+<label><input type="radio" name="fb-golf-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-golf-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-golf-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-golf-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-sec-note">
+  <h3>SEC small-entity threshold update still sits as compliance colour</h3>
+  <div class="meta"><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 (primary).</p>
+  <p>No new Saturday movement on the <a href="https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers">SEC</a> small-entity amendments noted this morning; retained only as a one-line compliance pointer for the financial-services tag.</p>
+  <p class="btl"><b>Below the line:</b> no new fact today.</p>
+<div class="fb"><p>Keep thin SEC items in Also today?</p>
+<label><input type="radio" name="fb-secb-1" value="v0"> Yes if primary</label>
+<label><input type="radio" name="fb-secb-1" value="v1"> Park in Also noted only</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-secb-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-secb-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p>Was the Also-today boundary right for this evening delta?</p>
+  <label><input type="radio" name="fb-also-tier" value="yes"> Yes — right things below the line</label>
+  <label><input type="radio" name="fb-also-tier" value="promote"> Promote one next time</label>
+  <label><input type="radio" name="fb-also-tier" value="cut"> Cut this tier when thin</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 42 sources checked; 24 outside standing watchlist threads. Second edition; morning file left untouched at <code>2026-11-07-v2.html</code>. Follow-ups: 2 (AK/MS legal; Hormuz/diesel). Marker tallies — PS:1 · IC:11 · SS:2 · U:0. Divergence boxes: 5. Radio groups: 2–3 per story plus one Also-today tier question.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>. No open or recently closed brief-feedback items at run start.</p>
+  <p>Published as <code>issues/2026-11-07b-v2.html</code>. Audit gate: <code>scripts/audit.py</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> — interest-tag pointers (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Brent settled Friday near $98.32 and WTI near $90.83 as traders weighed diplomacy odds; futures dark on Saturday.</li>
+    <li>IRGC claimed two &ldquo;violating&rdquo; tankers hit mines east of Hormuz after switching off AIS — unverified damage detail.</li>
+    <li>Google&rsquo;s Malaysia and Wyoming data-centre commitments remain the offshore counterpoint to Texas&rsquo;s pause politics.</li>
+    <li>Loudoun County&rsquo;s tax-base argument (data centres as ~40% of local revenue on ~3% of land) still frames the restriction debate.</li>
+    <li>Florida Amendment 3 homestead expansion continues to work through local budget offices for 2027–28.</li>
+    <li>Charlie Crist&rsquo;s St. Petersburg mayoral win stays municipal colour with no new Saturday process.</li>
+    <li>National Popular Vote pathway via five new trifectas remains a 2027 bill watch, not enacted law.</li>
+    <li>PAHO&rsquo;s measles elimination review still sits 10–13 November with no new CDC case table today.</li>
+    <li>Thune&rsquo;s bid to keep Senate GOP leadership heads toward a mid-November conference vote.</li>
+    <li>SpaceX/Boca Chica public-land sale talk under Hinojosa remains contested rhetoric without a filed deed change today.</li>
+  </ul>
+</details>
+
+</div>
+<script>
+(function(){
+  const btn = document.createElement('div');
+  btn.className = 'submit';
+  btn.innerHTML = '<button type="button" id="fb-submit">Send feedback as a GitHub issue</button>';
+  document.querySelector('footer')?.appendChild(btn);
+  document.getElementById('fb-submit')?.addEventListener('click', function(){
+    const parts = [];
+    document.querySelectorAll('input[type=radio]:checked').forEach(r => parts.push(r.name+'='+r.value));
+    const body = encodeURIComponent('News Bot 2.0 feedback for 2026-11-07b-v2\\n\\n'+(parts.join('\\n')||'(none)'));
+    window.open('https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback&title='+encodeURIComponent('brief-feedback: 2026-11-07b-v2')+'&body='+body,'_blank');
+  });
+})();
+</script>
+</body>
+</html>
