@@ -1,0 +1,198 @@
+{
+  "date": "2026-11-07",
+  "edition": "v2",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Gather opened with Anadolu morning briefing, Axios top, ABC Health/CIDRAP, Texas Tribune, Florida Politics/WTSP, Al Jazeera/BBC, USA Today, CNBC before White House/BLS/SEC/Fed primaries and NBC/NPR political desks.",
+  "broad_sweeps": [
+    {
+      "source": "Anadolu Morning Briefing 7 Nov",
+      "outside_watchlist": true
+    },
+    {
+      "source": "Axios top 2026/11/07",
+      "outside_watchlist": true
+    },
+    {
+      "source": "X search_news US midterms/Fed/Trump",
+      "outside_watchlist": true
+    },
+    {
+      "source": "X search_news data centers/measles/Florida/Iran",
+      "outside_watchlist": true
+    },
+    {
+      "source": "WebSearch top news November 7 2026 United States",
+      "outside_watchlist": true
+    },
+    {
+      "source": "Al Jazeera Iran/Qeshm coverage",
+      "outside_watchlist": true
+    },
+    {
+      "source": "BBC Qeshm Monday strikes",
+      "outside_watchlist": true
+    },
+    {
+      "source": "CIDRAP / ABC Health measles",
+      "outside_watchlist": true
+    },
+    {
+      "source": "Texas Tribune / ABC13 / Houston Chronicle data centers",
+      "outside_watchlist": false
+    },
+    {
+      "source": "Florida Politics / WTSP Hillsborough",
+      "outside_watchlist": false
+    },
+    {
+      "source": "White House Miller Cos release",
+      "outside_watchlist": false
+    },
+    {
+      "source": "BLS Employment Situation Oct 2026",
+      "outside_watchlist": false
+    },
+    {
+      "source": "Federal Reserve Oct FOMC statement",
+      "outside_watchlist": false
+    },
+    {
+      "source": "SEC small-entity amendments release",
+      "outside_watchlist": false
+    },
+    {
+      "source": "NBC News midterms live blog + projection",
+      "outside_watchlist": false
+    },
+    {
+      "source": "NPR Miller Cos",
+      "outside_watchlist": false
+    },
+    {
+      "source": "CA AG voluntary dismissal PDF + LA Times",
+      "outside_watchlist": true
+    },
+    {
+      "source": "National Popular Vote / Axios NPV path",
+      "outside_watchlist": true
+    }
+  ],
+  "sources_checked_total": 18,
+  "sources_outside_watchlist": 11,
+  "negative_check": {
+    "question": "What is the biggest story today not on the standing beats, and why is it not?",
+    "candidate": "CDC measles tally at 5,182 with three deaths in one week and a PAHO elimination review next week",
+    "why_not_on_list": "Public health / science beat is not among the six standing v2 beats (elections, domestic institutions, international-US, Florida, data centers/AI infra, AI+financial services).",
+    "disposition": "Cleared the absolute bar on consequence and verifiability; promoted to a lead. Displaced chip-stock rebound reprise and Dana White press-secretary offer.",
+    "declined": [
+      "European flight/airport bomb threats \u2014 no clear US domestic channel beyond travel colour",
+      "Ethiopian Orthodox killings \u2014 no US policy channel",
+      "Belgian budget talks \u2014 no US channel",
+      "Najib Razak house-arrest fine \u2014 no US channel"
+    ]
+  },
+  "beat_coverage": [
+    {
+      "beat": "Elections and electoral process",
+      "sources_checked": [
+        "NBC News midterms projection + live blog",
+        "National Popular Vote",
+        "Axios NPV",
+        "CA AG dismissal PDF",
+        "LA Times",
+        "Just the News"
+      ],
+      "strongest_candidate": "Democratic dual-chamber win with AK/MS still counting; DOJ drops CA ballot segregation suit",
+      "cleared_or_failed": "Cleared \u2014 chamber control is consequential and verifiable; CA ballot dismissal is an electoral-process threshold event. Two leads + NPV short."
+    },
+    {
+      "beat": "Domestic institutional developments",
+      "sources_checked": [
+        "White House Miller Cos release",
+        "NPR",
+        "NBC live blog",
+        "ABC Australia"
+      ],
+      "strongest_candidate": "Stephen Miller named White House chief of staff effective Monday",
+      "cleared_or_failed": "Cleared \u2014 primary-documented personnel change at the apex of the executive, three days after midterm loss."
+    },
+    {
+      "beat": "International items with clear US consequences",
+      "sources_checked": [
+        "CNBC",
+        "Al Jazeera",
+        "BBC",
+        "Anadolu"
+      ],
+      "strongest_candidate": "Trump confirms minor strikes on Iranian air defences at Qeshm / Hormuz",
+      "cleared_or_failed": "Cleared \u2014 Hormuz oil channel and US force involvement. Abu Dhabi talks calendar item kept below the line."
+    },
+    {
+      "beat": "Florida and Tampa Bay",
+      "sources_checked": [
+        "Florida Politics Hillsborough referendums",
+        "WTSP",
+        "Florida Politics Quinones",
+        "NBC on Quinones"
+      ],
+      "strongest_candidate": "Hillsborough elected superintendent + commission expansion + school tax renewal",
+      "cleared_or_failed": "Cleared on local bar \u2014 structural change to county school governance and maps. Quinones resignation as short; Crist mayoral win as short."
+    },
+    {
+      "beat": "Data centers, power, and AI infrastructure",
+      "sources_checked": [
+        "Texas Tribune",
+        "ABC13 Houston",
+        "USA Today/CNN interview",
+        "Houston Chronicle",
+        "X news on Hinojosa/IREN/Google"
+      ],
+      "strongest_candidate": "Hinojosa pledge to keep new Texas data-centre approvals paused until Legislature writes rules",
+      "cleared_or_failed": "Cleared \u2014 largest US data-centre state with a post-election policy hinge; Google MY/WY and Loudoun tax share parked in Also noted."
+    },
+    {
+      "beat": "AI and financial services",
+      "sources_checked": [
+        "BLS jobs",
+        "CNBC Daly/jobs",
+        "Fed Oct FOMC",
+        "SEC small-entity release",
+        "market week wrap briefings"
+      ],
+      "strongest_candidate": "October payrolls + repriced December hike odds; SEC small-entity definition update",
+      "cleared_or_failed": "Jobs/Fed cleared as lead (dated print). SEC update cleared only as short \u2014 compliance relevance, low general altitude."
+    }
+  ],
+  "per_article_independent_source_counts": {
+    "miller-cos": 4,
+    "midterms": 3,
+    "jobs-fed": 3,
+    "iran-qeshm": 3,
+    "texas-dc": 4,
+    "measles": 3,
+    "ca-ballots": 3,
+    "hillsborough": 2,
+    "also-npv": 2,
+    "also-quinones": 2,
+    "also-crist": 1,
+    "also-sec": 1,
+    "also-arch": 1,
+    "also-houston": 1,
+    "also-abu-dhabi": 1
+  },
+  "continuations": 0,
+  "continuation_triggers": [],
+  "feedback_applied": {
+    "open_brief_feedback": [],
+    "recently_closed_brief_feedback": [],
+    "config_changes": "Created starter config.md from NEWSBOT_2.0.md interest-tag list; no feedback issues to apply."
+  },
+  "marker_counts": {
+    "Primary source": 3,
+    "Independent corroboration": 8,
+    "Single-sourced": 4,
+    "Unconfirmed": 0
+  },
+  "divergence_boxes": 5,
+  "also_noted_items": 10
+}

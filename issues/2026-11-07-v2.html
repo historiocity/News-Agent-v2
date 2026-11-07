@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 7 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; -webkit-text-size-adjust:100%; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:2rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  .exp { margin-top:.6rem; }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+  .also-list { margin:0; }
+  .also-list details { margin:0; border-bottom:1px solid var(--rule); padding:.7rem 0; }
+  .also-list details:first-of-type { border-top:1px solid var(--rule); }
+  .also-list summary { color:var(--fg); font-size:.97rem; line-height:1.5; }
+  .also-list .exp { font-size:.94rem; padding-left:.2rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 7 November 2026 &middot; one-off cycle</div>
+  <h1>Miller takes the West Wing, jobs reset the Fed path, Texas freezes new data centres, and measles clears 5,000</h1>
+  <p class="sub">Eight stories at length, seven in brief, plus a collapsible Also noted. First v2 edition; does not overwrite any original News-Agent file. Filename: <code>2026-11-07-v2.html</code>.</p>
+  <p class="prov"><b>18 sources checked, 11 of them outside any standing watchlist thread.</b> No prior v2 archive, so every lead is a new subject — zero follow-ups against the cap of four. Standing beats logged: elections; domestic institutions; international with US consequences; Florida/Tampa Bay; data centres/power/AI infrastructure; AI and financial services.<br><br>
+  <b>Negative check reshaped the lead list:</b> the biggest story not already on the standing beats was the CDC measles tally clearing 5,182 with three deaths in a week and a PAHO elimination review due next week. It displaced a calendar reprise of Thursday&rsquo;s chip-stock rebound narrative and a thin Dana White press-secretary offer. Declined for altitude or missing US channel: European bomb threats on flights; Ethiopian Orthodox killings; Belgian budget talks; Najib Razak house-arrest fine.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#miller-cos">Stephen Miller becomes White House chief of staff on Monday</a></li>
+    <li><a href="#midterms">Democrats take both chambers; Alaska and Mississippi still counting</a></li>
+    <li><a href="#jobs-fed">Payrolls rose 165,000 and markets reprice a December Fed hike</a></li>
+    <li><a href="#iran-qeshm">Trump confirms &ldquo;minor strikes&rdquo; on Iranian air defences at Qeshm</a></li>
+    <li><a href="#texas-dc">Texas&rsquo;s governor-elect will keep new data centres paused until the Legislature writes rules</a></li>
+    <li><a href="#measles">US measles cases hit 5,182; three deaths in a week</a></li>
+    <li><a href="#ca-ballots">Justice Department drops its bid to set aside 20,000 California ballots</a></li>
+    <li><a href="#hillsborough">Hillsborough voters make the school superintendent an elected job</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (7)</a> &mdash; ranked below the line, each one opens. <a href="#also-noted">Also noted</a> collapses interest-tag pointers after the footer.</p>
+</nav>
+
+<article id="miller-cos">
+  <h3>Stephen Miller becomes White House chief of staff on Monday</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (White House primary + NPR, NBC News, ABC Australia).</p>
+  <p>On Friday the White House published that President Trump has named Stephen Miller the 33rd White House chief of staff, succeeding Susie Wiles. The <a href="https://www.whitehouse.gov/releases/2026/11/president-trump-names-stephen-miller-as-33rd-white-house-chief-of-staff/">White House release</a> frames the move as a promotion of a day-one aide; Miller starts Monday, 9 November. Wiles moves to Trump&rsquo;s political operation.</p>
+  <p><a href="https://www.npr.org/2026/11/06/nx-s1-6032795/stephen-miller-replace-susie-wiles-trumps-chief-of-staff">NPR</a> and <a href="https://www.nbcnews.com/politics/2026-election/live-blog/rump-taps-stephen-miller-chief-staff-wiles-cabinet-midterm-elections-rcna607914">NBC News</a> place the appointment three days after Democrats flipped both chambers. Miller has been deputy chief of staff for policy and a principal architect of the administration&rsquo;s immigration agenda. Trump told reporters Miller has been with him &ldquo;since the beginning&rdquo; and &ldquo;gets it.&rdquo; In a Saturday clip ahead of a <em>60 Minutes</em> interview, Trump also floated Cabinet changes and said he could go six months without insulting Democrats if that secured a deal.</p>
+  <p><b>What to watch:</b> whether Miller&rsquo;s elevation hardens immigration and administrative enforcement into the veto-and-executive phase of a divided government; who fills the deputy-policy seat; and which Cabinet names actually move after the Sunday interview.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; doubling down, or replacing a manager after a loss?</span>
+    <p><b>What is in dispute.</b> Significance dispute, not a facts dispute: the appointment itself is on the White House site. Allies cast Miller as the operator who will keep the 2024 agenda intact against a Democratic Congress. Critics read the same move as rejecting the midterm signal that aggressive immigration enforcement cost Republican seats.</p>
+    <p><b>Why the vantage differs.</b> The White House and Cabinet statements emphasise loyalty and border metrics. National political desks (NPR, NBC) emphasise timing — three days after a wave election — and Miller&rsquo;s public association with deportation targets. Access differs too: the primary document is a praise release; the reporting layer carries unnamed and on-record reaction the release omits.</p>
+    <p><b>What it means for the reader.</b> Treat personnel as a revealed preference. If the administration intended to moderate toward the new Congress, elevating the immigration hardliner is the wrong instrument. Watch the first two weeks of Miller&rsquo;s tenure for ICE arrest guidance and any staffing of legislative affairs that would signal negotiation rather than veto politics.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.whitehouse.gov/releases/2026/11/president-trump-names-stephen-miller-as-33rd-white-house-chief-of-staff/">White House release (primary)</a> &middot;
+    <a href="https://www.npr.org/2026/11/06/nx-s1-6032795/stephen-miller-replace-susie-wiles-trumps-chief-of-staff">NPR</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/live-blog/rump-taps-stephen-miller-chief-staff-wiles-cabinet-midterm-elections-rcna607914">NBC News live blog</a> &middot;
+    <a href="https://www.abc.net.au/news/2026-11-07/donald-trump-cos-susie-wiles-to-be-replaced-by-stephen-miller/107358840">ABC News Australia</a>
+  </p>
+</article>
+
+<article id="midterms">
+  <h3>Democrats take both chambers; Alaska and Mississippi still counting</h3>
+  <div class="meta">
+    <span class="chip">Elections</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (NBC News projections, Axios on NPV pathway, National Popular Vote org).</p>
+  <p><a href="https://www.nbcnews.com/politics/2026-election/democrats-capture-full-control-congress-nbc-news-projects-fueled-victo-rcna607042">NBC News</a> projects Democrats will hold about 259 House seats and a Senate majority after Tuesday&rsquo;s midterms, with flips including South Carolina, Texas, Maine and Ohio. As of Saturday afternoon, Alaska (Mary Peltola vs Dan Sullivan) and Mississippi (Scott Colom vs Cindy Hyde-Smith) remain uncalled and extremely close — both Democratic challengers still narrowly ahead in unfinished counts, per the same NBC live blog.</p>
+  <p>Separately, Democratic trifectas in Pennsylvania, Michigan, Arizona, Wisconsin and Nevada reopen a path for the <a href="https://www.nationalpopularvote.com/midterm-election-results-5-states-provide-way-national-popular-vote-reach-270-during-2027">National Popular Vote Interstate Compact</a>. Those five states total 61 electoral votes; if they join the existing 222, the compact would clear 270 and bind electors to the national popular-vote winner for 2028. <a href="https://www.axios.com/2026/11/04/democrats-electoral-college-popular-vote-2028">Axios</a> notes bills would still have to pass in each state, and legal challenges are certain.</p>
+  <p><b>What to watch:</b> certification of AK and MS; whether any of the five trifecta states actually introduce NPV bills in January; and the House Speaker fight on the Democratic side, where grassroots pressure against Hakeem Jeffries is loud but caucus alternatives are thin.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; wave mandate or unfinished math?</span>
+    <p><b>What is in dispute.</b> Facts dispute on the final Senate margin until Alaska and Mississippi certify, and a significance dispute on whether the NPV pathway is imminent or speculative.</p>
+    <p><b>Why the vantage differs.</b> Network decision desks publish projections once outstanding ballots cannot reverse the chamber call; advocacy groups (National Popular Vote) publish the arithmetic of a path, not enacted law. Timing matters: trifecta control exists now, but legislation does not.</p>
+    <p><b>What it means for the reader.</b> Chamber control for January is settled enough to price divided government. NPV activation is not — treat it as a 2027 legislative watch item, not a 2026 fait accompli. The two leftover Senate races can still change committee math by a seat or two.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/2026-election/democrats-capture-full-control-congress-nbc-news-projects-fueled-victo-rcna607042">NBC News projection</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/live-blog/rump-taps-stephen-miller-chief-staff-wiles-cabinet-midterm-elections-rcna607914">NBC on AK/MS counts</a> &middot;
+    <a href="https://www.axios.com/2026/11/04/democrats-electoral-college-popular-vote-2028">Axios on NPV</a> &middot;
+    <a href="https://www.nationalpopularvote.com/midterm-election-results-5-states-provide-way-national-popular-vote-reach-270-during-2027">National Popular Vote</a>
+  </p>
+</article>
+
+<article id="jobs-fed">
+  <h3>Payrolls rose 165,000 and markets reprice a December Fed hike</h3>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (BLS primary + CNBC on Daly/markets + Street Insider/Reuters market odds).</p>
+  <p>The <a href="https://www.bls.gov/news.release/empsit.htm">Bureau of Labor Statistics</a> reported Friday that total nonfarm payroll employment rose by 165,000 in October and the unemployment rate was little changed at 4.1 percent. Gains concentrated in professional and business services (+70,000), health care (+42,000), and transportation and warehousing (+25,000). Average hourly earnings rose 0.4 percent on the month to $38.00, up 3.1 percent over the year. August and September were revised up a combined 84,000.</p>
+  <p>That print pulled December rate-hike odds back up. <a href="https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html">San Francisco Fed President Mary Daly</a> told CNBC that &ldquo;more is likely to be needed,&rdquo; and market pricing moved toward roughly an 80 percent chance of a quarter-point increase at the 8–9 December FOMC meeting. The funds rate still sits at 3.75–4.00 percent after the October hold. For the week, the S&amp;P 500 fell about 2.7 percent and the Nasdaq about 3.4 percent — the market&rsquo;s worst week since June — before a Friday chip rebound.</p>
+  <p><b>What to watch:</b> the 4 December November employment report; any CPI/PCE prints before the December meeting; and whether AI-demand jitters that cut hike odds on Thursday reappear if mega-cap guidance softens.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bls.gov/news.release/empsit.htm">BLS Employment Situation — October 2026 (primary)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html">CNBC on the jobs print</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html">CNBC / Daly</a> &middot;
+    <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">October FOMC statement</a>
+  </p>
+</article>
+
+<article id="iran-qeshm">
+  <h3>Trump confirms &ldquo;minor strikes&rdquo; on Iranian air defences at Qeshm</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics — US channel</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (CNBC, Al Jazeera, BBC on the Monday precursor).</p>
+  <p>After landing in West Palm Beach on Friday, President Trump told reporters the United States had carried out &ldquo;minor strikes&rdquo; that knocked out an Iranian anti-aircraft system &ldquo;in about 15 minutes, maybe five.&rdquo; <a href="https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html">CNBC</a> and <a href="https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island">Al Jazeera</a> tie the remarks to Iranian reports of two missile strikes in the Suza area of Qeshm Island in the Strait of Hormuz — the same island the US hit in a limited defensive action on Monday, per earlier BBC/CBS reporting. Iranian state media also claimed an MQ-9 shoot-down; CENTCOM called the situation &ldquo;relatively calm&rdquo; and later posted a reward of up to $20 million for information on Iran&rsquo;s nuclear programme.</p>
+  <p>Trump also said talks with Iranian representatives are underway and that &ldquo;we&rsquo;ve made a lot of progress,&rdquo; without detail. UKMTO counted at least 11 ship attacks in and around Hormuz in the week ending 6 November, with transit volumes still roughly 65 percent below pre-conflict levels — the oil-and-gas channel that makes this a US household story.</p>
+  <p><b>What to watch:</b> whether &ldquo;minor&rdquo; stays minor after the midterms; any confirmed tanker-rate or AAA diesel move tied to Hormuz risk; and whether mediators produce a written proposal before the next CENTCOM update.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; the same explosions, different labels</span>
+    <p><b>What is in dispute.</b> Facts dispute on characterisation and sequence: Washington describes limited defensive strikes on air defences; Iranian outlets emphasise explosions on Qeshm and claim drone kills. Trump did not explicitly name Qeshm in the West Palm Beach remarks even as outlets paired his words with the island reports.</p>
+    <p><b>Why the vantage differs.</b> US officials speak from a force-protection frame after IRGC fire on aircraft; Iranian state media speak from a sovereignty and deterrence frame. Access is asymmetric — CENTCOM offers calm-language quotes, Iranian agencies offer local explosion reports — and timing spans Monday&rsquo;s strike and Friday&rsquo;s follow-on within one news cycle.</p>
+    <p><b>What it means for the reader.</b> Price Hormuz as a live risk premium, not a full war restart, until either tanker throughput collapses further or a major strike package is acknowledged. The diesel-and-gasoline channel is the domestic meter; watch official EIA weekly stocks and AAA pump averages before treating any single explosion report as a regime change in energy prices.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/07/trump-us-minor-strikes-iran-qeshm-island.html">CNBC</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island">Al Jazeera</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cx240mrm3g8vo">BBC on the Monday strikes</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation">Al Jazeera / UKMTO transit</a>
+  </p>
+</article>
+
+<article id="texas-dc">
+  <h3>Texas&rsquo;s governor-elect will keep new data centres paused until the Legislature writes rules</h3>
+  <div class="meta">
+    <span class="chip">Data centres &amp; AI infrastructure</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (Texas Tribune, ABC13 Houston, USA Today/CNN interview, Houston Chronicle).</p>
+  <p>Governor-elect Gina Hinojosa, who defeated Greg Abbott on Tuesday, has restated a campaign pledge to keep a moratorium on new data-centre approvals until the Texas Legislature passes community, water, power and transparency rules. The <a href="https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/">Texas Tribune</a> notes her freeze would outlast Abbott&rsquo;s existing audit pause on environmental permits and ERCOT grid connections. In a CNN interview carried by <a href="https://www.usatoday.com/story/news/nation/2026/11/05/texas-is-done-with-data-centers-until-further-notice-new-governor-says/92634485007/">USA Today</a>, she said rural communities have been &ldquo;taken advantage of&rdquo; and that protections and economic development are &ldquo;not mutually exclusive.&rdquo;</p>
+  <p><a href="https://abc13.com/post/governor-elect-gina-hinojosa-vows-ban-future-data-centers-texas/20021143/">ABC13 Houston</a> emphasises the legal limit: projects already permitted or under construction are unlikely to be frozen; the bite is on new approvals. The <a href="https://www.houstonchronicle.com/business/economy/article/democratic-texas-data-center-hinojosa-meaning-22511688.php">Houston Chronicle</a>, talking to developers and analysts, expects delays into mid-2027 and some cancellations or relocations, while still forecasting Texas remains a national leader. Elon Musk, who spent heavily against Democrats in Texas, posted that data centres in space were &ldquo;looking pretty appealing.&rdquo;</p>
+  <p><b>What to watch:</b> January session bill text on water, NDAs, tax abatements and union labour; whether the Republican Senate bottlenecks a House-passed package; and interconnection-queue behaviour at ERCOT while the pause holds.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; industry pause or political theatre?</span>
+    <p><b>What is in dispute.</b> Significance dispute: how binding and how long. Industry voices describe a multi-month chill with cancellations; Hinojosa&rsquo;s camp describes a bridge to legislated guardrails, not a permanent ban.</p>
+    <p><b>Why the vantage differs.</b> Local newsrooms (Tribune, Chronicle, ABC13) sit on community water/power complaints and county frustration over weak land-use tools. National business coverage prices Texas as a share of the US AI build-out. Timing: Abbott&rsquo;s audit was already a pause; Hinojosa extends the political half-life past the election.</p>
+    <p><b>What it means for the reader.</b> For AI infrastructure exposure, treat Texas greenfield timelines as slipped, not cancelled, until a statute either lands or dies in the Senate. Operating campuses and financed construction are a different bucket from speculative queue positions.</p>
+  </div>
+  <details>
+    <summary>Dig deeper &mdash; what &ldquo;moratorium&rdquo; can and cannot do before January</summary>
+    <div class="exp">
+      <p>Abbott had already directed ERCOT to audit large-load interconnection requests and told environmental regulators to pause new permits while data on tax incentives, water and self-supply were collected. Hinojosa&rsquo;s pledge is to keep approvals stopped until the Legislature writes durable rules — a longer political commitment than an audit calendar. She takes office 19 January; a law passed next session may not take effect until September, which is why analysts float mid-2027 as the realistic reopen window.</p>
+      <p>The policy wishlist she campaigned on — union labour requirements, limits on nondisclosure agreements, water-first rules, ending sales-tax giveaways, and local voice in siting — needs House and Senate agreement. Democrats will control the House; Republicans are expected to hold the Senate. That split is the binding constraint, more than the governor&rsquo;s preference letter.</p>
+    </div>
+  </details>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.texastribune.org/2026/11/04/data-center-texas-pause-gina-hinojosa-governor-policies/">Texas Tribune</a> &middot;
+    <a href="https://abc13.com/post/governor-elect-gina-hinojosa-vows-ban-future-data-centers-texas/20021143/">ABC13 Houston</a> &middot;
+    <a href="https://www.usatoday.com/story/news/nation/2026/11/05/texas-is-done-with-data-centers-until-further-notice-new-governor-says/92634485007/">USA Today</a> &middot;
+    <a href="https://www.houstonchronicle.com/business/economy/article/democratic-texas-data-center-hinojosa-meaning-22511688.php">Houston Chronicle</a>
+  </p>
+</article>
+
+<article id="measles">
+  <h3>US measles cases hit 5,182; three deaths in a week</h3>
+  <div class="meta">
+    <span class="chip">Public health</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (CIDRAP, ABC News, Contagion Live / CDC-cited tallies). Negative-check lead.</p>
+  <p>Confirmed US measles cases reached <b>5,182</b> as of the CDC&rsquo;s 5 November update — the highest annual total since 1991 — with infections in 45 states plus D.C., according to <a href="https://www.cidrap.umn.edu/measles/us-measles-total-2026-tops-5100-cases">CIDRAP</a> and <a href="https://abcnews.com/Health/measles-cases-surpass-5000-us-infections-confirmed-45/story?id=137907591">ABC News</a>. About 96 percent of cases are in unvaccinated people or people with unknown status; children and adolescents are roughly 59 percent of cases; at least 11 percent have been hospitalised.</p>
+  <p>This was the deadliest week of the year so far: an upstate New York child, a Pennsylvania resident, and a Wisconsin infant. State health departments now count eight measles-associated deaths in 2026; the CDC has confirmed four and says its death tally is &ldquo;subject to change.&rdquo; A Pan American Health Organization committee meets 10–13 November to review whether measles has re-established itself in the United States, which has held elimination status since 2000.</p>
+  <p><b>What to watch:</b> the PAHO decision; whether Wisconsin and Pennsylvania weekly adds keep decelerating; and kindergarten MMR coverage, which fell to 92.4 percent in 2025–26 from 95.2 percent pre-pandemic.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; four deaths or eight?</span>
+    <p><b>What is in dispute.</b> Facts dispute on the death count: CDC&rsquo;s confirmed national total (4) versus state-reported measles-associated deaths (8). Case counts also diverge state-by-state — Wisconsin and Pennsylvania publish higher totals than the CDC&rsquo;s lagged national table.</p>
+    <p><b>Why the vantage differs.</b> Federal confirmation requires a review pipeline; state health departments publish closer to the clinical event. Access and timing, not ideology, explain most of the gap — CDC itself flags that its death number can change.</p>
+    <p><b>What it means for the reader.</b> Use 5,182 cases as the national case meter and treat deaths as &ldquo;at least four confirmed, eight reported by states.&rdquo; The elimination-status review next week is the policy hinge; vaccination coverage is the stock variable that will decide whether 2027 repeats this.</p>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cidrap.umn.edu/measles/us-measles-total-2026-tops-5100-cases">CIDRAP</a> &middot;
+    <a href="https://abcnews.com/Health/measles-cases-surpass-5000-us-infections-confirmed-45/story?id=137907591">ABC News</a> &middot;
+    <a href="https://www.contagionlive.com/view/measles-update-november-6-2026">Contagion Live update</a> &middot;
+    <a href="https://www.washingtonpost.com/health/2026/11/07/cdc-has-recorded-more-than-5000-measles-cases-this-year/">Washington Post</a>
+  </p>
+</article>
+
+<article id="ca-ballots">
+  <h3>Justice Department drops its bid to set aside 20,000 California ballots</h3>
+  <div class="meta">
+    <span class="chip">Elections / electoral process</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (California AG primary filing notice, LA Times, Just the News).</p>
+  <p>On 6 November the Justice Department filed a <a href="https://oag.ca.gov/system/files/attachments/press-docs/11-6-2026-voluntary-dismissal.pdf">notice of voluntary dismissal</a> in its suit seeking to force California to segregate more than 20,000 mail ballots it alleged may have been cast by noncitizens. California officials had argued the federal list was outdated and included lawful voters; after the Supreme Court denied an emergency appeal, the ballots had already been commingled, making segregation impossible. <a href="https://www.latimes.com/politics/story/2026-11-06/feds-move-to-dismiss-case-over-20-000-california-ballots-after-supreme-court-denied-appeal">The Los Angeles Times</a> and <a href="https://justthenews.com/government/federal-agencies/justice-department-drops-attempt-set-aside-california-ballots-it">Just the News</a> both treat the dismissal as the end of this particular midterm intervention, not of the broader citizenship-and-voting fight.</p>
+  <p><b>What to watch:</b> whether DOJ reframes the same theory as a post-certification or 2028 registration case; and how California&rsquo;s documented list-quality objections travel to other states facing similar federal demands.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://oag.ca.gov/system/files/attachments/press-docs/11-6-2026-voluntary-dismissal.pdf">US notice of voluntary dismissal (via CA AG)</a> &middot;
+    <a href="https://oag.ca.gov/news/press-releases/attorney-general-bonta-trump-administration-throws-towel-drops-baseless-lawsuit">California AG Bonta statement</a> &middot;
+    <a href="https://www.latimes.com/politics/story/2026-11-06/feds-move-to-dismiss-case-over-20-000-california-ballots-after-supreme-court-denied-appeal">Los Angeles Times</a> &middot;
+    <a href="https://justthenews.com/government/federal-agencies/justice-department-drops-attempt-set-aside-california-ballots-it">Just the News</a>
+  </p>
+</article>
+
+<article id="hillsborough">
+  <h3>Hillsborough voters make the school superintendent an elected job</h3>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 (Florida Politics, WTSP).</p>
+  <p>Hillsborough County voters approved three referendums on Tuesday, per <a href="https://floridapolitics.com/archives/829610-hillsborough-voters-approve-commission-expansion-elected-superintendent-school-tax-renewal/">Florida Politics</a> and <a href="https://www.wtsp.com/article/news/politics/elections/hillsborough-voters-approve-3-referendums-what-happens-next/67-8cc7e480-fb52-4199-8d00-19483690f9df">WTSP</a>. The school superintendent becomes a partisan elected office starting with the 2028 general election (58 percent yes), reversing a 1966 switch to an appointed superintendent. Voters also expanded the County Commission from seven seats to nine single-member districts (52 percent) — with a newly Democratic 4–3 board set to draw the maps by 1 October 2027 — and renewed the half-cent school sales tax for 2029–2038 (62 percent).</p>
+  <p><b>What to watch:</b> the 2027 districting process under Democratic control; candidate filing for the 2028 superintendent race; and whether other Florida counties copy the elected-superintendent model.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://floridapolitics.com/archives/829610-hillsborough-voters-approve-commission-expansion-elected-superintendent-school-tax-renewal/">Florida Politics</a> &middot;
+    <a href="https://www.wtsp.com/article/news/politics/elections/hillsborough-voters-approve-3-referendums-what-happens-next/67-8cc7e480-fb52-4199-8d00-19483690f9df">WTSP</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Ranked below the line. Short items are full stories for audit parsing; each carries one marker.</p>
+
+<article id="also-npv">
+  <h3>National Popular Vote Compact sits 61 electoral votes from activation if five new Democratic trifectas join</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Pennsylvania, Michigan, Arizona, Wisconsin and Nevada now have Democratic trifectas. <a href="https://www.nationalpopularvote.com/midterm-election-results-5-states-provide-way-national-popular-vote-reach-270-during-2027">National Popular Vote</a> and <a href="https://www.axios.com/2026/11/04/democrats-electoral-college-popular-vote-2028">Axios</a> both walk the arithmetic to 283 if all five enact the compact.</p>
+  <p class="btl"><b>Below the line:</b> pathway, not statute — belongs under the midterms lead until a bill is introduced.</p>
+</article>
+
+<article id="also-quinones">
+  <h3>Jason Reding Quiñones resigns as US attorney for the Southern District of Florida</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Effective 6 November, per <a href="https://floridapolitics.com/archives/830103-jason-reding-quinones-resigns-as-south-floridas-top-federal-prosecutor/">Florida Politics</a> and <a href="https://www.nbcnews.com/politics/justice-department/trump-doj-appointee-led-grand-conspiracy-probe-trump-foes-resigns-rcna607839">NBC News</a>. He oversaw the so-called &ldquo;grand conspiracy&rdquo; probe; no public reason given; Yara Klukas expected as acting.</p>
+  <p class="btl"><b>Below the line:</b> personnel change with local Florida relevance but no stated policy shift yet.</p>
+</article>
+
+<article id="also-crist">
+  <h3>Charlie Crist wins the St. Petersburg mayoral race</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Regional election wrap reporting, including <a href="https://centralflorida.substack.com/p/moore-russell-orange-county-charlie-crist-st-petersburg">Central Florida coverage</a>, has Crist defeating incumbent Ken Welch. Thin same-day multi-desk corroboration at gather time.</p>
+  <p class="btl"><b>Below the line:</b> local personnel outcome; consequence is municipal, not state policy.</p>
+</article>
+
+<article id="also-sec">
+  <h3>SEC updates small-entity definitions for funds and advisers</h3>
+  <div class="meta"><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 (primary).</p>
+  <p>The <a href="https://www.sec.gov/newsroom/press-releases/2026-112-sec-adopts-amendments-update-definitions-small-entity-investment-companies-investment-advisers">SEC</a> adopted amendments raising asset thresholds and adding inflation adjustments for investment companies and advisers.</p>
+  <p class="btl"><b>Below the line:</b> real for compliance teams, second-order for a general brief.</p>
+</article>
+
+<article id="also-arch">
+  <h3>Federal judge blocks Trump’s planned 250-foot triumphal arch for 14 days</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>A US federal judge issued a temporary block less than an hour after a planning commission approved the project, per the <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-7-2026/4114860">Anadolu 7 November morning briefing</a>.</p>
+  <p class="btl"><b>Below the line:</b> symbolic fight; low policy consequence relative to Cos and Congress.</p>
+</article>
+
+<article id="also-houston">
+  <h3>Houston directs police to stop routine ICE-alert cooperation</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Reported in the <a href="https://usnewsamerica.com/the-morning-briefing-november-7-2026/">7 November national morning briefing</a> as a sharp local turn after the midterms.</p>
+  <p class="btl"><b>Below the line:</b> municipal policy; watch for state preemption response before promoting.</p>
+</article>
+
+<article id="also-abu-dhabi">
+  <h3>Putin says the next Russia–US–Ukraine round starts Tuesday in Abu Dhabi</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Confirmed in <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-7-2026/4114860">Anadolu’s 7 November morning briefing</a>. US channel exists but no new US negotiating position published with it.</p>
+  <p class="btl"><b>Below the line:</b> calendar item until a US readout moves the substance.</p>
+</article>
+
+
+<div class="fb">
+  <p>Was the Also-today boundary right today?</p>
+  <label><input type="radio" name="fb-also" value="yes"> Yes — right things below the line</label>
+  <label><input type="radio" name="fb-also" value="promote"> Promote one of these next time</label>
+  <label><input type="radio" name="fb-also" value="cut"> Cut this tier when thin</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 18 sources checked; 11 outside standing watchlist threads. Outside-first gather: Anadolu morning briefing, Axios top, ABC Health, CIDRAP, Texas Tribune, Florida Politics, WTSP, Al Jazeera, BBC, USA Today, CNBC, then White House / BLS / SEC / Fed primaries and NBC/NPR political desks. Negative check: measles cleared as the biggest off-list story and took a lead slot.</p>
+  <p><b>Per-lead independent accounts:</b> Miller 4 · Midterms 3 · Jobs/Fed 3 · Iran 3 · Texas DC 4 · Measles 3 · CA ballots 3 · Hillsborough 2. Marker tallies — PS:2 · IC:6 leads + 2 shorts · SS:4 shorts · U:0. Divergence boxes: 5.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>. No open or recently closed brief-feedback items at run start.</p>
+  <p>Published as <code>issues/2026-11-07-v2.html</code>. Audit gate: <code>scripts/audit.py</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> — interest-tag pointers that did not clear the main bar (8–12 items; closed by default)</summary>
+  <ul class="noted-list">
+    <li>Google committed about $15 billion to Malaysian data-centre campuses and clean power for 2027–28 as US siting friction rises.</li>
+    <li>Google also announced a first Wyoming campus in Laramie County, cited around $17 billion with a large fuel-cell power plan.</li>
+    <li>Loudoun County, Virginia, officials say data centres on roughly 3 percent of land generate close to 40 percent of local tax revenue — the counter-argument in the restriction debate.</li>
+    <li>European campaigners under a &ldquo;Stop Dirty Data Centres&rdquo; banner called for a continent-wide moratorium on large AI facilities.</li>
+    <li>IREN shares fell sharply after earnings when a Microsoft-linked Texas timeline slipped, illustrating equity sensitivity to data-centre execution risk.</li>
+    <li>Trump said on Truth Social he had offered UFC&rsquo;s Dana White the White House press secretary job; White had not publicly accepted at gather time.</li>
+    <li>Florida Amendment 3&rsquo;s homestead exemption expansion advanced at the state level; local budget offices will price the property-tax hit into 2027–28 plans.</li>
+    <li>Tesla signalled Cybertruck production at Gigafactory Texas winding down around mid-2027 to free capacity for Cybercab.</li>
+    <li>Spain announced a further €437 million military package for Ukraine after Zelenskyy met Sánchez in Madrid.</li>
+    <li>CENTCOM posted a reward of up to $20 million for information on Iran&rsquo;s nuclear programme the same night as the Qeshm strike reports.</li>
+  </ul>
+</details>
+
+</div>
+<script>
+// Feedback helper — assembles a GitHub new-issue URL for brief-feedback
+(function(){
+  const btn = document.createElement('div');
+  btn.className = 'submit';
+  btn.innerHTML = '<button type="button" id="fb-submit">Send feedback as a GitHub issue</button>';
+  const foot = document.querySelector('footer');
+  if (foot) foot.appendChild(btn);
+  document.getElementById('fb-submit')?.addEventListener('click', function(){
+    const parts = [];
+    document.querySelectorAll('.fb input[type=radio]:checked').forEach(r => {
+      parts.push(r.name + '=' + r.value);
+    });
+    const body = encodeURIComponent('News Bot 2.0 feedback for 2026-11-07-v2\\n\\n' + (parts.join('\\n') || '(no radios selected)'));
+    const title = encodeURIComponent('brief-feedback: 2026-11-07-v2');
+    window.open('https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback&title=' + title + '&body=' + body, '_blank');
+  });
+})();
+</script>
+</body>
+</html>
