@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-08",
+  "edition": "v2-morning",
+  "filename": "issues/2026-11-08-v2.html",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Opened with AP 2:10 a.m. and 4:58 a.m. EST summaries, Reuters world and U.S. domestic wraps, BBC Remembrance Sunday live and UK newspaper roundup, Kyodo, Xinhua, Anadolu morning briefing, and Axios Sunday top, then a Florida sweep (FDOT Tampa Bay, WFLA, WUSF, Axios Tampa Bay, Bay News 9) before returning to Krakow, Riyadh/Aramco, Zaporizhzhia, Mississippi, Eisenkot, House Democrats, Jessie Liu, and the Nvidia/Huang letter.",
+  "broad_sweeps": [
+    {
+      "source": "AP News Summary 2:10 a.m. EST via madisoncourier.com",
+      "outside": true
+    },
+    {
+      "source": "AP News Summary 4:58 a.m. EST via guardonline.com",
+      "outside": true
+    },
+    {
+      "source": "Reuters world news summary via devdiscourse.com",
+      "outside": true
+    },
+    {
+      "source": "Reuters Morning Bid / MAGA and AG wraps via streetinsider.com",
+      "outside": true
+    },
+    {
+      "source": "Reuters world items via spotlightnews.us (ZNPP, Miller, Brand)",
+      "outside": true
+    },
+    {
+      "source": "Reuters US domestic news summary via 1001rss.com",
+      "outside": true
+    },
+    {
+      "source": "BBC Remembrance Sunday live blog",
+      "outside": true
+    },
+    {
+      "source": "BBC UK newspaper headlines 8 November",
+      "outside": true
+    },
+    {
+      "source": "Kyodo News Digest Nov. 8",
+      "outside": true
+    },
+    {
+      "source": "Xinhua world news summary 0030 GMT Nov. 8",
+      "outside": true
+    },
+    {
+      "source": "Anadolu Morning Briefing Nov. 8",
+      "outside": true
+    },
+    {
+      "source": "Axios Sunday top / 2026-11-08 hub",
+      "outside": true
+    },
+    {
+      "source": "FDOT Tampa Bay lane closures Nov. 8-14",
+      "outside": true
+    },
+    {
+      "source": "WFLA Manatee County e-bike age restriction session",
+      "outside": true
+    },
+    {
+      "source": "WUSF Amendment 3 Suncoast budget impact",
+      "outside": true
+    },
+    {
+      "source": "Axios Tampa Bay Amendment 3 local split",
+      "outside": true
+    },
+    {
+      "source": "Bay News 9 Pasco mosquito-control funding warning",
+      "outside": true
+    },
+    {
+      "source": "Paradise News FL weekend events (negative check / anti-topic skim)",
+      "outside": true
+    },
+    {
+      "source": "Al Jazeera Saudi Aramco Riyadh shrapnel / Houthi intercepts",
+      "outside": true
+    },
+    {
+      "source": "CNBC Saudi Aramco Riyadh building attack (Reuters witness)",
+      "outside": true
+    },
+    {
+      "source": "The Guardian Krakow terrorism investigation",
+      "outside": false
+    },
+    {
+      "source": "Deutsche Welle Poland begins two days of mourning",
+      "outside": false
+    },
+    {
+      "source": "NBC News Krakow far-right / family IDs / officers",
+      "outside": false
+    },
+    {
+      "source": "Ukrainska Pravda Energoatom ZNPP 16th blackout",
+      "outside": false
+    },
+    {
+      "source": "Kyiv Post ZNPP 16th blackout of 2026",
+      "outside": false
+    },
+    {
+      "source": "Anadolu Agency IAEA 27th external-power loss since the war",
+      "outside": false
+    },
+    {
+      "source": "Arab News / Reuters ZNPP generators and IAEA two-week fuel note",
+      "outside": false
+    },
+    {
+      "source": "All Israel News Eisenkot mandate ceremony preview and Liberman comments",
+      "outside": false
+    },
+    {
+      "source": "Al Jazeera Eisenkot tap (Saturday story, re-checked for ceremony timing)",
+      "outside": false
+    },
+    {
+      "source": "Action News 5 / WMC Mississippi Senate Sunday update",
+      "outside": false
+    },
+    {
+      "source": "AP House Democrats healthcare / Iran war / tariff priorities (via Sunday AP wrap and article URL)",
+      "outside": true
+    },
+    {
+      "source": "AP Judge Reyes / Jessie Liu golf-course ethics probe (via Sunday AP wrap and article URL)",
+      "outside": true
+    },
+    {
+      "source": "House Select Committee on the CCP letter to Jensen Huang (Nov. 5 release)",
+      "outside": true
+    },
+    {
+      "source": "Axios Jensen Huang congressional briefing request",
+      "outside": true
+    },
+    {
+      "source": "AAA gasprices.aaa.com national and Florida/Tampa diesel and gasoline prints",
+      "outside": false
+    },
+    {
+      "source": "USA Today / WAPT / The Hill Mississippi-Alaska re-check (no material Sunday movement beyond Action News 5)",
+      "outside": false
+    },
+    {
+      "source": "AJC / The Current Georgia HD-154 memory-card re-check (no Sunday certification)",
+      "outside": false
+    },
+    {
+      "source": "Nikkei Asia ZNPP external-power headline (corroborating Reuters/IAEA)",
+      "outside": false
+    },
+    {
+      "source": "Al Jazeera feature on AI data-center waste heat",
+      "outside": true
+    },
+    {
+      "source": "Slicast AI infrastructure briefing Nov. 8 (Cheyenne recap, no new filing)",
+      "outside": true
+    },
+    {
+      "source": "Federal Reserve 2026 press-release index (no Sunday print)",
+      "outside": true
+    },
+    {
+      "source": "France 24 Middle East live (Riyadh financial district / Yemen) skim",
+      "outside": true
+    },
+    {
+      "source": "Kyiv Independent / Politico / Investing.com Reuters recaps of Peskov on the Abu Dhabi delegation",
+      "outside": false
+    }
+  ],
+  "sources_checked_total": 43,
+  "sources_outside_watchlist": 28,
+  "negative_check": {
+    "result": "Largest story off the standing-beat menu was the UK Remembrance Sunday Cenotaph ceremony (BBC live); declined for lack of a U.S. policy channel. The significant underreported story that cleared the bar was Zaporizhzhia's 16th external-power blackout of 2026, verified by Energoatom, IAEA via Anadolu, and Reuters via Arab News, with a U.S. channel through nuclear safety and this week's Abu Dhabi talks; promoted to a lead.",
+    "declined": [
+      "UK Remembrance Sunday / King at the Cenotaph (no U.S. channel)",
+      "Pope Leo XIV Uruguay feast-day Mass, en route to Argentina (no U.S. channel)",
+      "New Zealand National-Labour first-count deadlock (no clear U.S. channel)",
+      "Paraguay charges against ousted president Santiago Pena (no U.S. channel)",
+      "College/NFL results and other sports",
+      "Celebrity and entertainment items in UK Sunday papers"
+    ],
+    "underreported_judgment": "Zaporizhzhia's Sunday generator blackout was underreported on U.S. Sunday-morning political desks relative to midterm aftermath colour; judged underreported-but-significant and included as a lead."
+  },
+  "beat_coverage": {
+    "elections_and_electoral_process": {
+      "sources": [
+        "Action News 5",
+        "USA Today/WAPT/The Hill re-check",
+        "AJC/The Current re-check",
+        "Reuters AG wrap via StreetInsider"
+      ],
+      "strongest": "Mississippi still ~2,500 votes apart with a Nov. 13 certification deadline; Democrats' five AG pickups as a consequence write-through",
+      "cleared": true,
+      "why": "Mississippi update cleared as a short (no material margin change, so not a lead). Five AG flips cleared as a short. Georgia HD-154 had no Sunday certification trigger."
+    },
+    "domestic_institutions": {
+      "sources": [
+        "AP House Democrats wrap",
+        "AP Judge Reyes/Jessie Liu wrap",
+        "AP GOP-crisis analysis in 4:58 a.m. summary"
+      ],
+      "strongest": "House Democrats' stated first votes (Medicaid, ACA subsidies, Iran war, tariffs) and Judge Reyes's intention to have Jessie Liu examine whether the government misled her",
+      "cleared": true,
+      "why": "Both cleared as shorts, not leads: leadership intentions rather than introduced text, and a stated intention rather than a docketed order we retrieved. GOP 'extinction-level event' analysis declined as post-election colour."
+    },
+    "international_with_us_channel": {
+      "sources": [
+        "Guardian",
+        "NBC",
+        "DW",
+        "Al Jazeera",
+        "CNBC",
+        "Ukrainska Pravda",
+        "Kyiv Post",
+        "Anadolu",
+        "Arab News",
+        "All Israel News"
+      ],
+      "strongest": "Krakow terrorism investigation + Aramco Riyadh shrapnel + Zaporizhzhia blackout",
+      "cleared": true
+    },
+    "florida_tampa_bay": {
+      "sources": [
+        "FDOT Tampa Bay",
+        "WFLA",
+        "WUSF",
+        "Axios Tampa Bay",
+        "Bay News 9",
+        "AAA Florida/Tampa prints",
+        "Anadolu Iron Gate recap"
+      ],
+      "strongest": "Amendment 3 local budget/mosquito-control impact and the Sunday diesel print",
+      "cleared": false,
+      "why_failed": "No new statewide policy trigger. Amendment 3 local fallout and Manatee e-bike talks stayed in Also noted. Iron Gate had no Sunday release. DeSantis 2028 chatter remains horse-race colour."
+    },
+    "data_centers_power_ai": {
+      "sources": [
+        "Slicast AI infrastructure Nov. 8",
+        "Al Jazeera waste-heat feature",
+        "Google/AEP/DCD Cheyenne recap (no new Sunday filing)"
+      ],
+      "strongest": "No new U.S. campus or interconnection filing; Cheyenne remains Saturday's story",
+      "cleared": false,
+      "why_failed": "Sunday AI-infrastructure copy was a recap (Cheyenne) or a feature (waste heat), not a new verifiable trigger."
+    },
+    "ai_and_financial_services": {
+      "sources": [
+        "House Select Committee on the CCP",
+        "Axios Huang letter coverage",
+        "Federal Reserve 2026 press-release index"
+      ],
+      "strongest": "Three House chairs' request that Jensen Huang brief them on Nov. 18",
+      "cleared": true,
+      "why": "Cleared as a short: national-security/AI overlap with a dated letter and a November 11 response deadline. No Sunday SEC or Fed rule print."
+    }
+  },
+  "continuations": [
+    {
+      "story": "Krakow terrorism investigation and mourning",
+      "trigger": "National prosecutor opens a terrorism investigation; police identify the three bodies at the suspect's home as his parents and sister; national mourning begins Nov. 8-9"
+    }
+  ],
+  "article_independent_source_counts": {
+    "krakow": 3,
+    "aramco": 2,
+    "znpp": 4,
+    "eisenkot": 2,
+    "mississippi": 1,
+    "house-dems": 1,
+    "liu": 1,
+    "huang": 2,
+    "ags": 1
+  },
+  "radio_format": "original News Bot: one thread-label fb block with 3 options per lead; one On the items below the line block after Also today",
+  "feedback_applied": "No open or recently closed brief-feedback issues on historiocity/News-Agent-v2 at run start."
+}
