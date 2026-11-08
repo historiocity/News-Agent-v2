@@ -28,6 +28,9 @@ class StoryExtractor(HTMLParser):
         self.current = None
         self.in_lead = False
         self.capture = []
+        self.in_h3 = False
+        self.in_h2 = False
+        self.tier = "lead"
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -42,9 +45,13 @@ class StoryExtractor(HTMLParser):
                 "is_continuation": False,
                 "divergence": False,
                 "radio_names": set(),
+                "tier": self.tier,
             }
             self.in_lead = True
+            self.in_h3 = True
             self.capture = []
+        if tag == "h2":
+            self.in_h2 = True
         if tag == "a" and "href" in attrs and self.current is not None:
             href = attrs["href"]
             domain = self._domain(href)
@@ -56,6 +63,10 @@ class StoryExtractor(HTMLParser):
                 self.current["radio_names"].add(name)
 
     def handle_data(self, data):
+        if self.in_h2 and "also today" in data.lower():
+            self.tier = "also"
+        if self.in_h3 and data.strip():
+            self.capture.append(data.strip())
         if self.current is not None:
             text = data.strip()
             if text:
@@ -69,6 +80,10 @@ class StoryExtractor(HTMLParser):
                     self.current["divergence"] = True
 
     def handle_endtag(self, tag):
+        if tag == "h2":
+            self.in_h2 = False
+        if tag == "h3":
+            self.in_h3 = False
         if tag == "h3" and self.current is not None:
             self.current["title"] = " ".join(self.capture).strip()
             self.capture = []
@@ -132,18 +147,28 @@ def main():
             failures.append(f"Story '{s.get('title','')[:60]}': {err}")
 
     # Per-lead radio buttons (hard gate)
-    # Expect 2–4 distinct radio groups per lead story (name starting with fb- or similar)
+    # Original News Bot format: each lead has exactly ONE feedback question (one radio group,
+    # typically 3 options). Stories after the "Also today" heading need no per-item radio;
+    # the tier gets one overall question. No story may carry more than one question.
     leads_missing_radios = []
+    too_many_radios = []
     for s in stories:
-        # Treat stories that look like leads (have a marker and substantial text) as requiring radios
-        if s.get("marker") and len(s.get("html", "")) > 200:
-            radio_count = len(s.get("radio_names", set()))
-            if radio_count < 2:
-                leads_missing_radios.append(s.get("title", "")[:50])
+        radio_count = len(s.get("radio_names", set()))
+        title = s.get("title", "")[:50]
+        if radio_count > 1:
+            too_many_radios.append(f"{title} ({radio_count})")
+        if s.get("tier") == "lead" and s.get("marker") and len(s.get("html", "")) > 200:
+            if radio_count < 1:
+                leads_missing_radios.append(title)
     if leads_missing_radios:
         failures.append(
-            f"Per-lead radio buttons missing or insufficient on {len(leads_missing_radios)} lead(s): "
+            f"Lead feedback question missing on {len(leads_missing_radios)} lead(s): "
             + "; ".join(leads_missing_radios)
+        )
+    if too_many_radios:
+        failures.append(
+            f"More than one feedback question on {len(too_many_radios)} story(ies) (max 1): "
+            + "; ".join(too_many_radios)
         )
 
     # Source count target (~40). Hard fail only if extremely low and no underreported judgment noted.

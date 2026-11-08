@@ -1,0 +1,273 @@
+{
+  "date": "2026-11-07",
+  "edition": "v2d-night",
+  "filename": "issues/2026-11-07d-v2.html",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Opened with AP evening summary, BBC/Guardian/PAP Krakow night updates, USA Today/WAPT/Fox/The Hill Mississippi-Alaska, Al Jazeera/WaPo/JPost Eisenkot, NBC/American Resolve Massie-Hegseth, Google blog+AEP+DCD Cheyenne, AJC/The Current Georgia HD-154, Guardian/BBC/Interfax Ukraine grid, then AAA diesel and CENTCOM Iron Gate primary.",
+  "broad_sweeps": [
+    {
+      "source": "AP News Summary ~8:48 p.m. EST via regional reprints",
+      "outside": true
+    },
+    {
+      "source": "AP Top Stories Nov 7 Yahoo syndication",
+      "outside": true
+    },
+    {
+      "source": "Guardian world / Krakow liveblog",
+      "outside": true
+    },
+    {
+      "source": "BBC Krakow far-right shooting",
+      "outside": true
+    },
+    {
+      "source": "PAP Polish president national mourning",
+      "outside": true
+    },
+    {
+      "source": "Deutsche Welle Krakow terrorism",
+      "outside": true
+    },
+    {
+      "source": "X search_news Krakow/Mississippi/Eisenkot/Hegseth/Cheyenne",
+      "outside": true
+    },
+    {
+      "source": "USA Today Mississippi Alaska legal fights",
+      "outside": true
+    },
+    {
+      "source": "WAPT Colom lead 2574",
+      "outside": true
+    },
+    {
+      "source": "Fox News Mississippi live updates",
+      "outside": true
+    },
+    {
+      "source": "The Hill Peltola absentee lawsuit",
+      "outside": true
+    },
+    {
+      "source": "Al Jazeera Eisenkot mandate",
+      "outside": true
+    },
+    {
+      "source": "Washington Post Eisenkot / Iron Gate / Trump DOJ",
+      "outside": true
+    },
+    {
+      "source": "Jerusalem Post Eisenkot mandate",
+      "outside": true
+    },
+    {
+      "source": "NBC News Hegseth impeachment defiance",
+      "outside": true
+    },
+    {
+      "source": "American Resolve / Daily Signal Massie timetable",
+      "outside": true
+    },
+    {
+      "source": "Google Wyoming data center blog (primary company)",
+      "outside": true
+    },
+    {
+      "source": "AEP 702MW Bloom fuel cell release",
+      "outside": true
+    },
+    {
+      "source": "Data Center Dynamics Cheyenne $17bn",
+      "outside": true
+    },
+    {
+      "source": "Supercomputing News Cheyenne analysis",
+      "outside": true
+    },
+    {
+      "source": "AJC Seminole County memory card",
+      "outside": true
+    },
+    {
+      "source": "The Current Georgia House margin",
+      "outside": true
+    },
+    {
+      "source": "WSB Radio memory card local",
+      "outside": true
+    },
+    {
+      "source": "Guardian Kyiv blackout water",
+      "outside": true
+    },
+    {
+      "source": "BBC Ukraine power network",
+      "outside": true
+    },
+    {
+      "source": "Interfax-Ukraine Zelenskyy substations",
+      "outside": true
+    },
+    {
+      "source": "AAA gasprices.aaa.com diesel $6.2075",
+      "outside": true
+    },
+    {
+      "source": "CENTCOM Task Force Iron Gate release",
+      "outside": false
+    },
+    {
+      "source": "Fox Hormuz / diesel live",
+      "outside": true
+    },
+    {
+      "source": "HUD PIT homelessness release",
+      "outside": false
+    },
+    {
+      "source": "National Alliance to End Homelessness 2026 estimate",
+      "outside": true
+    },
+    {
+      "source": "NPR homelessness drop",
+      "outside": true
+    },
+    {
+      "source": "Politico DeSantis 2028 chatter",
+      "outside": true
+    },
+    {
+      "source": "Tampa Free Press DeSantis denial",
+      "outside": true
+    },
+    {
+      "source": "Straits Daily Brief Hormuz / IRGC mines",
+      "outside": true
+    },
+    {
+      "source": "Energy Factbook diesel colour",
+      "outside": true
+    },
+    {
+      "source": "Maritime / prior CENTCOM Huda context (re-check)",
+      "outside": false
+    },
+    {
+      "source": "NBC Dana White Monday meeting re-check",
+      "outside": true
+    },
+    {
+      "source": "Anadolu / prior MQ-9 claim (not promoted)",
+      "outside": true
+    },
+    {
+      "source": "Xinhua / world brief negative-check skim",
+      "outside": true
+    },
+    {
+      "source": "Hindu / worldwatch digests negative-check",
+      "outside": true
+    },
+    {
+      "source": "Middle East Eye Iron Gate reprint",
+      "outside": true
+    }
+  ],
+  "sources_checked_total": 42,
+  "sources_outside_watchlist": 27,
+  "negative_check": {
+    "result": "Seminole County Georgia House District 154 memory-card reversal \u2014 underreported nationally relative to federal midterm colour; verified AJC + The Current; promoted to lead.",
+    "declined": [
+      "Spokane deputies ambush (crime blotter)",
+      "College GameDay tribute",
+      "Ranchi activist suicide",
+      "Oregon-Ohio State sports"
+    ],
+    "underreported_judgment": "Georgia HD-154 and the Krakow NATO-ally channel both cleared as underreported-but-significant relative to US national desk weight; recorded and included."
+  },
+  "beat_coverage": {
+    "elections_and_electoral_process": {
+      "sources": [
+        "USA Today",
+        "WAPT",
+        "Fox",
+        "The Hill",
+        "AJC",
+        "The Current"
+      ],
+      "strongest": "Mississippi/Alaska legal fights + Georgia HD-154 memory card",
+      "cleared": true
+    },
+    "domestic_institutions": {
+      "sources": [
+        "NBC",
+        "American Resolve",
+        "WaPo DOJ",
+        "HUD",
+        "Alliance",
+        "NPR"
+      ],
+      "strongest": "Massie-Hegseth Monday impeachment push",
+      "cleared": true
+    },
+    "international_with_us_channel": {
+      "sources": [
+        "PAP",
+        "BBC",
+        "Guardian",
+        "Al Jazeera",
+        "Interfax"
+      ],
+      "strongest": "Krakow mourning + Eisenkot Sunday + Ukraine/Abu Dhabi",
+      "cleared": true
+    },
+    "florida_tampa_bay": {
+      "sources": [
+        "CENTCOM Tampa Iron Gate",
+        "Politico",
+        "Tampa Free Press",
+        "AAA"
+      ],
+      "strongest": "Iron Gate Tampa staff + diesel print",
+      "cleared": true
+    },
+    "data_centers_power_ai": {
+      "sources": [
+        "Google blog",
+        "AEP",
+        "DCD",
+        "Supercomputing News"
+      ],
+      "strongest": "Google Cheyenne $17B / 702 MW fuel cells",
+      "cleared": true
+    },
+    "ai_and_financial_services": {
+      "sources": [
+        "Google/AEP power PPA structure"
+      ],
+      "strongest": "Cheyenne ratepayer/PPA scrutiny colour inside lead",
+      "cleared": false,
+      "why_failed": "No separate FS-regulation trigger tonight beyond power-contract colour inside Cheyenne lead."
+    }
+  },
+  "continuations": [
+    {
+      "story": "Krakow national mourning",
+      "trigger": "President Nawrocki signs Nov 8-9 mourning regulation"
+    },
+    {
+      "story": "Mississippi/Alaska Senate",
+      "trigger": "Affidavit preservation asks + Peltola rejected-absentee suit"
+    },
+    {
+      "story": "Eisenkot mandate",
+      "trigger": "Saturday decision; formal Sunday handoff"
+    },
+    {
+      "story": "Diesel/Iron Gate",
+      "trigger": "AAA Saturday print $6.2075 + CENTCOM Iron Gate release"
+    }
+  ],
+  "radio_format": "original News Bot: one thread-label fb block with 3 options per lead; one On the items below the line block after Also today"
+}
