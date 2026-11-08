@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-07",
+  "edition": "v2c-late",
+  "filename": "issues/2026-11-07c-v2.html",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Opened with AP 8:48pm EST summary, BBC/Guardian/DW/Onet Krakow reporting, CNBC/Politico/Fox/WaPo DOJ-order desks, Maritime Executive/UKMTO/Arab News Gulf disable, WEAR/PNJ/Pensacola Local Escambia recount, Slotkin leadership desks, Al Jazeera/WION Yemen, then CENTCOM primary and AAA re-check.",
+  "broad_sweeps": [
+    {"source": "AP News Summary 8:48 p.m. EST via Guard Online", "outside": true},
+    {"source": "AP News in Brief 6:04 p.m. EST", "outside": true},
+    {"source": "Xinhua world news summary 1530 GMT Nov 7", "outside": true},
+    {"source": "Guardian world 7 Nov index / Krakow liveblog", "outside": true},
+    {"source": "BBC Krakow far-right shooting", "outside": true},
+    {"source": "Deutsche Welle Krakow terrorism", "outside": true},
+    {"source": "Onet / Polish local Michał O. detail", "outside": true},
+    {"source": "X search_news Krakow/Hormuz/Dana White", "outside": true},
+    {"source": "Washington Post Trump DOJ Democrats", "outside": true},
+    {"source": "CNBC Trump DOJ Slotkin", "outside": true},
+    {"source": "Politico Trump DOJ oversight probe", "outside": true},
+    {"source": "Fox News Trump DOJ Blanche", "outside": true},
+    {"source": "Reuters via Investing.com Trump DOJ", "outside": true},
+    {"source": "CENTCOM M/V Huda disable release", "outside": false},
+    {"source": "Maritime Executive Huda disable", "outside": true},
+    {"source": "Arab News Gulf of Oman disable", "outside": true},
+    {"source": "AP commercial vessel Gulf of Oman", "outside": false},
+    {"source": "Anadolu Iran MQ-9 Qeshm claim", "outside": true},
+    {"source": "Iran International MQ-9 claim", "outside": true},
+    {"source": "AAA gasprices.aaa.com diesel re-check", "outside": true},
+    {"source": "Energy Factbook diesel $6.21", "outside": true},
+    {"source": "Politico Slotkin leadership", "outside": true},
+    {"source": "USA Today Slotkin Schumer", "outside": false},
+    {"source": "Washington Post Van Hollen blank check", "outside": true},
+    {"source": "The Hill Dana White / Melania live", "outside": true},
+    {"source": "NBC News Dana White live blog", "outside": false},
+    {"source": "WEAR Escambia recount", "outside": false},
+    {"source": "Pensacola Local Today Escambia", "outside": true},
+    {"source": "PNJ Escambia recount timeline", "outside": false},
+    {"source": "AP Yemen Sanaa airstrikes", "outside": false},
+    {"source": "Al Jazeera Yemen Houthis Sanaa", "outside": true},
+    {"source": "WION Yemen 27 killed", "outside": true},
+    {"source": "Reuters/Investing Neal tariffs", "outside": true},
+    {"source": "International Trade Today Dem tariffs", "outside": true},
+    {"source": "Politico Brendan Carr hot seat", "outside": true},
+    {"source": "Guardian US Nov 7 roundup", "outside": true},
+    {"source": "USA Today AK/MS still undecided (delta check)", "outside": false},
+    {"source": "Google/WyoFile Wyoming $17B campus (beat check)", "outside": true},
+    {"source": "Data Centre Magazine week of Nov 7", "outside": true},
+    {"source": "Chronicle Online AP 6pm brief", "outside": true},
+    {"source": "RFERL Iran liveblog ship disable", "outside": true}
+  ],
+  "sources_checked_total": 41,
+  "sources_outside_watchlist": 26,
+  "negative_check": {
+    "question": "What is the biggest story today not on my standing beats, and why is it not?",
+    "candidate": "Kraków Main Square far-right mass shooting (6 dead in square + 3 at home)",
+    "why_not_on_list": "European domestic terror sits adjacent to international-with-US-channel but is not a named standing beat; drowned on US desks by Cos/midterm/Iran saturation until the AP evening wrap.",
+    "underreported": "Judged underreported relative to Cos and midterm noise despite multi-desk European corroboration (BBC, Guardian, DW, AP, Onet) and a clear NATO-ally channel — promoted to top lead.",
+    "disposition": "Cleared absolute bar; became the top lead with divergence box.",
+    "declined": [
+      "Oregon vs Ohio State football result — anti-topic sports",
+      "Becky Armstrong EP/concert schedule — anti-topic entertainment",
+      "Period-pain social threads — no policy consequence",
+      "Indian Muhurat trading tips — no US channel"
+    ]
+  },
+  "beat_coverage": [
+    {
+      "beat": "Elections and electoral process",
+      "sources_checked": ["WEAR", "Pensacola Local", "PNJ", "USA Today AK/MS delta check"],
+      "strongest_candidate": "Escambia District 4 post-recount margin",
+      "cleared_or_failed": "Escambia cleared as Florida local lead; AK/MS had no new late-Saturday litigation trigger beyond 07b — parked in Also noted."
+    },
+    {
+      "beat": "Domestic institutional developments",
+      "sources_checked": ["WaPo/CNBC/Politico/Fox DOJ", "Politico/USA Today/WaPo Slotkin", "Hill/NBC Dana White", "Neal tariff desks"],
+      "strongest_candidate": "Trump DOJ order; Slotkin leadership; Dana White Monday meeting; Neal tariffs",
+      "cleared_or_failed": "All four cleared (Dana White as continuation with Monday-meeting trigger)."
+    },
+    {
+      "beat": "International items with clear US consequences",
+      "sources_checked": ["BBC/Guardian/DW/AP/Onet Krakow", "CENTCOM/Maritime Executive/Arab News Huda", "AP/Al Jazeera/WION Yemen", "Anadolu MQ-9"],
+      "strongest_candidate": "Kraków attack; Huda disable; Yemen 27",
+      "cleared_or_failed": "Kraków and Huda cleared leads; Yemen cleared lead with attribution divergence; MQ-9 held Unconfirmed short."
+    },
+    {
+      "beat": "Florida / Tampa Bay",
+      "sources_checked": ["WEAR/PNJ/Pensacola Escambia", "CENTCOM Tampa Iron Gate delta check", "FAA Bartow delta check"],
+      "strongest_candidate": "Escambia recount result",
+      "cleared_or_failed": "Escambia cleared; Iron Gate/FAA no new late trigger — Also noted."
+    },
+    {
+      "beat": "Data centers / power / AI infrastructure",
+      "sources_checked": ["Google/WyoFile Wyoming $17B", "Data Centre Magazine Nov 7 week", "Loudoun retention"],
+      "strongest_candidate": "No new Saturday-evening verifiable trigger beyond prior Wyoming announce",
+      "cleared_or_failed": "Failed bar for a new lead — parked in Also noted. Diesel held inside Huda energy chain."
+    },
+    {
+      "beat": "AI and financial services",
+      "sources_checked": ["AAA diesel re-check", "Neal tariff / Ways and Means", "SEC small-entity (no movement)"],
+      "strongest_candidate": "Neal tariff rollback agenda sequencing",
+      "cleared_or_failed": "Neal cleared as lead; SEC quiet; diesel paired with Huda."
+    }
+  ],
+  "per_article_independent_source_counts": {
+    "krakow": 4,
+    "trump-doj": 4,
+    "huda": 3,
+    "slotkin": 3,
+    "dana-white": 3,
+    "escambia": 3,
+    "yemen": 3,
+    "neal-tariffs": 3,
+    "also-liu": 2,
+    "also-gop-crisis": 2,
+    "also-melania": 1,
+    "also-japan-quake": 1,
+    "also-carr": 2,
+    "also-mq9": 2
+  },
+  "continuations": 2,
+  "continuation_triggers": [
+    {"id": "huda", "trigger": "new verifiable fact / kinetic threshold (M/V Huda disable)"},
+    {"id": "dana-white", "trigger": "new verifiable fact (White confirms Monday WH meeting)"}
+  ],
+  "feedback_applied": {
+    "open_brief_feedback": [],
+    "recently_closed_brief_feedback": [],
+    "note": "No open or recently closed brief-feedback issues at run start."
+  },
+  "markers": {"Primary source": 0, "Independent corroboration": 12, "Single-sourced": 2, "Unconfirmed": 1},
+  "divergence_boxes": 4,
+  "prior_editions_read": ["issues/2026-11-07-v2.html", "issues/2026-11-07b-v2.html"],
+  "delta_from": "2026-11-07b-v2.html"
+}

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 7 November 2026 (News Bot 2.0 · late)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .btl { margin:.6rem 0 .3rem; font-size:.92rem; }
+  .btl b { color:var(--accent); }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 7 November 2026 &middot; late edition</div>
+  <h1>Krak&oacute;w terror attack kills six, Trump orders a DOJ probe of Democrats, CENTCOM disables a Gulf bulker, and White will meet Monday</h1>
+  <p class="sub">Third v2 edition of the day — delta since <a href="2026-11-07b-v2.html">this evening&rsquo;s issue</a>. Eight leads, six shorts, Also noted after the footer. Filename: <code>2026-11-07c-v2.html</code>. Written ~9:45&nbsp;p.m. America/New_York.</p>
+  <p class="prov"><b>41 sources checked, 26 of them outside standing watchlist threads.</b> Outside-first gather: AP 8:48&nbsp;p.m. EST summary, BBC/Guardian/DW Krak&oacute;w live reporting, Polish Onet/TVN24 colour, CNBC/Politico/Fox/WaPo on the DOJ order, Maritime Executive and UKMTO on the Gulf of Oman disable, WEAR/PNJ/Pensacola Local on the Escambia recount, Slotkin leadership desks, then CENTCOM primary and AAA diesel re-check.<br><br>
+  <b>Negative check:</b> the biggest story not already on the standing-beat menu was the Krak&oacute;w Main Square attack — underreported on US desks relative to Cos and midterm noise until the AP evening wrap, verified across BBC, Guardian, DW and Polish outlets with a clear NATO/US-ally channel, and promoted to the top lead. Declined for altitude or missing US channel: Oregon&ndash;Ohio State sports result; Becky Armstrong EP schedule; period-pain social threads; Indian Muhurat tips.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#krakow">Far-right gunman kills six in Krak&oacute;w&rsquo;s Main Square; three more found at his home</a></li>
+    <li><a href="#trump-doj">Trump orders DOJ to investigate Democrats over &ldquo;threatening letters&rdquo;</a></li>
+    <li><a href="#huda">CENTCOM disables M/V Huda after an Iranian port call — first Gulf disable in a month</a></li>
+    <li><a href="#slotkin">Slotkin declines to rule out a Senate leadership challenge to Schumer</a></li>
+    <li><a href="#dana-white">Dana White says he will meet Trump at the White House on Monday</a></li>
+    <li><a href="#escambia">Escambia District 4 machine recount leaves Vinson up 19</a></li>
+    <li><a href="#yemen">Houthi health ministry says airstrikes near Sanaa killed 27</a></li>
+    <li><a href="#neal-tariffs">House Democrats put tariff rollbacks on the early-vote list with ACA and Medicaid</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (6)</a> &middot; <a href="#also-noted">Also noted</a></p>
+</nav>
+
+<article id="krakow">
+  <h3>Far-right gunman kills six in Krak&oacute;w&rsquo;s Main Square; three more found at his home</h3>
+  <div class="meta">
+    <span class="chip">International / NATO ally</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+    <span class="chip">Underreported</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Negative-check / underreported lead.</p>
+  <p>A 25-year-old Polish man drove onto Krak&oacute;w&rsquo;s Main Market Square around 3&nbsp;p.m. local time Saturday, fired from a car with a military-style long gun, and killed six people before police shot and wounded him, according to <a href="https://www.bbc.com/news/articles/c6n9r01d2709o">BBC</a>, <a href="https://www.theguardian.com/world/live/2026/nov/07/krakow-shooting-poland-latest-news-updates">The Guardian</a>, <a href="https://apnews.com/article/poland-shooting-krakow-market-dead-076b972f107df14a1f71e12a74d4d8e5">AP</a>, and <a href="https://www.dw.com/en/deadly-shooting-at-krakows-main-square-was-act-of-terrorism-says-polish-prime-minister-donald-tusk/a-79886489">Deutsche Welle</a>. Four women and two men died in the square; one confirmed British citizen among the dead; 15&ndash;16 injured including two police officers, one critically. Prime Minister Donald Tusk called it an &ldquo;act of terror,&rdquo; said three more bodies — likely immediate family — were found at the suspect&rsquo;s home ~200&nbsp;km away, and ordered two days of mourning. Interior Minister Marcin Kierwi&#324;ski said the attacker held &ldquo;ultra-nationalistic&rdquo; far-right views and acted alone on present evidence. Local Polish reporting (<a href="https://wiadomosci.onet.pl/krakow/nowe-informacje-o-sprawcy-strzelaniny-w-krakowie-jego-ojciec-mial-wiele-sztuk-broni/ltxcrns">Onet</a>) names him Micha&#322; O. of Ostrowiec &#346;wi&#281;tokrzyski and notes the father held a multi-weapon permit; neither had prior records.</p>
+  <p><b>US channel:</b> Poland is a frontline NATO ally; UK/EU solidarity statements landed within hours; Foreign Office travel advice updated. No US nationals named among the dead at press time.</p>
+  <p><b>What to watch:</b> suspect&rsquo;s hospital status and charging document; whether any network of &ldquo;supporters&rdquo; Tusk vowed to detain materialises; UK identification of the British victim.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; terrorism label vs. lone radicalised shooter</span>
+    <p><b>What is in dispute.</b> Significance dispute: Polish defence and interior ministers call it terrorism; early wire copy also frames a lone far-right radical with family corpses at home. Facts on the square (six dead, car firefight, military kit) are not contested across desks.</p>
+    <p><b>Why the vantage differs.</b> Polish officials need a legal and political frame for mourning and any follow-on detentions. International wires lead with casualty and ideology colour. Timing: European liveblogs moved faster than US evening wraps, which buried the story under Cos and midterms.</p>
+    <p><b>What it means for the reader.</b> Treat the attack as confirmed mass killing with a far-right ideological tag from Polish authorities, not yet a proven conspiracy. The observation that settles the terrorism-vs-lone-actor frame is the charging document and any second arrest.</p>
+  </div>
+<div class="fb"><p>Keep following Krak&oacute;w / European far-right attack threads?</p>
+<label><input type="radio" name="fb-krakow-follow" value="v0"> Yes — until charging docs</label>
+<label><input type="radio" name="fb-krakow-follow" value="v1"> Only if a network appears</label>
+<label><input type="radio" name="fb-krakow-follow" value="v2"> Drop after mourning period</label>
+<p>Cadence on European security shocks?</p>
+<label><input type="radio" name="fb-krakow-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-krakow-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-krakow-freq" value="v2"> Want more local Polish sourcing</label>
+<p>Angle preference?</p>
+<label><input type="radio" name="fb-krakow-angle" value="v0"> NATO / alliance implications</label>
+<label><input type="radio" name="fb-krakow-angle" value="v1"> Far-right ideology and weapons access</label>
+<label><input type="radio" name="fb-krakow-angle" value="v2"> Victim and mourning detail</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/c6n9r01d2709o">BBC</a> &middot;
+    <a href="https://www.theguardian.com/world/live/2026/nov/07/krakow-shooting-poland-latest-news-updates">Guardian</a> &middot;
+    <a href="https://apnews.com/article/poland-shooting-krakow-market-dead-076b972f107df14a1f71e12a74d4d8e5">AP</a> &middot;
+    <a href="https://www.dw.com/en/deadly-shooting-at-krakows-main-square-was-act-of-terrorism-says-polish-prime-minister-donald-tusk/a-79886489">DW</a> &middot;
+    <a href="https://wiadomosci.onet.pl/krakow/nowe-informacje-o-sprawcy-strzelaniny-w-krakowie-jego-ojciec-mial-wiele-sztuk-broni/ltxcrns">Onet</a>
+  </p>
+</article>
+
+<article id="trump-doj">
+  <h3>Trump orders DOJ to investigate Democrats over &ldquo;threatening letters&rdquo;</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4.</p>
+  <p>Hours after the midterm wipeout settled into Democratic control of both chambers, President Trump posted that he was &ldquo;ordering the Department of Justice to look into&rdquo; what he called Democratic &ldquo;threatening letters&rdquo; and impeachment talk aimed at Attorney General Todd Blanche and others — branding it &ldquo;extortion&rdquo; and a &ldquo;criminal act,&rdquo; per <a href="https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/">The Washington Post</a>, <a href="https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html">CNBC</a>, <a href="https://www.politico.com/news/2026/11/07/trump-calls-for-doj-investigation-into-democratic-oversight-01155242">Politico</a>, and <a href="https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials">Fox News</a>. No letters, senders, or recipients were identified. The posts name-check Sen. Elissa Slotkin over October remarks about deterring young people from joining the Trump administration; Slotkin replied that lawbreakers should be held accountable and that the clean have nothing to fear. Context: DOJ previously sought to indict Slotkin and colleagues over a 2025 &ldquo;refuse illegal orders&rdquo; video; a grand jury declined. DOJ had not commented by late Saturday.</p>
+  <p><b>What to watch:</b> whether Blanche&rsquo;s DOJ opens a real matter or treats the post as political theatre; any document-preservation letters from incoming Democratic chairs; Massie&rsquo;s expected Monday Hegseth impeachment resolution.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; criminal probe order vs. political speech</span>
+    <p><b>What is in dispute.</b> Facts dispute on whether any criminal &ldquo;threatening letters&rdquo; exist; significance dispute on whether routine oversight threats and donor scrutiny are extortion.</p>
+    <p><b>Why the vantage differs.</b> Trump maximises a lawfare frame after a midterm loss. Democratic desks treat the post as retaliation for oversight promises. Fox emphasises Blanche impeachment talk; CNBC/Politico emphasise the empty evidentiary record and Slotkin history.</p>
+    <p><b>What it means for the reader.</b> No public evidence of a criminal letter campaign has been produced. Price this as a presidential directive-by-social-post until DOJ confirms a docketed matter. The observation that settles it is a formal DOJ statement or a declined prosecution memo.</p>
+  </div>
+<div class="fb"><p>Follow Trump&ndash;DOJ directives after the midterms?</p>
+<label><input type="radio" name="fb-doj-follow" value="v0"> Yes — until a docketed matter</label>
+<label><input type="radio" name="fb-doj-follow" value="v1"> Only if indictments follow</label>
+<label><input type="radio" name="fb-doj-follow" value="v2"> Less Cos lawfare coverage</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-doj-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-doj-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-doj-freq" value="v2"> Want more DOJ primary docs</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-doj-angle" value="v0"> Institutional norms / Blanche response</label>
+<label><input type="radio" name="fb-doj-angle" value="v1"> Slotkin / prior grand-jury history</label>
+<label><input type="radio" name="fb-doj-angle" value="v2"> Incoming Democratic oversight stack</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/">Washington Post</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html">CNBC</a> &middot;
+    <a href="https://www.politico.com/news/2026/11/07/trump-calls-for-doj-investigation-into-democratic-oversight-01155242">Politico</a> &middot;
+    <a href="https://www.foxnews.com/politics/trump-orders-doj-probe-democrats-over-alleged-threats-against-admin-officials">Fox News</a>
+  </p>
+</article>
+
+<article id="huda">
+  <h3>CENTCOM disables M/V Huda after an Iranian port call — first Gulf disable in a month</h3>
+  <div class="meta">
+    <span class="chip">International / energy</span>
+    <span class="chip fu">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3. Trigger: new verifiable kinetic disable of a commercial vessel — continuation of the Hormuz blockade thread from this evening&rsquo;s issue.</p>
+  <p><a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/">CENTCOM</a> said Saturday that U.S. forces disabled St. Kitts&ndash;flagged dry bulker <i>M/V Huda</i> in the Gulf of Oman after the crew ignored repeated warnings and tried to leave regional waters following an Iranian port visit. A U.S. aircraft fired precision munitions at the stern after directing the crew to abandon targeted spaces. <a href="https://maritime-executive.com/article/us-forces-disable-first-cargo-ship-in-a-month-sailing-from-iranian-port">Maritime Executive</a> places the ship ~18&nbsp;nm east of Khor Fakkan via UKMTO and notes it is the first reported disable since the <i>Ocean Molica</i> on 10 October. CENTCOM tallies since mid-July: 147 vessels redirected, five merchant ships disabled, and 10 IRGC-linked oil tankers previously destroyed. <a href="https://www.arabnews.com/middle-east/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman-3010407">Arab News</a> and AP wrap the same primary. Separately, Iranian state media claimed one or two U.S. MQ-9 downs over Qeshm; CENTCOM offered &ldquo;no comment&rdquo; and called the area &ldquo;relatively calm&rdquo; — treat as unconfirmed. AAA national diesel remains ~$6.21; no Saturday print move.</p>
+  <p><b>What to watch:</b> crew status and any pollution report; whether Iran answers with confirmed mine/drone claims; Monday diesel print.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; blockade enforcement vs. Iranian MQ-9 claims</span>
+    <p><b>What is in dispute.</b> Facts dispute on the MQ-9 downs (Iranian claim, no U.S. confirmation). The <i>Huda</i> disable itself is documented on CENTCOM video and multi-desk maritime copy.</p>
+    <p><b>Why the vantage differs.</b> CENTCOM publishes enforcement optics from Tampa. Iranian wires maximise shoot-down narratives. Xinhua amplified two downs as fact; Western desks marked them unverified.</p>
+    <p><b>What it means for the reader.</b> Price the blockade as active and kinetic again after a month&rsquo;s lull. Do not price an MQ-9 loss until CENTCOM or wreckage confirms. Diesel at $6.21 is the household meter until the next AAA print.</p>
+  </div>
+<div class="fb"><p>Keep following Hormuz blockade kinetics?</p>
+<label><input type="radio" name="fb-huda-follow" value="v0"> Yes — every disable</label>
+<label><input type="radio" name="fb-huda-follow" value="v1"> Only when diesel moves</label>
+<label><input type="radio" name="fb-huda-follow" value="v2"> Bundle into weekly energy</label>
+<p>Cadence on Iran maritime?</p>
+<label><input type="radio" name="fb-huda-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-huda-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-huda-freq" value="v2"> Want more primary CENTCOM</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-huda-angle" value="v0"> Shipping / UKMTO</label>
+<label><input type="radio" name="fb-huda-angle" value="v1"> Household diesel meter</label>
+<label><input type="radio" name="fb-huda-angle" value="v2"> Escalation risk / MQ-9 claims</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/">CENTCOM</a> &middot;
+    <a href="https://maritime-executive.com/article/us-forces-disable-first-cargo-ship-in-a-month-sailing-from-iranian-port">Maritime Executive</a> &middot;
+    <a href="https://www.arabnews.com/middle-east/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman-3010407">Arab News</a> &middot;
+    <a href="https://apnews.com/article/commercial-vessel-gulf-oman-breach-blockade-iran-bc902d3400cb5d022f8bafd247ef975b">AP</a>
+  </p>
+</article>
+
+<article id="slotkin">
+  <h3>Slotkin declines to rule out a Senate leadership challenge to Schumer</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>With Democrats taking the Senate, Michigan Sen. Elissa Slotkin told interviewers Saturday she would not rule out challenging Chuck Schumer for majority leader, arguing the caucus needs a new generation and a concrete first-100-days plan before she would lock in support, per <a href="https://www.politico.com/news/2026/11/07/slotkin-senate-michigan-01155273">Politico</a>, <a href="https://www.usatoday.com/story/news/politics/2026/11/07/elissa-slotkin-chuck-schumer-senate-majority-leader-contest/92663955007/">USA Today</a>, and related <a href="https://www.washingtonpost.com/politics/2026/11/07/sen-van-hollen-says-schumer-should-not-get-blank-check-be-majority-leader/">Washington Post</a> coverage of Sen. Chris Van Hollen saying Schumer should not get a &ldquo;blank check.&rdquo; The comments land the same day Trump publicly targeted Slotkin in his DOJ-order posts — a cross-connection, not proof of coordination.</p>
+  <p><b>What to watch:</b> whether any announced challenger files before the mid-November leadership conferences; Schumer&rsquo;s first-100-days document, if any.</p>
+<div class="fb"><p>Follow Democratic Senate leadership contests?</p>
+<label><input type="radio" name="fb-slotkin-follow" value="v0"> Yes — until the conference vote</label>
+<label><input type="radio" name="fb-slotkin-follow" value="v1"> Only if a formal challenge files</label>
+<label><input type="radio" name="fb-slotkin-follow" value="v2"> Skip personnel horse-race</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-slotkin-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-slotkin-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-slotkin-freq" value="v2"> Want more whip-count detail</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-slotkin-angle" value="v0"> Generational / first-100-days plan</label>
+<label><input type="radio" name="fb-slotkin-angle" value="v1"> Cross-link to Trump DOJ targeting</label>
+<label><input type="radio" name="fb-slotkin-angle" value="v2"> Policy agenda implications</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.politico.com/news/2026/11/07/slotkin-senate-michigan-01155273">Politico</a> &middot;
+    <a href="https://www.usatoday.com/story/news/politics/2026/11/07/elissa-slotkin-chuck-schumer-senate-majority-leader-contest/92663955007/">USA Today</a> &middot;
+    <a href="https://www.washingtonpost.com/politics/2026/11/07/sen-van-hollen-says-schumer-should-not-get-blank-check-be-majority-leader/">Washington Post</a>
+  </p>
+</article>
+
+<article id="dana-white">
+  <h3>Dana White says he will meet Trump at the White House on Monday</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions</span>
+    <span class="chip fu">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3. Trigger: new verifiable fact — White publicly confirmed a Monday White House meeting — continuation of this evening&rsquo;s offer story.</p>
+  <p>UFC chief Dana White, reached in London, said Saturday he plans to fly to Washington and meet President Trump at the White House on Monday about the press-secretary offer Trump posted from his Florida golf club, per the <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP 8:48&nbsp;p.m. EST wrap</a>, <a href="https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/">The Hill</a>, and <a href="https://www.nbcnews.com/politics/2026-election/live-blog/rump-taps-stephen-miller-chief-staff-wiles-cabinet-midterm-elections-rcna607914">NBC News</a>. The White House still had not formally confirmed the offer by late Saturday. Acceptance remains open; the new fact is the scheduled meeting, not a hiring.</p>
+  <p><b>What to watch:</b> Monday readout; whether Karoline Leavitt&rsquo;s vacant podium gets an interim name first.</p>
+<div class="fb"><p>Keep following the Dana White press-secretary thread?</p>
+<label><input type="radio" name="fb-white-follow" value="v0"> Yes — through Monday</label>
+<label><input type="radio" name="fb-white-follow" value="v1"> Only on acceptance/rejection</label>
+<label><input type="radio" name="fb-white-follow" value="v2"> Drop personnel colour</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-white-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-white-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-white-freq" value="v2"> Want less celebrity framing</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-white-angle" value="v0"> Press operation implications</label>
+<label><input type="radio" name="fb-white-angle" value="v1"> UFC / donor politics</label>
+<label><input type="radio" name="fb-white-angle" value="v2"> Skip unless hired</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP via Guard Online</a> &middot;
+    <a href="https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/">The Hill</a> &middot;
+    <a href="https://www.nbcnews.com/politics/2026-election/live-blog/rump-taps-stephen-miller-chief-staff-wiles-cabinet-midterm-elections-rcna607914">NBC News</a>
+  </p>
+</article>
+
+<article id="escambia">
+  <h3>Escambia District 4 machine recount leaves Vinson up 19</h3>
+  <div class="meta">
+    <span class="chip">Florida / elections</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Saturday&rsquo;s machine recount in Escambia County Commission District 4 left Joe Vinson ahead of Ashlee Hofberger by 19 votes — 13,087 to 13,068 — with results still unofficial pending Nov.&nbsp;13 certification, per <a href="https://weartv.com/news/local/vinson-pulls-ahead-in-escambia-county-district-4-race-recount-set-for-saturday">WEAR</a>, <a href="https://pensacolalocaltoday.com/escambia-election-results-2026/">Pensacola Local Today</a>, and the pre-recount timeline at <a href="https://www.pnj.com/story/news/local/escambia-county/2026/11/04/hofberger-vinson-recount-in-escambia-commissioner-race/92610246007/">PNJ</a>. This evening&rsquo;s issue flagged the recount as scheduled; the new fact is the post-recount margin.</p>
+  <p><b>What to watch:</b> Nov.&nbsp;13 canvass; any contest filing inside the statutory window.</p>
+<div class="fb"><p>Keep Escambia / Panhandle election process in the brief?</p>
+<label><input type="radio" name="fb-escambia-follow" value="v0"> Yes through certification</label>
+<label><input type="radio" name="fb-escambia-follow" value="v1"> Only if a contest files</label>
+<label><input type="radio" name="fb-escambia-follow" value="v2"> Drop local commission races</label>
+<p>Cadence on Florida locals?</p>
+<label><input type="radio" name="fb-escambia-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-escambia-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-escambia-freq" value="v2"> Want more Tampa Bay weight</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-escambia-angle" value="v0"> Recount / canvass process</label>
+<label><input type="radio" name="fb-escambia-angle" value="v1"> County governance stakes</label>
+<label><input type="radio" name="fb-escambia-angle" value="v2"> Skip below statewide</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://weartv.com/news/local/vinson-pulls-ahead-in-escambia-county-district-4-race-recount-set-for-saturday">WEAR</a> &middot;
+    <a href="https://pensacolalocaltoday.com/escambia-election-results-2026/">Pensacola Local Today</a> &middot;
+    <a href="https://www.pnj.com/story/news/local/escambia-county/2026/11/04/hofberger-vinson-recount-in-escambia-commissioner-race/92610246007/">PNJ</a>
+  </p>
+</article>
+
+<article id="yemen">
+  <h3>Houthi health ministry says airstrikes near Sanaa killed 27</h3>
+  <div class="meta">
+    <span class="chip">International / Red Sea</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>A Houthi-run health ministry spokesman said Saturday airstrikes hit homes in al-Shariya village east of Sanaa, killing at least 27 and wounding ~36, mostly women and children, and blamed Saudi aircraft, per <a href="https://apnews.com/article/yemen-houthi-saudi-attacks-1b5aef5b86be2e96e1cd8a18165afaf6">AP</a>, <a href="https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa">Al Jazeera</a>, and <a href="https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286">WION</a>. Houthis also claimed missile/drone replies toward Saudi oil sites and Riyadh airport; Saudi officials had not confirmed either the village strike attribution or the claimed replies by late Saturday. US channel: Red Sea shipping risk and any Saudi escalation that pulls CENTCOM attention off Hormuz.</p>
+  <p><b>What to watch:</b> Saudi confirmation or denial; UKMTO shipping advisories; whether CENTCOM comments.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; casualty attribution</span>
+    <p><b>What is in dispute.</b> Facts dispute on who flew the strikes; casualty counts come from Houthi health authorities without independent on-scene verification yet.</p>
+    <p><b>Why the vantage differs.</b> Houthi media maximise civilian toll and Saudi blame. Coalition silence is itself a signal or a lag. Wire desks attribute carefully to the Houthi spokesman.</p>
+    <p><b>What it means for the reader.</b> Treat 27 dead as a Houthi-ministry claim pending independent confirmation. The observation that settles attribution is satellite/OSINT or a Saudi acknowledgement.</p>
+  </div>
+<div class="fb"><p>Follow Yemen / Red Sea escalation?</p>
+<label><input type="radio" name="fb-yemen-follow" value="v0"> Yes when US shipping risk rises</label>
+<label><input type="radio" name="fb-yemen-follow" value="v1"> Every major casualty claim</label>
+<label><input type="radio" name="fb-yemen-follow" value="v2"> Bundle into Hormuz energy</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-yemen-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-yemen-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-yemen-freq" value="v2"> Want more primary UKMTO</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-yemen-angle" value="v0"> Civilian toll / verification</label>
+<label><input type="radio" name="fb-yemen-angle" value="v1"> Shipping / energy spillover</label>
+<label><input type="radio" name="fb-yemen-angle" value="v2"> Saudi&ndash;Houthi war dynamics</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://apnews.com/article/yemen-houthi-saudi-attacks-1b5aef5b86be2e96e1cd8a18165afaf6">AP</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa">Al Jazeera</a> &middot;
+    <a href="https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286">WION</a>
+  </p>
+</article>
+
+<article id="neal-tariffs">
+  <h3>House Democrats put tariff rollbacks on the early-vote list with ACA and Medicaid</h3>
+  <div class="meta">
+    <span class="chip">Domestic institutions / trade</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Rep. Richard Neal, expected to reclaim Ways and Means, told a trade conference he is committed to reversing &ldquo;unjustified&rdquo; Trump tariffs and &ldquo;backroom deals,&rdquo; while House Democratic leaders also preview early votes on ACA subsidy restoration, Medicaid, Iran-war constraint, and tariff reversal once the new Congress convenes Jan.&nbsp;3, per <a href="https://www.investing.com/news/politics-news/top-us-house-democrat-on-trade-issues-committed-to-reversing-unjustified-tariffs-5008933">Reuters via Investing.com</a>, the <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening summary</a>, and trade-desk follow-ups at <a href="https://internationaltradetoday.com/news/2026/11/04/dems-returning-to-power-say-theyll-end-trumps-tariffs-2611040010">International Trade Today</a>. Veto math still favours Trump; the news is agenda sequencing, not enactment.</p>
+  <p><b>What to watch:</b> actual bill text in January; any Republican co-sponsors for a veto-proof trade package (unlikely on present numbers).</p>
+<div class="fb"><p>Follow Democratic tariff / trade rollback plans?</p>
+<label><input type="radio" name="fb-neal-follow" value="v0"> Yes into January</label>
+<label><input type="radio" name="fb-neal-follow" value="v1"> Only on introduced text</label>
+<label><input type="radio" name="fb-neal-follow" value="v2"> Less agenda preview</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-neal-freq" value="v0"> About right</label>
+<label><input type="radio" name="fb-neal-freq" value="v1"> Too often</label>
+<label><input type="radio" name="fb-neal-freq" value="v2"> Want more Ways and Means primary</label>
+<p>Angle?</p>
+<label><input type="radio" name="fb-neal-angle" value="v0"> Household price effects</label>
+<label><input type="radio" name="fb-neal-angle" value="v1"> Veto / override math</label>
+<label><input type="radio" name="fb-neal-angle" value="v2"> Pair with ACA/Medicaid stack</label>
+</div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.investing.com/news/politics-news/top-us-house-democrat-on-trade-issues-committed-to-reversing-unjustified-tariffs-5008933">Reuters/Investing</a> &middot;
+    <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening wrap</a> &middot;
+    <a href="https://internationaltradetoday.com/news/2026/11/04/dems-returning-to-power-say-theyll-end-trumps-tariffs-2611040010">International Trade Today</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Worth knowing, ranked below the lead bar. Each item expands; one tier-wide question at the end.</p>
+
+<article id="also-liu">
+  <h3>Judge Reyes intends to name Jessie Liu special master in Potomac golf-course case</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>U.S. District Judge Ana Reyes said she intends to appoint Jessie Liu — former D.C. U.S. Attorney in Trump&rsquo;s first term — as special master to test whether Interior, NPS, and DOJ lawyers misled the court over East Potomac golf-course renovation plans, per the <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening summary</a> and <a href="https://www.theguardian.com/us-news/2026/nov/07/all">Guardian US</a>. New fact since evening: the named candidate.</p>
+  <p class="btl"><b>Below the line:</b> process story; limited policy consequence beyond ethics optics.</p>
+<div class="fb"><p>Follow golf-course special-master process?</p>
+<label><input type="radio" name="fb-liu-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-liu-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-liu-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-liu-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-gop-crisis">
+  <h3>DeSantis and Cruz escalate post-midterm GOP autopsy language</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>AP&rsquo;s evening wrap aggregates Ron DeSantis calling losses near an &ldquo;extinction-level event&rdquo; and Ted Cruz comparing the repudiation to Watergate-scale, with the party split between fiscal retrenchment and deeper Trump alignment. Prior evening issue already carried DeSantis; Cruz colour is the incremental add.</p>
+  <p class="btl"><b>Below the line:</b> characterisation without a new formal process trigger.</p>
+<div class="fb"><p>Keep GOP autopsy colour?</p>
+<label><input type="radio" name="fb-gop-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-gop-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-gop-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-gop-2" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b> <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening wrap</a> &middot; <a href="https://www.politico.com/news/2026/11/04/desantis-calls-midterm-bloodbath-an-extinction-level-event-for-republicans-01148705">Politico DeSantis</a></p>
+</article>
+
+<article id="also-melania">
+  <h3>Melania Trump announces $7.2M LSU foster-care scholarship endowment</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>First lady Melania Trump said LSU raised $7.2&nbsp;million to endow scholarships for former foster-care students under her &ldquo;Fostering the Future&rdquo; program while attending the LSU&ndash;Alabama game in Baton Rouge, per the <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening summary</a>.</p>
+  <p class="btl"><b>Below the line:</b> soft philanthropy colour; no statutory change.</p>
+<div class="fb"><p>Keep first-lady philanthropy items?</p>
+<label><input type="radio" name="fb-melania-1" value="v0"> Park in Also noted</label>
+<label><input type="radio" name="fb-melania-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-melania-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-melania-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-japan-quake">
+  <h3>M5.7 quake hits central Japan; media report ~22 injured</h3>
+  <div class="meta"><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>Japan Meteorological Agency recorded a preliminary M5.7 in central Japan affecting Aichi/Hamamatsu through Kyoto/Nara; Japanese media report about 22 injured, no tsunami risk, per the <a href="https://www.guardonline.com/news/national/ap-news-summary-at-8-48-p-m-est/article_ffe8f3ec-56d5-58b9-8705-ece1d210e4a6.html">AP evening summary</a>.</p>
+  <p class="btl"><b>Below the line:</b> no clear US policy channel; held short.</p>
+<div class="fb"><p>Follow moderate Japan quakes?</p>
+<label><input type="radio" name="fb-quake-1" value="v0"> Only M6+ or tsunami risk</label>
+<label><input type="radio" name="fb-quake-1" value="v1"> Skip</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-quake-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-quake-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-carr">
+  <h3>Democrats&rsquo; sweep puts FCC Chair Brendan Carr in the oversight crosshairs</h3>
+  <div class="meta"><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p><a href="https://www.politico.com/news/2026/11/07/democrats-sweep-puts-brendan-carr-in-the-hot-seat-01155280">Politico</a> flagged Saturday that a Democratic Congress elevates scrutiny of FCC Chair Brendan Carr amid free-speech and content-moderation fights; <a href="https://thehill.com/homenews/administration/6205796-live-melania-trump-football-mar-a-lago/">The Hill</a> live file similarly tracks post-midterm agency oversight pressure.</p>
+  <p class="btl"><b>Below the line:</b> anticipatory oversight colour, not a filed investigation.</p>
+<div class="fb"><p>Follow FCC / Carr oversight?</p>
+<label><input type="radio" name="fb-carr-1" value="v0"> Yes</label>
+<label><input type="radio" name="fb-carr-1" value="v1"> Only on noticed hearings</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-carr-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-carr-2" value="v1"> Too often</label>
+</div>
+</article>
+
+<article id="also-mq9">
+  <h3>Iranian MQ-9 shoot-down claims over Qeshm stay unconfirmed</h3>
+  <div class="meta"><span class="chip">Unconfirmed</span></div>
+  <p class="src-count">Independent accounts compared: 2 (claim vs. non-confirmation).</p>
+  <p>Iranian army/Press TV/IRNA claimed one or two U.S. MQ-9 downs over Qeshm; <a href="https://www.aa.com.tr/en/middle-east/iran-says-air-defense-downed-us-mq-9-drone-above-qeshm-island/4114837">Anadolu</a> and state wires carried it; CENTCOM declined comment. Folded into the <i>Huda</i> lead above; retained here so the claim is visible without promoting it.</p>
+  <p class="btl"><b>Below the line:</b> unverified; marker is Unconfirmed by design.</p>
+<div class="fb"><p>Surface unverified Iranian shoot-down claims?</p>
+<label><input type="radio" name="fb-mq9-1" value="v0"> Only with CENTCOM reply</label>
+<label><input type="radio" name="fb-mq9-1" value="v1"> Always flag Unconfirmed</label>
+<p>Cadence?</p>
+<label><input type="radio" name="fb-mq9-2" value="v0"> About right</label>
+<label><input type="radio" name="fb-mq9-2" value="v1"> Too often</label>
+</div>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aa.com.tr/en/middle-east/iran-says-air-defense-downed-us-mq-9-drone-above-qeshm-island/4114837">Anadolu</a> &middot; <a href="https://www.centcom.mil/MEDIA/PUBLIC-RELEASES/Article/4644273/us-forces-disable-cargo-vessel-attempting-to-violate-naval-blockade/">CENTCOM (context)</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p>Was the Also-today boundary right for this late delta?</p>
+  <label><input type="radio" name="fb-also-tier" value="yes"> Yes — right things below the line</label>
+  <label><input type="radio" name="fb-also-tier" value="promote"> Promote one next time</label>
+  <label><input type="radio" name="fb-also-tier" value="cut"> Cut this tier when thin</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 41 sources checked; 26 outside standing watchlist threads. Third edition; morning and evening files left untouched at <code>2026-11-07-v2.html</code> and <code>2026-11-07b-v2.html</code>. Follow-ups / continuations: 2 (Hormuz/<i>Huda</i>; Dana White Monday meeting). Marker tallies — PS:0 &middot; IC:12 &middot; SS:2 &middot; U:1. Divergence boxes: 4. Radio groups: 2&ndash;3 per lead/short plus one Also-today tier question.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>. No open or recently closed brief-feedback items at run start.</p>
+  <p>Published as <code>issues/2026-11-07c-v2.html</code>. Audit gate: <code>scripts/audit.py</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> — interest-tag pointers (closed by default)</summary>
+  <ul class="noted-list">
+    <li>AAA national diesel still ~$6.21; no Saturday print move off this evening&rsquo;s meter.</li>
+    <li>Google&rsquo;s $17B Cheyenne/Wyoming AI campus (fuel cells + carbon capture, ~2031) remains the data-centre beat pointer; no new Saturday primary.</li>
+    <li>Loudoun County tax-base argument (data centres ~40% revenue on ~3% land) still frames restriction debates.</li>
+    <li>Task Force Iron Gate in Tampa and FAA digital towers at Bartow/Kenai — no new late-Saturday trigger beyond this evening.</li>
+    <li>Alaska/Mississippi Senate margins still in litigation/affidavit curing; no new late filing beyond this evening&rsquo;s lawsuit colour.</li>
+    <li>Eisenkot&rsquo;s 28-day Israeli mandate clock runs; no new coalition arithmetic tonight.</li>
+    <li>HUD/Alliance homelessness drop divergence stands as previously reported.</li>
+    <li>Florida Amendment 3 homestead expansion still in local budget offices for 2027&ndash;28.</li>
+    <li>Thune&rsquo;s bid to keep Senate GOP leadership heads toward a mid-November conference vote.</li>
+    <li>PAHO measles elimination review window 10&ndash;13 November with no new CDC table tonight.</li>
+  </ul>
+</details>
+
+</div>
+<script>
+(function(){
+  const btn = document.createElement('div');
+  btn.className = 'submit';
+  btn.innerHTML = '<button type="button" id="fb-submit">Send feedback as a GitHub issue</button>';
+  document.querySelector('footer')?.appendChild(btn);
+  document.getElementById('fb-submit')?.addEventListener('click', function(){
+    const parts = [];
+    document.querySelectorAll('input[type=radio]:checked').forEach(r => parts.push(r.name+'='+r.value));
+    const body = encodeURIComponent('News Bot 2.0 feedback for 2026-11-07c-v2\\n\\n'+(parts.join('\\n')||'(none)'));
+    window.open('https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback&title='+encodeURIComponent('brief-feedback: 2026-11-07c-v2')+'&body='+body,'_blank');
+  });
+})();
+</script>
+</body>
+</html>
