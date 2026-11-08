@@ -58,3 +58,22 @@ Chat ping includes the link, dek, leads with key numbers, audit summary, marker/
 - The routine or skill must treat a non-zero audit exit as a hard failure.
 - Keep natural-language rules high-salience; let the code enforce the details.
 - Share the same audit scripts with any parallel version so both editions are held to identical quantitative standards where possible.
+
+## Feedback radios (binding)
+
+Modelled on the original News Bot’s earliest issues (Sept 5–Oct 1, 2026), not the later generic keep/drop pattern.
+
+**Per lead — exactly one question.**
+- One `<div class="fb">` with one radio group (unique `name`), 2–3 options.
+- The block must include a question in a `<p>` that ends with `?`.
+- The question asks **under what conditions** the reader should keep following the story — what would make the next development worth their attention.
+- Each option is a distinct, concrete angle or trigger specific to that story. Prefer: local energy costs / utility rate cases; political deals or money behind the scenes; who lobbies or benefits; salacious or scandalous details; notable public or local reaction/opposition; a dated decision, vote, filing, or ruling; a named official’s next move.
+- Price or market moves for their own sake are **not** a relevant reason (e.g. data-center coverage is about local power bills, tax/land deals, and public reaction — not wholesale pricing).
+- One option may narrow or close the thread, but must name a **specific condition** (e.g. “Only if the state PSC rejects the rate filing”).
+- **Banned:** stock option text such as “Keep it at this level”, “Drop it”, “The mix is right”, “No opinion”, “Stop following”, “Not interested”, “Keep following”, “Follow it”, bare “Yes” / “No”.
+- **Banned:** reusing the same option wording across stories (or across a lead and the Also-today tier block).
+
+**Also today — no per-item radios.**
+- After the Also today items, exactly one block: `<p><b>On the items below the line.</b></p>` plus one question with 2–3 options, each naming a specific item/angle the reader might want promoted to a lead.
+
+The audit (`scripts/audit.py`) enforces: max one radio group per story; ≥1 group on each lead; no stock phrases; no reused option text; 2–3 options per group; lead fb blocks must contain a question ending in `?`.

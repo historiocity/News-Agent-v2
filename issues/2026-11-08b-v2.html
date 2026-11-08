@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 8 November 2026 (News Bot 2.0 · redo b)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .chip.under { background:transparent; border:1px solid var(--muted); color:var(--muted); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+  .submit { margin-top:2rem; }
+  button { font:inherit; padding:.45rem .8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Sunday, 8 November 2026 &middot; redo (b)</div>
+  <h1>Poland opens a terror probe as mourning begins, shrapnel scars an Aramco tower in Riyadh, and Zaporizhzhia falls back on diesel generators</h1>
+  <p class="sub">Second Sunday edition &mdash; radio-format redo of the <a href="2026-11-08-v2.html">morning brief</a>, which is left untouched. Same overnight picture, re-verified and rewritten with condition-based feedback questions. Three leads, six shorts, Also noted after the footer. Filename: <code>2026-11-08b-v2.html</code>. Written ~7:45&nbsp;a.m. America/New_York.</p>
+  <p class="prov"><b>44 sources checked, 29 of them outside standing watchlist threads.</b> Outside-first gather: AP 5:33&nbsp;a.m. EST national summary and Mideast wrap, Reuters world and Morning Bid wraps, BBC Remembrance Sunday and UK newspaper roundup, Anadolu Morning Briefing, Axios Sunday top, AFP/Arab News on Riyadh, and a Florida sweep (WUSF Amendment&nbsp;3, Axios Tampa Bay, Bay News&nbsp;9, FDOT Tampa Bay, WFLA) before returning to Krak&oacute;w, Aramco, Zaporizhzhia, Mississippi, Eisenkot, and the Nvidia letter.<br><br>
+  <b>Negative check:</b> the biggest story not already on the standing-beat menu remained the United Kingdom&rsquo;s Remembrance Sunday ceremony at the Cenotaph, declined for want of a U.S. policy channel. The significant underreported story that cleared the bar was still Zaporizhzhia&rsquo;s 16th external-power blackout of 2026 &mdash; thinner on U.S. Sunday-morning political desks than midterm aftermath colour, verified across Energoatom, the IAEA, Reuters/Arab News, and a Russian management/TASS damage claim, with a clear U.S. channel through nuclear safety and this week&rsquo;s Abu Dhabi talks. Also declined: Pope Leo&rsquo;s Uruguay-to-Argentina itinerary; New Zealand&rsquo;s near-deadlocked first count; Paraguay&rsquo;s charges against Santiago Pe&ntilde;a; sports and celebrity items.</p>
+</header>
+
+<nav>
+  <ol>
+    <li><a href="#krakow">Polish prosecutors open a terrorism investigation as national mourning begins</a></li>
+    <li><a href="#aramco">Saudi defenses intercept missiles; shrapnel damages an Aramco tower in Riyadh</a></li>
+    <li><a href="#znpp">Zaporizhzhia loses its last external power line and drops onto diesel generators</a></li>
+  </ol>
+  <p class="also"><a href="#also-today">Also today (6)</a> &middot; <a href="#also-noted">Also noted</a></p>
+</nav>
+
+<article id="krakow">
+  <h3>Polish prosecutors open a terrorism investigation as national mourning begins</h3>
+  <div class="meta">
+    <span class="chip">International / NATO ally</span>
+    <span class="chip fu">Follow-up</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Continuation. Trigger: national prosecutor opens a terrorism investigation; police identify the three bodies at the suspect&rsquo;s home; charging posture and medical status clarified overnight; mourning begins.</p>
+  <p>Poland began two national days of mourning on Sunday after a gunman killed six people on Krak&oacute;w&rsquo;s Main Market Square. The national prosecutor&rsquo;s office said it had opened an investigation into the killing of six people with a firearm and the attempted murder of many others, including police officers, &ldquo;this act constituting a terrorist offence,&rdquo; <a href="https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation">The Guardian</a> reported. Prosecutor Tomasz Waszczuk told <a href="https://abcnews.com/International/deadly-mass-shooting-poland-investigated-terror-act-prosecutor/story?id=137951543">ABC News</a> that prosecutors are preparing six murder charges over the square deaths, and that the count could rise to nine if investigators establish the same attacker also killed his parents and sister. Asked whether anyone else was involved, he said the evidence so far does not point to other people. Justice Minister Waldemar &#379;urek, quoted by <a href="https://www.nbcnews.com/world/europe/krakow-shooting-killed-6-motivated-far-right-views-rcna608080">NBC News</a>, said the suspect &ldquo;acted with the aim of seriously intimidating a large number of people, making this a terrorist offence,&rdquo; and faces a separate murder investigation over three relatives found dead at his home.</p>
+  <p>Police confirmed Sunday that those three were his father, 53, mother, 52, and sister, 21, in Ostrowiec &#346;wi&#281;tokrzyski, about 100 miles northeast of Krak&oacute;w. Counterterrorism officers spent the night searching the home for explosives and finished Sunday morning, ABC reported; the Ostrowiec prosecutor&rsquo;s office, cited by <a href="https://www.independent.co.uk/news/world/europe/krakow-shooting-poland-live-updates-main-square-b3081004.html">The Independent</a>, said a significant amount of ammunition and seven firearms were seized. The 24-year-old Polish suspect remains in critical condition under guard after several operations and has not yet been formally detained because of his medical condition. Interior Minister Marcin Kierwi&#324;ski again said he was fascinated by far-right, &ldquo;ultra-nationalistic&rdquo; views. Defense Minister W&#322;adys&#322;aw Kosiniak-Kamysz publicly denied circulating claims that the attacker was a Polish soldier.</p>
+  <p>Four women and two men were killed in the square, including a 32-year-old British man. Names of the other dead have not been fully released; one dead woman remains unidentified. Desks still disagree on the wounded total (see box). Two officers who confronted the gunman are hospitalized; Prime Minister Donald Tusk named them as senior constables Jakub Kulik and Artur Mora&#324;ski. Police told ABC that one officer was brought out of a medically induced coma Sunday morning and the other remained in one, and appealed for AB Rh+ blood for Kulik. The square was still partly cordoned off Sunday; European Commission flags in Brussels were lowered to half-staff. The U.S. State Department has said it was not aware of any American citizens harmed; U.S. Ambassador Tom Rose posted condolences.</p>
+  <p><b>US channel:</b> Poland is a frontline NATO ally. No U.S. nationals have been named among the dead or wounded.</p>
+  <p><b>What to watch:</b> the charging document that specifies the terrorism counts; whether the family murders are joined; when doctors clear the suspect for questioning; the two officers&rsquo; medical status.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; casualty totals and the terrorism label</span>
+    <p><b>What is in dispute.</b> Facts dispute on the wounded: Sunday copies do not agree, with early AP and Deutsche Welle around 15, NBC at 16, The Guardian at 17, and ABC reporting 11 Polish wounded (two of them later discharged) plus five foreign nationals from Britain, Austria, Germany, Portugal and Russia among the injured. The six square deaths are not contested; one dead woman remains unidentified, so the full nationality mix of the dead is not settled. Significance dispute: Polish officials (Tusk, the defense minister, the national prosecutor, &#379;urek) call it a terrorist offence; the established facts are still a lone gunman with far-right views and family members dead at his home, and Waszczuk says evidence so far does not show others involved.</p>
+    <p><b>Why the vantage differs.</b> Prosecutors need a legal frame for a terrorism investigation and any follow-on detentions. Wire and Sunday newspaper desks are updating casualty tallies from police briefings that themselves moved overnight; ABC had later hospital and blood-drive detail than the pre-dawn wraps. Timing: European desks and U.S. Sunday rewrites had later governor, justice-minister, and prosecutor comments than the overnight AP summary.</p>
+    <p><b>What it means for the reader.</b> Treat the six square deaths, the family identification, the overnight home search, the seven-firearm seizure, and the opening of a terrorism investigation as confirmed. Treat the wounded count and the full nationality mix as not yet settled, and the terrorism label as the prosecutors&rsquo; legal theory rather than a proven conspiracy. The observation that settles both disputes is the charging document and a single official casualty table.</p>
+  </div>
+  <div class="fb">
+    <p>What would make the next Krak&oacute;w development worth your time?</p>
+    <label><input type="radio" name="fb-krakow" value="charges"> The charging document that specifies the terrorism counts and whether the family murders are joined</label>
+    <label><input type="radio" name="fb-krakow" value="network"> Evidence of a wider far-right network, co-conspirators, or a manifesto &mdash; not just a lone actor</label>
+    <label><input type="radio" name="fb-krakow" value="nato"> Only if a named U.S. or NATO policy response follows, not another condolence cycle</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation">Guardian</a> &middot;
+    <a href="https://abcnews.com/International/deadly-mass-shooting-poland-investigated-terror-act-prosecutor/story?id=137951543">ABC News</a> &middot;
+    <a href="https://www.nbcnews.com/world/europe/krakow-shooting-killed-6-motivated-far-right-views-rcna608080">NBC News</a> &middot;
+    <a href="https://www.independent.co.uk/news/world/europe/krakow-shooting-poland-live-updates-main-square-b3081004.html">The Independent</a>
+  </p>
+</article>
+
+<article id="aramco">
+  <h3>Saudi defenses intercept missiles; shrapnel damages an Aramco tower in Riyadh</h3>
+  <div class="meta">
+    <span class="chip">International / energy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Saudi Arabia&rsquo;s Energy Ministry said Sunday that falling shrapnel damaged an Aramco administrative building in Riyadh after an &ldquo;attempted&rdquo; attack, with no casualties and limited damage, <a href="https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province">Al Jazeera</a>, <a href="https://www.cnbc.com/2026/11/08/saudi-aramco-riyadh-building-attack.html">CNBC</a>, and <a href="https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60">AP</a> reported. A Reuters witness, cited by CNBC, saw blown-out windows across several floors of the Aramco Tower in the King Abdullah Financial District; AFP witnesses, carried into Sunday copy, described shattered glass and facade damage across multiple floors. Multiple loud booms were heard in the capital after Saudi Civil Defense issued, then lifted, early-warning alerts; similar alerts went out and were later lifted in the oil-rich Eastern Province, including Dhahran, home to Aramco&rsquo;s headquarters.</p>
+  <p>The Saudi-led coalition fighting Yemen&rsquo;s Iran-aligned Houthis said its air defenses had destroyed missiles launched toward the kingdom. Al Jazeera, citing coalition spokesman Maj. Gen. Turki al-Maliki&rsquo;s posts, said two missiles were launched toward Riyadh and another toward the Eastern Province, and that the coalition also intercepted two missiles in the south and a drone. AP described intercepts of two ballistic missiles and two cruise missiles targeting Riyadh and other regions. There was no immediate public claim of responsibility from the Houthis, and Aramco itself had not commented at the time those reports were published.</p>
+  <p>The incident sits inside a wider war that restarted after a 2022 truce collapsed in July and after U.S. and Israeli strikes on Iran earlier this year. A Houthi strike on Riyadh&rsquo;s King Khalid International Airport on Oct. 10 killed 13 people and wounded more than 300, both outlets note. The Houthi-run health ministry said Saturday that Saudi-led airstrikes had killed 33 people, including eight women and 13 children, in a village east of Sanaa; Al Jazeera said it could not independently verify those figures, and there was no immediate comment from the coalition.</p>
+  <p><b>US channel:</b> The Houthis are Iran-aligned; damage to an Aramco building in the capital, plus alerts over the Eastern Province, is a direct oil-market and Gulf-security channel for the United States.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many missiles, of what kind</span>
+    <p><b>What is in dispute.</b> Facts dispute: Al Jazeera&rsquo;s account of al-Maliki&rsquo;s posts describes several ballistic missiles (two toward Riyadh, one toward the Eastern Province, two in the south) plus a drone; CNBC describes two cruise missiles intercepted in Riyadh and the south; AP describes two ballistic and two cruise missiles. The Energy Ministry&rsquo;s &ldquo;limited&rdquo; shrapnel damage and the Reuters/AFP witnesses&rsquo; blown-out windows are compatible, not contradictory. Neither outlet reported casualties or a confirmed hit on production facilities.</p>
+    <p><b>Why the vantage differs.</b> The coalition is speaking through short posts that desks summarize at different times; CNBC and AFP had eyewitnesses at the tower and leaned on that color. The Houthis had not issued their own claim, so there is no attacker narrative to compare. Timing: Sunday morning, with alerts still being lifted as copy moved.</p>
+    <p><b>What it means for the reader.</b> Believe that Saudi defenses engaged incoming fire and that an Aramco administrative tower in Riyadh took shrapnel damage with no reported injuries. Do not yet treat a production outage, a precise missile count, or a Houthi claim as established. The observation that settles the munitions dispute is a formal coalition statement or independently identified wreckage.</p>
+  </div>
+  <div class="fb">
+    <p>What would make the next Saudi/Houthi strike worth following?</p>
+    <label><input type="radio" name="fb-aramco" value="production"> A confirmed hit on a production facility, export terminal, or Eastern Province processing site</label>
+    <label><input type="radio" name="fb-aramco" value="deals"> Behind-the-scenes U.S. or coalition deals that change the rules of engagement or the Yemen campaign</label>
+    <label><input type="radio" name="fb-aramco" value="local"> Organized public or market reaction inside the kingdom that forces a visible policy shift</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/08/saudi-aramco-riyadh-building-attack.html">CNBC</a> &middot;
+    <a href="https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60">AP</a>
+  </p>
+</article>
+
+<article id="znpp">
+  <h3>Zaporizhzhia loses its last external power line and drops onto diesel generators</h3>
+  <div class="meta">
+    <span class="chip">International / US channel</span>
+    <span class="chip new">New subject</span>
+    <span class="chip under">Underreported</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Negative-check / underreported lead.</p>
+  <p>Europe&rsquo;s largest nuclear plant lost its last remaining external electricity supply early Sunday and is running on emergency diesel generators to keep nuclear fuel cool. Ukrainian state operator Energoatom said the 330&nbsp;kV Ferrosplavna-1 line disconnected at 2:36&nbsp;a.m. local time and that an automatic reconnect failed, <a href="https://www.pravda.com.ua/eng/news/2026/11/08/8061781/">Ukrainska Pravda</a> and <a href="https://www.ukrinform.net/rubric-economy/4182587-znpp-loses-external-power-supply-switches-to-diesel-generators.html">Ukrinform</a> reported. Energoatom counts this as the 16th complete external-power blackout at Zaporizhzhia in 2026. The International Atomic Energy Agency, in a statement relayed by <a href="https://www.aa.com.tr/en/eurasia/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903">Anadolu Agency</a> and carried into <a href="https://www.arabnews.com/world/zaporizhzhia-nuclear-plant-relying-on-generators-again-after-losing-external-power-supply-3010499">Arab News</a> via Reuters, called it the 27th such loss since the war began &mdash; a different counting window, not a contradiction &mdash; and said the cause and location of the disconnection were not yet known. Director General Rafael Grossi warned of a &ldquo;precarious nuclear safety situation&rdquo; and said fuel reserves could run a limited number of emergency generators for about two weeks. He urged restoration of the grid connection and larger diesel reserves.</p>
+  <p>The plant produces no electricity but still needs off-site power to cool fuel; the main Dniprovska line has been unavailable since at least Oct. 23. The Russian-installed plant management said the Ferosplavna line had been shut down by &ldquo;automatic protection&rdquo; after damage and that radiation levels on site and in the surveillance zone were normal, a claim carried by <a href="https://tass.com/economy/2214415">TASS</a> and Arab News. All six reactors remain in cold shutdown. The blackout lands three days before U.S.&ndash;Ukraine&ndash;Russia talks in Abu Dhabi on Tuesday and Wednesday, the first such meeting since February. Kremlin spokesman Dmitry Peskov has said Moscow&rsquo;s delegation will include Deputy Foreign Minister Sergei Ryabkov plus other senior diplomats and military officials.</p>
+  <p><b>US channel:</b> Nuclear safety at a Russian-occupied plant, and the composition of the Russian delegation to talks the United States is joining this week.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; why the line went down</span>
+    <p><b>What is in dispute.</b> Facts dispute on the cause: the IAEA says the cause and location are unknown; Energoatom frames repeated blackouts as a consequence of the Russian occupation and of damage to connecting lines; the Russian-installed management, via TASS, now says automatic protection shut the line <em>after damage</em> and that radiation readings are normal. The fact of the disconnection itself, and that diesel generators are now carrying the load, is not contested.</p>
+    <p><b>Why the vantage differs.</b> Energoatom is the Ukrainian state operator speaking from outside an occupied plant. The IAEA has a team on site but will not assign blame before it knows the fault location. Russian management has an interest in presenting a controlled outage even while acknowledging damage. Timing: the line dropped before dawn Sunday; early copy is still thin on engineering detail.</p>
+    <p><b>What it means for the reader.</b> Believe that Zaporizhzhia is again on backup generators with roughly two weeks of fuel for a limited set of units. Do not yet treat a deliberate strike, a routine trip, or an imminent radiation accident as established. The observation that settles the cause is an IAEA update that locates the fault &mdash; or restoration of Ferrosplavna-1.</p>
+  </div>
+  <div class="fb">
+    <p>What would make the next Zaporizhzhia blackout worth your attention?</p>
+    <label><input type="radio" name="fb-znpp" value="iaea"> An IAEA update that locates the fault or names a cause before the Abu Dhabi round</label>
+    <label><input type="radio" name="fb-znpp" value="fuel"> Diesel reserves running short, a generator failure, or any radiation alert</label>
+    <label><input type="radio" name="fb-znpp" value="talks"> Only if the blackout becomes a formal agenda item in the Abu Dhabi talks</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pravda.com.ua/eng/news/2026/11/08/8061781/">Ukrainska Pravda</a> &middot;
+    <a href="https://www.ukrinform.net/rubric-economy/4182587-znpp-loses-external-power-supply-switches-to-diesel-generators.html">Ukrinform</a> &middot;
+    <a href="https://www.aa.com.tr/en/eurasia/ukraines-zaporizhzhya-nuclear-plant-loses-all-external-power-for-27th-time-un-nuclear-watchdog/4115903">Anadolu Agency</a> &middot;
+    <a href="https://www.arabnews.com/world/zaporizhzhia-nuclear-plant-relying-on-generators-again-after-losing-external-power-supply-3010499">Arab News</a> &middot;
+    <a href="https://tass.com/economy/2214415">TASS</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Short items that cleared the bar for a mention but not a full lead. One feedback block for the tier follows.</p>
+
+<article id="eisenkot">
+  <h3>Herzog&rsquo;s formal mandate ceremony for Eisenkot is still ahead</h3>
+  <div class="meta"><span class="chip">International / US ally</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Israeli President Isaac Herzog said Saturday he would give Yashar leader Gadi Eisenkot the first chance to form a government, after parties representing 67 Knesset seats recommended him against 46 for Benjamin Netanyahu. The formal handoff is scheduled for 5&nbsp;p.m. Israel time Sunday (10&nbsp;a.m. Eastern) at the President&rsquo;s Residence and is to be broadcast live; <b>it had not yet occurred when this edition was written (~7:45&nbsp;a.m. Eastern).</b> <a href="https://allisraelnews.com/president-herzog-gives-mandate-for-forming-next-government-to-eisenkot">All Israel News</a> and <a href="https://apnews.com/article/israel-elections-netanyahu-eisenkot-bec07675825bee5895315e2ea1cb5751">AP</a> report the same ceremony timing; <a href="https://www.timesofisrael.com/liveblog-november-08-2026/">Times of Israel</a>&rsquo;s Sunday liveblog notes Ra&rsquo;am&rsquo;s reported willingness to vote for an Eisenkot government even without a coalition deal, while Avigdor Liberman has reiterated he would not join a minority government supported by Arab-led parties. Eisenkot will have 28 days, plus a possible 14-day extension, once the mandate is formally handed over.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://allisraelnews.com/president-herzog-gives-mandate-for-forming-next-government-to-eisenkot">All Israel News</a> &middot; <a href="https://apnews.com/article/israel-elections-netanyahu-eisenkot-bec07675825bee5895315e2ea1cb5751">AP</a> &middot; <a href="https://www.timesofisrael.com/liveblog-november-08-2026/">Times of Israel</a></p>
+</article>
+
+<article id="mississippi">
+  <h3>Mississippi remains about 2,500 votes apart, with certification due Nov. 13</h3>
+  <div class="meta"><span class="chip">Elections</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Democrat Scott Colom still leads Sen. Cindy Hyde-Smith by about 2,500 votes with roughly 97% counted, unchanged in substance from Saturday, <a href="https://www.actionnews5.com/2026/11/08/mississippi-us-senate-race-remains-too-close-call/">Action News 5</a> and <a href="https://www.ms.now/news/mississippi-senate-election-scott-colom-hyde-smith">MS NOW</a> reported. Remaining absentee and provisional (affidavit) ballots are under review; the state&rsquo;s Tuesday, Nov. 10, deadline for resolving those ballots sits ahead of Friday&rsquo;s Nov. 13 certification. Hyde-Smith told WLBT, &ldquo;We are not backing down. This election is not over.&rdquo; Colom has said absentee and affidavit ballots tend to favor Democrats. We found no material Sunday movement in Alaska&rsquo;s Peltola&ndash;Sullivan count beyond the same unresolved posture.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.actionnews5.com/2026/11/08/mississippi-us-senate-race-remains-too-close-call/">Action News 5</a> &middot; <a href="https://www.ms.now/news/mississippi-senate-election-scott-colom-hyde-smith">MS NOW</a></p>
+</article>
+
+<article id="house-dems">
+  <h3>House Democrats put healthcare first, with Iran-war and tariff votes behind it</h3>
+  <div class="meta"><span class="chip">Domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p><a href="https://apnews.com/article/democrats-house-majority-iran-war-healthcare-tariffs-0658bbfc51d2bc23331714377cddb0d2">AP</a>, in Sunday summaries, says House Democratic leaders intend to open the new Congress on Jan. 3 with votes to boost Medicaid and restore enhanced Affordable Care Act premium subsidies, and that they are also promising early votes on legislation to stop the war with Iran and to reverse some of President Trump&rsquo;s trade tariffs. Hakeem Jeffries, in line to become speaker, said Democrats would &ldquo;get out of the gate fast.&rdquo; These are leadership intentions, not introduced bills.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://apnews.com/article/democrats-house-majority-iran-war-healthcare-tariffs-0658bbfc51d2bc23331714377cddb0d2">AP</a></p>
+</article>
+
+<article id="liu">
+  <h3>A federal judge intends to have Jessie Liu examine whether the government misled her</h3>
+  <div class="meta"><span class="chip">Domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>U.S. District Judge Ana Reyes says she intends to appoint Jessie Liu &mdash; a former U.S. attorney for the District of Columbia during President Trump&rsquo;s first term &mdash; to examine whether Interior Department, National Park Service, and Justice Department lawyers violated ethics rules or misled the court in a lawsuit challenging renovation of a historic public golf course along the Potomac, <a href="https://apnews.com/article/trump-golf-course-special-master-federal-lawsuit-9c0de85e33cf69d8c22a72f550e67604">AP</a> reported. The case was filed in February by the DC Preservation League and two golfers. We have the judge&rsquo;s stated intention from the AP summary; we did not independently retrieve a docketed order this morning.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://apnews.com/article/trump-golf-course-special-master-federal-lawsuit-9c0de85e33cf69d8c22a72f550e67604">AP</a></p>
+</article>
+
+<article id="huang">
+  <h3>Three House chairs ask Nvidia&rsquo;s Jensen Huang to brief them on a reported Chinese intelligence contact</h3>
+  <div class="meta"><span class="chip">AI / national security</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 2 (committee release + Axios write-through).</p>
+  <p>Reps. John Moolenaar, Brian Mast, and Rick Crawford &mdash; chairs of the Select Committee on China, Foreign Affairs, and the Intelligence Committee &mdash; sent Nvidia CEO Jensen Huang a letter requesting a closed-door joint briefing on Nov. 18 about his interactions with Megaspeed executive Alice Huang, whom the letter calls &ldquo;a publicly reported Chinese intelligence asset,&rdquo; and about the company&rsquo;s defenses against foreign espionage. Huang must accept or offer other dates by Nov. 11, according to the <a href="https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-mast-and-crawford-seek-briefing-from-jensen-huang-on-ties-to-chinese-intelligence-asset">committees&rsquo; Nov. 5 release</a>, which weekend desks including <a href="https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy">Axios</a> carried into Sunday. The letter does not itself adjudicate the underlying intelligence allegation.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://chinaselectcommittee.house.gov/media/press-releases/moolenaar-mast-and-crawford-seek-briefing-from-jensen-huang-on-ties-to-chinese-intelligence-asset">House Select Committee on the CCP</a> &middot; <a href="https://www.axios.com/2026/11/07/jensen-huang-nvidia-congress-china-spy">Axios</a></p>
+</article>
+
+<article id="ags">
+  <h3>Democrats took attorney-general offices in five Republican-leaning states</h3>
+  <div class="meta"><span class="chip">Elections</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1.</p>
+  <p>A Sunday <a href="https://www.streetinsider.com/Reuters/Morning%2BBid">Reuters</a> wrap says Democrats flipped attorney-general offices in Texas, Ohio, Georgia, Iowa, and Kansas in the Nov. 3 midterms, a result Reuters argues will affect future state litigation on abortion, transgender rights, and other issues and add a state-level check on the administration. This is a consequence write-through of Tuesday&rsquo;s results, not a new Sunday count. We did not independently confirm the names of the incoming attorneys general this morning, so we are not printing them.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.streetinsider.com/Reuters/Morning%2BBid">Reuters via StreetInsider</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which below-the-line item should jump if it moves next?</p>
+  <label><input type="radio" name="fb-also" value="eisenkot"> Promote Eisenkot after today&rsquo;s mandate ceremony if Liberman/Ra&rsquo;am arithmetic actually shifts</label>
+  <label><input type="radio" name="fb-also" value="mississippi"> Promote Mississippi when the Nov. 10 affidavit deadline changes the margin or triggers a suit</label>
+  <label><input type="radio" name="fb-also" value="liu"> Dig the Jessie Liu special-master order the moment it is docketed</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 44 sources checked; 29 outside standing watchlist threads. Second Sunday edition (radio-format redo); prior files left untouched, including <code>2026-11-08-v2.html</code>. Follow-ups marked in chips: Krak&oacute;w only (1). Marker tallies &mdash; PS:1 &middot; IC:5 &middot; SS:3 &middot; U:0. Divergence boxes: 3. Radio pattern: one condition-based question per lead (2&ndash;3 specific options); one Also-today tier block; no stock keep/drop wording.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>. No open or recently closed brief-feedback items at run start.</p>
+  <p>Published as <code>issues/2026-11-08b-v2.html</code>. Audit gate: <code>scripts/audit.py</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> &mdash; interest-tag pointers (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Google&rsquo;s $17 billion Cheyenne AI campus and 702 MW Bloom fuel-cell plant produced no Sunday filing or construction trigger beyond Saturday&rsquo;s announcement.</li>
+    <li>CENTCOM&rsquo;s Tampa-based Task Force Iron Gate, stood up Saturday with about 20 staff to pressure Iranian land and Caspian routes, had no new Sunday release.</li>
+    <li>Rep. Thomas Massie still says he will refile impeachment articles against Defense Secretary Pete Hegseth when the House returns Monday or Tuesday; no Sunday change.</li>
+    <li>Florida&rsquo;s newly passed Amendment 3 homestead expansion is already in local budget offices; WUSF and Axios Tampa Bay continue to flag Treasure Coast and Suncoast service squeezes, including Pasco mosquito-control funding warnings.</li>
+    <li>Georgia House District 154 remains unofficially with Republican Rep. Gerald Greene after Saturday&rsquo;s found memory card; no Sunday certification move.</li>
+    <li>AAA&rsquo;s national diesel average printed about $6.1929 on Nov. 8, down slightly from Saturday&rsquo;s $6.2075. Regular gasoline is about $4.02. Florida and Tampa-area diesel remain below the national print.</li>
+    <li>Manatee County held a Saturday session on a proposal to restrict e-bike riders under 16; commissioners have not yet voted.</li>
+    <li>Iranian IRGC claims that two tankers struck mines near the Strait of Hormuz remain unverified by UKMTO, CENTCOM, or named shipowners. We could not confirm the claims. Why: the only account is the IRGC&rsquo;s own claim without independent shipowner, UKMTO, or CENTCOM corroboration.</li>
+    <li>New Zealand&rsquo;s National and Labour parties were nearly deadlocked after Saturday&rsquo;s first election count; no clear U.S. channel, so it stays below the line.</li>
+    <li>Dana White&rsquo;s reported Monday White House meeting after Trump&rsquo;s press-secretary offer remains single-sourced colour with no Sunday confirmation of acceptance.</li>
+  </ul>
+</details>
+
+</div>
+<script>
+(function(){
+  const btn = document.createElement('div');
+  btn.className = 'submit';
+  btn.innerHTML = '<button type="button" id="fb-submit">Send feedback as a GitHub issue</button>';
+  document.querySelector('footer')?.appendChild(btn);
+  document.getElementById('fb-submit')?.addEventListener('click', function(){
+    const parts = [];
+    document.querySelectorAll('input[type=radio]:checked').forEach(r => parts.push(r.name+'='+r.value));
+    const body = encodeURIComponent('News Bot 2.0 feedback for 2026-11-08b-v2\\n\\n'+(parts.join('\\n')||'(none)'));
+    window.open('https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback&title='+encodeURIComponent('brief-feedback: 2026-11-08b-v2')+'&body='+body,'_blank');
+  });
+})();
+</script>
+</body>
+</html>
