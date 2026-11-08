@@ -1,5 +1,21 @@
 # News Bot 2.0 Specification
 
+## Daily method: how the day's topics are chosen (binding)
+
+Follow these steps every run. There is no perfect answer. Make choices. Do not over-index on any list, watchlist, or category table.
+
+1. **Cast the net before consulting any category.** Sweep a broad, viewpoint-diverse set of sources. Examples: AP, Reuters, NPR text (`text.npr.org`), BBC, Al Jazeera, Fox News, WSJ/FT/Bloomberg/NYT headlines as signal only (stand facts up elsewhere), Politico, Axios, The Hill, Federal Register public inspection, major court dockets, Tampa Bay outlets, and X trends/news when reachable. Do **not** start from yesterday's stories or the watchlist. Build a candidate list of **30–50** items people are actually talking about or acting on today.
+
+2. **Weigh each candidate with plain questions.** Does it change something for this reader (money, policy, their region, their work in AI/consulting and financial services)? Is it moving (a decision, deal, fight, deadline)? Is it underplayed relative to its consequence? Do credible sources disagree in a way worth showing? Is there behind-the-scenes politics/money, notable public reaction, or salacious detail that makes it worth attention? Categories in `config.md` only break ties and nudge weight; a story needs no category to make it, and a category with nothing big that day gets nothing. Do **not** carry a story forward just because it ran yesterday; carry it only if it has a new development that clears the same weighing.
+
+3. **Choose and position.** Select roughly **10–15** stories total (leads plus Also today), aiming for at least **10**; fewer only if the day genuinely lacks them, with the reason stated in the brief and the log. For each: why it matters to this reader, what the different sides/sources say (divergence box where they disagree), what to watch next. Near-misses go to Also noted with a one-line reason they missed.
+
+4. **Learn.** Radio answers adjust weighting over time, recorded in `config.md` settled preferences; they do **not** build a fixed search list or a fixed agenda of stories to dig every day.
+
+**Logging.** The process log records the full candidate list with a keep/cut reason for each, and which sources were swept **before** any category was consulted. It also keeps a `beat_coverage` entry for each weighting category (the current audit requires that field): treat each entry as a short weighting note (strongest candidate seen, why it cleared or failed), not as proof that the category was searched as a beat list.
+
+**Audit note.** Enforcement of the candidate-list log and a hard 10-story floor is **proposed and pending the user's approval of an `audit.py` change**. The current audit does **not** enforce those two items. Do not claim that it does.
+
 ## Executable pre-publish gates
 An audit script must exit 0 before any publication. It verifies:
 
@@ -7,31 +23,27 @@ An audit script must exit 0 before any publication. It verifies:
 - Every story has exactly one confidence marker; every lead’s citations match the marker claimed.
 - Every divergence box contains the three required parts (dispute type, source vantage/interests/access/timing, implications for the reader).
 - Independence: Claude’s edition (or prior) opened only after the draft exists; excessive lead overlap flagged.
-- Self-report consistency: provenance line and chat ping match the script’s independent counts.
-- Layout completeness against the Issue 10 template; “Dig deeper” only where substance exists.
-- Process log present and complete: outside-watchlist-first gathering, broad sweeps, negative-check result, and a beat-coverage entry for each standing beat.
-- Feedback freshness: recent brief-feedback issues applied to config.md or the watchlist.
+- Self-report consistency: provenance line matches the script’s independent counts.
+- Layout completeness against the Issue 10 template; “Dig deeper” only where substance exists; required summary paragraph and full In-this-issue nav (see below).
+- Process log present and complete: outside-first gathering evidence, broad sweeps, negative-check result, and a `beat_coverage` weighting note for each weighting category in `config.md`.
+- Feedback freshness: recent brief-feedback issues applied to `config.md` settled preferences / weighting notes.
 - Source thoroughness: no fixed minimum count. Verify process evidence of sufficient independent accounts and a real negative check. Soft warning only if total is unusually low and the paper is heavy on continuations; does not block.
+- Feedback radios: one condition-based question per lead; no stock/reused option text (see Feedback radios).
 
-The audit report is included in the morning chat ping.
+The morning chat ping is **only** the live Pages link and the commit SHA. If the audit blocks publication, send the failure output instead. Do **not** put the audit report, dek, lead recap, marker counts, or source notes in the ping.
 
 ## Process rules
-- Gather by source, starting outside the watchlist.
+- Follow **Daily method** above every run: cast the net first, then weigh, then choose.
 - Open any comparison edition only after the draft is finished; use it only for count comparison and error catching.
-- Emit a structured process log the audit script consumes.
-- Apply radio-button feedback before the next run starts.
+- Emit a structured process log the audit script consumes (including the candidate list with keep/cut reasons, even though the candidate-list shape is not yet an audit hard gate).
+- Apply radio-button feedback before the next run starts; record lasting weight changes in `config.md` settled preferences.
 
 ## Selection
-Absolute bar unchanged: consequence, proximity to beats, changes the picture, and verifiable.
+Absolute bar: consequence for this reader, changes the picture, and verifiable. “Proximity to a category” is a weighting nudge only — never a search brief and never a reason to invent coverage.
 
-Standing beats expanded to include:
-- Elections and electoral process
-- Broader domestic institutional developments
-- International items with clear US consequences
-- Florida / Tampa Bay
-- Data centers / power / AI infrastructure
+**Weighting categories** live in `config.md` (original Core/secondary table plus v2 additions). They break ties and nudge; they do not define what to search or what must appear. A category with nothing consequential that day gets nothing.
 
-Each run must produce a short beat-coverage log entry for every beat (sources checked, strongest candidate, why it cleared or failed the bar). This does not force a story into the leads.
+Each run still produces a short `beat_coverage` log entry for every weighting category (sources that happened to touch it, strongest candidate, why it cleared or failed). That satisfies the current audit’s process-log field. It is a weighting note after the net was cast — not evidence that the day was searched category-by-category.
 
 ## Per-article sourcing
 For each article (lead or short item), list the number of independent sources used and include inline links in the text so the reader can see where the point of view comes from.
@@ -39,9 +51,9 @@ For each article (lead or short item), list the number of independent sources us
 ## Single-file “Also noted” section
 At the bottom of the same HTML file, after the footer, a collapsible `<details>` section headed “Also noted.” Closed by default.
 
-Contains only short (1–2 sentence) pointers to items that matched standing interest tags but did not clear the main bar or length limits. Cap at 8–12 items. No markers, boxes, or long write-ups.
+Contains only short (1–2 sentence) pointers to near-misses — items that were in the candidate net but did not clear the main bar or length limits — each with a one-line reason it missed. Cap at 8–12 items. No markers, boxes, or long write-ups.
 
-Interest tags (starter list, editable in config.md):
+Interest tags (starter list, editable in `config.md`; weighting aids for Also noted only):
 - AI infrastructure & consulting-relevant trends
 - Financial-services regulation / market structure
 - Data centers & power
@@ -49,15 +61,16 @@ Interest tags (starter list, editable in config.md):
 - Elections / electoral process when material
 
 ## Output and delivery
-Publish under a distinct filename such as `issues/YYYY-MM-DD-v2.html` so it does not overwrite any original edition.
+Publish under a distinct filename such as `issues/YYYY-MM-DD-v2.html` (or `…-b-v2.html`, `…-c-v2.html` for same-day redos) so it does not overwrite any prior edition.
 
-Chat ping includes the link, dek, leads with key numbers, audit summary, marker/box counts, and source notes.
+**Chat ping:** only the live Pages link and the commit SHA. On audit failure: the failure output only. No dek, no lead recap, no audit summary in chat.
 
 ## Implementation notes
-- Place the audit script(s) in the repo (e.g. scripts/audit.py).
+- Place the audit script(s) in the repo (e.g. `scripts/audit.py`).
 - The routine or skill must treat a non-zero audit exit as a hard failure.
 - Keep natural-language rules high-salience; let the code enforce the details.
 - Share the same audit scripts with any parallel version so both editions are held to identical quantitative standards where possible.
+- Proposed (not yet implemented) audit gates: require the process log’s full candidate list with keep/cut reasons, and a soft/hard floor near 10 stories unless the log states why the day lacked them. Await user approval before editing `audit.py`.
 
 ## Feedback radios (binding)
 
@@ -92,4 +105,3 @@ Modeled on the original News Bot (`p.meta` dek + “In this issue” nav), e.g. 
 Every `#id` must resolve to an element in the file. Every lead and Also-today story must appear exactly once. No broken, empty, or stray story entries.
 
 The audit enforces both gates.
-
