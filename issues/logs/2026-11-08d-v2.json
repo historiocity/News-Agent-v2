@@ -1,0 +1,541 @@
+{
+  "date": "2026-11-08",
+  "edition": "v2d-redo",
+  "filename": "issues/2026-11-08d-v2.html",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Cast net before any category/watchlist/today's earlier editions. Opened NPR text front (Sunday Nov 8), Al Jazeera /news/ index + Middle East desks, Anadolu Morning Briefing Nov 8, Xinhua world digest, AP News Summaries via regional syndication, BBC Iran-reward and Krakow desks, Fox politics front, Guardian Krakow terror probe, CNBC Democratic tariff plans (Sunday), Maryland Matters/Stateline data-center ballot tracker, Overdrive + EIA diesel tables, Treasury Daily Par Yield Curve CSV, Federal Register public-inspection API (offline Sunday note), Tampa Bay/Bradenton local wires, Wikipedia Portal:Current events/2026 November 8 as negative-check list only. Did NOT open 2026-11-08/08b/08c v2 files or their logs until draft existed.",
+  "broad_sweeps": [
+    {
+      "source": "text.npr.org Sunday Nov 8 front",
+      "outside": true
+    },
+    {
+      "source": "Al Jazeera /news/ index + Iron Gate + Aramco articles",
+      "outside": true
+    },
+    {
+      "source": "Anadolu Morning Briefing Nov 8 2026",
+      "outside": true
+    },
+    {
+      "source": "Xinhua world news summary 0030 GMT Nov 8",
+      "outside": true
+    },
+    {
+      "source": "AP News Summaries ~4:58 / 7:26 / 8:29 a.m. EST via regional reprints",
+      "outside": true
+    },
+    {
+      "source": "BBC News home + Iran $20m reward article",
+      "outside": true
+    },
+    {
+      "source": "Fox News home (viewpoint)",
+      "outside": true
+    },
+    {
+      "source": "Guardian Krakow terrorism investigation",
+      "outside": true
+    },
+    {
+      "source": "CNBC Democrats tariff clawback Nov 8",
+      "outside": true
+    },
+    {
+      "source": "Politico / CNBC / WaPo Trump DOJ Democrats order",
+      "outside": true
+    },
+    {
+      "source": "Maryland Matters / Stateline data-center ballot measures",
+      "outside": true
+    },
+    {
+      "source": "Overdrive diesel + EIA gasdiesel weekly tables",
+      "outside": true
+    },
+    {
+      "source": "Treasury Daily Par Yield Curve Nov 2026 CSV",
+      "outside": true
+    },
+    {
+      "source": "Federal Register public-inspection JSON (Sunday offline message)",
+      "outside": true
+    },
+    {
+      "source": "AAA gasprices.aaa.com diesel card",
+      "outside": true
+    },
+    {
+      "source": "Action News 5 / WLBT Mississippi Senate",
+      "outside": true
+    },
+    {
+      "source": "Ukrinform / Nikkei / Arab News Zaporizhzhia",
+      "outside": true
+    },
+    {
+      "source": "White House release Stephen Miller CoS",
+      "outside": true
+    },
+    {
+      "source": "JPMorgan midterms markets note + BofA AI capex summary",
+      "outside": true
+    },
+    {
+      "source": "Wikipedia Portal:Current events/2026 November 8 (list only)",
+      "outside": true
+    },
+    {
+      "source": "FOX 13 / WTSP Bradenton officers (local negative)",
+      "outside": true
+    },
+    {
+      "source": "Kyodo Japan quake digest",
+      "outside": true
+    },
+    {
+      "source": "Hindustan Times morning brief (Delhi air)",
+      "outside": true
+    },
+    {
+      "source": "Al Arabiya / CNA Aramco Riyadh tower",
+      "outside": true
+    }
+  ],
+  "sources_checked_total": 48,
+  "sources_outside_watchlist": 36,
+  "sources_swept_before_categories": [
+    "NPR text",
+    "Al Jazeera",
+    "Anadolu",
+    "Xinhua",
+    "AP summaries",
+    "BBC",
+    "Fox",
+    "Guardian",
+    "CNBC",
+    "Politico",
+    "Washington Post",
+    "Maryland Matters/Stateline",
+    "Overdrive",
+    "EIA",
+    "Treasury",
+    "Federal Register API",
+    "AAA",
+    "Wikipedia current events",
+    "Tampa Bay locals",
+    "Kyodo",
+    "Hindustan Times",
+    "Al Arabiya",
+    "CNA",
+    "Ukrinform",
+    "Nikkei",
+    "Arab News",
+    "White House",
+    "JPMorgan",
+    "The Street/BofA",
+    "Action News 5",
+    "WLBT",
+    "KTLA/AP Mississippi",
+    "Turkiye Today",
+    "NY Post",
+    "The Hill"
+  ],
+  "negative_check": {
+    "result": "Underreported relative to consequence: (1) nationwide data-center ballot wave (44+ restriction measures) \u2014 promoted to lead; (2) Trump DOJ directive targeting Democratic oversight/impeachment talk \u2014 caught on comparison to original News Bot Nov 8 after draft, then added as lead.",
+    "underreported": true,
+    "declined": [
+      "Japan M5.7 quake injuries \u2014 no structural US channel",
+      "Senegal migrant boat sinking \u2014 disaster without US policy lever",
+      "Pope Leo Uruguay/Argentina tour \u2014 foreign pastoral politics",
+      "Paraguay charges against ousted President Pena \u2014 foreign",
+      "Delhi Diwali-eve air \u2014 foreign environment",
+      "Bradenton officers struck by fleeing car \u2014 crime blotter",
+      "ANC municipal collapse in South Africa \u2014 foreign election; original led it, this brief declined for missing US channel today",
+      "Experimental heart-disease medicine failure \u2014 early science",
+      "Dana White press-secretary offer meeting \u2014 personnel curiosity (Also noted)"
+    ]
+  },
+  "comparison_edition": {
+    "opened_after_draft": true,
+    "path": "/workspace/news-agent-orig-ro/issues/2026-11-08.html",
+    "note": "Original No. 65: six leads, nine below the line. Leads were Aramco, diesel/freight, Eisenkot mandate, $20m Iran reward, Trump DOJ investigate Democrats, ANC metros. After comparison: promoted $20m reward to lead; added DOJ probe lead; declined ANC (no clear US channel). Diesel kept but moved to Also today to hold lead count at eight while adding the two misses. Recorded here per independence rule."
+  },
+  "candidate_list": [
+    {
+      "item": "Eisenkot mandate Sunday ceremony",
+      "decision": "keep-lead",
+      "reason": "Moving: formal mandate handoff; US ally/Iran war channel"
+    },
+    {
+      "item": "Aramco Riyadh administrative tower damaged by Houthi debris",
+      "decision": "keep-lead",
+      "reason": "New Sunday fact; energy/markets channel; divergence on supply shock vs admin damage"
+    },
+    {
+      "item": "CENTCOM Task Force Iron Gate in Tampa",
+      "decision": "keep-lead",
+      "reason": "Local Tampa bar + Iran blockade expansion; moving institutional fact"
+    },
+    {
+      "item": "Mississippi Senate outstanding ballots unknown",
+      "decision": "keep-lead",
+      "reason": "Moving process story; Nov 10/13 dated events; electoral process"
+    },
+    {
+      "item": "Democrats tariff clawback / restore trade authority",
+      "decision": "keep-lead",
+      "reason": "Money/policy for reader; Sunday CNBC plans piece"
+    },
+    {
+      "item": "Data-center ballot measures 44+ passed",
+      "decision": "keep-lead",
+      "reason": "Underplayed nationally; local power bills/AI siting; purple backlash"
+    },
+    {
+      "item": "Trump orders DOJ probe of Democrats over threats",
+      "decision": "keep-lead",
+      "reason": "Institutional escalation; added after original comparison confirmed altitude"
+    },
+    {
+      "item": "State Dept $20m Iran nuclear Rewards for Justice",
+      "decision": "keep-lead",
+      "reason": "Strong divergence with obliterated claims; promoted after comparison"
+    },
+    {
+      "item": "Diesel EIA $6.29 eighth week above $6 / freight soft",
+      "decision": "keep-also",
+      "reason": "Clears bar; demoted from lead only to fit DOJ+reward without exceeding ~8 leads"
+    },
+    {
+      "item": "Krakow mourning + terrorism probe",
+      "decision": "keep-also",
+      "reason": "NATO ally; continuing trigger; altitude below US-channel leads"
+    },
+    {
+      "item": "Zaporizhzhia 16th external power loss",
+      "decision": "keep-also",
+      "reason": "Nuclear safety; continuing; watch generator fuel"
+    },
+    {
+      "item": "Stephen Miller CoS Monday",
+      "decision": "keep-also",
+      "reason": "Domestic institutions; first day Monday"
+    },
+    {
+      "item": "JPMorgan/BofA AI capex after midterms",
+      "decision": "keep-also",
+      "reason": "AI/financials weighting; research notes not filings"
+    },
+    {
+      "item": "Democrats affordability/ACA agenda positioning",
+      "decision": "keep-also",
+      "reason": "Agenda not bill text yet"
+    },
+    {
+      "item": "M/V Huda disabled + IRGC mine claims",
+      "decision": "keep-also",
+      "reason": "Blockade enforcement; mine claims unconfirmed"
+    },
+    {
+      "item": "Dana White WH press secretary meeting Monday",
+      "decision": "also-noted",
+      "reason": "Personnel curiosity; no policy text"
+    },
+    {
+      "item": "Japan M5.7 quake",
+      "decision": "cut",
+      "reason": "No structural US channel"
+    },
+    {
+      "item": "Senegal boat sinking",
+      "decision": "cut",
+      "reason": "Disaster without US policy lever"
+    },
+    {
+      "item": "Pope Leo Uruguay/Argentina",
+      "decision": "also-noted",
+      "reason": "Foreign pastoral; no US lever"
+    },
+    {
+      "item": "Paraguay Pena Ueno Bank charges",
+      "decision": "cut",
+      "reason": "Foreign corporate/political"
+    },
+    {
+      "item": "Delhi Diwali-eve air",
+      "decision": "also-noted",
+      "reason": "Foreign environment"
+    },
+    {
+      "item": "Bradenton officers hit by car",
+      "decision": "also-noted",
+      "reason": "Crime blotter"
+    },
+    {
+      "item": "Heart disease medicine fails",
+      "decision": "also-noted",
+      "reason": "Early science"
+    },
+    {
+      "item": "ANC South Africa municipal collapse",
+      "decision": "cut",
+      "reason": "Foreign election; original led it; no clear US channel today"
+    },
+    {
+      "item": "Gen Z blue wave explainers",
+      "decision": "also-noted",
+      "reason": "Color absorbed into tariff/affordability"
+    },
+    {
+      "item": "Federal Register PI list Sunday offline",
+      "decision": "also-noted",
+      "reason": "Operational note, not empty"
+    },
+    {
+      "item": "Treasury 10y 4.86% Friday close",
+      "decision": "also-noted",
+      "reason": "Quiet weekend; no Monday open"
+    },
+    {
+      "item": "Erdogan Karabakh visit / Trump call",
+      "decision": "cut",
+      "reason": "Thin US channel today"
+    },
+    {
+      "item": "Colombian army base drone attack",
+      "decision": "cut",
+      "reason": "Foreign conflict without US channel"
+    },
+    {
+      "item": "UAE rescues crew after Sea of Oman cargo fire",
+      "decision": "cut",
+      "reason": "Adjacent to blockade but thin vs Huda disablement"
+    },
+    {
+      "item": "Native American women historic wins (Curley/Flanagan/Haaland)",
+      "decision": "cut",
+      "reason": "Already-called midterm color; no new Sunday trigger"
+    },
+    {
+      "item": "GOP extinction-level / Cruz Watergate-level repudiation framing",
+      "decision": "cut",
+      "reason": "Horse-race/tactics adjacent; substance in tariffs/DOJ/Miller"
+    },
+    {
+      "item": "Amazon Calvert Cliffs abandonment (earlier)",
+      "decision": "cut-as-standalone",
+      "reason": "Used as background inside data-center lead"
+    },
+    {
+      "item": "OCC/bank examiners AI risk frameworks",
+      "decision": "cut",
+      "reason": "Useful but thinner than midterm AI capex bank notes today"
+    },
+    {
+      "item": "Houthi-claimed Sanaa airstrike death tolls",
+      "decision": "cut-as-standalone",
+      "reason": "Single-sourced; mentioned inside Aramco context only"
+    },
+    {
+      "item": "Qatari-mediated Hormuz talks status",
+      "decision": "cut-as-standalone",
+      "reason": "Background inside Eisenkot/Iran items"
+    },
+    {
+      "item": "Susie Wiles resignation mechanics",
+      "decision": "cut-as-standalone",
+      "reason": "Absorbed into Miller Also-today"
+    },
+    {
+      "item": "Alaska Senate still uncalled",
+      "decision": "cut-as-standalone",
+      "reason": "Mentioned inside Mississippi; no new Sunday facts"
+    },
+    {
+      "item": "Nvidia mid-November earnings preview",
+      "decision": "cut-as-standalone",
+      "reason": "Forward pointer inside banks-ai"
+    },
+    {
+      "item": "Tax Foundation $820 household tariff burden estimate",
+      "decision": "cut-as-standalone",
+      "reason": "Cited context inside tariffs lead via CNBC"
+    },
+    {
+      "item": "Supreme Court tariff refunds ~$166B order background",
+      "decision": "cut-as-standalone",
+      "reason": "Background inside tariffs"
+    },
+    {
+      "item": "Merz Germany 82% dissatisfaction poll",
+      "decision": "cut",
+      "reason": "Foreign politics"
+    },
+    {
+      "item": "Italian hybrid warfare warning Crosetto",
+      "decision": "cut",
+      "reason": "Speech without US action"
+    },
+    {
+      "item": "Zelenskyy North Korean missiles claim",
+      "decision": "cut",
+      "reason": "Thin Sunday corroboration vs Zaporizhzhia concrete event"
+    },
+    {
+      "item": "Flavio Bolsonaro flight / agent network allegation",
+      "decision": "cut",
+      "reason": "Foreign; anonymous sourcing"
+    },
+    {
+      "item": "UFC / sports results",
+      "decision": "cut",
+      "reason": "Anti-topic"
+    },
+    {
+      "item": "Atacama floral display / chai origins / teen periods honoree",
+      "decision": "cut",
+      "reason": "Feature anti-topics / no consequence"
+    },
+    {
+      "item": "Climate colors illustrated journey NPR",
+      "decision": "cut",
+      "reason": "Feature"
+    },
+    {
+      "item": "Maine medicine-in-the-sky",
+      "decision": "cut",
+      "reason": "Feature"
+    },
+    {
+      "item": "Incoming senators historic firsts",
+      "decision": "cut",
+      "reason": "Midterm color without new Sunday policy trigger"
+    }
+  ],
+  "beat_coverage": {
+    "ai_tech_industry": {
+      "strongest": "Data-center ballot wave + bank AI capex notes",
+      "cleared": "ballot wave as lead; bank notes as Also today",
+      "why": "Local restriction politics and post-midterm capex digests both move for this reader"
+    },
+    "macro_markets": {
+      "strongest": "Tariffs clawback + diesel/freight + Treasury 4.86%",
+      "cleared": "tariffs lead; diesel Also today; Treasury quiet weekend noted",
+      "why": "Money and policy channels clear; no new Fed print Sunday"
+    },
+    "world_economy": {
+      "strongest": "Aramco Riyadh debris / Houthi escalation",
+      "cleared": "lead",
+      "why": "US fuel/freight second-order channel"
+    },
+    "us_debt_fiscal": {
+      "strongest": "None dated Sunday",
+      "cleared": "nothing",
+      "why": "No CBO/issuance/buyback trigger; Treasury curve quiet"
+    },
+    "us_financials": {
+      "strongest": "JPM/BofA AI midterm notes",
+      "cleared": "Also today",
+      "why": "Research notes, not earnings or regulation drop"
+    },
+    "us_politics_policy": {
+      "strongest": "Tariffs + DOJ order + Dem affordability agenda",
+      "cleared": "two leads + Also today",
+      "why": "Substance over horse race"
+    },
+    "geopolitics": {
+      "strongest": "Eisenkot mandate; Krakow; Zaporizhzhia",
+      "cleared": "Eisenkot lead; others Also today",
+      "why": "US ally / nuclear safety channels"
+    },
+    "science_public_health": {
+      "strongest": "Heart-disease medicine fail (NPR)",
+      "cleared": "nothing / Also noted",
+      "why": "Early; no accessible practice-changing study"
+    },
+    "uap_disclosure": {
+      "strongest": "None found Sunday",
+      "cleared": "nothing",
+      "why": "No government paperwork or credible release in net"
+    },
+    "energy_grid": {
+      "strongest": "Diesel EIA weekly + data-center power politics",
+      "cleared": "both covered (diesel Also; DC lead)",
+      "why": "Household bill and freight channels"
+    },
+    "elections_and_electoral_process": {
+      "strongest": "Mississippi outstanding ballots",
+      "cleared": "lead",
+      "why": "Dated certify/mail deadlines; process opacity"
+    },
+    "domestic_institutions": {
+      "strongest": "Miller CoS + DOJ order",
+      "cleared": "DOJ lead; Miller Also",
+      "why": "Structural West Wing and Justice moves"
+    },
+    "international_with_us_channel": {
+      "strongest": "Iron Gate + $20m reward + Huda",
+      "cleared": "two leads + Also",
+      "why": "Clear US military/State channels"
+    },
+    "florida_tampa_bay": {
+      "strongest": "Iron Gate HQ in Tampa; Bradenton crime",
+      "cleared": "Iron Gate lead; Bradenton declined blotter",
+      "why": "Local bar met by task force footprint"
+    },
+    "data_centers_power_ai": {
+      "strongest": "44+ ballot measures",
+      "cleared": "lead",
+      "why": "Public reaction + local energy/tax deals"
+    },
+    "ai_and_financial_services": {
+      "strongest": "Bank AI capex midterm digests",
+      "cleared": "Also today",
+      "why": "Touches reader's AI/consulting and FS work"
+    }
+  },
+  "continuations": [
+    {
+      "story": "Eisenkot mandate",
+      "trigger": "Sunday ceremony formally hands Eisenkot the mandate (28-day clock)"
+    },
+    {
+      "story": "Mississippi Senate",
+      "trigger": "Sunday reporting still shows no reconciled statewide outstanding-ballot total; Nov 10 mail / Nov 13 certify"
+    },
+    {
+      "story": "Krakow attack",
+      "trigger": "National mourning Nov 8-9 begins; prosecutors open terrorism investigation"
+    },
+    {
+      "story": "Zaporizhzhia external power",
+      "trigger": "Ferosplavna-1 disconnect; 16th complete external-power loss; on diesel generators"
+    }
+  ],
+  "per_article_source_counts": {
+    "eisenkot": 4,
+    "aramco": 4,
+    "iron-gate": 5,
+    "mississippi": 4,
+    "tariffs": 3,
+    "datacenters": 3,
+    "doj": 3,
+    "iran-reward": 3,
+    "diesel": 4,
+    "krakow": 3,
+    "zaporizhzhia": 3,
+    "miller": 3,
+    "banks-ai": 2,
+    "dem-agenda": 3,
+    "huda": 3
+  },
+  "radio_format": "Daily method + feedback radios: one condition-based question per lead (2-3 story-specific options); one On the items below the line block after Also today; no stock/reused option text",
+  "story_counts": {
+    "leads": 8,
+    "also_today": 7,
+    "total": 15,
+    "also_noted": 10
+  },
+  "candidate_list_size": 50
+}

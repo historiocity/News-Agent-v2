@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 8 November 2026 (News Bot 2.0 · redo d)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Sunday, 8 November 2026 &middot; redo (d)</div>
+  <h1>Eisenkot takes the mandate, Aramco takes shrapnel, Iron Gate stands up in Tampa, and the State Department posts $20&nbsp;million for an &ldquo;obliterated&rdquo; nuclear programme</h1>
+  <p class="summary">Eight leads, seven below the line. Eisenkot receives the coalition mandate in Jerusalem; Houthi debris hits an Aramco tower in Riyadh; CENTCOM&rsquo;s Tampa-based Iron Gate expands the Iran blockade onto land; Mississippi&rsquo;s Senate race still has no reliable outstanding-ballot count; Democrats tee up tariff clawbacks; voters keep restricting data centers; Trump orders a Justice Department probe of Democratic &ldquo;threats&rdquo;; and the State Department posts a $20&nbsp;million Iran nuclear reward that sits uneasily beside &ldquo;obliterated&rdquo; claims. Also today covers diesel above $6, Krak&oacute;w&rsquo;s mourning and terror probe, Zaporizhzhia&rsquo;s sixteenth blackout, Miller&rsquo;s first day as chief of staff, bank research on AI capex, Democratic affordability bills, and the disabled M/V Huda.</p>
+  <p class="sub">Fourth Sunday edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>. Wide net first; categories only for weighting. Filename: <code>2026-11-08d-v2.html</code>. Prior Sunday files left untouched.</p>
+  <p class="prov"><b>48 sources checked, 36 of them before any weighting category was consulted.</b> Outside-first gather: NPR text front, Al Jazeera news index and live Middle East desks, Anadolu Morning Briefing, Xinhua world digest, AP News Summaries (syndicated), BBC Iran-reward and Krak&oacute;w desks, Fox politics front, Guardian Krak&oacute;w terror probe, CNBC Democratic tariff plans, Maryland Matters / Stateline data-center ballot tracker, Overdrive / EIA diesel tables, Treasury Daily Par Yield Curve (10-year at 4.86% on Friday&rsquo;s close), Federal Register public-inspection note (offline until Monday 8:45&nbsp;a.m. Eastern), Tampa Bay / Bradenton local crime wires, Wikipedia current-events portal as negative-check list only.<br><br>
+  <b>Negative check:</b> two underplayed items relative to consequence: the nationwide data-center ballot wave (44+ restriction measures) and the President&rsquo;s DOJ directive aimed at Democratic oversight/impeachment talk — both lighter on Sunday wire fronts than Aramco/Eisenkot color, both with direct reader consequence. Declined for altitude or missing US channel: Japan M5.7 quake injuries; Senegal migrant-boat sinking; Pope Leo&rsquo;s Uruguay/Argentina tour; Paraguay&rsquo;s charges against ousted President Pe&ntilde;a; Delhi Diwali-eve air; Bradenton officers struck by a fleeing car (crime blotter).</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#eisenkot">Herzog hands Eisenkot the mandate to form Israel&rsquo;s next government</a></li>
+    <li><a href="#aramco">Houthi debris damages an Aramco administrative tower in Riyadh</a></li>
+    <li><a href="#iron-gate">Task Force Iron Gate stands up in Tampa to choke Iran&rsquo;s land routes</a></li>
+    <li><a href="#mississippi">Mississippi still cannot say how many Senate ballots remain</a></li>
+    <li><a href="#tariffs">Democrats prepare to claw back tariff authority from the White House</a></li>
+    <li><a href="#datacenters">Voters pass dozens of ballot measures restricting data centers</a></li>
+    <li><a href="#doj">Trump orders DOJ to investigate Democrats over alleged threats</a></li>
+    <li><a href="#iran-reward">State Department posts a $20&nbsp;million reward for Iran nuclear information</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#diesel">Diesel holds above $6 for an eighth week as freight rates soften</a></li>
+    <li><a href="#krakow">Poland opens a terrorism probe as national mourning begins</a></li>
+    <li><a href="#zaporizhzhia">Zaporizhzhia loses external power for the sixteenth time this year</a></li>
+    <li><a href="#miller">Stephen Miller takes over as White House chief of staff on Monday</a></li>
+    <li><a href="#banks-ai">Bank research digests the midterm hit to AI data-center timelines</a></li>
+    <li><a href="#dem-agenda">House Democrats put affordability and ACA subsidies first</a></li>
+    <li><a href="#huda">CENTCOM disables the M/V Huda after a blockade breach attempt</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="eisenkot">
+  <h3>Herzog hands Eisenkot the mandate to form Israel&rsquo;s next government</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics / US ally</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Trigger: Sunday ceremony at the President&rsquo;s Residence hands Eisenkot the formal mandate.</p>
+  <p>Israeli President <a href="https://apnews.com/article/israel-elections-netanyahu-eisenkot-bec07675825bee5895315e2ea1cb5751">Isaac Herzog</a> tasked Yashar leader and former military chief <b>Gadi Eisenkot</b> with forming the next government after last month&rsquo;s deadlocked election. The invitation was for Sunday at 5&nbsp;p.m. local time (1500&nbsp;GMT) at the President&rsquo;s Residence; once received, Eisenkot has <b>28 days</b> (extendable by up to 14) under Basic Law. <a href="https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government">The Guardian</a> and <a href="https://www.aljazeera.com/news/">Al Jazeera</a> both frame the choice as a direct setback for Benjamin Netanyahu. Eisenkot&rsquo;s public line is a &ldquo;national emergency government.&rdquo; Coalition paths that keep coming up across desks: a power-sharing deal with Netanyahu, ultra-Orthodox partners, or outside support from Arab-led parties — each with its own veto politics. For a US reader watching the Iran war and Strait of Hormuz talks, the practical question is whether a new coalition softens, hardens, or simply stalls Israel&rsquo;s next military and diplomatic moves while Qatari mediation continues.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who can actually assemble 61 seats</span>
+    <p><b>What is in dispute.</b> Narrative dispute: Netanyahu allies still say only he can form a stable right-wing bloc; Eisenkot&rsquo;s camp says most party recommendations to Herzog already pointed his way.</p>
+    <p><b>Why the vantage differs.</b> Party leaders speak for their own seat math and donor bases. Access: Herzog&rsquo;s consultation notes are not public; seat counts are.</p>
+    <p><b>What it means for the reader.</b> Treat the mandate as real and the coalition as unproven. The observation that settles the next chapter is either a signed coalition agreement inside 28 days or a handoff back to Netanyahu.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Eisenkot&rsquo;s mandate?</b></p>
+    <label><input type="radio" name="fb-eisenkot" value="coalition"> When a signed coalition names the defense and foreign ministers who will run the Iran file</label>
+    <label><input type="radio" name="fb-eisenkot" value="talks"> When the new government&rsquo;s first public line on Qatari-mediated Hormuz talks diverges from Netanyahu&rsquo;s</label>
+    <label><input type="radio" name="fb-eisenkot" value="fail"> Only if the 28-day clock fails and the mandate flips back</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://apnews.com/article/israel-elections-netanyahu-eisenkot-bec07675825bee5895315e2ea1cb5751">AP</a> &middot;
+    <a href="https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government">Guardian</a> &middot;
+    <a href="https://www.aljazeera.com/news/">Al Jazeera</a> &middot;
+    <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-8-2026/4115649">Anadolu</a>
+  </p>
+</article>
+
+<article id="aramco">
+  <h3>Houthi debris damages an Aramco administrative tower in Riyadh</h3>
+  <div class="meta">
+    <span class="chip">World economy / energy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4.</p>
+  <p>Saudi air defenses intercepted ballistic missiles aimed at Riyadh and the Eastern Province on Sunday; falling shrapnel damaged an <b>Aramco administrative building</b> in the King Abdullah Financial District, Saudi state media and the Energy Ministry said, with <b>no casualties</b> reported. <a href="https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province">Al Jazeera</a> and <a href="https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60">AP</a> both describe blown-out windows across several floors of a tower in the capital&rsquo;s financial district, not a hit on production facilities. The Saudi-led coalition attributed the launches to Yemen&rsquo;s Houthis, who have escalated against Saudi airports and energy sites since a truce collapsed in July. Houthi-run media separately claimed heavy Saudi-led airstrikes near Sanaa overnight (death tolls in the mid-twenties to low thirties); those figures are single-sourced to Houthi health spokespeople and are not independently confirmed here. For US fuel and freight costs already elevated by the Iran blockade, the relevant channel is whether missile debris against Aramco&rsquo;s Riyadh offices becomes a pattern against export infrastructure — or stays a political-signal strike on the capital.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; administrative damage vs. supply shock</span>
+    <p><b>What is in dispute.</b> Framing dispute: some early wires lead with &ldquo;Aramco hit&rdquo;; Saudi Energy Ministry language stresses an administrative building and falling shrapnel after interception, with no production outage claimed.</p>
+    <p><b>Why the vantage differs.</b> Wire headlines compress; Riyadh has an interest in denying operational disruption; Houthi media has an interest in claiming reach into the capital.</p>
+    <p><b>What it means for the reader.</b> Do not price a supply shock off Sunday&rsquo;s administrative damage alone. Watch for confirmed hits on export terminals, Ras Tanura, or Red Sea loading — those move diesel and gasoline.</p>
+  </div>
+  <div class="fb">
+    <p><b>What would make the next Aramco/Houthi development worth following?</b></p>
+    <label><input type="radio" name="fb-aramco" value="export"> A confirmed hit on an export terminal or loading facility that shows up in tanker fixtures</label>
+    <label><input type="radio" name="fb-aramco" value="insurance"> War-risk insurance or tanker routing changes that raise Gulf freight into US prices</label>
+    <label><input type="radio" name="fb-aramco" value="admin-only"> Only if the pattern stays on Riyadh offices and airports, not barrels</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province">Al Jazeera</a> &middot;
+    <a href="https://apnews.com/article/mideast-news-november-8-2026-090d96e25872f5c63e105b9dd3e5dc60">AP</a> &middot;
+    <a href="https://english.alarabiya.net/News/middle-east/2026/11/08/saudi-aramco-administrative-building-in-riyadh-damaged-in-attempted-attack">Al Arabiya</a> &middot;
+    <a href="https://www.channelnewsasia.com/world/saudi-arabia-houthis-riyadh-financial-district-aramco-tower-6534071">CNA</a>
+  </p>
+</article>
+
+<article id="iron-gate">
+  <h3>Task Force Iron Gate stands up in Tampa to choke Iran&rsquo;s land routes</h3>
+  <div class="meta">
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5. Local bar cleared: the task force is headquartered in Tampa.</p>
+  <p><a href="https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes">CENTCOM</a> announced Task Force <b>Iron Gate</b>, directed by Adm. Brad Cooper, to disrupt Iran&rsquo;s movement of advanced weapons, dual-use tech, sanctioned materials, and illicit revenue across land borders and the Caspian — expanding a months-long naval blockade of Iranian ports. The unit is based in <b>Tampa</b>, roughly 20 civilian and military staff, coordinating across US agencies. CENTCOM separately said US forces disabled the St. Kitts-flagged <b>M/V Huda</b> in the Gulf of Oman after the crew ignored warnings following an Iranian port call; since July the command counts 147 redirected commercial vessels and five disabled for non-compliance. Former Pentagon Middle East official Michael Mulroy told Al Jazeera the land-route map is also a target set if the White House orders escalation beyond the current blockade. For a Tampa Bay reader, this is both a local military-footprint story and a live piece of the Iran war&rsquo;s economic half — the half that already shows up in diesel and insurance.</p>
+  <div class="fb">
+    <p><b>What should keep Iron Gate on the brief?</b></p>
+    <label><input type="radio" name="fb-irongate" value="tampa-ops"> Named Tampa-based tasking, hiring, or interagency authorities that change how the command works from MacDill</label>
+    <label><input type="radio" name="fb-irongate" value="escalation"> Evidence Iron Gate&rsquo;s target list is being used for strikes on economic or energy infrastructure, not only monitoring</label>
+    <label><input type="radio" name="fb-irongate" value="blockade-stats"> Fresh blockade statistics (redirects, disabled ships, claimed oil-revenue denied) that move markets</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes">Al Jazeera</a> &middot;
+    <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-8-2026/4115649">Anadolu</a> &middot;
+    <a href="https://www.bbc.com/news/articles/c6d091ev3p0jo">BBC</a> &middot;
+    <a href="https://english.news.cn/20261108/5e72b6c3d9be42faa86443b3792082b5/c.html">Xinhua</a> &middot;
+    <a href="https://www.turkiyetoday.com/region/us-launches-task-force-iron-gate-to-choke-irans-land-caspian-routes-3231934">T&uuml;rkiye Today</a>
+  </p>
+</article>
+
+<article id="mississippi">
+  <h3>Mississippi still cannot say how many Senate ballots remain</h3>
+  <div class="meta">
+    <span class="chip">Elections / electoral process</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Trigger: Sunday reporting still shows no statewide outstanding-ballot total; certification deadline Nov.&nbsp;13.</p>
+  <p>Democrat <b>Scott Colom</b> still leads Republican Sen. <b>Cindy Hyde-Smith</b> by roughly 2,500 votes with the vast majority of Election Day precincts in, and nobody — including Secretary of State Michael Watson — can publish a firm statewide count of what is left. Watson has cited about <b>3,300</b> outstanding mail ballots plus an unknown affidavit (provisional) pool; campaigns and party chairs have floated 12,000&ndash;20,000 affidavit figures at different points this week. Mail ballots postmarked by Election Day can arrive through <b>Nov.&nbsp;10</b>; counties must certify by <b>Nov.&nbsp;13</b>. Mississippi does not allow recounts. <a href="https://www.actionnews5.com/2026/11/08/mississippi-us-senate-race-remains-too-close-call/">Local Sunday reporting</a> and earlier <a href="https://apnews.com/">AP</a> outstanding-vote estimates still disagree on the size of the remaining pool because the state has no central reporting system across 82 counties. Alaska remains the other uncalled Senate race. Control of the chamber is already called for Democrats nationally; Mississippi matters for the margin and for the precedent around affidavit processing and the state&rsquo;s ended cure process for flawed mail ballots.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many ballots are actually left</span>
+    <p><b>What is in dispute.</b> Facts dispute: AP&rsquo;s outstanding-vote model, the Secretary of State&rsquo;s mail-ballot figure, and campaign/party affidavit estimates do not yet reconcile.</p>
+    <p><b>Why the vantage differs.</b> Counties report on their own clocks; Watson&rsquo;s office lacks a live statewide affidavit total; campaigns count what their watchers see.</p>
+    <p><b>What it means for the reader.</b> Do not treat any single outstanding number as settled until county certification filings land. The dated events that close the story are Nov.&nbsp;10 mail arrival and Nov.&nbsp;13 certification.</p>
+  </div>
+  <div class="fb">
+    <p><b>What would make the Mississippi count worth another lead?</b></p>
+    <label><input type="radio" name="fb-ms" value="certify"> County certification filings that show who actually gained from affidavits and late mail</label>
+    <label><input type="radio" name="fb-ms" value="lawsuit"> A filed lawsuit over rejected mail or affidavit rules that could move the certified total</label>
+    <label><input type="radio" name="fb-ms" value="margin-only"> Only if the final margin is inside a few hundred and becomes a national process fight</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.actionnews5.com/2026/11/08/mississippi-us-senate-race-remains-too-close-call/">Action News 5</a> &middot;
+    <a href="https://www.wlbt.com/2026/11/06/secretary-state-explains-affidavit-ballot-process-mississippi-senate-race/">WLBT</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6030645">NPR</a> &middot;
+    <a href="https://ktla.com/news/politics/ap-politics/ap-why-its-still-too-early-to-call-the-us-senate-race-in-mississippi/amp/">AP via KTLA</a>
+  </p>
+</article>
+
+<article id="tariffs">
+  <h3>Democrats prepare to claw back tariff authority from the White House</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>With majorities in both chambers, Democratic leaders are putting <b>tariff legislation</b> near the front of the next Congress&rsquo;s early stack. <a href="https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html">CNBC</a> reports House leader Hakeem Jeffries plans to move bills that reassert Congress&rsquo;s trade authority; Sen. Ron Wyden is eyeing Canada duties as a first target; Rep. Jamie Raskin has already demanded records on tariff exemptions he calls &ldquo;sweetheart deals.&rdquo; The administration is already in court over Depression-era authorities used for Canadian goods and over attempts to recreate global tariffs the Supreme Court struck down earlier this year (with large refund orders attached). Trump told CNBC after the election that removing tariffs would stop plant construction and has signaled heavy use of the veto. Democrats lack a veto-proof margin, so the near-term path is oversight, must-pass riders, and political framing for 2028 — not a clean repeal on day one. For household costs and for any consulting work that touches import-heavy clients, the fight over who sets the tariff dial is the money story of the new Congress.</p>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the tariff fight?</b></p>
+    <label><input type="radio" name="fb-tariffs" value="bill-text"> When bill text names which statutes (232 / 301 / 338) get narrowed and which Canada or China lines move first</label>
+    <label><input type="radio" name="fb-tariffs" value="exemption"> When Raskin-style exemption investigations produce named companies or gift-linked deals</label>
+    <label><input type="radio" name="fb-tariffs" value="veto-theater"> Only if a bill reaches Trump&rsquo;s desk and the veto fight itself moves markets</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/08/trump-tariffs-democrats-congress-canada.html">CNBC</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms">Guardian</a> &middot;
+    <a href="https://thehill.com/homenews/senate/6199596-congressional-majorities-trump-challenges/">The Hill</a>
+  </p>
+</article>
+
+<article id="datacenters">
+  <h3>Voters pass dozens of ballot measures restricting data centers</h3>
+  <div class="meta">
+    <span class="chip">Data centers / power / AI</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>As of Friday&rsquo;s updated tally, voters had passed <b>44 ballot measures</b> restricting data-center buildout, with two more leading, and only one North Dakota measure going the other way, according to the Data Centers on the Ballot tracker cited by <a href="https://marylandmatters.org/2026/11/05/repub/voters-across-the-country-reject-data-centers-at-the-polls/">Maryland Matters / Stateline</a>. Tools on the ballots ranged from outright bans and moratoriums to energy-use caps and mandatory voter approval before construction. An NBC exit poll found <b>56%</b> of voters called AI and data centers a crucial or major factor in their House vote. The backlash is purple: Ohio alone saw two dozen municipal measures; Maryland counties from Calvert to Prince George&rsquo;s have already layered pauses after Amazon abandoned a Calvert Cliffs campus plan earlier this year. A UMass Amherst poll earlier found only 11% of Americans would welcome an AI data center in their own community. For this brief the story is not wholesale power prices in the abstract — it is <b>local rate cases, tax and land deals, water and diesel-generator fights, and who captures the tax base</b> when hyperscalers arrive.</p>
+  <div class="fb">
+    <p><b>Which follow-on would make the data-center backlash worth another lead?</b></p>
+    <label><input type="radio" name="fb-dc" value="rates"> A utility rate case or PSC filing that shows residential bills rising because of a named campus</label>
+    <label><input type="radio" name="fb-dc" value="deal"> A behind-the-scenes tax abatement, land swap, or legislative carve-out that overrides a local vote</label>
+    <label><input type="radio" name="fb-dc" value="florida"> A Florida or Tampa Bay siting fight with public hearings and named opposition groups</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://marylandmatters.org/2026/11/05/repub/voters-across-the-country-reject-data-centers-at-the-polls/">Maryland Matters / Stateline</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6032000">NPR (Purple Tsunami)</a> &middot;
+    <a href="https://marylandmatters.org/2026/08/04/amazon-abandons-plans-for-a-data-center-at-calvert-cliffs/">Maryland Matters (Calvert)</a>
+  </p>
+</article>
+
+<article id="doj">
+  <h3>Trump orders DOJ to investigate Democrats over alleged threats</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>After the midterm wipeout, President Trump said he had ordered the Justice Department to investigate Democratic lawmakers over alleged threats — including impeachment threats against administration officials and pressure on Republican donors and supporters — language he framed as extortion (<a href="https://www.politico.com/news/2026/11/07/trump-calls-for-doj-investigation-into-democratic-oversight-01155242">Politico</a>, <a href="https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html">CNBC</a>, <a href="https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/">Washington Post</a>). Public reporting so far cites the President&rsquo;s direction more than a docketed case number or named targets beyond the political frame; treat the order as real and the investigative predicate as still thin in open sources. It lands in the same week as Democratic plans for oversight of the administration — a reciprocal escalation risk for institutions, not just messaging.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; order vs. case</span>
+    <p><b>What is in dispute.</b> Facts-and-framing dispute: the White House presents a criminal investigation into threats; Democrats present ordinary oversight and impeachment talk as protected political speech.</p>
+    <p><b>Why the vantage differs.</b> Each side is speaking to its base and to future court/committee fights. Access: no public charging document or case caption yet in Sunday desks.</p>
+    <p><b>What it means for the reader.</b> Watch for a case number, a named subject, or a declination — not the press conference. Until then, this is an institutional-pressure story more than a charging story.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the DOJ order?</b></p>
+    <label><input type="radio" name="fb-doj" value="docket"> A docketed case, grand-jury step, or named subject that turns the order into paperwork</label>
+    <label><input type="radio" name="fb-doj" value="resign"> Further Justice Department resignations tied to the directive</label>
+    <label><input type="radio" name="fb-doj" value="decline"> A formal declination or internal memo that closes it without charges</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.politico.com/news/2026/11/07/trump-calls-for-doj-investigation-into-democratic-oversight-01155242">Politico</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html">CNBC</a> &middot;
+    <a href="https://www.washingtonpost.com/politics/2026/11/07/trump-calls-justice-department-investigate-democrats/">Washington Post</a>
+  </p>
+</article>
+
+<article id="iran-reward">
+  <h3>State Department posts a $20&nbsp;million reward for Iran nuclear information</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Rewards for Justice is offering up to <b>$20&nbsp;million</b> and possible relocation for information on Iran&rsquo;s nuclear facilities, equipment, and personnel, citing lost IAEA continuity of knowledge on centrifuges (<a href="https://www.bbc.com/news/articles/c6d091ev3p0jo">BBC</a>, <a href="https://www.foxnews.com/politics/us-offers-20-million-reward-information-irans-nuclear-program">Fox</a>, <a href="https://nypost.com/2026/11/07/us-news/state-dept-offers-20-million-reward-for-information-about-irans-nuke-program/">NY Post</a>). The bounty sits beside prior claims that US and Israeli strikes &ldquo;completely and totally obliterated&rdquo; the programme — a vantage conflict this brief keeps visible rather than resolves. Trump has also publicly floated striking the underground &ldquo;Pickaxe Mountain&rdquo; site; both he and Vice-President Vance have said public opposition to the Iran war helped drive the midterm losses, which complicates any escalation read.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; obliterated vs. still hunting</span>
+    <p><b>What is in dispute.</b> Narrative dispute: administration victory claims about destroyed nuclear capacity versus a live bounty that assumes valuable unknowns remain.</p>
+    <p><b>Why the vantage differs.</b> Political messaging rewards finality; intelligence and sanctions work reward residual uncertainty. Access: IAEA safeguards reporting is the public check neither fully controls.</p>
+    <p><b>What it means for the reader.</b> Hold both facts: strikes happened; the State Department is still paying for program details. Prefer IAEA paperwork over either slogan.</p>
+  </div>
+  <div class="fb">
+    <p><b>What would make the next Iran-reward development worth following?</b></p>
+    <label><input type="radio" name="fb-reward" value="iaea"> An IAEA safeguards finding that names what continuity of knowledge is still missing</label>
+    <label><input type="radio" name="fb-reward" value="pickaxe"> A dated strike decision or public tasking around Pickaxe Mountain or another named site</label>
+    <label><input type="radio" name="fb-reward" value="tip"> A claimed Rewards for Justice tip that produces a named facility, scientist, or relocation case</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/c6d091ev3p0jo">BBC</a> &middot;
+    <a href="https://www.foxnews.com/politics/us-offers-20-million-reward-information-irans-nuclear-program">Fox News</a> &middot;
+    <a href="https://nypost.com/2026/11/07/us-news/state-dept-offers-20-million-reward-for-information-about-irans-nuke-program/">NY Post</a>
+  </p>
+</article>
+
+
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Short items that cleared the bar for a mention but not a full lead. One feedback block for the tier follows.</p>
+
+<article id="diesel">
+  <h3>Diesel holds above $6 for an eighth week as freight rates soften</h3>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3. Weekly series from EIA; AAA daily card for level only.</p>
+  <p>The <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA</a> weekly national on-highway diesel average printed <b>$6.292/gal</b> for the week ending Nov.&nbsp;2 — down 6&cent; week over week, still <b>$2.54</b> above a year earlier, and the eighth consecutive week above $6, per <a href="https://www.overdriveonline.com/business/article/16424161/diesel-prices-holding-above-6gal-nationwide-as-rates-stagnate">Overdrive</a>&rsquo;s read of the same table. AAA&rsquo;s daily national diesel card was about <b>$6.19</b> on Sunday morning (daily card = level; weekly EIA = trend). Spot freight rates softened in the latest FTR / Truckstop week in line with seasonal norms even as fuel stays historically elevated. Standing discipline: do not call a trend turn off the daily AAA card alone. The Iran blockade and Red Sea / Gulf risk premium remain the background; Sunday&rsquo;s Aramco administrative damage is not, by itself, a diesel mover. Treasury&rsquo;s own Daily Par Yield Curve closed Friday with the <b>10-year at 4.86%</b> — quiet weekend, no new print.</p>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.eia.gov/petroleum/gasdiesel/">EIA</a> &middot;
+    <a href="https://www.overdriveonline.com/business/article/16424161/diesel-prices-holding-above-6gal-nationwide-as-rates-stagnate">Overdrive</a> &middot;
+    <a href="https://gasprices.aaa.com/">AAA</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury (10-year)</a>
+  </p>
+</article>
+
+<article id="krakow">
+  <h3>Poland opens a terrorism probe as national mourning begins</h3>
+  <div class="meta"><span class="chip">Geopolitics / NATO ally</span><span class="chip fu">Continuation</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3. Trigger: national mourning Nov.&nbsp;8&ndash;9 and a formal terrorism investigation.</p>
+  <p>Prosecutors opened a <b>terrorism</b> investigation after Saturday&rsquo;s Main Square attack in Krak&oacute;w killed six and wounded about 15&ndash;17; police say the suspect&rsquo;s parents and sister were found dead at his home. Interior Minister Marcin Kierwiński described far-right, ultra-nationalist views. Flags are at half-mast; the square remained partly closed Sunday (<a href="https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation">Guardian</a>, <a href="https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97">AP</a>). US channel: NATO ally security posture and European Commission solidarity gestures — not a domestic policy lever.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation">Guardian</a> &middot; <a href="https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97">AP</a> &middot; <a href="https://www.bbc.com/news/articles/c6n9r01d2709o">BBC</a></p>
+</article>
+
+<article id="zaporizhzhia">
+  <h3>Zaporizhzhia loses external power for the sixteenth time this year</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip fu">Continuation</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3. Trigger: Ferosplavna-1 disconnect; plant on diesel generators again.</p>
+  <p>The Russian-controlled Zaporizhzhia plant lost its last external line and is on emergency diesel for cooling; IAEA-linked reporting says limited generator fuel is measured in roughly two weeks, with radiation described as normal (<a href="https://www.ukrinform.net/rubric-economy/4182587-znpp-loses-external-power-supply-switches-to-diesel-generators.html">Ukrinform</a>, <a href="https://asia.nikkei.com/politics/ukraine-war/ukraine-s-zaporizhzhia-nuclear-plant-again-relies-on-backup-power">Nikkei</a>). US channel: nuclear-safety risk and any shift in US/IAEA pressure around the plant ahead of talked-about negotiations.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.ukrinform.net/rubric-economy/4182587-znpp-loses-external-power-supply-switches-to-diesel-generators.html">Ukrinform</a> &middot; <a href="https://asia.nikkei.com/politics/ukraine-war/ukraine-s-zaporizhzhia-nuclear-plant-again-relies-on-backup-power">Nikkei Asia</a> &middot; <a href="https://www.arabnews.com/world/zaporizhzhia-nuclear-plant-relying-on-generators-again-after-losing-external-power-supply-3010499">Arab News</a></p>
+</article>
+
+<article id="miller">
+  <h3>Stephen Miller takes over as White House chief of staff on Monday</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>President Trump named longtime aide <b>Stephen Miller</b> to replace Susie Wiles as chief of staff after the midterm losses; Wiles moves to the Trump political operation. Miller has been the public face of the administration&rsquo;s hardest-line immigration agenda (<a href="https://www.whitehouse.gov/releases/2026/11/president-trump-names-stephen-miller-as-33rd-white-house-chief-of-staff/">White House</a>, <a href="https://www.nbcnews.com/politics/donald-trump/trump-stephen-miller-susie-wiles-white-house-chief-of-staff-rcna607892">NBC</a>, <a href="https://www.bbc.co.uk/news/articles/cm9qzz5x9g5yo">BBC</a>). First full day Monday — watch staffing of legislative affairs and how the West Wing answers Democratic committee chairs.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.whitehouse.gov/releases/2026/11/president-trump-names-stephen-miller-as-33rd-white-house-chief-of-staff/">White House</a> &middot; <a href="https://www.nbcnews.com/politics/donald-trump/trump-stephen-miller-susie-wiles-white-house-chief-of-staff-rcna607892">NBC</a> &middot; <a href="https://www.bbc.co.uk/news/articles/cm9qzz5x9g5yo">BBC</a> &middot; <a href="https://apnews.com/article/susie-wiles-trump-miller-midterms-95690fe076f6bb8cfe2bf77435a1910d">AP</a></p>
+</article>
+
+
+
+<article id="banks-ai">
+  <h3>Bank research digests the midterm hit to AI data-center timelines</h3>
+  <div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">US financials</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p><a href="https://www.jpmorgan.com/insights/global-research/current-events/us-midterms-markets">JPMorgan</a> and <a href="https://www.thestreet.com/investing/stocks/bank-of-america-ai-capex-chip-stocks">Bank of America</a> research notes after the Democratic sweep flag slower, costlier US data-center permitting and financing — with a split read on whether constrained supply supports utilization and chip pricing if cloud demand holds. Nvidia&rsquo;s mid-November earnings remain the near-term tell for whether hyperscaler capex still clears. Useful for AI/consulting work; not a substitute for primary filings.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.jpmorgan.com/insights/global-research/current-events/us-midterms-markets">JPMorgan</a> &middot; <a href="https://www.thestreet.com/investing/stocks/bank-of-america-ai-capex-chip-stocks">The Street / BofA summary</a></p>
+</article>
+
+<article id="dem-agenda">
+  <h3>House Democrats put affordability and ACA subsidies first</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Beyond tariffs, early Democratic messaging centers on restoring ACA subsidy support, reversing Medicaid cuts, and cost-of-living bills — with oversight of the administration as the parallel track (<a href="https://text.npr.org/nx-s1-6029331">NPR</a>, <a href="https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html">CNBC</a>, <a href="https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms">Guardian</a>). No introduced text yet on Sunday; this is agenda positioning before January.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6029331">NPR</a> &middot; <a href="https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html">CNBC</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/08/democrats-congress-trump-midterms">Guardian</a></p>
+</article>
+
+<article id="huda">
+  <h3>CENTCOM disables the M/V Huda after a blockade breach attempt</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>US forces fired on the stern of the St. Kitts-flagged <b>M/V Huda</b> in the Gulf of Oman after an Iranian port call and ignored warnings — the fifth disablement under the blockade by CENTCOM&rsquo;s count, alongside 147 redirected compliant ships (<a href="https://english.news.cn/20261108/5e72b6c3d9be42faa86443b3792082b5/c.html">Xinhua</a>, <a href="https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes">Al Jazeera</a>). IRGC claims of mined tankers the same day remain single-sourced to Iranian state media; <b>We could not confirm those mine strikes. Why: the only accounts are IRGC / Iranian state television claims without independent visual or shipping-registry corroboration in Sunday wires.</b></p>
+  <p class="sources"><b>Sources:</b> <a href="https://english.news.cn/20261108/5e72b6c3d9be42faa86443b3792082b5/c.html">Xinhua</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes">Al Jazeera</a> &middot; <a href="https://www.aa.com.tr/en/world/morning-briefing-nov-8-2026/4115649">Anadolu</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which Also-today item should be promoted if it moves this week?</p>
+  <label><input type="radio" name="fb-also" value="diesel-eia"> An EIA weekly diesel print that turns the multi-week trend</label>
+  <label><input type="radio" name="fb-also" value="miller-staff"> Miller&rsquo;s first staffing moves against Democratic committee chairs</label>
+  <label><input type="radio" name="fb-also" value="znpp-fuel"> Zaporizhzhia generator-fuel math or an IAEA finding that changes the safety picture</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 48 sources checked; 36 swept before any weighting category was consulted. Edition <code>2026-11-08d-v2.html</code>; prior Sunday files <code>2026-11-08-v2.html</code>, <code>2026-11-08b-v2.html</code>, and <code>2026-11-08c-v2.html</code> left untouched. Carried threads (4): Eisenkot (Sunday mandate ceremony); Mississippi (still no statewide outstanding total; Nov.&nbsp;13 certify); Krak&oacute;w (mourning + terrorism probe); Zaporizhzhia (16th external-power loss). Marker tallies — PS:0 &middot; IC:15 &middot; SS:0 &middot; U:0 (one explicit unconfirmed claim inside the Huda item). Divergence boxes: 6. Comparison: original News Bot Nov.&nbsp;8 (No.&nbsp;65, six leads / nine below) opened after draft; added DOJ probe and promoted the $20&nbsp;million reward to match missed altitude; declined ANC municipal collapse (foreign election without a clear US channel today). Radio pattern: one condition-based question per lead; one Also-today tier block.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-08d-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> — near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Dana White&rsquo;s Monday White House meeting on a press-secretary offer — personnel curiosity; no policy text yet.</li>
+    <li>Japan M5.7 quake with 20+ injuries — no structural US channel.</li>
+    <li>Bradenton officers struck by a fleeing vehicle at a Wawa — local crime blotter without policy consequence.</li>
+    <li>Pope Leo&rsquo;s Uruguay Mass and Argentina leg — foreign pastoral politics, no US policy lever.</li>
+    <li>Experimental heart-disease medicine failing unexpectedly — early science without an accessible practice-changing study in Sunday desks.</li>
+    <li>Paraguay prosecutors charging ousted President Pe&ntilde;a over Ueno Bank — foreign corporate/political, no US channel.</li>
+    <li>Delhi&rsquo;s worst Diwali-eve air in a decade — foreign environment story without a US policy hook today.</li>
+    <li>Gen Z / &ldquo;blue wave&rdquo; explainers — useful color already absorbed into the tariff and affordability leads.</li>
+    <li>Federal Register public-inspection list offline until Monday 8:45&nbsp;a.m. Eastern — noted, not empty.</li>
+    <li>Treasury 10-year at 4.86% Friday close — quiet weekend print; no Monday open yet.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
