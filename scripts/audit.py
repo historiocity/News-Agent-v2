@@ -66,6 +66,22 @@ class StoryExtractor(HTMLParser):
         self.radio_groups = {}  # name -> {options: [...], questions: [...], story_title, tier, also_tier_block}
         self.also_tier_block = False
         self._saw_also_below_line = False
+        self.pending_article_id = None
+        self.all_element_ids = set()
+        self.summary_text = None
+        self.in_summary = False
+        self.summary_buf = []
+        self.nav_html_parts = []
+        self.in_nav = False
+        self.nav_depth = 0
+        self.saw_in_this_issue = False
+        self.nav_links = []  # list of {href, text}
+        self.in_nav_a = False
+        self.nav_a_href = None
+        self.nav_a_buf = []
+        self.in_nav_heading = False
+        self.nav_heading_buf = []
+        self.first_story_started = False
 
     def _ensure_group(self, name):
         if name not in self.radio_groups:
@@ -80,7 +96,28 @@ class StoryExtractor(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if "id" in attrs:
+            self.all_element_ids.add(attrs["id"])
+        if tag == "article":
+            self.pending_article_id = attrs.get("id")
+        if tag == "p" and "summary" in (attrs.get("class") or "").split():
+            self.in_summary = True
+            self.summary_buf = []
+        if tag == "nav" and not self.first_story_started:
+            self.in_nav = True
+            self.nav_depth = 1
+        elif self.in_nav:
+            if tag == "nav":
+                self.nav_depth += 1
+        if self.in_nav and tag in ("h2", "h3", "strong", "b") and not self.saw_in_this_issue:
+            self.in_nav_heading = True
+            self.nav_heading_buf = []
+        if self.in_nav and tag == "a":
+            self.in_nav_a = True
+            self.nav_a_href = attrs.get("href", "")
+            self.nav_a_buf = []
         if tag == "h3":
+            self.first_story_started = True
             if self.current:
                 self._finish_story()
             self.current = {
@@ -94,6 +131,7 @@ class StoryExtractor(HTMLParser):
                 "radio_options": {},  # name -> [option texts]
                 "fb_has_question": False,
                 "tier": self.tier,
+                "id": self.pending_article_id,
             }
             self.in_h3 = True
             self.capture = []
@@ -125,6 +163,12 @@ class StoryExtractor(HTMLParser):
             self.p_buf = []
 
     def handle_data(self, data):
+        if self.in_summary and data:
+            self.summary_buf.append(data)
+        if self.in_nav_heading and data:
+            self.nav_heading_buf.append(data)
+        if self.in_nav_a and data:
+            self.nav_a_buf.append(data)
         if self.in_h2 and "also today" in data.lower():
             self.tier = "also"
         if self.in_h3 and data.strip():
@@ -149,6 +193,27 @@ class StoryExtractor(HTMLParser):
                     self.current["divergence"] = True
 
     def handle_endtag(self, tag):
+        if tag == "p" and self.in_summary:
+            self.in_summary = False
+            self.summary_text = unescape(re.sub(r"\s+", " ", "".join(self.summary_buf))).strip()
+            self.summary_buf = []
+        if self.in_nav_heading and tag in ("h2", "h3", "strong", "b"):
+            self.in_nav_heading = False
+            heading = unescape(re.sub(r"\s+", " ", "".join(self.nav_heading_buf))).strip()
+            if "in this issue" in heading.lower():
+                self.saw_in_this_issue = True
+            self.nav_heading_buf = []
+        if tag == "a" and self.in_nav_a:
+            self.in_nav_a = False
+            link_text = unescape(re.sub(r"\s+", " ", "".join(self.nav_a_buf))).strip()
+            self.nav_links.append({"href": self.nav_a_href or "", "text": link_text})
+            self.nav_a_href = None
+            self.nav_a_buf = []
+        if tag == "nav" and self.in_nav:
+            self.nav_depth -= 1
+            if self.nav_depth <= 0:
+                self.in_nav = False
+                self.nav_depth = 0
         if tag == "h2":
             self.in_h2 = False
         if tag == "h3":
@@ -386,6 +451,181 @@ def main():
             + "; ".join(leads_missing_q)
         )
 
+    # --- Summary gate ---
+    NUMBER_WORDS = {
+        "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+        "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
+        "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14,
+        "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+        "nineteen": 19, "twenty": 20,
+    }
+
+    def _parse_count_near(text, patterns):
+        """Return first integer found near any of the patterns, else None."""
+        lower = text.lower()
+        for pat in patterns:
+            for m in re.finditer(pat, lower):
+                window = lower[max(0, m.start() - 25): m.end() + 25]
+                # digit immediately before pattern word, e.g. "3 leads"
+                mdig = re.search(r"(\d+)\s+" + re.escape(m.group(0).split()[0]), window)
+                if mdig:
+                    return int(mdig.group(1))
+                # number word before
+                for word, val in NUMBER_WORDS.items():
+                    if re.search(rf"\b{word}\s+" + re.escape(m.group(0).split()[0]), window):
+                        return val
+                # digit after, e.g. "leads: 3"
+                mdig2 = re.search(re.escape(m.group(0)) + r"\D{0,10}(\d+)", window)
+                if mdig2:
+                    return int(mdig2.group(1))
+        return None
+
+    leads = [s for s in stories if s.get("tier") == "lead"]
+    alsos = [s for s in stories if s.get("tier") == "also"]
+    n_leads = len(leads)
+    n_also = len(alsos)
+
+    summary = parser.summary_text
+    if not summary:
+        failures.append(
+            "Summary missing: require <p class=\"summary\"> before the nav "
+            "(modeled on original News Bot meta line: lead count, Also-today count, and a one-line dek)"
+        )
+    else:
+        words = re.findall(r"[A-Za-z0-9']+", summary)
+        if len(words) < 25:
+            failures.append(
+                f"Summary too short: {len(words)} words (need at least ~25), modeled on original meta line"
+            )
+        lead_count_in_summary = _parse_count_near(
+            summary,
+            [r"leads?", r"lead stor(?:y|ies)", r"at length"],
+        )
+        also_count_in_summary = _parse_count_near(
+            summary,
+            [r"also today", r"below the line", r"shorts?", r"in brief", r"short items?"],
+        )
+        # Also accept patterns like "three leads, six below the line" / "six shorts"
+        if lead_count_in_summary is None:
+            m = re.search(
+                r"\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\s+leads?\b",
+                summary,
+                re.I,
+            )
+            if m:
+                g = m.group(1).lower()
+                lead_count_in_summary = int(g) if g.isdigit() else NUMBER_WORDS.get(g)
+        if also_count_in_summary is None:
+            m = re.search(
+                r"\b(\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\s+"
+                r"(?:below the line|shorts?|short items?|also[- ]today items?|in brief)\b",
+                summary,
+                re.I,
+            )
+            if m:
+                g = m.group(1).lower()
+                also_count_in_summary = int(g) if g.isdigit() else NUMBER_WORDS.get(g)
+        if lead_count_in_summary is None:
+            failures.append(
+                "Summary must state the lead count (digit or number word, e.g. 'three leads')"
+            )
+        elif lead_count_in_summary != n_leads:
+            failures.append(
+                f"Summary lead count {lead_count_in_summary} != parsed lead stories {n_leads}"
+            )
+        if also_count_in_summary is None:
+            failures.append(
+                "Summary must state the Also-today count (digit or number word, e.g. 'six below the line')"
+            )
+        elif also_count_in_summary != n_also:
+            failures.append(
+                f"Summary Also-today count {also_count_in_summary} != parsed Also-today stories {n_also}"
+            )
+
+    # --- Article list / nav gate ---
+    # Require a <nav> before the first story with 'In this issue' and links for every story + Also noted.
+    if not parser.nav_links and not parser.saw_in_this_issue:
+        failures.append(
+            "Article list missing: require a <nav> before the first story with an "
+            "'In this issue' heading and an <ol> listing every lead and Also-today item"
+        )
+    else:
+        if not parser.saw_in_this_issue:
+            failures.append("Nav must contain an 'In this issue' heading")
+        # Collect fragment targets
+        story_ids = {s.get("id") for s in stories if s.get("id")}
+        lead_ids = {s.get("id") for s in leads if s.get("id")}
+        also_ids = {s.get("id") for s in alsos if s.get("id")}
+        if len(story_ids) != len(stories):
+            failures.append(
+                "One or more stories are missing an article id= attribute required for the nav list"
+            )
+        nav_story_targets = []
+        has_also_noted = False
+        broken = []
+        empty_text = []
+        extras = []
+        allowed_non_story = {"also-noted", "also-today", "also"}
+        for link in parser.nav_links:
+            href = (link.get("href") or "").strip()
+            text = (link.get("text") or "").strip()
+            if not text:
+                empty_text.append(href or "(no href)")
+            if not href.startswith("#"):
+                broken.append(f"{href!r} (not an in-page #id)")
+                continue
+            target = href[1:]
+            if target == "also-noted" or target == "also_noted":
+                has_also_noted = True
+                if target not in parser.all_element_ids:
+                    broken.append(f"#{target} (Also noted target missing)")
+                continue
+            if target in allowed_non_story:
+                if target not in parser.all_element_ids and target != "also":
+                    # also-today must exist as section id
+                    if target == "also-today" and target not in parser.all_element_ids:
+                        broken.append(f"#{target} (section missing)")
+                continue
+            if target not in parser.all_element_ids:
+                broken.append(f"#{target} (no element with that id)")
+            if target in story_ids:
+                nav_story_targets.append(target)
+            else:
+                extras.append(f"#{target}")
+        if empty_text:
+            failures.append(
+                "Nav has link(s) with empty text: " + ", ".join(empty_text[:8])
+            )
+        if broken:
+            failures.append(
+                "Nav has broken link(s): " + "; ".join(broken[:8])
+            )
+        if not has_also_noted:
+            failures.append("Nav must include a link to Also noted (#also-noted)")
+        missing_leads = sorted(lead_ids - set(nav_story_targets))
+        missing_also = sorted(also_ids - set(nav_story_targets))
+        if missing_leads:
+            failures.append(
+                "Nav missing lead link(s): " + ", ".join("#" + x for x in missing_leads)
+            )
+        if missing_also:
+            failures.append(
+                "Nav missing Also-today link(s): " + ", ".join("#" + x for x in missing_also)
+                + " (list each item, or put them in a second sub-list)"
+            )
+        # Extra story-looking targets already handled; flag duplicate story links
+        from collections import Counter
+        counts = Counter(nav_story_targets)
+        dups = [f"#{i}×{c}" for i, c in counts.items() if c > 1]
+        if dups:
+            failures.append("Nav lists the same story more than once: " + ", ".join(dups))
+        # Extra non-allowed targets
+        if extras:
+            failures.append(
+                "Nav has extra entry(ies) that are not lead/Also-today/Also-noted: "
+                + ", ".join(extras[:8])
+            )
+
     # Source count target (~40). Hard fail only if extremely low and no underreported judgment noted.
     sources_total = None
     underreported_judgment = False
@@ -438,9 +678,11 @@ def main():
         if section.lower() not in html.lower():
             warnings.append(f"Section '{section}' not found (may be optional)")
 
-    print(f"Stories parsed: {len(stories)}")
+    print(f"Stories parsed: {len(stories)} (leads={n_leads}, also={n_also})")
     print(f"Continuations: {len(continuations)}")
     print(f"Radio groups: {len(radio_groups)}")
+    print(f"Summary present: {bool(summary)}")
+    print(f"Nav links: {len(parser.nav_links)}; In this issue: {parser.saw_in_this_issue}")
     print(f"Sources checked: {sources_total}")
     if warnings:
         print("WARNINGS:")

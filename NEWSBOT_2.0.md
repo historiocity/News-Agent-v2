@@ -77,3 +77,19 @@ Modelled on the original News Bot’s earliest issues (Sept 5–Oct 1, 2026), no
 - After the Also today items, exactly one block: `<p><b>On the items below the line.</b></p>` plus one question with 2–3 options, each naming a specific item/angle the reader might want promoted to a lead.
 
 The audit (`scripts/audit.py`) enforces: max one radio group per story; ≥1 group on each lead; no stock phrases; no reused option text; 2–3 options per group; lead fb blocks must contain a question ending in `?`.
+
+## Header summary and article list (binding)
+
+Modeled on the original News Bot (`p.meta` dek + “In this issue” nav), e.g. `issues/2026-11-07.html` in historiocity/News-Agent.
+
+**Summary.** Before the nav, include `<p class="summary">…</p>` of at least ~25 words. It must state the lead count and the Also-today count (as digits or number words, e.g. “Three leads, six below the line”) and those counts must match the stories actually in the file. Follow with a one-line dek of what the issue covers, in the spirit of the original meta line.
+
+**Article list.** A `<nav>` before the first story must contain an “In this issue” heading and an ordered list with:
+- one link per lead story (`href="#id"`, non-empty link text);
+- one link per Also-today item (same rules; may sit in a second sub-list);
+- a link to Also noted (`#also-noted`).
+
+Every `#id` must resolve to an element in the file. Every lead and Also-today story must appear exactly once. No broken, empty, or stray story entries.
+
+The audit enforces both gates.
+
