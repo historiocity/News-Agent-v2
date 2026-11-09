@@ -1,0 +1,465 @@
+{
+  "issue": "issues/2026-11-09-v2.html",
+  "date": "2026-11-09",
+  "run_started_local": "2026-11-09 07:12 EST",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "Repo rule files (NEWSBOT_2.0.md, audit.py, config.md) were read first because the process requires it, and the one open brief-feedback issue was applied. The candidate list was then built from the sweep below before any weighting category, the empty watchlist, or yesterday's issues were consulted for selection. Yesterday's headlines were checked only after the candidate list existed, to apply the carry-forward rule.",
+  "sources_swept_before_category": [
+    "NPR text front (text.npr.org)",
+    "Al Jazeera /news/ index",
+    "Fox News politics front",
+    "BBC News front",
+    "Axios front",
+    "Guardian US front",
+    "Wikipedia current-events portal (negative-check list only)",
+    "WUSF front",
+    "Fox 13 Tampa Bay front",
+    "X US trends (WOEID 23424977)",
+    "X news stories (last 12h)",
+    "Federal Register API (9 Nov RULE/PRORULE/PRESDOCU)",
+    "Reuters futures wrap (via Investing.com)",
+    "Yahoo Finance markets live",
+    "Dow Jones/Morningstar morning briefing",
+    "Benzinga premarket"
+  ],
+  "sweeps_attempted_failed": [
+    "The Hill front (timeout)",
+    "Politico front (timeout)",
+    "CNBC world front (timeout)",
+    "NPR full-site article pages (timeout; text.npr.org used instead)",
+    "apnews.com direct (timeout; AP read via search)"
+  ],
+  "broad_sweeps": [
+    "NPR text front (text.npr.org)",
+    "Al Jazeera /news/ index",
+    "Fox News politics front",
+    "BBC News front",
+    "Axios front",
+    "Guardian US front",
+    "Wikipedia current-events portal (negative-check list only)",
+    "WUSF front",
+    "Fox 13 Tampa Bay front",
+    "X US trends (WOEID 23424977)",
+    "X news stories (last 12h)",
+    "Federal Register API (9 Nov RULE/PRORULE/PRESDOCU)",
+    "Reuters futures wrap (via Investing.com)",
+    "Yahoo Finance markets live",
+    "Dow Jones/Morningstar morning briefing",
+    "Benzinga premarket"
+  ],
+  "sources_checked": [
+    "NPR text front (text.npr.org)",
+    "Al Jazeera /news/ index",
+    "Fox News politics front",
+    "BBC News front",
+    "Axios front",
+    "Guardian US front",
+    "Wikipedia current-events portal (negative-check list only)",
+    "WUSF front",
+    "Fox 13 Tampa Bay front",
+    "X US trends (WOEID 23424977)",
+    "X news stories (last 12h)",
+    "Federal Register API (9 Nov RULE/PRORULE/PRESDOCU)",
+    "Reuters futures wrap (via Investing.com)",
+    "Yahoo Finance markets live",
+    "Dow Jones/Morningstar morning briefing",
+    "Benzinga premarket",
+    "CNBC: Congress returns (funding, debt limit, permitting)",
+    "CRFB lame-duck blog",
+    "Atlantic Council econographics",
+    "Washington Post: Republicans' last shot",
+    "NPR: Congress returns (text)",
+    "Nvidia board statement (nvidianews)",
+    "AP: Nvidia investigation",
+    "Reuters explainer on Huang probe (via Investing.com)",
+    "CNBC: Nvidia investigation",
+    "The Verge: Nvidia investigation",
+    "Axios: Trump backs Huang",
+    "AP: China denies spy plot (search result)",
+    "AFP: Nvidia probe (search result)",
+    "TechCrunch: US investigated spy plot (Oct 29)",
+    "CNBC: Singapore/US investigate Megaspeed (2025)",
+    "Axios: Trump to meet Qatari PM",
+    "Al Jazeera: Qatar PM explainer",
+    "NBC News: Iran defends two-day proposal",
+    "Israel Hayom: $8 billion lifeline",
+    "Iran International: Qatar seeks more time",
+    "Fox News: IRGC lifts range cap",
+    "Arab News: IRGC range limit",
+    "Washington Post: US targets Iran land routes (search result)",
+    "SCOTUSblog argument preview",
+    "SCOTUSblog Bivens analysis",
+    "Vox: Nielsen v. Watanabe",
+    "Lawfare: state prosecution of federal officers",
+    "NPR: Supreme Court weighs shield for federal officers (text)",
+    "Supreme Court docket 25-417",
+    "NPR: Democrats widen ICE shooting probes (text)",
+    "NPR: ICE still has the money (text)",
+    "Guardian: Trump 60 Minutes too tough",
+    "CBS: 60 Minutes (search result)",
+    "AP: 60 Minutes (search result)",
+    "Washington Post: 60 Minutes takeaways (search result)",
+    "Fox News: House GOP erupts at Miller",
+    "The Hill: Tillis slams Miller hire (search result)",
+    "ABC News: Jeffries hard yes on Hegseth",
+    "NBC News: Jeffries hard yes (search result)",
+    "BBC: Jeffries hard yes (search result)",
+    "Fox News: Trump orders DOJ probe of Democrats",
+    "Axios: Blanche won't rule out prosecutions (search result)",
+    "NPR/KFF Health News: Nebraska Medicaid (text)",
+    "Human Rights Watch: Nebraskans losing coverage",
+    "Nebraska DHHS work-requirement documents (search result)",
+    "Reuters: banks wary of AI debt (via Investing.com)",
+    "U.S. News syndication of Reuters AI-debt story",
+    "Finextra: JPMorgan-OpenAI deal",
+    "FStech: JPMorgan-OpenAI deal",
+    "NPR: Palantir hires Tester (text)",
+    "Sludge: Palantir Democratic lobbyist hires",
+    "EconoTimes: Tester advisory deal (search result)",
+    "Wesley Chapel Record: Amendment 3 / Pasco $128M",
+    "Axios Tampa Bay: Amendment 3 impacts",
+    "News Service of Florida via Highlands News-Sun: special session",
+    "Tallahassee Democrat: special session (search result)",
+    "Tampa Bay Beacons: Largo forum / Pinellas cuts (search result)",
+    "NPR: Europe joins Abu Dhabi talks (text)",
+    "Kyiv Independent: Europe's attendance clarified",
+    "Politico Europe: EU sends officials (search result)",
+    "Guardian: Ukraine war briefing",
+    "Guardian: data-center pipeline boom (EIP report)",
+    "Guardian: Cop31 Democrats",
+    "AP: COP31 opens (search result)",
+    "Euronews: US engagement at COP31 (search result)",
+    "BBC: Krakow suspect died (search result)",
+    "DW: Krakow suspect died (search result)",
+    "Euronews: Krakow suspect died (search result)",
+    "UAP search: war.gov PURSUE portal, UAP Times, Rising Flow weekly",
+    "BLS CPI release schedule (search result)"
+  ],
+  "sources_checked_total": 86,
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "item": "Nvidia board probe of Huang after affair with alleged Chinese asset",
+      "decision": "keep: lead",
+      "reason": "new verifiable fact; AI/tech + chip-export channel; salacious and political (Trump defense); credible sources disagree"
+    },
+    {
+      "item": "Lame-duck Congress: Dec 11 funding, debt limit, permitting, NDAA",
+      "decision": "keep: lead",
+      "reason": "dated deadline; debt limit timing disputed; direct fiscal consequence"
+    },
+    {
+      "item": "Qatar PM brings Iran two-day plan to Trump/Vance",
+      "decision": "keep: lead",
+      "reason": "dated meeting today; Hormuz/blockade drive FL fuel costs; internal split reported"
+    },
+    {
+      "item": "Florida Amendment 3: Pasco $128M gap, DeSantis special session",
+      "decision": "keep: lead",
+      "reason": "reader is a Pasco homesteader; dated special session; never led before (only Also noted 8 Nov)"
+    },
+    {
+      "item": "SCOTUS Nielsen v. Watanabe (Bivens) argued today",
+      "decision": "keep: lead",
+      "reason": "dated argument; structural remedy against federal officers incl. ICE; underplayed vs. consequence"
+    },
+    {
+      "item": "Trump 'too tough' on deportations as Miller starts as chief of staff",
+      "decision": "keep: lead",
+      "reason": "reversal on record; GOP revolt; possible immigration deal"
+    },
+    {
+      "item": "BIS extends suspension of affiliates rule to Jan 10",
+      "decision": "keep: Also today",
+      "reason": "primary document; underreported; material connection to Nvidia/Megaspeed"
+    },
+    {
+      "item": "FinCEN/Fed withdraw $250 travel-rule threshold NPRM",
+      "decision": "keep: Also today",
+      "reason": "primary document; underreported; financial-services compliance"
+    },
+    {
+      "item": "Banks wary of AI debt; JPMorgan $29B data-center CRE",
+      "decision": "keep: Also today",
+      "reason": "AI in financial services; JPMorgan exposure number; single-sourced"
+    },
+    {
+      "item": "Hegseth impeachment: Jeffries hard yes, privileged vote",
+      "decision": "keep: Also today",
+      "reason": "dated forced vote; new fact (Jeffries); not a lead because GOP still controls House"
+    },
+    {
+      "item": "Nebraska Medicaid work rules rollout",
+      "decision": "keep: Also today",
+      "reason": "public health test case for 2027 national rollout; contractor money"
+    },
+    {
+      "item": "Europe joins Abu Dhabi Ukraine talks Nov 10-11",
+      "decision": "keep: Also today",
+      "reason": "dated talks; US-brokered; Europe format dispute"
+    },
+    {
+      "item": "Data-center gas pipeline boom (EIP)",
+      "decision": "keep: Also today",
+      "reason": "data centers/power; deregulation; single-sourced advocacy analysis"
+    },
+    {
+      "item": "Palantir hires Jon Tester",
+      "decision": "keep: Also today",
+      "reason": "behind-the-scenes access buying ahead of Democratic Congress"
+    },
+    {
+      "item": "Krakow suspect died in hospital",
+      "decision": "cut: Also noted",
+      "reason": "closes reader's fb-krakow trigger (charging document); no US policy channel"
+    },
+    {
+      "item": "COP31 opens in Antalya without official US delegation",
+      "decision": "cut: Also noted",
+      "reason": "no US negotiating lever until January"
+    },
+    {
+      "item": "October CPI Tuesday 8:30 a.m.",
+      "decision": "cut: Also noted",
+      "reason": "settled preference: Fed/prints only, no previews"
+    },
+    {
+      "item": "Trump DOJ probe of Democrats; Blanche won't rule out charges",
+      "decision": "cut: Also noted",
+      "reason": "ran 8 Nov; no filing or new act today"
+    },
+    {
+      "item": "Paraguay ueno bank collapse topples Pena",
+      "decision": "cut: Also noted",
+      "reason": "no US channel"
+    },
+    {
+      "item": "CMS final rules: Medicare drug negotiation; CY2027 physician fee schedule",
+      "decision": "cut: Also noted",
+      "reason": "published today; abstracts only; impact not yet quantified"
+    },
+    {
+      "item": "JPMorgan-OpenAI Codex/cyber partnership",
+      "decision": "cut: Also noted",
+      "reason": "vendor announcement; terms undisclosed"
+    },
+    {
+      "item": "Measles 5,182 cases in 2026 (CDC)",
+      "decision": "cut: Also noted",
+      "reason": "reported Friday; no new policy move"
+    },
+    {
+      "item": "Mamdani 2028 kingmaker; DeSantis vs Rubio 2028",
+      "decision": "cut: Also noted",
+      "reason": "horse race (anti-topic)"
+    },
+    {
+      "item": "UAP: no new PURSUE release since Oct 23; Disclosure Act in NDAA",
+      "decision": "cut: Also noted",
+      "reason": "no new paperwork today"
+    },
+    {
+      "item": "Constellation Energy and NRG report earnings today",
+      "decision": "cut: Also noted",
+      "reason": "results not out at publication"
+    },
+    {
+      "item": "New College trustees plan to pay USF dorm debt with mystery investor",
+      "decision": "cut",
+      "reason": "local, thin, single outlet"
+    },
+    {
+      "item": "IRGC lifts 2,000-km missile range cap",
+      "decision": "folded into Iran lead",
+      "reason": "context for meeting"
+    },
+    {
+      "item": "Task Force Iron Gate (Tampa)",
+      "decision": "cut",
+      "reason": "ran 8 Nov; no new fact"
+    },
+    {
+      "item": "Dana White White House visit",
+      "decision": "cut",
+      "reason": "personnel curiosity"
+    },
+    {
+      "item": "Russell Brand sentencing",
+      "decision": "cut",
+      "reason": "celebrity/crime anti-topic"
+    },
+    {
+      "item": "Meghan Markle's father arrested in Tampa",
+      "decision": "cut",
+      "reason": "celebrity/crime blotter"
+    },
+    {
+      "item": "Egypt train collision",
+      "decision": "cut",
+      "reason": "no US channel"
+    },
+    {
+      "item": "Eisenkot coalition talks",
+      "decision": "cut",
+      "reason": "no new fact today"
+    },
+    {
+      "item": "New Zealand election deadlock",
+      "decision": "cut",
+      "reason": "foreign election, no US relationship change"
+    },
+    {
+      "item": "Pope Leo rebukes Milei austerity",
+      "decision": "cut",
+      "reason": "no US policy lever"
+    },
+    {
+      "item": "Biden memoir and cancer",
+      "decision": "cut",
+      "reason": "personal news, no policy"
+    },
+    {
+      "item": "Democrats' grocery-bill promises",
+      "decision": "cut",
+      "reason": "agenda positioning covered 8 Nov; no bill text"
+    },
+    {
+      "item": "ICE $240B funding and Dem clawback talk",
+      "decision": "folded into Bivens/Miller leads",
+      "reason": "context"
+    },
+    {
+      "item": "Musk companies brace for Democratic crackdown (Axios)",
+      "decision": "cut",
+      "reason": "headline only; no new act"
+    },
+    {
+      "item": "Earth heat accumulation study (COP31)",
+      "decision": "cut",
+      "reason": "no accessible study read"
+    },
+    {
+      "item": "Mexico arrests CJNG cell leader with DEA intel",
+      "decision": "cut",
+      "reason": "event, not development"
+    },
+    {
+      "item": "Khor Mor gas field drone strike",
+      "decision": "cut",
+      "reason": "no clear US channel today"
+    },
+    {
+      "item": "Amsterdam Microsoft data-center protest arrests (6 Nov)",
+      "decision": "cut",
+      "reason": "foreign, dated"
+    },
+    {
+      "item": "FAA AI SMART rerouting tool (Fox exclusive)",
+      "decision": "cut",
+      "reason": "marketing-type launch"
+    },
+    {
+      "item": "Mississippi Senate count",
+      "decision": "cut",
+      "reason": "no new verifiable fact; certification Nov 13"
+    },
+    {
+      "item": "Trump says he 'doesn't mind guardrails' on AI",
+      "decision": "cut",
+      "reason": "remark without policy text"
+    },
+    {
+      "item": "Nvidia premarket drop / futures",
+      "decision": "folded into Nvidia lead",
+      "reason": "price not a reason on its own"
+    },
+    {
+      "item": "NYC immigrant welcome center backlash (X)",
+      "decision": "cut",
+      "reason": "local NYC, X summary only"
+    },
+    {
+      "item": "Cumberland Island land swap",
+      "decision": "cut",
+      "reason": "Georgia local, no reader channel"
+    },
+    {
+      "item": "Gaza mudslide deaths",
+      "decision": "cut",
+      "reason": "no new US channel"
+    }
+  ],
+  "story_count": {
+    "leads": 6,
+    "also_today": 8,
+    "total": 14
+  },
+  "continuing_leads": [
+    {
+      "id": "nvidia",
+      "trigger": "new verifiable fact: Huang's written admission and the board's formal investigation (Sunday)"
+    },
+    {
+      "id": "iran-qatar",
+      "trigger": "threshold event: scheduled White House meeting today with the Qatari mediator carrying a two-day plan"
+    },
+    {
+      "id": "miller",
+      "trigger": "reversal: Trump's on-record 'too tough' remark and deal offer cut against the Miller promotion"
+    }
+  ],
+  "per_article_independent_sources": {
+    "nvidia": 6,
+    "lame-duck": 5,
+    "iran-qatar": 4,
+    "amendment3": 3,
+    "bivens": 3,
+    "miller": 5,
+    "bis": 1,
+    "fincen": 1,
+    "ai-debt": 1,
+    "hegseth": 4,
+    "nebraska": 2,
+    "abu-dhabi": 3,
+    "pipelines": 1,
+    "palantir": 1
+  },
+  "negative_check": {
+    "method": "Wikipedia current-events portal and X news/trends compared against the candidate list after drafting; Federal Register daily list checked for documents absent from newsroom fronts.",
+    "result": "Two underreported items were found and included: the BIS affiliates-rule suspension extension and the FinCEN/Fed withdrawal of the $250 travel-rule threshold. Both are primary documents with direct consequence and had no wire coverage in the sweep. The Bivens argument was also judged underreported relative to its consequence for ICE accountability. Nothing on the portal with a US channel was missing from the candidate list.",
+    "underreported": [
+      "BIS affiliates-rule suspension extended to Jan 10, 2027",
+      "FinCEN/Fed withdrawal of $250 cross-border threshold NPRM",
+      "Nielsen v. Watanabe (Bivens) argument"
+    ]
+  },
+  "feedback_applied": [
+    {
+      "issue": 1,
+      "title": "brief-feedback: 2026-11-08c-v2",
+      "answer": "fb-krakow=charges",
+      "applied_to": "config.md settled preferences (weighting reminder with wake condition; closed 9 Nov after suspect's death)"
+    }
+  ],
+  "beat_coverage": {
+    "AI & tech industry (Core)": "Strongest: Nvidia/Huang board probe; cleared as lead. Also BIS affiliates rule, Palantir.",
+    "Macro & markets (Core)": "Futures and Nvidia premarket seen; CPI is Tuesday. Settled preference allows prints only, so no item; CPI is in Also noted.",
+    "World economy": "Paraguay bank collapse seen; no US channel; Also noted.",
+    "US debt & fiscal (Core)": "Strongest: lame-duck debt limit and Dec 11 funding; cleared as lead.",
+    "US financials (Core)": "JPMorgan data-center CRE exposure and bank AI-debt pullback (Also today); FinCEN withdrawal (Also today); JPMorgan-OpenAI deal to Also noted.",
+    "US politics & policy (Core)": "Miller/'too tough' lead; Hegseth impeachment and Palantir in Also today.",
+    "Geopolitics": "Iran-Qatar lead; Abu Dhabi talks Also today; Krakow to Also noted.",
+    "Science & public health": "Nebraska Medicaid work rules Also today; measles and CMS rules to Also noted.",
+    "UAP disclosure (Core)": "Checked: no new PURSUE release since Oct 23; Disclosure Act still in NDAA conference. Nothing cleared; noted in Also noted.",
+    "Energy & grid": "Pipeline boom (Also today); Senate permitting vote inside lame-duck lead; Constellation/NRG earnings to Also noted.",
+    "Elections and electoral process": "Mississippi count had no new fact; 2028 positioning is horse race. Nothing cleared.",
+    "Broader domestic institutions": "Bivens argument cleared as lead; DOJ probe of Democrats to Also noted.",
+    "International with US channel": "Iran-Qatar lead; BIS rule; Abu Dhabi talks.",
+    "Florida / Tampa Bay": "Amendment 3 / Pasco gap cleared as lead. Local crime wires and New College debt cut.",
+    "Data centers / power / AI infrastructure": "Pipeline boom and AI-debt pullback in Also today; permitting inside lame-duck lead.",
+    "AI and financial services": "Bank AI-debt pullback and FinCEN withdrawal in Also today; JPMorgan-OpenAI to Also noted."
+  },
+  "also_noted_count": 11,
+  "comparison_edition": "Not opened before the draft was complete.",
+  "audit_note": "Candidate-list shape and 10-story floor are proposed audit gates pending user approval; the current audit does not enforce them."
+}

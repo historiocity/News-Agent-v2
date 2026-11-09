@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 9 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Monday, 9 November 2026 &middot; morning edition</div>
+  <h1>Huang&rsquo;s affair turns Nvidia into a national-security story, Congress returns with a Dec.&nbsp;11 deadline, Qatar carries Iran&rsquo;s plan to the White House, and Pasco counts what Amendment&nbsp;3 costs</h1>
+  <p class="summary">Six leads, eight below the line. Nvidia&rsquo;s board investigates Jensen Huang after he admits an affair with a woman U.S. officials reportedly tied to Beijing; the lame-duck Congress returns to a Dec.&nbsp;11 funding deadline and a disputed debt-limit clock; Qatar&rsquo;s prime minister brings Iran&rsquo;s two-day plan to Trump and Vance; Pasco faces a $128&nbsp;million hole as DeSantis plans a special session on Amendment&nbsp;3; the Supreme Court weighs ending lawsuits against federal officers; and Trump calls his deportation policy &ldquo;too tough&rdquo; as Stephen Miller takes over as chief of staff. Below the line: a quiet Commerce delay on a chip-export rule, a FinCEN reversal, banks getting choosier about AI debt, the Hegseth impeachment vote, Nebraska&rsquo;s Medicaid work rules, Europe at the Abu Dhabi talks, a data-center pipeline boom, and Palantir&rsquo;s hiring of Jon Tester.</p>
+  <p class="sub">Monday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-09-v2.html</code>.</p>
+  <p class="prov"><b>86 sources checked, 16 of them swept before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera news index, Fox News politics, BBC News, Axios, Guardian US, WUSF, Fox&nbsp;13 Tampa Bay, X US trends and X news, the Federal Register API for today&rsquo;s rules and proposed rules, Reuters/Yahoo/Dow Jones/Benzinga premarket wraps, and the Wikipedia current-events portal (used only to check for missed stories). The Hill, Politico and CNBC fronts timed out. The Federal Register public-inspection list is offline until 8:45&nbsp;a.m. Eastern, so this edition saw today&rsquo;s published documents but not tomorrow&rsquo;s filings.<br><br>
+  <b>Check for missed stories:</b> three items looked underreported relative to their consequence: Commerce&rsquo;s extension of the affiliates-rule suspension, the FinCEN/Fed withdrawal of the $250 cross-border threshold (both primary documents with no wire coverage we could find), and the <i>Bivens</i> argument. All three run. Brief-feedback issue #1 (Krak&oacute;w, &ldquo;charges&rdquo;) is applied to <code>config.md</code>. The suspect died this morning, so that trigger can no longer fire (see Also noted).</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#nvidia">Nvidia&rsquo;s board investigates Huang after his admitted affair</a></li>
+    <li><a href="#lame-duck">The lame-duck Congress returns with 32 days of funding and a disputed debt limit</a></li>
+    <li><a href="#iran-qatar">Qatar&rsquo;s prime minister brings Iran&rsquo;s two-day plan to Trump and Vance</a></li>
+    <li><a href="#amendment3">Pasco&rsquo;s $128&nbsp;million Amendment&nbsp;3 hole and DeSantis&rsquo;s special session</a></li>
+    <li><a href="#bivens">The Supreme Court hears a case that could end suits against federal officers</a></li>
+    <li><a href="#miller">Trump calls deportations &ldquo;too tough&rdquo; as Miller takes over</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#bis">Commerce delays the chip-export affiliates rule to Jan.&nbsp;10</a></li>
+    <li><a href="#fincen">FinCEN and the Fed drop the $250 cross-border wire threshold</a></li>
+    <li><a href="#ai-debt">Banks get choosier about AI debt; JPMorgan&rsquo;s $29&nbsp;billion data-center book</a></li>
+    <li><a href="#hegseth">Jeffries is a &ldquo;hard yes&rdquo; on impeaching Hegseth</a></li>
+    <li><a href="#nebraska">Nebraska&rsquo;s early Medicaid work rules</a></li>
+    <li><a href="#abu-dhabi">Europe at the Abu Dhabi Ukraine talks</a></li>
+    <li><a href="#pipelines">Data-center demand drives a 17,000-mile pipeline boom</a></li>
+    <li><a href="#palantir">Palantir hires Jon Tester</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="nvidia">
+  <h3>Nvidia&rsquo;s board opens an investigation after Jensen Huang admits an affair with a woman U.S. officials reportedly tied to Beijing</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6, plus Nvidia&rsquo;s own board statement. Trigger (new verifiable fact): Huang&rsquo;s written admission to staff and the board&rsquo;s formal investigation on Sunday. SundaySaturday&rsquo;s issue had only the House chairs&rsquo; briefing request.rsquo;s editions had only the House chairsSaturday&rsquo;s issue had only the House chairs&rsquo; briefing request.rsquo; briefing request.</p>
+  <p>Nvidia&rsquo;s board said Sunday it is opening an <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">independent investigation</a> &ldquo;in light of recent reporting that founder and CEO Jensen Huang has been the target of a foreign intelligence effort.&rdquo; A committee of independent directors will run it with outside counsel. The board says it has &ldquo;no reason to believe that either national security or NVIDIA secrets were compromised.&rdquo; In an email to employees, Huang wrote: &ldquo;I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did. I am deeply sorry&rdquo; (<a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html">CNBC</a>, <a href="https://apnews.com/article/nvidia-jensen-huang-investigation-chinese-spy-68839e7ca6ba2b121529f7e475e501d6">AP</a>). A company spokesperson said he will stay on as CEO without interruption.</p>
+  <p>The woman is Alice Huang (no relation), a Chinese citizen and former executive of Singapore-based <b>Megaspeed</b>. Megaspeed is an Nvidia cloud customer, and the Commerce Department is investigating whether it helped get restricted Nvidia chips into China (<a href="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy">The Verge</a>, <a href="https://www.investing.com/news/stock-market-news/explainerwhat-we-know-about-nvidias-probe-into-ceo-jensen-huang-5010580">Reuters explainer</a>). The New York Times reported last month that U.S. intelligence concluded she was feeding information to Beijing. <b>We could not confirm that intelligence assessment.</b> Why: it rests on officials quoted anonymously by the Times and the Financial Times, no government has published it, and Reuters says it could not verify it either. Beijing called the allegations a smear campaign (<a href="https://apnews.com/article/china-denies-spy-jensen-huang-nvidia-3345b9f05c54d58909e88f6dcb9c1cd8">AP</a>).</p>
+  <p>The political side is where this gets interesting. On Sunday night President Trump said, &ldquo;I haven&rsquo;t heard that he&rsquo;s done anything wrong. He dealt with somebody but, you know, so does everybody else,&rdquo; and said he would &ldquo;certainly take him&rdquo; on next week&rsquo;s Asia trip (<a href="https://www.axios.com/2026/11/09/trump-jensen-huang-nvidia">Axios</a>). Axios also notes the Times&rsquo; report that Trump was briefed on the relationship earlier this year and chose not to act. House Republican committee chairs have given Huang until <b>Nov.&nbsp;11</b> to agree a date for a briefing. Nvidia shares were down about 4.5% before the open (<a href="https://www.investing.com/news/stock-market-news/wall-st-futures-rise-after-rough-week-but-nvidia-unsettles-investors-5011103">Reuters</a>; <a href="https://www.theguardian.com/us">Guardian business live</a>). Why it matters to you: Huang is the public face of the AI build-out you work around, and the chip-export rules are decided at a table he sits close to. Separately, the same morning Commerce quietly pushed back a chip-export rule on affiliates of blacklisted firms (see <a href="#bis">below the line</a>).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; was anything actually compromised?</span>
+    <p><b>What is in dispute.</b> A factual dispute. The board says it has no reason to believe secrets were compromised. Officials quoted by the Times say Alice Huang was an intelligence asset. Beijing says the story is a smear. Trump says Huang did nothing wrong.</p>
+    <p><b>Why the vantage differs.</b> The board answers to shareholders and has no access to classified assessments. The intelligence officials are anonymous and talked to reporters, not to a court. China denies espionage claims as a matter of course. Trump has a close personal relationship with Huang and a stake in his chip-export policy. On timing, the board moved only after Huang told it about the affair, weeks after the first Times story.</p>
+    <p><b>What it means for the reader.</b> Treat the affair as confirmed (Huang admits it) and the espionage as reported but not established. The documents that would settle it are a finding from the board&rsquo;s outside counsel or a Commerce or Justice action against Megaspeed.</p>
+  </div>
+  <details>
+    <summary>Dig deeper</summary>
+    <p>Megaspeed has been in the export-control story for a year. The Times asked in October 2025 whether China was buying banned chips through the company (<a href="https://www.nytimes.com/2025/10/09/technology/nvidia-chips-china-megaspeed.html">NYT</a>, paywalled, used as signal only). CNBC reported at the time that <a href="https://www.cnbc.com/2025/10/10/singapore-us-investigate-nvidia-client-megaspeed-export-controls-violation.html">Singapore and the U.S. were investigating</a>. TechCrunch covered the October 2026 Times report on the alleged spy plot (<a href="https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/">TechCrunch</a>).</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Huang investigation?</b></p>
+    <label><input type="radio" name="fb-nvidia" value="counsel"> When the board&rsquo;s outside counsel says whether chip-export or deal information reached Megaspeed or Beijing</label>
+    <label><input type="radio" name="fb-nvidia" value="briefing"> When Huang agrees to, or refuses, the briefing date the House chairs demanded by Nov.&nbsp;11</label>
+    <label><input type="radio" name="fb-nvidia" value="whitehouse"> If evidence shows the administration&rsquo;s AI-policy discussions passed through Huang to Alice Huang</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidia board statement</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html">CNBC</a> &middot;
+    <a href="https://apnews.com/article/nvidia-jensen-huang-investigation-chinese-spy-68839e7ca6ba2b121529f7e475e501d6">AP</a> &middot;
+    <a href="https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy">The Verge</a> &middot;
+    <a href="https://www.axios.com/2026/11/09/trump-jensen-huang-nvidia">Axios</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/explainerwhat-we-know-about-nvidias-probe-into-ceo-jensen-huang-5010580">Reuters</a> &middot;
+    <a href="https://www.theguardian.com/us">Guardian</a>
+  </p>
+</article>
+
+<article id="lame-duck">
+  <h3>The lame-duck Congress returns with 32 days of funding and a debt limit no one agrees on</h3>
+  <div class="meta">
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5.</p>
+  <p>Congress is back today. Government funding runs out on <b>Friday, Dec.&nbsp;11</b>, and both <a href="https://text.npr.org/nx-s1-6030633">NPR</a> and <a href="https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html">CNBC</a> expect another short-term stopgap rather than full-year bills. The House has passed 3 of the 12 FY2027 spending bills and the Senate none (<a href="https://www.crfb.org/blogs/lame-duck-session-shouldnt-be-excuse-borrow-more">CRFB</a>). Democrats, who will hold at least 255 House seats in January, have little reason to deal now. Senate Appropriations chair Susan Collins lost her seat. Patty Murray, the likely next chair, posted that &ldquo;the power of the purse belongs to CONGRESS.&rdquo;</p>
+  <p><b>The debt limit is the item that matters most for the bond market.</b> Federal debt passed $40&nbsp;trillion in September. The limit is $41.1&nbsp;trillion, set by the 2025 reconciliation law (CNBC). Sen. Kevin Cramer and others want to raise it before Republicans lose control. Democrats may prefer to keep it as leverage next year. Some Republicans want one more party-line reconciliation bill, possibly carrying the Iran-war money the Pentagon wants. Sen. Rick Scott said, &ldquo;Just stay every day &mdash; all through Christmas&rdquo; (<a href="https://www.washingtonpost.com/politics/2026/11/09/republicans-have-one-last-shot-pass-their-agenda-after-losing-congress/">Washington Post</a>). CRFB, the budget watchdog, estimates add-ons floated for a year-end deal could cost $200&nbsp;billion or more if temporary and up to nearly $1&nbsp;trillion if permanent.</p>
+  <p>Also on the docket: the defense authorization bill, held up in the Senate since July over the Iran war; a House vote on impeaching Defense Secretary Hegseth (<a href="#hegseth">below the line</a>); and a Senate energy-permitting deal. CNBC, citing a single Senate aide, says a procedural vote on permitting could come Monday evening. <b>We could not confirm that timing independently.</b> Why: only one unnamed aide, and no floor schedule had been posted when we checked. The permitting bill decides how fast transmission lines and power plants, including those built for data centers, get approved. Politico has reported that Jeffries does not support the Senate version.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; when does the debt limit actually bind?</span>
+    <p><b>What is in dispute.</b> A dispute over timing. CRFB (Nov.&nbsp;3) says the limit will likely be hit within about six months, after which Treasury uses &ldquo;extraordinary measures.&rdquo; The Bipartisan Policy Center, quoted by CNBC, puts Treasury&rsquo;s maximum borrowing capacity at around mid-summer. A Bank of America estimate (Nov.&nbsp;6) says the U.S. may not be able to meet all its obligations by November 2027.</p>
+    <p><b>Why the vantage differs.</b> CRFB is a deficit-reduction group and wants the increase paired with savings. BPC tracks cash flows. A bank estimate reflects what bond traders care about. Lawmakers who say &ldquo;do it now&rdquo; (Cramer) are trying to avoid a fight with a Democratic Congress. Democrats who wait are trying to win concessions in that fight.</p>
+    <p><b>What it means for the reader.</b> Nothing defaults this year. The real choice is whether the debt-limit fight happens in this lame duck, when it is cheap, or in mid-2027 under divided government, which is when Treasury yields and your borrowing costs could feel it. Watch whether the Dec.&nbsp;11 bill text includes a debt-limit line.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the lame-duck fiscal fight?</b></p>
+    <label><input type="radio" name="fb-lameduck" value="text"> When the Dec.&nbsp;11 stopgap text shows whether it carries a debt-limit increase or Iran-war money</label>
+    <label><input type="radio" name="fb-lameduck" value="permitting"> If the Senate permitting deal clears its procedural vote despite Jeffries, and what it does for grid and data-center hookups</label>
+    <label><input type="radio" name="fb-lameduck" value="shutdown"> Only if a shutdown looks likely in the final week before Dec.&nbsp;11</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html">CNBC</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6030633">NPR</a> &middot;
+    <a href="https://www.crfb.org/blogs/lame-duck-session-shouldnt-be-excuse-borrow-more">CRFB</a> &middot;
+    <a href="https://www.atlanticcouncil.org/blogs/econographics/the-midterms-are-done-time-for-the-fiscal-clashes-to-begin/">Atlantic Council</a> &middot;
+    <a href="https://www.washingtonpost.com/politics/2026/11/09/republicans-have-one-last-shot-pass-their-agenda-after-losing-congress/">Washington Post</a>
+  </p>
+</article>
+
+<article id="iran-qatar">
+  <h3>Qatar&rsquo;s prime minister brings Iran&rsquo;s two-day plan to Trump and Vance today</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4. Trigger (threshold event): a scheduled White House meeting today with the main mediator, who is carrying a specific two-day plan.</p>
+  <p>Sheikh Mohammed bin Abdulrahman Al Thani, Qatar&rsquo;s prime minister and foreign minister, meets President Trump on Monday and Vice President Vance separately. He visited Tehran last week (<a href="https://www.nbcnews.com/world/iran/iran-defends-2-day-proposal-peace-talks-us-rejects-outrageous-conditio-rcna608263">NBC News</a>). According to <a href="https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation">Axios</a>, the plan works like this. On day one, the U.S. lifts its naval blockade and releases some frozen Iranian funds, and Iran formally invites IAEA inspectors to the bombed nuclear sites. On day two, the Strait of Hormuz reopens, and nuclear talks then resume on Iran&rsquo;s highly enriched uranium. Axios says Vance has talked with Al Thani almost every day for two weeks, and that Qatar wants more time for diplomacy.</p>
+  <p>The public positions are far apart. Secretary of State Rubio on Sunday called Iran&rsquo;s conditions &ldquo;outrageous and ridiculous and really not realistic.&rdquo; Iran&rsquo;s foreign ministry spokesman called the plan the most reasonable offer on the table (NBC). <a href="https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations">Al Jazeera</a> lists Tehran&rsquo;s seven demands: sanctions relief, a smaller U.S. military presence, the June oil waivers back, frozen funds released (including money held in Qatar), recognition of an Iran-Oman shipping route, and an end to the war on all fronts, including Lebanon. Over the weekend the IRGC said it had dropped its 2,000-km limit on missile range (<a href="https://www.arabnews.com/middle-east/iran-says-it-has-lifted-its-self-imposed-limit-on-missile-ranges-3010423">Arab News</a>). Trump told CNN that a new assault is &ldquo;highly unlikely&rdquo; but depends on a &ldquo;very strong agreement&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/09/trump-tells-60-minutes-deportation-policy-too-tough-ice-immigration">Guardian</a>).</p>
+  <p><a href="https://www.israelhayom.com/2026/11/09/8-billion-lifeline-iranian-deal-set-to-land-on-trumps-desk/">Israel Hayom</a>, citing two diplomatic sources, says the package would release $8&nbsp;billion held in Qatar, that Iran has dropped its demand to charge ships for passing through Hormuz, and that Treasury Secretary Bessent, Commerce Secretary Lutnick, Rubio and Hegseth all oppose a deal like the one reached in May. <b>We could not confirm the $8&nbsp;billion figure or the list of officials opposed.</b> Why: both come from unnamed sources speaking to one outlet, and none of the four officials has said so on the record. Why it matters to you: Hormuz and the blockade are behind the Florida fuel and freight costs this brief has tracked, and CENTCOM, which runs the blockade, is headquartered in Tampa.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is a deal close?</span>
+    <p><b>What is in dispute.</b> A dispute over how close a deal is. Axios&rsquo;s sources describe Trump as still willing to let diplomacy run. NBC quotes senior U.S. and Gulf officials doubting a deal is imminent. Israel Hayom reports serious opposition inside the administration.</p>
+    <p><b>Why the vantage differs.</b> Qatar is the mediator and wants momentum. Israel Hayom is close to Israel&rsquo;s right, which opposes an interim deal. Iran International, which repeated the Axios account, is an opposition outlet. Rubio&rsquo;s comments were made publicly, on the record, a day before the meeting.</p>
+    <p><b>What it means for the reader.</b> The meeting is the event, not a deal. Look for a written U.S. answer on the day-one steps (lifting the blockade and releasing funds). That is the point where gasoline and diesel costs could start to move, not any statement after the meeting.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Qatar-brokered Iran talks?</b></p>
+    <label><input type="radio" name="fb-iran" value="answer"> When the White House answers yes or no on the plan&rsquo;s blockade lift and release of frozen funds</label>
+    <label><input type="radio" name="fb-iran" value="split"> If officials confirm on the record that Bessent, Rubio or Hegseth are opposing Vance inside the administration</label>
+    <label><input type="radio" name="fb-iran" value="florida"> When a Hormuz reopening shows up in Florida gasoline and diesel bills</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.axios.com/2026/11/09/trump-qatar-prime-minister-iran-war-mediation">Axios</a> &middot;
+    <a href="https://www.nbcnews.com/world/iran/iran-defends-2-day-proposal-peace-talks-us-rejects-outrageous-conditio-rcna608263">NBC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations">Al Jazeera</a> &middot;
+    <a href="https://www.israelhayom.com/2026/11/09/8-billion-lifeline-iranian-deal-set-to-land-on-trumps-desk/">Israel Hayom</a> &middot;
+    <a href="https://www.arabnews.com/middle-east/iran-says-it-has-lifted-its-self-imposed-limit-on-missile-ranges-3010423">Arab News</a> &middot;
+    <a href="https://www.iranintl.com/en/202611097335">Iran International</a>
+  </p>
+</article>
+
+<article id="amendment3">
+  <h3>Pasco faces a $128 million first-year hole as DeSantis plans a special session on Amendment&nbsp;3</h3>
+  <div class="meta">
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Florida&rsquo;s Amendment&nbsp;3 passed with about 62% of the vote, just over the 60% it needed (unofficial count: 4,917,482 yes, 61.99%). It raises the homestead exemption on <b>non-school</b> property taxes from $50,000 to <b>$150,000 on Jan.&nbsp;1, 2027</b> and to <b>$250,000 on Jan.&nbsp;1, 2028</b>, after which it rises with inflation. It also cuts the yearly assessment-growth cap on non-homestead property from 10% to 5%. School taxes and CDD fees are unchanged. Homeowners will first see the change on August 2027 TRIM notices and November 2027 tax bills (<a href="https://wesleychapelrecord.com/articles/amendment-3-passes-threatening-128-million-in-pasco-revenue-mw26db9t">Wesley Chapel Record</a>, citing Pasco County&rsquo;s own explainer).</p>
+  <p><b>The local cost is large.</b> Pasco&rsquo;s projections show a <b>$128.1&nbsp;million</b> first-year loss: $96.1&nbsp;million from the General Fund, $27.1&nbsp;million from fire rescue and $4.9&nbsp;million from road rehabilitation. By year two the gap is $208.6&nbsp;million. Pasco classifies $473.94&nbsp;million of its $567.2&nbsp;million FY2026 spending as mandated, so the General Fund loss alone would leave less money than mandated spending requires. The county has not announced a budget response. A real-estate executive told Bay News&nbsp;9 that eligible homeowners might save about $1,300 on 2027 bills and $2,700 a year after that. That is an industry estimate, not a county figure.</p>
+  <p>Gov. DeSantis said last Wednesday that he will call a <b>special session within two months</b>, before his term ends in early January. He wants to set the exemption schedule and stop local governments &ldquo;from just doing an end run around the amendment and taxing them in other ways&rdquo; (<a href="https://www.midfloridanewspapers.com/highlands_news-sun/news/after-property-tax-cut-victory-desantis-eyes-special-session/article_b46a993b-421c-4cb2-8783-377623960ae9.html">News Service of Florida</a>). Across the bay, St. Petersburg Mayor-elect Charlie Crist has dropped his campaign promise of a tax-rate cut and says &ldquo;savings come before any new fee,&rdquo; even though the city has already picked a consultant to design a fire-rescue fee (<a href="https://www.axios.com/local/tampa-bay/2026/11/06/florida-amendment-3-st-pete-pinellas-budget-property-tax">Axios Tampa Bay</a>). Why it matters to you: you are a Pasco homesteader. You get a smaller county tax bill in late 2027, and the fight over what replaces that money (fees, assessments, or fire, road and library cuts) starts in Tallahassee within weeks.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; tax relief or service cuts?</span>
+    <p><b>What is in dispute.</b> A dispute over what follows. DeSantis says homeowners get relief and the state will block local fee workarounds, possibly with state grants. Firefighters, sheriffs and local managers say there are &ldquo;no guardrails&rdquo; and that fees or cuts are inevitable. Former GOP state Sen. Jeff Brandes calls it &ldquo;a live experiment on 23 million Floridians.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> DeSantis leaves office in January and gets credit for the cut. County governments and public-safety unions absorb the gap. The industry savings estimate comes from a real-estate firm. The Pasco figures are county staff projections from August, made before the vote.</p>
+    <p><b>What it means for the reader.</b> The amendment fixes the exemption. The special-session bill decides whether Pasco can make up the money with fees. Read that bill text before trusting any net-savings number.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Amendment&nbsp;3?</b></p>
+    <label><input type="radio" name="fb-amend3" value="session"> When DeSantis sets the special-session date and publishes bill text limiting local fee workarounds</label>
+    <label><input type="radio" name="fb-amend3" value="pasco"> When Pasco commissioners vote on fees, fire assessments, or service cuts to cover the $128&nbsp;million gap</label>
+    <label><input type="radio" name="fb-amend3" value="unions"> If firefighter or sheriff&rsquo;s unions organize public opposition in Pasco or Pinellas</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://wesleychapelrecord.com/articles/amendment-3-passes-threatening-128-million-in-pasco-revenue-mw26db9t">Wesley Chapel Record</a> &middot;
+    <a href="https://www.midfloridanewspapers.com/highlands_news-sun/news/after-property-tax-cut-victory-desantis-eyes-special-session/article_b46a993b-421c-4cb2-8783-377623960ae9.html">News Service of Florida (via Highlands News-Sun)</a> &middot;
+    <a href="https://www.axios.com/local/tampa-bay/2026/11/06/florida-amendment-3-st-pete-pinellas-budget-property-tax">Axios Tampa Bay</a>
+  </p>
+</article>
+
+<article id="bivens">
+  <h3>The Supreme Court hears a case that could end lawsuits against federal officers, ICE agents included</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3, plus the Court&rsquo;s docket.</p>
+  <p>The justices hear <a href="https://www.supremecourt.gov/docket/docketfiles/html/public/25-417.html"><i>Nielsen v. Watanabe</i> (No. 25-417)</a> today. The question is whether the Ninth Circuit was wrong to allow a <i>Bivens</i> claim, the 1971 judge-made right to sue federal officers for money when they violate the Constitution. Kekai Watanabe was beaten in a 2021 gang riot at a federal prison in Hawaii. He says a prison medical worker told him to &ldquo;stop being a cry baby.&rdquo; Seven months later he was diagnosed with a fractured tailbone (<a href="https://text.npr.org/nx-s1-6013575">NPR</a>). SCOTUSblog calls the worker a paramedic and NPR calls him a nurse. The Trump administration filed a brief backing the worker, and his lawyers suggest the Court go further and shut down such suits altogether (<a href="https://www.scotusblog.com/2026/11/court-to-hear-argument-on-whether-and-when-federal-officials-can-be-held-liable-for-violations-o/">SCOTUSblog</a>).</p>
+  <p>Why it is bigger than one prison case: a federal law (Section 1983) lets people sue <i>state and local</i> officers for constitutional violations, but no statute covers <i>federal</i> officers. <i>Bivens</i> is the only route. If the Court overrules it, people hurt by ICE or Border Patrol agents would lose that option, at the same moment incoming Democratic chairs are preparing subpoenas over fatal immigration shootings, including those of U.S. citizens Alex Pretti and Renee Good in Minneapolis (<a href="https://text.npr.org/nx-s1-6029659">NPR</a>; <a href="https://www.vox.com/politics/508219/supreme-court-nielsen-watanabe-bivens-ice">Vox</a>). One thing this case does <i>not</i> decide is whether states can criminally prosecute federal officers. That is a separate question (<a href="https://www.lawfaremedia.org/article/are-federal-officials-immune-from-state-prosecution">Lawfare</a>).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; useless remedy or last check?</span>
+    <p><b>What is in dispute.</b> A legal and empirical dispute. Mary Hampton Mason, who spent nearly 35 years at the Justice Department reviewing these claims, says she knows of only one <i>Bivens</i> win in 20 years that was not reversed on appeal, so the remedy &ldquo;gives plaintiffs false hope.&rdquo; Georgetown&rsquo;s Steve Vladeck says the case decides &ldquo;whether &hellip; we as a country are going to hold federal law enforcement officers accountable.&rdquo; The MacArthur Justice Center says the win rate ignores settlements and the deterrent effect.</p>
+    <p><b>Why the vantage differs.</b> Mason&rsquo;s numbers come from inside DOJ&rsquo;s defense office. Vladeck and MacArthur filed briefs supporting Watanabe. The administration is defending its own officers at a time when ICE complaints are rising.</p>
+    <p><b>What it means for the reader.</b> Listen to today&rsquo;s argument for whether a majority wants to overrule <i>Bivens</i> outright or just narrow it. If <i>Bivens</i> goes, any remedy has to come from Congress, which Democrats will control in January.</p>
+  </div>
+  <details>
+    <summary>Dig deeper</summary>
+    <p>The precedent chain runs from <i>Bivens</i> (1971), to <i>Carlson v. Green</i> (1980; a prisoner&rsquo;s death from untreated asthma), to <i>Hernandez v. Mesa</i>, where the Court refused a remedy for a Mexican teenager shot across the border. SCOTUSblog&rsquo;s preview sets out four ways the Court could rule: affirm under <i>Carlson</i>, distinguish it, overrule <i>Carlson</i> alone, or overrule <i>Bivens</i> (<a href="https://www.scotusblog.com/2026/11/will-an-ability-to-hold-federal-officers-accountable-survive-this-term/">SCOTUSblog</a>).</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the <i>Bivens</i> case?</b></p>
+    <label><input type="radio" name="fb-bivens" value="ruling"> When the justices decide whether to overrule <i>Bivens</i> outright, likely by June</label>
+    <label><input type="radio" name="fb-bivens" value="statute"> If House Democrats move a bill creating a Section 1983-style damages right against federal officers</label>
+    <label><input type="radio" name="fb-bivens" value="ice"> Only if the outcome is applied to a named ICE shooting such as Pretti&rsquo;s or Good&rsquo;s</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.supremecourt.gov/docket/docketfiles/html/public/25-417.html">Supreme Court docket 25-417</a> &middot;
+    <a href="https://www.scotusblog.com/2026/11/court-to-hear-argument-on-whether-and-when-federal-officials-can-be-held-liable-for-violations-o/">SCOTUSblog</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6013575">NPR</a> &middot;
+    <a href="https://www.vox.com/politics/508219/supreme-court-nielsen-watanabe-bivens-ice">Vox</a> &middot;
+    <a href="https://www.lawfaremedia.org/article/are-federal-officials-immune-from-state-prosecution">Lawfare</a>
+  </p>
+</article>
+
+<article id="miller">
+  <h3>Trump calls his deportation policy &ldquo;too tough&rdquo; on the day Stephen Miller takes over as chief of staff</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5. Trigger (reversal): Trump&rsquo;s on-record &ldquo;too tough&rdquo; remark and his offer of a deal for long-term undocumented residents cut against Friday&rsquo;s promotion of the policy&rsquo;s architect.</p>
+  <p>On <i>60 Minutes</i> on Sunday, Trump told Ross Douthat: &ldquo;I think it was too tough. I think it might be too tough, yeah.&rdquo; He said he could make a deal with Democrats for people who have been here &ldquo;10 and 15 years,&rdquo; adding, &ldquo;I think that&rsquo;s something that&rsquo;s actually doable.&rdquo; Asked whether he could stop name-calling for six months to get it, he said: &ldquo;Very easily&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/09/trump-tells-60-minutes-deportation-policy-too-tough-ice-immigration">Guardian</a>; <a href="https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/">CBS</a>). He also blamed the Iran war and gas prices for the midterm losses. Today <b>Stephen Miller</b>, the architect of the deportation push, starts as chief of staff in place of Susie Wiles. Fox&nbsp;13 reports that deputy chief of staff Richard Walters is leaving before the handover.</p>
+  <p>Some of the pushback is coming from Republicans. Rep. Marlin Stutzman called the promotion a &ldquo;horrible decision.&rdquo; Retiring Rep. Don Bacon said Miller &ldquo;greatly hurt the administration and cost us many seats.&rdquo; An unnamed member called him &ldquo;a megalomaniac&rdquo; but added, &ldquo;he&rsquo;s not the reason why we lost&rdquo; (<a href="https://www.foxnews.com/politics/house-gop-erupts-stephen-miller-trump-elevates-him-after-midterm-massacre-megalomaniac">Fox News</a>). Jeffries called it &ldquo;an awful choice&rdquo; and said there would be no channel to Miller like the one he had with Wiles (<a href="https://abcnews.com/Politics/im-hard-hakeem-jeffries-announces-support-hegseth-impeachment/story?id=137952235">ABC News</a>). The White House says Miller &ldquo;has been a key player in delivering on President Trump&rsquo;s America First agenda since day one.&rdquo; Why it matters to you: if a deal for long-term residents is real, it would be the biggest immigration change in years and would reach Florida&rsquo;s construction, farm and hospitality labor markets. If Miller blocks it, that tells you who is actually running policy.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did immigration cost the GOP the midterms?</span>
+    <p><b>What is in dispute.</b> A dispute over the cause. Stutzman and Bacon blame Miller&rsquo;s enforcement for losing Latino voters. Fox&rsquo;s own reading of voter analyses puts the Iran war and tariffs first. Trump blames the war, gas prices, and &ldquo;bad messaging, maybe by me.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> Members who lost seats or are retiring can criticize freely. The White House defends its own appointment. Trump&rsquo;s interview was recorded around the time of the Miller announcement, and the timing of his remarks relative to the decision is not clear from the published accounts.</p>
+    <p><b>What it means for the reader.</b> Judge Trump&rsquo;s offer by what Miller&rsquo;s office does first, such as ICE guidance or a legislative text. Don&rsquo;t judge it by the interview.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Miller handover?</b></p>
+    <label><input type="radio" name="fb-miller" value="deal"> When Trump sends Democrats written terms for long-term undocumented residents</label>
+    <label><input type="radio" name="fb-miller" value="memo"> If Miller&rsquo;s first ICE guidance or staffing memo contradicts the &ldquo;too tough&rdquo; remark</label>
+    <label><input type="radio" name="fb-miller" value="gop"> When Republicans who demanded his firing act on it in a vote or leadership race</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.theguardian.com/us-news/2026/nov/09/trump-tells-60-minutes-deportation-policy-too-tough-ice-immigration">Guardian</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/">CBS News</a> &middot;
+    <a href="https://www.foxnews.com/politics/house-gop-erupts-stephen-miller-trump-elevates-him-after-midterm-massacre-megalomaniac">Fox News</a> &middot;
+    <a href="https://abcnews.com/Politics/im-hard-hakeem-jeffries-announces-support-hegseth-impeachment/story?id=137952235">ABC News</a> &middot;
+    <a href="https://www.washingtonpost.com/politics/2026/11/08/60-minutes-takeaways-trump-calls-deportation-policy-too-tough/">Washington Post</a> &middot;
+    <a href="https://www.fox13news.com/">Fox 13</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="bis">
+  <h3>Commerce pushes back its chip-export &ldquo;affiliates rule&rdquo; again, to Jan.&nbsp;10</h3>
+  <div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">International with US channel</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 (the primary document). Underreported: we found no wire coverage in this morning&rsquo;s sweep.</p>
+  <p>In today&rsquo;s <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed">Federal Register</a>, the Bureau of Industry and Security extends its suspension of the September 2025 interim rule that would extend Entity List-style export controls to <b>affiliates</b> of listed companies. The suspension was due to end today. It now runs <b>through Jan.&nbsp;10, 2027</b>, effective immediately. The rule matters because companies on the blacklist can buy restricted chips through affiliates they own. It lands the same morning Nvidia is investigating its CEO over a relationship with an executive of Megaspeed, the company Commerce is investigating over chip diversion (<a href="#nvidia">lead</a>). The abstract gives no reason for the delay, and we did not read the full rule.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed">Federal Register 2026-22793</a></p>
+</article>
+
+<article id="fincen">
+  <h3>FinCEN and the Fed drop a plan to lower the cross-border wire-records threshold from $3,000 to $250</h3>
+  <div class="meta"><span class="chip">AI &amp; financial services</span><span class="chip">US financials</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 (the primary document). Underreported: no newsroom coverage found this morning.</p>
+  <p>FinCEN and the Federal Reserve Board are <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22809/threshold-for-the-requirement-to-collect-retain-and-transmit-information-on-funds-transfers-and">withdrawing</a> a 2020 proposal. It would have cut the Bank Secrecy Act threshold for collecting, keeping and passing along records on international funds transfers from <b>$3,000 to $250</b>. It would also have made clear that the rules cover convertible virtual currency and digital assets with legal-tender status. The agencies say they &ldquo;will not take further action.&rdquo; That means less compliance work for banks, remittance firms and crypto platforms on small cross-border payments, and one less anti-money-laundering data stream for law enforcement. It is relevant to anyone building AI-driven transaction monitoring at a bank.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/09/2026-22809/threshold-for-the-requirement-to-collect-retain-and-transmit-information-on-funds-transfers-and">Federal Register 2026-22809</a></p>
+</article>
+
+<article id="ai-debt">
+  <h3>Banks get choosier about AI debt; JPMorgan&rsquo;s data-center loan book is now $29 billion</h3>
+  <div class="meta"><span class="chip">US financials</span><span class="chip">Data centers &amp; power</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (Reuters, carried by two syndicators).</p>
+  <p>Some banks that were lining up to fund AI deals a few weeks ago now say they are reluctant to finance more, even with guarantees from companies like Anthropic or Google, according to banking and credit sources cited by <a href="https://www.investing.com/news/stock-market-news/banks-investors-grow-wary-of-ai-debt-spooked-by-marketselloff-5011246">Reuters</a>. The lenders are not named. JPMorgan&rsquo;s loans backed by &ldquo;other income-producing properties,&rdquo; a category that includes data centers, stood at <b>$29&nbsp;billion</b> at the end of the third quarter. That is 12% of its commercial real-estate book and its second-largest exposure, up from 8% three years ago. Spreads on 10-year hyperscaler bonds have widened about 50 basis points this year, compared with about 20 for non-AI industrial companies (BofA&rsquo;s Yuri Seliger). Goldman expects hyperscaler borrowing to reach $420&nbsp;billion in 2027. This is the credit-market side of last week&rsquo;s vote-driven pressure on data centers (<a href="https://money.usnews.com/investing/news/articles/2026-11-09/banks-investors-grow-wary-of-ai-debt-spooked-by-market-selloff">U.S. News syndication</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.investing.com/news/stock-market-news/banks-investors-grow-wary-of-ai-debt-spooked-by-marketselloff-5011246">Reuters (via Investing.com)</a> &middot; <a href="https://money.usnews.com/investing/news/articles/2026-11-09/banks-investors-grow-wary-of-ai-debt-spooked-by-market-selloff">Reuters (via U.S. News)</a></p>
+</article>
+
+<article id="hegseth">
+  <h3>Jeffries is a &ldquo;hard yes&rdquo; on impeaching Hegseth; a forced House vote could come this week</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 4.</p>
+  <p>Rep. Thomas Massie plans to bring back his privileged impeachment resolution as early as Monday. Its eight articles include violating the 1973 War Powers Resolution. Under House rules, leaders must schedule a vote within two legislative days (<a href="https://abcnews.com/Politics/im-hard-hakeem-jeffries-announces-support-hegseth-impeachment/story?id=137952235">ABC News</a>). Jeffries said Sunday he is a &ldquo;hard yes&rdquo; and that House Democrats will discuss it Tuesday morning (<a href="https://www.nbcnews.com/politics/congress/house-minority-leader-hakeem-jeffries-hard-yes-impeaching-hegseth-rcna608137">NBC News</a>). Trump says he has &ldquo;every intention to keep him&rdquo;; Hegseth calls the articles a &ldquo;sham.&rdquo; Republicans still control the House until January, so the vote mainly shows how many Republicans break ranks. <a href="https://text.npr.org/nx-s1-6030633">NPR</a> and <a href="https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html">CNBC</a> both say the vote could complicate the defense authorization bill.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://abcnews.com/Politics/im-hard-hakeem-jeffries-announces-support-hegseth-impeachment/story?id=137952235">ABC News</a> &middot; <a href="https://www.nbcnews.com/politics/congress/house-minority-leader-hakeem-jeffries-hard-yes-impeaching-hegseth-rcna608137">NBC News</a> &middot; <a href="https://text.npr.org/nx-s1-6030633">NPR</a> &middot; <a href="https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html">CNBC</a></p>
+</article>
+
+<article id="nebraska">
+  <h3>Nebraska&rsquo;s early Medicaid work rules: 1,100 denials, doubled call-center waits, and $8.2 million to contractors</h3>
+  <div class="meta"><span class="chip">Science &amp; public health</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Nebraska started enforcing Medicaid work requirements on May&nbsp;1, eight months before most states. About 70,000 adults must show 80 hours a month of work or a similar activity. By August about 1,100 had been denied, mostly for not answering information requests. Enrollment is down about 4,600 (1.4%) since May. Call-center waits doubled from 13 to 26 minutes between May and July. State records show $8.2&nbsp;million in contractor costs over two years (<a href="https://text.npr.org/nx-s1-6032732">NPR / KFF Health News</a>). <a href="https://www.hrw.org/news/2026/10/01/us-nebraskans-losing-coverage-as-medicaid-changes">Human Rights Watch</a> documented coverage losses in October. More than 40 states face the same federal rules next year. Democrats say they will repeal them in their first 100 hours, though Trump could veto.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; success or attrition?</span>
+    <p><b>What is in dispute.</b> A dispute over how to read the numbers. The state says 86% of affected applicants met the rule or qualified for an exemption, 93% of enrollees kept coverage, and the rollout &ldquo;has been very successful.&rdquo; Advocates and clinics describe confusion and wrong information. In the case NPR featured, a 64-year-old cancer patient says he was told he lost coverage. The state says he aged into Medicare with no gap.</p>
+    <p><b>Why the vantage differs.</b> The state is grading its own launch. Advocates see the people who fall through. A consultant paid for the rollout praised it publicly.</p>
+    <p><b>What it means for the reader.</b> Nebraska is the test case for next year&rsquo;s national rollout. Watch denial counts by reason, not the headline retention rate.</p>
+  </div>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6032732">NPR / KFF Health News</a> &middot; <a href="https://www.hrw.org/news/2026/10/01/us-nebraskans-losing-coverage-as-medicaid-changes">Human Rights Watch</a></p>
+</article>
+
+<article id="abu-dhabi">
+  <h3>Europe will be in the room at the Abu Dhabi Ukraine talks Tuesday and Wednesday, over the Kremlin&rsquo;s objection</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3.</p>
+  <p>Officials from Germany, France, the U.K., NATO and the EU will attend the U.S.-brokered Russia-Ukraine talks on Nov.&nbsp;10&ndash;11, an EU diplomat told the <a href="https://kyivindependent.com/europes-attendance-at-abu-dhabi-peace-talks-clarified/">Kyiv Independent</a>. Whether they join the negotiations directly or are only briefed before and after is still &ldquo;unclear.&rdquo; Kremlin spokesman Dmitry Peskov insists the talks are three-way only. This is the fourth round under Trump and the first since Geneva in February. Moscow is sending a more senior delegation, including deputy foreign ministers and its military intelligence chief (<a href="https://text.npr.org/nx-s1-6034014">NPR</a>). Trump has said a coming deal &ldquo;might involve all of Europe,&rdquo; and Zelensky compared that to Yalta. Rubio says there has been progress on a postwar security framework but nothing is final (<a href="https://www.theguardian.com/world/2026/nov/09/ukraine-war-briefing-post-war-security-guarantees-a-key-focus-in-upcoming-abu-dhabi-talks-says-rubio">Guardian</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://kyivindependent.com/europes-attendance-at-abu-dhabi-peace-talks-clarified/">Kyiv Independent</a> &middot; <a href="https://text.npr.org/nx-s1-6034014">NPR</a> &middot; <a href="https://www.theguardian.com/world/2026/nov/09/ukraine-war-briefing-post-war-security-guarantees-a-key-focus-in-upcoming-abu-dhabi-talks-says-rubio">Guardian</a> &middot; <a href="https://www.politico.eu/article/ukraine-europe-abu-dhabi-talks-officials-russia/">Politico Europe</a></p>
+</article>
+
+<article id="pipelines">
+  <h3>Data-center demand drives a 17,000-mile gas pipeline boom as safety enforcement is cut back</h3>
+  <div class="meta"><span class="chip">Data centers &amp; power</span><span class="chip">Energy &amp; grid</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (an Environmental Integrity Project review of federal records, reported by the Guardian).</p>
+  <p>Federal records show almost <b>200</b> gas pipeline projects proposed or under way, totaling about <b>17,000 miles</b>. Together they would carry about 40% more gas a day than the system does now, and could supply at least 98 gas-fired power plants proposed to serve data centers (<a href="https://www.theguardian.com/us-news/2026/nov/08/datacenters-fossil-fuel-pipelines-regulations">Guardian</a>, on an Environmental Integrity Project report). More than a quarter of the projects have asked for expedited environmental review. In January the pipeline-safety regulator, PHMSA, said in a memo that it would &ldquo;refrain from taking any enforcement action&rdquo; against companies that violate its rules. The U.S. already averages about 1.7 pipeline accidents, spills, fires or explosions a day. It ties to the Senate permitting vote (<a href="#lame-duck">lead</a>) and to who ends up paying for data-center power. The report is an advocacy group&rsquo;s analysis, and we did not read the underlying records.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/us-news/2026/nov/08/datacenters-fossil-fuel-pipelines-regulations">Guardian</a></p>
+</article>
+
+<article id="palantir">
+  <h3>Palantir hires former Sen. Jon Tester as Democrats prepare to investigate it</h3>
+  <div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">US politics &amp; policy</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (NPR interview with Tester); Sludge&rsquo;s June reporting is background only.</p>
+  <p>Palantir has hired the former Montana Democrat. &ldquo;My agreement with Palantir is advisory in nature, it is not lobbying,&rdquo; Tester told <a href="https://text.npr.org/nx-s1-6029641">NPR</a>, adding that he will focus on its government-services work. Palantir holds about <b>$2&nbsp;billion</b> in federal contracts, mostly with Defense, Homeland Security and State. Sen. Ron Wyden&rsquo;s office says that as incoming Finance Committee chair he will ask again about Palantir&rsquo;s role in &ldquo;the Trump-Vance abuse of government data,&rdquo; and that &ldquo;compulsory processes will be on the table&rdquo; if the company does not respond. This follows Palantir&rsquo;s June hiring of Democratic lobbyists, including a former Jeffries chief of staff (<a href="https://readsludge.com/2026/06/22/palantir-goes-on-a-democratic-lobbyist-hiring-spree/">Sludge</a>). It is a clear example of a company buying access ahead of a change in power.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6029641">NPR</a> &middot; <a href="https://readsludge.com/2026/06/22/palantir-goes-on-a-democratic-lobbyist-hiring-spree/">Sludge</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="bis-lapse"> The affiliates rule, if Commerce lets the pause lapse on Jan.&nbsp;10 or ties it to Megaspeed</label>
+  <label><input type="radio" name="fb-also" value="hegseth-vote"> The Hegseth impeachment, once the House floor vote is scheduled and Republican defections are counted</label>
+  <label><input type="radio" name="fb-also" value="medicaid-states"> Nebraska&rsquo;s Medicaid work rules, when other states publish their January rollout plans</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 86 sources checked; 16 swept before any weighting category was consulted. Six leads and eight items below the line (14 stories). Leads carried from earlier editions, each with a stated trigger (3): Nvidia (Huang&rsquo;s admission and the board&rsquo;s investigation), Iran (today&rsquo;s Qatar meeting), Miller (Trump&rsquo;s &ldquo;too tough&rdquo; reversal). Confidence-marker tallies: PS&nbsp;3 &middot; IC&nbsp;8 &middot; SS&nbsp;3 &middot; U&nbsp;0. Three claims we could not confirm are stated in the text with reasons (the U.S. intelligence assessment of Alice Huang; Israel Hayom&rsquo;s $8&nbsp;billion figure and list of officials opposed; the timing of Monday&rsquo;s permitting vote). Divergence boxes: 7. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Dec.&nbsp;11 is a Friday; Jan.&nbsp;10, 2027 is a Sunday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-09-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> — near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Polish police say the Krak&oacute;w gunman died in hospital early Monday. That ends the charging document you asked us to watch for; we will return to it only if prosecutors charge an accomplice.</li>
+    <li>COP31 opened in Antalya with no official U.S. negotiating team, only a 19-member Democratic-led congressional delegation. Missed because there is no U.S. policy lever until January.</li>
+    <li>October CPI comes out Tuesday at 8:30&nbsp;a.m. Eastern. Missed by your standing rule: report actual prints, not previews.</li>
+    <li>Attorney General Blanche won&rsquo;t rule out prosecuting Democrats after Trump ordered a DOJ probe. Missed because it ran Sunday and there is no filing or new action.</li>
+    <li>The collapse of Paraguay&rsquo;s ueno bank has toppled President Pe&ntilde;a. Missed: no U.S. channel.</li>
+    <li>CMS published its final Medicare drug-price negotiation rule (effective Dec.&nbsp;5) and the 2027 physician fee schedule today. Missed because only the abstracts were read and the effects are not yet quantified.</li>
+    <li>JPMorgan signed an OpenAI deal to use Codex and cybersecurity models. Missed: it is a vendor announcement with no disclosed terms.</li>
+    <li>The CDC counts 5,182 measles cases in 2026, the most since 1991. Missed: reported Friday, with no new policy action.</li>
+    <li>Mamdani&rsquo;s private push for a 2028 progressive candidate, and DeSantis versus Rubio for 2028. Missed: horse-race politics, on your anti-topic list.</li>
+    <li>UAP: no new PURSUE records since Oct.&nbsp;23, and the Disclosure Act is still in NDAA conference. Missed because there is no new paperwork today.</li>
+    <li>Constellation Energy and NRG report earnings today. Missed because results were not out at publication; check them for data-center power contracts.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
