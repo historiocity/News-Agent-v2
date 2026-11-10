@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Tuesday, 10 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Tuesday, 10 November 2026 &middot; morning edition</div>
+  <h1>Trump calls the Iran war &ldquo;effectively over&rdquo; as oil slips under $90, Anthropic sets terms for its IPO, the FBI is said to be on Huang, and USDA moves to cut SNAP for 6.3 million</h1>
+  <p class="summary">Six leads, seven below the line. Trump says the Iran war is &ldquo;effectively over&rdquo; but keeps the blockade, as Brent dips under $90 and Florida gas falls to $3.80; Anthropic sets IPO terms of up to $64.4&nbsp;billion plus $26&nbsp;billion from its own suppliers; Trump says the FBI is &ldquo;looking into&rdquo; Jensen Huang as shareholders sue Nvidia; the House must vote on impeaching Hegseth by Wednesday; USDA and Labor propose tighter SNAP and jobless-aid rules that USDA itself says would drop 6.3 million people from food aid; and the data-center backlash reaches Duke Energy&rsquo;s Florida tariff. Below the line: the House GOP leadership race, Trump&rsquo;s election-fraud reversal, a disputed report on jailing reporters, the Abu Dhabi talks, China&rsquo;s Jan.&nbsp;10 truce extension, FinCEN&rsquo;s MEXC cutoff, and Florida&rsquo;s Medicaid-letters loss.</p>
+  <p class="sub">Tuesday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-10-v2.html</code>.</p>
+  <p class="prov"><b>69 sources checked, 14 of them swept before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera news index, Fox News politics, BBC News, Axios, Guardian US, WUSF, Fox&nbsp;13 Tampa Bay, Florida Politics, the Federal Register API for today&rsquo;s rules, proposed rules and presidential documents, X US trends and X news, Reuters premarket wraps reached through syndicators, and the Wikipedia current-events portal (used only to check for missed stories). The Hill, Politico and CNBC fronts timed out; SEC&rsquo;s EDGAR refused our automated request, so the Anthropic filing was read through CNBC and Reuters.<br><br>
+  <b>Check for missed stories:</b> the three proposed safety-net rules in today&rsquo;s Federal Register (SNAP categorical eligibility, SNAP work limits, unemployment work searches) looked underreported for their consequence. USDA&rsquo;s own analysis says 6.3 million people lose food aid, and we found only one newsroom headline. They run as a lead. October CPI comes out at 8:30&nbsp;a.m. Eastern, after this edition; by your standing rule there is no preview. No open brief-feedback issue required a new change: issue #1 (Krak&oacute;w) is already applied and its wake condition closed.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#iran-oil">Trump calls the Iran war &ldquo;effectively over&rdquo;; Brent under $90, Florida gas at $3.80</a></li>
+    <li><a href="#anthropic">Anthropic sets IPO terms: up to $64.4&nbsp;billion plus $26&nbsp;billion from suppliers</a></li>
+    <li><a href="#nvidia">FBI &ldquo;looking into&rdquo; Huang, says Trump; shareholders sue Nvidia</a></li>
+    <li><a href="#hegseth">House must vote on impeaching Hegseth by Wednesday</a></li>
+    <li><a href="#snap">USDA&rsquo;s SNAP cut for 6.3 million and Labor&rsquo;s five-search rule</a></li>
+    <li><a href="#data-centers">Data-center backlash, Texas rate freeze, and Duke&rsquo;s rejected Florida tariff</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#gop-leaders">House GOP picks a minority leader: Scalise vs. Jordan</a></li>
+    <li><a href="#fraud-claims">Trump reverses himself on the midterm results</a></li>
+    <li><a href="#miller-press">Disputed report: Miller backed jailing reporters over leaks</a></li>
+    <li><a href="#abu-dhabi">Ukraine talks open in Abu Dhabi</a></li>
+    <li><a href="#china-truce">China extends rare-earth and tariff truce to Jan.&nbsp;10</a></li>
+    <li><a href="#mexc">FinCEN&rsquo;s MEXC cutoff starts its 30-day clock</a></li>
+    <li><a href="#fl-medicaid">Florida&rsquo;s Medicaid cutoff letters ruled unconstitutional</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="iran-oil">
+  <h3>Trump calls the Iran war &ldquo;effectively over&rdquo; but keeps the blockade; Brent dips below $90 and Florida gas is 62 cents off its peak</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (Al Jazeera, CNBC, NBC News, BBC), plus AAA&rsquo;s own Florida price release. Trigger (threshold event): Brent crude fell below $90 a barrel for the first time since August after Trump&rsquo;s on-record statement on Monday. Yesterday&rsquo;s issue had only the scheduled Qatar meeting.</p>
+  <p>After meeting Qatar&rsquo;s prime minister and Vice President Vance on Monday, President Trump told reporters: &ldquo;Iran militarily is effectively over. We&rsquo;re just keeping it the status quo, and we&rsquo;re doing that really at the behest of countries that are their neighbours.&rdquo; The &ldquo;status quo&rdquo; he described includes the U.S. naval blockade of Iranian ports and Task Force Iron Gate, which tries to cut off Iran&rsquo;s land and Caspian trade. He added that the U.S. is &ldquo;locked and loaded&rdquo; if anything changes (<a href="https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm">Al Jazeera</a>). The Qatari prime minister posted that the talks were &ldquo;positive&rdquo; on &ldquo;reaching a deal.&rdquo; Tehran did not agree. Mohsen Rezaei, secretary of Iran&rsquo;s Supreme National Security Council, wrote: &ldquo;STOP manufacturing FAKE NEWS about imaginary talks.&rdquo;</p>
+  <p><b>The pocketbook part moved first.</b> Brent fell about 2.7% to $90.14 by 5:33&nbsp;a.m. Eastern and briefly traded below $90; WTI was near $84.78 (<a href="https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html">CNBC</a>). AAA says Florida&rsquo;s average for regular was <b>$3.80</b> on Sunday, down from $4.18 a month ago and 62 cents below the late-September peak of $4.42. The national average was $4.02. AAA&rsquo;s spokesman says more relief &ldquo;could be on the way&rdquo; because wholesale gasoline futures have dropped about 33 cents since Oct.&nbsp;19 and pump prices lag (<a href="https://newsroom.acg.aaa.com/florida-gas-prices-fall-to-four-month-lows/">AAA</a>). Under your standing rule, the strike-to-pump chain runs as one story.</p>
+  <p>The risk has not gone away. Hours after Trump spoke, Saudi Arabia said it intercepted missiles aimed at Riyadh, a day after a Houthi attack on its East-West oil pipeline caused a limited fire (<a href="https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline">Al Jazeera</a>). The U.S. also moved KC-135 tankers and CV-22 Ospreys out of RAF Mildenhall in England over a reported Iran-linked threat, after B-1 bombers left RAF Fairford (<a href="https://www.nbcnews.com/world/europe/us-moves-military-aircraft-british-base-iran-threats-raf-mildenhall-rcna608501">NBC News</a>; <a href="https://www.bbc.com/news/articles/c32l4lw12z7po">BBC</a>). We could not confirm what the threat at Mildenhall was. Why: U.S. and British officials have not described it on the record, and the reports rely on unnamed sources. Why it matters to you: the blockade is run from CENTCOM&rsquo;s headquarters in Tampa, and Florida pump prices are where this war has reached your budget.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the war actually ending?</span>
+    <p><b>What is in dispute.</b> A dispute over the outlook. Trump says the conflict will end &ldquo;fairly soon.&rdquo; Iran&rsquo;s security council calls the talks imaginary, though President Pezeshkian says Iran is open to talks. FGE chairman Fereidun Fesharaki told CNBC he sees no deal, because the U.S. wants Iran&rsquo;s enriched uranium removed and Iran will not give up control of Hormuz. ING&rsquo;s analysts say the market is pricing in de-escalation as Gulf oil flows recover.</p>
+    <p><b>Why the vantage differs.</b> Trump is speaking a week after an election his party lost partly over the war and gas prices, and he says Gulf allies want the blockade kept. Iran&rsquo;s officials will not concede publicly before any deal. Fesharaki is an oil consultant forecasting supply; the ING note speaks to traders. None of them has seen a signed text, because there isn&rsquo;t one.</p>
+    <p><b>What it means for the reader.</b> Cheaper gasoline is real and may continue. A peace deal is not. The thing to watch is a written U.S. decision to lift or ease the blockade. Until then, a single missile on Gulf oil infrastructure can reverse the price move.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran endgame?</b></p>
+    <label><input type="radio" name="fb-iran-oil" value="blockade"> When the White House sets an end date for the naval blockade or Task Force Iron Gate</label>
+    <label><input type="radio" name="fb-iran-oil" value="tampa-pump"> If Tampa Bay pump prices fall back under $3.50 a gallon, or jump back above $4</label>
+    <label><input type="radio" name="fb-iran-oil" value="gulf-hit"> Only if Iran or the Houthis hit Gulf oil infrastructure again, as with Monday&rsquo;s pipeline attack</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html">CNBC</a> &middot;
+    <a href="https://newsroom.acg.aaa.com/florida-gas-prices-fall-to-four-month-lows/">AAA</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline">Al Jazeera (Saudi)</a> &middot;
+    <a href="https://www.nbcnews.com/world/europe/us-moves-military-aircraft-british-base-iran-threats-raf-mildenhall-rcna608501">NBC News</a> &middot;
+    <a href="https://www.bbc.com/news/articles/c32l4lw12z7po">BBC</a>
+  </p>
+</article>
+
+<article id="anthropic">
+  <h3>Anthropic sets its IPO terms: up to $64.4 billion from the public, plus $26 billion from the chip and cloud companies it buys from</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">AI and financial services</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (CNBC, Reuters, Investing.com, Bloomberg Law). Reuters is carried by two outlets linked below; we count it once.</p>
+  <p>Anthropic&rsquo;s updated filing on Tuesday sets a range of <b>$70 to $78 a share</b> for <b>825 million shares</b>, to trade on Nasdaq as &ldquo;ANT.&rdquo; The company is selling 801.4 million of them and existing holders 23.6 million. At the top of the range the company nets up to about $64.4&nbsp;billion (<a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC</a>; <a href="https://www.investing.com/news/stock-market-news/anthropic-files-for-825m-share-ipo-at-7078sh-432SI-5014878">Investing.com</a>). Separately, AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC will buy <b>$26&nbsp;billion</b> of a separate class of stock at the IPO price. Those shares are not registered and not subject to the usual lock-up. Together that is up to $90.4&nbsp;billion. The filing puts run-rate revenue at about $81&nbsp;billion as of Oct.&nbsp;31. For the nine months to Sept.&nbsp;30, revenue was $33.2&nbsp;billion and the net loss was $104&nbsp;billion, mostly from accounting changes on convertible notes and derivatives.</p>
+  <p>The launch was messy. Late Monday an Anthropic representative emailed banks a filing showing 867 million shares at $70 to $80, then sent a second email saying the pricing details were wrong. Reuters could not determine what was wrong (<a href="https://www.theglobeandmail.com/world/article-details-of-anthropics-nearly-70-billion-ipo-briefly-circulated-to/">Reuters via the Globe and Mail</a>). Reuters also reports Anthropic has nearly $900&nbsp;billion in computing commitments with partners including Amazon and Google, and that other AI-infrastructure listings have been delayed or pulled as rates rose. Pricing is expected next week. <a href="https://news.bloomberglaw.com/capital-markets/anthropic-plans-ipo-live-stream-with-amodei-jpmorgan-ceo-dimon">Bloomberg Law</a> reports that CEO Dario Amodei will discuss the offering with JPMorgan CEO Jamie Dimon in a live-streamed event on Friday. We could not confirm that event. Why: it rests on one unnamed person, and neither company has announced it. We also could not check the prospectus figures against the filing itself. Why: SEC&rsquo;s EDGAR site refused our automated request, so the numbers above come from CNBC and Reuters, who read it.</p>
+  <p>Why it matters to you: this is the first time a frontier AI lab&rsquo;s books go public. It also shows the AI build-out financing itself in a circle: the chip and cloud companies that sell Anthropic compute are also buying its stock. If you advise banks or clients on AI, this prospectus becomes the reference point for what these companies earn and owe.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is it a $1 trillion or a $1.4 trillion company?</span>
+    <p><b>What is in dispute.</b> A dispute over the figure, mostly about the basis used. <a href="https://www.investing.com/news/stock-market-news/anthropic-retracts-ipo-details-after-sending-filing-to-bankers--reuters-5013961">Investing.com</a> says the range implies a valuation of up to $1.02&nbsp;trillion. CNBC says up to $1.405&nbsp;trillion &ldquo;on a fully diluted basis,&rdquo; against $965&nbsp;billion in a May funding round. CNBC and Reuters both reported investors talking about $2&nbsp;trillion earlier and now treating $1.5&nbsp;trillion as the top end.</p>
+    <p><b>Why the vantage differs.</b> The fully diluted figure counts options, convertibles and the private-placement shares. The lower figure does not. Investors who bought in May want a higher number. The underwriters want a range that fills the order book in a weak market. Both outlets worked from the same filing on the same morning.</p>
+    <p><b>What it means for the reader.</b> When you see a headline valuation, check the share count behind it. The useful test is the final price next week compared with the $70&ndash;$78 range.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Anthropic listing?</b></p>
+    <label><input type="radio" name="fb-anthropic" value="price"> When the deal prices next week, above, inside or below the $70&ndash;$78 range</label>
+    <label><input type="radio" name="fb-anthropic" value="circular"> If the SEC or the new Congress questions the $26 billion supplier stock purchase as circular AI financing</label>
+    <label><input type="radio" name="fb-anthropic" value="banks"> If Wall Street banks&rsquo; roles in the deal, such as Dimon&rsquo;s Friday appearance, become a conflict-of-interest story</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/anthropic-files-for-825m-share-ipo-at-7078sh-432SI-5014878">Investing.com</a> &middot;
+    <a href="https://www.theglobeandmail.com/world/article-details-of-anthropics-nearly-70-billion-ipo-briefly-circulated-to/">Reuters (Globe and Mail)</a> &middot;
+    <a href="https://www.thehindubusinessline.com/markets/anthropic-ipo-could-raise-up-to-644-billion-at-share-price-of-70-78/article71685870.ece">Reuters (BusinessLine)</a> &middot;
+    <a href="https://news.bloomberglaw.com/capital-markets/anthropic-plans-ipo-live-stream-with-amodei-jpmorgan-ceo-dimon">Bloomberg Law</a>
+  </p>
+</article>
+
+<article id="nvidia">
+  <h3>Trump says the FBI is &ldquo;looking into&rdquo; Jensen Huang&rsquo;s affair, and shareholders sue Nvidia for hiding it</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6. Trigger (new verifiable fact): a proposed class action filed Monday in federal court in San Jose, and the president&rsquo;s on-record statement about the FBI. Yesterday&rsquo;s issue had only the board&rsquo;s internal probe.</p>
+  <p>Trump said he called Huang on Monday: &ldquo;I asked him that question, &lsquo;Did you have any idea she was a spy?&rsquo; He said &lsquo;I had no idea she was a spy&rsquo; and I really believe him.&rdquo; At a White House briefing he added, &ldquo;I know the FBI is looking into&rdquo; it. He gave no details, and the FBI declined to comment (<a href="https://www.bbc.com/news/articles/cqg7x7dpvym8o">BBC</a>). <b>We could not confirm that the FBI has opened an investigation.</b> Why: the only source is the president, and the bureau will not say. Beijing calls the spy allegations &ldquo;entirely groundless.&rdquo;</p>
+  <p>The lawsuit was filed five minutes after Monday&rsquo;s market close, after Nvidia shares fell 4.3% to $178.67 (<a href="https://www.investing.com/news/stock-market-news/nvidia-ceo-huang-sued-over-disclosures-related-to-suspected-chinese-spy-5013619">Reuters</a>). Shareholder Mark Kistenmacher, represented by the Rosen Law Firm, claims Nvidia and Huang violated the Securities Exchange Act. The complaint says Nvidia&rsquo;s statements that chips were not being diverted, and Huang&rsquo;s description of the company&rsquo;s dealings with Megaspeed as &ldquo;normal,&rdquo; were misleading because they left out his relationship with Alice Huang. The proposed class covers buyers from Oct.&nbsp;9, 2025 to Nov.&nbsp;8, 2026 (<a href="https://www.aa.com.tr/en/economy/nvidia-faces-shareholder-lawsuit-over-ceos-ties-to-suspected-chinese-operative/4118229">Anadolu</a>; <a href="https://www.theguardian.com/technology/2026/nov/10/nvidia-jensen-huang-sued-donald-trump-fbi">Guardian</a>). Reuters notes that suits like this commonly follow a sharp share drop.</p>
+  <p>Two more threads. <a href="https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/">Fortune</a>, summarizing a Bloomberg report, says Nvidia&rsquo;s general counsel Tim Teter called Commerce undersecretary Jeffrey Kessler in summer 2025 to ask whether the administration had a role in Singapore police questioning Alice Huang. If accurate, Nvidia&rsquo;s lawyers knew about the issue about 18 months before the board&rsquo;s probe. We could not confirm the call. Why: we could not read Bloomberg&rsquo;s story and saw only Fortune&rsquo;s summary. Sen. Chris Coons, the incoming chair of the Senate Foreign Relations Committee, says investigating Huang is a top priority (<a href="https://www.npr.org/2026/11/09/nx-s1-6032682/senator-chris-coons-congress-investigation-nvidia-national-security">NPR</a>). Nvidia reports earnings on <b>Tuesday, Nov.&nbsp;17</b>. Why it matters to you: Nvidia sits at the center of the AI build-out and the chip-export rules. A criminal probe or a congressional hearing under oath would change how Washington treats the company.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a private failing or a disclosure failure?</span>
+    <p><b>What is in dispute.</b> A legal and factual dispute. The plaintiffs say Nvidia hid a material national-security risk from investors. The board says it has no reason to believe secrets were compromised and has &ldquo;confidence in Jensen.&rdquo; Trump says Huang is &ldquo;an honourable guy.&rdquo; Governance critics quoted by Fortune and the WSJ say a board can&rsquo;t declare confidence before its own investigation has finished.</p>
+    <p><b>Why the vantage differs.</b> Plaintiffs&rsquo; firms file quickly after share drops and are paid from settlements. The board is investigating its own CEO, and its lead independent director is expected to oversee the probe. Trump has close dealings with Huang over chip exports and said Sunday he would take him on his Asia trip. The anonymous U.S. officials behind the spy claim have not testified anywhere.</p>
+    <p><b>What it means for the reader.</b> The documents that will settle this are Nvidia&rsquo;s Nov.&nbsp;17 earnings disclosures, any on-record Justice Department statement, and whether the suit survives a motion to dismiss. Interviews will not settle it.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Huang affair?</b></p>
+    <label><input type="radio" name="fb-nvidia-fbi" value="doj"> When the FBI or Justice Department confirms an investigation on the record</label>
+    <label><input type="radio" name="fb-nvidia-fbi" value="earnings"> If Nvidia&rsquo;s Nov.&nbsp;17 earnings filing names the probe or the lawsuit as a business risk</label>
+    <label><input type="radio" name="fb-nvidia-fbi" value="oath"> When Coons or a House chair schedules Huang to testify under oath</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/cqg7x7dpvym8o">BBC</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/nvidia-ceo-huang-sued-over-disclosures-related-to-suspected-chinese-spy-5013619">Reuters (Investing.com)</a> &middot;
+    <a href="https://www.theguardian.com/technology/2026/nov/10/nvidia-jensen-huang-sued-donald-trump-fbi">Guardian</a> &middot;
+    <a href="https://www.aa.com.tr/en/economy/nvidia-faces-shareholder-lawsuit-over-ceos-ties-to-suspected-chinese-operative/4118229">Anadolu</a> &middot;
+    <a href="https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/">Fortune</a> &middot;
+    <a href="https://www.npr.org/2026/11/09/nx-s1-6032682/senator-chris-coons-congress-investigation-nvidia-national-security">NPR</a>
+  </p>
+</article>
+
+<article id="hegseth">
+  <h3>The House must vote on impeaching Hegseth by Wednesday, and some Republicans think it could pass</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4, plus Rep. Massie&rsquo;s own release. Trigger (threshold event): Massie introduced a privileged resolution Monday, so House rules force a vote within two legislative days. Yesterday this was a short item about a possible vote.</p>
+  <p>Rep. Thomas Massie (R-Ky.) read his eight articles from the House floor Monday, which took more than an hour. Three charge Defense Secretary Pete Hegseth with violating separate sections of the 1973 War Powers Resolution by fighting in Iran for more than 90 days without authorization and after Congress directed U.S. forces out. Others cover strikes on suspected drug boats (&ldquo;at least 243 deaths&rdquo;), the seizure of Nicol&aacute;s Maduro, strikes in Yemen, and retaliation against Sen. Mark Kelly (<a href="https://massie.house.gov/news/documentsingle.aspx?DocumentID=395863">Massie release</a>). &ldquo;My effort to impeach Secretary Hegseth is a much gentler version of what&rsquo;s coming when the Democrats assume control,&rdquo; Massie said, urging Trump to replace Hegseth &ldquo;while he can still get a replacement confirmed.&rdquo;</p>
+  <p>Several House Republicans told <a href="https://www.foxnews.com/politics/hegseth-impeachment-vote-looms-house-republicans-privately-warn-could-pass">Fox News</a> it could pass. They point to GOP members who lost their races and are absent, and to resentment over the war, although most Republicans are still expected to vote no. Leaders can first move to table the resolution or refer it to committee, which would kill it. Rep. Warren Davidson (R-Ohio), who opposes the war, says impeaching Hegseth for &ldquo;a decision the president makes&rdquo; would be scapegoating. Trump says Hegseth &ldquo;should be praised, not impeached,&rdquo; and Hegseth calls the effort a &ldquo;shame&rdquo; that &ldquo;won&rsquo;t work&rdquo;. He is due to brief reporters today. Jeffries is a &ldquo;hard yes&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/09/pete-hegseth-impeachment-thomas-massie">Guardian</a>). Why it matters to you: the vote is the first recorded test of how many Republicans will break with Trump over the war that drove up your fuel costs. It also lands while the defense bill and the Dec.&nbsp;11 funding deadline are still open.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who is responsible for the war?</span>
+    <p><b>What is in dispute.</b> A dispute over law and blame. Massie says Hegseth personally broke the War Powers Resolution. Davidson says the president made the decision and Congress ducked its own duty. Trump says Hegseth deserves praise. Watchdogs Common Cause and CREW say Hegseth&rsquo;s response video broke the Hatch Act.</p>
+    <p><b>Why the vantage differs.</b> Massie is leaving Congress and has long opposed the war. Davidson opposes the war but defends the chain of command. The members who told Fox it could pass spoke anonymously and have reasons to talk up GOP discontent. Jeffries gains whether it passes or fails.</p>
+    <p><b>What it means for the reader.</b> Watch the vote to table, not the final count. If tabling fails, the House is on record about the Iran war for the first time since the election.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Hegseth impeachment?</b></p>
+    <label><input type="radio" name="fb-hegseth-vote" value="table"> If leadership&rsquo;s motion to table fails and the articles get a straight up-or-down vote</label>
+    <label><input type="radio" name="fb-hegseth-vote" value="replace"> When Trump names a replacement for Hegseth before January, as Massie urges</label>
+    <label><input type="radio" name="fb-hegseth-vote" value="defections"> Only if more than a dozen Republicans vote to impeach</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://massie.house.gov/news/documentsingle.aspx?DocumentID=395863">Rep. Massie (house.gov)</a> &middot;
+    <a href="https://www.foxnews.com/politics/hegseth-impeachment-vote-looms-house-republicans-privately-warn-could-pass">Fox News</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/09/pete-hegseth-impeachment-thomas-massie">Guardian</a> &middot;
+    <a href="https://www.bbc.com/news">BBC front (Hegseth briefing)</a> &middot;
+    <a href="https://www.aljazeera.com/news/">Al Jazeera index</a>
+  </p>
+</article>
+
+<article id="snap">
+  <h3>USDA proposes cutting SNAP for 6.3 million people and tightening work rules; Labor wants five job searches a week for unemployment pay</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (a Bloomberg Law headline), plus three primary documents and Florida DCF&rsquo;s eligibility page. Underreported: none of the newsroom fronts we swept carried these this morning.</p>
+  <p>Three proposed rules in today&rsquo;s Federal Register. The biggest is USDA&rsquo;s plan to <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">end &ldquo;broad-based categorical eligibility&rdquo;</a> in SNAP (food stamps). Today, a household that receives any non-cash TANF-funded benefit or service can be automatically eligible. The rule would limit that to households receiving actual TANF assistance. USDA&rsquo;s own impact analysis estimates that <b>3.2 million households with 6.3 million people</b> would lose SNAP in FY2029, about 17.6% of participants. Federal SNAP spending would fall by <b>$44.6&nbsp;billion</b> over FY2027&ndash;2031. About 1.78 million children would lose automatic free school meals, although USDA says about 97% would still qualify through another route. As of December 2025, 46 of 53 state agencies used the policy. Comments are due <b>Thursday, Dec.&nbsp;10</b>.</p>
+  <p>A second USDA rule <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22944/modification-to-work-requirements-for-able-bodied-adults">writes the 2025 reconciliation law&rsquo;s changes</a> into SNAP&rsquo;s three-month limit for adults without dependents. It removes the exemptions for homeless people, veterans and former foster youth up to age 24, and tightens area waivers to places with unemployment over 10% or at least 1.5 times the national rate (comments also due Dec.&nbsp;10). Labor&rsquo;s <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22903/unemployment-insurance-program-national-minimum-weekly-work-search-requirements">proposed national minimum</a> would require anyone claiming unemployment to report at least five qualifying job-search activities every week before being paid (comments by Monday, Jan.&nbsp;11, 2027). Bloomberg Law&rsquo;s headline is &ldquo;Trump Plan Would Strip Food Aid Benefits From 6.3 Million People.&rdquo; We could read only the headline.</p>
+  <p><b>Florida angle.</b> Florida&rsquo;s DCF says most households qualify with gross income up to <b>200%</b> of the poverty line, and most face no asset test (<a href="https://www.myflfamilies.com/services/public-assistance/supplemental-nutrition-assistance-program-snap/snap-eligibility/">Florida DCF</a>). Both are broad-based eligibility features. The federal gross-income limit is 130%. Florida households between 130% and 200%, or with savings above the federal limit, are the ones this rule targets. USDA did not publish a state breakdown, and we did not find one. Why it matters to you: it is a lame-duck rule that a Democratic Congress will try to block, and it affects grocery spending and school-meal paperwork in Pasco.</p>
+  <details>
+    <summary>Dig deeper</summary>
+    <p>USDA&rsquo;s preamble argues that adoption of broad-based eligibility, which grew from 18 to 43 states between FY2008 and FY2011, &ldquo;was not organic but was encouraged formally by USDA under the Obama administration.&rdquo; Its analysis also estimates that states save about $5.2&nbsp;billion net over five years, and take on about $929&nbsp;million in extra administrative costs; 41 states do not check assets today and would have to start for affected households. About 93,000 children would move from free to reduced-price meals and 28,000 to full price. The figures are USDA&rsquo;s own and have not been independently scored.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the SNAP and jobless-aid rules?</b></p>
+    <label><input type="radio" name="fb-snap" value="florida-count"> When Florida DCF or a Florida food bank estimates how many Florida households lose SNAP under the 130% limit</label>
+    <label><input type="radio" name="fb-snap" value="congress-block"> If the incoming Democratic Congress moves to block the categorical-eligibility rule before it is final</label>
+    <label><input type="radio" name="fb-snap" value="lobby"> When grocers&rsquo;, school-nutrition or food-bank lobbies file comments by the Dec.&nbsp;10 deadline</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">Federal Register 2026-22936</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22944/modification-to-work-requirements-for-able-bodied-adults">Federal Register 2026-22944</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22903/unemployment-insurance-program-national-minimum-weekly-work-search-requirements">Federal Register 2026-22903</a> &middot;
+    <a href="https://www.myflfamilies.com/services/public-assistance/supplemental-nutrition-assistance-program-snap/snap-eligibility/">Florida DCF</a> &middot;
+    <a href="https://news.bloomberglaw.com/health-law-and-business/trump-plan-would-strip-food-aid-benefits-from-6-3-million-people">Bloomberg Law (headline only)</a>
+  </p>
+</article>
+
+<article id="data-centers">
+  <h3>Data-center backlash: red counties with projects swung toward Democrats, Texas&rsquo;s governor-elect promises a rate freeze, and Florida regulators sent Duke&rsquo;s data-center tariff back</h3>
+  <div class="meta">
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6 (Fox News, BBC Verify, Reason, Fox&nbsp;13, Tampa Bay Beacons, Fortune), plus the Florida PSC&rsquo;s own release. Trigger (new verifiable fact): the first county-level analysis of a &ldquo;data center penalty&rdquo; published this morning, and the Texas governor-elect&rsquo;s plan to freeze rates. The Nov.&nbsp;8 edition covered only the local ballot measures.</p>
+  <p>Humans First, a conservative AI-safety group, gave <a href="https://www.foxnews.com/politics/red-counties-data-center-projects-swung-away-gop-midterms-analysis-finds">Fox News</a> an analysis of 1,540 counties in 16 states. Counties hosting large data centers moved <b>2.2 points</b> further toward Democrats than non-host counties in the same states. The pattern held in 14 of 16 states and 25 of 27 governor and Senate races. In deep-red counties with projects still only proposed, the gap was 1.1 points after controls. The group itself says this shows an association, not proof that data centers caused it. Ballotpedia counts 46 of 47 local data-center ballot measures in 2026 going against the projects. &ldquo;Developers and companies have gone in and cut deals behind closed doors &hellip; using nondisclosure agreements and shell companies,&rdquo; chairwoman Amy Kremer said.</p>
+  <p>Texas Gov.-elect Gina Hinojosa says that &ldquo;within an hour of taking the oath&rdquo; on Jan.&nbsp;19 she will declare a &ldquo;high-cost emergency&rdquo; and freeze residential electricity rates. C3 Solutions&rsquo; Nick Loris expects lawsuits, because Texas&rsquo;s 1999 deregulation law leaves retail prices to competition (<a href="https://www.foxnews.com/politics/texas-governor-elect-plan-freeze-electricity-prices-raises-questions-legal-authority">Fox News</a>). <a href="https://reason.com/2026/11/09/gina-hinojosa-wants-to-freeze-electricity-rates-in-texas-new-jersey-shows-why-that-wont-work/">Reason</a> argues that New Jersey&rsquo;s experience shows the risks; we read only its headline and summary. On the money side, SoftBank posted an unexpected $7&nbsp;billion loss after writing down U.S. data centers by $3.7&nbsp;billion (<a href="https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/">Fortune</a>).</p>
+  <p><b>Closer to home.</b> On Nov.&nbsp;3 the <a href="https://www.psc.state.fl.us/news-links/12359">Florida PSC</a> rejected Duke Energy Florida&rsquo;s large-load tariff. The PSC found it did not prove, as the 2026 state law (SB&nbsp;484) requires, that data centers would pay their full cost of service rather than pass it to other customers, and it left out some qualifying customers. Duke, which has more than 2 million Florida customers, must refile. Tampa Electric, which serves parts of Pasco, filed its own plan by the Oct.&nbsp;1 deadline and expects a decision late this year or early next (<a href="https://www.fox13news.com/news/teco-files-state-plan-protect-power-customers-from-data-centers">Fox&nbsp;13</a>). Pasco&rsquo;s 12-month moratorium on new data centers has been in force since May&nbsp;27; 25 other Florida counties are considering or have enacted similar pauses (<a href="https://www.tampabaybeacons.com/2026/07/20/pasco-unanimously-passes-moratorium-on-data-centers/">Tampa Bay Beacons</a>). Why it matters to you: the Duke refiling decides whether data-center hookups can show up on ordinary customers&rsquo; bills in your area.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did data centers cost Republicans votes?</span>
+    <p><b>What is in dispute.</b> A dispute over cause. Humans First says there is a measurable &ldquo;data center penalty.&rdquo; <a href="https://www.bbc.com/news/articles/crvg9yyz5437o">BBC Verify</a> found that states that swung followed the national trend or seemed less concerned, and says &ldquo;we can&rsquo;t say how many votes or Senate seats were directly delivered.&rdquo; Morgan Stanley, quoted by Fortune, expects the build-out to slow to a &ldquo;Goldilocks&rdquo; pace rather than stop.</p>
+    <p><b>Why the vantage differs.</b> Humans First ran a 35-stop &ldquo;Data Center Revolt&rdquo; tour and wants local control, so it benefits from finding a penalty. BBC Verify used state-level polling, which is coarser than county returns. Investment banks have clients exposed to AI capex. The industry&rsquo;s Data Center Coalition argues the jobs and tax revenue outweigh the costs.</p>
+    <p><b>What it means for the reader.</b> The politics are settled enough that both parties now promise ratepayer protection. The real question is the tariff text: Duke&rsquo;s refiling in Florida, Texas&rsquo;s courts in January, and the FERC cost-allocation work Fox mentions.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the data-center backlash?</b></p>
+    <label><input type="radio" name="fb-datacenters" value="duke-refile"> When Duke refiles its large-load tariff and the PSC rules on whether Duke customers are protected</label>
+    <label><input type="radio" name="fb-datacenters" value="pasco-extend"> If Pasco commissioners move to extend or make permanent the moratorium that runs to about May 2027</label>
+    <label><input type="radio" name="fb-datacenters" value="texas-court"> When Hinojosa&rsquo;s rate-freeze order is challenged in a Texas court</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.foxnews.com/politics/red-counties-data-center-projects-swung-away-gop-midterms-analysis-finds">Fox News (Humans First)</a> &middot;
+    <a href="https://www.bbc.com/news/articles/crvg9yyz5437o">BBC Verify</a> &middot;
+    <a href="https://www.foxnews.com/politics/texas-governor-elect-plan-freeze-electricity-prices-raises-questions-legal-authority">Fox News (Texas)</a> &middot;
+    <a href="https://reason.com/2026/11/09/gina-hinojosa-wants-to-freeze-electricity-rates-in-texas-new-jersey-shows-why-that-wont-work/">Reason</a> &middot;
+    <a href="https://www.psc.state.fl.us/news-links/12359">Florida PSC</a> &middot;
+    <a href="https://www.fox13news.com/news/teco-files-state-plan-protect-power-customers-from-data-centers">Fox 13</a> &middot;
+    <a href="https://www.tampabaybeacons.com/2026/07/20/pasco-unanimously-passes-moratorium-on-data-centers/">Tampa Bay Beacons</a> &middot;
+    <a href="https://fortune.com/2026/11/10/fbi-looking-into-jensen-huang-nvidia-corporate-governance/">Fortune</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="gop-leaders">
+  <h3>House Republicans pick a minority leader today: Scalise against Jordan</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Speaker Mike Johnson is not running. Majority Leader Steve Scalise faces Judiciary chairman Jim Jordan in a secret-ballot vote this afternoon. Jordan is pitching himself as the best defender against Democratic investigations of the administration (&ldquo;I know the Democrats&rsquo; playbook&rdquo;). Whip Tom Emmer faces August Pfluger, and Florida&rsquo;s Greg Steube is challenging conference chair Lisa McClain. In the Senate, John Thune is unopposed, but Sens. McCormick and Ron Johnson want the vote delayed (<a href="https://www.nbcnews.com/politics/congress/republicans-reeling-election-choose-leadership-congress-rcna608300">NBC News</a>), and Rick Scott is withholding support until Thune gives a lame-duck plan (<a href="https://www.foxnews.com/politics">Fox News</a>). NBC projects Democrats at 259 House seats. Why it matters: the next GOP leader decides how hard Republicans fight subpoenas from January onward. Jordan&rsquo;s whole pitch is oversight defense.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/politics/congress/republicans-reeling-election-choose-leadership-congress-rcna608300">NBC News</a> &middot; <a href="https://www.foxnews.com/politics">Fox News politics front</a></p>
+</article>
+
+<article id="fraud-claims">
+  <h3>Trump reverses himself and questions the midterm results</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>&ldquo;Does anybody really believe that this &lsquo;Election&rsquo; was honest,&rdquo; Trump posted Monday. &ldquo;It&rsquo;s all about the machines.&rdquo; On election night he had told the New York Times he was &ldquo;absolutely willing&rdquo; to accept the results (<a href="https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html">CNBC</a>). He offered no evidence. Schumer called it a &ldquo;pathetic return to election denialism.&rdquo; Megyn Kelly replied, &ldquo;Just stop.&rdquo; Al Jazeera notes a Pew review finding that pre-election polls <i>understated</i> the Democratic margin in 23 of 27 governor and Senate races, the opposite of what Trump implies (<a href="https://www.aljazeera.com/news/2026/11/9/trump-reverses-stance-alleges-fraud-in-recent-us-midterm-elections">Al Jazeera</a>). No legal challenge or formal request to any state has followed. That would be the point where this becomes a story about certification.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/09/trump-election-results-democrats.html">CNBC</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/9/trump-reverses-stance-alleges-fraud-in-recent-us-midterm-elections">Al Jazeera</a></p>
+</article>
+
+<article id="miller-press">
+  <h3>Report: Miller argued for jailing reporters to expose leakers; the Justice Department says that is &ldquo;absolutely false&rdquo;</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (The Atlantic&rsquo;s reporting, read through The Independent&rsquo;s follow-up, which got its own DOJ and White House statements).</p>
+  <p>The Atlantic, citing three people, reports that White House and Justice Department officials discussed arresting journalists to force them to name sources in national-security leak cases. Two of them say outgoing chief of staff Susie Wiles pushed back and Stephen Miller, who took over as chief of staff Monday, was in favor (<a href="https://www.independent.co.uk/news/world/americas/us-politics/stephen-miller-doj-journalists-jail-report-b3081234.html">The Independent</a>). DOJ says, &ldquo;This is absolutely false.&rdquo; The White House says leakers &ldquo;must be held accountable.&rdquo; <b>We could not confirm that the discussions took place.</b> Why: the account rests on anonymous sources in one outlet, and DOJ denies it on the record. No subpoena to a reporter has been reported. That would be the sign this has become policy.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.independent.co.uk/news/world/americas/us-politics/stephen-miller-doj-journalists-jail-report-b3081234.html">The Independent (on The Atlantic&rsquo;s report)</a></p>
+</article>
+
+<article id="abu-dhabi">
+  <h3>Ukraine talks open in Abu Dhabi; Washington wants Europe at the table next round</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Jared Kushner and Steve Witkoff are mediating the first three-way talks since February. U.S. officials say the first day covers security guarantees and &ldquo;the potential reshaping of the security architecture of Europe,&rdquo; and the second covers territory. They say both sides have shown &ldquo;flexibility&rdquo; in private. They also want this to be the last round without Europe fully at the table, though Russia objects (<a href="https://www.politico.eu/article/ukraine-russia-peace-talks-us-demands-europe-joins-next-negotiations/">Politico Europe</a>). The U.S. side describes its aim as a &ldquo;final end&rdquo; to the war (<a href="https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks">Guardian</a>). Russia launched deadly strikes hours before the talks opened. Kept short per your settled Ukraine balance.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.politico.eu/article/ukraine-russia-peace-talks-us-demands-europe-joins-next-negotiations/">Politico Europe</a> &middot; <a href="https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks">Guardian</a></p>
+</article>
+
+<article id="china-truce">
+  <h3>China extends its rare-earth and tariff truce to Jan.&nbsp;10, the same date as Washington&rsquo;s chip-rule pause</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">World economy</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (Reuters, carried by two outlets).</p>
+  <p><b>The legal mechanism:</b> China&rsquo;s commerce ministry on Monday extended for two months, to <b>Sunday, Jan.&nbsp;10, 2027</b>, the suspension of its October 2025 export controls on certain rare earths, industrial diamonds and lithium-battery technology. Its suspension of 24% extra tariffs on U.S. goods and of measures against 11 U.S. firms on its unreliable-entity list and 16 on its export-control list also runs to that date (<a href="https://www.straitstimes.com/asia/east-asia/china-extends-suspension-of-new-rare-earth-controls-until-january">Reuters via Straits Times</a>; <a href="https://www.devdiscourse.com/article/international/4003803-china-extends-suspensions-on-some-critical-minerals-curbs-measures-against-some-us-entities-for-two-months">Reuters via Devdiscourse</a>). The April 2025 rare-earth licensing rules stay in force. Yesterday Commerce pushed its own chip-export &ldquo;affiliates rule&rdquo; pause to the same Jan.&nbsp;10 date. <b>The market effect:</b> we found no price or supply figure tied to the extension. It mainly avoids a cliff before Trump&rsquo;s expected meeting with Xi at APEC in Shenzhen later this month.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.straitstimes.com/asia/east-asia/china-extends-suspension-of-new-rare-earth-controls-until-january">Straits Times (Reuters)</a> &middot; <a href="https://www.devdiscourse.com/article/international/4003803-china-extends-suspensions-on-some-critical-minerals-curbs-measures-against-some-us-entities-for-two-months">Devdiscourse (Reuters)</a></p>
+</article>
+
+<article id="mexc">
+  <h3>FinCEN&rsquo;s cutoff of the MEXC crypto exchange is published; U.S. institutions must stop transfers by Dec.&nbsp;10</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">US financials</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Bitcoin Magazine), plus Treasury&rsquo;s release and the Federal Register order.</p>
+  <p>Today&rsquo;s <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global">Federal Register</a> publishes FinCEN&rsquo;s order naming MEXC Global a &ldquo;primary money laundering concern&rdquo; tied to Russian illicit finance. Publication starts the 30-day clock, so U.S. banks, money transmitters and other covered institutions must stop all transfers to or from MEXC by <b>Thursday, Dec.&nbsp;10</b>. <a href="https://home.treasury.gov/news/press-releases/sb0685">Treasury</a> says MEXC, one of the 20 largest crypto exchanges, handled at least $16&nbsp;billion in illicit flows from May 2021 to May 2026. That includes about $1.5&nbsp;billion tied to Russian sanctions evasion and about $22&nbsp;million for Iran&rsquo;s central bank and the IRGC&rsquo;s Qods Force. This is a FinCEN transfer ban, not an OFAC sanctions designation (<a href="https://bitcoinmagazine.com/news/fincen-cuts-off-mexc-us-financial-system">Bitcoin Magazine</a>). For bank compliance teams, it means another counterparty block to build into transaction monitoring before the deadline.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22962/imposition-of-special-measure-prohibiting-the-transmittal-of-funds-involving-mexc-global">Federal Register 2026-22962</a> &middot; <a href="https://home.treasury.gov/news/press-releases/sb0685">Treasury</a> &middot; <a href="https://bitcoinmagazine.com/news/fincen-cuts-off-mexc-us-financial-system">Bitcoin Magazine</a></p>
+</article>
+
+<article id="fl-medicaid">
+  <h3>Appeals court: Florida&rsquo;s Medicaid cutoff letters were unconstitutionally vague; it is unclear whether DeSantis appeals before he leaves</h3>
+  <div class="meta"><span class="chip">Florida &amp; Tampa Bay</span><span class="chip">Science &amp; public health</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Florida Phoenix, Bloomberg Law), plus the opinion and the plaintiffs&rsquo; counsel.</p>
+  <p>A unanimous 11th Circuit panel (opinion by Judge Barbara Lagoa, a Trump appointee) upheld an injunction requiring Florida&rsquo;s DCF to tell people whose coverage is ending, why, and with what household size, countable income and income limit, so they can challenge errors (<a href="https://media.ca11.uscourts.gov/opinions/pub/files/202610419.pdf">opinion</a>; <a href="https://floridaphoenix.com/2026/11/06/federal-appeals-court-finds-floridas-medicaid-termination-letters-insufficient/">Florida Phoenix</a>; <a href="https://news.bloomberglaw.com/health-law-and-business/appeals-court-rules-against-florida-in-medicaid-eligibility-suit">Bloomberg Law</a>). The record shows that in April 2024 DCF blocked 744,000 calls, 53.9% of those asking for a live agent, before they reached a queue. &ldquo;When a trained DCF employee could read the notice and come away with the wrong answer,&rdquo; the notice fails, the court wrote. The plaintiffs&rsquo; lawyers say it protects &ldquo;hundreds of thousands of Floridians&rdquo; as Medicaid work requirements arrive (<a href="https://healthlaw.org/news/federal-appeals-court-confirms-floridas-medicaid-notices-violate-the-constitution-and-upholds-major-victory-protecting-hundreds-of-thousands-of-floridians/">NHeLP</a>). Whether the state seeks Supreme Court review before DeSantis leaves in January, and what Gov.-elect Byron Donalds thinks, is unclear.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://media.ca11.uscourts.gov/opinions/pub/files/202610419.pdf">11th Cir. opinion 26-10419</a> &middot; <a href="https://floridaphoenix.com/2026/11/06/federal-appeals-court-finds-floridas-medicaid-termination-letters-insufficient/">Florida Phoenix</a> &middot; <a href="https://news.bloomberglaw.com/health-law-and-business/appeals-court-rules-against-florida-in-medicaid-eligibility-suit">Bloomberg Law</a> &middot; <a href="https://healthlaw.org/news/federal-appeals-court-confirms-floridas-medicaid-notices-violate-the-constitution-and-upholds-major-victory-protecting-hundreds-of-thousands-of-floridians/">NHeLP</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="fl-medicaid-scotus"> The Florida Medicaid letters case, if the state asks the Supreme Court to review it before DeSantis leaves office</label>
+  <label><input type="radio" name="fb-also" value="miller-subpoena"> The Miller press-leak report, if the Justice Department subpoenas or charges a reporter</label>
+  <label><input type="radio" name="fb-also" value="xi-shenzhen"> The China truce, if Trump and Xi agree in Shenzhen to extend it past Jan.&nbsp;10</label>
+</div>
+
+
+<footer>
+  <p><b>Provenance.</b> 69 sources checked; 14 swept before any weighting category was consulted. Six leads and seven items below the line (13 stories). Leads carried from earlier editions, each with a stated trigger (4): Iran (Brent below $90 after Trump&rsquo;s on-record &ldquo;effectively over&rdquo;), Nvidia (the filed class action and the president&rsquo;s FBI statement), Hegseth (the privileged resolution forcing a vote), data centers (the county-level analysis and the Texas rate-freeze plan). Marker tallies: PS&nbsp;3 &middot; IC&nbsp;8 &middot; SS&nbsp;2 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: the FBI investigation, the 2025 Teter&ndash;Kessler call, the Mildenhall threat, the Amodei&ndash;Dimon event, the prospectus figures against the filing itself, and the Atlantic&rsquo;s account of Miller. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;11 is a Wednesday; Nov.&nbsp;17 a Tuesday; Dec.&nbsp;10 a Thursday; Jan.&nbsp;10, 2027 a Sunday; Jan.&nbsp;11, 2027 a Monday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-10-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> &mdash; near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>October CPI is released at 8:30&nbsp;a.m. Eastern; Reuters says futures price an 82% chance of a Fed rate <i>hike</i> in December. Missed: the print came out after this edition, and your standing rule is prints, not previews.</li>
+    <li>California voters rejected Proposition&nbsp;40, a 5% wealth tax on billionaires (<a href="https://text.npr.org/">NPR</a>, BBC). Missed: a state result with no federal or Florida channel yet.</li>
+    <li>The Supreme Court let border-wall construction continue in Big Bend National Park. Missed: an emergency order with no new national policy.</li>
+    <li>Trump&rsquo;s &ldquo;$4 billion&rdquo; Israel aid cut looks more like a move from State Department aid to Pentagon procurement in the defense bill (<a href="https://www.npr.org/2026/11/09/nx-s1-6029320/what-trump-meant-when-he-said-the-u-s-is-cutting-aid-to-israel">NPR</a>). Missed: the dated trigger is the final defense-bill text before Dec.&nbsp;11.</li>
+    <li>The CFTC issued guidance on how exchanges must grant &ldquo;impartial access,&rdquo; written after overseeing event contracts (<a href="https://www.federalregister.gov/documents/2026/11/10/2026-22863/dcm-impartial-access-requirements">Federal Register</a>). Missed: interpretive guidance only, and we read just the abstract.</li>
+    <li>CMS proposed cutting Medicare and Medicaid administrative requirements; comments due Jan.&nbsp;11 (<a href="https://www.federalregister.gov/documents/2026/11/10/2026-22812/medicare-and-medicaid-programs-cutting-administrative-requirements-for-excellence-in-patient-care">Federal Register</a>). Missed: abstract only, and the effects are not quantified.</li>
+    <li>JPMorgan Chase has blocked outside AI agents, including Meta&rsquo;s Muse, from retail accounts since Oct.&nbsp;13, citing liability (<a href="https://finance.yahoo.com/technology/ai/articles/meta-muse-looks-lot-more-074413744.html">TIKR via Yahoo Finance</a>). Missed: a month old and from a single analyst blog. It would earn a lead if regulators rule on who is liable for an agent&rsquo;s actions.</li>
+    <li>Fox&nbsp;13 asks how cooler weather will affect Tampa&rsquo;s record dengue spread. Missed: no new public-health action.</li>
+    <li>A Tampa City Council appointment could decide the Rays ballpark votes (Fox&nbsp;13). Missed: the appointment has not been made.</li>
+    <li>Sen. Van Hollen is &ldquo;in active listening mode&rdquo; about challenging Schumer for majority leader (NBC). Missed: Senate Democrats don&rsquo;t vote until early December.</li>
+    <li>UAP: no new official release since the Oct.&nbsp;23 PURSUE tranche. Missed: no new paperwork today.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

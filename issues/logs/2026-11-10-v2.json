@@ -1,0 +1,464 @@
+{
+ "issue": "issues/2026-11-10-v2.html",
+ "date": "2026-11-10",
+ "run_started_local": "2026-11-10 07:17 EST",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "Repo rule files (NEWSBOT_2.0.md, scripts/audit.py, config.md) and the brief-feedback issue list were read first because the process requires it; the only feedback issue (#1, Krakow) was already applied on 9 Nov, so no config change was needed. The candidate list was then built from the sweep below before any weighting category, the empty watchlist, or yesterday's issue were consulted for selection. Yesterday's issue was opened afterwards for layout and to state triggers for carried stories.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Axios front",
+  "Guardian US front",
+  "WUSF front",
+  "Fox 13 Tampa Bay front",
+  "Florida Politics front",
+  "Federal Register API (10 Nov RULE/PRORULE/PRESDOCU)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)",
+  "Reuters premarket wraps via U.S. News, Euronext, Yahoo Finance and Investing.com (search)",
+  "Wikipedia current-events portal (negative-check list only)"
+ ],
+ "sweeps_attempted_failed": [
+  "The Hill front (timeout)",
+  "Politico front (timeout)",
+  "CNBC world front (timeout)",
+  "CBS News Hegseth article (timeout)",
+  "apnews.com direct (timeout; AP read via search)",
+  "Consilium statement on Abu Dhabi meeting (timeout)",
+  "SEC EDGAR full-text search (blocked: undeclared automated tool)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Axios front",
+  "Guardian US front",
+  "WUSF front",
+  "Fox 13 Tampa Bay front",
+  "Florida Politics front",
+  "Federal Register API (10 Nov RULE/PRORULE/PRESDOCU)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)",
+  "Reuters premarket wraps via U.S. News, Euronext, Yahoo Finance and Investing.com (search)",
+  "Wikipedia current-events portal (negative-check list only)"
+ ],
+ "sources_checked": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Axios front",
+  "Guardian US front",
+  "WUSF front",
+  "Fox 13 Tampa Bay front",
+  "Florida Politics front",
+  "Federal Register API (10 Nov RULE/PRORULE/PRESDOCU)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)",
+  "Reuters premarket wraps via U.S. News, Euronext, Yahoo Finance and Investing.com (search)",
+  "Wikipedia current-events portal (negative-check list only)",
+  "Federal Register 2026-22962 (MEXC order, abstract)",
+  "Federal Register 2026-22944 (SNAP ABAWD rule, full text)",
+  "Federal Register 2026-22936 (SNAP categorical eligibility rule, full text)",
+  "Federal Register 2026-22903 (UI work search rule, full text)",
+  "Federal Register 2026-22863 (CFTC DCM impartial access, abstract)",
+  "Federal Register 2026-22812 (CMS administrative requirements, abstract)",
+  "CNBC: Anthropic IPO price range",
+  "Investing.com: Anthropic files for 825M-share IPO",
+  "Investing.com: Anthropic seeks up to $64.4b",
+  "Reuters via Globe and Mail: Anthropic IPO details retracted",
+  "Reuters via Hindu BusinessLine: Anthropic IPO",
+  "Bloomberg Law: Amodei-Dimon live stream",
+  "BBC: Trump says FBI investigating Huang",
+  "Reuters via Investing.com: Nvidia sued",
+  "Guardian: Nvidia and Huang sued",
+  "Fortune: FBI looking into Huang; governance; SoftBank writedown",
+  "Anadolu: Nvidia shareholder lawsuit",
+  "NPR: Coons wants Nvidia investigation (search summary)",
+  "Rep. Massie press release (massie.house.gov)",
+  "Fox News: Hegseth impeachment vote could pass",
+  "Guardian: Massie moves to force Hegseth vote",
+  "Al Jazeera: Trump calls Iran war effectively over",
+  "CNBC: Brent below $90",
+  "AAA Auto Club Group: Florida gas prices four-month lows",
+  "Al Jazeera: Saudi downs missiles after Houthi pipeline attack (search summary)",
+  "NBC News / Stars and Stripes / BBC: US aircraft leave UK bases (search summaries)",
+  "Fox News: Humans First data-center county analysis",
+  "BBC Verify: did a data-centre revolt affect the midterms",
+  "Fox News: Hinojosa rate freeze",
+  "Reason: Hinojosa rate freeze (headline and summary)",
+  "Florida PSC: Duke Energy Florida large-load tariff decision",
+  "Tampa Bay Beacons: Pasco data-center moratorium",
+  "Fox 13: TECO large-load filing",
+  "Florida DCF: SNAP eligibility page",
+  "Bloomberg Law: SNAP 6.3 million (headline only)",
+  "NBC News: Republicans choose leadership",
+  "CNBC: Trump questions midterm results",
+  "Al Jazeera: Trump reverses stance on midterm fraud",
+  "The Independent: Atlantic report on Miller and jailing journalists",
+  "Politico Europe: US demands seat for Europe",
+  "Guardian: US officials seek 'final end' (search summary)",
+  "Straits Times (Reuters): China extends rare-earth suspension",
+  "Devdiscourse (Reuters): China extends suspensions",
+  "Treasury press release sb0685: MEXC",
+  "Bitcoin Magazine: FinCEN cuts off MEXC",
+  "11th Circuit opinion 26-10419 (excerpt via search)",
+  "Florida Phoenix: Medicaid termination letters",
+  "Bloomberg Law: appeals court rules against Florida (lede)",
+  "National Health Law Program release",
+  "Law360: 11th Circ. backs order (lede)",
+  "NPR: what Trump meant about cutting aid to Israel",
+  "AP / Reuters / Vox: Trump Israel aid (search summaries)",
+  "Yahoo Finance (TIKR): Chase blocks Meta Muse",
+  "Disclosure Archives AARO/PURSUE tracker (UAP negative check)",
+  "Fox News front: Rick Scott withholds Thune support (headline)"
+ ],
+ "sources_checked_total": 69,
+ "link_check_note": "All 57 outbound links returned HTTP 200 except three investing.com URLs (403 to automated requests; they resolved in search and in the fetch provider).",
+ "candidate_count": 49,
+ "candidates": [
+  {
+   "item": "Trump: Iran war 'effectively over' after Qatar PM meeting; blockade stays; Brent < $90; Florida gas $3.80",
+   "decision": "keep: lead",
+   "reason": "threshold event (Brent under $90 first since Aug) + on-record statement; pump prices in reader's region; Iran disputes; CENTCOM in Tampa"
+  },
+  {
+   "item": "Houthi attack on Saudi East-West pipeline; missiles at Riyadh intercepted",
+   "decision": "keep: folded into Iran lead",
+   "reason": "shows the price move is fragile; same causal chain"
+  },
+  {
+   "item": "US aircraft leave RAF Mildenhall/Fairford over reported Iran threat",
+   "decision": "keep: folded into Iran lead",
+   "reason": "contrary evidence to 'war over'; threat details unconfirmed"
+  },
+  {
+   "item": "Anthropic IPO terms: 825M shares at $70-78, $26B supplier private placement, retracted pricing email",
+   "decision": "keep: lead",
+   "reason": "core AI + financial services; dated pricing next week; circular-financing angle; valuation figures disagree"
+  },
+  {
+   "item": "Amodei-Dimon IPO live stream Friday (Bloomberg Law)",
+   "decision": "keep: folded into Anthropic lead",
+   "reason": "JPMorgan link; single source, stated as unconfirmed"
+  },
+  {
+   "item": "Nvidia: Trump says FBI looking into Huang; class action filed in San Jose; Bloomberg on 2025 Teter-Kessler call",
+   "decision": "keep: lead",
+   "reason": "new verifiable fact (complaint filed); salacious + national security + Trump political angle; earnings Nov 17"
+  },
+  {
+   "item": "Coons: probing Huang a top priority",
+   "decision": "keep: folded into Nvidia lead",
+   "reason": "incoming Foreign Relations chair; dated next step"
+  },
+  {
+   "item": "Massie privileged resolution to impeach Hegseth; vote by Wednesday; GOP members say it could pass",
+   "decision": "keep: lead",
+   "reason": "threshold event; first recorded GOP test on Iran war; primary document"
+  },
+  {
+   "item": "USDA proposed rule ending SNAP broad-based categorical eligibility (6.3M people, $44.6B)",
+   "decision": "keep: lead",
+   "reason": "underreported primary document with large consequence; Florida uses 200% FPL; comment deadline Dec 10"
+  },
+  {
+   "item": "USDA ABAWD work-limit rule (OBBB codification)",
+   "decision": "keep: folded into SNAP lead",
+   "reason": "same safety-net move; same comment deadline"
+  },
+  {
+   "item": "Labor UI national minimum five weekly work searches",
+   "decision": "keep: folded into SNAP lead",
+   "reason": "same lame-duck safety-net tightening; comments Jan 11"
+  },
+  {
+   "item": "Humans First county analysis: data-center 'penalty' 2.2 pts; 46 of 47 ballot measures",
+   "decision": "keep: lead",
+   "reason": "new data; behind-the-scenes deals (NDAs, shell companies) quote; ties to Florida tariffs"
+  },
+  {
+   "item": "Texas Gov.-elect Hinojosa Day One electricity rate freeze",
+   "decision": "keep: folded into data-center lead",
+   "reason": "household power bills; legal fight dated Jan 19"
+  },
+  {
+   "item": "Florida PSC rejected Duke Energy Florida large-load tariff (Nov 3)",
+   "decision": "keep: folded into data-center lead",
+   "reason": "local bill impact for reader's utility region; refiling pending"
+  },
+  {
+   "item": "SoftBank $3.7B US data-center writedown",
+   "decision": "keep: folded into data-center lead",
+   "reason": "money side of backlash; single source (Fortune)"
+  },
+  {
+   "item": "House/Senate GOP leadership elections today (Scalise vs Jordan; Thune)",
+   "decision": "keep: Also today",
+   "reason": "dated vote today; sets oversight-defense posture; Florida's Steube in race"
+  },
+  {
+   "item": "Trump reverses, questions midterm results",
+   "decision": "keep: Also today",
+   "reason": "elections category; reversal; no legal action yet so not a lead"
+  },
+  {
+   "item": "Atlantic: Miller backed jailing journalists over leaks; DOJ denies",
+   "decision": "keep: Also today (Single-sourced)",
+   "reason": "press-freedom institution story; disputed, no action yet"
+  },
+  {
+   "item": "Abu Dhabi Russia-Ukraine talks open; US wants Europe at table",
+   "decision": "keep: Also today",
+   "reason": "US-brokered; settled preference keeps Ukraine balance short"
+  },
+  {
+   "item": "China extends rare-earth/tariff truce to Jan 10, 2027",
+   "decision": "keep: Also today",
+   "reason": "trade mechanism; matches BIS Jan 10 date; APEC Shenzhen meeting"
+  },
+  {
+   "item": "FinCEN MEXC order published; effective Dec 10",
+   "decision": "keep: Also today",
+   "reason": "financial-services compliance; primary documents; Iran sanctions channel"
+  },
+  {
+   "item": "11th Circuit: Florida Medicaid termination notices unconstitutional",
+   "decision": "keep: Also today",
+   "reason": "Florida; safety-net administration; possible SCOTUS petition"
+  },
+  {
+   "item": "October CPI 8:30 a.m.; 82% odds of Fed hike",
+   "decision": "cut: Also noted",
+   "reason": "settled preference: prints only; print after publication"
+  },
+  {
+   "item": "California Prop 40 billionaire wealth tax defeated",
+   "decision": "cut: Also noted",
+   "reason": "no federal/Florida channel yet"
+  },
+  {
+   "item": "SCOTUS allows Big Bend border wall construction",
+   "decision": "cut: Also noted",
+   "reason": "emergency order, no new national policy"
+  },
+  {
+   "item": "Trump Israel aid cut = shift to Pentagon procurement in NDAA (NPR)",
+   "decision": "cut: Also noted",
+   "reason": "said Nov 3; trigger is NDAA conference text"
+  },
+  {
+   "item": "CFTC DCM impartial access guidance",
+   "decision": "cut: Also noted",
+   "reason": "guidance only; abstract read"
+  },
+  {
+   "item": "CMS 'Cutting Administrative Requirements' proposed rule",
+   "decision": "cut: Also noted",
+   "reason": "abstract only; effects not quantified"
+  },
+  {
+   "item": "JPMorgan blocks outside AI agents incl. Meta Muse since Oct 13",
+   "decision": "cut: Also noted",
+   "reason": "a month old; single analyst blog"
+  },
+  {
+   "item": "Tampa record dengue spread and cooling temps (Fox 13)",
+   "decision": "cut: Also noted",
+   "reason": "no new public-health action"
+  },
+  {
+   "item": "Tampa City Council appointment and Rays ballpark (Fox 13)",
+   "decision": "cut: Also noted",
+   "reason": "appointment not yet made"
+  },
+  {
+   "item": "Van Hollen weighing challenge to Schumer",
+   "decision": "cut: Also noted",
+   "reason": "vote not until December; personnel"
+  },
+  {
+   "item": "UAP: no new official releases since Oct 23",
+   "decision": "cut: Also noted",
+   "reason": "no new paperwork"
+  },
+  {
+   "item": "Trump tells DHS Sec. Mullin to work with Democrats on immigration, 'no amnesty'",
+   "decision": "cut",
+   "reason": "follow-on to yesterday's Miller lead; no written terms"
+  },
+  {
+   "item": "Schumer's grip slipping / Democratic revolt (Fox)",
+   "decision": "cut",
+   "reason": "personnel churn; folded into Also noted Van Hollen item"
+  },
+  {
+   "item": "Poll: Americans 3-1 less likely to back pro-war candidates (Al Jazeera)",
+   "decision": "cut",
+   "reason": "horse-race polling, anti-topic"
+  },
+  {
+   "item": "Measles: Amish community word-of-mouth (NPR)",
+   "decision": "cut",
+   "reason": "feature; CDC record count ran last week"
+  },
+  {
+   "item": "COP31: Kerry says US must follow China; no US team",
+   "decision": "cut",
+   "reason": "no US policy lever until January"
+  },
+  {
+   "item": "GCC joint military command in Kuwait",
+   "decision": "cut",
+   "reason": "no direct US channel today beyond Iran lead"
+  },
+  {
+   "item": "Russell Brand sentenced; David Walliams allegations",
+   "decision": "cut",
+   "reason": "celebrity, anti-topic"
+  },
+  {
+   "item": "White House security breaches, brief lockdown",
+   "decision": "cut",
+   "reason": "event with no policy consequence"
+  },
+  {
+   "item": "Learjet crash CVR recovered (Palm Beach County)",
+   "decision": "cut",
+   "reason": "disruption, no policy"
+  },
+  {
+   "item": "ICE shooting victim sues for $25M (Guardian)",
+   "decision": "cut",
+   "reason": "single lawsuit; Bivens covered yesterday"
+  },
+  {
+   "item": "Meta automated age checks for teens globally",
+   "decision": "cut",
+   "reason": "product policy; marginal for reader"
+  },
+  {
+   "item": "Qantas outsourcing 850 jobs citing AI",
+   "decision": "cut",
+   "reason": "foreign corporate restructuring with no US channel"
+  },
+  {
+   "item": "DOT withholds $73M from New York over CDL audit",
+   "decision": "cut",
+   "reason": "state-federal spat, no Florida channel"
+  },
+  {
+   "item": "Charlie Kirk case trial date ruling",
+   "decision": "cut",
+   "reason": "crime/court scheduling without policy consequence"
+  },
+  {
+   "item": "Paraguay banking crisis / Peña impeached",
+   "decision": "cut",
+   "reason": "no US channel (Also noted yesterday)"
+  },
+  {
+   "item": "Anthropic Claude Fable/Mythos 5.2 model release",
+   "decision": "cut",
+   "reason": "product launch; mentioned via IPO context only"
+  }
+ ],
+ "story_count": {
+  "leads": 6,
+  "also_today": 7,
+  "total": 13
+ },
+ "continuing_leads": [
+  {
+   "id": "iran-oil",
+   "trigger": "threshold event: Brent below $90 for the first time since August after Trump's on-record 'effectively over' statement"
+  },
+  {
+   "id": "nvidia",
+   "trigger": "new verifiable fact: proposed class action filed in N.D. Cal. on 9 Nov; president's on-record FBI statement"
+  },
+  {
+   "id": "hegseth",
+   "trigger": "threshold event: privileged impeachment resolution introduced 9 Nov forces a vote within two legislative days"
+  },
+  {
+   "id": "data-centers",
+   "trigger": "new verifiable fact: Humans First county analysis published 10 Nov; Texas governor-elect's rate-freeze plan"
+  }
+ ],
+ "per_article_independent_sources": {
+  "iran-oil": 4,
+  "anthropic": 4,
+  "nvidia": 6,
+  "hegseth": 4,
+  "snap": 1,
+  "data-centers": 6,
+  "gop-leaders": 2,
+  "fraud-claims": 2,
+  "miller-press": 1,
+  "abu-dhabi": 2,
+  "china-truce": 1,
+  "mexc": 1,
+  "fl-medicaid": 2
+ },
+ "per_article_primary_documents": {
+  "iran-oil": "AAA Florida release",
+  "hegseth": "massie.house.gov release",
+  "snap": "Federal Register 2026-22936, 2026-22944, 2026-22903; Florida DCF page",
+  "data-centers": "Florida PSC release",
+  "mexc": "Federal Register 2026-22962; Treasury sb0685",
+  "fl-medicaid": "11th Cir. opinion 26-10419"
+ },
+ "marker_tallies": {
+  "Primary source": 3,
+  "Independent corroboration": 8,
+  "Single-sourced": 2,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "FBI investigation of Huang (only the president's word; FBI declined comment)",
+  "2025 Teter-Kessler call (Bloomberg via Fortune only)",
+  "nature of the Mildenhall threat (unnamed sources)",
+  "Amodei-Dimon live stream (one unnamed source)",
+  "Anthropic prospectus figures vs the filing (EDGAR blocked)",
+  "Atlantic account of Miller backing jailing journalists (anonymous sources; DOJ denies)"
+ ],
+ "divergence_boxes": 5,
+ "negative_check": {
+  "method": "Wikipedia current-events portal and X news/trends compared against the candidate list after drafting; Federal Register daily list checked for documents absent from newsroom fronts; brief searches for UAP and JPMorgan news to confirm nothing material was missed in those weighting categories.",
+  "result": "Three underreported primary documents found and included as one lead: USDA's SNAP categorical-eligibility rule (USDA estimates 6.3 million people lose benefits), USDA's ABAWD rule, and Labor's UI work-search rule; only a Bloomberg Law headline covered them. The JPMorgan AI-agent block surfaced only in the negative check and went to Also noted. Underreported judgment recorded."
+ },
+ "feedback_applied": [
+  {
+   "issue": 1,
+   "title": "brief-feedback: 2026-11-08c-v2",
+   "answer": "fb-krakow=charges",
+   "status": "already applied to config.md settled preferences on 9 Nov; wake condition closed after suspect's death; no new change today"
+  }
+ ],
+ "config_change": "none (no new or recently closed brief-feedback issue required a change)",
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: Anthropic IPO terms and Nvidia/Huang FBI + lawsuit; both cleared as leads.",
+  "Macro & markets (Core)": "Oil below $90 cleared inside the Iran lead; October CPI at 8:30 a.m. came after publication, so no item (prints-only rule); in Also noted with Fed hike odds.",
+  "World economy": "China rare-earth/tariff truce extension cleared as Also today (US channel: Jan 10 date, APEC). Paraguay cut (no US channel).",
+  "US debt & fiscal (Core)": "No new debt or Treasury print today; Dec 11 funding deadline mentioned in Hegseth lead. USDA's $44.6B SNAP cut is the day's largest fiscal number.",
+  "US financials (Core)": "JPMorgan: Dimon's reported role in Anthropic IPO marketing (in lead); Chase AI-agent block (Also noted). FinCEN MEXC order cleared as Also today.",
+  "US politics & policy (Core)": "Hegseth impeachment vote (lead); SNAP/UI rules (lead); GOP leadership elections (Also today).",
+  "Geopolitics": "Iran war endgame (lead); Houthi-Saudi strikes folded in; GCC command cut.",
+  "Science & public health": "SNAP/school meals (lead); Florida Medicaid notices (Also today); dengue and measles features cut.",
+  "UAP disclosure (Core)": "Nothing new: last PURSUE tranche Oct 23; Also noted.",
+  "Energy & grid": "Florida gas prices in Iran lead; Texas rate freeze and Duke tariff in data-center lead.",
+  "Elections and electoral process": "Trump's fraud-claim reversal cleared as Also today; Prop 40 to Also noted.",
+  "Broader domestic institutions": "Miller/journalists report (Also today); Hegseth impeachment; GOP leadership.",
+  "International with US channel": "Iran (lead), Abu Dhabi talks, China truce (Also today).",
+  "Florida / Tampa Bay": "Duke PSC tariff and Pasco moratorium (in data-center lead); Florida SNAP 200% FPL (in SNAP lead); Florida Medicaid ruling (Also today); dengue and Rays council seat to Also noted.",
+  "Data centers / power / AI infrastructure": "Strongest: Humans First county analysis + Duke tariff; cleared as lead.",
+  "AI and financial services": "Anthropic IPO (lead), MEXC (Also today), Chase AI-agent block (Also noted)."
+ },
+ "also_noted_count": 11,
+ "comparison_edition": "Not opened before the draft was complete.",
+ "audit_note": "Candidate-list shape and 10-story floor are proposed audit gates pending user approval; the current audit does not enforce them. This edition has 13 stories."
+}
