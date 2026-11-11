@@ -1,0 +1,483 @@
+{
+ "issue": "issues/2026-11-11-v2.html",
+ "date": "2026-11-11",
+ "run_started_local": "2026-11-11 07:19 EST",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "Repo rule files and the brief-feedback issue list were read first because the process requires it; issue #1 was already applied. Yesterday's issue was read only as the layout reference. The candidate list was built from the sweep below before any weighting category, the empty watchlist, or yesterday's stories were consulted for selection.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Federal Register API (11 Nov: count 0, no edition on Veterans Day)",
+  "Federal Register public-inspection list (documents for 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)"
+ ],
+ "sweeps_attempted_failed": [
+  "Politico front (bot check)",
+  "Axios front (bot check)",
+  "The Hill front (bot check)",
+  "Florida Politics front (bot check)",
+  "WFLA news front (bot check)",
+  "BLS CPI release (Access Denied to automated request)",
+  "CDC measles data page (empty response)",
+  "clerk.house.gov roll-call index (no parseable vote list)",
+  "Wikipedia current-events portal (fetched but not usable for today's dates; not relied on)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Federal Register API (11 Nov: count 0, no edition on Veterans Day)",
+  "Federal Register public-inspection list (documents for 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)"
+ ],
+ "sources_checked": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Federal Register API (11 Nov: count 0, no edition on Veterans Day)",
+  "Federal Register public-inspection list (documents for 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news stories (last 12h)",
+  "Treasury Daily Par Yield Curve (Nov 2026)",
+  "House Clerk front (party counts)",
+  "CNBC: 10-year yield / October CPI",
+  "CBS News: October CPI",
+  "BBC: October CPI",
+  "NBC News: House rejects Hegseth impeachment",
+  "CBS News: House blocks Massie effort",
+  "Fox News: Democrats rally behind Hegseth impeachment",
+  "X news: '11 Democrats' / Hegseth vote summary",
+  "NBC News: Pentagon threatens to remove reporters (opening only)",
+  "NBC News: DOJ took over chip probe (opening only)",
+  "Al Jazeera (Reuters): Chinese university bought H200s",
+  "ABC News: Mast subpoena threat",
+  "CNBC: Nvidia hires Wachtell Lipton",
+  "Justice Department OPA release (Fairford indictment)",
+  "NBC News: three men charged",
+  "Al Jazeera: three men charged",
+  "CBS News: indictment (search result)",
+  "Courthouse News (search snippet)",
+  "Guardian: Iranian operative charged (search snippet)",
+  "CNBC: Bessent moved to military base",
+  "Al Jazeera: Iran denies talks, Hormuz stays shut",
+  "CNBC: measles economic cost",
+  "NBC News: Vaccine Divide (opening only)",
+  "ABC News: Pennsylvania measles in pregnant women",
+  "PAHO: RVC sixth annual meeting notice (14 Oct)",
+  "PAHO: update on review of measles elimination (2 Mar)",
+  "Washington Post: U.S. could lose measles status (search snippet)",
+  "CIDRAP: US poised to lose elimination status",
+  "Scientific American: cusp of losing elimination status",
+  "Florida DOH: school immunization rule hearing",
+  "Fortune: Florida weighs dropping 4 school vaccines",
+  "Miami Herald: Florida moves to remove four vaccines (snippet)",
+  "Axios Fort Lauderdale: exemptions rise (snippet)",
+  "Florida Statutes 1003.22",
+  "HUD final rule 2026-23003 (public-inspection PDF, read)",
+  "Federal Register API/page for 2026-23003 (effective date)",
+  "HUD press release No. 26-091",
+  "NAHRO: HUD pre-publishes mixed-status rule",
+  "Bloomberg Law: HUD tightens rules (snippet)",
+  "reginfo.gov RIN 2501-AE16",
+  "FCC order 2026-23040 (public-inspection PDF) and FR API (effective date)",
+  "Axios: FCC ownership cap faces legal challenges",
+  "Ars Technica: cable lobby to sue FCC",
+  "Communications Daily (snippet)",
+  "Free Press statement",
+  "Proclamation 11080, Oval Office National Monument (PDF)",
+  "Federal Reserve Bank Capital Stock final rule (PDF)",
+  "NPR: DOJ moves to dismiss Bannon conviction",
+  "CBS News: data-center costs study",
+  "Nature Energy article (abstract via search)",
+  "Cornell Chronicle (via search)",
+  "Fox 13: Auburndale data center workshop",
+  "WUSF: Hillsborough Rays financing",
+  "Tampa Bay Times: Rays money (headline only, paywall)",
+  "Tampa Bay Times: Duke data-center plan (headline only, paywall)",
+  "Al Jazeera (Reuters): IBM ends visa sponsorships",
+  "CBS News: Jim Jordan elected",
+  "Guardian: Jordan and Thune",
+  "NPR: Supreme Court split on agency fines",
+  "X news: Deutsche Bank",
+  "X news: JPMorgan (negative check)",
+  "X news: UAP (negative check)"
+ ],
+ "sources_checked_total": 80,
+ "candidate_count": 50,
+ "candidates": [
+  {
+   "item": "October CPI +0.4% vs 0.3% expected; Fed hike odds; 2-yr/10-yr jump",
+   "decision": "keep: lead (cpi-rates)",
+   "reason": "changes borrowing costs; moving to a December decision; vendor 5% vs Treasury 4.98% divergence; Waller 50bp vs market"
+  },
+  {
+   "item": "House refers Hegseth impeachment to committee 211-204; at least 11 Democrats absent",
+   "decision": "keep: lead (hegseth)",
+   "reason": "threshold event on yesterday's thread; public reaction on X; sets up January"
+  },
+  {
+   "item": "Pentagon officials threaten to 'physically remove' reporters",
+   "decision": "keep: folded into hegseth",
+   "reason": "single NBC account; same briefing"
+  },
+  {
+   "item": "Mast subpoena threat to Huang with Wednesday deadline; Nov 18 briefing request",
+   "decision": "keep: lead (nvidia)",
+   "reason": "dated deadline today; congressional action"
+  },
+  {
+   "item": "Reuters: blacklisted Chinese military university bought H200s",
+   "decision": "keep: folded into nvidia",
+   "reason": "document-based; export-control channel"
+  },
+  {
+   "item": "NBC: DOJ asked Commerce to pause chip probe",
+   "decision": "keep: folded into nvidia, stated as not confirmed",
+   "reason": "single unnamed source"
+  },
+  {
+   "item": "Nvidia hires Wachtell/Joon Kim; Cramer and Kudlow say Huang should go",
+   "decision": "keep: folded into nvidia",
+   "reason": "positioning/divergence"
+  },
+  {
+   "item": "Nvidia shares rebound 5%",
+   "decision": "cut",
+   "reason": "market move for its own sake"
+  },
+  {
+   "item": "SDNY superseding indictment: three Iran-backed men, RAF Fairford plot",
+   "decision": "keep: lead (iran-plot)",
+   "reason": "new verifiable fact; US personnel targeted; primary document"
+  },
+  {
+   "item": "Bessent moved to military base over Iranian threats",
+   "decision": "keep: folded into iran-plot",
+   "reason": "NYT via CNBC; severity not confirmed"
+  },
+  {
+   "item": "Iran: Hormuz shut until seven conditions met; 37 ship attacks in November; Rubio says no need for major combat",
+   "decision": "keep: folded into iran-plot",
+   "reason": "fuel-price channel"
+  },
+  {
+   "item": "PAHO review of US measles elimination Nov 10-13; 5,182 cases",
+   "decision": "keep: lead (measles)",
+   "reason": "dated decision this week; public health; Florida vaccination gap"
+  },
+  {
+   "item": "Florida DOH proposal to drop four school vaccines",
+   "decision": "keep: folded into measles",
+   "reason": "local channel"
+  },
+  {
+   "item": "HUD final rule on mixed-status families (public inspection, effective Dec 14)",
+   "decision": "keep: lead (hud-mixed)",
+   "reason": "underreported; affects local housing authorities; dated deadlines"
+  },
+  {
+   "item": "Jim Jordan elected House GOP leader 106-73; Thune re-elected; Sanders won't back Schumer",
+   "decision": "keep: also today (gop-leaders)",
+   "reason": "shapes oversight fight from January"
+  },
+  {
+   "item": "Cornell/Nature Energy study on data-center grid costs",
+   "decision": "keep: also today (data-centers)",
+   "reason": "household bills; peer-reviewed"
+  },
+  {
+   "item": "Auburndale (Polk) hyperscale data center workshop; TECO 350-700 MW",
+   "decision": "keep: folded into data-centers",
+   "reason": "local reaction; TECO tariff pending at PSC"
+  },
+  {
+   "item": "TBT: PSC rejected Duke data-center plan",
+   "decision": "keep: folded into data-centers (headline only)",
+   "reason": "ran Nov 10; reference only"
+  },
+  {
+   "item": "Hillsborough Rays stadium financing votes after Amendment 3",
+   "decision": "keep: also today (rays)",
+   "reason": "local tax money; Dec 10 CRA vote"
+  },
+  {
+   "item": "DOJ moves to dismiss Bannon contempt conviction",
+   "decision": "keep: also today (bannon)",
+   "reason": "domestic institutions; judge's next move"
+  },
+  {
+   "item": "IBM Consulting ends most US visa sponsorships",
+   "decision": "keep: also today (ibm)",
+   "reason": "consulting/AI workforce relevance"
+  },
+  {
+   "item": "Supreme Court argument on agency civil penalties (Sun Valley Orchards)",
+   "decision": "keep: also today (scotus-fines)",
+   "reason": "could reach financial regulators' enforcement"
+  },
+  {
+   "item": "FCC national TV cap repeal published; effective Jan 11, 2027",
+   "decision": "keep: also today (fcc-cap)",
+   "reason": "primary document; court-challenge clock; Tampa stations"
+  },
+  {
+   "item": "Anthropic Australian retail IPO; trading Nov 19",
+   "decision": "cut: also noted",
+   "reason": "no new terms since yesterday's lead"
+  },
+  {
+   "item": "Oval Office National Monument proclamation",
+   "decision": "cut: also noted",
+   "reason": "symbolic; effect unclear"
+  },
+  {
+   "item": "Kennedys sue to block Trump arch",
+   "decision": "cut: also noted",
+   "reason": "early filing"
+  },
+  {
+   "item": "US soldier arrested in UK on suspicion of spying for Russia",
+   "decision": "cut: also noted",
+   "reason": "single arrest, no policy move"
+  },
+  {
+   "item": "Ebola passes 11,000 cases in DR Congo",
+   "decision": "cut: also noted",
+   "reason": "no US measure"
+  },
+  {
+   "item": "Trump $10bn BBC defamation case proceeds (Florida law claim dismissed)",
+   "decision": "cut: also noted",
+   "reason": "procedural"
+  },
+  {
+   "item": "Mississippi Senate: Colom leads Hyde-Smith",
+   "decision": "cut: also noted",
+   "reason": "uncalled"
+  },
+  {
+   "item": "Deutsche Bank crypto custody; 21-bank stablecoin (Project Faro)",
+   "decision": "cut: also noted",
+   "reason": "European; X summaries only"
+  },
+  {
+   "item": "FDA GLP-1 vision-loss warning",
+   "decision": "cut: also noted",
+   "reason": "could not read FDA notice"
+  },
+  {
+   "item": "Trump on 60 Minutes about UAP/pilots",
+   "decision": "cut: also noted",
+   "reason": "no paperwork"
+  },
+  {
+   "item": "House Oversight GOP Epstein report",
+   "decision": "cut: also noted",
+   "reason": "no new documents"
+  },
+  {
+   "item": "White House keeps tariffs despite backlash",
+   "decision": "keep: one line in cpi-rates",
+   "reason": "context only"
+  },
+  {
+   "item": "Gas below $4 nationally (AAA)",
+   "decision": "keep: one line in cpi-rates",
+   "reason": "oil-pump chain rule"
+  },
+  {
+   "item": "CoreWeave beats, neocloud rebound",
+   "decision": "cut",
+   "reason": "market move for its own sake"
+  },
+  {
+   "item": "Ukraine talks day two in Abu Dhabi; Zelenskyy 'not real estate'",
+   "decision": "cut",
+   "reason": "no new outcome; Ukraine balance settled"
+  },
+  {
+   "item": "Spain general strike; Spain TikTok demand",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "COP31 / Thunberg",
+   "decision": "cut",
+   "reason": "no US policy move"
+  },
+  {
+   "item": "Germany bans Chinese drones at bases",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "Italy/UK school bomb hoaxes",
+   "decision": "cut",
+   "reason": "disruption without consequence"
+  },
+  {
+   "item": "DeSantis think tank / 2028 buzz",
+   "decision": "cut",
+   "reason": "horse-race (anti-topic)"
+  },
+  {
+   "item": "Florida death warrant (Willie Crain)",
+   "decision": "cut",
+   "reason": "crime without new policy"
+  },
+  {
+   "item": "Hillsborough kratom ban",
+   "decision": "cut",
+   "reason": "minor local"
+  },
+  {
+   "item": "Undocumented students may attend Florida universities (WUSF)",
+   "decision": "cut",
+   "reason": "could not read in time; candidate for tomorrow"
+  },
+  {
+   "item": "Pinellas school closure plan",
+   "decision": "cut",
+   "reason": "headline only"
+  },
+  {
+   "item": "Amazon Ring drones/robots",
+   "decision": "cut",
+   "reason": "product launch (anti-topic)"
+  },
+  {
+   "item": "Thomas Markle jailed in Pinellas",
+   "decision": "cut",
+   "reason": "celebrity/crime (anti-topic)"
+  },
+  {
+   "item": "MSHA silica proposed rule; FR Bank capital stock threshold",
+   "decision": "cut",
+   "reason": "silica text not analyzed; Fed threshold routine inflation adjustment"
+  }
+ ],
+ "story_count": {
+  "leads": 6,
+  "also_today": 7,
+  "total": 13
+ },
+ "continuing_leads": [
+  {
+   "id": "hegseth",
+   "trigger": "threshold event: the forced vote was held on 10 Nov (211-204 to refer)"
+  },
+  {
+   "id": "nvidia",
+   "trigger": "new verifiable fact: Mast's on-record subpoena threat with a Wednesday deadline; Reuters procurement record of H200 purchase by an Entity List university"
+  },
+  {
+   "id": "iran-plot",
+   "trigger": "new verifiable fact: superseding indictment unsealed 10 Nov in SDNY"
+  }
+ ],
+ "per_article_independent_sources": {
+  "cpi-rates": 3,
+  "hegseth": 4,
+  "nvidia": 4,
+  "iran-plot": 3,
+  "measles": 5,
+  "hud-mixed": 2,
+  "gop-leaders": 2,
+  "data-centers": 2,
+  "rays": 1,
+  "bannon": 1,
+  "ibm": 1,
+  "scotus-fines": 1,
+  "fcc-cap": 2
+ },
+ "per_article_primary_documents": {
+  "cpi-rates": "Treasury Daily Par Yield Curve",
+  "hegseth": "House Clerk party counts",
+  "iran-plot": "DOJ OPA release",
+  "measles": "PAHO notices; Florida DOH release",
+  "hud-mixed": "Federal Register 2026-23003; HUD release 26-091",
+  "data-centers": "Nature Energy article",
+  "fcc-cap": "Federal Register 2026-23040"
+ },
+ "marker_tallies": {
+  "Primary source": 4,
+  "Independent corroboration": 5,
+  "Single-sourced": 4,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "which Democrats missed the Hegseth vote (X posts only; roll call not loaded)",
+  "NBC account of DOJ asking Commerce to pause chip probe (one unnamed source; opening only read)",
+  "severity of the threat to Bessent (Reuters: not immediately clear)"
+ ],
+ "divergence_boxes": 5,
+ "negative_check": {
+  "method": "After drafting: Federal Register public-inspection list scanned for documents absent from newsroom fronts; X news searches for JPMorgan and UAP; comparison of the candidate list against all fronts swept.",
+  "result": "One underreported primary document found and run as a lead: HUD's mixed-status final rule (only trade press and Bloomberg Law had it). The FCC cap repeal publication was also thinly covered today and runs below the line. JPMorgan: nothing new found. UAP: only Trump's 60 Minutes remarks; no paperwork, so Also noted. Underreported items were judged significant and included."
+ },
+ "feedback_applied": [
+  {
+   "issue": 1,
+   "title": "brief-feedback: 2026-11-08c-v2",
+   "answer": "fb-krakow=charges",
+   "status": "already applied to config.md on 9 Nov; wake condition closed; no new change today"
+  }
+ ],
+ "config_change": "none (no new or recently closed brief-feedback issue required a change)",
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: Nvidia subpoena deadline and H200 leak (lead); IBM visa pullback below the line; Anthropic retail IPO to Also noted.",
+  "Macro & markets (Core)": "October CPI print cleared as a lead (prints-only rule satisfied: this is the print). CoreWeave/Nvidia stock moves cut as price-for-its-own-sake.",
+  "World economy": "Tariff persistence folded into the CPI lead; no standalone item cleared.",
+  "US debt & fiscal (Core)": "Treasury par yields (2-yr 4.73, 10-yr 4.98, 30-yr 5.35) and the weak 10-year auction carried inside the CPI lead.",
+  "US financials (Core)": "No JPMorgan or big-bank item cleared; Supreme Court fines case below the line for its reach to financial regulators; Deutsche Bank/Project Faro to Also noted.",
+  "US politics & policy (Core)": "Hegseth vote (lead), HUD rule (lead), Jordan election and Bannon dismissal below the line.",
+  "Geopolitics": "Iran plot indictment and Hormuz (lead); Ukraine talks cut (no outcome; settled balance).",
+  "Science & public health": "Measles elimination review cleared as a lead; Ebola and GLP-1 label to Also noted.",
+  "UAP disclosure (Core)": "Only Trump's 60 Minutes remarks; no official release or paperwork; Also noted.",
+  "Energy & grid": "Hormuz shipping attacks inside Iran lead; data-center grid-cost study below the line.",
+  "Elections and electoral process": "Mississippi Senate uncalled (Also noted); the Hegseth vote absences are the day's electoral-politics reaction story.",
+  "Broader domestic institutions": "Bannon dismissal, FCC cap repeal, Pentagon press threat, Supreme Court fines case.",
+  "International with US channel": "Fairford indictment and Bessent threat (US personnel); Nvidia H200 leak to an Entity List university.",
+  "Florida / Tampa Bay": "Rays financing, Auburndale data center, Florida measles/vaccine rule, CENTCOM at MacDill; Florida execution and Markle cut as crime/celebrity.",
+  "Data centers / power / AI infrastructure": "Cornell study plus Auburndale workshop below the line; TECO tariff pending at PSC.",
+  "AI and financial services": "IBM consulting visa change; Supreme Court fines case for regulator enforcement; no AI-in-banking item cleared."
+ },
+ "also_noted_count": 11,
+ "link_check_note": "All 58 outbound links returned HTTP 200 except axios.com (403 to automated requests; the page resolved in web search).",
+ "comparison_edition": "Not opened before the draft was complete.",
+ "audit_note": "Candidate-list shape and 10-story floor are proposed audit gates pending user approval; the current audit does not enforce them. This edition has 13 stories.",
+ "audit_attempts": "2 runs of scripts/audit.py; both exited 0 (second run after the link-check note and index update)."
+}

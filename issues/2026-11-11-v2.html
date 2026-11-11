@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Wednesday, 11 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Wednesday, 11 November 2026 &middot; morning edition</div>
+  <h1>A hot October inflation print puts a December rate hike on the table, the House shelves the Hegseth impeachment by seven votes, Iran-backed plotters are charged over a U.K. base, and the U.S. may lose its measles-free status this week</h1>
+  <p class="summary">Six leads, seven below the line. October consumer prices rose 0.4%, more than forecast, and markets now expect the Fed to raise rates in December, though Treasury&rsquo;s own data show the 10-year closed at 4.98%, not the 5% in the headlines; the House voted 211&ndash;204 to send Massie&rsquo;s Hegseth impeachment to committee; House Republicans gave Huang until today to agree to a briefing as Reuters finds a blacklisted Chinese military university bought H200 chips; prosecutors charged three Iran-backed men over the RAF Fairford plot as Bessent was moved to a military base; a PAHO panel meets through Friday on whether measles is endemic again in the U.S.; and HUD finalized its rule ending aid to mixed-status families. Below the line: Jim Jordan&rsquo;s win, a study on who pays for data centers and the Auburndale fight, Hillsborough&rsquo;s Rays votes, the Bannon dismissal, IBM&rsquo;s visa pullback, the Supreme Court fines case, and the FCC&rsquo;s TV-ownership repeal.</p>
+  <p class="sub">Wednesday morning edition (Veterans Day) under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-11-v2.html</code>.</p>
+  <p class="prov"><b>80 sources checked, 17 of them swept before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera news index, Fox News politics, BBC News, Guardian US, CNBC, NBC News, CBS News, ABC News, Fox Business, Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, the Federal Register API and public-inspection list, X US trends and X news. Politico, Axios, The Hill, Florida Politics and WFLA returned bot-check pages; the BLS release page refused our automated request, so CPI figures come from CNBC, CBS and the BBC; Tampa Bay Times stories were paywalled past the headline. There is no Federal Register today because of the federal holiday; we read tomorrow&rsquo;s documents on the public-inspection list instead.<br><br>
+  <b>Check for missed stories:</b> the public-inspection list held a HUD final rule on mixed-status families that only trade press and Bloomberg Law had covered. It looked underreported for its consequence, so it runs as a lead. We also searched X news for JPMorgan and UAP items after drafting; nothing cleared the bar. No open or recently closed brief-feedback issue required a new change: issue #1 (Krak&oacute;w) is already applied and its wake condition closed.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#cpi-rates">Hot October CPI makes a December hike the base case</a></li>
+    <li><a href="#hegseth">House shelves the Hegseth impeachment, 211&ndash;204</a></li>
+    <li><a href="#nvidia">Huang&rsquo;s Wednesday deadline and the H200s at a blacklisted university</a></li>
+    <li><a href="#iran-plot">Three Iran-backed men charged over the RAF Fairford plot; Bessent moved to a base</a></li>
+    <li><a href="#measles">PAHO weighs whether the U.S. loses measles elimination</a></li>
+    <li><a href="#hud-mixed">HUD finalizes its rule ending aid to mixed-status families</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#gop-leaders">Jim Jordan beats Scalise to lead House Republicans</a></li>
+    <li><a href="#data-centers">Who pays for data centers, and the Auburndale fight</a></li>
+    <li><a href="#rays">Hillsborough advances Rays money after Amendment&nbsp;3</a></li>
+    <li><a href="#bannon">DOJ moves to erase Bannon&rsquo;s conviction</a></li>
+    <li><a href="#ibm">IBM Consulting ends most U.S. visa sponsorships</a></li>
+    <li><a href="#scotus-fines">Supreme Court weighs agencies&rsquo; power to fine</a></li>
+    <li><a href="#fcc-cap">FCC&rsquo;s repeal of the TV ownership cap is published</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="cpi-rates">
+  <h3>October prices rose 0.4%, more than forecast, and a December rate hike is now the base case; Treasury&rsquo;s own data put the 10-year at 4.98%, not 5%</h3>
+  <div class="meta">
+    <span class="chip">Macro &amp; markets</span>
+    <span class="chip">US debt &amp; fiscal</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, CBS News, BBC), plus Treasury&rsquo;s Daily Par Yield Curve. The BLS release itself refused our automated request.</p>
+  <p>The consumer price index rose <b>0.4%</b> in October, against the 0.3% economists expected and down from 0.6% in September. Core prices, which leave out food and energy, rose 0.3% for the third month in a row; economists had expected 0.2% (<a href="https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html">CNBC</a>). The mix changed. Energy rose only 0.7% after 5.2% in September, while food rose 0.5% after a flat month, and shelter accounted for more than 30% of the monthly increase. There is no year-over-year figure this month, because the 2025 shutdown left BLS without October 2025 data (<a href="https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/">CBS News</a>; <a href="https://www.bbc.com/news/articles/cwy8lx3pg4k2o">BBC</a>). The national gas average fell below $4 on Tuesday for the first time in nearly four months, according to AAA as cited by CBS.</p>
+  <p><b>The rate path moved.</b> Before the release, Fed Governor Christopher Waller said in London that if inflation came in hot, &ldquo;a 50 basis point hike in the policy rate should be considered at the December meeting,&rdquo; adding that &ldquo;hiking only 25 basis points would put our credibility at risk.&rdquo; After the print, CME&rsquo;s FedWatch showed an 85% chance of a quarter-point hike in December and 15% for a half-point, CBS reports. Goldman Sachs Asset Management&rsquo;s Lindsay Rosner called a December hike &ldquo;our firm base case&rdquo; and said further hikes in 2027 can&rsquo;t be ruled out. A weak $42&nbsp;billion 10-year auction added to the selloff: dealers were left with 10% of it, the most since May, according to One Point BFG&rsquo;s Peter Boockvar. Producer prices come out on Friday, Nov.&nbsp;13.</p>
+  <p><b>In the series of record.</b> <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury&rsquo;s Daily Par Yield Curve</a> for Tuesday shows the 2-year at <b>4.73%</b> (up from 4.56% on Monday), the 10-year at <b>4.98%</b> (from 4.88%) and the 30-year at <b>5.35%</b> (from 5.26%). Why it matters to you: the 10-year sets the price of mortgages and car loans, and a Fed hike feeds straight into credit-card rates. This is also the first inflation report since an election fought over living costs, and CNBC reports the White House plans to keep its tariffs despite that backlash.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did the 10-year hit 5%?</span>
+    <p><b>What is in dispute.</b> A dispute over a number. CNBC&rsquo;s headline says the 10-year &ldquo;races back to 5%,&rdquo; and its text says it &ldquo;traded above 5% before paring gains&rdquo; and was last at 4.992%. Treasury&rsquo;s end-of-day par yield is 4.98%. Separately, Waller is arguing for a half-point hike while futures markets price mostly a quarter-point.</p>
+    <p><b>Why the vantage differs.</b> CNBC reports live trading quotes from a vendor, which capture intraday highs. Treasury publishes one closing estimate from its own curve model. Waller is one voting governor trying to protect the Fed&rsquo;s credibility; futures traders are pricing the whole committee.</p>
+    <p><b>What it means for the reader.</b> Under your standing rule, the Treasury figure is the one this brief prints: the 10-year did not close at 5% on Tuesday. The decision that changes your borrowing costs is December&rsquo;s, and the size of the hike is still open.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following inflation and the December rate decision?</b></p>
+    <label><input type="radio" name="fb-cpi-rates" value="fifty"> When the Fed decides in December between Waller&rsquo;s half-point and the quarter-point markets expect</label>
+    <label><input type="radio" name="fb-cpi-rates" value="grocery-rent"> If Friday&rsquo;s producer-price report or November&rsquo;s CPI shows food and rent, not gasoline, driving prices</label>
+    <label><input type="radio" name="fb-cpi-rates" value="pressure"> If Trump or Bessent publicly pressure the Fed against hiking, turning rates into a political fight</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html">CNBC</a> &middot;
+    <a href="https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/">CBS News</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cwy8lx3pg4k2o">BBC</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury Daily Par Yield Curve</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/10/trump-tariffs-midterms-gary-cohn-inflation.html">CNBC (tariffs)</a>
+  </p>
+</article>
+
+<article id="hegseth">
+  <h3>The House votes 211&ndash;204 to shelve the Hegseth impeachment; Democrats say they will be back in January</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (NBC News, CBS News, Fox News, and X&rsquo;s news summary of the absences), plus the House Clerk&rsquo;s party counts. Trigger (threshold event): the forced vote happened Tuesday. Yesterday&rsquo;s lead covered only the deadline for it.</p>
+  <p>The House voted <b>211&ndash;204</b> on Tuesday evening to refer Rep. Thomas Massie&rsquo;s eight articles against Defense Secretary Pete Hegseth to the Judiciary Committee, which kills them in this Congress. Massie was the only Republican to vote with Democrats to keep the resolution alive (<a href="https://www.nbcnews.com/politics/congress/republican-led-house-rejects-hegseth-impeachment-effort-rcna608534">NBC News</a>; <a href="https://www.cbsnews.com/news/massie-hegseth-impeachment/">CBS News</a>). &ldquo;I wasn&rsquo;t surprised, but I was disappointed,&rdquo; Massie said. He says he won&rsquo;t file again but will force a war-powers vote. Even Republican critics of Hegseth voted no. Rep. Don Bacon said he might feel differently if the articles covered &ldquo;firing 80 generals,&rdquo; and Rep. Darrell Issa said it would &ldquo;die in the Senate&rdquo; anyway. Trump called the result an &ldquo;EXONERATION.&rdquo; Hegseth, at a morning briefing, called it &ldquo;a farce.&rdquo; Before that briefing, Pentagon officials told reporters they would be &ldquo;physically removed&rdquo; if they &ldquo;get out of line,&rdquo; according to journalists present (<a href="https://www.nbcnews.com/politics/national-security/pentagon-threatens-physically-remove-reporters-get-line-rcna608657">NBC News</a>).</p>
+  <p><b>The absences.</b> The <a href="https://clerk.house.gov/">House Clerk</a> lists 214 Democrats. With Massie among the 204 votes against referral, at most 203 Democrats voted no, so at least 11 did not. A switch of four votes would have changed the result. &ldquo;11 Democrats&rdquo; trended on X this morning, where users named Nancy Pelosi and Melanie Stansbury among those absent. We could not confirm who missed the vote. Why: the Clerk&rsquo;s roll-call page did not load for us, and the names come only from posts on X. Democrats are promising more. Jeffries said, &ldquo;This is not the end of it. It&rsquo;s just the beginning,&rdquo; and Schumer said the Senate should &ldquo;put Pete Hegseth on trial&rdquo; (<a href="https://www.foxnews.com/politics/democrats-rally-behind-gop-lawmaker-hegseth-impeachment-push-signal-more-january">Fox News</a>). Why it matters to you: this was the first recorded House vote on the Iran war since the election. Democrats now have a target for January, when they take both chambers.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this about crimes or about the war?</span>
+    <p><b>What is in dispute.</b> A dispute over law. Massie says Hegseth broke the War Powers Resolution and the laws of war. Hegseth says the actions were &ldquo;lawful&rdquo; and the charges are &ldquo;partisan policy disagreements.&rdquo; Bacon and Issa object to the war&rsquo;s handling but say it doesn&rsquo;t amount to &ldquo;high crimes and misdemeanors.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> Massie lost a primary in which Trump and Hegseth backed his opponent, and Issa says that is his motive. Bacon and Issa are both leaving Congress. Jeffries and Schumer gain from keeping the war in the news before they take over. Trump called the outcome an exoneration, but referral to committee is not a ruling on the merits.</p>
+    <p><b>What it means for the reader.</b> The vote shows that Republicans won&rsquo;t remove Hegseth over the war. Whether he is removed now depends on what Democrats do with their majorities in January. The war-powers vote Massie promised will be the next recorded test.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the fight over Hegseth?</b></p>
+    <label><input type="radio" name="fb-hegseth-jan" value="jeffries"> When House Democrats file new impeachment articles after they take control in January</label>
+    <label><input type="radio" name="fb-hegseth-jan" value="war-powers"> When Massie forces his promised war-powers vote, so we can see which Republicans switch</label>
+    <label><input type="radio" name="fb-hegseth-jan" value="press-room"> If the Pentagon actually removes a reporter from its briefing room</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/congress/republican-led-house-rejects-hegseth-impeachment-effort-rcna608534">NBC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/massie-hegseth-impeachment/">CBS News</a> &middot;
+    <a href="https://www.foxnews.com/politics/democrats-rally-behind-gop-lawmaker-hegseth-impeachment-push-signal-more-january">Fox News</a> &middot;
+    <a href="https://www.nbcnews.com/politics/national-security/pentagon-threatens-physically-remove-reporters-get-line-rcna608657">NBC News (Pentagon press)</a> &middot;
+    <a href="https://clerk.house.gov/">House Clerk</a> &middot;
+    <a href="https://x.com/i/trending/2120350922756821436">X news summary</a>
+  </p>
+</article>
+
+<article id="nvidia">
+  <h3>House Republicans give Huang until today to agree to a briefing, as Reuters finds a blacklisted Chinese military university bought H200 chips</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (ABC News, Reuters via Al Jazeera, NBC News, CNBC). Trigger (new verifiable fact): a dated subpoena threat with a Wednesday deadline, and a Chinese procurement record Reuters found. Yesterday&rsquo;s lead had the lawsuit and Trump&rsquo;s FBI comment.</p>
+  <p>House Foreign Affairs chairman Brian Mast told <a href="https://abcnews.com/Politics/house-republicans-issuing-subpoena-nvidia-ceo-jensen-huang/story?id=138022782">ABC News</a> he is prepared to subpoena Jensen Huang if he doesn&rsquo;t answer by <b>Wednesday</b> a request from Mast and two other chairmen, John Moolenaar (China committee) and Rick Crawford (Intelligence), for a closed-door briefing on Nvidia&rsquo;s protections against foreign espionage. Asked if he would issue one, Mast said, &ldquo;absolutely.&rdquo; Al Jazeera reports the chairmen proposed <b>Wednesday, Nov.&nbsp;18</b> for the briefing. Any House GOP subpoena would likely lapse when Democrats take over the committees in January. Republican Sen. Kevin Cramer told Politico that Huang has &ldquo;got to go,&rdquo; citing &ldquo;the potential for extortion.&rdquo;</p>
+  <p><b>The chips.</b> Reuters found an Oct.&nbsp;21 procurement record showing that Northwestern Polytechnical University in Xi&rsquo;an, on the U.S. Entity List since 2001 and one of China&rsquo;s &ldquo;Seven Sons of National Defense,&rdquo; bought two H200 chips for 874,700 yuan ($123,000) through a local reseller, not from Nvidia. Reuters reviewed 26 Chinese records this year showing restricted Nvidia chips or rented Nvidia computing going to universities and research institutes, several with defense links (<a href="https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show">Reuters via Al Jazeera</a>). The administration&rsquo;s January policy allows some H200 sales to China case by case, but not to Entity List institutions. <a href="https://www.nbcnews.com/tech/tech-news/nvidia-investigation-justice-fbi-commerce-jensen-huang-alice-china-rcna608397">NBC News</a> reports that the Justice Department asked Commerce to pause its part of a probe into whether an Nvidia cloud customer smuggled chips to China, after an Nvidia representative contacted Commerce investigators. We could not confirm that account. Why: NBC cites one unnamed person, and we could read only the opening of its story. Nvidia&rsquo;s board has hired Wachtell Lipton and former acting Manhattan U.S. Attorney Joon Kim to run its own investigation (<a href="https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html">CNBC</a>). Why it matters to you: this is turning from a scandal about one man into a question of whether export controls on AI chips work at all.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; should Huang stay?</span>
+    <p><b>What is in dispute.</b> A dispute over the outlook. Cramer, and Larry Kudlow on Fox Business, say Huang should step down. Nvidia&rsquo;s board says it has no reason to believe secrets were compromised, and Trump has called Huang &ldquo;an honourable guy.&rdquo; An NBC News analysis argues he &ldquo;just might survive.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> Cramer sits on Senate Banking, which oversees export-control law, and Kudlow speaks to investors. The board answers to shareholders who have lost value since the reports. Trump has made chip sales part of his China dealings. The Reuters procurement record is a document, and none of these people&rsquo;s opinions are.</p>
+    <p><b>What it means for the reader.</b> Watch two things: whether Huang agrees to brief or is subpoenaed, and whether Commerce acts on the Northwestern Polytechnical purchase. A smuggling enforcement action would affect the whole AI supply chain, not only Huang&rsquo;s job.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Nvidia and the China chip leaks?</b></p>
+    <label><input type="radio" name="fb-nvidia-chips" value="subpoena"> If Huang misses Mast&rsquo;s Wednesday deadline and Foreign Affairs issues a subpoena</label>
+    <label><input type="radio" name="fb-nvidia-chips" value="entity-list"> When Commerce or Justice acts on the H200s sold to Northwestern Polytechnical</label>
+    <label><input type="radio" name="fb-nvidia-chips" value="ceo-out"> Only if the board&rsquo;s Wachtell investigation leads it to replace Huang</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Politics/house-republicans-issuing-subpoena-nvidia-ceo-jensen-huang/story?id=138022782">ABC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show">Al Jazeera (Reuters)</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/nvidia-investigation-justice-fbi-commerce-jensen-huang-alice-china-rcna608397">NBC News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html">CNBC</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/jensen-huang-just-might-survive-scandal-rcna608641">NBC News (analysis)</a>
+  </p>
+</article>
+
+<article id="iran-plot">
+  <h3>Prosecutors charge three Iran-backed men over the RAF Fairford van plot; Bessent is moved to a military base, and Iran says Hormuz stays shut</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 (NBC News, Al Jazeera, CNBC), plus the Justice Department&rsquo;s release. Trigger (new verifiable fact): an unsealed superseding indictment. Yesterday&rsquo;s Iran lead noted the Mildenhall threat without any charges.</p>
+  <p>An eight-count superseding indictment unsealed Tuesday in Manhattan charges Mohammad Baqer Saad Dawood al-Saadi, Mohsen Mohajeri and Mohammad Ali al-Hassani with terrorism offenses on behalf of Iran&rsquo;s Revolutionary Guard and Kata&rsquo;ib Hizballah. The charges cover nearly 20 attacks and attempted attacks in Europe and the U.S., plus the September plot at RAF Fairford, the British base then housing U.S. bombers (<a href="https://www.justice.gov/opa/pr/three-iranian-backed-operatives-indicted-their-roles-nearly-20-terrorist-attacks-and">Justice Department</a>). Prosecutors say al-Hassani paid for surveillance of the base on Aug.&nbsp;22. They say he then had associates buy vans, fuel barrels and metal objects that could serve as shrapnel, and research potassium chloride, with decals to make the vans look like fuel-delivery and pool-supply trucks. On Sept.&nbsp;26, the indictment says, he directed three vans toward the base, and at least two were turned back at a security roadblock. Al-Saadi allegedly helped coordinate from a New York jail through coded calls to relatives in Iraq. Only al-Saadi is in custody (<a href="https://www.nbcnews.com/world/united-kingdom/us-charges-3-men-plotting-multiple-terrorist-attacks-planned-attack-uk-rcna608647">NBC News</a>; <a href="https://www.aljazeera.com/news/2026/11/11/us-charges-3-iranian-backed-men-over-alleged-plot-at-uk-fairford-air-base">Al Jazeera</a>). The charges are allegations, and al-Saadi pleaded not guilty to the earlier counts in June.</p>
+  <p><b>The threat at home.</b> The New York Times reports that Treasury Secretary Scott Bessent, who runs the &ldquo;Operation Economic Outcast&rdquo; sanctions campaign, was moved from his Washington home to a military base after officials concluded Iranian plotting against U.S. officials had reached a more advanced stage (<a href="https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html">CNBC</a>). We could not confirm how serious the threat is. Why: Reuters says that was not immediately clear, and no official has described it on the record. Iran&rsquo;s security chief Mohsen Rezaei says Hormuz will stay closed until Washington meets seven conditions, including lifting sanctions and the blockade, and calls talk of negotiations &ldquo;a pure lie.&rdquo; The IRGC says three tankers hit mines Tuesday, and monitors count at least 37 attacks on ships near the strait so far in November, the most of any month in the war (<a href="https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met">Al Jazeera</a>). Brent was about $92 in Asian trading. Why it matters to you: U.S. Central Command runs the war from MacDill Air Force Base in Tampa, and the shipping attacks are what keeps fuel prices high.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the war winding down?</span>
+    <p><b>What is in dispute.</b> A dispute over the outlook. Rubio says &ldquo;there is no need for major combat operations&rdquo; because the economic campaign is &ldquo;so devastating.&rdquo; Trump sees &ldquo;positive momentum.&rdquo; Iran says there are no talks, the strait stays shut, and attacks on ships are at a wartime high. U.S. officials say Iran is escalating plots against Americans.</p>
+    <p><b>Why the vantage differs.</b> The administration is selling sanctions and the blockade as working, a week after losing an election in which the war was an issue. Rezaei wants concessions before any public talks. Prosecutors&rsquo; account comes from an indictment, which is one side&rsquo;s case until trial.</p>
+    <p><b>What it means for the reader.</b> Less bombing doesn&rsquo;t mean less risk. Iran&rsquo;s pressure has moved from the battlefield to shipping lanes and to plots against people. Hormuz reopening is the signal that matters for prices.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Iran&rsquo;s plots and the Hormuz standoff?</b></p>
+    <label><input type="radio" name="fb-iran-plot" value="arrests"> If al-Hassani or Mohajeri is arrested or extradited to face the New York charges</label>
+    <label><input type="radio" name="fb-iran-plot" value="macdill"> If MacDill or CENTCOM in Tampa raises its security posture over Iranian threats</label>
+    <label><input type="radio" name="fb-iran-plot" value="seven-conditions"> When Washington answers Iran&rsquo;s seven conditions in writing and Hormuz reopens</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.justice.gov/opa/pr/three-iranian-backed-operatives-indicted-their-roles-nearly-20-terrorist-attacks-and">Justice Department</a> &middot;
+    <a href="https://www.nbcnews.com/world/united-kingdom/us-charges-3-men-plotting-multiple-terrorist-attacks-planned-attack-uk-rcna608647">NBC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/us-charges-3-iranian-backed-men-over-alleged-plot-at-uk-fairford-air-base">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html">CNBC</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met">Al Jazeera (Hormuz)</a>
+  </p>
+</article>
+
+<article id="measles">
+  <h3>A PAHO panel meets through Friday to decide whether measles is endemic in the U.S. again; Florida is behind on vaccination and proposing to drop four school vaccines</h3>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">Florida &amp; Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 (CNBC, Scientific American, CIDRAP, ABC News, Fortune), plus PAHO&rsquo;s own notices and the Florida Department of Health.</p>
+  <p>PAHO&rsquo;s measles verification commission, an independent technical body, is meeting behind closed doors from Tuesday through <b>Friday, Nov.&nbsp;13</b>. It will assess whether the same measles strain has circulated in the U.S. for 12 months or more, counting from the West Texas outbreak that began on Jan.&nbsp;20, 2025 (<a href="https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission">PAHO</a>). Its conclusions go to PAHO&rsquo;s director; if it finds endemic spread, the U.S. loses the elimination status it gained in 2000. Canada lost its status last year. The CDC has confirmed <b>5,182 cases</b> so far in 2026, compared with 2,289 in 2025 and 285 in 2024 (<a href="https://www.scientificamerican.com/article/the-u-s-may-be-on-the-cusp-of-losing-its-measles-elimination-status/">Scientific American</a>). Pennsylvania alone has passed 1,500 cases, 97 of them in pregnant women (<a href="https://abcnews.com/Health/measles-cases-grow-pregnant-women-pennsylvania-risks/story?id=137986608">ABC News</a>). A Johns Hopkins tool puts this year&rsquo;s outbreaks at about $83&nbsp;million in public-health response, lost work and medical costs (<a href="https://www.cnbc.com/2026/11/11/measles-outbreak-us-economic-cost.html">CNBC</a>). <a href="https://www.cidrap.umn.edu/measles/us-poised-lose-measles-elimination-status-what-does-mean">CIDRAP</a> notes the outcome could depend on genetic sequencing. If the U.S. outbreaks are not linked to one another, the U.S. could keep its status.</p>
+  <p><b>Florida.</b> Fortune reports 162 Florida cases as of Oct.&nbsp;17, many tied to an outbreak at Ave Maria University near Naples. It also reports that only 88.9% of Florida kindergartners had the MMR vaccine in 2025&ndash;26, below the 92.4% national average and the 95% needed for herd immunity, and that the state has no measles dashboard (<a href="https://fortune.com/2026/10/30/florida-school-vaccine-requirements-measles-cases-no-dashboard/">Fortune</a>). The <a href="https://www.floridahealth.gov/2026/10/08/florida-department-of-health-holds-public-hearing-on-proposed-revisions-to-school-immunization-rule/">Department of Health</a> is proposing to drop hepatitis&nbsp;B, chickenpox, Hib and pneumococcal vaccines from school-entry requirements. MMR stays required because it is in state law, and the Legislature did not take up Surgeon General Ladapo&rsquo;s call to repeal it. Why it matters to you: a loss of status would be official confirmation that measles is spreading continuously in the U.S., and Florida&rsquo;s vaccination rates are below the national average.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many have died?</span>
+    <p><b>What is in dispute.</b> A dispute over the count. States have confirmed eight measles-linked deaths this year (six in Pennsylvania, one in New York, one in Wisconsin), according to CNBC. Scientific American says the CDC has recorded four. Florida&rsquo;s own case count is also hard to pin down: Fortune says public trackers disagree on the statewide total.</p>
+    <p><b>Why the vantage differs.</b> State health departments report deaths as they confirm them. The CDC&rsquo;s national count has run behind state confirmations, and neither source explains the gap. Florida removed county-level disease data from its website in May; the data has since returned, but there is no measles dashboard.</p>
+    <p><b>What it means for the reader.</b> Treat the lower federal figures as a minimum. The decision that matters this week is PAHO&rsquo;s. The one that matters locally is whether Florida finalizes its vaccine-rule change.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the measles resurgence?</b></p>
+    <label><input type="radio" name="fb-measles" value="paho-ruling"> When PAHO announces, after the meeting ends Friday, whether the U.S. lost elimination status</label>
+    <label><input type="radio" name="fb-measles" value="florida-rule"> If Florida finalizes dropping the four school vaccines, or Pasco or Pinellas reports an outbreak</label>
+    <label><input type="radio" name="fb-measles" value="hhs-mmr"> If Kennedy&rsquo;s HHS changes federal MMR guidance in response to the ruling</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission">PAHO</a> &middot;
+    <a href="https://www.scientificamerican.com/article/the-u-s-may-be-on-the-cusp-of-losing-its-measles-elimination-status/">Scientific American</a> &middot;
+    <a href="https://www.cidrap.umn.edu/measles/us-poised-lose-measles-elimination-status-what-does-mean">CIDRAP</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/11/measles-outbreak-us-economic-cost.html">CNBC</a> &middot;
+    <a href="https://abcnews.com/Health/measles-cases-grow-pregnant-women-pennsylvania-risks/story?id=137986608">ABC News</a> &middot;
+    <a href="https://fortune.com/2026/10/30/florida-school-vaccine-requirements-measles-cases-no-dashboard/">Fortune</a> &middot;
+    <a href="https://www.floridahealth.gov/2026/10/08/florida-department-of-health-holds-public-hearing-on-proposed-revisions-to-school-immunization-rule/">Florida Department of Health</a>
+  </p>
+</article>
+
+<article id="hud-mixed">
+  <h3>HUD finalizes its rule ending housing aid for mixed-status families and requiring every tenant, at any age, to prove citizenship or status</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 (NAHRO, the public-housing directors&rsquo; trade group; and a Bloomberg Law summary), plus the final rule and HUD&rsquo;s release. Underreported: none of the general-news fronts we swept carried it.</p>
+  <p>The final rule, published tomorrow (<a href="https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status">Federal Register 2026-23003</a>), takes effect <b>Monday, Dec.&nbsp;14</b>. It does two things in public housing, Section&nbsp;8 vouchers and project-based rental aid. First, every family member, &ldquo;regardless of age,&rdquo; must provide evidence of citizenship or eligible immigration status, including people 62 and older, a group current rules do not fully cover. Second, &ldquo;prorated&rdquo; assistance, which lets a family with one ineligible member keep a reduced subsidy for the others, becomes temporary instead of indefinite. Housing agencies must notify tenants by <b>Monday, Jan.&nbsp;11, 2027</b>. Mixed families then have 90 days after Dec.&nbsp;14 to submit evidence, and other tenants must do so at their next recertification. Agencies can defer termination for up to 18 months.</p>
+  <p><b>The numbers in the rule.</b> HUD counts <b>19,810 mixed families</b> eligible for that deferral and expects at most about 5% to contest eviction. It applies a 1.05% documentation-gap rate to about 1.85&nbsp;million existing citizen tenants who have never shown proof, which implies roughly 19,000 citizens could have trouble producing papers. HUD estimates about 16,000 of the affected families, roughly 78%, would leave assisted housing together, and that $167&ndash;218&nbsp;million a year in rental aid would shift to fully eligible families on waiting lists. Commenters quoted in the rule cite a HUD estimate that $311&ndash;385&nbsp;million more would be needed to keep current capacity. <a href="https://www.hud.gov/news/hud-no-26-091">HUD</a> says a HUD&ndash;DHS audit found nearly 200,000 tenants with incomplete or unknown eligibility, and that its housing serves only a quarter of eligible households. <a href="https://www.nahro.org/news/hud-publishes-mixed-status-final-rule/">NAHRO</a> and <a href="https://news.bloomberglaw.com/us-law-week/hud-tightens-rules-around-immigrant-families-housing-aid">Bloomberg Law</a> have covered it, and we found no general-news coverage. We found no Florida or Tampa Bay breakdown of affected families. Why it matters to you: local housing authorities in Pasco, Pinellas and Hillsborough have to start notifying tenants within weeks, and the rule reaches every household member, not only those whose status is in question.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who loses their home?</span>
+    <p><b>What is in dispute.</b> A dispute over the effects. HUD says the rule moves aid from ineligible people to &ldquo;fully eligible households currently awaiting assistance&rdquo; and calls its net effect on homelessness &ldquo;ambiguous.&rdquo; Commenters quoted in the rule say mixed families already pay higher rents for smaller subsidies, so pushing them out raises per-household costs, and that citizens without papers, including elderly tenants, could lose aid.</p>
+    <p><b>Why the vantage differs.</b> HUD is carrying out an administration immigration priority and counts waiting-list families as the beneficiaries. Housing agencies, represented by NAHRO, bear the paperwork and lose rent revenue. Tenant advocates speak for the families. HUD itself says the falling count of mixed families since 2019 may reflect less reporting rather than a real decline.</p>
+    <p><b>What it means for the reader.</b> The HUD figures are estimates, not results. The first real counts will come when housing agencies send their January notices. A lawsuit before Dec.&nbsp;14 is the likeliest early turn.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following HUD&rsquo;s mixed-status rule?</b></p>
+    <label><input type="radio" name="fb-hud-mixed" value="local-count"> When a Tampa Bay housing authority says how many local families got January notices</label>
+    <label><input type="radio" name="fb-hud-mixed" value="lawsuit"> If tenant advocates or cities sue to block the rule before it takes effect Dec.&nbsp;14</label>
+    <label><input type="radio" name="fb-hud-mixed" value="citizen-loses"> If citizens, such as elderly tenants without birth certificates, are reported losing aid for missing papers</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status">Federal Register 2026-23003</a> &middot;
+    <a href="https://www.hud.gov/news/hud-no-26-091">HUD release</a> &middot;
+    <a href="https://www.nahro.org/news/hud-publishes-mixed-status-final-rule/">NAHRO</a> &middot;
+    <a href="https://news.bloomberglaw.com/us-law-week/hud-tightens-rules-around-immigrant-families-housing-aid">Bloomberg Law</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="gop-leaders">
+  <h3>Jim Jordan beats Scalise, 106&ndash;73, to lead House Republicans into the minority; Thune keeps the Senate job</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2.</p>
+  <p>Jordan, the Judiciary chairman and a Freedom Caucus founder, won the closed-door vote 106&ndash;73, according to sources who spoke to <a href="https://www.cbsnews.com/news/jim-jordan-house-minority-leader-republicans/">CBS News</a>. Tom Emmer stays whip and Lisa McClain conference chair, and Brian Jack takes over the campaign arm from Richard Hudson, who lost. Florida&rsquo;s Anna Paulina Luna backed Jordan: &ldquo;If you have a play and you get destroyed, you don&rsquo;t put the same people back in charge.&rdquo; Democrats called it doubling down (<a href="https://www.theguardian.com/us-news/2026/nov/10/jim-jordan-house-republican-leader">Guardian</a>). John Thune was re-elected Senate GOP leader. On the Democratic side, Bernie Sanders says he won&rsquo;t back Chuck Schumer for leader. Why it matters: Jordan will lead the Republican defense against the investigations Democrats have promised from January.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/jim-jordan-house-minority-leader-republicans/">CBS News</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/10/jim-jordan-house-republican-leader">Guardian</a> &middot; <a href="https://www.nbcnews.com/politics/congress/bernie-sanders-wont-support-chuck-schumer-senate-democrats-leader-rcna608633">NBC News (Sanders)</a></p>
+</article>
+
+<article id="data-centers">
+  <h3>A Nature Energy study says households, especially rural and low-income ones, pay most of the grid costs for data centers; Auburndale residents push back on a 700-megawatt project</h3>
+  <div class="meta"><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Florida &amp; Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CBS News, Fox&nbsp;13), plus the study and Cornell&rsquo;s release.</p>
+  <p>Cornell researchers, writing in <a href="https://www.nature.com/articles/s41560-026-02163-x">Nature Energy</a>, studied four U.S. grids from 2020 to 2025. They estimate data centers raised wholesale prices almost 20% in the southern Bay Area and about 17% around Dallas&ndash;Fort Worth in 2025. Grid spending on those systems rose from $2&nbsp;billion in 2020 to $34.2&nbsp;billion in 2025. Data centers drove $8.25&nbsp;billion of it and households just under $3.5&nbsp;billion, yet households were billed more than $16&nbsp;billion and data centers about $3&nbsp;billion. Energy burdens in rural areas rose 76% more than in cities (<a href="https://www.cbsnews.com/news/rising-energy-costs-ai-data-centers-lower-income-rural-households-study/">CBS News</a>; <a href="https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price">Cornell Chronicle</a>). <b>Closer to home:</b> hundreds packed an Auburndale workshop Tuesday on a hyperscale campus on Pace Road in Polk County that TECO would serve at 350 megawatts, rising to 700. The developer projects 292 jobs, no incentives and opening in 2029. &ldquo;I will not allow a rubber stamp process,&rdquo; Commissioner Sean Levy said (<a href="https://www.fox13news.com/news/proposed-auburndale-data-center-draws-scrutiny-over-power-demand-water-use-impact">Fox&nbsp;13</a>). TECO&rsquo;s large-load tariff under SB&nbsp;484, which decides who pays, still awaits the PSC. The <a href="https://www.tampabay.com/news/environment/2026/11/10/duke-energy-florida-data-center-electric-bill/">Tampa Bay Times</a> headline on the PSC&rsquo;s rejection of Duke&rsquo;s plan calls it &ldquo;too risky for consumers&rdquo;; we could read only the headline.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nature.com/articles/s41560-026-02163-x">Nature Energy</a> &middot; <a href="https://www.cbsnews.com/news/rising-energy-costs-ai-data-centers-lower-income-rural-households-study/">CBS News</a> &middot; <a href="https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price">Cornell Chronicle</a> &middot; <a href="https://www.fox13news.com/news/proposed-auburndale-data-center-draws-scrutiny-over-power-demand-water-use-impact">Fox 13</a> &middot; <a href="https://www.tampabay.com/news/environment/2026/11/10/duke-energy-florida-data-center-electric-bill/">Tampa Bay Times (headline)</a></p>
+</article>
+
+<article id="rays">
+  <h3>Hillsborough advances $90 million in sales-tax money and up to $263 million in bed-tax bonds for the Rays, as Amendment&nbsp;3 critics ask for a pause</h3>
+  <div class="meta"><span class="chip">Florida &amp; Tampa Bay</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 read in full (WUSF). The Tampa Bay Times headline reports the same votes; its story was paywalled.</p>
+  <p>Commissioners voted 5&ndash;2 to set aside $90&nbsp;million from the renewed Community Investment Tax, part of a $360&nbsp;million CIT pledge, and 5&ndash;1 to authorize up to $263&nbsp;million in tourist-tax bonds toward the $2.36&nbsp;billion Drew Park ballpark. The county&rsquo;s total commitment is up to $796&nbsp;million, including $103&nbsp;million from unspecified funds. Commissioner Joshua Wostal says that $103&nbsp;million in property taxes could instead steady the budget after Amendment&nbsp;3 cuts local revenue. No money is released yet; bond details come in December. Tampa&rsquo;s CRA attorney has asked to push that board&rsquo;s vote to <b>Thursday, Dec.&nbsp;10</b>, by which time the City Council will have filled Luis Viera&rsquo;s seat, which would break a 3&ndash;3 split on stadium financing (<a href="https://www.wusf.org/sports/2026-11-10/hillsborough-commissioners-advance-agenda-items-rays-stadium-financing">WUSF</a>; <a href="https://www.tampabay.com/news/hillsborough/2026/11/10/hillsborough-rays-stadium-money-passes/">Tampa Bay Times headline</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/sports/2026-11-10/hillsborough-commissioners-advance-agenda-items-rays-stadium-financing">WUSF</a> &middot; <a href="https://www.tampabay.com/news/hillsborough/2026/11/10/hillsborough-rays-stadium-money-passes/">Tampa Bay Times (headline)</a></p>
+</article>
+
+<article id="bannon">
+  <h3>The Justice Department asks a judge to erase Steve Bannon&rsquo;s contempt conviction, and no one is arguing the other side</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (NPR).</p>
+  <p>DOJ asked U.S. District Judge Carl Nichols to dismiss Bannon&rsquo;s 2022 conviction for defying the Jan.&nbsp;6 committee&rsquo;s subpoena &ldquo;in the interests of justice,&rdquo; even though an appeals court upheld it. Bannon does not oppose the request. Deputy Associate Attorney General Michael Weisbuch wrote that the judge lacks authority to refuse. Former federal prosecutor Bruce Searby says &ldquo;no adversity remains,&rdquo; and lawyers for Rep. Jamie Raskin have asked courts in similar cases to appoint an outside lawyer to defend the convictions, as judges did in the Flynn and Eric Adams cases (<a href="https://text.npr.org/g-s1-152713">NPR</a>). DOJ didn&rsquo;t respond to NPR. What to watch: whether Nichols appoints an outside lawyer. That decision would test how far courts will let DOJ drop cases against the president&rsquo;s allies.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/g-s1-152713">NPR</a></p>
+</article>
+
+<article id="ibm">
+  <h3>IBM Consulting, with 150,000 staff, stops sponsoring U.S. work visas and green cards for most roles</h3>
+  <div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">AI and financial services</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (Reuters, read through Al Jazeera).</p>
+  <p>An IBM spokesperson told Reuters the consulting unit will end H-1B and green-card sponsorship for most roles &ldquo;as skill availability and client needs have evolved.&rdquo; IBM had 1,611 H-1B petitions approved in fiscal 2026. The move follows the administration&rsquo;s $100,000 fee on new H-1B petitions and October&rsquo;s suspension of Cognizant, Infosys, Tata Consultancy Services, Microsoft and Adobe from a green-card pathway (<a href="https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships">Al Jazeera</a>). Why it matters to you: consulting firms that staff bank and AI projects are changing who they hire for U.S. client work. Watch whether Accenture, Deloitte and the Indian IT firms follow.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships">Al Jazeera (Reuters)</a></p>
+</article>
+
+<article id="scotus-fines">
+  <h3>The Supreme Court seems split on whether agencies can impose fines without a jury, a case that reaches well beyond farm labor</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">US financials</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (NPR).</p>
+  <p>Sun Valley Orchards, fined about $500,000 by the Labor Department for unsafe water and crowded housing for H-2A workers, argues that agencies can&rsquo;t impose fines through their own proceedings. Chief Justice Roberts suggested the government was stretching executive power. Justice Kavanaugh called the challenger&rsquo;s alternative &ldquo;at war with clarity.&rdquo; Deputy Solicitor General Sarah Harris said a broad loss would be &ldquo;the nuclear option&rdquo; and could disrupt Medicare, Medicaid and student loans: &ldquo;Please tell us now &hellip; if we need to get Legislative Affairs on it&rdquo; (<a href="https://text.npr.org/nx-s1-6034950">NPR</a>). Why it matters to you: it follows 2024&rsquo;s <i>SEC v. Jarkesy</i>. A broad ruling could force financial regulators to take more enforcement cases to federal court, which would slow them down.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6034950">NPR</a></p>
+</article>
+
+<article id="fcc-cap">
+  <h3>The FCC&rsquo;s repeal of the 39% national TV ownership cap is published, starting a 60-day clock and the lawsuits</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 2 (Ars Technica, Axios), plus the Federal Register document.</p>
+  <p>Tomorrow&rsquo;s <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23040/national-television-multiple-ownership-rule">Federal Register</a> carries the order, adopted Aug.&nbsp;6, repealing the cap effective <b>Monday, Jan.&nbsp;11, 2027</b>. Deals above 39% will be reviewed case by case. The order cites the Nexstar&ndash;Tegna merger as a deal that served the public interest. Cable groups told the FCC they will sue once the order is published and seek an injunction. They argue Congress set the 39% figure in 2004, and that a judge already found Nexstar&ndash;Tegna would raise retransmission fees, &ldquo;causing harm to consumers&rdquo; (<a href="https://arstechnica.com/tech-policy/2026/10/cable-lobby-to-sue-trump-fcc-over-repeal-of-national-tv-ownership-cap/">Ars Technica</a>). Nexstar is still holding Tegna separate under a court injunction (<a href="https://www.axios.com/2026/08/11/fcc-broadcast-ownership-cap-deals">Axios</a>). Locally, Nexstar owns WFLA and Tegna owns WTSP in Tampa Bay.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/12/2026-23040/national-television-multiple-ownership-rule">Federal Register 2026-23040</a> &middot; <a href="https://arstechnica.com/tech-policy/2026/10/cable-lobby-to-sue-trump-fcc-over-repeal-of-national-tv-ownership-cap/">Ars Technica</a> &middot; <a href="https://www.axios.com/2026/08/11/fcc-broadcast-ownership-cap-deals">Axios</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="rays-seat"> The Rays financing, if Tampa&rsquo;s new council member breaks the 3&ndash;3 split before the Dec.&nbsp;10 CRA vote</label>
+  <label><input type="radio" name="fb-also" value="fines-sec"> The Supreme Court fines case, if the ruling takes in-house penalties away from the SEC or bank regulators</label>
+  <label><input type="radio" name="fb-also" value="ibm-peers"> IBM&rsquo;s visa pullback, if Accenture, Deloitte or the Indian IT firms follow it</label>
+</div>
+
+
+<footer>
+  <p><b>Provenance.</b> 80 sources checked; 17 swept before any weighting category was consulted. Six leads and seven items below the line (13 stories). Three leads carry over from earlier editions, each with a stated trigger: Hegseth (the forced vote was held), Nvidia (Mast&rsquo;s Wednesday subpoena deadline and the Reuters procurement record), Iran (the unsealed Fairford indictment). Marker tallies: PS&nbsp;4 &middot; IC&nbsp;5 &middot; SS&nbsp;4 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: which Democrats missed the Hegseth vote, NBC&rsquo;s account of DOJ pausing Commerce&rsquo;s chip probe, and the severity of the threat to Bessent. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;11 is a Wednesday; Nov.&nbsp;13 a Friday; Nov.&nbsp;18 a Wednesday; Dec.&nbsp;10 a Thursday; Dec.&nbsp;14 a Monday; Jan.&nbsp;11, 2027 a Monday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-11-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> &mdash; near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Anthropic opened an Australian retail offering, and CNBC&rsquo;s sources say trading starts Thursday, Nov.&nbsp;19 (<a href="https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html">CNBC</a>). Missed: no new terms since yesterday&rsquo;s lead. The pricing is the next trigger.</li>
+    <li>Trump proclaimed the Oval Office, the Outer Oval and the Cabinet Room a national monument under the Antiquities Act (<a href="https://www.federalregister.gov/documents/2026/11/12/2026-23113/establishment-of-the-oval-office-national-monument">Federal Register</a>). Missed: mostly symbolic, and the text doesn&rsquo;t say what it changes about future renovations.</li>
+    <li>Nine Kennedy family members sued to block Trump&rsquo;s 250-foot arch, saying it would shadow JFK&rsquo;s grave (<a href="https://www.bbc.com/news/articles/cw8dvpmzp2p4o">BBC</a>). Missed: an early filing with no ruling.</li>
+    <li>A U.S. Army soldier assigned to a NATO corps was arrested in Britain on suspicion of spying for Russia (<a href="https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html">CNBC</a>). Missed: one arrest, with no charges or policy response yet.</li>
+    <li>Ebola cases in DR Congo passed 11,000, with 5,387 deaths (<a href="https://www.aljazeera.com/news/2026/11/11/ebola-cases-in-dr-congo-pass-11000-with-5387-deaths">Al Jazeera</a>). Missed: no new U.S. travel or funding measure.</li>
+    <li>A federal judge in Florida let Trump&rsquo;s $10&nbsp;billion defamation suit against the BBC proceed, but dismissed the claim under a Florida law (<a href="https://www.bbc.com/news/articles/cm93rpy6lx0do">BBC</a>). Missed: a procedural ruling.</li>
+    <li>Mississippi&rsquo;s Senate race is still uncalled, with Democrat Scott Colom extending his lead over Sen. Hyde-Smith as ballot deadlines pass (<a href="https://www.cnbc.com/2026/11/10/mississippi-senate-scott-colom-hyde-smith.html">CNBC</a>). Missed: no call yet. The call is the trigger.</li>
+    <li>Deutsche Bank launched bitcoin and ether custody for European institutions, and posts on X say 21 banks have committed $270&nbsp;million to a joint dollar stablecoin. Missed: European, and we saw only X summaries, not the banks&rsquo; statements.</li>
+    <li>The FDA ordered warnings of a rare risk of permanent vision loss on GLP-1 drugs such as Ozempic and Wegovy (<a href="https://www.foxbusiness.com/healthcare/fda-orders-new-warning-labels-ozempic-wegovy-over-rare-risk-permanent-vision-loss">Fox Business</a>). Missed: we couldn&rsquo;t read the FDA notice itself in time.</li>
+    <li>UAP: on 60 Minutes, Trump described Air Force pilots&rsquo; account of a fast round object near an F-22 and said he would look into rumors of hidden programs. Missed: no new official release or paperwork.</li>
+    <li>A House Oversight Republican report says the federal government failed to hold Epstein accountable and urges DOJ to reopen the investigation (<a href="https://www.nbcnews.com/politics/congress/house-republican-report-epstein-justice-department-investigation-trump-rcna608548">NBC News</a>). Missed: no new documents released.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
