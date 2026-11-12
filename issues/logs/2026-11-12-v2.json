@@ -1,0 +1,470 @@
+{
+ "issue": "issues/2026-11-12-v2.html",
+ "date": "2026-11-12",
+ "run_started_local": "2026-11-12 07:19 EST",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "Repo rule files (NEWSBOT_2.0.md, scripts/audit.py, config.md), the brief-feedback issue list and the original News Bot Sept 5-Oct 1 radio blocks were read first because the process requires it; issue #1 was already applied. Yesterday's issue was read only as the layout reference. The candidate list was built from the sweep below before any weighting category, the empty watchlist, or earlier stories were consulted for selection; prior issues were grepped only afterward to decide which leads carry over and to state their triggers.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (documents published 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18 hours)"
+ ],
+ "sweeps_attempted_failed": [
+  "Politico front (bot check)",
+  "Axios front (bot check)",
+  "The Hill front (bot check)",
+  "Florida Politics front (bot check)",
+  "WFLA news front (bot check)",
+  "Federal Register documents API first call (malformed URL on our side; public-inspection API used instead)",
+  "Washington Post article (connection refused to curl; seen via search excerpt)",
+  "war.gov/UFO (403 to curl; seen via search)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (documents published 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18 hours)"
+ ],
+ "sources_checked": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News politics front",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (documents published 12 Nov)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18 hours)",
+  "CNBC: Nvidia second affair / board met",
+  "CNBC: Nvidia fallout revives chip-export push",
+  "CNBC: Huang affair in DC (resignation calls)",
+  "Guardian: Nvidia board deciding on Huang",
+  "NBC: Nvidia shares drop after board meeting reports",
+  "NBC: Megaspeed statement",
+  "Al Jazeera: Nvidia shares plunge",
+  "CNBC: Colom wins Mississippi",
+  "NBC: Colom wins Mississippi",
+  "Guardian: how Colom won",
+  "CBS: Trump judicial confirmations face Democratic Senate",
+  "CBS: White House counsel Scharf letter",
+  "NBC: White House warns Democrats investigating may be crime",
+  "Guardian: Garcia says Trump has something to hide",
+  "NBC: U.S. attorney demands Blumenthal preserve documents",
+  "Al Jazeera: White House calls probes abuse",
+  "Fox News: Miller memo on White House hierarchy",
+  "Al Jazeera: Iran warns as Israel readies attack",
+  "CBS: Bessent relocates to military base",
+  "BBC: Pentagon backs guard who reprimanded Hegseth (incl. Trump Arlington remarks)",
+  "NPR: why gasoline is under $4",
+  "CNBC: Treasury yields Thursday",
+  "NBC: Ukraine Starshield limits",
+  "NBC: U.S. envoys in Moscow",
+  "CNBC: Starshield restrictions",
+  "BBC: Starshield disrupted as envoys meet Putin",
+  "CBS: ICE deportations record",
+  "ABC: Epstein II discharge petition 218",
+  "NBC: record credit-card balances",
+  "NBC: ACS prostate screening guidelines",
+  "CNBC: AI and consulting billable hours",
+  "CNBC: CFTC investigates Kalshi",
+  "Fox Business: Polymarket layoffs",
+  "CNBC: PIMCO on AI borrowers in IG issuance",
+  "Fox 13: tech giants eye Florida data centers (Auburndale)",
+  "Guardian: Rubio flights to Gainesville",
+  "WUSF: New College loan plan",
+  "WUSF: school taxes approved amid Amendment 3",
+  "WUSF: undocumented students and public universities",
+  "Washington Post (search excerpt): Nvidia stood behind Huang",
+  "Axios (search excerpt): Huang ouster, no decision early Thursday",
+  "RTE/Reuters: Nvidia board meets",
+  "FT (search excerpt): board meets on Huang",
+  "Anadolu: Israeli cabinet orders preparation",
+  "Turkiye Today: Israel orders military to prepare",
+  "JFeed: IDF told to prepare; cabinet meets Sunday",
+  "Times of India: Netanyahu asks military to prepare",
+  "DHS Nov 3 release",
+  "CNBC: NY Fed credit-card record (Nov 10)",
+  "Axios (search excerpt): Massie 218",
+  "The Hill (search excerpt): Massie discharge petition",
+  "war.gov/UFO PURSUE page (search)",
+  "Disclosure Diaries #113 (search)",
+  "Politico Morning Money (search excerpt): AI agents and banks",
+  "Simply Wall St/Yahoo (search): JPMorgan Anthropic IPO role",
+  "Federal Register API: SNAP documents since 1 Nov"
+ ],
+ "sources_checked_total": 74,
+ "candidate_count": 48,
+ "candidates": [
+  {
+   "item": "Nvidia board meets on ousting Huang after second affair report; export-control push before Trump-Xi",
+   "decision": "keep: lead (nvidia)",
+   "reason": "moving to a decision; AI/tech core; behind-the-scenes lobbying (Huang vs chip bills); salacious detail; new facts since yesterday"
+  },
+  {
+   "item": "White House counsel letter to Garcia; U.S. attorney Reitz preservation demand to Blumenthal",
+   "decision": "keep: lead (oversight)",
+   "reason": "domestic institutions; executive-vs-Congress fight before January; credible legal disagreement"
+  },
+  {
+   "item": "Colom wins Mississippi; Democrats at least 55 Senate seats; judges rushed in lame duck",
+   "decision": "keep: lead (senate)",
+   "reason": "threshold event; elections; changes confirmations"
+  },
+  {
+   "item": "Israel security cabinet orders preparation for Iran strike; Iran threatens bases",
+   "decision": "keep: lead (iran-israel)",
+   "reason": "new fact with direct U.S. risk and gas-price channel; cabinet meets Sunday"
+  },
+  {
+   "item": "Ukraine Starshield speed limits; Witkoff/Kushner meet Putin",
+   "decision": "keep: lead (starshield)",
+   "reason": "U.S. company and government role; credible factual dispute; talks moving"
+  },
+  {
+   "item": "ICE record 483,200 deportations FY2026; 19,000/week target",
+   "decision": "keep: lead (ice-record)",
+   "reason": "underreported (CBS only); domestic institutions; counting dispute with TRAC"
+  },
+  {
+   "item": "Epstein Files Transparency Act II discharge petition hits 218",
+   "decision": "keep: also today (epstein-ii)",
+   "reason": "dated floor action Dec 2-3; public interest"
+  },
+  {
+   "item": "NY Fed: credit-card debt record $1.29T; consumer strain",
+   "decision": "keep: also today (credit-cards)",
+   "reason": "macro and banks; affects household finances"
+  },
+  {
+   "item": "AI breaking consulting billable hour (KPMG, EY, Elixirr)",
+   "decision": "keep: also today (consulting-ai)",
+   "reason": "directly relevant to reader's AI/consulting work"
+  },
+  {
+   "item": "CFTC investigates Kalshi self-certification; Polymarket layoffs",
+   "decision": "keep: also today (kalshi)",
+   "reason": "financial-services regulation/market structure"
+  },
+  {
+   "item": "ACS PSA screening guideline change",
+   "decision": "keep: also today (psa)",
+   "reason": "public health; changes default advice for men over 50"
+  },
+  {
+   "item": "Rubio $1.2M military flights to Gainesville (WaPo via Guardian)",
+   "decision": "keep: also today (rubio-flights)",
+   "reason": "Florida; salacious; oversight target"
+  },
+  {
+   "item": "New College $47.5M loan plan before Board of Governors",
+   "decision": "keep: also today (new-college)",
+   "reason": "Florida local bar; state bond office warning"
+  },
+  {
+   "item": "Hegseth group reprimanded at Tomb of the Unknown Soldier",
+   "decision": "keep: also today (tomb)",
+   "reason": "public reaction; salacious; follows impeachment vote"
+  },
+  {
+   "item": "Brooklyn building collapse, at least 5 dead",
+   "decision": "cut: Also noted",
+   "reason": "disaster with no established policy cause yet"
+  },
+  {
+   "item": "SNAP categorical eligibility proposal critics (6M+)",
+   "decision": "cut: Also noted",
+   "reason": "ran 10 Nov; reaction not new fact"
+  },
+  {
+   "item": "PAHO measles elimination meeting",
+   "decision": "cut: Also noted",
+   "reason": "ran yesterday; decision pending"
+  },
+  {
+   "item": "Auburndale data center workshop; Florida as data-center destination",
+   "decision": "cut: Also noted",
+   "reason": "ran yesterday; no vote scheduled"
+  },
+  {
+   "item": "UAP: no new PURSUE release; Barber joins Burlison staff",
+   "decision": "cut: Also noted",
+   "reason": "no official paperwork"
+  },
+  {
+   "item": "JPMorgan Anthropic IPO retail role; banks vs fintech on AI agents",
+   "decision": "cut: Also noted",
+   "reason": "no new terms or rule action"
+  },
+  {
+   "item": "10-year yield ~5.01% after Veterans Day",
+   "decision": "cut: Also noted",
+   "reason": "vendor quote; price move; Treasury close not yet published"
+  },
+  {
+   "item": "Gas average below $4 ($3.94)",
+   "decision": "cut: Also noted",
+   "reason": "seasonal; folded into Iran lead"
+  },
+  {
+   "item": "Xi says Taiwan reunification must happen",
+   "decision": "cut: Also noted",
+   "reason": "rhetoric before summit"
+  },
+  {
+   "item": "Russia's ambassador to U.S. dies",
+   "decision": "cut: Also noted",
+   "reason": "no policy change"
+  },
+  {
+   "item": "Ebola tops 11,000 in Congo",
+   "decision": "cut: Also noted",
+   "reason": "no U.S. channel reported"
+  },
+  {
+   "item": "Stephen Miller memo reshapes White House communications",
+   "decision": "cut: folded into oversight lead",
+   "reason": "context, not standalone"
+  },
+  {
+   "item": "Trump judicial confirmations rush",
+   "decision": "cut: folded into senate lead",
+   "reason": "context"
+  },
+  {
+   "item": "Warren/Coons letter on Nvidia export records",
+   "decision": "cut: folded into nvidia lead",
+   "reason": "context"
+  },
+  {
+   "item": "Cotton urges CXMT ban",
+   "decision": "cut",
+   "reason": "single senator's call; export-control thread covered in Nvidia lead"
+  },
+  {
+   "item": "CoreWeave CEO cancels share sale after 24% jump",
+   "decision": "cut",
+   "reason": "company stock move; no structural change"
+  },
+  {
+   "item": "AI borrowers nearly half of long-dated IG issuance (PIMCO)",
+   "decision": "cut",
+   "reason": "interesting market structure but commentary piece; space"
+  },
+  {
+   "item": "UK GDP +0.7% Q3",
+   "decision": "cut",
+   "reason": "no U.S. channel"
+  },
+  {
+   "item": "COP31 Burnham speech; overshoot warning",
+   "decision": "cut",
+   "reason": "no U.S. policy move today"
+  },
+  {
+   "item": "Gaza hospital strike; Gaza floods",
+   "decision": "cut",
+   "reason": "no new U.S. policy channel today"
+  },
+  {
+   "item": "Indonesia VP resigns",
+   "decision": "cut",
+   "reason": "no U.S. channel"
+  },
+  {
+   "item": "Canada ambassador on tariff costs; U.S.-India trade deal hopes",
+   "decision": "cut",
+   "reason": "no dated decision"
+  },
+  {
+   "item": "United bans AI agents from booking flights",
+   "decision": "cut",
+   "reason": "company policy; minor"
+  },
+  {
+   "item": "Kennedy Center Ticketmaster switch; Kennedy family arch lawsuit",
+   "decision": "cut",
+   "reason": "early filings/conflict claims without action"
+  },
+  {
+   "item": "White House-'secret weapon' to police colleges (NPR)",
+   "decision": "cut",
+   "reason": "not read in time to verify; may revisit"
+  },
+  {
+   "item": "Hillsborough kratom ban",
+   "decision": "cut",
+   "reason": "local health but narrow"
+  },
+  {
+   "item": "Florida school tax referendums pass amid Amendment 3",
+   "decision": "cut",
+   "reason": "post-election wrap; no new decision"
+  },
+  {
+   "item": "Undocumented students may attend Florida universities",
+   "decision": "cut",
+   "reason": "unclear legal status; one outlet"
+  },
+  {
+   "item": "ACS/Biden cancer remarks; Biden memoir",
+   "decision": "cut",
+   "reason": "anti-topic (personality)"
+  },
+  {
+   "item": "Manchester United sacks Carrick; sports",
+   "decision": "cut",
+   "reason": "anti-topic (sports)"
+  },
+  {
+   "item": "SS United States sunk as reef off Florida",
+   "decision": "cut",
+   "reason": "event, no consequence"
+  },
+  {
+   "item": "Peanut the squirrel owner detained by ICE",
+   "decision": "cut",
+   "reason": "single case, crime/celebrity"
+  },
+  {
+   "item": "Rex Ryan arrest; Frankie Muniz crash",
+   "decision": "cut",
+   "reason": "anti-topic (celebrity/crime)"
+  },
+  {
+   "item": "Trump 'acting president' of Venezuela (Fox newsletter)",
+   "decision": "cut",
+   "reason": "date unclear in newsletter; not verified today"
+  }
+ ],
+ "story_count": {
+  "leads": 6,
+  "also_today": 8,
+  "total": 14
+ },
+ "continuing_leads": [
+  {
+   "id": "nvidia",
+   "trigger": "new verifiable fact: board met 11 Nov on removing Huang (CNBC confirmed; Reuters source); NYT report of second relationship"
+  },
+  {
+   "id": "senate",
+   "trigger": "threshold event: Mississippi race called and conceded 11 Nov"
+  },
+  {
+   "id": "iran-israel",
+   "trigger": "new verifiable fact: Israeli security cabinet directive to prepare for a possible strike (KAN, 11 Nov); cabinet meets 15 Nov"
+  },
+  {
+   "id": "starshield",
+   "trigger": "new verifiable fact: Zelenskyy's 12 Nov statement on systematic Starshield speed limits; envoys meet Putin in Moscow"
+  }
+ ],
+ "per_article_independent_sources": {
+  "nvidia": 5,
+  "oversight": 4,
+  "senate": 4,
+  "iran-israel": 1,
+  "starshield": 3,
+  "ice-record": 1,
+  "epstein-ii": 3,
+  "credit-cards": 2,
+  "consulting-ai": 1,
+  "kalshi": 1,
+  "psa": 1,
+  "rubio-flights": 1,
+  "new-college": 1,
+  "tomb": 3
+ },
+ "per_article_primary_documents": {
+  "ice-record": "DHS Nov 3 release (context only)",
+  "credit-cards": "New York Fed household debt and credit report page",
+  "oversight": "Neither letter read in full (Scharf letter and Reitz letter quoted via CBS, NBC, Al Jazeera)"
+ },
+ "marker_tallies": {
+  "Primary source": 0,
+  "Independent corroboration": 7,
+  "Single-sourced": 7,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "whether Nvidia's board has reached a decision (no company comment as of morning)",
+  "The Information's $7.5 billion Alice Huang shipments figure (paywalled; seen via CNBC)",
+  "scope and timing of Israel's cabinet directive (KAN gave none; all outlets relay KAN)",
+  "who ordered the Starshield speed limits (SpaceX and White House did not comment; October accounts conflicted)"
+ ],
+ "divergence_boxes": 5,
+ "negative_check": {
+  "method": "After drafting: searched for JPMorgan and UAP news; rescanned the Federal Register for documents absent from newsroom fronts (SNAP, Fed Reserve Bank capital stock rule, NRC Long Mott notice, DOJ English-language RFI); compared candidate list against all fronts swept.",
+  "result": "Nothing new cleared the bar. The ICE FY2026 deportation figures are underreported (only CBS had them at sweep time) and run as a single-sourced lead. JPMorgan and UAP items went to Also noted. SNAP rule reaction stayed in Also noted because the rule ran 10 Nov."
+ },
+ "feedback_applied": [
+  {
+   "issue": 1,
+   "title": "brief-feedback: 2026-11-08c-v2",
+   "answer": "fb-krakow=charges",
+   "status": "already applied to config.md on 9 Nov; wake condition closed; no new change today"
+  }
+ ],
+ "config_change": "none (no new or recently closed brief-feedback issue required a change)",
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: Nvidia board and chip-export bills (lead). Consulting/AI pricing below the line. CoreWeave and PIMCO AI-debt pieces cut.",
+  "Macro & markets (Core)": "No print today; Fed rule (prints only) keeps yields to Also noted. Record card debt below the line as household strain.",
+  "World economy": "Trump-Xi APEC meeting Nov 18-19 folded into Nvidia lead; U.S.-India and Canada tariff items cut (no decision).",
+  "US debt & fiscal (Core)": "Nothing cleared: no auction or CBO release in today's net; Treasury's own Nov 12 curve not yet published.",
+  "US financials (Core)": "JPMorgan seen only in Anthropic IPO and AI-agent/open-banking items (Also noted). Card debt mentions bank card books. Kalshi/CFTC below the line.",
+  "US politics & policy (Core)": "Oversight fight (lead), Senate math and judges (lead), Epstein II petition and Hegseth tomb below the line.",
+  "Geopolitics": "Israel-Iran preparation and Ukraine/Starshield both cleared via U.S. channels; Gaza and Xi rhetoric cut.",
+  "Science & public health": "ACS PSA guideline below the line; measles PAHO pending (Also noted); Ebola cut for lack of U.S. channel.",
+  "UAP disclosure (Core)": "Searched after drafting: no eighth PURSUE release; Barber staff hire is uncorroborated claims territory. Also noted only.",
+  "Energy & grid": "Gas under $4 and Brent folded into the Iran lead; no rate case or grid filing surfaced.",
+  "Elections and electoral process": "Mississippi call (lead); Alaska still uncalled, noted in lead.",
+  "Broader domestic institutions": "White House/DOJ vs Congress (lead); ICE record (lead); Miller memo folded in.",
+  "International with US channel": "Iran-Israel, Ukraine/Starshield, Nvidia-China all cleared on explicit U.S. channels.",
+  "Florida / Tampa Bay": "Rubio Gainesville flights and New College loan below the line; Auburndale data center to Also noted (ran yesterday); school tax and kratom items cut.",
+  "Data centers / power / AI infrastructure": "Commerce remote-access rule and offshore data centers folded into Nvidia lead; Auburndale to Also noted.",
+  "AI and financial services": "Consulting AI pricing and Kalshi/CFTC below the line; banks vs AI agents (Politico) to Also noted."
+ },
+ "also_noted_count": 11,
+ "link_check_note": "All 53 outbound links checked by curl: 47 returned 200; axios.com, politico.com, thehill.com and war.gov returned 403 to automated requests, washingtonpost.com refused the connection, and one Fox Business URL returned a transient 502 then fetched 200 on retry. The blocked pages resolved in web search.",
+ "comparison_edition": "Not opened before the draft was complete.",
+ "audit_note": "Candidate-list shape and 10-story floor are proposed audit gates pending user approval; the current audit does not enforce them. This edition has 14 stories.",
+ "audit_attempts": "2 runs of scripts/audit.py; both exited 0 (second run after the index update and this field were filled in)."
+}

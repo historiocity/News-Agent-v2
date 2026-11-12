@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 12 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Thursday, 12 November 2026 &middot; morning edition</div>
+  <h1>Nvidia&rsquo;s board weighs firing Jensen Huang, the White House and a U.S. attorney warn Democrats that oversight could be a crime, Colom&rsquo;s win gives Democrats 55 Senate seats, and Israel readies for another strike on Iran</h1>
+  <p class="summary">Six leads, eight below the line. Nvidia&rsquo;s board met Wednesday night on whether to remove Jensen Huang after a second affair was reported, and the scandal is reviving chip-export bills a week before Trump meets Xi; the White House counsel told the incoming Oversight chair that Democratic probes &ldquo;may cross the line into blatant criminality,&rdquo; and a U.S. attorney ordered Sen. Blumenthal to preserve records; Scott Colom&rsquo;s Mississippi win gives Democrats at least 55 Senate seats and stalls Trump&rsquo;s judges; Israel&rsquo;s caretaker cabinet ordered the military to prepare for a possible strike on Iran; Ukraine says SpaceX&rsquo;s Starshield is being throttled again as Trump&rsquo;s envoys meet Putin; and ICE posted a record 483,200 deportations. Below the line: the second Epstein files petition, record credit-card debt, AI and consulting fees, the CFTC&rsquo;s Kalshi probe, new PSA screening advice, Rubio&rsquo;s Gainesville flights, New College&rsquo;s loan, and Hegseth at the Tomb of the Unknown Soldier.</p>
+  <p class="sub">Thursday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-12-v2.html</code>.</p>
+  <p class="prov"><b>74 sources checked, 18 of them swept before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news index, Fox News politics, BBC News, Guardian US, CNBC, NBC News, CBS News, ABC News, Fox Business, Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, Suncoast News, today&rsquo;s Federal Register through the public-inspection API, X US trends and X news. Politico, Axios, The Hill, Florida Politics and WFLA returned bot-check pages, so Axios and The Hill appear only through search results; Tampa Bay Times stories were paywalled past the headline. Tomorrow&rsquo;s public-inspection list had not posted when we swept (it goes up at 8:45&nbsp;a.m. ET).<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for JPMorgan and UAP news and rescanned the Federal Register for documents the fronts missed. Nothing new cleared the bar; the SNAP eligibility rule is back in the news because of critics, but it ran on Tuesday and has no new fact. The ICE deportation figures are underreported in one sense: only CBS has the full DHS numbers so far, and that is why they are labelled single-sourced. No open or recently closed brief-feedback issue required a new change: issue #1 (Krak&oacute;w) is already applied and its wake condition is closed.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#nvidia">Nvidia&rsquo;s board weighs removing Huang after a second affair is reported</a></li>
+    <li><a href="#oversight">White House and a U.S. attorney warn Democrats that investigating could be a crime</a></li>
+    <li><a href="#senate">Colom wins Mississippi; Democrats will hold at least 55 Senate seats</a></li>
+    <li><a href="#iran-israel">Israel&rsquo;s caretaker cabinet orders the military to prepare for an Iran strike</a></li>
+    <li><a href="#starshield">Ukraine says Starshield is throttled again as Trump&rsquo;s envoys meet Putin</a></li>
+    <li><a href="#ice-record">ICE reports a record 483,200 deportations</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#epstein-ii">Second Epstein files petition reaches 218</a></li>
+    <li><a href="#credit-cards">Credit-card balances hit a record $1.29 trillion</a></li>
+    <li><a href="#consulting-ai">AI is breaking the billable hour in consulting</a></li>
+    <li><a href="#kalshi">CFTC investigates Kalshi&rsquo;s contract filings</a></li>
+    <li><a href="#psa">Cancer Society brings back routine PSA tests from age 50</a></li>
+    <li><a href="#rubio-flights">Rubio&rsquo;s military flights to Gainesville</a></li>
+    <li><a href="#new-college">New College&rsquo;s $47.5 million loan plan</a></li>
+    <li><a href="#tomb">Hegseth&rsquo;s group reprimanded at the Tomb of the Unknown Soldier</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="nvidia">
+  <h3>Nvidia&rsquo;s board met Wednesday night on whether to remove Jensen Huang after a second affair was reported; the scandal is reviving chip-export bills a week before Trump meets Xi</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 newsrooms (CNBC, the Guardian, NBC News, Al Jazeera, and the Washington Post, which we saw only through a search excerpt), plus Reuters via RT&Eacute;. Trigger (new verifiable fact): the board&rsquo;s meeting on Huang&rsquo;s future and the New York Times report of a second relationship, both since yesterday&rsquo;s lead.</p>
+  <p>Nvidia&rsquo;s board met late Wednesday to decide whether to remove Huang as chief executive, CNBC confirmed, after the New York Times reported that he had a second extramarital relationship, with Kimberly Powell, the company&rsquo;s head of health care, who reports to him (<a href="https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html">CNBC</a>). That came on top of his admission on Sunday to an affair with Alice Huang, a Megaspeed executive whom U.S. intelligence officials believe is a Chinese spy. On Sunday the board said it had confidence in him. Under Nvidia&rsquo;s bylaws, a majority of the 11 directors can remove him &ldquo;with or without cause&rdquo; (<a href="https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair">Guardian</a>). The White House was told about the meeting, according to <a href="https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939">NBC News</a>. Bloomberg reported that the board had been working with an outside firm on possible replacements, and a fund manager named CFO Colette Kress as the natural interim pick (<a href="https://www.rte.ie/news/business/2026/1112/1598921-nvidia-board-meets-to-decide-ceo-huangs-future/">Reuters via RT&Eacute;</a>). We could not confirm that the board has reached a decision. Why: as of this morning Nvidia had not commented, and Axios reported no decision as of early Thursday. The <a href="https://www.washingtonpost.com/technology/2026/11/12/nvidia-jensen-huang-denied-his-alleged-affair-then-story-changed/">Washington Post</a> notes how fast support shifted: on Monday Trump said Huang &ldquo;had absolutely no idea&rdquo; the woman was a spy, adding, &ldquo;I really believe him.&rdquo;</p>
+  <p><b>Why it matters to you.</b> Nvidia&rsquo;s chips sit under almost every AI build-out, and Huang was, in Eurasia Group&rsquo;s David Meale&rsquo;s words, &ldquo;the industry&rsquo;s most effective lobbyist against tighter rules.&rdquo; The scandal has given China hawks of both parties a push to put three chip bills (the AI Overwatch Act, the Chip Security Act and the MATCH Act) into this year&rsquo;s defense bill, and CNBC reports that Commerce is finishing a rule to stop Chinese firms from renting restricted chips in data centers abroad (<a href="https://www.cnbc.com/2026/11/12/nvidia-trump-jensen-chip-export-controls-china-xi-.html">CNBC</a>). Trump is expected to meet Xi in Shenzhen on Wednesday and Thursday, Nov.&nbsp;18&ndash;19, at the APEC summit. Democratic Sens. Elizabeth Warren and Chris Coons asked Commerce, State and chief of staff Stephen Miller to preserve all records on Nvidia&rsquo;s China exports (Guardian). Megaspeed said Thursday it is cooperating with Commerce and has hired a U.S. law firm to count its GPUs; China&rsquo;s foreign ministry called the spying claims fabricated (NBC). CNBC relays The Information&rsquo;s report that Alice Huang helped arrange at least $7.5&nbsp;billion in Nvidia chip shipments to China. We could not confirm that figure. Why: The Information is paywalled and we saw it only as CNBC summarized it.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; should he stay?</span>
+    <p><b>What is in dispute.</b> A dispute over judgment, not facts. Bernstein&rsquo;s Stacy Rasgon says an affair with a direct report makes it &ldquo;much tougher for the board to leave him in position,&rdquo; and Dan Ives says Nvidia &ldquo;likely now has to move on.&rdquo; Trump calls Huang &ldquo;an honorable guy,&rdquo; and Elon Musk says hiring him would be &ldquo;an honour.&rdquo; Seaport&rsquo;s Jay Goldberg told <a href="https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future">Al Jazeera</a> that replacing him would be &ldquo;impossible to do personality-wise.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> Analysts answer to shareholders, who face governance and legal risk from a CEO&rsquo;s relationship with a subordinate. Trump has relied on Huang in his China dealings and goes to Shenzhen next week. Musk is a rival employer and a Trump ally. Directors have the Wachtell, Lipton investigation in hand, which no outsider has seen.</p>
+    <p><b>What it means for the reader.</b> Watch the board&rsquo;s statement and the defense bill, not the share price. If Huang goes, the loudest voice against export controls goes with him, which makes the chip bills likelier to pass this year.</p>
+  </div>
+  <details><summary>Dig deeper: the three chip bills</summary>
+    <p>The AI Overwatch Act, the Chip Security Act and the MATCH Act all aim to limit advanced chips reaching U.S. adversaries. CNBC says the MATCH Act would press Japan and the Netherlands to tighten curbs on chipmaking tools already in China, and DGA-Albright Stonebridge&rsquo;s Paul Triolo warns that Beijing has said it would respond, possibly with rare-earth and magnet controls. Schumer and the House China committee chair, Republican John Moolenaar, both want the bills in the defense bill.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Nvidia scandal?</b></p>
+    <label><input type="radio" name="fb-nvidia-board" value="successor"> When the board announces whether Huang stays, and who runs Nvidia if he doesn&rsquo;t</label>
+    <label><input type="radio" name="fb-nvidia-board" value="ndaa-chips"> If the chip-export bills make it into the defense bill before the Trump&ndash;Xi meeting Nov.&nbsp;18&ndash;19</label>
+    <label><input type="radio" name="fb-nvidia-board" value="what-she-got"> If investigators say what Alice Huang got from Nvidia or from officials she met</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html">CNBC</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/12/nvidia-trump-jensen-chip-export-controls-china-xi-.html">CNBC (export bills)</a> &middot;
+    <a href="https://www.theguardian.com/technology/2026/nov/12/nvidia-board-decision-ceo-jensen-huang-alleged-second-affair">Guardian</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/megaspeed-statement-nvidia-jensen-huang-alice-us-exports-chips-china-rcna608939">NBC News</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future">Al Jazeera</a> &middot;
+    <a href="https://www.washingtonpost.com/technology/2026/11/12/nvidia-jensen-huang-denied-his-alleged-affair-then-story-changed/">Washington Post</a> &middot;
+    <a href="https://www.rte.ie/news/business/2026/1112/1598921-nvidia-board-meets-to-decide-ceo-huangs-future/">RT&Eacute; (Reuters)</a>
+  </p>
+</article>
+
+<article id="oversight">
+  <h3>The White House counsel tells the incoming Oversight chair that Democratic probes &ldquo;may cross the line into blatant criminality,&rdquo; and a Texas U.S. attorney orders Sen. Blumenthal to preserve his ballroom records</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (CBS News, NBC News, Al Jazeera, the Guardian), plus Fox News on the new White House structure. We did not read either letter in full.</p>
+  <p>In a letter dated Monday and released Wednesday, White House counsel Will Scharf told Rep. Robert Garcia, who is set to chair the House Oversight Committee from January, that threats against officials or subpoenas meant &ldquo;to abuse or instill fear in the recipient may cross the line into blatant criminality,&rdquo; and that &ldquo;issuing unlawful subpoenas&rdquo; may &ldquo;warrant further investigation&rdquo; (<a href="https://www.cbsnews.com/news/white-house-counsel-will-scharf-house-oversight-committee-robert-garcia-investigations/">CBS News</a>). Garcia answered: &ldquo;It appears Donald Trump has something to hide.&rdquo; The letter does not say what the White House would do (<a href="https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse">Al Jazeera</a>).</p>
+  <p><b>The first step went further.</b> Aaron Reitz, the U.S. attorney for the Southern District of Texas and a former chief of staff to Sen. Ted Cruz, sent Sen. Richard Blumenthal a records-preservation demand over Blumenthal&rsquo;s inquiry into anonymous donors to the roughly $400&nbsp;million White House ballroom, citing the federal conspiracy-against-rights and color-of-law statutes. &ldquo;I&rsquo;m taking the first step to stop this abuse of power,&rdquo; Reitz posted on X. The acting deputy attorney general, Trent McCotter, backed him. NBC reports that a step like this against a sitting member would typically go through DOJ&rsquo;s Public Integrity office, which has been shrunk and sidelined. Blumenthal said he &ldquo;will not be intimidated&rdquo; and sent Reitz a preservation demand of his own (<a href="https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899">NBC News</a>; <a href="https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752">NBC News</a>). This comes in Stephen Miller&rsquo;s first week as chief of staff. A memo from his office gives Cabinet secretaries more control of their own messaging, according to <a href="https://www.foxnews.com/politics/stephen-miller-internal-memo-unleashes-trump-agencies-absolute-control-wiles-reign">Fox News</a>. Why it matters to you: whether Congress can subpoena the executive branch in 2027 will decide how much you learn about tariffs, the war, the ballroom donors and the pardons Democrats say they will investigate.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; oversight or abuse?</span>
+    <p><b>What is in dispute.</b> A dispute over law. Scharf says congressional inquiries need a &ldquo;legitimate legislative purpose&rdquo; and that Democrats want to &ldquo;exercise powers of criminal prosecution.&rdquo; Garcia says Congress&rsquo;s authority &ldquo;comes from Article I of the Constitution, not from the permission of the White House.&rdquo; DOJ says Blumenthal&rsquo;s letters to donors threaten their First Amendment rights.</p>
+    <p><b>Why the vantage differs.</b> The White House has been hiring lawyers for its counsel&rsquo;s office ahead of the January subpoenas, NBC reports. Garcia and Blumenthal are building the investigations Democrats ran on. Reitz is a political appointee who ran for Texas attorney general. Each side&rsquo;s account is a legal position, not a court ruling.</p>
+    <p><b>What it means for the reader.</b> Expect the first fights in court, not on the House floor. Neither letter is a court ruling, and no charge has been filed against anyone.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the fight over congressional oversight?</b></p>
+    <label><input type="radio" name="fb-oversight-crime" value="doj-case"> If DOJ opens a criminal case against a member of Congress or a committee aide</label>
+    <label><input type="radio" name="fb-oversight-crime" value="first-subpoena"> When Garcia&rsquo;s committee sends its first subpoena in January and the White House refuses it</label>
+    <label><input type="radio" name="fb-oversight-crime" value="donors"> If the anonymous ballroom donors turn out to have business pending before the government</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/white-house-counsel-will-scharf-house-oversight-committee-robert-garcia-investigations/">CBS News</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752">NBC News (Scharf)</a> &middot;
+    <a href="https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899">NBC News (Reitz)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse">Al Jazeera</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia">Guardian</a> &middot;
+    <a href="https://www.foxnews.com/politics/stephen-miller-internal-memo-unleashes-trump-agencies-absolute-control-wiles-reign">Fox News (Miller memo)</a>
+  </p>
+</article>
+
+<article id="senate">
+  <h3>Colom wins Mississippi and Hyde-Smith concedes; Democrats will hold at least 55 Senate seats, and Republicans are rushing judges through before January</h3>
+  <div class="meta">
+    <span class="chip">Elections and electoral process</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (NBC News, CNBC, the Guardian, CBS News). Trigger (threshold event): the race was called and conceded Wednesday. Yesterday it sat in Also noted as uncalled.</p>
+  <p>Democrat Scott Colom, a district attorney, beat Sen. Cindy Hyde-Smith, according to the AP call cited by <a href="https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html">CNBC</a>. Hyde-Smith called to concede: &ldquo;I respect the decision of Mississippi voters.&rdquo; Mississippi last elected a Democratic senator 44 years ago, and Colom will be its first Black senator since Reconstruction. Trump carried the state by 23 points in 2024. NBC&rsquo;s exit poll found majorities of Mississippi voters disapproved of Trump, said tariffs hurt the economy and said military action in Iran was wrong (<a href="https://www.nbcnews.com/politics/2026-election/scott-colom-mississippi-senate-election-win-democrat-hyde-smith-rcna605729">NBC News</a>). Colom&rsquo;s pitch: &ldquo;We were never a lost cause. We were a betrayed cause,&rdquo; blaming Hyde-Smith over tariffs, health coverage and the war, and his own party for not competing. The <a href="https://www.theguardian.com/us-news/2026/nov/11/scott-colom-mississippi-democrat-senate-midterms">Guardian</a> reports he won with little help from national Democrats. It is the eighth Senate seat Democrats have flipped. Alaska is the only race still uncalled, with Democrat Mary Peltola narrowly ahead of Sen. Dan Sullivan.</p>
+  <p><b>What changes in January.</b> The Senate confirms judges, Cabinet officers and Fed nominees. Trump has had 57 judges confirmed this term. There are 28 vacancies and 15 more coming, and he has sent 16 nominees. The Republican-run Judiciary Committee advanced four district-court picks and held hearings on four more on Tuesday, and plans more hearings next week, breaking its usual every-other-week schedule (<a href="https://www.cbsnews.com/news/trump-judicial-confirmations-democrats-senate/">CBS News</a>). Sen. Dick Durbin says Republicans are trying to seat &ldquo;more than 30 qualified loyalists&rdquo; before the handover, and objects to two Texas picks: T. Elliot Gaiser, who runs DOJ&rsquo;s Office of Legal Counsel, and James Sullivan, who just lost re-election to the Texas Supreme Court. &ldquo;No one, or nearly no one, is going to get confirmed&rdquo; after January, said the conservative legal scholar Ed Whelan. Why it matters to you: a 55-seat Democratic Senate can block nominees, though it is well short of the 67 votes needed to override a veto.</p>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the new Senate?</b></p>
+    <label><input type="radio" name="fb-senate-55" value="alaska"> When Alaska is called and settles whether Democrats hold 55 or 56 seats</label>
+    <label><input type="radio" name="fb-senate-55" value="lame-duck-judges"> If the lame-duck Senate confirms Gaiser or Sullivan to Texas judgeships before January</label>
+    <label><input type="radio" name="fb-senate-55" value="colom-votes"> If Colom breaks with Senate Democrats on a major vote, such as war funding or tariffs</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/2026-election/scott-colom-mississippi-senate-election-win-democrat-hyde-smith-rcna605729">NBC News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/11/democrat-scott-colom-projected-to-win-mississippi-senate-election-over-incumbent-hyde-smith.html">CNBC</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/11/scott-colom-mississippi-democrat-senate-midterms">Guardian</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-judicial-confirmations-democrats-senate/">CBS News (judges)</a>
+  </p>
+</article>
+
+<article id="iran-israel">
+  <h3>Israel&rsquo;s caretaker security cabinet tells the military to prepare for a possible new strike on Iran; Iran says every base involved, &ldquo;from West Asia to Europe,&rdquo; would be a target</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 1 for the directive itself (Israel&rsquo;s public broadcaster KAN, which Al Jazeera, Anadolu and JFeed all relay), plus BBC, NPR and CNBC for Trump&rsquo;s remarks, oil and gasoline. Trigger (new verifiable fact): the cabinet directive, reported Wednesday night. Yesterday&rsquo;s Iran lead was about the Fairford plot charges.</p>
+  <p>Israel&rsquo;s security cabinet, chaired by Prime Minister Benjamin Netanyahu, has told the military to step up preparations for a possible attack on Iran, KAN reported. KAN said the directives &ldquo;could lead it to carry out activities that could trigger a war&rdquo; (<a href="https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack">Al Jazeera</a>). Netanyahu is now a caretaker. On Sunday, President Isaac Herzog asked Gadi Eisenkot to form a government after parties with 67 seats backed him and 46 backed Netanyahu. Eisenkot wrote to Netanyahu that deploying forces &ldquo;without a direct and immediate threat that cannot be delayed could have devastating consequences for Israeli democracy&rdquo; (<a href="https://www.aa.com.tr/en/middle-east/israeli-security-cabinet-orders-military-to-prepare-for-possible-attack-on-iran-report/4121434">Anadolu</a>). The cabinet meets Sunday, Nov.&nbsp;15, for the first time since Oct.&nbsp;5, and Netanyahu accused Eisenkot of discussing sensitive matters in public (<a href="https://www.jfeed.com/news-israel/toe0ks">JFeed</a>). We could not confirm what the directives allow or when. Why: KAN&rsquo;s report gave no scope or timing, and every outlet we found relays KAN.</p>
+  <p><b>The U.S. side.</b> Iran&rsquo;s security chief Mohsen Rezaei posted that if the U.S. &ldquo;launches another war,&rdquo; every base involved &ldquo;from West Asia to Europe&rdquo; is a target, and parliament speaker Mohammad Bagher Ghalibaf says the Strait of Hormuz will &ldquo;never return&rdquo; to its prewar status. At Arlington on Veterans Day, Trump said of the war, &ldquo;we won,&rdquo; adding, &ldquo;We want to make sure we have a total victory, not a 93% victory&rdquo; (<a href="https://www.bbc.com/news/articles/cmvg2r3dq7xno">BBC</a>). Rubio says economic pressure makes major combat unnecessary. Why it matters to you: the national gas average just fell to $3.94, mainly because Brent fell toward $90 on diplomacy, and Rystad&rsquo;s Jorge Le&oacute;n told <a href="https://text.npr.org/nx-s1-6037588">NPR</a> that renewed escalation would undo much of that. Brent was $92.92 early Thursday (<a href="https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html">CNBC</a>).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who decides whether the war resumes?</span>
+    <p><b>What is in dispute.</b> A dispute over authority and intent. Netanyahu&rsquo;s cabinet is preparing to strike. Eisenkot says a caretaker shouldn&rsquo;t start operations that can wait. Channel&nbsp;12, as relayed by Anadolu, reports that the military chief, Eyal Zamir, considers Netanyahu&rsquo;s plans ill-advised while Trump shows no appetite for another round. Trump says the U.S. could return to war if Qatar&rsquo;s diplomatic track fails.</p>
+    <p><b>Why the vantage differs.</b> Netanyahu is on the verge of losing office and has said the war continues until Iran&rsquo;s government falls. Eisenkot, a former army chief, is days from forming a government and wants the decision to be his. Iran&rsquo;s threats are meant to deter. Rystad&rsquo;s Le&oacute;n suggests Trump may see military action as leverage before Democrats take Congress in January.</p>
+    <p><b>What it means for the reader.</b> Iran&rsquo;s threat names U.S. bases, so a new round between Israel and Iran is a U.S. risk, not only an Israeli one. Sunday&rsquo;s cabinet meeting is the date to watch.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the risk of a new Israel&ndash;Iran round?</b></p>
+    <label><input type="radio" name="fb-iran-israel" value="sunday-cabinet"> If Israel&rsquo;s cabinet approves a strike at its Sunday meeting while Netanyahu is still caretaker</label>
+    <label><input type="radio" name="fb-iran-israel" value="us-base-hit"> If Iran hits a U.S. base or ship, pulling American forces back into combat</label>
+    <label><input type="radio" name="fb-iran-israel" value="qatar-deal"> Only if the Qatar talks produce a deal that reopens Hormuz and brings down gas prices</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack">Al Jazeera</a> &middot;
+    <a href="https://www.aa.com.tr/en/middle-east/israeli-security-cabinet-orders-military-to-prepare-for-possible-attack-on-iran-report/4121434">Anadolu</a> &middot;
+    <a href="https://www.jfeed.com/news-israel/toe0ks">JFeed</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cmvg2r3dq7xno">BBC</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6037588">NPR</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html">CNBC</a>
+  </p>
+</article>
+
+<article id="starshield">
+  <h3>Ukraine says SpaceX&rsquo;s Starshield is being throttled along the front again, letting Russian drones through, as Witkoff and Kushner meet Putin in Moscow</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (NBC News, CNBC, BBC). Trigger (new verifiable fact): Zelenskyy&rsquo;s statement Thursday on renewed speed limits, and the envoys&rsquo; arrival in Moscow. The Abu Dhabi talks ran here on Tuesday.</p>
+  <p>Ukrainian units have recorded &ldquo;systematic speed restrictions&rdquo; on Starshield, the military version of SpaceX&rsquo;s Starlink, along the whole front for several days, President Volodymyr Zelenskyy said. Terminals moving faster than about 100&nbsp;mph are cut off, which hampers interceptors chasing Russian jet-powered drones: &ldquo;there have already been strikes that got through&rdquo; (<a href="https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html">CNBC</a>). A similar slowdown in October lasted about a week (<a href="https://www.bbc.com/news/articles/cwrkgmymk55zo">BBC</a>). Musk has blamed Trump, the U.S. government says only Musk could have made the call, and Trump denies involvement (<a href="https://www.nbcnews.com/world/ukraine/ukraine-starshield-limits-russia-war-trump-musk-rcna608938">NBC News</a>). We could not confirm who ordered either slowdown. Why: SpaceX and the White House didn&rsquo;t answer requests for comment, and the October explanations conflicted.</p>
+  <p><b>The talks.</b> Steve Witkoff and Jared Kushner landed in Moscow on Thursday after two days of talks in Abu Dhabi, the first in nine months, which produced a large prisoner exchange and no breakthrough. &ldquo;There&rsquo;s no trust right now between the sides,&rdquo; Kushner said. He wants European countries added to the format, which Moscow has resisted, and the envoys then fly to Dublin to see Zelenskyy, who says Ukraine won&rsquo;t cede occupied territory (<a href="https://www.nbcnews.com/world/ukraine/us-envoys-moscow-meeting-putin-talks-abu-dhabi-rcna608931">NBC News</a>). Why it matters to you: a satellite network that the BBC describes as SpaceX-owned, and that Musk says the U.S. government controls, is now shaping the battlefield during U.S.-brokered talks, and nobody has said on the record who sets its limits.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who turned the dial?</span>
+    <p><b>What is in dispute.</b> A dispute over fact. Zelenskyy says the limits are deliberate. In October, Musk first wrote that &ldquo;Starshield systems are owned and controlled by the US government,&rdquo; then said Ukraine broke Starlink&rsquo;s terms. The Wall Street Journal reported Musk ordered the October limits and that Trump asked him to reverse them. Trump denies the White House ordered anything.</p>
+    <p><b>Why the vantage differs.</b> Kyiv wants U.S. pressure on SpaceX and has an interest in showing harm. Musk wants to avoid blame from both Washington and Kyiv. The White House is mediating and doesn&rsquo;t want to be seen squeezing Ukraine during talks. Only SpaceX&rsquo;s logs or a government contract officer could settle it, and neither has spoken.</p>
+    <p><b>What it means for the reader.</b> If the limits line up with the Moscow meeting, that looks like leverage; if SpaceX restores speeds within days, as in October, it may be a contract dispute. Either way, a single company controls a battlefield lever.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Starshield and the Ukraine talks?</b></p>
+    <label><input type="radio" name="fb-starshield" value="who-ordered"> If SpaceX or the White House says on the record who ordered the speed limits</label>
+    <label><input type="radio" name="fb-starshield" value="putin-terms"> If Witkoff and Kushner bring Zelenskyy a written territorial offer from Putin</label>
+    <label><input type="radio" name="fb-starshield" value="congress-contract"> If Congress moves to require unrestricted government-paid satellite service for Ukraine</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/world/ukraine/ukraine-starshield-limits-russia-war-trump-musk-rcna608938">NBC News</a> &middot;
+    <a href="https://www.nbcnews.com/world/ukraine/us-envoys-moscow-meeting-putin-talks-abu-dhabi-rcna608931">NBC News (Moscow)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html">CNBC</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cwrkgmymk55zo">BBC</a>
+  </p>
+</article>
+
+<article id="ice-record">
+  <h3>ICE reports a record 483,200 deportations for fiscal 2026 and is aiming for about 19,000 arrests a week under Stephen Miller</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip new">New subject</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 1 (CBS News, which obtained the DHS figures; we found no other newsroom with them this morning), plus DHS&rsquo;s own Nov.&nbsp;3 release for context. Underreported: the figures came out at 6&nbsp;a.m. and had not reached other fronts we swept.</p>
+  <p>ICE deported <b>483,200</b> people in the fiscal year that ended Sept.&nbsp;30, up from its previous record of 442,640 in fiscal 2025, and made more than 491,000 immigration arrests, nearly 475,000 of them administrative arrests for civil violations, according to DHS figures obtained by <a href="https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/">CBS News</a>. DHS says the total is about 18% above the Obama-era benchmark of 409,849 in fiscal 2012 and nearly 78% above fiscal 2024. ICE made 50,925 arrests in August alone. &ldquo;I couldn&rsquo;t be prouder,&rdquo; said DHS Secretary Markwayne Mullin. CBS&rsquo;s sources say ICE has been told to aim for about 19,000 arrests a week, a target set before the midterms, and officials don&rsquo;t expect the pace to slow now that Miller, who pushed for higher targets, is chief of staff. The 2025 tax-and-spending law gave ICE about $75&nbsp;billion, including $45&nbsp;billion for detention, money a Democratic Congress can&rsquo;t easily claw back. DHS&rsquo;s <a href="https://www.dhs.gov/news/2026/11/03/making-america-safe-again-under-president-trump-dhs-delivered-most-secure-border">Nov.&nbsp;3 release</a> separately claims nearly 1.2&nbsp;million deportations since Trump returned to office.</p>
+  <p><b>Why it matters to you.</b> Trump has said parts of the campaign may have gone too far, and CBS polling shows discomfort with how enforcement is carried out, yet the arrest target and the money are already in place. That leaves the January Congress with oversight more than funding as its lever. We found no Florida or Tampa Bay breakdown of the figures.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what counts as a deportation?</span>
+    <p><b>What is in dispute.</b> A dispute over numbers. DHS calls 483,200 the highest in ICE&rsquo;s history. Syracuse University&rsquo;s TRAC, using case-by-case court records, found formal removals were only 63% of deportations in July and August 2026, with the rest voluntary departures and returns, as CBS reports. CBS also notes that by broader governmentwide measures, deportations were higher in parts of the early 2000s.</p>
+    <p><b>Why the vantage differs.</b> DHS is making a political case after an election in which enforcement was an issue, and it chooses what to count. TRAC is an independent research group that works from immigration-court records. CBS saw the DHS data, not the underlying case files.</p>
+    <p><b>What it means for the reader.</b> The record is real by ICE&rsquo;s own count, but much of it may be people pressured to leave rather than formally removed. That difference matters for court challenges and for what a Democratic Congress can investigate.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the deportation numbers?</b></p>
+    <label><input type="radio" name="fb-ice-record" value="tampa-local"> If Tampa Bay or Pasco arrests or detention numbers rise under the 19,000-a-week target</label>
+    <label><input type="radio" name="fb-ice-record" value="purse"> If Democrats use January spending bills to fence off ICE detention money</label>
+    <label><input type="radio" name="fb-ice-record" value="trac-count"> If TRAC or a court shows the record rests mostly on voluntary departures</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/">CBS News</a> &middot;
+    <a href="https://www.dhs.gov/news/2026/11/03/making-america-safe-again-under-president-trump-dhs-delivered-most-secure-border">DHS (Nov.&nbsp;3 release)</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="epstein-ii">
+  <h3>Massie&rsquo;s petition to force a vote on a second Epstein files bill reaches 218 signatures; a floor vote could come Dec.&nbsp;2 or 3</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (ABC News, read in full; Axios and The Hill, whose pages block automated requests, seen through search excerpts).</p>
+  <p>All 214 House Democrats and four lame-duck Republicans (Thomas Massie, Nancy Mace, Ralph Norman and Brian Fitzpatrick) signed the discharge petition for the Epstein Files Transparency Act II, which would let state attorneys general, victims and members of Congress sue the attorney general for withholding or over-redacting Epstein records (<a href="https://abcnews.com/US/discharge-petition-2nd-epstein-files-bill-secures-218/story?id=138057235">ABC News</a>; <a href="https://www.axios.com/2026/11/11/massie-epstein-files-second-vote">Axios</a>; <a href="https://thehill.com/homenews/house/6214408-massie-epstein-files-discharge-petition/">The Hill</a>). The petition must sit for seven legislative days, so ABC says a vote could come after Thanksgiving, as early as Wednesday, Dec.&nbsp;2, or Thursday, Dec.&nbsp;3. Why it matters: it arrives alongside a House Oversight Republican report urging DOJ to reopen the Epstein case, and the first files law, which Massie also forced, passed a year ago.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://abcnews.com/US/discharge-petition-2nd-epstein-files-bill-secures-218/story?id=138057235">ABC News</a> &middot; <a href="https://www.axios.com/2026/11/11/massie-epstein-files-second-vote">Axios</a> &middot; <a href="https://thehill.com/homenews/house/6214408-massie-epstein-files-discharge-petition/">The Hill</a></p>
+</article>
+
+<article id="credit-cards">
+  <h3>Credit-card balances hit a record $1.29 trillion, and a debt counselor reports its busiest two months in 15 years</h3>
+  <div class="meta"><span class="chip">Macro &amp; markets</span><span class="chip">US financials</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (NBC News, CNBC), plus the New York Fed&rsquo;s report page.</p>
+  <p>Card balances rose $22&nbsp;billion in the third quarter to $1.29&nbsp;trillion, and total household debt rose $334&nbsp;billion to $19.1&nbsp;trillion, according to the <a href="https://www.newyorkfed.org/microeconomics/hhdc">New York Fed</a>&rsquo;s quarterly report released Tuesday (<a href="https://www.cnbc.com/2026/11/10/credit-card-debt-record.html">CNBC</a>). &ldquo;The past two months have been our busiest months for debt management plan sign-ups in more than 15 years,&rdquo; Ted Rossman of the nonprofit Money Management International told <a href="https://www.nbcnews.com/business/economy/us-consumers-credit-card-debt-spending-holiday-season-rcna608731">NBC News</a>. Retail sales rose only 0.2% in October on the CNBC/NRF gauge, and the savings rate is under 4%. Why it matters: this is the debt that bank card books, JPMorgan&rsquo;s among them, carry into the holidays as household savings thin.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/business/economy/us-consumers-credit-card-debt-spending-holiday-season-rcna608731">NBC News</a> &middot; <a href="https://www.cnbc.com/2026/11/10/credit-card-debt-record.html">CNBC</a> &middot; <a href="https://www.newyorkfed.org/microeconomics/hhdc">New York Fed</a></p>
+</article>
+
+<article id="consulting-ai">
+  <h3>KPMG&rsquo;s global consulting head says the advice business &ldquo;is literally nonexistent anymore&rdquo; as AI breaks the billable hour and the graduate pyramid</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">AI &amp; tech industry</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (CNBC).</p>
+  <p>&ldquo;We were making quite a lot of money by providing advice. I think that part of our business is literally nonexistent anymore,&rdquo; Svilena Tzekova, KPMG&rsquo;s global head of consulting, told <a href="https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html">CNBC</a>. Clients say they want to pay for outcomes, but their procurement teams still compare head counts and hourly rates, and AI adds new costs such as compute and per-token model fees, so &ldquo;it&rsquo;s very difficult&rdquo; to price outcomes, she said. Elixirr, a smaller firm that never billed by the hour, says the big firms must redeploy juniors fast, &ldquo;otherwise the economics of the pyramid models don&rsquo;t work anymore.&rdquo; EY says AI now does the first pass of junior auditors&rsquo; &ldquo;ticking and tying.&rdquo; Why it matters: this is the pricing and staffing question for anyone selling AI work to financial-services clients.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html">CNBC</a></p>
+</article>
+
+<article id="kalshi">
+  <h3>The CFTC is investigating whether Kalshi properly filed event contracts it self-certified</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">US financials</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (CNBC, which notes it has a commercial relationship with Kalshi and a minority stake; Politico first reported the probe but its page was blocked to us).</p>
+  <p>Kalshi confirmed the investigation, which it calls &ldquo;a procedural error involving the submission of a handful of contracts, many of which weren&rsquo;t live,&rdquo; and said the agency flagged weather contracts (<a href="https://www.cnbc.com/2026/11/11/cftc-investigates-if-kalshi-improperly-self-certified-event-contracts.html">CNBC</a>). Politico reported that charges could come soon. The CFTC is separately investigating Polymarket, which confirmed layoffs this week, and Rep. Ro Khanna wants sports prediction markets banned once Democrats take over. Why it matters: self-certification is how prediction markets launch products without prior approval, and the CFTC is now testing it.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/11/cftc-investigates-if-kalshi-improperly-self-certified-event-contracts.html">CNBC</a> &middot; <a href="https://www.foxbusiness.com/economy/polymarket-confirms-layoffs-prediction-market-giant-undergoes-major-restructuring">Fox Business (Polymarket)</a></p>
+</article>
+
+<article id="psa">
+  <h3>The American Cancer Society now recommends a PSA test every other year from age 50, reversing years of caution</h3>
+  <div class="meta"><span class="chip">Science &amp; public health</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (NBC News). We did not read the guideline in CA: A Cancer Journal for Clinicians.</p>
+  <p>The new guidelines, published Thursday, advise men at average risk to get the prostate-specific antigen blood test every two years after 50, annual testing from 45 for two higher-risk groups, and a conversation with a doctor at 70 to 74. Previously the Cancer Society advised &ldquo;shared decision-making&rdquo; (<a href="https://www.nbcnews.com/health/cancer/new-prostate-cancer-screening-guidelines-regular-psa-test-rcna608629">NBC News</a>). The change rests largely on a European randomized trial with more than two decades of follow-up showing screening lowers prostate cancer deaths. The U.S. Preventive Services Task Force recommended against PSA testing at any age in 2012, and late-stage diagnoses then crept up. Why it matters: it changes the default advice for most men over 50, and the old worry, overtreatment, has not gone away.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/health/cancer/new-prostate-cancer-screening-guidelines-regular-psa-test-rcna608629">NBC News</a></p>
+</article>
+
+<article id="rubio-flights">
+  <h3>Rubio has taken at least 15 personal trips to Gainesville on military aircraft, many to see his son&rsquo;s Gators games, at a cost the Post puts above $1.2 million</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Broader domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (the Washington Post investigation, as reported by the Guardian; we did not read the Post&rsquo;s story itself).</p>
+  <p>Of 23 trips Secretary of State Marco Rubio made to Gainesville on military aircraft, 15 were &ldquo;personal,&rdquo; and he has attended at least 10 games over two seasons, where his son Anthony is a walk-on running back who has played in four games in four years (<a href="https://www.theguardian.com/us-news/2026/nov/11/marco-rubio-travel-costs-university-florida-football">Guardian</a>). Security rules bar Rubio from flying commercially, and officials repay only the price of an economy ticket; Rubio and State declined to say how much he has repaid. &ldquo;I have and will continue to try and make it to as many events that are important to me personally and to my family as possible,&rdquo; Rubio said. CREW&rsquo;s Cynthia Brown called it &ldquo;more of an optics issue than a violation&rdquo; that still merits scrutiny. Why it matters: the trips are exactly the kind of spending the incoming Democratic committees say they will examine, and they run through Florida.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/us-news/2026/nov/11/marco-rubio-travel-costs-university-florida-football">Guardian</a></p>
+</article>
+
+<article id="new-college">
+  <h3>New College wants Board of Governors approval for up to $47.5 million in debt, partly from a private investor it won&rsquo;t name yet</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (WUSF), which quotes the state Division of Bond Finance memo.</p>
+  <p>The Sarasota college&rsquo;s plan covers $28.5&nbsp;million left on a USF Sarasota-Manatee dorm it took over and refinances about $15.8&nbsp;million of older debt, with interest-only payments at first and up to $7.5&nbsp;million from a private investor; the package must be refinanced or repaid in 2032 (<a href="https://www.wusf.org/politics-issues/2026-11-12/new-college-loan-plan-risky-will-board-of-governors-approve">WUSF</a>). The state&rsquo;s bond finance director, J. Ben Watkins III, wrote that New College has no credit rating or access to public markets. A former New College vice president called it &ldquo;a debt bomb.&rdquo; The college says the investor will be named &ldquo;in the next few weeks.&rdquo; Why it matters: the state bond office says the deal&rsquo;s viability depends largely on New College&rsquo;s continued success, which has rested on &ldquo;extraordinary financial support from the legislature.&rdquo;</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/politics-issues/2026-11-12/new-college-loan-plan-risky-will-board-of-governors-approve">WUSF</a></p>
+</article>
+
+<article id="tomb">
+  <h3>A sentinel at the Tomb of the Unknown Soldier reprimanded Hegseth&rsquo;s group for laughing during Veterans Day photos, and the Pentagon backed the soldier</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (BBC, NBC News, Al Jazeera).</p>
+  <p>Video shows Defense Secretary Pete Hegseth, his wife and senior advisers laughing and talking while posing in front of the tomb, and the guard stepping toward them: &ldquo;All visitors will maintain an atmosphere of silence and respect at all times&rdquo; (<a href="https://www.bbc.com/news/articles/cmvg2r3dq7xno">BBC</a>; <a href="https://www.nbcnews.com/politics/trump-administration/hegseth-reprimanded-arlington-cemetery-veterans-tomb-unknown-soldier-rcna608869">NBC News</a>; <a href="https://www.aljazeera.com/news/2026/11/12/hegseth-entourage-reprimanded-by-guard-at-tomb-of-the-unknown-soldier">Al Jazeera</a>). Chief Pentagon spokesman Sean Parnell said the soldier &ldquo;correctly and respectfully reminded everyone to maintain decorum.&rdquo; CBS, the BBC&rsquo;s U.S. partner, says guards admonish visitors a few times a day. Why it matters: it lands the day after the House shelved his impeachment, and it is the kind of moment public reaction runs on.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.com/news/articles/cmvg2r3dq7xno">BBC</a> &middot; <a href="https://www.nbcnews.com/politics/trump-administration/hegseth-reprimanded-arlington-cemetery-veterans-tomb-unknown-soldier-rcna608869">NBC News</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/12/hegseth-entourage-reprimanded-by-guard-at-tomb-of-the-unknown-soldier">Al Jazeera</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="epstein-floor"> The Epstein bill, if House leaders try to block the discharge motion when the House returns in December</label>
+  <label><input type="radio" name="fb-also" value="rubio-ig"> Rubio&rsquo;s flights, if an inspector general or a congressional committee opens a review</label>
+  <label><input type="radio" name="fb-also" value="new-college-investor"> New College&rsquo;s loan, if the Board of Governors approves it before the investor is named</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 74 sources checked; 18 swept before any weighting category was consulted. Six leads and eight items below the line (14 stories). Four leads carry over from earlier editions, each with a stated trigger: Nvidia (the board&rsquo;s meeting and the second-relationship report), Mississippi (the race was called), Iran (the Israeli cabinet directive), Ukraine (renewed Starshield limits and the Moscow meeting). Marker tallies: PS&nbsp;0 &middot; IC&nbsp;7 &middot; SS&nbsp;7 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: whether Nvidia&rsquo;s board has decided, The Information&rsquo;s $7.5&nbsp;billion figure, the scope of Israel&rsquo;s directive, and who ordered the Starshield limits. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;12 is a Thursday; Nov.&nbsp;15 a Sunday; Nov.&nbsp;18 a Wednesday; Nov.&nbsp;19 a Thursday; Dec.&nbsp;2 a Wednesday; Dec.&nbsp;3 a Thursday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-12-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> &mdash; near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>A three-story building collapsed in Brooklyn on Wednesday, killing at least five people and injuring at least 17 (<a href="https://www.nbcnews.com/news/us-news/new-york-brooklyn-building-collapse-rcna608909">NBC News</a>). Missed: no cause or policy question is established yet.</li>
+    <li>Anti-hunger groups say USDA&rsquo;s proposed SNAP eligibility rule could cut off more than 6&nbsp;million people; comments close Thursday, Dec.&nbsp;10 (<a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">Federal Register</a>). Missed: the rule ran here Tuesday, and today brings reaction, not a new fact.</li>
+    <li>A PAHO panel is meeting this week on whether the U.S., Mexico and Guatemala lose measles-free status (<a href="https://www.aljazeera.com/news/2026/11/12/why-the-us-mexico-and-guatemala-may-lose-their-measles-free-status">Al Jazeera</a>). Missed: ran as a lead yesterday, and the decision is still pending.</li>
+    <li>More than 1,000 residents packed a workshop against a hyperscale data center in Auburndale, and Fox&nbsp;13 asks whether moratoriums in other states push builders to Florida (<a href="https://www.fox13news.com/news/could-tech-giants-eye-florida-data-centers-after-midterms">Fox&nbsp;13</a>). Missed: Auburndale ran yesterday, and no permit vote is scheduled.</li>
+    <li>UAP: no eighth Pentagon file release has posted since Oct.&nbsp;23 (<a href="https://www.war.gov/UFO/">war.gov</a>), and a disclosure newsletter reports that Jake Barber has joined Rep. Eric Burlison&rsquo;s staff. Missed: no new official paperwork.</li>
+    <li>JPMorgan is leading retail allocations for Anthropic&rsquo;s IPO, and Politico reports that AI agents are reopening the banks&rsquo; fight with fintechs over data access (<a href="https://www.politico.com/newsletters/morning-money/2026/11/11/ai-agents-scramble-banks-fight-with-fintechs-01160620">Politico</a>). Missed: no new terms or rule action today.</li>
+    <li>The 10-year Treasury yield traded near 5.01% early Thursday as bond trading resumed after Veterans Day; producer prices come out Friday (<a href="https://www.cnbc.com/2026/11/12/us-treasurys-bonds-yields.html">CNBC</a>). Missed: a vendor quote, not Treasury&rsquo;s closing series, and a price move on its own.</li>
+    <li>The gasoline average fell to $3.94, which AAA and analysts attribute mainly to seasonal factors and cheaper crude (<a href="https://text.npr.org/nx-s1-6037588">NPR</a>). Missed: the cause is seasonal, and the war risk is covered in the Iran lead.</li>
+    <li>Xi said Taiwan&rsquo;s &ldquo;reunification&rdquo; must happen, days before he is expected to meet Trump (<a href="https://www.nbcnews.com/world/asia/china-xi-says-taiwan-reunification-must-happen-history-cannot-stopped-rcna608935">NBC News</a>). Missed: rhetoric; the summit is the event to watch.</li>
+    <li>Russia&rsquo;s ambassador to the U.S., Alexander Darchiev, died at 66 (<a href="https://www.nbcnews.com/world/russia/russias-ambassador-us-dies-suddenly-age-66-rcna608838">NBC News</a>). Missed: no policy change reported.</li>
+    <li>Congo&rsquo;s Ebola outbreak passed 11,000 cases, its deadliest (<a href="https://www.nbcnews.com/world/africa/ebola-tops-11000-cases-congos-deadliest-outbreak-rcna608872">NBC News</a>). Missed: we found no U.S. travel or health-policy channel reported today.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
