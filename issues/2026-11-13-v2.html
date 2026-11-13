@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 13 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Friday, 13 November 2026 &middot; morning edition</div>
+  <h1>Jensen Huang resigns and the Nvidia inquiry moves to Lutnick, Microsoft&rsquo;s outage runs into a second day, Iran claims a hit on a U.S. radar in Bahrain, Trump says he wants to &ldquo;get Cuba done,&rdquo; and Van Hollen challenges Schumer</h1>
+  <p class="summary">Five leads, seven below the line. Jensen Huang resigned as Nvidia&rsquo;s chief executive on Thursday, and the questions have moved to Commerce Secretary Howard Lutnick, whom a Republican Senate chairman has asked to testify in December; a Microsoft 365 outage that began Thursday afternoon was still disrupting Outlook and Teams for millions on Friday morning; Iran&rsquo;s Revolutionary Guard said it destroyed a U.S. early-warning radar in Bahrain hours after Trump said &ldquo;we don&rsquo;t need a deal&rdquo; and took Vance off the Iran file; Trump told Hugh Hewitt he wants to &ldquo;get Cuba done&rdquo; before he leaves office and would consider force; and Chris Van Hollen will challenge Chuck Schumer for majority leader. Below the line: the lawsuit to pause frontier AI, Donald Trump Jr.&rsquo;s exit from Kalshi, the $1.2&nbsp;billion Binance seizure and a deepfake scam, a 16-year low in home sales, Hillsborough&rsquo;s data-center pause, the Dec.&nbsp;11 hemp ban, and the IEA&rsquo;s oil surplus.</p>
+  <p class="sub">Friday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-13-v2.html</code>.</p>
+  <p class="prov"><b>78 sources checked, 21 of them swept before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news index, Fox News front and politics page, BBC News, Guardian US, CNBC world and markets, NBC News, CBS News, ABC News, Fox Business, PBS NewsHour, Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, Suncoast News, the Federal Register public-inspection list, X US trends and X news. Politico, Axios, The Hill, Florida Politics and WFLA returned bot-check pages, so Politico, The Hill and Florida Politics appear only through search results; BLS returned &ldquo;Access Denied.&rdquo; Producer prices come out at 8:30&nbsp;a.m. ET today, after this edition.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for JPMorgan, UAP and Florida data-center news and rescanned the Federal Register list for documents the fronts missed (an OFAC Cuba general license, an Iran oil presidential determination, an FAA airspace notice). None cleared the bar on its own; the Cuba license is a May document published only now. The FaceStealer deepfake scheme is underreported: most coverage leads with the Binance money, but the Justice Department says the scam uses fake Teams and Zoom calls against ordinary professionals. No open or recently closed brief-feedback issue required a new change: issue #1 (Krak&oacute;w) is already applied and its wake condition is closed.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#nvidia-exit">Huang resigns; Lutnick asked to testify on Nvidia chip exports</a></li>
+    <li><a href="#msft-outage">Microsoft 365 outage stretches into a second day</a></li>
+    <li><a href="#iran-bahrain">Iran claims a strike on a U.S. radar in Bahrain as Trump drops the deal</a></li>
+    <li><a href="#cuba">Trump wants to &ldquo;get Cuba done&rdquo; before he leaves, and would consider force</a></li>
+    <li><a href="#senate-leader">Van Hollen challenges Schumer for majority leader</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#ai-pause-suit">Nonprofits sue five AI developers to freeze new models</a></li>
+    <li><a href="#kalshi-trumpjr">Donald Trump Jr. leaves Kalshi&rsquo;s payroll</a></li>
+    <li><a href="#binance-seizure">U.S. seizes $1.2 billion from the Binance theft and takes down a deepfake scam</a></li>
+    <li><a href="#home-sales">Existing-home sales fall to a 16-year low</a></li>
+    <li><a href="#hillsborough-dc">Hillsborough waits for new commissioners on a data-center pause</a></li>
+    <li><a href="#hemp-ban">The federal hemp THC ban arrives Dec.&nbsp;11</a></li>
+    <li><a href="#iea-surplus">IEA says the oil market is back in surplus</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="nvidia-exit">
+  <h3>Jensen Huang resigned as Nvidia&rsquo;s chief executive on Thursday; a Republican Senate chairman has asked him and Commerce Secretary Howard Lutnick to testify in December</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6 newsrooms (CBS News, NPR, CNBC, the Guardian, NBC News and Fortune), plus Bloomberg Law seen through a search excerpt. Trigger (threshold event): Huang&rsquo;s resignation and the Senate Banking Committee&rsquo;s letters, both since yesterday&rsquo;s lead on the board meeting.</p>
+  <p>Nvidia&rsquo;s board announced Thursday that Huang had resigned effective immediately. Chief financial officer Colette Kress becomes interim CEO and keeps the CFO job, and Harvey Jones was named the company&rsquo;s first board chair (<a href="https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/">CBS News</a>). The board says it will search inside and outside the company, and Nvidia still plans to report quarterly earnings on Tuesday, Nov.&nbsp;17 (<a href="https://text.npr.org/nx-s1-6037833">NPR</a>). After the announcement, Reuters reported that Huang had also had a relationship with a second Nvidia employee, as CBS relays. Senate Banking Chairman Tim Scott, a South Carolina Republican, sent letters Thursday evening asking Huang and Lutnick to testify, and warned that the committee is &ldquo;prepared to use all tools at our disposal, including subpoenas&rdquo; (<a href="https://fortune.com/2026/11/13/senate-banking-committee-nvidia-jensen-huang-howard-lutnick/">Fortune</a>). Lutnick&rsquo;s spokeswoman says he &ldquo;proactively agreed&rdquo; to appear (<a href="https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html">CNBC</a>). Rep. Brian Mast, R-Fla., says Huang has also agreed to brief House members on his relationship with the alleged spy (<a href="https://www.nbcnews.com/tech/tech-news/jensen-huang-agrees-brief-congress-interactions-alleged-spy-lawmaker-s-rcna608990">NBC News</a>).</p>
+  <p>The pressure is now on Commerce. The <a href="https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china">Guardian</a>, citing the Associated Press, reports that White House officials are discussing whether to fire Lutnick, after it emerged that an intelligence report on Huang&rsquo;s relationship had circulated among senior officials and that Commerce had delayed blacklisting Megaspeed, the Singapore company Alice Huang worked for. CNBC says Megaspeed bought more than $4.8&nbsp;billion of advanced Nvidia chips over two years. Republican Sens. John Cornyn (&ldquo;Heads should roll&rdquo;), John Curtis and Jim Banks have criticised Lutnick, and so have Democrats. We could not confirm that a firing is under active consideration. Why: the AP report rests on unnamed officials and we saw it only as the Guardian relayed it; the White House has not commented.</p>
+  <p><b>Why it matters to you.</b> This has become a fight over how the U.S. polices AI chip exports, and it lands on the Commerce Department, which writes those rules. NBC reports that a loophole letting Chinese firms rent top Nvidia chips through overseas cloud data centers &ldquo;remains wide open&rdquo; (<a href="https://www.nbcnews.com/tech/tech-news/nvidia-chips-loophole-export-ruleschinese-companies-access-megaspeed-rcna608601">NBC News</a>). Elizabeth Warren, who takes over the Banking Committee in January, says Huang&rsquo;s departure does not absolve him or the company (CBS). For anyone advising banks or companies on AI build-outs, a stricter Commerce regime on where chips can be used is now likelier than it was a week ago.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is this Huang&rsquo;s scandal or Commerce&rsquo;s?</span>
+    <p><b>What is in dispute.</b> A dispute over who is accountable, plus a factual gap on dates. Banks says Lutnick &ldquo;appears to have used loopholes to allow some of these chip sales to occur&rdquo;; Mast says Congress must investigate Commerce but that he has confidence in Lutnick (CNBC). CNBC and Bloomberg Law say Huang was asked for Thursday, Dec.&nbsp;3 and Lutnick for Thursday, Dec.&nbsp;10; Fortune and the Washington Examiner give Dec.&nbsp;3 for both. We could not confirm Lutnick&rsquo;s date, because the letters have not been published in full.</p>
+    <p><b>Why the vantage differs.</b> Banks, Cornyn and Curtis are Republicans pressing for tighter China controls, and they gain by putting distance between the party and the scandal before January. Mast is a Florida Republican and a Trump ally. Warren and Schumer want the administration&rsquo;s knowledge on the record before Democrats take the gavels. Lutnick&rsquo;s office is defending itself, and its voluntary appearance gets ahead of a subpoena.</p>
+    <p><b>What it means for the reader.</b> Watch whether Commerce adds Megaspeed to the Entity List or closes the cloud-rental gap before Dec.&nbsp;3. Either would show the administration moving the blame onto rules rather than people.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Nvidia fallout?</b></p>
+    <label><input type="radio" name="fb-nvidia-exit" value="who-knew"> If Huang&rsquo;s Senate testimony names who in the administration knew about Alice Huang, and when</label>
+    <label><input type="radio" name="fb-nvidia-exit" value="lutnick-megaspeed"> If the White House fires Lutnick or Commerce blacklists Megaspeed</label>
+    <label><input type="radio" name="fb-nvidia-exit" value="cloud-rule"> If Commerce issues a rule shutting the overseas cloud-rental route for Chinese firms</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/">CBS News</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6037833">NPR</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html">CNBC</a> &middot;
+    <a href="https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china">Guardian</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/jensen-huang-agrees-brief-congress-interactions-alleged-spy-lawmaker-s-rcna608990">NBC News (briefing)</a> &middot;
+    <a href="https://www.nbcnews.com/tech/tech-news/nvidia-chips-loophole-export-ruleschinese-companies-access-megaspeed-rcna608601">NBC News (loophole)</a> &middot;
+    <a href="https://fortune.com/2026/11/13/senate-banking-committee-nvidia-jensen-huang-howard-lutnick/">Fortune</a> &middot;
+    <a href="https://news.bloomberglaw.com/banking-law/scott-asks-huang-lutnick-to-testify-before-senate-banking-panel">Bloomberg Law (excerpt)</a>
+  </p>
+</article>
+
+<article id="msft-outage">
+  <h3>A Microsoft 365 outage that began Thursday afternoon was still disrupting Outlook, Teams and Copilot for millions on Friday morning; Microsoft rules out a cyberattack</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">AI and financial services</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 (CNBC, BBC, the Guardian, NPR and Fox Business), each quoting Microsoft&rsquo;s own status updates.</p>
+  <p>Connection problems began shortly before 1&nbsp;p.m. ET on Thursday and ran through the Asian business day and into the European and early U.S. morning, hitting Outlook, Teams, SharePoint and Copilot (<a href="https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html">CNBC</a>). In a 7&nbsp;a.m. ET update Microsoft said it was making &ldquo;encouraging recovery progress in Europe,&rdquo; that North America was &ldquo;improving,&rdquo; and that it had extended the window for delayed email to 48 hours so messages are not lost. Downdetector logged about 140,000 Outlook reports from 74 countries on Thursday evening, and OpenAI and Anthropic both reported knock-on problems (<a href="https://www.bbc.com/news/articles/cwvg238zrnm5o">BBC</a>). The U.S. House, courts from Los Angeles to Texas, Japan&rsquo;s government and Hong Kong bankers were among those affected (<a href="https://text.npr.org/nx-s1-6039343">NPR</a>). Microsoft has more than 430 million 365 users and says over 90% of the Fortune 500 use Copilot (<a href="https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports">Guardian</a>). We could not confirm when service will be fully restored. Why: Microsoft has given no time estimate and says restarted servers can fail again once traffic returns.</p>
+  <p><b>Why it matters to you.</b> If your clients or your own office run on 365, Thursday afternoon&rsquo;s mail may arrive late or out of order, so check anything time-sensitive sent since about 1&nbsp;p.m. ET Thursday. It is also a test case for the AI pitch in financial services: Copilot went down with email, and the AI labs that rely on Microsoft were hit too. The post-incident report Microsoft has promised is the document to read.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what actually broke?</span>
+    <p><b>What is in dispute.</b> A dispute over cause. Microsoft first blamed &ldquo;elevated load,&rdquo; and CNBC describes an initial traffic surge. Microsoft&rsquo;s admin alerts, quoted by <a href="https://www.foxbusiness.com/technology/microsoft-365-hit-multi-region-connectivity-issues-amid-elevated-infrastructure-load">Fox Business</a>, say the load was not driven by more traffic but by servers that were &ldquo;unexpectedly unavailable,&rdquo; failing automated health checks and leaving the rest overloaded; the Guardian says Microsoft has pointed to settings applied to servers. A cybersecurity lawyer on Fox Business says it is reasonable to wonder whether AI or hackers were involved; Microsoft says it sees no malicious activity.</p>
+    <p><b>Why the vantage differs.</b> Microsoft controls all the evidence and has a commercial reason to frame this as a capacity problem that is being fixed. Outside commentators have no access to the logs and fill the gap with the scenarios their audiences fear most. The newsrooms are all relaying Microsoft&rsquo;s status page at different hours, which explains much of the drift.</p>
+    <p><b>What it means for the reader.</b> Until the root-cause report appears, treat &ldquo;not a cyberattack&rdquo; as Microsoft&rsquo;s statement, not a finding, and treat a configuration error as the leading explanation.</p>
+  </div>
+  <details><summary>Dig deeper: Microsoft&rsquo;s own account, in order</summary>
+    <p>Thursday: &ldquo;elevated load across multiple regions&rdquo; from a &ldquo;number of servers being unexpectedly unavailable.&rdquo; By 6:30&nbsp;p.m. ET: &ldquo;actions taken thus far have not provided the anticipated relief.&rdquo; Later: a &ldquo;core process on affected servers is becoming overwhelmed&rdquo;; engineers isolated some infrastructure, limited traffic types in some locations and rebuilt servers on a previous configuration to test whether that stopped them hanging (Fox Business). Friday: &ldquo;early signs of stabilisation, but service capacity has not yet returned to normal levels&rdquo; (Guardian), then recovery &ldquo;improving&rdquo; in North America (CNBC). Microsoft says a post-incident report will include &ldquo;defence-in-depth repair items.&rdquo;</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Microsoft outage?</b></p>
+    <label><input type="radio" name="fb-msft-outage" value="root-cause"> If Microsoft&rsquo;s post-incident report blames a configuration push or automated AI tooling</label>
+    <label><input type="radio" name="fb-msft-outage" value="lost-filings"> If courts, agencies or Florida offices report missed filings or deadlines because of it</label>
+    <label><input type="radio" name="fb-msft-outage" value="concentration-probe"> If regulators or Congress open a review of dependence on one cloud provider</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html">CNBC</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cwvg238zrnm5o">BBC</a> &middot;
+    <a href="https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports">Guardian</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6039343">NPR</a> &middot;
+    <a href="https://www.foxbusiness.com/technology/microsoft-365-hit-multi-region-connectivity-issues-amid-elevated-infrastructure-load">Fox Business</a>
+  </p>
+</article>
+
+<article id="iran-bahrain">
+  <h3>Iran&rsquo;s Revolutionary Guard says it destroyed a U.S. early-warning radar in Bahrain, its first claimed hit on U.S. forces in the Gulf since September, hours after Trump said &ldquo;we don&rsquo;t need a deal&rdquo;</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 read in full or in substantial excerpt (Al Jazeera, which co-bylines Reuters; the Guardian; Radio Free Europe/Radio Liberty; Rudaw), plus AP seen through a search excerpt. All rely on Iranian state media for the claim itself. Trigger (new verifiable fact): the Guard&rsquo;s claimed strike and Trump&rsquo;s statement ending the push for a deal, both since yesterday&rsquo;s lead on Israel&rsquo;s strike preparations.</p>
+  <p>The Guard said its aerospace force &ldquo;targeted and destroyed&rdquo; a U.S. early-warning radar in Bahrain, home of the Navy&rsquo;s Fifth Fleet, in retaliation for what it called an air attack on a telecommunications tower in Sirik, a port town on the Strait of Hormuz (<a href="https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain">Al Jazeera</a>). It warned that if &ldquo;violations&rdquo; recur it is ready &ldquo;to engage without limits.&rdquo; The Guard&rsquo;s statement did not directly blame the United States for the Sirik strike, and neither Washington nor Manama commented at first (<a href="https://www.rferl.org/a/iran-us-sirik-bahrain-war-nuclear-talks/33897951.html">RFE/RL</a>). <a href="https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08">AP</a> adds that the Guard also says a tanker hit a mine in the strait. We could not confirm that any radar was hit or that a tanker struck a mine. Why: both claims come only from Iranian state media, and no U.S., Bahraini or independent imagery had appeared when we published.</p>
+  <p>On Thursday Trump wrote, &ldquo;We don&rsquo;t need a deal with Iran. Those days have long since passed. We&rsquo;ve got their money, Hundreds of Billions of Dollars, and we&rsquo;ve got their Strait!&rdquo; and told Vice President Vance, who had been talking almost daily with Qatari and Pakistani mediators, to focus on &ldquo;Democrat run Cities and States&rdquo; instead (<a href="https://www.theguardian.com/us-news/2026/nov/12/trump-jd-vance-iran-war">Guardian</a>). Asked by Hugh Hewitt whether he would use force against Iranian threats, Trump said, &ldquo;No hesitation,&rdquo; and that Iran&rsquo;s government outlasting his presidency &ldquo;would be a defeat&rdquo; (<a href="https://rudaw.net/english/categories/iran/1080142">Rudaw</a>).</p>
+  <p><b>Why it matters to you.</b> Central Command, which runs this war, is headquartered at MacDill Air Force Base in Tampa. Oil has eased as Gulf exports recover (see the IEA item below), and a new exchange of fire in the strait is the quickest way to reverse that. Taking Vance off the file also removes the official most identified with a negotiated end.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is the war winding down or heating up?</span>
+    <p><b>What is in dispute.</b> A dispute over facts on the ground and over intent. Iran says it hit a U.S. radar; the U.S. has not confirmed it. Trump says the U.S. has won and needs no deal; Secretary of State Marco Rubio says economic pressure is working well enough that big strikes are unnecessary (Al Jazeera); Iran&rsquo;s chief negotiator, Mohammad Bagher Ghalibaf, says Tehran is waiting on Washington&rsquo;s answer to seven conditions and that &ldquo;the ball is now in the American court&rdquo; (Rudaw). Israel&rsquo;s public broadcaster KAN reported that CENTCOM told Israel to prepare for renewed operations; a CENTCOM official called that &ldquo;pure speculation.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> The Guard&rsquo;s claims are meant to deter and are aimed partly at a domestic audience. The Pentagon rarely confirms damage quickly. Trump is declaring victory while keeping the threat of force; Rubio speaks for the sanctions track; Ghalibaf wants the U.S. to look like the side refusing talks. Each outlet relays these through Iranian state media, Israeli media or U.S. officials, and none has independent access to Bahrain or Sirik.</p>
+    <p><b>What it means for the reader.</b> The tell is whether the Pentagon confirms damage or casualties. If it does, Trump has said he would not hesitate, and the lull that let Gulf oil flow again would be at risk.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran war?</b></p>
+    <label><input type="radio" name="fb-iran-bahrain" value="pentagon-confirms"> If the Pentagon or Bahrain confirms damage to the radar or U.S. casualties</label>
+    <label><input type="radio" name="fb-iran-bahrain" value="us-strikes"> If Trump answers the Bahrain claim with new U.S. strikes on Iran</label>
+    <label><input type="radio" name="fb-iran-bahrain" value="qatar-channel"> If the Qatar channel collapses and Ghalibaf&rsquo;s seven conditions go unanswered with Vance off the file</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain">Al Jazeera / Reuters</a> &middot;
+    <a href="https://www.rferl.org/a/iran-us-sirik-bahrain-war-nuclear-talks/33897951.html">RFE/RL</a> &middot;
+    <a href="https://rudaw.net/english/categories/iran/1080142">Rudaw</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/12/trump-jd-vance-iran-war">Guardian</a> &middot;
+    <a href="https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08">AP (excerpt)</a>
+  </p>
+</article>
+
+<article id="cuba">
+  <h3>Trump told Hugh Hewitt he wants to &ldquo;get Cuba done&rdquo; before he leaves office and would &ldquo;certainly consider&rdquo; a short military campaign</h3>
+  <div class="meta">
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (Al Jazeera, read in full; Politico, The Hill and Mediaite, seen through search excerpts, Mediaite with a transcript), plus an AP report from Havana carried by ABC News.</p>
+  <p>&ldquo;I want to get Cuba done before I leave,&rdquo; Trump said in a phone interview on Thursday. Hewitt asked, &ldquo;So, if it took a little bit of military force, a week campaign, you&rsquo;d be okay with that?&rdquo; and Trump answered, &ldquo;I would certainly consider that, yes&rdquo; (<a href="https://www.mediaite.com/media/news/trump-says-he-wants-to-get-cuba-done-before-leaving-office/">Mediaite transcript</a>). He named Marco Rubio, &ldquo;because Marco&rsquo;s parents are from &hellip; Cuba,&rdquo; and said he won the Cuban vote in Florida by 94%. <a href="https://www.politico.com/news/2026/11/12/trump-cuban-done-before-leaving-office-01163875">Politico</a> says it is the first time he has put a timeline on a possible operation. Since January the U.S. has kept a de facto oil blockade on the island, after the seizure of Venezuela&rsquo;s Nicol&aacute;s Maduro cut off its main fuel supply, and this month added sanctions on 10 people and entities (<a href="https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office">Al Jazeera</a>). On Monday he said Cuba &ldquo;will fall fairly soon&rdquo; (<a href="https://thehill.com/homenews/administration/6217391-trump-wants-cuba-change/">The Hill</a>). In Havana, hundreds line up overnight at charity kitchens for what may be their only meal, in a crisis AP says has been worsened by U.S. energy restrictions (<a href="https://abcnews.com/International/wireStory/charity-run-kitchens-havana-feed-growing-number-cubans-138103260">AP via ABC News</a>).</p>
+  <p><b>Why it matters to you.</b> Tampa Bay has one of the oldest Cuban communities in the country, and any military move or collapse on the island would show up first in Florida, in a sea migration, Coast Guard interdictions and family remittances. Politically, Trump is tying the idea to Florida&rsquo;s Cuban-American vote. From January a Democratic Congress can force a war-powers vote.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; plan or talk?</span>
+    <p><b>What is in dispute.</b> A dispute over intent. Trump now says he would consider force and wants it done by January 2029. In March the head of U.S. Southern Command told senators that troops were not rehearsing an invasion, and the White House has announced no military plan (Al Jazeera). Trump frames U.S. help as &ldquo;humanitarian&rdquo;; the AP&rsquo;s reporting from Havana shows the U.S. fuel squeeze deepening the hunger he describes. Cuban officials say the island is ready for any attack.</p>
+    <p><b>Why the vantage differs.</b> Trump was speaking to a friendly conservative host the week after his party lost Congress, and Cuba plays well with a Florida base. Southern Command&rsquo;s statement is eight months old and was given to Congress under oath. AP has reporters on the ground in Havana; the U.S. outlets are working from the interview transcript.</p>
+    <p><b>What it means for the reader.</b> Words alone do not move ships. The signal to watch is a change in Southern Command&rsquo;s posture or a surge at sea in the Florida Straits, not another interview.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Trump&rsquo;s Cuba push?</b></p>
+    <label><input type="radio" name="fb-cuba" value="southcom-posture"> If Southern Command moves ships or troops toward Cuba</label>
+    <label><input type="radio" name="fb-cuba" value="florida-straits"> If Coast Guard interdictions or Cuban arrivals in Florida jump</label>
+    <label><input type="radio" name="fb-cuba" value="war-powers"> If Democrats file a Cuba war-powers resolution once they take Congress in January</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office">Al Jazeera</a> &middot;
+    <a href="https://www.politico.com/news/2026/11/12/trump-cuban-done-before-leaving-office-01163875">Politico (excerpt)</a> &middot;
+    <a href="https://thehill.com/homenews/administration/6217391-trump-wants-cuba-change/">The Hill (excerpt)</a> &middot;
+    <a href="https://www.mediaite.com/media/news/trump-says-he-wants-to-get-cuba-done-before-leaving-office/">Mediaite (excerpt)</a> &middot;
+    <a href="https://abcnews.com/International/wireStory/charity-run-kitchens-havana-feed-growing-number-cubans-138103260">AP via ABC News</a>
+  </p>
+</article>
+
+<article id="senate-leader">
+  <h3>Chris Van Hollen will challenge Chuck Schumer for Senate majority leader; Sanders backs him, and Schumer says he has the votes</h3>
+  <div class="meta">
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (CBS News, the Guardian, NPR and ABC News), all read in full.</p>
+  <p>The Maryland Democrat announced Thursday that &ldquo;we need new leadership&rdquo; to answer what he called voters&rsquo; demand for change (<a href="https://www.cbsnews.com/news/chris-van-hollen-challenge-chuck-schumer-senate-majority-leader-democrat/">CBS News</a>). Schumer replied less than a minute later: &ldquo;55 seats and counting is an amazing result &mdash; and I have the votes to continue serving as Democratic Leader&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/12/chris-van-hollen-chuck-schumer-senate-majority-leader">Guardian</a>). The vote is a closed-door secret ballot in early December, and the winner needs a majority of the caucus. It is the first contested race for Democratic leader in decades. Bernie Sanders backed Van Hollen; incoming senators Abdul El-Sayed of Michigan and Peggy Flanagan of Minnesota have said they oppose Schumer, and Elissa Slotkin says she is &ldquo;seeking change.&rdquo; Ruben Gallego and Kirsten Gillibrand are publicly with Schumer (<a href="https://text.npr.org/nx-s1-6039357">NPR</a>). Van Hollen called himself the underdog on MSNOW (<a href="https://abcnews.com/Politics/maryland-sen-chris-van-hollen-challenge-sen-chuck/story?id=138097994">ABC News</a>).</p>
+  <p><b>Why it matters to you.</b> From January the majority leader decides what reaches the Senate floor: the chip-export bills now gathering steam after Nvidia, the oversight fights with the White House, any attempt to reverse Medicaid and food-stamp cuts, and Trump&rsquo;s nominees. Schumer represents New York and its financial industry; Van Hollen is running on &ldquo;unrig an economy rigged against working people &amp; fueled by political corruption,&rdquo; which points to tougher fights with banks, crypto and prediction markets.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; does Schumer have the votes?</span>
+    <p><b>What is in dispute.</b> A dispute over a count no one can see. Schumer says he has the votes; CBS reports that some Democrats have not committed to him without endorsing anyone else; NPR describes &ldquo;growing resistance&rdquo; inside the caucus; Gillibrand predicts &ldquo;enormous gratitude&rdquo; for his work in winning nine seats.</p>
+    <p><b>Why the vantage differs.</b> Schumer recruited and raised money for many of the winners and needs to look inevitable. Van Hollen and Sanders need the race to look open so that undecided senators feel safe. Gillibrand chairs the campaign committee that Schumer&rsquo;s strategy ran through. The ballot is secret, so public pledges may not match the vote.</p>
+    <p><b>What it means for the reader.</b> Count named senators, not statements. If several sitting senators beyond Sanders commit to Van Hollen before December, Schumer&rsquo;s claim is in trouble.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Senate leadership fight?</b></p>
+    <label><input type="radio" name="fb-senate-leader" value="named-senators"> If sitting senators beyond Sanders publicly pledge to Van Hollen before the vote</label>
+    <label><input type="radio" name="fb-senate-leader" value="agenda-shift"> If the contest changes what Democrats promise to pass first, such as the chip bills or Medicaid</label>
+    <label><input type="radio" name="fb-senate-leader" value="ballot-result"> Only the result of the secret ballot in early December</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/chris-van-hollen-challenge-chuck-schumer-senate-majority-leader-democrat/">CBS News</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/12/chris-van-hollen-chuck-schumer-senate-majority-leader">Guardian</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6039357">NPR</a> &middot;
+    <a href="https://abcnews.com/Politics/maryland-sen-chris-van-hollen-challenge-sen-chuck/story?id=138097994">ABC News</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="ai-pause-suit">
+  <h3>Four nonprofits sued Anthropic, Google, Meta, OpenAI and SpaceX&rsquo;s AI arm in San Francisco, asking a court to freeze new frontier models</h3>
+  <div class="meta"><span class="chip">AI &amp; tech industry</span><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (CBS News and Al Jazeera, both read in full). We did not read the complaint itself.</p>
+  <p>The Alliance for Secure AI, Public Citizen, the Heat Initiative and the Irreplaceable Education Fund filed Thursday in San Francisco Superior Court under California&rsquo;s unfair-competition law, seeking an emergency injunction on next-generation models until the companies can show they are under human control (<a href="https://www.cbsnews.com/news/advocacy-groups-sue-ai-companies/">CBS News</a>; <a href="https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development">Al Jazeera</a>). The complaint leans on the companies&rsquo; own warnings, including Dario Amodei&rsquo;s 25% estimate of disastrous outcomes, and on &ldquo;recursive self-improvement.&rdquo; The companies did not immediately comment. Why it matters: a state court is an unlikely place to stop the industry, but the suit lands as Anthropic prepares its IPO and a Democratic Congress takes over, and discovery fights could force safety documents into the open.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/advocacy-groups-sue-ai-companies/">CBS News</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development">Al Jazeera</a></p>
+</article>
+
+<article id="kalshi-trumpjr">
+  <h3>Kalshi ended Donald Trump Jr.&rsquo;s paid advisory role a week after Democrats won Congress; he remains an adviser and investor at rival Polymarket</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (CNBC, which discloses a commercial relationship with and minority investment from Kalshi; the Guardian).</p>
+  <p>Kalshi called it a &ldquo;mutual&rdquo; decision driven by his firm 1789 Capital&rsquo;s larger stake in Polymarket, with talks going back to August (<a href="https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html">CNBC</a>). The <a href="https://www.theguardian.com/us-news/2026/nov/12/donald-trump-jr-kalshi">Guardian</a> notes that Democrats have said they will investigate the Trump family&rsquo;s prediction-market ties, and that the CFTC has backed the industry&rsquo;s nationwide expansion, including sports contracts; both companies deny that the relationships influenced regulation. Why it matters: this follows the CFTC&rsquo;s probe of Kalshi&rsquo;s filings, covered here yesterday, and it leaves Polymarket, not Kalshi, as the company with a president&rsquo;s son on the payroll when the hearings start.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html">CNBC</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/12/donald-trump-jr-kalshi">Guardian</a></p>
+</article>
+
+<article id="binance-seizure">
+  <h3>The Justice Department moved to seize $1.2 billion stolen from Binance by North Korean hackers and took down &ldquo;FaceStealer,&rdquo; a deepfake video-call scam</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">US financials</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 3 (CBS News and CNBC, read in full; CyberScoop through a search excerpt), plus the Justice Department&rsquo;s release. Underreported: most coverage leads with the Binance money, not the scam.</p>
+  <p>The <a href="https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency">Justice Department</a> says North Korean military hackers it calls TraderTraitor stole more than $6&nbsp;billion from Binance around Oct.&nbsp;29; more than $2.7&nbsp;billion has been frozen, and courts have authorized seizure of more than $1.2&nbsp;billion of that (<a href="https://www.cbsnews.com/news/fbi-cryptocurrency-1-2-billion-binance/">CBS News</a>; <a href="https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html">CNBC</a>). Separately, the FBI seized infrastructure behind FaceStealer, which it says stole more than $400&nbsp;million in 18 months: hackers hijack a contact&rsquo;s Telegram, LinkedIn or Slack account, invite the target to a fake Zoom or Teams call, play secretly recorded webcam footage or a deepfake of someone the target knows, claim a technical glitch and get the victim to install malware (<a href="https://cyberscoop.com/us-seizes-north-korea-hacking-infrastructure-binance/">CyberScoop</a>). The FBI found more than 900 recorded webcam videos of victims. Why it matters: this is AI-enabled fraud aimed at professionals, and it now reaches software developers as a route into supply-chain attacks.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency">Justice Department</a> &middot; <a href="https://www.cbsnews.com/news/fbi-cryptocurrency-1-2-billion-binance/">CBS News</a> &middot; <a href="https://www.cnbc.com/2026/11/13/us-seizes-binance-hack-crypto.html">CNBC</a> &middot; <a href="https://cyberscoop.com/us-seizes-north-korea-hacking-infrastructure-binance/">CyberScoop (excerpt)</a></p>
+</article>
+
+<article id="home-sales">
+  <h3>Existing-home sales fell to 3.75 million in October, the lowest since 2010, as 30-year mortgage rates sit near 7.2%</h3>
+  <div class="meta"><span class="chip">Macro &amp; markets</span><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (the Guardian and NPR), both relaying the National Association of Realtors&rsquo; release, which we did not read directly.</p>
+  <p>Sales were down 8.8% from a year earlier, and the median price edged up to $416,700; declines came in the Midwest, South and West (<a href="https://www.theguardian.com/business/2026/nov/12/home-sales-october-low">Guardian</a>). &ldquo;It was a punch in the gut,&rdquo; said Realtor.com&rsquo;s Joel Berner, noting that rates hit 7.40% in October and the Fed has signalled a possible December hike (<a href="https://text.npr.org/nx-s1-6038940">NPR</a>). Why it matters: in Pasco and Pinellas, slow sales collide with Amendment&nbsp;3&rsquo;s property-tax cut, which counties are still working out how to fund, so both home values and local budgets are under pressure at once.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/business/2026/nov/12/home-sales-october-low">Guardian</a> &middot; <a href="https://text.npr.org/nx-s1-6038940">NPR</a></p>
+</article>
+
+<article id="hillsborough-dc">
+  <h3>Hillsborough commissioners put off a one-year hyperscale data-center moratorium until two new members are sworn in Tuesday</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (WUSF and WMNF, read in full; Florida Politics through a search excerpt, its page blocked to us).</p>
+  <p>The pause would freeze data-center proposals for a year while the county studies effects on infrastructure, noise, water and energy (<a href="https://www.wmnf.org/hillsborough-county-commissioners-delay-vote-on-ai-data-center-moratorium/">WMNF</a>). County development director Adam Gormly said nothing can be approved in the meantime, and there are no pending applications. Tampa&rsquo;s City Council is weighing its own moratorium. In Polk, about 400 people packed an Auburndale workshop on a data center the developer Hillwood has already filed a permit for (<a href="https://www.wusf.org/politics-issues/2026-11-13/hillsborough-delays-data-center-moratorium-vote-auburndale-contentious-workshop">WUSF</a>). Why it matters: the reshaped commission, not the outgoing one, will decide whether Tampa Bay&rsquo;s biggest county shuts its door to the projects now looking at Florida.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how the vote went</span>
+    <p><b>What is in dispute.</b> A minor factual dispute. WMNF says the vote to delay was unanimous; <a href="https://floridapolitics.com/archives/831951-data-center-moratorium-vote-delayed-until-new-hillsborough-commissioners-take-office/">Florida Politics</a>, as summarized in search results, says Commissioner Gwen Myers asked for the delay and outgoing Commissioner Donna Cameron Cepeda opposed it.</p>
+    <p><b>Why the vantage differs.</b> WMNF is community radio reporting from the meeting; Florida Politics covers the commission&rsquo;s factions closely, but we saw only a search summary. Neither offers a roll call. We could not confirm the vote count. Why: we could not open the Florida Politics article, and the county had not posted minutes.</p>
+    <p><b>What it means for the reader.</b> The tally matters less than the timing: no vote date is set, and it falls to the new board.</p>
+  </div>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wmnf.org/hillsborough-county-commissioners-delay-vote-on-ai-data-center-moratorium/">WMNF</a> &middot; <a href="https://www.wusf.org/politics-issues/2026-11-13/hillsborough-delays-data-center-moratorium-vote-auburndale-contentious-workshop">WUSF</a> &middot; <a href="https://floridapolitics.com/archives/831951-data-center-moratorium-vote-delayed-until-new-hillsborough-commissioners-take-office/">Florida Politics (excerpt)</a></p>
+</article>
+
+<article id="hemp-ban">
+  <h3>The first phase of the federal hemp ban took effect Thursday; the ban on most intoxicating hemp THC products arrives Friday, Dec.&nbsp;11, unless Congress acts</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (Fox&nbsp;13 and Marijuana Moment, read in full; Agri-Pulse through a search excerpt).</p>
+  <p>Synthetic cannabinoids that the cannabis plant cannot produce naturally became federally illegal on Nov.&nbsp;12. The broader ban, which limits legal hemp products to 0.4 milligrams of total THC per container, was pushed to Dec.&nbsp;11 by the September funding bill, and industry groups and a bipartisan group of lawmakers are pressing for a regulatory alternative before then (<a href="https://www.marijuanamoment.net/first-phase-of-renewed-federal-hemp-product-ban-takes-effect-as-industry-pushes-congress-for-regulatory-alternative/">Marijuana Moment</a>; <a href="https://www.agri-pulse.com/articles/25172-house-passes-bill-to-fund-government-through-dec-11-delay-hemp-ban">Agri-Pulse</a>). In Ybor City, a dispensary owner has signed a two-year DoorDash delivery contract to clear stock and has gone cash-only while he waits on a new register (<a href="https://www.fox13news.com/news/ybor-city-dispensary-uses-doordash-clear-hemp-inventory-before-december-federal-ban">Fox&nbsp;13</a>). Why it matters: Dec.&nbsp;11 is also the government-funding deadline, so the hemp industry&rsquo;s fate is now bundled into the lame-duck spending fight,, and Tampa Bay shops like this one are deciding now whether to keep stock.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.marijuanamoment.net/first-phase-of-renewed-federal-hemp-product-ban-takes-effect-as-industry-pushes-congress-for-regulatory-alternative/">Marijuana Moment</a> &middot; <a href="https://www.fox13news.com/news/ybor-city-dispensary-uses-doordash-clear-hemp-inventory-before-december-federal-ban">Fox&nbsp;13</a> &middot; <a href="https://www.agri-pulse.com/articles/25172-house-passes-bill-to-fund-government-through-dec-11-delay-hemp-ban">Agri-Pulse (excerpt)</a></p>
+</article>
+
+<article id="iea-surplus">
+  <h3>The IEA says global oil supply now exceeds demand for the first time since the Iran war began, as Gulf exports recover and Russian output rises</h3>
+  <div class="meta"><span class="chip">Energy &amp; grid</span><span class="chip">Macro &amp; markets</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (CNBC, read in full; Xinhua through a search excerpt), plus the IEA&rsquo;s public report summary.</p>
+  <p>World supply rose 2.3&nbsp;million barrels a day in October to 105.4&nbsp;million, and observed stocks rose 52&nbsp;million barrels, the first increase since June (<a href="https://www.iea.org/reports/oil-market-report-november-2026">IEA</a>). Russian crude output rose 210,000 barrels a day to 8.73&nbsp;million, but attacks on Russian infrastructure keep diesel tight (<a href="https://www.cnbc.com/2026/11/13/russia-oil-exports-iea-diesel-deal.html">CNBC</a>; <a href="https://english.news.cn/20261113/63025f9d271f49f3a5890b9a4988ffe1/c.html">Xinhua</a>). The IEA forecasts demand down 2.7&nbsp;million barrels a day this year and says high prices are speeding up electrification. Why it matters: a surplus is the main reason fuel costs can keep easing into winter, and it is the cushion today&rsquo;s Bahrain claim puts at risk. Diesel, which moves Florida&rsquo;s freight, is the exception.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/13/russia-oil-exports-iea-diesel-deal.html">CNBC</a> &middot; <a href="https://english.news.cn/20261113/63025f9d271f49f3a5890b9a4988ffe1/c.html">Xinhua (excerpt)</a> &middot; <a href="https://www.iea.org/reports/oil-market-report-november-2026">IEA report page</a></p>
+</article>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="ai-suit-hearing"> The AI-pause lawsuit, if a San Francisco judge sets a hearing on the emergency injunction</label>
+  <label><input type="radio" name="fb-also" value="hillsborough-vote"> Hillsborough&rsquo;s data-center pause, once the new commission puts the moratorium on an agenda</label>
+  <label><input type="radio" name="fb-also" value="hemp-deadline"> The hemp ban, if Congress lets Dec.&nbsp;11 pass without a regulatory fix</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 78 sources checked; 21 swept before any weighting category was consulted. Five leads and seven items below the line (12 stories). Two leads carry over from earlier editions, each with a stated trigger: Nvidia (Huang&rsquo;s resignation and the Senate letters) and Iran (the Guard&rsquo;s Bahrain claim and Trump&rsquo;s no-deal statement). Marker tallies: PS&nbsp;1 &middot; IC&nbsp;11 &middot; SS&nbsp;0 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: whether the White House is weighing Lutnick&rsquo;s firing, the date of Lutnick&rsquo;s hearing, when Microsoft service will be fully restored, whether any radar in Bahrain was hit or a tanker struck a mine, and the Hillsborough vote count. Divergence boxes: 6. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;13 is a Friday; Nov.&nbsp;17 a Tuesday; Dec.&nbsp;3 and Dec.&nbsp;10 Thursdays; Dec.&nbsp;11 a Friday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-13-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary><strong>Also noted</strong> &mdash; near-misses from today&rsquo;s net (closed by default)</summary>
+  <ul class="noted-list">
+    <li>Trump&rsquo;s envoys and Putin agreed to keep talking on Ukraine, Zelensky welcomed bringing Europe in, and Finland detected a Ukrainian drone strike on a Russian warship in the Gulf of Finland (<a href="https://www.aljazeera.com/news/2026/11/13/finland-detects-strike-on-russian-warship-as-zelenskyy-meets-us-envoys">Al Jazeera</a>). Missed: no terms on the table yet, and Starshield ran yesterday.</li>
+    <li>The 10-year Treasury yield closed at 5.10% on Thursday in Treasury&rsquo;s own daily series, up from 4.98% on Tuesday (<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury</a>). Missed: it spent much of October above 5% too, and today&rsquo;s producer-price print comes after publication.</li>
+    <li>The UN atomic agency says it is &ldquo;increasingly concerned&rdquo; about an Iranian enrichment plant (<a href="https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks">Al Jazeera live</a>). Missed: we saw only a headline, not the agency&rsquo;s statement.</li>
+    <li>Florida&rsquo;s locally acquired dengue count stands at 524, mostly in Hillsborough and Pinellas, and helicopters have sprayed both counties (<a href="https://www.pbs.org/newshour/health/what-to-know-about-dengue-fever-as-florida-reports-more-than-500-cases-this-year">PBS NewsHour</a>). Missed: no new weekly state figures since the Oct.&nbsp;31 report.</li>
+    <li>The FDA added a rare vision-loss warning to all GLP-1 drugs, including Ozempic and Zepbound (<a href="https://www.wusf.org/health-news-florida/2026-11-12/fda-adds-rare-vision-loss-warning-to-popular-glp-1-drugs">WUSF</a>). Missed: announced Monday, and the risk is about 6 in 100,000.</li>
+    <li>A Brooklyn building collapse killed eight people, including two children (<a href="https://www.pbs.org/newshour/show/new-york-building-collapse-kills-8-including-2-children">PBS NewsHour</a>). Missed: no cause or policy question is established yet.</li>
+    <li>Kansas&rsquo;s governor&rsquo;s race was called for Democrat Cindy Holscher over Ty Masterson (<a href="https://www.nbcnews.com/politics/2026-election/kansas-governor-cindy-holscher-democrat-election-win-masterson-rcna603370">NBC News</a>). Missed: a result, with no Florida or federal channel today.</li>
+    <li>Hegseth gave a medal to the soldier who reprimanded his group at the Tomb of the Unknown Soldier (<a href="https://text.npr.org/nx-s1-6039845">NPR</a>). Missed: the incident ran yesterday, and this closes it.</li>
+    <li>Former Vice President Mike Pence rebuked Vance&rsquo;s account of the Iran war and blamed Trump&rsquo;s policies for the GOP&rsquo;s losses (<a href="https://www.foxnews.com/politics/pence-delivers-scathing-rebuke-vances-iran-war-assessment-blames-trump-policies-gop-losses">Fox News</a>). Missed: commentary, with no change in policy.</li>
+    <li>A Florida St. Patrick&rsquo;s Day parade was cancelled over the state&rsquo;s anti-DEI law, the Guardian reports (<a href="https://www.theguardian.com/us-news/2026/nov/12/florida-st-patricks-day-parade-cancelled-dei">Guardian</a>). Missed: one event; we found no wider ruling or enforcement action.</li>
+    <li>The FAA proposed airspace designations for &ldquo;President Donald J. Trump International Airport, FL&rdquo; (<a href="https://www.federalregister.gov/public-inspection/2026-23109/airspace-designations-and-reporting-points-president-donald-j-trump-international-airport-fl">Federal Register</a>). Missed: routine airspace paperwork.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

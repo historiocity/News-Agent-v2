@@ -1,0 +1,483 @@
+{
+ "issue": "issues/2026-11-13-v2.html",
+ "date": "2026-11-13",
+ "run_started_local": "2026-11-13 07:16 EST",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "Repo rule files (NEWSBOT_2.0.md, scripts/audit.py, config.md), the brief-feedback issue list and the original News Bot radio blocks (issues 2026-09-05 through 2026-10-01, sampled 09-20 and 10-01) were read first because the process requires it. Yesterday's issue was read only as the layout reference. The candidate list was built from the sweep below before any weighting category, the empty watchlist, or earlier stories were consulted; overlap with earlier issues was checked only after selection.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News front",
+  "Fox News politics page",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "CNBC markets front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "PBS NewsHour latest",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (current list)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18h)"
+ ],
+ "sweeps_attempted_failed": [
+  "Politico front (403 bot check)",
+  "Axios front (403)",
+  "The Hill front (403)",
+  "WFLA front (403)",
+  "Florida Politics front (403)",
+  "BLS PPI schedule (Access Denied)",
+  "Federal Register documents API (no response; public-inspection API used instead)",
+  "NBC Lutnick URL guessed wrong (404); correct article reached via NBC front",
+  "Fox News Sanders/Van Hollen URL (404 on truncated link)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News front",
+  "Fox News politics page",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "CNBC markets front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "PBS NewsHour latest",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (current list)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18h)"
+ ],
+ "sources_checked": [
+  "NPR text front (text.npr.org)",
+  "NPR text news list (text.npr.org/1001)",
+  "Al Jazeera /news/ index",
+  "Fox News front",
+  "Fox News politics page",
+  "BBC News front",
+  "Guardian US front",
+  "CNBC world front",
+  "CNBC markets front",
+  "NBC News front",
+  "CBS News front",
+  "ABC News front",
+  "Fox Business front",
+  "PBS NewsHour latest",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Suncoast News front",
+  "Federal Register public-inspection API (current list)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 18h)",
+  "Treasury Daily Par Yield Curve, Nov and Oct 2026",
+  "CBS News: Huang resigns",
+  "NPR: Huang steps down",
+  "CNBC: Lutnick agrees to testify",
+  "NBC News: Huang agrees to brief Congress",
+  "Guardian: Lutnick under pressure",
+  "NBC News: Nvidia cloud loophole (lede only)",
+  "Fortune: Senate Banking letters",
+  "Bloomberg Law (search excerpt): Scott letters",
+  "Washington Examiner (search excerpt): Scott letters",
+  "Quartz (search excerpt): Lutnick testimony",
+  "Guardian: Microsoft outage",
+  "BBC: Microsoft outage explainer",
+  "CNBC: Microsoft outage",
+  "NPR: Microsoft outage",
+  "Fox Business: Microsoft 365 alerts",
+  "CBS News: Van Hollen",
+  "Guardian: Van Hollen",
+  "NPR: Van Hollen",
+  "ABC News: Van Hollen",
+  "Al Jazeera: Iran Bahrain radar claim",
+  "Guardian: Trump no deal / Vance",
+  "RFE/RL (search excerpt): Bahrain claim",
+  "Rudaw (search excerpt): Bahrain claim and Hewitt quotes",
+  "AP (search excerpt): Bahrain radar and mine claim",
+  "Jerusalem Post/Reuters (search excerpt): Bahrain claim",
+  "Al Jazeera: Trump Cuba remarks",
+  "Politico (search excerpt): Cuba timeline",
+  "The Hill (search excerpt): Cuba",
+  "Mediaite (search excerpt): Hewitt transcript",
+  "AP via ABC News: Havana charity kitchens",
+  "OFAC Cuba web general license (Federal Register public-inspection PDF)",
+  "CBS News: AI-pause lawsuit",
+  "Al Jazeera: AI-pause lawsuit",
+  "CNBC: Trump Jr. exits Kalshi",
+  "Guardian: Trump Jr. exits Kalshi",
+  "Justice Department release (search excerpt): Binance and FaceStealer",
+  "CBS News: Binance seizure",
+  "CNBC: Binance seizure",
+  "CyberScoop (search excerpt): FaceStealer",
+  "The Record (search excerpt): FaceStealer",
+  "Guardian: home sales",
+  "NPR: home sales",
+  "WUSF: Hillsborough moratorium delay",
+  "WMNF: Hillsborough moratorium delay",
+  "Florida Politics (search excerpt): Hillsborough delay",
+  "Fox 13: Ybor hemp dispensary",
+  "Marijuana Moment: first phase of hemp ban",
+  "Agri-Pulse (search excerpt): Dec. 11 hemp delay",
+  "CRS via EveryCRSReport (search excerpt): hemp definition delay",
+  "IEA Oil Market Report November 2026 summary page",
+  "CNBC: IEA Russia output",
+  "Xinhua (search excerpt): IEA surplus",
+  "WUSF: GLP-1 warning",
+  "PBS NewsHour: Florida dengue",
+  "WTSP (search excerpt): dengue county counts",
+  "Florida Press (search excerpt): dengue slowdown"
+ ],
+ "sources_checked_total": 78,
+ "candidate_count": 50,
+ "candidates": [
+  {
+   "item": "Huang resigns; Kress interim; Scott letters to Huang and Lutnick; Lutnick firing talk",
+   "decision": "keep: lead (nvidia-exit)",
+   "reason": "threshold event since yesterday; AI core; behind-the-scenes politics over export controls; salacious detail"
+  },
+  {
+   "item": "Microsoft 365 global outage into day two",
+   "decision": "keep: lead (msft-outage)",
+   "reason": "hits the reader's work tools directly; moving; cause contested; AI dependency angle"
+  },
+  {
+   "item": "IRGC claims strike on US radar in Bahrain; Trump 'no deal', Vance sidelined",
+   "decision": "keep: lead (iran-bahrain)",
+   "reason": "new verifiable fact (claim) and policy shift; CENTCOM is in Tampa; oil channel"
+  },
+  {
+   "item": "Trump: 'get Cuba done' before leaving office, would consider force",
+   "decision": "keep: lead (cuba)",
+   "reason": "Florida channel; first timeline; contested intent"
+  },
+  {
+   "item": "Van Hollen challenges Schumer for majority leader; Sanders backs",
+   "decision": "keep: lead (senate-leader)",
+   "reason": "sets the Senate agenda from January; contested count"
+  },
+  {
+   "item": "Nonprofits sue five AI developers to freeze frontier models",
+   "decision": "keep: Also today",
+   "reason": "AI core; novel legal route; modest near-term consequence"
+  },
+  {
+   "item": "Trump Jr. exits Kalshi advisory role",
+   "decision": "keep: Also today",
+   "reason": "money/politics behind prediction-market regulation; new fact after yesterday's CFTC item"
+  },
+  {
+   "item": "DOJ seizes $1.2B from Binance hack; FaceStealer deepfake scam disrupted",
+   "decision": "keep: Also today (underreported scam angle)",
+   "reason": "financial crime with AI deepfakes; primary DOJ release"
+  },
+  {
+   "item": "Existing-home sales at 16-year low",
+   "decision": "keep: Also today",
+   "reason": "household money; Florida housing plus Amendment 3"
+  },
+  {
+   "item": "Hillsborough delays data-center moratorium vote",
+   "decision": "keep: Also today",
+   "reason": "local data-center decision; new board decides"
+  },
+  {
+   "item": "Federal hemp ban phase one; Dec. 11 broader ban",
+   "decision": "keep: Also today",
+   "reason": "Tampa businesses; tied to Dec. 11 funding deadline"
+  },
+  {
+   "item": "IEA: oil market back in surplus; Russian output up",
+   "decision": "keep: Also today",
+   "reason": "energy prices; context for Iran risk"
+  },
+  {
+   "item": "Ukraine talks: envoys and Putin; drone hits Russian warship in Gulf of Finland",
+   "decision": "cut: Also noted",
+   "reason": "no terms yet; Starshield ran yesterday"
+  },
+  {
+   "item": "10-year Treasury 5.10% (Treasury series); Fed hike bets",
+   "decision": "cut: Also noted",
+   "reason": "price move; Fed rule says prints only; PPI after publication"
+  },
+  {
+   "item": "IAEA 'increasingly concerned' over Iranian enrichment plant",
+   "decision": "cut: Also noted",
+   "reason": "headline only; statement not seen"
+  },
+  {
+   "item": "Florida dengue 524 local cases",
+   "decision": "cut: Also noted",
+   "reason": "no new weekly data since Oct 31"
+  },
+  {
+   "item": "FDA GLP-1 vision-loss warning",
+   "decision": "cut: Also noted",
+   "reason": "announced Monday; small absolute risk"
+  },
+  {
+   "item": "Brooklyn building collapse kills 8",
+   "decision": "cut: Also noted",
+   "reason": "no policy question yet"
+  },
+  {
+   "item": "Kansas governor called for Holscher",
+   "decision": "cut: Also noted",
+   "reason": "result with no Florida/federal channel"
+  },
+  {
+   "item": "Hegseth medal to soldier who reprimanded him",
+   "decision": "cut: Also noted",
+   "reason": "closes yesterday's item"
+  },
+  {
+   "item": "Pence rebukes Vance on Iran, blames Trump",
+   "decision": "cut: Also noted",
+   "reason": "commentary"
+  },
+  {
+   "item": "Florida St. Patrick's parade cancelled over anti-DEI law",
+   "decision": "cut: Also noted",
+   "reason": "single event"
+  },
+  {
+   "item": "FAA airspace designations for 'President Donald J. Trump International Airport, FL'",
+   "decision": "cut: Also noted",
+   "reason": "routine paperwork"
+  },
+  {
+   "item": "OFAC Cuba web general license published in Federal Register",
+   "decision": "cut",
+   "reason": "May document republished; no new policy"
+  },
+  {
+   "item": "Presidential determination under NDAA FY2012 s.1245 (Iran oil)",
+   "decision": "cut",
+   "reason": "routine periodic determination"
+  },
+  {
+   "item": "BSEE/BOEM Arctic OCS exploratory drilling rule reopening",
+   "decision": "cut",
+   "reason": "Arctic, no Florida channel"
+  },
+  {
+   "item": "D.C. gym shooting, 1 killed",
+   "decision": "cut",
+   "reason": "anti-topic: violence without policy consequence"
+  },
+  {
+   "item": "Microsoft-unrelated: Nvidia stock slide / $1.6T value loss",
+   "decision": "cut (folded into nvidia-exit context only)",
+   "reason": "price move for its own sake"
+  },
+  {
+   "item": "Lutnick firing discussion (AP)",
+   "decision": "folded into nvidia-exit",
+   "reason": "same story"
+  },
+  {
+   "item": "Trump Hewitt: no hesitation on Iran force",
+   "decision": "folded into iran-bahrain",
+   "reason": "same story"
+  },
+  {
+   "item": "Democrats' Medicaid/SNAP reversal blocked by Trump (NBC)",
+   "decision": "cut",
+   "reason": "analysis; no new action; noted in senate-leader why-it-matters"
+  },
+  {
+   "item": "Treasury yields/Fed hike bets (CNBC)",
+   "decision": "cut",
+   "reason": "see 10-year item"
+  },
+  {
+   "item": "Cisco AI infrastructure revenue to double; Cerebras-Microsoft deal",
+   "decision": "cut",
+   "reason": "earnings marketing; no structural change today"
+  },
+  {
+   "item": "Nscale IPO prospectus wider loss",
+   "decision": "cut",
+   "reason": "single IPO filing"
+  },
+  {
+   "item": "Anthropic IPO trading preview",
+   "decision": "cut",
+   "reason": "no new terms today; referenced in AI suit item"
+  },
+  {
+   "item": "Canada threatens Stellantis over Jeep production",
+   "decision": "cut",
+   "reason": "foreign corporate move; tariff angle thin today"
+  },
+  {
+   "item": "US-India trade deal revived",
+   "decision": "cut",
+   "reason": "no text or date"
+  },
+  {
+   "item": "USPS permanent postage surcharge 2027",
+   "decision": "cut",
+   "reason": "small household effect, 2027"
+  },
+  {
+   "item": "New vehicle average price record $51k",
+   "decision": "cut",
+   "reason": "price level"
+  },
+  {
+   "item": "Polymarket layoffs",
+   "decision": "cut",
+   "reason": "company restructuring; Kalshi item covers the politics"
+  },
+  {
+   "item": "US soldier accused of spying for Russia identified",
+   "decision": "cut",
+   "reason": "single arrest, no policy change"
+  },
+  {
+   "item": "Planned deportation flight to Iran aborted again",
+   "decision": "cut",
+   "reason": "event; ICE ran yesterday"
+  },
+  {
+   "item": "Stepfather pleads for Florida student detained by ICE",
+   "decision": "cut",
+   "reason": "single case"
+  },
+  {
+   "item": "Clearwater 'Save the Garden' suit over Scientology street deal",
+   "decision": "cut",
+   "reason": "local lawsuit, early stage"
+  },
+  {
+   "item": "Florida may buy Clearwater Beach property",
+   "decision": "cut",
+   "reason": "small state purchase"
+  },
+  {
+   "item": "Gov.-elect Byron Donalds higher-ed priorities",
+   "decision": "cut",
+   "reason": "transition statements, no action"
+  },
+  {
+   "item": "Florida progressive groups plan 2028 rent-control ballot measure",
+   "decision": "cut",
+   "reason": "years away"
+  },
+  {
+   "item": "Microsoft president: AI faces fewer rules than milk",
+   "decision": "cut",
+   "reason": "speech, no action"
+  },
+  {
+   "item": "Russell Brand new accusations (X trending)",
+   "decision": "cut",
+   "reason": "anti-topic: celebrity"
+  },
+  {
+   "item": "Super El Nino conditions",
+   "decision": "cut",
+   "reason": "no Florida forecast change today"
+  }
+ ],
+ "story_count": {
+  "leads": 5,
+  "also_today": 7,
+  "total": 12
+ },
+ "continuing_leads": [
+  {
+   "id": "nvidia-exit",
+   "trigger": "threshold event: Huang resigned 12 Nov and Senate Banking chair sent testimony letters to Huang and Lutnick 12 Nov"
+  },
+  {
+   "id": "iran-bahrain",
+   "trigger": "new verifiable fact: IRGC claim of strike on US radar in Bahrain (13 Nov, state media) and Trump's 12 Nov statement that no deal is needed, with Vance reassigned"
+  }
+ ],
+ "per_article_independent_sources": {
+  "nvidia-exit": 6,
+  "msft-outage": 5,
+  "iran-bahrain": 4,
+  "cuba": 4,
+  "senate-leader": 4,
+  "ai-pause-suit": 2,
+  "kalshi-trumpjr": 2,
+  "binance-seizure": 3,
+  "home-sales": 2,
+  "hillsborough-dc": 3,
+  "hemp-ban": 3,
+  "iea-surplus": 2
+ },
+ "per_article_primary_documents": {
+  "binance-seizure": "justice.gov OPA release (seen via search excerpt; page text matched CBS/CNBC)",
+  "iea-surplus": "IEA OMR November 2026 public summary page",
+  "nvidia-exit": "Scott letters not published in full; quoted via Fortune, CNBC, Bloomberg Law",
+  "ai-pause-suit": "complaint not read"
+ },
+ "marker_tallies": {
+  "Primary source": 1,
+  "Independent corroboration": 11,
+  "Single-sourced": 0,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "White House discussing firing Lutnick (AP via Guardian; unnamed officials)",
+  "Lutnick hearing date (Dec 3 vs Dec 10; letters unpublished)",
+  "time of full Microsoft restoration (no estimate given)",
+  "whether any US radar in Bahrain was hit, and the tanker mine claim (Iranian state media only)",
+  "Hillsborough delay vote count (unanimous per WMNF vs Cepeda opposed per Florida Politics search summary)"
+ ],
+ "divergence_boxes": 6,
+ "negative_check": {
+  "method": "After drafting: searched for JPMorgan, UAP and Florida data-center news; rescanned the Federal Register public-inspection list (OFAC Cuba GL, Iran GLs EE/FF, NDAA s.1245 determination, FAA airspace notice, Arctic OCS rule); compared the candidate list against every front swept and X trends (dominated by Microsoft, sports and Van Hollen).",
+  "result": "Nothing new cleared the bar. JPMorgan: no new action today. UAP: no new official paperwork found. The FaceStealer deepfake scheme is underreported relative to the Binance money and is flagged in the brief. Fewer than the usual six leads because a sixth candidate (Ukraine talks, Treasury yields, IAEA) lacked a new verifiable development; total is 12 stories, above the 10 floor."
+ },
+ "feedback_applied": [
+  {
+   "issue": 1,
+   "title": "brief-feedback: 2026-11-08c-v2",
+   "answer": "fb-krakow=charges",
+   "status": "already applied to config.md on 9 Nov; wake condition closed; no comments since; no new change today"
+  }
+ ],
+ "config_change": "none (no new or recently closed brief-feedback issue required a change)",
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: Nvidia resignation and Commerce scrutiny (lead); Microsoft outage (lead); AI-pause lawsuit below the line. Cisco/Cerebras earnings cut as marketing.",
+  "Macro & markets (Core)": "Home sales 16-year low below the line. 10-year at 5.10% to Also noted (price level; PPI after publication).",
+  "World economy": "IEA surplus below the line; Canada-Stellantis and US-India deal cut.",
+  "US debt & fiscal (Core)": "No CBO/Treasury issuance news; Dec. 11 funding deadline appears via the hemp item. Long end noted in Also noted.",
+  "US financials (Core)": "Binance/DOJ seizure and FaceStealer below the line; Kalshi/Trump Jr. below the line. No JPMorgan development found.",
+  "US politics & policy (Core)": "Van Hollen-Schumer lead; Nvidia oversight in lead; hemp ban below the line.",
+  "Geopolitics": "Iran/Bahrain lead; Cuba lead; Ukraine talks to Also noted.",
+  "Science & public health": "GLP-1 warning and dengue to Also noted (no new data/older). Nothing cleared.",
+  "UAP disclosure (Core)": "Searched after drafting: no new official release or paperwork. Nothing cleared.",
+  "Energy & grid": "IEA surplus below the line; Hormuz risk in Iran lead.",
+  "Elections and electoral process": "Senate leadership fight (lead); Kansas governor call to Also noted.",
+  "Broader domestic institutions": "Senate Banking oversight of Commerce (Nvidia lead); Senate leadership contest.",
+  "International with US channel": "Iran/Bahrain (CENTCOM at MacDill) and Cuba (Florida) leads.",
+  "Florida / Tampa Bay": "Cuba lead framed for Tampa Bay; Hillsborough data-center pause and Ybor hemp below the line; dengue to Also noted.",
+  "Data centers / power / AI infrastructure": "Hillsborough moratorium delay and Auburndale below the line; Nvidia cloud-rental loophole in lead.",
+  "AI and financial services": "Microsoft/Copilot outage lead; FaceStealer deepfake fraud below the line; Kalshi below the line."
+ },
+ "also_noted_count": 11,
+ "link_check_note": "All 58 outbound links checked by curl: 54 returned 200; apnews.com, floridapolitics.com, thehill.com and politico.com returned 403 to automated requests. Those four pages resolved in web search and are labelled as excerpts in the brief.",
+ "comparison_edition": "Not opened before the draft was complete.",
+ "audit_note": "Candidate-list shape and 10-story floor are proposed audit gates pending user approval; the current audit does not enforce them. This edition has 12 stories.",
+ "audit_attempts": "2 runs of scripts/audit.py; both exited 0 (second run after link-check and this field were filled in, and after the index update)."
+}
