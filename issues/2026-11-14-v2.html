@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 14 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 14 November 2026 &middot; morning edition</div>
+  <h1>A four-hour nationwide ground stop and a $50 billion ask, Trump to meet Xi and Putin together in Shenzhen, Bessent blames Lutnick in public, the U.S. reportedly loses measles elimination, and FPL&rsquo;s rate deal goes before Florida&rsquo;s Supreme Court</h1>
+  <p class="summary">Five leads, eight below the line. The FAA halted every departing flight in the country for more than four hours on Friday after what Transportation Secretary Sean Duffy called overloaded 1980s-era equipment, and he wants $50&nbsp;billion from Congress; the White House says Trump will hold the first three-way meeting with Xi Jinping and Vladimir Putin in Shenzhen on Thursday, with nuclear arms on the agenda and Ukraine off it; Treasury Secretary Scott Bessent publicly blamed Commerce for the Megaspeed delay as Howard Lutnick agreed to testify Dec.&nbsp;10; the Wall Street Journal reports the U.S. has lost its measles-elimination status as deaths reach 10; and Florida&rsquo;s Public Counsel told the state Supreme Court that regulators let FPL and big business write a $7&nbsp;billion rate deal, data-center terms included. Below the line: Zelensky on a Donbas-for-NATO question, more tankers hit near Hormuz, the Fed&rsquo;s AI-risk survey, the Supreme Court&rsquo;s asylum case, Florida in the mail-voting appeal, a White House vape release, JPMorgan blocking AI shopping agents, and the Medicaid work-rule delay.</p>
+  <p class="sub">Saturday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-14-v2.html</code>.</p>
+  <p class="prov"><b>84 sources checked, 22 of them swept before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news index, Fox News front and politics page, Fox Business, BBC News, Guardian US, CBS News, NBC News, ABC News, CNBC world, PBS NewsHour, New York Post, Wall Street Journal and New York Times fronts (headlines only), Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, Tampa Bay Beacons/Suncoast News, the Federal Register public-inspection list and X US trends. Politico, Axios, The Hill, Florida Politics, WFLA, AP and Reuters returned bot-check or access-denied pages, and the Washington Post timed out; AP and Reuters reporting appears here only where another outlet relays it.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for JPMorgan, UAP and Pasco data-center news and compared the candidate list with every front swept. JPMorgan turned up one item that made the list (blocking AI shopping agents). We found no new UAP release from the government since October, and Pasco&rsquo;s one-year data-center moratorium has not changed. Two items are underreported: the Florida Supreme Court briefs on FPL&rsquo;s rate deal, which we found only in the Tampa Bay Times, and the fact that the Fed&rsquo;s &ldquo;AI is the top risk&rdquo; finding comes from 23 market contacts. The only open brief-feedback issue (#1, Krak&oacute;w) is already applied and its wake condition is closed, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#ground-stop">The FAA&rsquo;s nationwide ground stop and Duffy&rsquo;s $50 billion request</a></li>
+    <li><a href="#trilateral">Trump, Xi and Putin to meet together in Shenzhen</a></li>
+    <li><a href="#bessent-lutnick">Bessent blames Commerce; Lutnick to testify Dec.&nbsp;10</a></li>
+    <li><a href="#measles">The U.S. reportedly loses measles elimination as deaths reach 10</a></li>
+    <li><a href="#fpl-appeal">FPL&rsquo;s $7 billion rate deal reaches the Florida Supreme Court</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#donbas-nato">Zelensky: U.S. asked about Donbas in exchange for NATO</a></li>
+    <li><a href="#hormuz-mines">Iran says three more tankers hit mines near Hormuz</a></li>
+    <li><a href="#fed-ai-risk">The Fed&rsquo;s stability report puts AI at the top of the risk list</a></li>
+    <li><a href="#asylum-scotus">The Supreme Court will rule on Trump&rsquo;s asylum ban</a></li>
+    <li><a href="#mail-voting">Florida joins the appeal to revive USPS mail-ballot rules for 2028</a></li>
+    <li><a href="#vape-release">WSJ: White House ordered detained Chinese vapes released</a></li>
+    <li><a href="#jpm-agents">JPMorgan blocks AI agents from using customers&rsquo; cards</a></li>
+    <li><a href="#medicaid-delay">Medicaid work-rule enforcement can wait until July</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="ground-stop">
+  <h3>The FAA grounded every departing U.S. flight for more than four hours on Friday; Duffy blames old routers and copper lines and asks Congress for $50 billion</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 7 newsrooms (NPR, Fox Business, CNBC, BBC, NBC News, Al Jazeera and Fox&nbsp;13 Tampa Bay), all relying on the FAA&rsquo;s short notices and the Duffy&ndash;Mullin White House briefing. The FAA itself has not briefed reporters.</p>
+  <p>The FAA ordered the halt at 3:54&nbsp;p.m. ET &ldquo;due to extraordinary circumstances and for reasons of safety&rdquo; and lifted it at 8:15&nbsp;p.m. (<a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247">NBC News</a>). It is the second nationwide ground stop since Sept.&nbsp;11, 2001, and the longest (<a href="https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html">CNBC</a>). At a White House briefing, Duffy said instability in radar and communications at the regional control centers began about 3:36&nbsp;p.m.: &ldquo;We have old switches, old routers. We use 1980s little copper lines. It&rsquo;s an old system that went down and went down everywhere. It got overloaded.&rdquo; Pressed on why the system overloaded on a normal travel day, he had no ready answer (<a href="https://text.npr.org/nx-s1-6040403">NPR</a>). Homeland Security Secretary Markwayne Mullin said &ldquo;we have seen zero evidence this is a cyber attack.&rdquo; Air Space Intelligence, which makes the FAA&rsquo;s new AI-assisted SMART tool, said its product was not the cause (NPR). CNBC counted more than 3,000 U.S. cancellations by 5:45&nbsp;a.m. Saturday on top of about 9,000 Friday, some of them weather-related.</p>
+  <p><b>Why it matters to you.</b> Duffy says the legacy equipment will keep failing without a full rebuild, and he wants $50&nbsp;billion in emergency money on top of the $12.5&nbsp;billion already approved (<a href="https://www.foxbusiness.com/politics/duffy-sounds-alarm-over-aging-faa-system-after-nationwide-air-travel-shutdown">Fox Business</a>). That request now goes to a Congress Democrats take over in January, less than two weeks before Thanksgiving travel. At Tampa International, 156 of 536 flights were delayed and 96 cancelled before the stop was lifted, and the airport warned of knock-on delays (<a href="https://www.fox13news.com/news/faa-ground-stop-how-is-tampa-international-airport-impacted">Fox&nbsp;13</a>). Sen. Richard Blumenthal has called for a &ldquo;prompt, penetrating investigation.&rdquo; We could not confirm the technical cause. Why: the only account is Duffy&rsquo;s, the FAA has published nothing beyond its notices, and Mullin, in remarks quoted by Fox&nbsp;13, said &ldquo;we&rsquo;re still looking.&rdquo;</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big, and how sure are they?</span>
+    <p><b>What is in dispute.</b> The size of the disruption and how settled the cause is. Friday&rsquo;s cancellation count ranges from about 4,700 (<a href="https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next">Al Jazeera</a>, citing Flightradar24) to nearly 8,000 (<a href="https://www.bbc.com/news/articles/cqx2wyvyr3zzo">BBC</a>, citing FlightAware) and about 9,000 (CNBC, also FlightAware, including weather). Mullin told the briefing there was &ldquo;zero evidence&rdquo; of an attack, but in remarks reported by Fox&nbsp;13 he added that &ldquo;we&rsquo;re still looking.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> The trackers count at different hours and some include weather. Duffy has an interest in framing this as old equipment, because that supports his $50&nbsp;billion request; Mullin&rsquo;s department owns the cyber question and is hedging until it has finished looking. Airlines have long blamed the FAA for delays, and air-traffic failures generally do not oblige them to pay compensation.</p>
+    <p><b>What it means for the reader.</b> Treat the numbers as ranges. The thing to watch is whether the FAA publishes its own findings, and whether Congress attaches the money to a specific contract and timeline or to a general fund.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the air-traffic failure?</b></p>
+    <label><input type="radio" name="fb-ground-stop" value="money"> If Congress moves on Duffy&rsquo;s $50 billion request, and we can see which contractors stand to get it</label>
+    <label><input type="radio" name="fb-ground-stop" value="cause"> If the FAA&rsquo;s own review names a cause other than old routers, or a cyber link surfaces</label>
+    <label><input type="radio" name="fb-ground-stop" value="tpa"> Only if Tampa International has another mass cancellation before Thanksgiving</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247">NBC News</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6040403">NPR</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html">CNBC</a> &middot;
+    <a href="https://www.foxbusiness.com/politics/duffy-sounds-alarm-over-aging-faa-system-after-nationwide-air-travel-shutdown">Fox Business</a> &middot;
+    <a href="https://www.fox13news.com/news/faa-ground-stop-how-is-tampa-international-airport-impacted">Fox&nbsp;13</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cqx2wyvyr3zzo">BBC</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next">Al Jazeera</a>
+  </p>
+</article>
+
+<article id="trilateral">
+  <h3>Trump will meet Xi and Putin together in Shenzhen on Thursday, the first meeting of its kind; the White House says nuclear arms and Iran are on the agenda and Ukraine is not</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 (BBC, CBS News, NBC News, ABC News and Al Jazeera), all from the same White House statement and background call with senior officials. Moscow and Beijing had not confirmed details when the BBC published.</p>
+  <p>White House spokeswoman Olivia Wales said Trump will &ldquo;conclude his visit to China with a trilateral meeting&rdquo; with Xi and Putin on the sidelines of the APEC summit in Shenzhen, and that &ldquo;among other topics, he will discuss the reduction of nuclear weapons&rdquo; (<a href="https://www.bbc.com/news/articles/ckz74jzpy18do">BBC</a>). Trump leaves Monday, attends the ASEAN summit in Manila on Tuesday, and meets Xi one-on-one on Thursday before the three-way session (<a href="https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/">CBS News</a>). A senior official called it &ldquo;the first conversation&rdquo; and said no agreement is expected (<a href="https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275">NBC News</a>). Ukraine is excluded because China &ldquo;is not really a part of that track&rdquo;; Iran will be discussed. Officials said export controls will not be discussed (CBS) and that Trump is not expected to raise the Nvidia spy allegations with Xi (ABC). There is no separate Trump&ndash;Putin meeting (<a href="https://abcnews.go.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914">ABC News</a>).</p>
+  <p><b>Why it matters to you.</b> New START, the last U.S.&ndash;Russia nuclear treaty, lapsed in February, and Trump turned down Russia&rsquo;s offer to extend it while he sought a deal that includes China (<a href="https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china">Al Jazeera</a>). The Pentagon estimates China has more than 600 warheads, against more than 5,000 each for the U.S. and Russia, and Beijing has shown little interest in a pact (NBC News). A meeting that leaves Ukraine to &ldquo;another track&rdquo; is also a test of how far Washington will go with Moscow, after last month&rsquo;s Russian diesel deal and sanctions suspensions worried Europe (BBC). Elon Musk is travelling with Trump. Officials pointed to his business interests in China but did not say why he is going.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; arms talks, or a stage for something else?</span>
+    <p><b>What is in dispute.</b> What the meeting is for. The White House frames it as arms control. The Kremlin&rsquo;s Dmitry Peskov called it &ldquo;extremely significant&rdquo; but rejected comparisons with Yalta, and Zelensky has said he fears it could become a place to discuss a Ukraine deal behind Kyiv&rsquo;s back (Al Jazeera). Musk&rsquo;s role is vague: ABC says he joins &ldquo;parts&rdquo; of the China travels, and CBS and Al Jazeera say he will not be in the room with Xi and Putin. We could not confirm what Musk will do in China. Why: officials declined to say.</p>
+    <p><b>Why the vantage differs.</b> Every U.S. account comes from officials who spoke on condition of anonymity, and they have reason to set expectations low. Moscow gains standing from sitting at a three-power table whatever the outcome. Kyiv has the most to lose from any side conversation it cannot see.</p>
+    <p><b>What it means for the reader.</b> Watch for a dated follow-up round on nuclear limits, which would be the first real result, and for whether any readout mentions Ukraine despite the White House saying it is off the table.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Shenzhen meeting?</b></p>
+    <label><input type="radio" name="fb-trilateral" value="dated-round"> If the three leaders set a date for a next round of nuclear talks</label>
+    <label><input type="radio" name="fb-trilateral" value="ukraine"> If Ukraine&rsquo;s territory comes up despite the White House saying it won&rsquo;t</label>
+    <label><input type="radio" name="fb-trilateral" value="deals"> If Musk or other executives on the trip come home with China business deals</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/ckz74jzpy18do">BBC</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/">CBS News</a> &middot;
+    <a href="https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275">NBC News</a> &middot;
+    <a href="https://abcnews.go.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914">ABC News</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china">Al Jazeera</a>
+  </p>
+</article>
+
+<article id="bessent-lutnick">
+  <h3>Bessent says on air that Treasury, State, War and USTR wanted Megaspeed blacklisted for months but &ldquo;Commerce has the pen&rdquo;; Lutnick will testify Dec.&nbsp;10</h3>
+  <div class="meta">
+    <span class="chip">AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 newsrooms (CNBC, CBS News, NBC News, Fox News and PBS NewsHour), plus Axios reporting as CNBC and Fox relay it. Trigger (new verifiable fact): a Cabinet secretary blamed another on the record Friday, and a U.S. official gave CBS Lutnick&rsquo;s hearing date, which we could not confirm yesterday.</p>
+  <p>&ldquo;Treasury, War, [USTR] and State, they were in favor of putting Megaspeed on the Entity List for months, but Commerce has the pen. And you will have to ask them about their internal processes,&rdquo; Bessent told CNBC (<a href="https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/">CBS News</a>). He said he was frustrated because Trump had been clear that China should get no Nvidia chips above the H100, and he widened the target: &ldquo;The real story here should be: Did Nvidia know their client&rdquo; (<a href="https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html">CNBC</a>). Lutnick has agreed to appear before Senate Banking on Thursday, Dec.&nbsp;10, according to a U.S. official cited by CBS. Axios reported that Trump approved action against chip diverters three times, in May, August and on Nov.&nbsp;5, and that Bessent confronted Lutnick in the Situation Room (<a href="https://www.foxnews.com/politics/two-top-trump-cabinet-officials-go-war-over-china-spy-scandal-amid-explosive-accusations-report">Fox News</a>). NBC calls it long-simmering tension &ldquo;burst into public view&rdquo; (<a href="https://www.nbcnews.com/politics/white-house/nvidia-trump-administration-feud-bessent-lutnick-china-chips-rcna609048">NBC News</a>).</p>
+  <p>There is also a money angle. CNBC found that Cantor Fitzgerald, now run by Lutnick&rsquo;s sons, cut its reported Nvidia shareholding by nearly half between September 2025 and March 2026, while intelligence officials were pressing Lutnick on Megaspeed. Former Bush White House ethics lawyer Richard Painter said there is &ldquo;no proof&rdquo; Lutnick shared nonpublic information but &ldquo;the appearance doesn&rsquo;t look great&rdquo; (<a href="https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html">CNBC</a>). China&rsquo;s foreign ministry warned Washington against &ldquo;abuse of export control measures&rdquo; (<a href="https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/">CBS News</a>).</p>
+  <p><b>Why it matters to you.</b> When one Cabinet secretary blames another on television, a rule change is usually close behind. The likeliest are a Megaspeed listing or a tighter rule on renting chips through overseas data centers, and either would change where U.S. AI hardware can legally run. Advice to banks and companies on where to build AI capacity will need to account for that. Trump flies to China on Monday with officials saying the chip question is off the table there.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; did the Situation Room confrontation happen?</span>
+    <p><b>What is in dispute.</b> A factual dispute. Axios reports Bessent asked Lutnick in the Situation Room why he resisted export controls. Commerce spokeswoman Kristen Eichamer told CNBC there was &ldquo;no such conversation.&rdquo; Bessent: &ldquo;We don&rsquo;t repeat conversations in the Situation Room.&rdquo; We could not confirm the meeting. Why: the sources are unnamed and the participants either deny it or will not discuss it.</p>
+    <p><b>Why the vantage differs.</b> Bessent gains by putting distance between Treasury and the scandal. Commerce is defending its secretary. Axios&rsquo;s sources are unnamed officials, almost certainly from the agencies Bessent names as having favored a listing. The PBS NewsHour segment (<a href="https://www.pbs.org/newshour/show/bessent-accuses-lutnick-of-failing-to-prevent-china-from-obtaining-nvidia-chips">PBS</a>) adds a former Biden NSC official, who argues tighter controls would leave China &ldquo;years behind&rdquo; rather than months.</p>
+    <p><b>What it means for the reader.</b> The Dec.&nbsp;10 hearing is where this goes on the record. Before then, a Commerce listing of Megaspeed would show who won the internal fight.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Bessent&ndash;Lutnick fight?</b></p>
+    <label><input type="radio" name="fb-bessent-lutnick" value="hearing"> If Lutnick&rsquo;s Dec. 10 testimony shows who at Commerce held up the Megaspeed listing</label>
+    <label><input type="radio" name="fb-bessent-lutnick" value="cantor"> If Cantor Fitzgerald&rsquo;s Nvidia trades draw an ethics or inspector-general inquiry</label>
+    <label><input type="radio" name="fb-bessent-lutnick" value="fired"> If Trump fires or sidelines Lutnick before the hearing</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/">CBS News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html">CNBC (Bessent)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html">CNBC (Cantor)</a> &middot;
+    <a href="https://www.foxnews.com/politics/two-top-trump-cabinet-officials-go-war-over-china-spy-scandal-amid-explosive-accusations-report">Fox News</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/nvidia-trump-administration-feud-bessent-lutnick-china-chips-rcna609048">NBC News</a> &middot;
+    <a href="https://www.pbs.org/newshour/show/bessent-accuses-lutnick-of-failing-to-prevent-china-from-obtaining-nvidia-chips">PBS NewsHour</a> &middot;
+    <a href="https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/">CBS News (China)</a>
+  </p>
+</article>
+
+<article id="measles">
+  <h3>The Pan American Health Organization has revoked U.S. measles elimination, the Wall Street Journal reports, as Pennsylvania and Wisconsin bring this year&rsquo;s deaths to 10</h3>
+  <div class="meta">
+    <span class="chip">Science &amp; public health</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 (Wall Street Journal, read to the first paragraphs; Al Jazeera, NBC News and ABC News in full). The revocation rests on the Journal&rsquo;s unnamed sources. Trigger (threshold event): the decision this brief flagged on Nov.&nbsp;11 as due from a PAHO panel by Friday.</p>
+  <p>PAHO revoked the status the U.S. has held since 2000, &ldquo;people familiar with the matter said&rdquo; (<a href="https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780">Wall Street Journal</a>). Under PAHO&rsquo;s rules the test is uninterrupted transmission for more than 12 months; Canada lost its status last year (<a href="https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported">Al Jazeera</a>). On Friday Wisconsin reported a child&rsquo;s death and Pennsylvania the death of an unvaccinated Montour County resident: seven deaths in Pennsylvania, two in Wisconsin and one in New York, and none of the three had seen a measles death in more than 30 years (<a href="https://www.nbcnews.com/health/health-news/us-measles-deaths-rise-10-new-reports-pennsylvania-wisconsin-rcna609245">NBC News</a>). At least four of the dead were babies too young to be vaccinated. The CDC counts 5,412 cases in 45 states this year, against an average of 180 a year from 2000 to 2024, and kindergarten coverage has fallen from 95% in 2019 to 92% (<a href="https://abcnews.go.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176">ABC News</a>).</p>
+  <p><b>Why it matters to you.</b> Losing the status changes no law, but it is the clearest official verdict yet on falling vaccination rates under Health Secretary Robert F. Kennedy Jr. It also tests whether the federal count can be trusted: Al Jazeera reports that Kennedy asked CDC director Erica Schwartz not to count some deaths, and that the CDC&rsquo;s own tally shows six. Florida has had no measles deaths in these counts. As this brief noted on Nov.&nbsp;11, the state is behind on kindergarten vaccination.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; decided, or due Tuesday? And six deaths or ten?</span>
+    <p><b>What is in dispute.</b> Two facts. The Journal reports the revocation as done; NBC, published the same day, says the decision &ldquo;is expected to be announced on Tuesday,&rdquo; Nov.&nbsp;17. We could not confirm the revocation. Why: neither PAHO nor the CDC has announced it, and the CDC&rsquo;s measles page refused our request. The death count also differs: state health departments report 10 and the CDC lists six.</p>
+    <p><b>Why the vantage differs.</b> The Journal&rsquo;s sources know the panel&rsquo;s outcome; NBC is reporting the formal announcement date. The difference may only be timing. The death gap is political: states count deaths of patients who tested positive, and Kennedy has disputed that some were caused by measles, which lowers the federal total.</p>
+    <p><b>What it means for the reader.</b> Watch Tuesday for a formal PAHO statement and for how the CDC words it. If it plays down the decision or repeats the lower death count, the fight over federal health data will be the next story.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the measles story?</b></p>
+    <label><input type="radio" name="fb-measles" value="official"> When PAHO or the CDC announces the status change, and how the CDC words it</label>
+    <label><input type="radio" name="fb-measles" value="florida"> If Florida records an outbreak or changes its school vaccine rules</label>
+    <label><input type="radio" name="fb-measles" value="count"> If Congress takes up Kennedy&rsquo;s instruction not to count some deaths</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780">Wall Street Journal</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported">Al Jazeera</a> &middot;
+    <a href="https://www.nbcnews.com/health/health-news/us-measles-deaths-rise-10-new-reports-pennsylvania-wisconsin-rcna609245">NBC News</a> &middot;
+    <a href="https://abcnews.go.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176">ABC News</a>
+  </p>
+</article>
+
+<article id="fpl-appeal">
+  <h3>Florida&rsquo;s Public Counsel tells the state Supreme Court that regulators let FPL and big business write a $7 billion rate deal, with data-center terms that residents say shift costs onto them</h3>
+  <div class="meta">
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip new">New</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Tampa Bay Times), the only outlet we found covering Thursday&rsquo;s briefs. The Florida Supreme Court docket confirms the filings; background from Politico Pro (February) and Food &amp; Water Watch (April). We did not read the briefs, and the residents&rsquo; groups&rsquo; brief was filed partly as confidential.</p>
+  <p>Walt Trierweiler, the Legislature&rsquo;s appointed lawyer for utility customers, filed what the <a href="https://www.tampabay.com/news/environment/2026/11/13/fpl-florida-electric-bill-rate-increase-data-center/">Tampa Bay Times</a> calls a &ldquo;blistering&rdquo; brief asking the justices to throw out the Public Service Commission&rsquo;s approval of FPL&rsquo;s base-rate increase, which customers have paid since January. The deal was reached between FPL and mostly big-business intervenors, including industrial companies, Walmart and an association of unnamed would-be data-center builders; the Public Counsel did not sign it. &ldquo;With the help of a few of their fellow corporations, utilities have moved closer to regulating themselves,&rdquo; Trierweiler wrote, adding that the commission has &ldquo;become addicted&rdquo; to settlements. Lawyers for residents&rsquo; groups (Florida Rising, LULAC and ECOSWF, per the docket) asked the court to strike the data-center provisions, arguing they make all customers pay for solar plants and other infrastructure mainly serving data centers. The <a href="https://acis.flcourts.gov/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/1CA242E4-6FD0-4028-B35D-A8CC9D697C2F">court docket</a> (SC2026-0816) shows the briefs filed Nov.&nbsp;12 and AARP Florida admitted as a friend of the court. No oral argument has been set.</p>
+  <p><b>Why it matters to you.</b> FPL serves about 12 million Floridians, more than half the state. Most of Pasco is served by Duke Energy Florida and the Withlacoochee River co-op rather than FPL, so this is not your bill. The ruling still matters for you, because it decides how much room the Public Service Commission has to approve settlements that skip the Public Counsel, and that commission also sets Duke&rsquo;s rates. The Times notes that Duke and Tampa Electric filed separate data-center cost plans and FPL did not. In 2024 Carlos Mu&ntilde;iz, then chief justice, called the commission a &ldquo;black box.&rdquo;</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a 2% bill increase, or a rigged process?</span>
+    <p><b>What is in dispute.</b> A dispute over interpretation and law. FPL spokesman Andrew Sutton says the deal &ldquo;amounts to an approximately 2% average annual residential bill increase&rdquo; and calls its data-center terms &ldquo;one of the nation&rsquo;s strongest customer-protection frameworks.&rdquo; The challengers say it gives FPL an &ldquo;unconscionable&rdquo; profit rate and breaks the Legislature&rsquo;s rule that data centers pay their actual costs.</p>
+    <p><b>Why the vantage differs.</b> FPL and the corporate signatories benefit from the deal as approved. The Public Counsel is paid by the state to represent residential customers and lost at the commission. The residents&rsquo; groups are represented by Earthjustice lawyers, as Politico Pro reported when the appeal was filed in February. The Times was the only outlet we found that read the new briefs, and it read them through the challengers&rsquo; framing plus FPL&rsquo;s response.</p>
+    <p><b>What it means for the reader.</b> The next date is oral argument. A ruling that settlements need the Public Counsel&rsquo;s agreement, or that data-center costs must be split out, would reach Duke&rsquo;s customers in Pasco through the next rate case.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the FPL appeal?</b></p>
+    <label><input type="radio" name="fb-fpl-appeal" value="argument"> When the court sets oral argument or rules on the data-center cost terms</label>
+    <label><input type="radio" name="fb-fpl-appeal" value="duke"> If Duke Energy Florida&rsquo;s own data-center tariff faces a similar challenge</label>
+    <label><input type="radio" name="fb-fpl-appeal" value="settlements"> Only if the ruling limits settlement deals that leave out the Public Counsel</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.tampabay.com/news/environment/2026/11/13/fpl-florida-electric-bill-rate-increase-data-center/">Tampa Bay Times</a> &middot;
+    <a href="https://acis.flcourts.gov/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/1CA242E4-6FD0-4028-B35D-A8CC9D697C2F">Florida Supreme Court docket SC2026-0816</a> &middot;
+    <a href="https://subscriber.politicopro.com/article/2026/02/public-counsel-energy-justice-groups-to-challenge-fpl-rate-hike-at-florida-supreme-court-00784562">Politico Pro (Feb.)</a> &middot;
+    <a href="https://www.foodandwaterwatch.org/press/2026/04/07/psc-denies-reconsideration-of-fpl-rate-case-case-heads-to-fl-supreme-court/">Food &amp; Water Watch (Apr.)</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="donbas-nato">
+  <h3>Zelensky says U.S. negotiators asked, for the first time, whether Ukraine would leave Donbas in exchange for NATO membership</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (BBC and Al Jazeera), both quoting Zelensky. We found no U.S. response.</p>
+  <p>&ldquo;The Americans raised a question: &lsquo;What if Ukraine joins NATO? Would Ukraine withdraw from Donbas?&rsquo; This was the first time this had been raised,&rdquo; Zelensky said; U.S. officials had previously said membership was off the table (<a href="https://www.bbc.com/news/articles/cwvg2l312ylqo">BBC</a>). He said there was no concrete offer, that Ukraine would not withdraw its troops, but that he could put a deal to a referendum if it came with firm security guarantees, no limits on Ukraine&rsquo;s military and reconstruction money (<a href="https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option">Al Jazeera</a>). Moscow opposes both Ukrainian NATO membership and anything short of Kyiv&rsquo;s withdrawal from Donbas. We could not confirm the U.S. side of the exchange. Why: the White House and envoys Witkoff and Kushner have not commented. Why it matters: it comes days before Trump sits with Putin in Shenzhen, and NATO membership would bind the U.S. to defend Ukraine.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.com/news/articles/cwvg2l312ylqo">BBC</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option">Al Jazeera</a></p>
+</article>
+
+<article id="hormuz-mines">
+  <h3>Iran says three more tankers hit mines near Hormuz; the U.N. counts 25 seafarers killed since February</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip">Energy &amp; grid</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 4 (Al Jazeera, CNA, Iran International and Fox News). Every report of the tankers rests on Iranian military statements.</p>
+  <p>Iran&rsquo;s Revolutionary Guards and regular navy said on Friday and Saturday that three tankers caught fire after hitting mines on &ldquo;unauthorised&rdquo; routes with their tracking switched off; they named none of them (<a href="https://www.channelnewsasia.com/world/strait-hormuz-oil-tankers-mines-iran-6551256">CNA</a>; <a href="https://www.iranintl.com/en/202611146214">Iran International</a>). A U.N. official told the Security Council on Friday that at least 25 seafarers have been killed in and around the strait since the war began, with incidents peaking in October (<a href="https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february">Al Jazeera</a>). Iran also claims it struck navigation equipment on Oman&rsquo;s Didamar Island (<a href="https://www.foxnews.com/world/iran-escalates-hormuz-claims-strike-omani-island-enemy-uses-us-military-ops">Fox News</a>). We could not confirm the names, flags or damage of the tankers. Why: Iran released none, and no owner or maritime agency had confirmed them when we checked. Al Jazeera notes that the U.S. military says the main routes are cleared and open, which conflicts with Iran&rsquo;s claim of a mined zone. Why it matters: the higher energy prices that Fed survey respondents worry about (below) start here.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.channelnewsasia.com/world/strait-hormuz-oil-tankers-mines-iran-6551256">CNA</a> &middot; <a href="https://www.iranintl.com/en/202611146214">Iran International</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february">Al Jazeera</a> &middot; <a href="https://www.foxnews.com/world/iran-escalates-hormuz-claims-strike-omani-island-enemy-uses-us-military-ops">Fox News</a></p>
+</article>
+
+<article id="fed-ai-risk">
+  <h3>The Fed&rsquo;s stability report puts AI at the top of market contacts&rsquo; risk list and says hedge-fund leverage is the highest since 2013</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">Macro &amp; markets</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (CNBC) plus the Fed&rsquo;s report itself, read in full. Underreported: the headline number rests on 23 respondents.</p>
+  <p>In the November <a href="https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf">Financial Stability Report</a>, New York Fed staff say AI was the most-cited risk among contacts at broker-dealers, banks, funds and advisory firms. Their concerns were stretched AI equity valuations, AI-enabled cyberattacks (including &ldquo;damage caused by frontier AI models themselves&rdquo;), and &ldquo;complex forms of AI-related financing.&rdquo; Respondents also warned about &ldquo;circular financing arrangements, and heavy reliance on debt to fund the AI buildout.&rdquo; <a href="https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html">CNBC</a> reports that 87% named AI, up from 50% in the spring. The box notes that responses came from just 23 contacts in September and October, so 87% is about 20 people, and that the survey does not represent the Board&rsquo;s view. Why it matters: AI-linked lending is now a financial-stability topic, which is exactly the part of banks&rsquo; AI work that supervisors will start asking about.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf">Federal Reserve</a> &middot; <a href="https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html">CNBC</a></p>
+</article>
+
+<article id="asylum-scotus">
+  <h3>The Supreme Court will decide whether Trump can bar asylum claims at the southern border; the ban stays in force until then</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (CBS News and NBC News).</p>
+  <p>The justices agreed Friday to review Judge Randolph Moss&rsquo;s ruling that neither the Constitution nor immigration law let Trump replace Congress&rsquo;s asylum procedures with his Jan.&nbsp;20, 2025 &ldquo;invasion&rdquo; proclamation (<a href="https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/">CBS News</a>). The policy has stayed in effect during the litigation, and a ruling is due by the end of June. It is the third major Trump immigration case before the court this term, alongside third-country removals and detention without bond hearings (<a href="https://www.nbcnews.com/politics/supreme-court/supreme-court-takes-trumps-asylum-ban-case-rcna608564">NBC News</a>). Why it matters: the case tests how far a president can override a procedure Congress wrote, a question that reaches well beyond immigration.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/">CBS News</a> &middot; <a href="https://www.nbcnews.com/politics/supreme-court/supreme-court-takes-trumps-asylum-ban-case-rcna608564">NBC News</a></p>
+</article>
+
+<article id="mail-voting">
+  <h3>Florida is among 12 Republican-led states appealing to revive the Postal Service&rsquo;s blocked mail-ballot rule for 2028, after the Justice Department declined to</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Florida / Tampa Bay</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (NPR).</p>
+  <p>The attorneys general started an appeal Thursday of Judge Carl Nichols&rsquo;s injunction blocking a USPS rule that would make states hand over voters&rsquo; names and addresses to have ballots delivered. Nichols, a Trump appointee, found the agency likely lacks the power. The Justice Department confirmed it is not appealing, and Thursday was the deadline (<a href="https://text.npr.org/nx-s1-6040409">NPR</a>). Texas and Kansas get Democratic attorneys general in January, so two of the 12 may drop out. Why it matters: Florida&rsquo;s attorney general is now carrying a federal election rule the administration itself has stopped defending.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6040409">NPR</a></p>
+</article>
+
+<article id="vape-release">
+  <h3>The White House ordered the release of tens of millions of dollars in detained Chinese vapes after talks with Trump adviser Chris LaCivita and his son, the Wall Street Journal reports</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Broader domestic institutions</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (Wall Street Journal, read to the first paragraphs; Political Wire only quotes it).</p>
+  <p>Customs officers in Chicago had detained shipments of Geek Bar vapes, which the FDA has never authorized, believing some were misdeclared. Late this summer the White House ordered them released after the conversations, according to people familiar with the matter (<a href="https://www.wsj.com/politics/policy/china-vapes-trump-administration-c03af406">Wall Street Journal</a>). LaCivita told the Journal he told top White House aides that importer Hillfield was &ldquo;onshoring&rdquo; with a $1&nbsp;billion U.S. plant, and that he did not discuss the detained vapes. We could not confirm that the White House gave the order. Why: it rests on unnamed sources, LaCivita denies the link, and we found no other outlet with its own reporting (<a href="https://politicalwire.com/2026/11/13/powerful-trump-allies-aided-a-chinese-vape-operation/">Political Wire</a> only quotes the Journal). Why it matters: Democrats taking over committees in January now have a specific case of political access, a Chinese product and border enforcement to investigate.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wsj.com/politics/policy/china-vapes-trump-administration-c03af406">Wall Street Journal</a> &middot; <a href="https://politicalwire.com/2026/11/13/powerful-trump-allies-aided-a-chinese-vape-operation/">Political Wire</a></p>
+</article>
+
+<article id="jpm-agents">
+  <h3>JPMorgan Chase is blocking AI agents from shopping with customers&rsquo; card numbers, while Bank of America, Capital One and Citi cards already work with them</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">US financials</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (the Wall Street Journal&rsquo;s report, read through PYMNTS&rsquo;s account of it). Found in the after-draft JPMorgan check.</p>
+  <p>Chase is declining agent purchases made when a customer hands an AI agent the card number, while the other big issuers allow them, <a href="https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/">PYMNTS</a> reports, citing the Journal. Stripe gets around the block by giving the agent a one-time virtual card, which merchants say is classed as commercial and costs them more to accept. Why it matters: the biggest U.S. bank is drawing a line on who carries the fraud and liability risk when software, not a person, presses &ldquo;buy.&rdquo; That is a live design question for anyone building agentic payments.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/">PYMNTS</a></p>
+</article>
+
+<article id="medicaid-delay">
+  <h3>CMS lets states delay removing people from Medicaid under the new work requirement until July 1; Florida is not covered by the rule</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Science &amp; public health</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (NBC News in full; Nextgov and Fierce Healthcare through search excerpts), plus the CMS release and KFF&rsquo;s state tracker.</p>
+  <p>States must still start checking work, volunteering or school hours on Jan.&nbsp;1, but under an optional &ldquo;hold harmless&rdquo; period through June&nbsp;30, 2027, no one loses coverage solely for failing the requirement (<a href="https://www.cms.gov/newsroom/press-releases/cms-announces-hold-harmless-period-strengthen-medicaid-work-requirement-systems-improve-beneficiary">CMS</a>; <a href="https://www.nbcnews.com/politics/politics-news/trump-administration-delays-medicaid-work-requirements-six-months-rcna609256">NBC News</a>). States must tell CMS by Friday, Dec.&nbsp;11 (<a href="https://www.nextgov.com/digital-government/2026/11/cms-lets-states-punt-medicaid-work-requirements-six-months/417227/">Nextgov</a>; <a href="https://www.fiercehealthcare.com/regulatory/trump-administration-delays-enforcement-medicaid-work-requirements-six-months">Fierce Healthcare</a>). NBC notes that Nebraska, which started in May, had already cut or denied more than 1,000 people by August. The rule covers expansion adults, and Florida never expanded Medicaid, so it is one of the states not required to implement it (<a href="https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/">KFF</a>). Why it matters: it is the administration&rsquo;s first retreat on its signature safety-net change, 10 days after the midterms.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cms.gov/newsroom/press-releases/cms-announces-hold-harmless-period-strengthen-medicaid-work-requirement-systems-improve-beneficiary">CMS</a> &middot; <a href="https://www.nbcnews.com/politics/politics-news/trump-administration-delays-medicaid-work-requirements-six-months-rcna609256">NBC News</a> &middot; <a href="https://www.nextgov.com/digital-government/2026/11/cms-lets-states-punt-medicaid-work-requirements-six-months/417227/">Nextgov</a> &middot; <a href="https://www.fiercehealthcare.com/regulatory/trump-administration-delays-enforcement-medicaid-work-requirements-six-months">Fierce Healthcare</a> &middot; <a href="https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/">KFF</a></p>
+
+<div class="fb" id="also-tier-fb">
+  <p><b>On the items below the line.</b></p>
+  <p>Which item below the line should become a lead, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="vape-ig"> The vape release, if Congress or an inspector general asks for the White House&ndash;Customs communications</label>
+  <label><input type="radio" name="fb-also" value="mail-fl"> The mail-ballot appeal, if Florida&rsquo;s attorney general is still pursuing it after Texas and Kansas drop out</label>
+  <label><input type="radio" name="fb-also" value="fed-ai-exams"> The Fed&rsquo;s AI warning, if bank supervisors start asking about AI-linked lending in exams or guidance</label>
+</div>
+</article>
+
+<footer>
+  <p><b>Provenance.</b> 84 sources checked; 22 swept before any weighting category was consulted. Five leads and eight items below the line (13 stories). Two leads carry over from earlier editions, each with a stated trigger: the Nvidia export fight (Bessent&rsquo;s on-record blame and the Dec.&nbsp;10 date) and measles (the Journal&rsquo;s report of PAHO&rsquo;s decision). Marker tallies: PS&nbsp;1 &middot; IC&nbsp;8 &middot; SS&nbsp;4 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: the ground stop&rsquo;s technical cause, Musk&rsquo;s role in China, the Situation Room exchange, PAHO&rsquo;s revocation, the U.S. side of Zelensky&rsquo;s account, the tankers&rsquo; identities and the White House vape order. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;14 is a Saturday; Nov.&nbsp;16 a Monday; Nov.&nbsp;17 a Tuesday; Nov.&nbsp;19 a Thursday; Dec.&nbsp;10 a Thursday; Dec.&nbsp;11 a Friday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-14-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <ul class="noted-list">
+    <li>Microsoft says Outlook, Teams and Copilot are fully restored; it blames a &ldquo;network capacity upgrade,&rdquo; not an attack or an AI agent (<a href="https://www.bbc.com/news/articles/c6rrg51rkz09o">BBC</a>). Missed: this closes yesterday&rsquo;s lead with no new policy angle.</li>
+    <li>Tampa Bay counties accounted for 92 of Florida&rsquo;s 100 new locally acquired dengue cases in the week of Nov.&nbsp;1&ndash;7, and Pinellas had its biggest week yet; Pasco has six all year (<a href="https://www.wusf.org/health-news-florida/2026-11-13/florida-reports-fewer-dengue-investigations-but-tampa-bay-outbreak-persists">WUSF</a>; <a href="https://www.floridahealth.gov/wp-content/uploads/2026/11/fl-arbovirus-report-w44-2026.pdf">Florida Department of Health</a>). Missed: new investigations are falling, and Pasco&rsquo;s count is small.</li>
+    <li>ICC judges halted the prosecutor&rsquo;s inquiry into alleged crimes by U.S. troops in Afghanistan, and the prosecutor has appealed (<a href="https://www.aljazeera.com/news/2026/11/14/icc-stops-probe-into-alleged-crimes-by-us-troops-in-afghanistan">Al Jazeera</a>). Missed: the inquiry had been dormant since 2021, so nothing changes for U.S. policy yet.</li>
+    <li>Senate Democrats told Elon Musk to preserve all records on SpaceX&rsquo;s Starlink and Starshield restrictions in Ukraine (<a href="https://www.wsj.com/politics/policy/democrats-order-musk-to-preserve-records-over-ukraine-starlink-access-0e33db6a">Wall Street Journal</a>). Missed: a preservation letter; the investigations start in January.</li>
+    <li>The Capitol&rsquo;s attending physician, Brian Monahan, a two-star Navy admiral,, resigned after a Pentagon inspector general found sleep aids and pain medication were not properly tracked (<a href="https://www.cbsnews.com/news/brian-monahan-resigns-congress-doctor-misconduct-allegations/">CBS News</a>). Missed: the allegations are thinly described and the Navy&rsquo;s inquiry is not finished.</li>
+    <li>Foundation, an Eric Trump-backed maker of military humanoid robots, missed payroll on Oct.&nbsp;30, after its CEO borrowed $4.6&nbsp;million from the company to buy a Sausalito home, people told CNBC (<a href="https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html">CNBC</a>). Missed: a private company in a single report, with no government contract or official action yet.</li>
+    <li>Van Hollen says he would move to end the filibuster if he beats Schumer for leader (<a href="https://www.foxnews.com/politics/schumers-leadership-rival-reveals-major-senate-rule-change-hed-pursue-if-elected">Fox News</a>). Missed: the leadership race ran yesterday, and no vote date has been set.</li>
+    <li>The Coast Guard opened a criminal &ldquo;magic pipe&rdquo; investigation into the MSC Poesia, over possible routing of oily waste into its gray-water discharge, after detaining it at PortMiami (<a href="https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/">CBS News</a>). Missed: one ship, one unnamed official, no charges.</li>
+    <li>Florida Rep.-elect Ryan Elijah, who beat Cory Mills, says he will target fraud and congressional stock trading (<a href="https://www.foxnews.com/politics/gop-newcomer-who-toppled-cory-mills-sets-sights-fraud-inflation-he-heads-capitol-hill">Fox News</a>). Missed: plans, not actions.</li>
+    <li>A tanker hit a river cruise boat carrying 129 passengers at New Orleans; all were accounted for (<a href="https://www.nbcnews.com/news/us-news/rescue-underway-oil-tanker-collides-new-orleans-river-boat-rcna609235">NBC News</a>). Missed: an accident with no policy question yet; read as a headline only.</li>
+    <li>Rep. Lauren Boebert lost her Colorado seat to Democrat Eileen Laubacher (<a href="https://www.pbs.org/newshour/politics/gop-rep-lauren-boebert-of-colorado-loses-u-s-house-seat-to-democrat-eileen-laubacher">PBS NewsHour</a>). Missed: a result with no Florida or policy channel; read as a headline only.</li>
+    <li>Authorities evacuated the area around an ethanol plant in Peoria, Illinois, over a device they called a &ldquo;credible threat&rdquo; (<a href="https://www.nbcnews.com/news/us-news/evacuation-order-ethanol-plant-peoria-illinois-suspicious-device-rcna609287">NBC News</a>). Missed: a developing local incident with no confirmed motive; read as a headline only.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

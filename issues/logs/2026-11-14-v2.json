@@ -1,0 +1,707 @@
+{
+ "issue": "2026-11-14-v2",
+ "date": "2026-11-14",
+ "run_started_local": "2026-11-14T07:17:00-05:00",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "Fronts, Tampa Bay outlets, Federal Register public inspection and X trends were swept before config.md weighting categories, the empty watchlist, or yesterday's issue were consulted. Yesterday's issue was checked only afterwards to decide which stories had genuine new developments (Nvidia, measles) and to avoid repeating Epstein/ICE/SNAP items.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Fox News front",
+  "Fox News politics",
+  "Fox Business front",
+  "BBC News front",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNBC world front",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Wall Street Journal front (headlines only)",
+  "New York Times front (headlines only; little parsed)",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Tampa Bay Beacons / Suncoast News front",
+  "Federal Register public-inspection list (API)",
+  "X US trends (woeid 23424977)"
+ ],
+ "sweeps_attempted_failed": [
+  "Politico (403)",
+  "Axios (403)",
+  "The Hill (403)",
+  "Florida Politics (403)",
+  "WFLA (403)",
+  "AP (403)",
+  "Reuters (401)",
+  "FT (403)",
+  "Bloomberg (403)",
+  "Breitbart (403)",
+  "Washington Post (timeout)",
+  "CDC measles data page (403)",
+  "Tampa Bay Times article body behind paywall except structured data",
+  "WTSP dengue page (403)",
+  "Semafor (fetched, not parsed)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Fox News front",
+  "Fox News politics",
+  "Fox Business front",
+  "BBC News front",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNBC world front",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Wall Street Journal front (headlines only)",
+  "New York Times front (headlines only; little parsed)",
+  "Fox 13 Tampa Bay front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "Tampa Bay Beacons / Suncoast News front",
+  "Federal Register public-inspection list (API)",
+  "X US trends (woeid 23424977)"
+ ],
+ "sources_checked": [
+  {
+   "story": "ground-stop",
+   "source": "NPR: Old tech blamed for the ground stop",
+   "url": "https://text.npr.org/nx-s1-6040403"
+  },
+  {
+   "story": "ground-stop",
+   "source": "Fox Business: Duffy $50B request",
+   "url": "https://www.foxbusiness.com/politics/duffy-sounds-alarm-over-aging-faa-system-after-nationwide-air-travel-shutdown"
+  },
+  {
+   "story": "ground-stop",
+   "source": "Fox 13: Tampa International impact",
+   "url": "https://www.fox13news.com/news/faa-ground-stop-how-is-tampa-international-airport-impacted"
+  },
+  {
+   "story": "ground-stop",
+   "source": "CNBC: disruptions continue Saturday",
+   "url": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html"
+  },
+  {
+   "story": "ground-stop",
+   "source": "Al Jazeera: ground stop lifted explainer",
+   "url": "https://www.aljazeera.com/news/2026/11/14/faa-ground-stop-lifted-why-were-us-flights-grounded-and-whats-next"
+  },
+  {
+   "story": "ground-stop",
+   "source": "BBC: what we know",
+   "url": "https://www.bbc.com/news/articles/cqx2wyvyr3zzo"
+  },
+  {
+   "story": "ground-stop",
+   "source": "NBC News: FAA lifts ground stop",
+   "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247"
+  },
+  {
+   "story": "trilateral",
+   "source": "BBC: Trump, Putin and Xi plan joint meeting",
+   "url": "https://www.bbc.com/news/articles/ckz74jzpy18do"
+  },
+  {
+   "story": "trilateral",
+   "source": "CBS News: first trilateral",
+   "url": "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/"
+  },
+  {
+   "story": "trilateral",
+   "source": "NBC News: unprecedented meeting",
+   "url": "https://www.nbcnews.com/world/china/trump-xi-putin-plan-unprecedented-joint-meeting-sidelines-apec-officia-rcna609275"
+  },
+  {
+   "story": "trilateral",
+   "source": "ABC News: officials call",
+   "url": "https://abcnews.go.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914"
+  },
+  {
+   "story": "trilateral",
+   "source": "Al Jazeera: first three-way summit",
+   "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "CBS News: Lutnick to testify Dec 10",
+   "url": "https://www.cbsnews.com/news/howard-lutnick-scott-bessent-nvidia-megaspeed-testimony/"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "CBS News: China warns on export controls",
+   "url": "https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "CNBC: Bessent blames Commerce",
+   "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "CNBC: Cantor/Lutnick family Nvidia ties",
+   "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "CNBC: Trump won't raise Nvidia in China",
+   "url": "https://www.cnbc.com/2026/11/13/trump-nvidia-huang-china.html"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "Fox News: Cabinet officials clash (relays Axios)",
+   "url": "https://www.foxnews.com/politics/two-top-trump-cabinet-officials-go-war-over-china-spy-scandal-amid-explosive-accusations-report"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "NBC News: Treasury and Commerce feud (lede)",
+   "url": "https://www.nbcnews.com/politics/white-house/nvidia-trump-administration-feud-bessent-lutnick-china-chips-rcna609048"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "PBS NewsHour transcript",
+   "url": "https://www.pbs.org/newshour/show/bessent-accuses-lutnick-of-failing-to-prevent-china-from-obtaining-nvidia-chips"
+  },
+  {
+   "story": "bessent-lutnick",
+   "source": "NBC News: board still investigating Huang (lede)",
+   "url": "https://www.nbcnews.com/tech/tech-news/nvidia-investigation-jensen-huang-continue-departure-sources-say-rcna609136"
+  },
+  {
+   "story": "measles",
+   "source": "WSJ: U.S. loses measles elimination (lede)",
+   "url": "https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780"
+  },
+  {
+   "story": "measles",
+   "source": "Al Jazeera: measles-free status lost",
+   "url": "https://www.aljazeera.com/news/2026/11/14/measles-associated-deaths-reach-10-in-us-after-two-more-deaths-reported"
+  },
+  {
+   "story": "measles",
+   "source": "NBC News: deaths rise to 10",
+   "url": "https://www.nbcnews.com/health/health-news/us-measles-deaths-rise-10-new-reports-pennsylvania-wisconsin-rcna609245"
+  },
+  {
+   "story": "measles",
+   "source": "ABC News: cases top 5,400",
+   "url": "https://abcnews.go.com/Health/measles-cases-nationwide-top-5400-outbreaks-spread-us/story?id=138108176"
+  },
+  {
+   "story": "fpl-appeal",
+   "source": "Tampa Bay Times: FPL wrongly raised rates",
+   "url": "https://www.tampabay.com/news/environment/2026/11/13/fpl-florida-electric-bill-rate-increase-data-center/"
+  },
+  {
+   "story": "fpl-appeal",
+   "source": "Florida Supreme Court docket SC2026-0816",
+   "url": "https://acis.flcourts.gov/portal/court/68f021c4-6a44-4735-9a76-5360b2e8af13/case/1CA242E4-6FD0-4028-B35D-A8CC9D697C2F"
+  },
+  {
+   "story": "fpl-appeal",
+   "source": "Politico Pro (Feb 2026, excerpt)",
+   "url": "https://subscriber.politicopro.com/article/2026/02/public-counsel-energy-justice-groups-to-challenge-fpl-rate-hike-at-florida-supreme-court-00784562"
+  },
+  {
+   "story": "fpl-appeal",
+   "source": "Food & Water Watch release (Apr 2026, excerpt)",
+   "url": "https://www.foodandwaterwatch.org/press/2026/04/07/psc-denies-reconsideration-of-fpl-rate-case-case-heads-to-fl-supreme-court/"
+  },
+  {
+   "story": "donbas-nato",
+   "source": "BBC: US floated Donbas for NATO",
+   "url": "https://www.bbc.com/news/articles/cwvg2l312ylqo"
+  },
+  {
+   "story": "donbas-nato",
+   "source": "Al Jazeera: Ukraine claims US floated NATO option",
+   "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option"
+  },
+  {
+   "story": "hormuz-mines",
+   "source": "CNA: three tankers hit mines",
+   "url": "https://www.channelnewsasia.com/world/strait-hormuz-oil-tankers-mines-iran-6551256"
+  },
+  {
+   "story": "hormuz-mines",
+   "source": "Iran International: tanker struck mine",
+   "url": "https://www.iranintl.com/en/202611146214"
+  },
+  {
+   "story": "hormuz-mines",
+   "source": "Al Jazeera: UN says 25 seafarers killed",
+   "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
+  },
+  {
+   "story": "hormuz-mines",
+   "source": "Fox News: Iran claims Didamar Island strike",
+   "url": "https://www.foxnews.com/world/iran-escalates-hormuz-claims-strike-omani-island-enemy-uses-us-military-ops"
+  },
+  {
+   "story": "fed-ai-risk",
+   "source": "Federal Reserve Financial Stability Report (PDF, read)",
+   "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf"
+  },
+  {
+   "story": "fed-ai-risk",
+   "source": "CNBC: AI risks top Fed survey",
+   "url": "https://www.cnbc.com/2026/11/13/ai-risks-financial-system-federal-reserve.html"
+  },
+  {
+   "story": "asylum-scotus",
+   "source": "CBS News: Supreme Court takes asylum case",
+   "url": "https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/"
+  },
+  {
+   "story": "asylum-scotus",
+   "source": "NBC News: Supreme Court to rule on asylum ban",
+   "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-takes-trumps-asylum-ban-case-rcna608564"
+  },
+  {
+   "story": "mail-voting",
+   "source": "NPR: GOP officials push to revive mail voting restrictions",
+   "url": "https://text.npr.org/nx-s1-6040409"
+  },
+  {
+   "story": "vape-release",
+   "source": "WSJ: Trump allies aided Chinese vape operation (lede)",
+   "url": "https://www.wsj.com/politics/policy/china-vapes-trump-administration-c03af406"
+  },
+  {
+   "story": "vape-release",
+   "source": "Political Wire (quotes WSJ)",
+   "url": "https://politicalwire.com/2026/11/13/powerful-trump-allies-aided-a-chinese-vape-operation/"
+  },
+  {
+   "story": "jpm-agents",
+   "source": "PYMNTS relaying WSJ",
+   "url": "https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "NBC News: Medicaid delay",
+   "url": "https://www.nbcnews.com/politics/politics-news/trump-administration-delays-medicaid-work-requirements-six-months-rcna609256"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "CMS press release (search excerpt)",
+   "url": "https://www.cms.gov/newsroom/press-releases/cms-announces-hold-harmless-period-strengthen-medicaid-work-requirement-systems-improve-beneficiary"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "Nextgov (excerpt)",
+   "url": "https://www.nextgov.com/digital-government/2026/11/cms-lets-states-punt-medicaid-work-requirements-six-months/417227/"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "Fierce Healthcare (excerpt)",
+   "url": "https://www.fiercehealthcare.com/regulatory/trump-administration-delays-enforcement-medicaid-work-requirements-six-months"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "KFF work-requirement tracker",
+   "url": "https://www.kff.org/medicaid/medicaid-work-requirements-tracker-overview/"
+  },
+  {
+   "story": "medicaid-delay",
+   "source": "KFF Health News: Florida hasn't expanded Medicaid (excerpt)",
+   "url": "https://kffhealthnews.org/medicaid/florida-medicaid-work-requirements-expansion-one-big-beautiful-bill-act/"
+  },
+  {
+   "story": "also-noted",
+   "source": "WUSF: dengue",
+   "url": "https://www.wusf.org/health-news-florida/2026-11-13/florida-reports-fewer-dengue-investigations-but-tampa-bay-outbreak-persists"
+  },
+  {
+   "story": "also-noted",
+   "source": "Florida DOH arbovirus report week 44 (PDF, read)",
+   "url": "https://www.floridahealth.gov/wp-content/uploads/2026/11/fl-arbovirus-report-w44-2026.pdf"
+  },
+  {
+   "story": "also-noted",
+   "source": "BBC: Microsoft restored",
+   "url": "https://www.bbc.com/news/articles/c6rrg51rkz09o"
+  },
+  {
+   "story": "also-noted",
+   "source": "Al Jazeera: ICC halts Afghanistan probe",
+   "url": "https://www.aljazeera.com/news/2026/11/14/icc-stops-probe-into-alleged-crimes-by-us-troops-in-afghanistan"
+  },
+  {
+   "story": "also-noted",
+   "source": "WSJ: Musk preserve Starlink records (lede)",
+   "url": "https://www.wsj.com/politics/policy/democrats-order-musk-to-preserve-records-over-ukraine-starlink-access-0e33db6a"
+  },
+  {
+   "story": "also-noted",
+   "source": "CBS News: Capitol physician resigns",
+   "url": "https://www.cbsnews.com/news/brian-monahan-resigns-congress-doctor-misconduct-allegations/"
+  },
+  {
+   "story": "also-noted",
+   "source": "CNBC: Foundation missed payroll",
+   "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html"
+  },
+  {
+   "story": "also-noted",
+   "source": "Fox News: Van Hollen and filibuster",
+   "url": "https://www.foxnews.com/politics/schumers-leadership-rival-reveals-major-senate-rule-change-hed-pursue-if-elected"
+  },
+  {
+   "story": "also-noted",
+   "source": "CBS News: MSC Poesia magic pipe",
+   "url": "https://www.cbsnews.com/news/coast-guard-msc-poesia-criminal-investigation-potential-magic-pipe/"
+  },
+  {
+   "story": "also-noted",
+   "source": "Fox News: Ryan Elijah",
+   "url": "https://www.foxnews.com/politics/gop-newcomer-who-toppled-cory-mills-sets-sights-fraud-inflation-he-heads-capitol-hill"
+  },
+  {
+   "story": "negative-check",
+   "source": "PYMNTS/Yahoo search: JPMorgan Nov 13 (search results)",
+   "url": "search"
+  },
+  {
+   "story": "negative-check",
+   "source": "UAP disclosure search (war.gov PURSUE page, search excerpt)",
+   "url": "https://www.war.gov/UFO/search/dird/"
+  },
+  {
+   "story": "negative-check",
+   "source": "Pasco data-center moratorium search (Spectrum News 13, search excerpt)",
+   "url": "https://mynews13.com/fl/orlando/news/2026/07/14/pasco-leaders-nearing-decision-on-data-center-moratorium"
+  }
+ ],
+ "sources_checked_total": 84,
+ "sources_checked_note": "Total = 22 fronts/sweeps before categories + 62 article pages, documents or search excerpts read for stories, Also noted and the negative check. Headline-only Also noted links (NBC New Orleans, PBS Boebert, NBC Peoria) come from fronts already counted.",
+ "candidate_count": 45,
+ "candidates": [
+  {
+   "item": "FAA nationwide ground stop; Duffy blames old equipment, asks $50B; TPA delays",
+   "decision": "keep: lead (ground-stop)",
+   "reason": "biggest US story of the day; affects reader's travel and TPA; money fight in Congress; cause contested"
+  },
+  {
+   "item": "Trump-Xi-Putin trilateral in Shenzhen Thursday; nuclear arms, Iran, not Ukraine",
+   "decision": "keep: lead (trilateral)",
+   "reason": "first-ever three-way meeting; New START lapsed; US channel obvious"
+  },
+  {
+   "item": "Bessent publicly blames Lutnick/Commerce for Megaspeed delay; Lutnick testifies Dec 10; Cantor's Nvidia stake",
+   "decision": "keep: continuing lead (bessent-lutnick)",
+   "reason": "new verifiable fact: on-record Cabinet blame and confirmed hearing date; money angle; AI export rules"
+  },
+  {
+   "item": "WSJ: PAHO revoked US measles elimination; deaths reach 10; CDC count 6",
+   "decision": "keep: continuing lead (measles)",
+   "reason": "threshold event flagged Nov 11; federal data dispute"
+  },
+  {
+   "item": "FPL rate deal appeal briefs at Florida Supreme Court; data-center cost terms",
+   "decision": "keep: lead (fpl-appeal)",
+   "reason": "Florida energy bills, data-center cost-shifting, behind-the-scenes settlement deals; underreported (one newsroom)"
+  },
+  {
+   "item": "Zelensky: US asked about Donbas withdrawal for NATO membership",
+   "decision": "keep: Also today (donbas-nato)",
+   "reason": "new position days before Shenzhen; Ukraine balance held per settled preference"
+  },
+  {
+   "item": "Iran: three tankers hit mines near Hormuz; UN says 25 seafarers killed",
+   "decision": "keep: Also today (hormuz-mines)",
+   "reason": "energy-price chain; Iran claims unverified"
+  },
+  {
+   "item": "Fed Financial Stability Report: AI top cited risk; hedge-fund leverage high",
+   "decision": "keep: Also today (fed-ai-risk)",
+   "reason": "AI and financial services; underreported that survey is 23 contacts"
+  },
+  {
+   "item": "Supreme Court takes Trump asylum ban case",
+   "decision": "keep: Also today (asylum-scotus)",
+   "reason": "presidential power vs. Congress; dated ruling by June"
+  },
+  {
+   "item": "12 GOP AGs incl. Florida appeal to revive USPS mail-ballot rule for 2028",
+   "decision": "keep: Also today (mail-voting)",
+   "reason": "Florida AG involved; DOJ not appealing"
+  },
+  {
+   "item": "WSJ: White House ordered detained Chinese vapes released after LaCivita talks",
+   "decision": "keep: Also today (vape-release)",
+   "reason": "behind-the-scenes access and money; single-sourced"
+  },
+  {
+   "item": "JPMorgan blocks AI agents from using customer cards",
+   "decision": "keep: Also today (jpm-agents)",
+   "reason": "AI in financial services; found in negative check"
+  },
+  {
+   "item": "CMS optional hold-harmless delays Medicaid work-rule enforcement to July 1",
+   "decision": "keep: Also today (medicaid-delay)",
+   "reason": "first retreat on signature policy; Florida exempt noted"
+  },
+  {
+   "item": "Microsoft says service fully restored",
+   "decision": "cut: Also noted",
+   "reason": "closes yesterday's lead"
+  },
+  {
+   "item": "Tampa Bay dengue weekly update; Pinellas record week",
+   "decision": "cut: Also noted",
+   "reason": "new investigations falling; Pasco small"
+  },
+  {
+   "item": "ICC halts probe of US troops in Afghanistan",
+   "decision": "cut: Also noted",
+   "reason": "dormant since 2021; prosecutor appealing"
+  },
+  {
+   "item": "Senate Democrats tell Musk to preserve Starlink records",
+   "decision": "cut: Also noted",
+   "reason": "letter only; probes start January"
+  },
+  {
+   "item": "Capitol attending physician Monahan resigns; DoD IG findings",
+   "decision": "cut: Also noted",
+   "reason": "personnel; thin detail"
+  },
+  {
+   "item": "Eric Trump-backed robot startup Foundation missed payroll; CEO $4.6M home loan",
+   "decision": "cut: Also noted",
+   "reason": "private company, single report"
+  },
+  {
+   "item": "Van Hollen backs ending filibuster",
+   "decision": "cut: Also noted",
+   "reason": "leadership race ran yesterday; no vote date"
+  },
+  {
+   "item": "Coast Guard criminal 'magic pipe' probe of MSC Poesia (Miami)",
+   "decision": "cut: Also noted",
+   "reason": "one ship, unnamed official, no charges"
+  },
+  {
+   "item": "Florida Rep.-elect Ryan Elijah agenda",
+   "decision": "cut: Also noted",
+   "reason": "plans not actions"
+  },
+  {
+   "item": "New Orleans tanker hits river cruise boat; all accounted for",
+   "decision": "cut: Also noted",
+   "reason": "accident; anti-topic disruption"
+  },
+  {
+   "item": "Boebert loses Colorado seat",
+   "decision": "cut: Also noted",
+   "reason": "result with no Florida/policy channel"
+  },
+  {
+   "item": "Peoria ethanol plant device evacuation",
+   "decision": "cut: Also noted",
+   "reason": "developing local incident"
+  },
+  {
+   "item": "Alaska governor Kreiss-Tomkins (D) wins; ranked choice kept",
+   "decision": "cut",
+   "reason": "election result, no US-policy or Florida channel"
+  },
+  {
+   "item": "Brian Poindexter (D) harassment probe",
+   "decision": "cut",
+   "reason": "personnel; allegation stage"
+  },
+  {
+   "item": "Hegseth impeachment aftermath (NPR analysis)",
+   "decision": "cut",
+   "reason": "analysis; no new action"
+  },
+  {
+   "item": "SpaceX Starship 15th flight booster issue",
+   "decision": "cut",
+   "reason": "no policy consequence"
+  },
+  {
+   "item": "Hungary $20m cash in forests",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "German spy agency new powers",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "Qatar-Turkiye defense pact",
+   "decision": "cut",
+   "reason": "indirect US channel; Iran lead not run today"
+  },
+  {
+   "item": "Mamdani-Trump SNAP rule delay deal",
+   "decision": "cut",
+   "reason": "NYC-specific; SNAP covered Nov 10"
+  },
+  {
+   "item": "Appeals court: US wrongly withheld NY highway funds",
+   "decision": "cut",
+   "reason": "state-specific ruling"
+  },
+  {
+   "item": "California voters ban wealth taxes",
+   "decision": "cut",
+   "reason": "state ballot result, no Florida channel"
+  },
+  {
+   "item": "Tesla Cybercab sales to select customers",
+   "decision": "cut",
+   "reason": "marketing-led; federal probe ongoing"
+  },
+  {
+   "item": "Hassett denies leaving White House",
+   "decision": "cut",
+   "reason": "personnel churn"
+  },
+  {
+   "item": "Polymarket layoffs",
+   "decision": "cut",
+   "reason": "company restructuring; Kalshi angle ran yesterday"
+  },
+  {
+   "item": "Supreme Court takes Robinhood IPO disclosure case",
+   "decision": "cut",
+   "reason": "narrow securities question; not read in full"
+  },
+  {
+   "item": "Workday outage",
+   "decision": "cut",
+   "reason": "short outage; no policy angle"
+  },
+  {
+   "item": "Second Epstein files discharge petition (218 signatures)",
+   "decision": "cut",
+   "reason": "ran Nov 12; floor action not before Dec 2"
+  },
+  {
+   "item": "ICE record deportations / Florida student detained",
+   "decision": "cut",
+   "reason": "ran Nov 12; local case single report"
+  },
+  {
+   "item": "Byron Donalds post-victory speech; DeSantis victory lap",
+   "decision": "cut",
+   "reason": "speeches, no action"
+  },
+  {
+   "item": "FDA GLP-1 vision-loss warning",
+   "decision": "cut",
+   "reason": "older (Nov 12) and ran in Also noted"
+  },
+  {
+   "item": "JPMorgan card chief Allison Beer leaving",
+   "decision": "cut",
+   "reason": "personnel churn with no policy effect"
+  }
+ ],
+ "story_count": {
+  "leads": 5,
+  "also_today": 8,
+  "total": 13
+ },
+ "continuing_leads": [
+  {
+   "id": "bessent-lutnick",
+   "trigger": "new verifiable fact: Bessent's on-record blame of Commerce (CNBC) and a U.S. official's Dec. 10 date for Lutnick's testimony (CBS)"
+  },
+  {
+   "id": "measles",
+   "trigger": "threshold event: WSJ reports PAHO revoked U.S. elimination status; deaths reach 10"
+  }
+ ],
+ "per_article_independent_sources": {
+  "ground-stop": 7,
+  "trilateral": 5,
+  "bessent-lutnick": 5,
+  "measles": 4,
+  "fpl-appeal": 1,
+  "donbas-nato": 2,
+  "hormuz-mines": 4,
+  "fed-ai-risk": 1,
+  "asylum-scotus": 2,
+  "mail-voting": 1,
+  "vape-release": 1,
+  "jpm-agents": 1,
+  "medicaid-delay": 3
+ },
+ "per_article_primary_documents": {
+  "fpl-appeal": "Florida Supreme Court docket SC2026-0816 (docket read; briefs not read)",
+  "fed-ai-risk": "Federal Reserve Financial Stability Report, Nov. 2026 (read)",
+  "medicaid-delay": "CMS press release (search excerpt)"
+ },
+ "marker_tallies": {
+  "Primary source": 1,
+  "Independent corroboration": 8,
+  "Single-sourced": 4,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "ground stop technical cause",
+  "Musk's role in China",
+  "Situation Room confrontation",
+  "PAHO revocation",
+  "U.S. side of Zelensky's Donbas/NATO account",
+  "tanker names/flags/damage",
+  "White House order to release vapes"
+ ],
+ "divergence_boxes": [
+  "ground-stop",
+  "trilateral",
+  "bessent-lutnick",
+  "measles",
+  "fpl-appeal"
+ ],
+ "negative_check": {
+  "method": "After drafting: searched JPMorgan (Nov 13), UAP disclosure, and Pasco data-center news; compared the candidate list against every front swept and X US trends (Peoria, Duffy, #faagroundstop, Buttigieg, sports).",
+  "result": "JPMorgan AI-agent card block added below the line. No new government UAP release found since PURSUE Release 07 (Oct. 23, per search summary). Pasco data-center moratorium unchanged. Underreported: the FPL Supreme Court briefs (only the Tampa Bay Times covered them) and the fact that the Fed's AI-risk headline rests on 23 contacts; both flagged in the brief. 13 stories, above the 10 floor."
+ },
+ "feedback_applied": "Open brief-feedback issue #1 (Krakow, 2026-11-08c-v2) already applied in config.md settled preferences on Nov 9; wake condition closed. No other open or recently closed brief-feedback issues.",
+ "config_change": null,
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Bessent-Lutnick export fight (continuing lead); Nvidia board probe and Huang succession pieces cut as no new development.",
+  "Macro & markets (Core)": "No print today (Saturday). Fed stability report below the line; hedge-fund leverage noted. Food-inflation and rate-hike analysis pieces cut as commentary.",
+  "World economy": "Nothing cleared on its own; Hormuz shipping below the line carries the oil channel.",
+  "US debt & fiscal (Core)": "Fiscal sustainability appears in the Fed survey; PBS $40T debt explainer cut as background. No Treasury/CBO action found.",
+  "US financials (Core)": "JPMorgan AI-agent card block below the line (found in negative check); Allison Beer departure cut as personnel.",
+  "US politics & policy (Core)": "Asylum case, mail-ballot appeal, vape release, Medicaid delay below the line; ground stop funding fight in lead.",
+  "Geopolitics": "Trilateral lead; Donbas/NATO and Hormuz below the line.",
+  "Science & public health": "Measles continuing lead; dengue to Also noted.",
+  "UAP disclosure (Core)": "Searched after drafting: no new government release or paperwork found. Nothing cleared.",
+  "Energy & grid": "FPL rate appeal lead; Hormuz tankers below the line.",
+  "Elections and electoral process": "Mail-ballot appeal below the line; Boebert and Alaska results to Also noted/cut.",
+  "Broader domestic institutions": "FAA failure (lead); Capitol physician to Also noted; Supreme Court asylum case below the line.",
+  "International with US channel": "Trilateral (lead), Donbas/NATO, Hormuz; ICC Afghanistan to Also noted.",
+  "Florida / Tampa Bay": "FPL appeal (lead), TPA impact in ground-stop lead, Florida AG in mail-ballot appeal; dengue, MSC Poesia and Ryan Elijah to Also noted.",
+  "Data centers / power / AI infrastructure": "FPL data-center cost terms in lead; Pasco moratorium unchanged (negative check).",
+  "AI and financial services": "Fed AI-risk survey and JPMorgan agent block below the line."
+ },
+ "also_noted_count": 12,
+ "link_check_note": "All 60 external links returned HTTP 200 via curl after drafting (2026-11-14 morning ET).",
+ "comparison_edition": "none opened",
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "audit_attempts": {
+  "count": 3,
+  "results": [
+   "exit 0 (first draft)",
+   "exit 0 (after quote-attribution fix)",
+   "exit 0 (final, after log update)"
+  ]
+ }
+}
