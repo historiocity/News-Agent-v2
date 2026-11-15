@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 15 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Sunday, 15 November 2026 &middot; morning edition</div>
+  <h1>A Cantor Fitzgerald client in Lutnick&rsquo;s chip rules, Iranian drones at Bahrain again, Anthropic&rsquo;s pricing week, and a Florida law that cancelled a St. Patrick&rsquo;s Day parade</h1>
+  <p class="summary">Four leads, eight below the line. The New York Times reports that Commerce Secretary Howard Lutnick has pushed for softer chip-export rules that would affect a Malaysian data center run by a Cantor Fitzgerald client, as Megaspeed opens its own probe; Iran fired drones at a U.S. radar site in Bahrain for the second time in three days, a day after Reuters reported Trump would hold off on new strikes unless provoked; Anthropic prices its IPO on Wednesday with more than $900&nbsp;billion in compute commitments behind it and Nvidia&rsquo;s results due Tuesday; and Delray Beach cancelled its St. Patrick&rsquo;s Day parade and Pride under Florida&rsquo;s new local anti-DEI law, which Gov. DeSantis calls &ldquo;malicious compliance.&rdquo; Below the line: the FAA still has no root cause for Friday&rsquo;s ground stop, the U.S. loses measles elimination, voters back limits in 46 of 47 data-center measures, Trump&rsquo;s Mexico tariff threat, Democrats&rsquo; statehouse gains and the tax question, Florida&rsquo;s attorney general drops the bump-stock ban, Kushner brings Europe toward Russia talks, and SpaceX catches Starship.</p>
+  <p class="sub">Sunday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-15-v2.html</code>.</p>
+  <p class="prov"><b>95 sources checked, 25 of them swept before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news index, Fox News front and politics page, Fox Business, BBC News front and its U.S. page, Guardian US, CBS News, NBC News, ABC News, CNBC world, PBS NewsHour, New York Post, Wall Street Journal and New York Times fronts (headlines only), Semafor, DW, Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, WTSP, and X&rsquo;s U.S. trends and news search. Politico, Axios, The Hill and Florida Politics returned access-denied pages, Newsmax did not connect, and the Federal Register API returned nothing usable; on a Sunday its public-inspection list is offline anyway, so we have no view of Monday&rsquo;s documents. AP and Reuters reporting appears here only where another outlet relays it or a search excerpt carries it.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for JPMorgan, UAP disclosure, Pasco data centers and Tampa Bay dengue, and compared the candidate list with every front swept. JPMorgan turned up nothing new since Friday&rsquo;s AI-agent card block, which ran yesterday. We found no new government UAP release, only commentary on an unidentified object. Pasco&rsquo;s one-year data-center moratorium has not changed, and the state has published no dengue numbers since Nov.&nbsp;13. Two things are underreported: the Times&rsquo; Cantor-client finding, which no other outlet we read had matched by Sunday morning, and the money behind Anthropic&rsquo;s compute commitments, which we found only at CNBC. The only open brief-feedback issue (#1, Krak&oacute;w) is already applied and its wake condition is closed, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#lutnick-cantor">Lutnick, a Cantor client&rsquo;s Malaysian data center, and the chip rules</a></li>
+    <li><a href="#iran-bahrain">Iran targets a U.S. radar site in Bahrain again</a></li>
+    <li><a href="#anthropic-week">Anthropic&rsquo;s pricing week and the $900 billion behind it</a></li>
+    <li><a href="#delray-dei">Florida&rsquo;s local anti-DEI law cancels a St. Patrick&rsquo;s Day parade</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#faa-cause">FAA: no root cause yet for the ground stop</a></li>
+    <li><a href="#measles">The U.S. loses measles elimination</a></li>
+    <li><a href="#datacenter-votes">Voters back limits in 46 of 47 data-center measures</a></li>
+    <li><a href="#mexico-tariffs">Trump threatens to double tariffs on Mexico</a></li>
+    <li><a href="#statehouses">Democrats take statehouses; the tax question follows</a></li>
+    <li><a href="#bump-stocks">Florida&rsquo;s attorney general drops the bump-stock ban</a></li>
+    <li><a href="#kushner-europe">Kushner moves to bring Europe into Russia talks</a></li>
+    <li><a href="#starship">SpaceX catches Starship returning from orbit</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<!-- ===================== LEADS ===================== -->
+
+<article id="lutnick-cantor">
+  <h3>The New York Times reports Lutnick has pushed for softer chip-export rules that would affect a Malaysian data center run by a Cantor Fitzgerald client; Megaspeed says it has opened its own investigation</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 newsrooms (New York Times, CNBC, CBS News, ABC News and Semafor). The Cantor link comes from the Times alone; we read the story&rsquo;s opening paragraphs before its paywall.</p>
+  <p><b>Continuation trigger:</b> new verifiable fact. The Times&rsquo; finding that a Cantor client stands to be affected by rules Lutnick is shaping, and Megaspeed&rsquo;s first on-record response.</p>
+  <p>The Times reports that a data center called A201, in southern peninsular Malaysia, is due to open next year with hundreds of millions of dollars of Nvidia&rsquo;s most advanced AI servers and plans to sell that computing power to a Chinese tech giant. That is legal, and it gets around the U.S. ban on selling top chips directly to Chinese firms. The company running the center is a client of Cantor Fitzgerald, which Lutnick led before handing it to his sons. The Times says Lutnick has recently argued for a less stringent version of the controls under consideration for data centers like A201 (<a href="https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html">New York Times</a>). On Sunday, Megaspeed, the Singapore company at the center of the Nvidia scandal, told CNBC that Alice Huang left on Aug.&nbsp;30, 2025, and has no role there. It said it has hired outside counsel for an internal investigation and that media reports about its supply chain &ldquo;are not supported by verifiable evidence&rdquo; (<a href="https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html">CNBC</a>).</p>
+  <p><b>Why it matters to you.</b> Whatever Commerce decides on offshore data centers sets how much Nvidia hardware can flow to Southeast Asia. That feeds straight into AI capex, and it is now also a conflict-of-interest question about a cabinet secretary. Senate Banking Chairman Tim Scott has asked Jensen Huang to testify on Thursday, Dec.&nbsp;3, and threatened a subpoena. House chairmen want a closed-door interview with Huang on Tuesday, Dec.&nbsp;1, and with Nvidia general counsel Tim Teter on Wednesday, Dec.&nbsp;2. Commerce says Lutnick &ldquo;proactively agreed&rdquo; to appear (<a href="https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390">ABC News</a>), and a U.S. official put his date at Thursday, Dec.&nbsp;10. China has warned Washington against tightening chip controls (<a href="https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/">CBS News</a>). Two large Nvidia holders, Altimeter&rsquo;s Brad Gerstner and Atreides&rsquo; Gavin Baker, have asked the board to weigh &ldquo;the potential return of Jensen Huang&rdquo; (<a href="https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html">CNBC</a>). Semafor has reported GOP doubts about how long Lutnick lasts (<a href="https://www.semafor.com/article/11/12/2026/nvidia-fallout-fuels-questions-about-lutnicks-staying-power">Semafor</a>). We could not confirm how Commerce or Cantor answered the Times. Why: any reply sits behind the paywall, and neither had commented in the sources we could read.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a policy judgment or a conflict?</span>
+    <p><b>What is in dispute.</b> A dispute over interpretation, with facts still missing. The Times puts Lutnick&rsquo;s lighter-touch position next to his former firm&rsquo;s client list. Treasury Secretary Scott Bessent has said Treasury, Defense, State and the trade representative wanted Megaspeed on the Entity List &ldquo;for months&rdquo; and that &ldquo;Commerce BIS has the pen&rdquo; (CBS News). Megaspeed denies the reporting about its supply chain.</p>
+    <p><b>Why the vantage differs.</b> The Times&rsquo; reporters, in Washington, New York and Taiwan, are working from corporate and client records. Bessent gains by putting distance between Treasury and the scandal. Megaspeed is under Justice Department investigation over possible diversion of chips to China (CNBC) and has legal exposure. Gerstner and Baker held Nvidia stakes worth about $1.9&nbsp;billion and $250&nbsp;million at the end of June, so they have money riding on how this ends.</p>
+    <p><b>What it means for the reader.</b> Treat the conflict claim as a reported pattern, not a finding. The written Commerce rule and the Dec.&nbsp;3 and Dec.&nbsp;10 hearings are where it gets tested. Nvidia&rsquo;s results on Tuesday, Nov.&nbsp;17, under interim CEO Colette Kress, are the first look at whether the scandal is costing business.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Lutnick and the chip rules?</b></p>
+    <label><input type="radio" name="fb-lutnick-cantor" value="rule"> If Commerce publishes the offshore data-center rule and it spares sites run by Cantor clients such as A201&rsquo;s operator</label>
+    <label><input type="radio" name="fb-lutnick-cantor" value="ig"> If an inspector general or the Office of Government Ethics opens a review of Lutnick&rsquo;s role</label>
+    <label><input type="radio" name="fb-lutnick-cantor" value="huang-dec3"> Only if Huang refuses the Dec.&nbsp;3 Senate Banking date and Tim Scott issues the subpoena</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html">New York Times</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html">CNBC (Megaspeed)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html">CNBC (investor letter)</a> &middot;
+    <a href="https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390">ABC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/">CBS News</a> &middot;
+    <a href="https://www.semafor.com/article/11/12/2026/nvidia-fallout-fuels-questions-about-lutnicks-staying-power">Semafor</a>
+  </p>
+</article>
+
+<article id="iran-bahrain">
+  <h3>Iran fires drones at a U.S. radar site in Bahrain for the second time in three days, testing Trump&rsquo;s line that he will hold off on new strikes unless provoked</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 (New York Times, Fox News, Al Jazeera, Iran International and the Wall Street Journal). Fox&rsquo;s account includes Reuters reporting, and Iran International relays Reuters and the Journal. In the accounts we read, U.S. Central Command had not commented on Sunday&rsquo;s attack.</p>
+  <p><b>Continuation trigger:</b> a threshold event. This is a second Iranian attack on a U.S. installation inside 72 hours, and it comes after Trump made &ldquo;further provocative action&rdquo; the condition for new strikes.</p>
+  <p>Bahrain&rsquo;s military said its air defenses intercepted several Iranian attacks early Sunday that were aimed at U.S. air-defense radar sites. These were Bahrain&rsquo;s first interceptions since September. The Interior Ministry twice told residents to take shelter. Iran&rsquo;s Revolutionary Guards said they sent six drones at a U.S. radar at Bahrain&rsquo;s Al-Rifaa helicopter base in retaliation for &ldquo;hostile U.S. military actions.&rdquo; No hits or damage have been confirmed. On Friday, U.S. Central Command said it shot down two Iranian drones without damage, and Bahrain&rsquo;s Foreign Ministry has asked the U.N. Security Council to act (<a href="https://www.foxnews.com/live-news/iran-war-strikes-donald-trump-strait-hormuz-irgc-november-15">Fox News</a>). The Guards said Friday&rsquo;s attack answered a U.S. strike on a telecommunications tower in Iran. The attacks resume after a two-month lull, with peace talks stalled (<a href="https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html">New York Times</a>). Iran is also warning Gulf states not to support a U.S. attack (<a href="https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status">Al Jazeera</a>).</p>
+  <p><b>Why it matters to you.</b> Reuters reported Saturday that Trump told advisers he may hold off on new strikes unless Tehran or the Houthis take &ldquo;further provocative action.&rdquo; Saudi Arabia&rsquo;s crown prince and Turkey&rsquo;s president have urged restraint, Israel is pressing for a new campaign, and a third U.S. aircraft carrier is heading to the region (<a href="https://www.iranintl.com/en/202611147134">Iran International, relaying Reuters</a>). The war began on Feb.&nbsp;28, and a U.S. naval blockade remains in place. The cost reaches households through refined fuel. The national average for heating oil was about $5.91 a gallon on Nov.&nbsp;9, up 59% in a year according to EIA data, and research from the Kansas City Fed ties the squeeze partly to the Iran war (<a href="https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html">CNBC</a>). The same refined-fuel market sets diesel prices for freight into Florida.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how much does Iran have left?</span>
+    <p><b>What is in dispute.</b> A factual dispute. The Journal reports U.S. officials estimate Iran still has 1,500 to 2,500 missiles, which runs against Trump&rsquo;s claims about Iran&rsquo;s arsenal (<a href="https://www.wsj.com/world/middle-east/u-s-figures-iran-still-has-up-to-2-500-missiles-countering-trump-assertions-4c6f4d67">Wall Street Journal</a>; text via <a href="https://www.iranintl.com/en/202611152550">Iran International</a>). Officials call it a low-confidence assessment. The Guards say they hit their targets. Bahrain says it stopped everything.</p>
+    <p><b>Why the vantage differs.</b> The Guards gain at home by claiming retaliation, and Bahrain, which hosts a major U.S. base, gains by showing its defenses work. The missile estimate came from unnamed officials during an internal argument over whether to strike again, and the Journal says it has factored into those talks. Reuters&rsquo; account rests on three people familiar with the discussions. The White House says only that Trump is the sole decision-maker.</p>
+    <p><b>What it means for the reader.</b> Watch for a Central Command statement on Sunday&rsquo;s drones and for whether Trump calls this the provocation he warned about. That decision, not the claims about damage, decides whether fuel markets tighten again.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran&ndash;Bahrain attacks?</b></p>
+    <label><input type="radio" name="fb-iran-bahrain" value="strike"> If Trump orders new U.S. strikes on Iran in answer to the Bahrain drones</label>
+    <label><input type="radio" name="fb-iran-bahrain" value="fl-fuel"> If the escalation shows up in Florida diesel or heating costs that households and truckers actually pay</label>
+    <label><input type="radio" name="fb-iran-bahrain" value="casualties"> Only if an Iranian drone or missile wounds U.S. personnel or damages the base</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.foxnews.com/live-news/iran-war-strikes-donald-trump-strait-hormuz-irgc-november-15">Fox News</a> &middot;
+    <a href="https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html">New York Times</a> &middot;
+    <a href="https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status">Al Jazeera</a> &middot;
+    <a href="https://www.iranintl.com/en/202611147134">Iran International (Reuters)</a> &middot;
+    <a href="https://www.iranintl.com/en/202611152550">Iran International (WSJ)</a> &middot;
+    <a href="https://www.wsj.com/world/middle-east/u-s-figures-iran-still-has-up-to-2-500-missiles-countering-trump-assertions-4c6f4d67">Wall Street Journal (headline)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html">CNBC</a>
+  </p>
+</article>
+
+<article id="anthropic-week">
+  <h3>Anthropic is set to price its IPO on Wednesday, with more than $900 billion in compute commitments behind it and Nvidia&rsquo;s first results without Huang due the day before</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">AI and financial services</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, Reuters as carried by Investing.com, and a Wall Street Journal headline), plus Anthropic&rsquo;s own roadshow notice. We could not read the prospectus: SEC&rsquo;s EDGAR refused our automated request, so the filing&rsquo;s figures are as CNBC reports them.</p>
+  <p><b>Continuation trigger:</b> a threshold event and a new verifiable fact. Pricing is now dated (Wednesday, Nov.&nbsp;18), demand figures are reported, and the scale of the commitments is disclosed. This brief covered the terms on Nov.&nbsp;10.</p>
+  <p>Anthropic is offering 825&nbsp;million Class&nbsp;A shares at $70 to $78 to list on Nasdaq as &ldquo;ANT&rdquo; (<a href="https://www.anthropic.com/news/roadshow-launch">Anthropic</a>). People familiar with the deal say it prices Wednesday and trades Thursday, Nov.&nbsp;19, with about 20% set aside for retail investors, compared with a typical 5&ndash;10%. At the top of the range it would raise up to $64.35&nbsp;billion and value the company at up to $1.405&nbsp;trillion fully diluted. AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC will buy another $26&nbsp;billion of stock at the IPO price (<a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC, Nov.&nbsp;10</a>). Reuters reported the order book was six times oversubscribed by Thursday, while investors question how long the company&rsquo;s lead lasts (<a href="https://www.investing.com/news/stock-market-news/exclusiveinvestors-flock-to-anthropic-ipo-but-question-durability-of-ai-lead-5026644">Reuters via Investing.com</a>). According to CNBC&rsquo;s reading of the latest prospectus, Anthropic has more than $900&nbsp;billion in outstanding spending commitments: at least $110&nbsp;billion with Amazon over a decade, $400&nbsp;billion with other companies for cloud capacity, and $300&nbsp;billion with data-center and chip partners (<a href="https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html">CNBC, Nov.&nbsp;15</a>).</p>
+  <p><b>Why it matters to you.</b> The big banks sit on both sides of this deal. CNBC reports Bank of America, Blackstone, Citigroup and Morgan Stanley have offered $63&nbsp;billion to buy racks of Broadcom AI chips that Anthropic will rent, with Broadcom backstopping up to $43&nbsp;billion. Google, set to own about 13% after the IPO, guarantees $19&nbsp;billion of Anthropic&rsquo;s lease commitments to TeraWulf in Kentucky. That is AI capex sitting on financial-services balance sheets. The large retail tranche means ordinary brokerage customers will be offered shares. The Journal&rsquo;s headline describes those buyers as &ldquo;hot on Anthropic&rsquo;s IPO but cool on AI&rdquo; (<a href="https://www.wsj.com/finance/stocks/the-individual-investors-who-are-hot-on-anthropics-ipo-but-cool-on-ai-461f89b4">Wall Street Journal</a>). The backdrop is a Nasdaq that fell 5.3% in October and local voters turning against data centers (see below the line).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how strong is the book, and how big are the losses?</span>
+    <p><b>What is in dispute.</b> Two readings. Reuters&rsquo; and CNBC&rsquo;s sources describe demand ahead of SpaceX&rsquo;s record offering. Yet CNBC also reported that some holders saw even a $1.5&nbsp;trillion valuation as &ldquo;a stretch.&rdquo; CNBC puts the nine-month net loss at $104&nbsp;billion. A FiscalHour summary of Anthropic&rsquo;s IPO page cites a third-quarter loss of $23.3&nbsp;billion, $21.9&nbsp;billion of it a non-cash fair-value charge (<a href="https://fiscalhour.com/articles/2026-11-12-anthropic-ipo-roadshow-price-range/">FiscalHour</a>). We could not confirm how much of the nine-month figure is non-cash. Why: we could not open the prospectus.</p>
+    <p><b>Why the vantage differs.</b> Demand figures come from people close to the banks, and banks running an offering want to show momentum. The skeptics CNBC quotes, such as cloud economist Corey Quinn (&ldquo;anything past three to four years, you&rsquo;re basically throwing darts in the dark&rdquo;), are judging the length of contracts, not the order book. Partners buying the $26&nbsp;billion placement are also Anthropic&rsquo;s suppliers. Reuters also quotes an investor who said the company did not give detailed answers to some questions at a roadshow meeting, where bankers mostly read from prepared remarks.</p>
+    <p><b>What it means for the reader.</b> Wednesday&rsquo;s final price and deal size are the market&rsquo;s verdict. The multi-decade obligations stay whatever the price. Nvidia&rsquo;s Tuesday results are the first read on whether the chip side of that bargain is holding.</p>
+  </div>
+  <details>
+    <summary>Dig deeper: what the commitments are</summary>
+    <p>CNBC&rsquo;s account of the filing: cloud partners Amazon, Google and Microsoft account for 31% of contractual obligations. Anthropic plans to spend $125&ndash;$150&nbsp;billion on Google AI chips, with deliveries starting in 2028. A data center leasing from 2027 carries a 20-year term. The prospectus says: &ldquo;In the past, we have significantly underestimated our compute requirements, which left us capacity constrained.&rdquo; CNBC says the IPO could yield more than $90&nbsp;billion, on top of $132&nbsp;billion in cash and short-term investments.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Anthropic&rsquo;s offering?</b></p>
+    <label><input type="radio" name="fb-anthropic-week" value="lenders"> If the final prospectus shows which banks carry the chip-rack financing and on what terms</label>
+    <label><input type="radio" name="fb-anthropic-week" value="local-sites"> If local data-center limits like those passed Nov.&nbsp;3 hit a site Anthropic or its partners have leased</label>
+    <label><input type="radio" name="fb-anthropic-week" value="delay"> Only if Nvidia&rsquo;s Tuesday report or Wednesday&rsquo;s book forces a delay or a cut in deal size</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html">CNBC (Nov.&nbsp;15)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html">CNBC (Nov.&nbsp;10)</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/exclusiveinvestors-flock-to-anthropic-ipo-but-question-durability-of-ai-lead-5026644">Reuters via Investing.com</a> &middot;
+    <a href="https://www.anthropic.com/news/roadshow-launch">Anthropic roadshow notice</a> &middot;
+    <a href="https://www.wsj.com/finance/stocks/the-individual-investors-who-are-hot-on-anthropics-ipo-but-cool-on-ai-461f89b4">Wall Street Journal (headline)</a> &middot;
+    <a href="https://fiscalhour.com/articles/2026-11-12-anthropic-ipo-roadshow-price-range/">FiscalHour</a>
+  </p>
+</article>
+
+<article id="delray-dei">
+  <h3>Florida&rsquo;s new local anti-DEI law claims a parade: Delray Beach cancels St. Patrick&rsquo;s Day and Pride for 2027, and DeSantis calls it &ldquo;malicious compliance&rdquo;</h3>
+  <div class="meta">
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (NPR, NBC News, WFLX and Bay News&nbsp;9), plus the city&rsquo;s own statement. The Florida Senate bill page rate-limited our request, so the law&rsquo;s text is as the city and WFLX describe it.</p>
+  <p>Delray Beach said on Tuesday that it will not host its 2027 St. Patrick&rsquo;s Day parade or its Pride event, citing Senate Bill 1134. The law takes effect Jan.&nbsp;1 and bars cities and counties from funding, promoting or taking official action on activities it defines as diversity, equity and inclusion (<a href="https://www.wflx.com/2026/11/10/delray-beach-cancels-2027-st-patricks-day-parade-pride-event-under-new-florida-law/">WFLX</a>). The city says St. Patrick&rsquo;s Day is not a federal holiday and so gets no exemption, and that officials who break the law can face misfeasance or malfeasance allegations and penalties (<a href="https://stpatsdelray.com/">City of Delray Beach</a>). Mayor Tom Carney, a Republican, told NPR the city attorney concluded that any government-sponsored celebration of culture or heritage that is not a national holiday could run afoul of the law. The city has been &ldquo;inundated&rdquo; with angry messages and is looking for a private sponsor. DeSantis answered on X: &ldquo;What they are doing is not mandated by Florida law. It&rsquo;s just an attempt to make a political point&rdquo; (<a href="https://text.npr.org/nx-s1-6041093">NPR</a>). NBC notes the law specifically bars taxpayer money for events that celebrate &ldquo;ethnicity&rdquo; (<a href="https://www.nbcnews.com/news/us-news/st-patricks-day-parade-canceled-florida-thanks-states-anti-dei-law-rcna609175">NBC News</a>).</p>
+  <p><b>Why it matters to you.</b> The law applies to every Florida city and county, including New Port Richey, Pasco, Pinellas and Hillsborough. In St. Petersburg, St. Pete Pride, which draws more than 300,000 people, says sponsorships fell by about $200,000 this year. Its board president named SB&nbsp;1134 as a possible factor, and the nonprofit is trying to raise $289,000 to pay off this year&rsquo;s costs (<a href="https://baynews9.com/fl/tampa/news/2026/11/09/st-pete-pride-prepares-for-th-anniversary-amid-fundraising-push">Bay News&nbsp;9</a>). WFLX reports the law lets any resident sue a city in circuit court, but still allows content-neutral event permits and public-safety services, so privately run events can go ahead. We could not confirm whether New Port Richey or Pasco County has reviewed its own events under the law. Why: we found no reporting, and county agendas are not posted for a Sunday.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; does the law require this?</span>
+    <p><b>What is in dispute.</b> A dispute over legal interpretation. The governor says cancelling is not required. The city&rsquo;s lawyer read the ethnicity and penalty clauses as leaving no safe way to sponsor the parade.</p>
+    <p><b>Why the vantage differs.</b> DeSantis signed the law and gains if it looks narrow and the cancellations look political. Carney and his council members are the ones facing personal penalties and resident lawsuits, so they have every reason to read it broadly. WFLX&rsquo;s reading of the exceptions, permits and public safety, describes what cities may still do, not what they may pay for.</p>
+    <p><b>What it means for the reader.</b> Until a court or the Legislature clarifies the law, expect local governments to take the cautious reading. In practice, festivals survive in 2027 by moving to private sponsors with city permits. Watch for the first resident lawsuit after Jan.&nbsp;1.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Florida&rsquo;s local anti-DEI law?</b></p>
+    <label><input type="radio" name="fb-delray-dei" value="tampa-bay"> If a Pasco, Pinellas or Hillsborough government cancels or privatizes an event citing SB&nbsp;1134</label>
+    <label><input type="radio" name="fb-delray-dei" value="lawsuit"> If a resident files the first circuit-court suit testing what the law counts as DEI</label>
+    <label><input type="radio" name="fb-delray-dei" value="amend"> If DeSantis or legislative leaders move to clarify or amend the ethnicity clause before Jan.&nbsp;1</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://text.npr.org/nx-s1-6041093">NPR</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/st-patricks-day-parade-canceled-florida-thanks-states-anti-dei-law-rcna609175">NBC News</a> &middot;
+    <a href="https://www.wflx.com/2026/11/10/delray-beach-cancels-2027-st-patricks-day-parade-pride-event-under-new-florida-law/">WFLX</a> &middot;
+    <a href="https://baynews9.com/fl/tampa/news/2026/11/09/st-pete-pride-prepares-for-th-anniversary-amid-fundraising-push">Bay News&nbsp;9</a> &middot;
+    <a href="https://stpatsdelray.com/">City of Delray Beach statement</a>
+  </p>
+</article>
+
+<!-- ===================== ALSO TODAY ===================== -->
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar for a mention but not a full lead. One feedback block for this section follows them.</p>
+
+<article id="faa-cause">
+  <h3>The FAA says it still does not know the root cause of Friday&rsquo;s ground stop; Duffy points at a contractor&rsquo;s copper-to-fiber switch</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 5 (CNBC, NBC News, Fox Business, NPR and Fox&nbsp;13), all drawing on Saturday&rsquo;s briefing and company statements.</p>
+  <p>&ldquo;What we saw was instability. We couldn&rsquo;t explain the instability,&rdquo; FAA Administrator Bryan Bedford said Saturday. He said the agency grounded flights &ldquo;because of our lack of identifying the root cause&rdquo; (<a href="https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html">CNBC</a>). The trouble started with a router problem during routine work at one remote FAA site. By the time departures stopped, disruptions had reached 17 of the agency&rsquo;s 22 en-route centers (<a href="https://www.nbcnews.com/news/us-news/router-problem-one-faa-site-led-nationwide-ground-stop-rcna609325">NBC News</a>). Duffy said contractor L3Harris, which owns the network, was moving a line from copper to fiber. L3Harris says it has finished more than 70% of that conversion and is helping the investigation (<a href="https://www.foxbusiness.com/fox-news-air-space/who-l3harris-federal-contractor-sec-duffy-says-may-have-caused-faa-outage">Fox Business</a>). Bedford undercut part of Duffy&rsquo;s $50&nbsp;billion pitch: router swaps are &ldquo;ordinary course of business stuff,&rdquo; not part of the $12.5&nbsp;billion modernization. &ldquo;Let&rsquo;s not conflate those two things.&rdquo; Duffy, on NPR: &ldquo;This was an FAA system that didn&rsquo;t meet the moment. Our contractor didn&rsquo;t meet the moment&rdquo; (<a href="https://text.npr.org/nx-s1-6040942">NPR</a>). Tampa International says it is fully operational but expects delays and cancellations through the weekend (<a href="https://www.fox13news.com/news/tampa-international-airport-delays-continue-after-faa-ground-stop">Fox&nbsp;13</a>). Why it matters: Thanksgiving travel peaks around Thursday, Nov.&nbsp;26, and Congress has not acted on the money request.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html">CNBC</a> &middot; <a href="https://www.nbcnews.com/news/us-news/router-problem-one-faa-site-led-nationwide-ground-stop-rcna609325">NBC News</a> &middot; <a href="https://www.foxbusiness.com/fox-news-air-space/who-l3harris-federal-contractor-sec-duffy-says-may-have-caused-faa-outage">Fox Business</a> &middot; <a href="https://text.npr.org/nx-s1-6040942">NPR</a> &middot; <a href="https://www.fox13news.com/news/tampa-international-airport-delays-continue-after-faa-ground-stop">Fox&nbsp;13</a></p>
+</article>
+
+<article id="measles">
+  <h3>The U.S. has lost measles elimination for the first time since 2000, researchers say; the Pan American Health Organization briefs on Tuesday</h3>
+  <div class="meta"><span class="chip">Science &amp; public health</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (NPR and CBS News), both relying on KFF Health News&rsquo; sourcing. PAHO itself has not announced the decision.</p>
+  <p>Researchers with direct knowledge told KFF Health News that PAHO concluded this week that measles has re-established regular transmission in the U.S. (<a href="https://text.npr.org/nx-s1-6041119">NPR</a>). This firms up the Wall Street Journal report we carried yesterday. CBS says PAHO holds a news conference on Tuesday, and counts 5,412 cases this year, against 2,242 last year, in 45 states and D.C., with Pennsylvania&rsquo;s outbreak over 1,500 cases (<a href="https://www.cbsnews.com/news/measles-elimination-status-united-states/">CBS News</a>). An HHS spokesperson blamed vaccination gaps that opened before this administration. Many scientists blame the administration&rsquo;s cuts to state immunization programs and its vaccine messaging (NPR). Why it matters: CBS&rsquo;s medical correspondent says ERs and pediatricians now need to consider measles in anyone with fever and rash, whether they have traveled or not, and babies under a year are not yet vaccinated.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how many deaths?</span>
+    <p><b>What is in dispute.</b> A factual count. NPR, carrying KFF, says states have reported 13 measles-associated deaths. CBS cites the CDC&rsquo;s figure of at least six, adding that some states report more.</p>
+    <p><b>Why the vantage differs.</b> The CDC count lags state reporting and uses its own confirmation rules. KFF is adding up state announcements. Neither side has a stake in the number, but they are measuring at different stages.</p>
+    <p><b>What it means for the reader.</b> Treat 13 as the state-reported count and six as the federally confirmed floor. Tuesday&rsquo;s PAHO briefing is the official record on elimination status.</p>
+  </div>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6041119">NPR</a> &middot; <a href="https://www.cbsnews.com/news/measles-elimination-status-united-states/">CBS News</a></p>
+</article>
+
+<article id="datacenter-votes">
+  <h3>Voters have backed limits in 46 of 47 data-center ballot measures this year, with four more votes in December</h3>
+  <div class="meta"><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Elections and electoral process</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (Ballotpedia, the American Legislative Exchange Council and Canary Media), from three different vantage points.</p>
+  <p>As of Nov.&nbsp;13, voters had decided 47 data-center measures in 2026, and 46 limited development. Arkansas votes on Dec.&nbsp;1 (Clarksville, on bond financing for a Serverfarm project), Maine on Dec.&nbsp;8 (a Hollis moratorium) and North Dakota on Dec.&nbsp;15 (Mandan) (<a href="https://news.ballotpedia.org/2026/11/15/voters-have-decided-on-47-measures-related-to-data-centers-in-2026-in-december-they-will-consider-four-more/">Ballotpedia</a>). ALEC, which backs the industry, counts Ohio as the epicenter with 21 measures and says restrictions won an average 75% of the vote (<a href="https://alec.org/article/after-a-rebuke-at-the-ballot-box-whats-next-for-state-data-center-policy/">ALEC</a>). Canary Media, which covers clean energy, notes that Georgia Gov.-elect Keisha Lance Bottoms has pledged a &ldquo;pause&rdquo; on new data-center construction (<a href="https://www.canarymedia.com/articles/data-centers/data-center-voters-election-day">Canary Media</a>). Why it matters: Pasco already has a one-year moratorium on large data centers, running to July&nbsp;2027 (<a href="https://www.wusf.org/politics-issues/2026-07-15/pasco-county-one-year-moratorium-large-data-centers">WUSF</a>), and the power-bill fight is where AI capex reaches households.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://news.ballotpedia.org/2026/11/15/voters-have-decided-on-47-measures-related-to-data-centers-in-2026-in-december-they-will-consider-four-more/">Ballotpedia</a> &middot; <a href="https://alec.org/article/after-a-rebuke-at-the-ballot-box-whats-next-for-state-data-center-policy/">ALEC</a> &middot; <a href="https://www.canarymedia.com/articles/data-centers/data-center-voters-election-day">Canary Media</a> &middot; <a href="https://www.wusf.org/politics-issues/2026-07-15/pasco-county-one-year-moratorium-large-data-centers">WUSF</a></p>
+</article>
+
+<article id="mexico-tariffs">
+  <h3>Trump threatens to &ldquo;immediately&rdquo; double tariffs on Mexico over a migrant caravan; no order has followed</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (Texas Public Radio, Infobae and Semafor), plus Reuters for the post&rsquo;s text.</p>
+  <p>&ldquo;MEXICO MUST STOP THEM, NOW, and if they do not do so, the Tariffs on Mexico will be IMMEDIATELY DOUBLED,&rdquo; Trump posted Thursday, after about 1,500 migrants left Tapachula (<a href="https://www.reuters.com/5f374b32b07b/world/us/trump-threatens-double-tariffs-mexico-if-it-does-not-halt-migrants-2026-11-12/">Reuters</a>). President Claudia Sheinbaum replied that no caravan has reached the U.S. border since Trump returned to office, and that one group had shrunk from about 600 people to fewer than 100 (<a href="https://www.infobae.com/mexico/2026/11/12/sheinbaum-responde-a-trump-tras-amenaza-de-duplicar-aranceles-por-caravanas-migrantes-desde-que-llego-no-ha-llegado-ninguna-caravana-a-la-frontera-norte/">Infobae</a>). It is unclear what legal authority Trump would use after the Supreme Court rejected his emergency tariff powers in February. Texas alone traded $301.8&nbsp;billion in goods with Mexico last year (<a href="https://www.tpr.org/text/border-immigration/2026-11-12/trump-threatens-to-double-mexico-tariffs-as-migrants-head-north">Texas Public Radio</a>). Semafor notes that Stephen Miller&rsquo;s elevation to White House chief of staff has dimmed migrants&rsquo; hopes of a friendlier policy (<a href="https://www.semafor.com/article/11/13/2026/us-president-donald-trump-threatens-new-mexico-tariffs">Semafor</a>). We could not confirm any tariff order or date. Why: none has been published, and Infobae reports no formal U.S. announcement. Why it matters: Mexico is the largest U.S. trading partner, and the threat lands as Sheinbaum heads to APEC in China.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.reuters.com/5f374b32b07b/world/us/trump-threatens-double-tariffs-mexico-if-it-does-not-halt-migrants-2026-11-12/">Reuters</a> &middot; <a href="https://www.infobae.com/mexico/2026/11/12/sheinbaum-responde-a-trump-tras-amenaza-de-duplicar-aranceles-por-caravanas-migrantes-desde-que-llego-no-ha-llegado-ninguna-caravana-a-la-frontera-norte/">Infobae</a> &middot; <a href="https://www.tpr.org/text/border-immigration/2026-11-12/trump-threatens-to-double-mexico-tariffs-as-migrants-head-north">Texas Public Radio</a> &middot; <a href="https://www.semafor.com/article/11/13/2026/us-president-donald-trump-threatens-new-mexico-tariffs">Semafor</a></p>
+</article>
+
+<article id="statehouses">
+  <h3>Democrats look set to end the Republican statehouse dominance that began in 2010, and the party is split over new taxes to pay for its agenda</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Core &mdash; US debt &amp; fiscal</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 4 (NPR, Tampa Bay Times, Vox, and a Wall Street Journal headline).</p>
+  <p>Going into the midterms, Republicans controlled 28 legislatures and Democrats 18. With votes still being counted, Democrats look likely to lead 24 to 22. They gained six trifectas, took the Pennsylvania Senate for the first time since the Carter years and the Texas House for the first time in 24 years, and gained ground in Florida (<a href="https://text.npr.org/nx-s1-6039175">NPR</a>). Sen. Rick Scott counts a 16-seat Republican loss in the Florida House, while DeSantis is taking a victory lap (<a href="https://www.tampabay.com/news/florida-politics/elections/2026/11/14/desantis-red-state-midterm-election-wins-campaign/">Tampa Bay Times</a>). In Washington, the Journal reports Democrats are &ldquo;torn over floating new taxes&rdquo; to cover a multitrillion-dollar agenda (<a href="https://www.wsj.com/politics/democrats-torn-over-floating-new-taxes-to-cover-multitrillion-dollar-agenda-0d3293fa">Wall Street Journal</a>). Vox adds up the programs party leaders have endorsed, such as reversing Medicaid and SNAP cuts, restoring ACA subsidies and universal childcare, at nearly $5&nbsp;trillion, and argues that taxing the rich alone probably cannot pay for it (<a href="https://www.vox.com/politics/510291/democrats-agenda-taxes-midterms">Vox</a>). Why it matters: state taxes, school money and health rules change first, and the federal pay-for fight shapes the deficit path once the new Congress sits in January.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/nx-s1-6039175">NPR</a> &middot; <a href="https://www.tampabay.com/news/florida-politics/elections/2026/11/14/desantis-red-state-midterm-election-wins-campaign/">Tampa Bay Times</a> &middot; <a href="https://www.wsj.com/politics/democrats-torn-over-floating-new-taxes-to-cover-multitrillion-dollar-agenda-0d3293fa">Wall Street Journal (headline)</a> &middot; <a href="https://www.vox.com/politics/510291/democrats-agenda-taxes-midterms">Vox</a></p>
+</article>
+
+<article id="bump-stocks">
+  <h3>Florida&rsquo;s attorney general says the 2018 bump-stock ban is unconstitutional and will stop defending convictions under it</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CBS Miami, and the same wire text carried by the Tampa Bay Times and WUSF, counted once), plus the attorney general&rsquo;s signed opinion.</p>
+  <p>James Uthmeier said Friday the ban &ldquo;appears to restrict the use of trigger enhancements used by firearms owners for lawful purposes, subjecting them to five years in prison&rdquo; (<a href="https://www.tampabay.com/news/florida-politics/2026/11/14/uthmeier-bump-stock-guns-ban-unconstitutional/">Tampa Bay Times</a>). His formal opinion calls such modified semiautomatics &ldquo;bearable arms covered by the Second Amendment&rsquo;s plain text&rdquo; (<a href="https://www.myfloridalegal.com/sites/default/files/From%20the%20desk%20documents/signed_bump-stock-ago.pdf">Attorney General&rsquo;s opinion</a>). The ban was part of the law passed after the Parkland shooting, which also raised the rifle-buying age to 21 and created red-flag orders. The federal ban fell at the U.S. Supreme Court in 2024 (<a href="https://www.cbsnews.com/miami/news/florida-attorney-general-james-uthmeier-bump-stock-ban-unconstitutional/">CBS Miami</a>). Why it matters: the opinion does not repeal the law, but it leaves the statute without its main defender in appeals courts.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.tampabay.com/news/florida-politics/2026/11/14/uthmeier-bump-stock-guns-ban-unconstitutional/">Tampa Bay Times</a> &middot; <a href="https://www.cbsnews.com/miami/news/florida-attorney-general-james-uthmeier-bump-stock-ban-unconstitutional/">CBS Miami</a> &middot; <a href="https://www.myfloridalegal.com/sites/default/files/From%20the%20desk%20documents/signed_bump-stock-ago.pdf">AG opinion</a></p>
+</article>
+
+<article id="kushner-europe">
+  <h3>Kushner says he is working to bring Europe into direct talks with Moscow, four days before Trump sits down with Xi and Putin</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (Al Jazeera and the Guardian).</p>
+  <p>Envoy Jared Kushner said Saturday that &ldquo;both sides&rdquo; know compromises will be needed, and that he and Steve Witkoff are working on next steps, including direct engagement between Europe and Moscow. European leaders agreed Friday to send five representatives, from France, Germany, Italy, Poland and the U.K., to future talks. Last Tuesday&rsquo;s Abu Dhabi round produced a prisoner exchange but no breakthrough (<a href="https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine">Al Jazeera</a>). Zelensky repeated that Ukraine will not concede territory or accept neutrality, though he would put a full package with security guarantees to a referendum (<a href="https://www.theguardian.com/world/2026/nov/15/ukraine-war-briefing-us-proposes-kyiv-cede-land-to-russia-for-nato-membership-zelenskyy-says">Guardian</a>). Why it matters: Thursday&rsquo;s Shenzhen meeting leaves Ukraine to a separate track, and this is that track taking shape.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine">Al Jazeera</a> &middot; <a href="https://www.theguardian.com/world/2026/nov/15/ukraine-war-briefing-us-proposes-kyiv-cede-land-to-russia-for-nato-membership-zelenskyy-says">Guardian</a></p>
+</article>
+
+<article id="starship">
+  <h3>SpaceX catches a Starship returning from orbit for the first time, though the booster exploded</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (NPR and CNBC).</p>
+  <p>Starship&rsquo;s upper stage was caught by the launch-tower arms in Texas on Saturday, 22 hours after liftoff, having circled Earth 14 times and released 26 Starlink satellites. The booster failed to return and exploded over the Gulf of Mexico (<a href="https://text.npr.org/g-s1-153786">NPR</a>). It was the first attempt to catch both stages (<a href="https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html">CNBC</a>). Why it matters: NASA is paying billions for Starship to land Artemis astronauts on the moon, and full reuse is the economics behind Starlink and SpaceX&rsquo;s public valuation.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://text.npr.org/g-s1-153786">NPR</a> &middot; <a href="https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html">CNBC</a></p>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these would you want promoted to a lead next time, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="dc-florida"> The data-center votes, if a Florida county puts a ban or moratorium on its own ballot</label>
+  <label><input type="radio" name="fb-also" value="mexico-order"> The Mexico tariff threat, if Trump actually signs a doubling order and names its legal basis</label>
+  <label><input type="radio" name="fb-also" value="measles-fl"> Measles, if Florida cases or school vaccine exemptions become part of the story</label>
+</div>
+</article>
+
+<footer>
+  <p><b>Provenance.</b> 95 sources checked; 25 swept before any weighting category was consulted. Four leads and eight items below the line (12 stories). Three leads carry over from earlier editions, each with a stated trigger: Lutnick and the chip rules (the Times&rsquo; Cantor-client finding and Megaspeed&rsquo;s statement), Iran and Bahrain (a second attack inside 72 hours after Trump&rsquo;s provocation line), and Anthropic (a dated Wednesday pricing and disclosed commitments). Marker tallies: PS&nbsp;0 &middot; IC&nbsp;12 &middot; SS&nbsp;0 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: Commerce&rsquo;s and Cantor&rsquo;s reply to the Times, the non-cash share of Anthropic&rsquo;s nine-month loss, Tampa Bay governments&rsquo; reviews of SB&nbsp;1134, and any Mexico tariff order. Damage claims in Bahrain are unverified on both sides, and we say so. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;15 is a Sunday; Nov.&nbsp;17 a Tuesday; Nov.&nbsp;18 a Wednesday; Nov.&nbsp;19 a Thursday; Nov.&nbsp;26 a Thursday; Dec.&nbsp;1 a Tuesday; Dec.&nbsp;2 a Wednesday; Dec.&nbsp;3 a Thursday; Dec.&nbsp;10 a Thursday; Jan.&nbsp;1, 2027 a Friday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-15-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <ul class="noted-list">
+    <li>Heating oil averaged about $5.91 a gallon on Nov.&nbsp;9, up 59% in a year (<a href="https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html">CNBC</a>). Missed: mostly a Northeast household cost; used as context in the Iran lead.</li>
+    <li>A UPS cargo plane and a Copa Airlines jet collided on a Miami International taxiway Saturday night (<a href="https://www.cbsnews.com/miami/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/">CBS Miami</a>). Missed: a ground accident with no policy question yet.</li>
+    <li>A federal judge temporarily blocked the administration from closing D.C.&rsquo;s East Potomac golf course for Trump&rsquo;s redevelopment plan (<a href="https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/">CBS News</a>). Missed: a temporary order with little consequence beyond Washington.</li>
+    <li>A second Epstein-files discharge petition reached 218 signatures on Wednesday; floor action could come Dec.&nbsp;2 or 3 (<a href="https://abcnews.com/US/discharge-petition-2nd-epstein-files-bill-secures-218/story?id=138057235">ABC News</a>). Missed: four days old, and the next step is weeks away.</li>
+    <li>Workday suffered a major outage days after Microsoft&rsquo;s (<a href="https://www.fox13news.com/news/workday-outage-means-employees-across-thousands-businesses-cant-access-accounts">Fox&nbsp;13</a>). Missed: no cause given and no sign it is connected.</li>
+    <li>Italy&rsquo;s privacy regulator fined Meta about &euro;805&nbsp;million over access to users&rsquo; photos (<a href="https://www.bbc.com/news/articles/cwn83gxemk35o">BBC</a>). Missed: a foreign regulator&rsquo;s action with no U.S. rule change.</li>
+    <li>The Port of New Orleans sued to seize the tanker that capsized a riverboat (<a href="https://www.cbsnews.com/news/port-of-new-orleans-sues-tanker-riverboat-crash/">CBS News</a>). Missed: accident litigation with no wider policy effect yet.</li>
+    <li>The Philippines and Australia signed a defense pact aimed at China (<a href="https://www.nbcnews.com/world/asia/philippines-australia-sign-defence-pact-eye-china-rcna609387">NBC News</a>). Missed: the U.S. link is indirect.</li>
+    <li>New York&rsquo;s Democratic Socialists urged Rep. Alexandria Ocasio-Cortez to run for president (<a href="https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president">Al Jazeera</a>). Missed: 2028 horse race, an anti-topic.</li>
+    <li>Tampa Bay&rsquo;s dengue outbreak is the state&rsquo;s worst locally acquired outbreak in a century, with more than 580 sick (<a href="https://www.tampabay.com/news/environment/2026/11/14/dengue-fever-florida-mosquito-aedes/">Tampa Bay Times</a>). Missed: no new state numbers since our Nov.&nbsp;14 note; the next report is due this week.</li>
+    <li>Elon Musk signed the &ldquo;Stand with Jensen&rdquo; petition, which claims more than 100,000 signatures, and said &ldquo;critical deals will be lost&rdquo; without Huang (<a href="https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html">CNBC</a>). Missed: reaction rather than a development; the board&rsquo;s choice is the news.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

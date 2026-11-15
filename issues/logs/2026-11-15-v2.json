@@ -1,0 +1,705 @@
+{
+  "issue": "2026-11-15-v2",
+  "date": "2026-11-15",
+  "run_started_local": "2026-11-15T07:21:00-05:00",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "News fronts, Tampa Bay outlets and X trends/news were swept before config.md weighting categories, the empty watchlist or yesterday's issue were consulted. Prior v2 issues were grepped only afterwards to see which candidates had already run (Anthropic Nov 10, Bahrain Nov 13, measles/dengue/Kushner Nov 14) and whether each had a new development.",
+  "sources_swept_before_category": [
+    "NPR text front (text.npr.org)",
+    "NPR news list (text.npr.org/1001)",
+    "Al Jazeera news index",
+    "Fox News front",
+    "Fox News politics",
+    "Fox Business front",
+    "BBC News front",
+    "BBC US & Canada page",
+    "Guardian US front",
+    "CBS News front",
+    "NBC News front",
+    "ABC News front",
+    "CNBC world front",
+    "PBS NewsHour front",
+    "New York Post front",
+    "Wall Street Journal front (headlines only)",
+    "New York Times front (headlines only)",
+    "Semafor front",
+    "DW English front",
+    "Fox 13 Tampa Bay front",
+    "WUSF front",
+    "Tampa Bay Times front",
+    "WTSP front",
+    "X US trends (get_trends_by_woeid 23424977)",
+    "X news search (search_news, 18h)"
+  ],
+  "sweeps_attempted_failed": [
+    "Politico (403)",
+    "Axios (403)",
+    "The Hill (403)",
+    "Florida Politics (403)",
+    "Newsmax (no connection)",
+    "Federal Register API (non-JSON response; public inspection offline Sunday)",
+    "SEC EDGAR (undeclared automated tool block)",
+    "CENTCOM press releases (403)",
+    "CDC measles data page (403)",
+    "flsenate.gov SB 1134 page (429)",
+    "Times of Israel (403)",
+    "UPI (403)",
+    "WSJ article bodies (paywall; headlines only)",
+    "NYT article bodies (paywall beyond opening paragraphs)"
+  ],
+  "broad_sweeps": [
+    "NPR text front (text.npr.org)",
+    "NPR news list (text.npr.org/1001)",
+    "Al Jazeera news index",
+    "Fox News front",
+    "Fox News politics",
+    "Fox Business front",
+    "BBC News front",
+    "BBC US & Canada page",
+    "Guardian US front",
+    "CBS News front",
+    "NBC News front",
+    "ABC News front",
+    "CNBC world front",
+    "PBS NewsHour front",
+    "New York Post front",
+    "Wall Street Journal front (headlines only)",
+    "New York Times front (headlines only)",
+    "Semafor front",
+    "DW English front",
+    "Fox 13 Tampa Bay front",
+    "WUSF front",
+    "Tampa Bay Times front",
+    "WTSP front",
+    "X US trends (get_trends_by_woeid 23424977)",
+    "X news search (search_news, 18h)"
+  ],
+  "sources_checked": [
+    {
+      "story": "lutnick-cantor",
+      "url": "https://abcnews.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://abcnews.com/US/discharge-petition-2nd-epstein-files-bill-secures-218/story?id=138057235"
+    },
+    {
+      "story": "datacenter-votes",
+      "url": "https://alec.org/article/after-a-rebuke-at-the-ballot-box-whats-next-for-state-data-center-policy/"
+    },
+    {
+      "story": "delray-dei",
+      "url": "https://baynews9.com/fl/tampa/news/2026/11/09/st-pete-pride-prepares-for-th-anniversary-amid-fundraising-push"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://fiscalhour.com/articles/2026-11-12-anthropic-ipo-roadshow-price-range/"
+    },
+    {
+      "story": "datacenter-votes",
+      "url": "https://news.ballotpedia.org/2026/11/15/voters-have-decided-on-47-measures-related-to-data-centers-in-2026-in-december-they-will-consider-four-more/"
+    },
+    {
+      "story": "delray-dei",
+      "url": "https://stpatsdelray.com/"
+    },
+    {
+      "story": "starship",
+      "url": "https://text.npr.org/g-s1-153786"
+    },
+    {
+      "story": "statehouses",
+      "url": "https://text.npr.org/nx-s1-6039175"
+    },
+    {
+      "story": "faa-cause",
+      "url": "https://text.npr.org/nx-s1-6040942"
+    },
+    {
+      "story": "delray-dei",
+      "url": "https://text.npr.org/nx-s1-6041093"
+    },
+    {
+      "story": "measles",
+      "url": "https://text.npr.org/nx-s1-6041119"
+    },
+    {
+      "story": "kushner-europe",
+      "url": "https://www.aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.aljazeera.com/news/2026/11/15/new-york-democratic-socialists-urge-ocasio-cortez-to-run-for-us-president"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://www.anthropic.com/news/roadshow-launch"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.bbc.com/news/articles/cwn83gxemk35o"
+    },
+    {
+      "story": "datacenter-votes",
+      "url": "https://www.canarymedia.com/articles/data-centers/data-center-voters-election-day"
+    },
+    {
+      "story": "bump-stocks",
+      "url": "https://www.cbsnews.com/miami/news/florida-attorney-general-james-uthmeier-bump-stock-ban-unconstitutional/"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cbsnews.com/miami/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/"
+    },
+    {
+      "story": "lutnick-cantor",
+      "url": "https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cbsnews.com/news/judge-blocks-east-potomac-park-dc-closing/"
+    },
+    {
+      "story": "measles",
+      "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cbsnews.com/news/port-of-new-orleans-sues-tanker-riverboat-crash/"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.cnbc.com/2026/11/14/heating-oil-price-spike-household-budgets.html"
+    },
+    {
+      "story": "lutnick-cantor",
+      "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html"
+    },
+    {
+      "story": "faa-cause",
+      "url": "https://www.cnbc.com/2026/11/14/root-cause-of-nationwide-ground-stop-is-unknown-faa-says.html"
+    },
+    {
+      "story": "starship",
+      "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html"
+    },
+    {
+      "story": "lutnick-cantor",
+      "url": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html"
+    },
+    {
+      "story": "faa-cause",
+      "url": "https://www.fox13news.com/news/tampa-international-airport-delays-continue-after-faa-ground-stop"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.fox13news.com/news/workday-outage-means-employees-across-thousands-businesses-cant-access-accounts"
+    },
+    {
+      "story": "faa-cause",
+      "url": "https://www.foxbusiness.com/fox-news-air-space/who-l3harris-federal-contractor-sec-duffy-says-may-have-caused-faa-outage"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.foxnews.com/live-news/iran-war-strikes-donald-trump-strait-hormuz-irgc-november-15"
+    },
+    {
+      "story": "mexico-tariffs",
+      "url": "https://www.infobae.com/mexico/2026/11/12/sheinbaum-responde-a-trump-tras-amenaza-de-duplicar-aranceles-por-caravanas-migrantes-desde-que-llego-no-ha-llegado-ninguna-caravana-a-la-frontera-norte/"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://www.investing.com/news/stock-market-news/exclusiveinvestors-flock-to-anthropic-ipo-but-question-durability-of-ai-lead-5026644"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.iranintl.com/en/202611147134"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.iranintl.com/en/202611152550"
+    },
+    {
+      "story": "bump-stocks",
+      "url": "https://www.myfloridalegal.com/sites/default/files/From%20the%20desk%20documents/signed_bump-stock-ago.pdf"
+    },
+    {
+      "story": "faa-cause",
+      "url": "https://www.nbcnews.com/news/us-news/router-problem-one-faa-site-led-nationwide-ground-stop-rcna609325"
+    },
+    {
+      "story": "delray-dei",
+      "url": "https://www.nbcnews.com/news/us-news/st-patricks-day-parade-canceled-florida-thanks-states-anti-dei-law-rcna609175"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.nbcnews.com/world/asia/philippines-australia-sign-defence-pact-eye-china-rcna609387"
+    },
+    {
+      "story": "lutnick-cantor",
+      "url": "https://www.nytimes.com/2026/11/15/us/politics/trump-lutnick-ai-chips-cantor-fitzgerald.html"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.nytimes.com/2026/11/15/world/middleeast/bahrain-iran-israel.html"
+    },
+    {
+      "story": "mexico-tariffs",
+      "url": "https://www.reuters.com/5f374b32b07b/world/us/trump-threatens-double-tariffs-mexico-if-it-does-not-halt-migrants-2026-11-12/"
+    },
+    {
+      "story": "lutnick-cantor",
+      "url": "https://www.semafor.com/article/11/12/2026/nvidia-fallout-fuels-questions-about-lutnicks-staying-power"
+    },
+    {
+      "story": "mexico-tariffs",
+      "url": "https://www.semafor.com/article/11/13/2026/us-president-donald-trump-threatens-new-mexico-tariffs"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.tampabay.com/news/environment/2026/11/14/dengue-fever-florida-mosquito-aedes/"
+    },
+    {
+      "story": "bump-stocks",
+      "url": "https://www.tampabay.com/news/florida-politics/2026/11/14/uthmeier-bump-stock-guns-ban-unconstitutional/"
+    },
+    {
+      "story": "statehouses",
+      "url": "https://www.tampabay.com/news/florida-politics/elections/2026/11/14/desantis-red-state-midterm-election-wins-campaign/"
+    },
+    {
+      "story": "kushner-europe",
+      "url": "https://www.theguardian.com/world/2026/nov/15/ukraine-war-briefing-us-proposes-kyiv-cede-land-to-russia-for-nato-membership-zelenskyy-says"
+    },
+    {
+      "story": "mexico-tariffs",
+      "url": "https://www.tpr.org/text/border-immigration/2026-11-12/trump-threatens-to-double-mexico-tariffs-as-migrants-head-north"
+    },
+    {
+      "story": "statehouses",
+      "url": "https://www.vox.com/politics/510291/democrats-agenda-taxes-midterms"
+    },
+    {
+      "story": "delray-dei",
+      "url": "https://www.wflx.com/2026/11/10/delray-beach-cancels-2027-st-patricks-day-parade-pride-event-under-new-florida-law/"
+    },
+    {
+      "story": "anthropic-week",
+      "url": "https://www.wsj.com/finance/stocks/the-individual-investors-who-are-hot-on-anthropics-ipo-but-cool-on-ai-461f89b4"
+    },
+    {
+      "story": "statehouses",
+      "url": "https://www.wsj.com/politics/democrats-torn-over-floating-new-taxes-to-cover-multitrillion-dollar-agenda-0d3293fa"
+    },
+    {
+      "story": "iran-bahrain",
+      "url": "https://www.wsj.com/world/middle-east/u-s-figures-iran-still-has-up-to-2-500-missiles-countering-trump-assertions-4c6f4d67"
+    },
+    {
+      "story": "datacenter-votes",
+      "url": "https://www.wusf.org/politics-issues/2026-07-15/pasco-county-one-year-moratorium-large-data-centers"
+    },
+    {
+      "story": "faa-cause",
+      "source": "New York Times ground-stop story (fetched; paywalled, headline only)",
+      "url": "https://www.nytimes.com/2026/11/14/us/politics/ground-stop-air-traffic-faa.html"
+    },
+    {
+      "story": "datacenter-votes",
+      "source": "Ballotpedia Nov. 6 tally (40 of 41)",
+      "url": "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/"
+    },
+    {
+      "story": "lutnick-cantor",
+      "source": "Semafor: Bessent knocks Lutnick on Megaspeed",
+      "url": "https://www.semafor.com/article/11/13/2026/bessent-knocks-lutnick-on-megaspeed"
+    },
+    {
+      "story": "measles",
+      "source": "PAHO measles topic page (no announcement yet)",
+      "url": "https://www.paho.org/en/topics/measles"
+    },
+    {
+      "story": "negative-check",
+      "source": "WebSearch: UAP/AARO (no new release since PURSUE Release 07, Oct. 23, per search summary)",
+      "url": "https://www.aaro.mil/Congressional-Press-Products/"
+    },
+    {
+      "story": "negative-check",
+      "source": "WebSearch: JPMorgan/Dimon Nov. 14 (Motley Fool on AI-agent card block)",
+      "url": "https://www.fool.com/investing/2026/11/14/jamie-dimon-just-said-5-words-blocking-outside-ai/"
+    },
+    {
+      "story": "negative-check",
+      "source": "WebSearch: Pasco data centers (WUSF July moratorium)",
+      "url": "https://www.tampabaybeacons.com/2026/07/20/pasco-unanimously-passes-moratorium-on-data-centers/"
+    },
+    {
+      "story": "negative-check",
+      "source": "WebSearch: Tampa Bay dengue (WUSF Nov. 13; FDOH week 44 report)",
+      "url": "https://www.wusf.org/health-news-florida/2026-11-13/florida-reports-fewer-dengue-investigations-but-tampa-bay-outbreak-persists"
+    },
+    {
+      "story": "mexico-tariffs",
+      "source": "Washington Post caravan story (search excerpt)",
+      "url": "https://www.washingtonpost.com/world/2026/11/12/trump-reverts-an-old-theme-warns-immigrant-caravans/"
+    },
+    {
+      "story": "statehouses",
+      "source": "Semafor on Medicare for All split (search excerpt)",
+      "url": "https://www.semafor.com/article/11/11/2026/progressives-try-to-have-it-both-ways-on-medicare-for-all"
+    },
+    {
+      "story": "cut",
+      "source": "Fox News politics newsletter (Venezuela 'acting president' item, found to date from January; cut)",
+      "url": "https://www.foxnews.com/politics/fox-news-politics-newsletter-trump-declares-himself-venezuelas-acting-president"
+    }
+  ],
+  "sources_checked_total": 95,
+  "sources_checked_note": "Total = 25 fronts/sweeps before categories + 70 article pages, documents or search excerpts read for stories, Also noted, cuts and the negative check.",
+  "candidate_count": 47,
+  "candidates": [
+    {
+      "item": "Lutnick pushed softer chip rules affecting Malaysian A201 data center run by Cantor client (NYT); Megaspeed internal probe (CNBC)",
+      "decision": "keep: lead (lutnick-cantor)",
+      "reason": "new verifiable fact in the Nvidia/Commerce story; conflict-of-interest and AI capex channel; underreported, only the Times has it"
+    },
+    {
+      "item": "Iran drone strikes on U.S. radar in Bahrain, second in three days; Reuters says Trump to hold off unless provoked; WSJ missile estimate",
+      "decision": "keep: lead (iran-bahrain)",
+      "reason": "threshold event against Trump's stated condition; war/fuel channel; credible disagreement over Iran's arsenal"
+    },
+    {
+      "item": "Anthropic IPO pricing Wed Nov 18, trading Thu Nov 19; >$900B commitments; bank chip-rack financing; Nvidia earnings Tue",
+      "decision": "keep: lead (anthropic-week)",
+      "reason": "dated decision this week; AI + financial services core to reader; money behind the scenes"
+    },
+    {
+      "item": "Delray Beach cancels St. Patrick's parade and Pride under SB 1134; DeSantis 'malicious compliance'; St. Pete Pride sponsorship drop",
+      "decision": "keep: lead (delray-dei)",
+      "reason": "Florida law affecting every Tampa Bay government from Jan 1; public reaction; legal-interpretation fight"
+    },
+    {
+      "item": "FAA: root cause of ground stop unknown; L3Harris copper-to-fiber; Bedford vs Duffy on modernization; TPA delays",
+      "decision": "keep: Also today (faa-cause)",
+      "reason": "ran as yesterday's lead; new facts justify a short item, not a lead"
+    },
+    {
+      "item": "U.S. loses measles elimination (KFF via NPR/CBS); PAHO briefing Tuesday",
+      "decision": "keep: Also today (measles)",
+      "reason": "firms up yesterday's WSJ report; short item"
+    },
+    {
+      "item": "Data-center ballot measures: 46 of 47 limit development; four more in December",
+      "decision": "keep: Also today (datacenter-votes)",
+      "reason": "data-center/power weighting; Pasco moratorium context; viewpoint-diverse sources"
+    },
+    {
+      "item": "Trump threatens to double tariffs on Mexico over caravan; Sheinbaum response",
+      "decision": "keep: Also today (mexico-tariffs)",
+      "reason": "not carried by v2 before; trade/prices channel; no order yet so not a lead"
+    },
+    {
+      "item": "Democrats flip state legislatures; party torn over new taxes for agenda",
+      "decision": "keep: Also today (statehouses)",
+      "reason": "fiscal and state-policy channel; Florida House losses"
+    },
+    {
+      "item": "Uthmeier won't defend Florida bump-stock ban",
+      "decision": "keep: Also today (bump-stocks)",
+      "reason": "Florida state-level policy shift with a signed AG opinion"
+    },
+    {
+      "item": "Kushner: Europe to join direct talks with Moscow; Zelensky on Donbas/NATO",
+      "decision": "keep: Also today (kushner-europe)",
+      "reason": "new fact ahead of Thursday's trilateral; Donbas question ran yesterday"
+    },
+    {
+      "item": "SpaceX catches Starship upper stage from orbit; booster lost",
+      "decision": "keep: Also today (starship)",
+      "reason": "major tech milestone with NASA Artemis and SpaceX valuation channels"
+    },
+    {
+      "item": "Heating oil up 59% y/y (CNBC/EIA)",
+      "decision": "cut: Also noted; used as context in Iran lead",
+      "reason": "Northeast-heavy cost"
+    },
+    {
+      "item": "UPS cargo plane and Copa jet collide on Miami taxiway",
+      "decision": "cut: Also noted",
+      "reason": "accident, no policy question"
+    },
+    {
+      "item": "Judge blocks East Potomac golf course closure",
+      "decision": "cut: Also noted",
+      "reason": "temporary order, low consequence"
+    },
+    {
+      "item": "Epstein Files Transparency Act II discharge petition at 218",
+      "decision": "cut: Also noted",
+      "reason": "from Wednesday; next step Dec. 2-3"
+    },
+    {
+      "item": "Workday outage after Microsoft outage",
+      "decision": "cut: Also noted",
+      "reason": "no cause, no link established"
+    },
+    {
+      "item": "Italy fines Meta ~EUR805m",
+      "decision": "cut: Also noted",
+      "reason": "no US channel"
+    },
+    {
+      "item": "Port of New Orleans sues tanker after riverboat collision",
+      "decision": "cut: Also noted",
+      "reason": "accident litigation"
+    },
+    {
+      "item": "Philippines-Australia defense pact",
+      "decision": "cut: Also noted",
+      "reason": "indirect US channel"
+    },
+    {
+      "item": "NY DSA urges AOC to run for president",
+      "decision": "cut: Also noted",
+      "reason": "horse race anti-topic"
+    },
+    {
+      "item": "Tampa Bay dengue outbreak worst in a century",
+      "decision": "cut: Also noted",
+      "reason": "no new state data since Nov. 13; ran as a note yesterday"
+    },
+    {
+      "item": "Musk signs 'Stand with Jensen' petition",
+      "decision": "cut: Also noted",
+      "reason": "reaction, not development"
+    },
+    {
+      "item": "Trump-Xi-Putin Shenzhen trilateral Thursday; 'Yalta 2.0' wariness (NBC); China's Russia dilemma (DW)",
+      "decision": "cut",
+      "reason": "ran as lead yesterday; no new verifiable fact beyond Kushner item"
+    },
+    {
+      "item": "Zelensky: U.S. floated Donbas for NATO",
+      "decision": "cut",
+      "reason": "ran yesterday; folded into kushner-europe"
+    },
+    {
+      "item": "Nvidia board/Huang succession, new CEO candidate (Fox Business), SNL spoof",
+      "decision": "cut",
+      "reason": "no development beyond lead's investor letter"
+    },
+    {
+      "item": "Van Hollen vs Schumer leadership race; Pressley vs Jeffries calls",
+      "decision": "cut",
+      "reason": "personnel/horse race with no policy effect yet"
+    },
+    {
+      "item": "Alaska: Peltola likely wins Senate; Kreiss-Tomkins governor",
+      "decision": "cut",
+      "reason": "race calls, no Florida/policy channel"
+    },
+    {
+      "item": "Boebert loses seat",
+      "decision": "cut",
+      "reason": "result already noted yesterday"
+    },
+    {
+      "item": "ICE record deportations",
+      "decision": "cut",
+      "reason": "ran earlier in the week; no new figure"
+    },
+    {
+      "item": "Medicaid work-rule delay",
+      "decision": "cut",
+      "reason": "ran yesterday"
+    },
+    {
+      "item": "Houthis tighten siege of Yemen city; Saudi intercepts Houthi missiles over Riyadh",
+      "decision": "cut",
+      "reason": "folded as context; no direct US decision"
+    },
+    {
+      "item": "UN: 25 seafarers killed around Hormuz since February",
+      "decision": "cut",
+      "reason": "cumulative statistic, shipping already covered"
+    },
+    {
+      "item": "Iraq PM sacks officials over oil smuggling",
+      "decision": "cut",
+      "reason": "no US channel"
+    },
+    {
+      "item": "Israeli strike kills Hamas commander; EU calls for Gaza access",
+      "decision": "cut",
+      "reason": "no new US policy step"
+    },
+    {
+      "item": "Hungary recovers $20m cash in corruption probe",
+      "decision": "cut",
+      "reason": "no US channel"
+    },
+    {
+      "item": "Russell Brand accuser / UK age-of-consent debate",
+      "decision": "cut",
+      "reason": "foreign, celebrity"
+    },
+    {
+      "item": "NYC Flatbush building collapse had 98 open violations",
+      "decision": "cut",
+      "reason": "local NYC"
+    },
+    {
+      "item": "Peoria ethanol plant bomb threat resolved",
+      "decision": "cut",
+      "reason": "incident resolved, no policy"
+    },
+    {
+      "item": "Eric Trump-backed robot startup can't pay staff (CNBC)",
+      "decision": "cut",
+      "reason": "salacious but small; near-miss"
+    },
+    {
+      "item": "IRS raises 401(k) limits for 2027",
+      "decision": "cut",
+      "reason": "routine annual adjustment"
+    },
+    {
+      "item": "Credit card debt hits $1.29T (Fox Business)",
+      "decision": "cut",
+      "reason": "personal-finance feature"
+    },
+    {
+      "item": "Ohio salt mine closure threatens road-salt supply",
+      "decision": "cut",
+      "reason": "no Florida channel"
+    },
+    {
+      "item": "Interstellar object dispute (Harvard scientist vs NASA chief); ex-AARO chief on jellyfish object",
+      "decision": "cut",
+      "reason": "UAP commentary, no government release"
+    },
+    {
+      "item": "Prediction-markets poll: 82% see them as gambling (Semafor)",
+      "decision": "cut",
+      "reason": "poll, no policy action"
+    },
+    {
+      "item": "Venezuela 'acting president' Fox newsletter item",
+      "decision": "cut",
+      "reason": "dated January, not today's news"
+    },
+    {
+      "item": "Treasure Island wants to unload drawbridge (TBT)",
+      "decision": "cut",
+      "reason": "minor local infrastructure"
+    }
+  ],
+  "story_count": {
+    "leads": 4,
+    "also_today": 8,
+    "total": 12
+  },
+  "continuing_leads": [
+    {
+      "id": "lutnick-cantor",
+      "trigger": "new verifiable fact: NYT (Nov 15) reports a Cantor Fitzgerald client operates Malaysia's A201 data center affected by rules Lutnick is shaping; Megaspeed's first on-record statement and internal probe (CNBC Nov 15)"
+    },
+    {
+      "id": "iran-bahrain",
+      "trigger": "threshold event: second Iranian drone attack on a U.S. radar site in Bahrain within 72 hours, after Reuters reported Trump would hold off on strikes absent further provocation"
+    },
+    {
+      "id": "anthropic-week",
+      "trigger": "threshold event and new verifiable fact: pricing dated Wed Nov 18; Reuters 6x oversubscription; CNBC's report of >$900B commitments and bank chip-rack financing"
+    }
+  ],
+  "per_article_independent_sources": {
+    "lutnick-cantor": 5,
+    "iran-bahrain": 5,
+    "anthropic-week": 3,
+    "delray-dei": 4,
+    "faa-cause": 5,
+    "measles": 2,
+    "datacenter-votes": 3,
+    "mexico-tariffs": 3,
+    "statehouses": 4,
+    "bump-stocks": 2,
+    "kushner-europe": 2,
+    "starship": 2
+  },
+  "per_article_primary_documents": {
+    "delray-dei": "City of Delray Beach statement (read); SB 1134 bill page not reachable (429)",
+    "bump-stocks": "Florida Attorney General signed opinion PDF (fetched, HTTP 200; quoted via news text)",
+    "anthropic-week": "Anthropic roadshow notice (read); prospectus not read (EDGAR blocked)",
+    "datacenter-votes": "Ballotpedia measure tracker (read)"
+  },
+  "marker_tallies": {
+    "Primary source": 0,
+    "Independent corroboration": 12,
+    "Single-sourced": 0,
+    "Unconfirmed": 0
+  },
+  "unconfirmed_claims_stated_in_text": [
+    "Commerce/Cantor response to NYT",
+    "non-cash share of Anthropic's nine-month loss",
+    "Tampa Bay governments' reviews under SB 1134",
+    "any Mexico tariff order or date",
+    "damage claims in Bahrain (both sides unverified)"
+  ],
+  "divergence_boxes": [
+    "lutnick-cantor",
+    "iran-bahrain",
+    "anthropic-week",
+    "delray-dei",
+    "measles"
+  ],
+  "negative_check": {
+    "method": "After drafting: searched JPMorgan (Nov 14), UAP/AARO disclosure, Pasco data centers and Tampa Bay dengue; compared the candidate list against every front swept and X US trends (sports/entertainment dominated: UFC334, Utah, Lane Kiffin, AO3).",
+    "result": "JPMorgan: nothing new beyond the AI-agent card block that ran Nov 14. UAP: no new government release since PURSUE Release 07 (Oct. 23, per search summary); only commentary on an unidentified object. Pasco data-center moratorium unchanged (through July 2027). Dengue: no state report since Nov 13. Underreported: the NYT Cantor-client finding (no other outlet matched it by Sunday morning) and the bank/chip-rack financing behind Anthropic's commitments (CNBC only); both flagged in the brief. 12 stories selected, meeting the ~10 floor."
+  },
+  "feedback_applied": "Open brief-feedback issue #1 (Krakow, 2026-11-08c-v2) already applied in config.md settled preferences on Nov 9; wake condition closed. No other open or recently closed brief-feedback issues (checked via gh issue list --state all).",
+  "config_change": null,
+  "beat_coverage": {
+    "AI & tech industry (Core)": "Strongest: Anthropic pricing week and Lutnick/Cantor chip rules (both leads). Starship below the line. Nvidia succession chatter cut as no development.",
+    "Macro & markets (Core)": "No print today (Sunday). Nvidia earnings Tue and Anthropic pricing Wed noted inside the Anthropic lead; no standalone macro item cleared (Fed rule: prints and decisions only).",
+    "World economy": "Mexico tariff threat cleared below the line via trade channel; nothing else with a US channel.",
+    "US debt & fiscal (Core)": "Democrats' pay-for/tax debate (WSJ headline, Vox) carried in statehouses item; no Treasury/CBO action on a Sunday.",
+    "US financials (Core)": "Bank of America, Blackstone, Citi, Morgan Stanley chip-rack financing in the Anthropic lead; JPMorgan search found nothing new.",
+    "US politics & policy (Core)": "Lutnick/Commerce lead; Mexico tariffs; statehouses; Delray/SB 1134 lead.",
+    "Geopolitics": "Iran-Bahrain lead; Kushner/Europe-Russia talks below the line; Philippines-Australia pact to Also noted.",
+    "Science & public health": "Measles elimination loss below the line; dengue to Also noted (no new data).",
+    "UAP disclosure (Core)": "Negative check found no new government release; commentary pieces cut.",
+    "Energy & grid": "Heating-oil spike used as context in Iran lead; no grid/rate decision today.",
+    "Elections and electoral process": "Statehouse flips and data-center ballot measures below the line; race calls cut.",
+    "Broader domestic institutions": "FAA root-cause item; SB 1134 local-government law lead.",
+    "International with US channel": "Iran-Bahrain (US base), Mexico tariffs, Kushner talks.",
+    "Florida / Tampa Bay": "Delray/SB 1134 lead with St. Pete Pride angle; Uthmeier bump stocks; TPA in FAA item; dengue to Also noted.",
+    "Data centers / power / AI infrastructure": "46 of 47 local measures limit data centers (Also today); Pasco moratorium unchanged; Anthropic lease commitments in lead.",
+    "AI and financial services": "Bank financing of Anthropic's chip racks and 20% retail tranche (Anthropic lead)."
+  },
+  "also_noted_count": 11,
+  "link_check_note": "All 60 links in the issue (59 external plus the GitHub feedback link) returned HTTP 200 via curl after drafting (Nov 15 morning ET), except Investing.com (403 to curl; verified readable via WebFetch). One broken Fox 13 URL was fixed before the audit.",
+  "comparison_edition": "none opened",
+  "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+  "audit_attempts": {
+    "count": 3,
+    "results": [
+      "exit 0 (first draft)",
+      "exit 0 (after link-check note and index update)",
+      "exit 0 (final, after recording attempts)"
+    ]
+  }
+}
