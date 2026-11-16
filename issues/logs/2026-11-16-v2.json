@@ -1,0 +1,690 @@
+{
+  "issue": "2026-11-16-v2",
+  "date": "2026-11-16",
+  "run_started_local": "2026-11-16T07:30:00-05:00",
+  "outside_watchlist_first": true,
+  "outside_watchlist_first_detail": "News fronts, Tampa Bay outlets, X trends and X news searches were swept before config.md weighting categories, the empty watchlist or yesterday's issue were consulted. Prior v2 issues were grepped only afterwards to check which candidates had already run (Reitz/Blumenthal Nov 12, Starshield Nov 12-14, L3Harris Nov 15, Shenzhen Nov 14, Hormuz daily) and whether each had a new development.",
+  "sources_swept_before_category": [
+    "NPR text front (text.npr.org)",
+    "NPR news list (text.npr.org/1001)",
+    "Al Jazeera news index",
+    "Fox News front",
+    "Fox News politics",
+    "Fox Business front",
+    "BBC News front",
+    "BBC US & Canada page",
+    "Guardian US front",
+    "CBS News front",
+    "NBC News front",
+    "ABC News front",
+    "CNBC world front",
+    "PBS NewsHour front",
+    "New York Post front",
+    "Wall Street Journal front (headlines only)",
+    "New York Times front (headlines only)",
+    "Semafor front",
+    "DW English top stories",
+    "Fox 13 Tampa Bay front",
+    "WUSF front",
+    "Tampa Bay Times front",
+    "WTSP front",
+    "X US trends (get_trends_by_woeid 23424977)",
+    "X news search: 'news' (18h)",
+    "X news search: 'US politics Trump Congress' (24h)",
+    "X news search: trend terms Kuwait/Boeing/Reparations/O'Leary/Qwen4 (24h)"
+  ],
+  "sweeps_attempted_failed": [
+    "Politico (403)",
+    "Axios (403)",
+    "The Hill (403)",
+    "AP article pages (403 to curl; WebFetch timed out)",
+    "investing.com Reuters relay (403)",
+    "CoinDesk (429 to curl; read via WebFetch)",
+    "WTSP L3Harris article (403)",
+    "WUSF Florida Roundup Amendment 3 page (404)",
+    "Fox News URLs truncated on first try (404), refetched with full URL",
+    "Al Jazeera live blog (200 but body not extractable)",
+    "NPR coal-dust story (body empty)",
+    "Federal Register public inspection (not yet posted; returns 8:45 a.m.)"
+  ],
+  "broad_sweeps": [
+    "NPR text front (text.npr.org)",
+    "NPR news list (text.npr.org/1001)",
+    "Al Jazeera news index",
+    "Fox News front",
+    "Fox News politics",
+    "Fox Business front",
+    "BBC News front",
+    "BBC US & Canada page",
+    "Guardian US front",
+    "CBS News front",
+    "NBC News front",
+    "ABC News front",
+    "CNBC world front",
+    "PBS NewsHour front",
+    "New York Post front",
+    "Wall Street Journal front (headlines only)",
+    "New York Times front (headlines only)",
+    "Semafor front",
+    "DW English top stories",
+    "Fox 13 Tampa Bay front",
+    "WUSF front",
+    "Tampa Bay Times front",
+    "WTSP front",
+    "X US trends (get_trends_by_woeid 23424977)",
+    "X news search: 'news' (18h)",
+    "X news search: 'US politics Trump Congress' (24h)",
+    "X news search: trend terms Kuwait/Boeing/Reparations/O'Leary/Qwen4 (24h)"
+  ],
+  "sources_checked": [
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.cbsnews.com/news/faa-ground-stop-warnings-records/"
+    },
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.nbcnews.com/news/us-news/flights-air-traffic-delays-groundstop-faa-duffy-rcna609545"
+    },
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.foxnews.com/us/duffy-investigators-examining-2-routers-nationwide-faa-ground-stop-no-signs-foreign-cyberattack"
+    },
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.bbc.com/news/articles/cw1mdlv0k2r4o"
+    },
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions"
+    },
+    {
+      "story": "faa-l3harris",
+      "url": "https://www.wtsp.com/article/news/investigations/10-investigates/faa-nationwide-grounding-l3harris-what-we-know-contract (403, not used)"
+    },
+    {
+      "story": "doj-warren",
+      "url": "https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532"
+    },
+    {
+      "story": "doj-warren",
+      "url": "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899"
+    },
+    {
+      "story": "doj-warren",
+      "url": "https://www.foxnews.com/politics/federal-prosecutor-warns-sen-warren-legal-consequences-records-arent-preserved-trump-linked-probes"
+    },
+    {
+      "story": "doj-warren",
+      "url": "https://www.nbcnews.com/politics/white-house/democrats-say-trump-family-businesses-top-upcoming-investigations-rcna605987"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://www.semafor.com/article/11/16/2026/democrats-debate-who-gets-oversight-of-ai"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://www.cnbc.com/2026/11/16/cantwell-lutnick-ai-chip-china.html"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://text.npr.org/nx-s1-6041738"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://www.nbcnews.com/world/china/trump-xi-putin-meeting-significance-rcna609548"
+    },
+    {
+      "story": "shenzhen-chips",
+      "url": "https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china"
+    },
+    {
+      "story": "hormuz-gas",
+      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071"
+    },
+    {
+      "story": "hormuz-gas",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/"
+    },
+    {
+      "story": "hormuz-gas",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack (headline only; body not extractable)"
+    },
+    {
+      "story": "hormuz-gas",
+      "url": "https://www.fox13news.com/news/florida-gas-prices-drop-8-month-low"
+    },
+    {
+      "story": "nvidia-imf",
+      "url": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html"
+    },
+    {
+      "story": "nvidia-imf",
+      "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
+    },
+    {
+      "story": "nvidia-imf",
+      "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html"
+    },
+    {
+      "story": "vulcan",
+      "url": "https://www.cbsnews.com/news/vulcan-rocket-40-amazon-leo-internet-satellites-launch-mishap/"
+    },
+    {
+      "story": "vulcan",
+      "url": "https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/"
+    },
+    {
+      "story": "vulcan",
+      "url": "https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cnbc.com/2026/11/16/treasury-yields-bonds-inflation.html"
+    },
+    {
+      "story": "intl-students",
+      "url": "https://abcnews.com/US/wireStory/fewer-students-traveling-abroad-study-us-universities-report-138169810"
+    },
+    {
+      "story": "intl-students",
+      "url": "https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://text.npr.org/nx-s1-6034048"
+    },
+    {
+      "story": "cut",
+      "url": "https://text.npr.org/nx-s1-6039311 (coal dust rule; page body empty)"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://text.npr.org/nx-s1-6032604"
+    },
+    {
+      "story": "dec11-funding",
+      "url": "https://www.semafor.com/article/11/16/2026/democrats-leadership-fight-collides-with-iran-funding-debate"
+    },
+    {
+      "story": "dec11-funding",
+      "url": "https://abcnews.com/Politics/van-hollen-schumer-instill-fear-retain-senate-leadership/story?id=138155548"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.theguardian.com/world/2026/nov/16/ukraine-war-briefing-energy-attacks-made-possible-by-continuing-starshield-restrictions-says-zelenskyy"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.bbc.com/news/articles/c6m25zg88k45o"
+    },
+    {
+      "story": "derby-lane",
+      "url": "https://www.wusf.org/economy-business/2026-11-16/derby-lane-redevelopment-plans-revealed-housing-new-casino"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.wusf.org/politics-issues/2026-11-16/new-college-loan-deal-approved-florida-board-of-governors"
+    },
+    {
+      "story": "sweep",
+      "url": "Federal Register API: 2026-11-16 RULE/PRORULE/PRESDOCU list (21 documents)"
+    },
+    {
+      "story": "head-start",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23279/restoring-flexibility-to-support-head-start-program-access (API abstract)"
+    },
+    {
+      "story": "cut",
+      "url": "Federal Register 2026-23255 FCC submarine cable correction (API abstract)"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23239/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped (API abstract)"
+    },
+    {
+      "story": "judges",
+      "url": "https://www.washingtonexaminer.com/news/senate/4800345/gop-holdouts-complicate-trump-final-chances-reshape-us-courts/"
+    },
+    {
+      "story": "judges",
+      "url": "https://biz.heraldcorp.com/article/10938637"
+    },
+    {
+      "story": "judges",
+      "url": "https://news.bgov.com/texas-brief/cornyn-questions-process-for-judicial-nominees-texas-brief"
+    },
+    {
+      "story": "judges",
+      "url": "Web search: AP and Reuters (investing.com) excerpts on Tillis/Cornyn; both pages 403 to direct fetch"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.semafor.com/article/11/15/2026/anthropic-ipo-set-to-define-ai-trade"
+    },
+    {
+      "story": "shuaiba",
+      "url": "https://www.cbsnews.com/news/military-families-want-answers-on-iran-war-deaths-60-minutes/"
+    },
+    {
+      "story": "shuaiba",
+      "url": "https://www.cbsnews.com/news/iran-strike-us-troops-kuwait-investigation-findings-families/"
+    },
+    {
+      "story": "shuaiba",
+      "url": "https://time.com/article/2026/11/16/army-whistleblower-ramsbottom-port-shuaiba-warnings-iran-war-hegseth-democrats/"
+    },
+    {
+      "story": "shuaiba",
+      "url": "Web search: Port Shuaiba whistleblower (AP excerpt)"
+    },
+    {
+      "story": "nvidia-imf",
+      "url": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo"
+    },
+    {
+      "story": "nvidia-imf",
+      "url": "https://www.foxbusiness.com/business-leaders/bessent-calls-nvidia-leadership-shake-up-amid-china-chip-scandal-urges-outside-ceo"
+    },
+    {
+      "story": "also-noted",
+      "url": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html"
+    },
+    {
+      "story": "jpm-dbs",
+      "url": "https://www.businesstimes.com.sg/companies-markets/dbs-jpmorgan-launch-us-singapore-tokenised-deposit-service-institutions"
+    },
+    {
+      "story": "jpm-dbs",
+      "url": "https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers (via search excerpt; page body not extractable)"
+    },
+    {
+      "story": "jpm-dbs",
+      "url": "https://www.coindesk.com/business/2026/11/16/j-p-morgan-and-dbs-let-clients-move-dollars-across-borders-on-weekends (429 to curl; read in full via WebFetch)"
+    },
+    {
+      "story": "negative-check",
+      "url": "Web search: JPMorgan Nov 16 2026"
+    },
+    {
+      "story": "negative-check",
+      "url": "Web search: UAP disclosure AARO Nov 2026 (war.gov/UFO Release 07 page)"
+    },
+    {
+      "story": "negative-check",
+      "url": "Web search: Pasco County Nov 16 2026 (tampafp, hoodline, wesleychapelnow)"
+    },
+    {
+      "story": "also-noted",
+      "url": "Web search: Massie war powers (WLKY, Fox News, govinfo H.Con.Res.126)"
+    },
+    {
+      "story": "intl-students",
+      "url": "Web search: Open Doors fall 2026 snapshot"
+    },
+    {
+      "story": "vulcan",
+      "url": "Web search: Vulcan failure (Reuters, Aviation Week excerpts)"
+    }
+  ],
+  "sources_checked_total": 91,
+  "sources_checked_note": "Total = 27 fronts/sweeps before categories + 64 article pages, documents, API records or search excerpts read for stories, Also noted, cuts and the negative check.",
+  "candidate_count": 50,
+  "candidates": [
+    {
+      "item": "FAA ground stop: CBS records on L3Harris no-bid extensions ($1.5B) and $23.9M lobbying; Duffy names routers; Trump $50B ask",
+      "decision": "keep: lead (faa-l3harris)",
+      "reason": "new verifiable fact on behind-the-scenes money; Thanksgiving travel; underreported (CBS only)"
+    },
+    {
+      "item": "China confirms Trump-Xi-Putin trilateral Thursday in Shenzhen; Cantwell letter to Lutnick; Warren-Coons Nov 17 deadline; Lutnick on AF1",
+      "decision": "keep: lead (shenzhen-chips)",
+      "reason": "dated threshold event; chip-export money/conflict angle; AI capex channel"
+    },
+    {
+      "item": "Texas US attorney Reitz warns Warren (likely Banking chair) of legal consequences; Nov 23 deadline",
+      "decision": "keep: lead (doj-warren)",
+      "reason": "institutional fight with dated deadline; bank-oversight channel for JPMorgan and peers"
+    },
+    {
+      "item": "60 Minutes/Time: Army whistleblower on Port Shuaiba Kuwait attack; families say no mistakes admitted",
+      "decision": "keep: lead (shuaiba)",
+      "reason": "new; accountability for deadliest attack of Iran war; notable public reaction (Kuwait trending on X)"
+    },
+    {
+      "item": "Tanker struck in Hormuz (UKMTO); third carrier group; Iran no inspections; Araghchi two-day plan",
+      "decision": "keep: also (hormuz-gas)",
+      "reason": "moving but incremental; paired with Florida pump price as reader channel"
+    },
+    {
+      "item": "Tillis/Cornyn block Trump judicial nominees in lame duck; Tue committee vote, Wed hearing",
+      "decision": "keep: also (judges)",
+      "reason": "dated institutional moves; lifetime seats"
+    },
+    {
+      "item": "Nvidia earnings Tuesday; Huang reinstatement petition; Bessent wants outside CEO",
+      "decision": "keep: merged into nvidia-imf",
+      "reason": "sets AI-trade tone; no new structural fact beyond date"
+    },
+    {
+      "item": "IMF Georgieva: AI circular financing just over $1T, two-thirds debt",
+      "decision": "keep: also (nvidia-imf)",
+      "reason": "financial-stability warning; AI and finance channel; underplayed"
+    },
+    {
+      "item": "ACF final rule removes Head Start wage/benefit requirements (>$2B savings), effective Jan 15 2027",
+      "decision": "keep: also (head-start)",
+      "reason": "underreported; found only in Federal Register"
+    },
+    {
+      "item": "IIE fall snapshot: foreign enrollment -9%, new -15%, OPT -6%; DHS $70k OPT fee proposal",
+      "decision": "keep: also (intl-students)",
+      "reason": "talent pipeline for tech/consulting; policy-driven"
+    },
+    {
+      "item": "ULA Vulcan failure from Cape Canaveral, 40 Amazon Leo satellites lost",
+      "decision": "keep: also (vulcan)",
+      "reason": "Florida Space Coast; US launch capacity; Amazon vs Starlink"
+    },
+    {
+      "item": "JPMorgan Kinexys + DBS 24/7 tokenized-deposit link; Ant International first client",
+      "decision": "keep: also (jpm-dbs)",
+      "reason": "US financials/JPMorgan; tokenized deposits vs stablecoins; China-linked client"
+    },
+    {
+      "item": "Schumer-Van Hollen fight collides with Iran funding limit; Dec 11 funding deadline",
+      "decision": "keep: also (dec11-funding)",
+      "reason": "shutdown risk with date; fiscal"
+    },
+    {
+      "item": "Derby Lane redevelopment: 380 Live Local rentals and casino site, St. Petersburg",
+      "decision": "keep: also (derby-lane)",
+      "reason": "Pinellas local bar; state preemption of zoning"
+    },
+    {
+      "item": "WSJ: administration to name Nvidia an AI 'national champion'",
+      "decision": "cut: folded as headline signal in shenzhen-chips",
+      "reason": "paywalled; headline only"
+    },
+    {
+      "item": "Semafor: Democrats debate who oversees AI/chips; Meeks subpanel",
+      "decision": "cut: folded into shenzhen-chips",
+      "reason": "context"
+    },
+    {
+      "item": "Megaspeed says Alice Huang left in 2025 (Al Jazeera, CBS, NBC)",
+      "decision": "cut",
+      "reason": "ran Nov 15 lead"
+    },
+    {
+      "item": "Bessent calls for outside Nvidia CEO",
+      "decision": "cut: folded into nvidia-imf",
+      "reason": "context"
+    },
+    {
+      "item": "Anthropic IPO Thursday, ~6x oversubscribed",
+      "decision": "cut: also noted",
+      "reason": "no new fact since Nov 15 lead"
+    },
+    {
+      "item": "Treasury yields ahead of Warsh speech",
+      "decision": "cut: also noted",
+      "reason": "Fed rule: prints and decisions only"
+    },
+    {
+      "item": "SNAP: ~5M lost benefits since OBBBA (NPR)",
+      "decision": "cut: also noted",
+      "reason": "feature, no new action"
+    },
+    {
+      "item": "Coal miners' silica dust rule at risk (NPR)",
+      "decision": "cut",
+      "reason": "page body unreadable; could not stand up"
+    },
+    {
+      "item": "Organ donation NRP national policy (NPR)",
+      "decision": "cut: also noted",
+      "reason": "ethics fight without a decision date"
+    },
+    {
+      "item": "Japan Q3 GDP contraction",
+      "decision": "cut: also noted",
+      "reason": "indirect US channel"
+    },
+    {
+      "item": "China October slowdown data",
+      "decision": "cut",
+      "reason": "foreign data, not read beyond headline"
+    },
+    {
+      "item": "Zelensky: Starshield restrictions persist",
+      "decision": "cut: also noted",
+      "reason": "repeat of Friday complaint"
+    },
+    {
+      "item": "Ukraine fires 1,336 drones into Russia (ABC/NBC)",
+      "decision": "cut",
+      "reason": "no US channel beyond war context"
+    },
+    {
+      "item": "Estonia closes Russia border crossings after drone-maker attack",
+      "decision": "cut",
+      "reason": "NATO but no US decision"
+    },
+    {
+      "item": "Massie H.Con.Res.126 Iran war powers",
+      "decision": "cut: also noted",
+      "reason": "no vote scheduled"
+    },
+    {
+      "item": "Second Epstein discharge petition (218)",
+      "decision": "cut",
+      "reason": "four-plus days old; floor action weeks away"
+    },
+    {
+      "item": "New College BOG loan approval; private investor named",
+      "decision": "cut: also noted",
+      "reason": "expected outcome of Nov 12 item"
+    },
+    {
+      "item": "Pasco $16M Wesley Chapel park land purchase",
+      "decision": "cut: also noted",
+      "reason": "small; only $4M committed"
+    },
+    {
+      "item": "NHTSA FMVSS 108 ADS comment extension",
+      "decision": "cut: also noted",
+      "reason": "procedural"
+    },
+    {
+      "item": "FCC submarine cable license rule correction",
+      "decision": "cut",
+      "reason": "technical correction"
+    },
+    {
+      "item": "AI reshaping bank jobs (CNBC)",
+      "decision": "cut: also noted",
+      "reason": "mostly European banks"
+    },
+    {
+      "item": "JPMorgan ~$1B crypto-linked 13F holdings",
+      "decision": "cut",
+      "reason": "13F snapshot, single low-quality source"
+    },
+    {
+      "item": "NTSB: tanker steering failed before New Orleans cruise collision",
+      "decision": "cut",
+      "reason": "accident probe, no policy decision"
+    },
+    {
+      "item": "Judge blocks East Potomac golf closure; Trump to appeal",
+      "decision": "cut",
+      "reason": "ran Nov 15 also noted"
+    },
+    {
+      "item": "Measles elimination lost",
+      "decision": "cut",
+      "reason": "ran Nov 14/15"
+    },
+    {
+      "item": "Delray Beach parade/anti-DEI law",
+      "decision": "cut",
+      "reason": "ran Nov 15 lead; no new fact"
+    },
+    {
+      "item": "Wes Moore memoir timeline (NY Post via X)",
+      "decision": "cut",
+      "reason": "2028 horse race-adjacent; single tabloid source"
+    },
+    {
+      "item": "Gulf states brace for Democratic probes (X summary)",
+      "decision": "cut",
+      "reason": "could not stand up in a newsroom we read; reflected generally in doj-warren"
+    },
+    {
+      "item": "Russell Brand statement; Depardieu; royals in India",
+      "decision": "cut",
+      "reason": "anti-topic: celebrity"
+    },
+    {
+      "item": "Felix Gallardo dies",
+      "decision": "cut",
+      "reason": "no policy consequence"
+    },
+    {
+      "item": "EU states' Rwanda deportation hub",
+      "decision": "cut",
+      "reason": "no US channel"
+    },
+    {
+      "item": "Jordan bans Telegram; Haiti election filings; Ecuador base denial",
+      "decision": "cut",
+      "reason": "no clear US consequence today"
+    },
+    {
+      "item": "Hegseth awards medal to soldier who chastised him",
+      "decision": "cut",
+      "reason": "personnel/optics; ran Nov 12"
+    },
+    {
+      "item": "WHO: antimicrobial resistance could kill 39M over 25 years",
+      "decision": "cut",
+      "reason": "report without US policy hook"
+    },
+    {
+      "item": "Fewer Thanksgiving travelers on prices (AAA)",
+      "decision": "cut",
+      "reason": "forecast; FAA lead covers travel"
+    },
+    {
+      "item": "Qwen4-Max trending on X",
+      "decision": "cut",
+      "reason": "model launch chatter; no verifiable release detail found in sweep"
+    }
+  ],
+  "story_count": {
+    "leads": 4,
+    "also_today": 9,
+    "total": 13
+  },
+  "continuing_leads": [
+    {
+      "id": "faa-l3harris",
+      "trigger": "new verifiable fact: CBS (Nov 16) review of DOT OIG audits (10 improperly authorized extensions, 57 months, $1.5B) and Senate lobbying records ($23.9M since 2020, Ballard Partners); Duffy names two routers under test at L3Harris HQ"
+    },
+    {
+      "id": "shenzhen-chips",
+      "trigger": "threshold event and new verifiable fact: China's Foreign Ministry confirms Thursday Nov 19 trilateral; Cantwell's Nov 15 letter to Lutnick; Warren-Coons preservation deadline Tue Nov 17"
+    },
+    {
+      "id": "doj-warren",
+      "trigger": "material connection and threshold event: Reitz letter series reaches likely incoming Banking chair Warren with a dated Nov 23 6 p.m. ET deadline"
+    }
+  ],
+  "per_article_independent_sources": {
+    "faa-l3harris": 5,
+    "shenzhen-chips": 4,
+    "doj-warren": 3,
+    "shuaiba": 2,
+    "hormuz-gas": 3,
+    "judges": 3,
+    "nvidia-imf": 3,
+    "head-start": 1,
+    "intl-students": 2,
+    "vulcan": 2,
+    "jpm-dbs": 2,
+    "dec11-funding": 2,
+    "derby-lane": 1
+  },
+  "per_article_primary_documents": {
+    "head-start": "Federal Register 2026-23279 (API abstract read; preamble not read)",
+    "shuaiba": "Ramsbottom complaint not public; Army June findings unreleased",
+    "faa-l3harris": "DOT OIG audits described by CBS; PDFs not read"
+  },
+  "marker_tallies": {
+    "Primary source": 1,
+    "Independent corroboration": 11,
+    "Single-sourced": 1,
+    "Unconfirmed": 0
+  },
+  "unconfirmed_claims_stated_in_text": [
+    "cause of router failure (installation vs equipment)",
+    "Commerce reply to Cantwell",
+    "Warren's answer and DOJ leadership approval of Reitz letter",
+    "timing of Army briefings to Shuaiba families",
+    "what struck the Hormuz tanker; Al Jazeera headline on a commandeered US drone",
+    "US regulatory review of JPMorgan-DBS link"
+  ],
+  "divergence_boxes": [
+    "faa-l3harris",
+    "shenzhen-chips",
+    "doj-warren",
+    "shuaiba",
+    "hormuz-gas"
+  ],
+  "negative_check": {
+    "method": "After drafting: searched JPMorgan (Nov 16), UAP/AARO disclosure, Pasco County, Massie war-powers resolution; compared the candidate list against every front swept and X US trends (sports dominated; Kuwait trend traced to the 60 Minutes story; Shenzhen/Xi and Putin trends matched the summit lead).",
+    "result": "JPMorgan: Kinexys-DBS tokenized deposit link (added below the line); 13F crypto holdings cut. UAP: no new government release since PURSUE Release 07 (Oct 23). Pasco: road closures and a phased park purchase only (Also noted). Massie: no vote scheduled (Also noted). Underreported: the L3Harris contract-extension and lobbying record (CBS only) and the Head Start final rule (Federal Register only, no newsroom coverage found).",
+    "underreported": [
+      "faa-l3harris lobbying/contract record",
+      "head-start final rule"
+    ]
+  },
+  "feedback_applied": "Open brief-feedback issue #1 (Krakow, 2026-11-08c-v2) already applied in config.md settled preferences on Nov 9; wake condition closed. No other open or recently closed brief-feedback issues (gh issue list --state all, Nov 16).",
+  "config_change": null,
+  "beat_coverage": {
+    "AI & tech industry (Core)": "Strongest: Shenzhen chip fight (lead) and Nvidia earnings/IMF circular-financing warning (below). Qwen4-Max X trend cut for lack of verifiable detail.",
+    "Macro & markets (Core)": "No print today. Nvidia earnings Tue noted below the line; Warsh speech cut per Fed prints-only rule; no yield levels printed.",
+    "World economy": "Japan Q3 contraction and China slowdown cut (indirect US channel).",
+    "US debt & fiscal (Core)": "Dec 11 funding deadline with Iran spending limit cleared below the line; Duffy's $50B ask inside the FAA lead.",
+    "US financials (Core)": "Warren as likely Banking chair (lead, doj-warren); JPMorgan-DBS tokenized deposits below the line.",
+    "US politics & policy (Core)": "DOJ letters to Democratic senators (lead); judges holdouts and Dec 11 funding below the line.",
+    "Geopolitics": "Hormuz tanker strike and third carrier below the line; Shuaiba accountability lead; Ukraine drone strike and Estonia border cut.",
+    "Science & public health": "Organ NRP policy and WHO AMR report cut (no decision/US hook); measles already ran.",
+    "UAP disclosure (Core)": "Negative: no new PURSUE release since Oct 23; nothing cleared.",
+    "Energy & grid": "Florida gas eight-month low folded into the Hormuz item; no grid or rate-case development found today.",
+    "Elections and electoral process": "Nothing material today beyond leadership fights; 2028 horse race (Moore, AOC, Emanuel) cut as anti-topic.",
+    "Broader domestic institutions": "FAA contract oversight, DOJ vs Congress, judicial blue slips, Head Start rule: all cleared.",
+    "International with US channel": "Shenzhen trilateral (lead); Hormuz (below). EU Rwanda hub and Jordan Telegram ban cut.",
+    "Florida / Tampa Bay": "Derby Lane (below), Florida gas price (in Hormuz item), Vulcan at Cape Canaveral (below), L3Harris HQ in Florida (in FAA lead). New College and Pasco park to Also noted.",
+    "Data centers / power / AI infrastructure": "No new data-center filing or local fight found today; IMF circular-financing warning covers AI capex funding.",
+    "AI and financial services": "JPMorgan-DBS tokenized deposits (below); AI and bank jobs cut to Also noted (mostly European banks)."
+  },
+  "also_noted_count": 11,
+  "link_check_note": "All 58 external links in the issue returned HTTP 200 via curl after drafting (Nov 16 morning ET), except CoinDesk (429 to curl; verified readable via WebFetch).",
+  "comparison_edition": "none opened",
+  "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+  "audit_attempts": {
+    "count": 1,
+    "results": [
+      "exit 0 (first full run with log)"
+    ]
+  }
+}

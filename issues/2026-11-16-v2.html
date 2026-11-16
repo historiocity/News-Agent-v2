@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 16 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Monday, 16 November 2026 &middot; morning edition</div>
+  <h1>The contractor behind the ground stop and its lobbyists, chips shadowing Trump&rsquo;s Shenzhen summit, a prosecutor&rsquo;s warning to Warren, and Gold Star families&rsquo; questions about Kuwait</h1>
+  <p class="summary">Four leads, nine below the line. CBS records show the FAA kept extending L3Harris&rsquo;s telecom contract without competition while the company spent $23.9&nbsp;million on lobbying, as Duffy asks Congress for more money; China confirmed Thursday&rsquo;s Trump&ndash;Xi&ndash;Putin meeting in Shenzhen while Sen. Cantwell presses Lutnick on chip sales and a Tuesday document deadline looms; a Texas U.S. attorney warned Sen. Elizabeth Warren, the likely next Banking chair, of &ldquo;significant legal consequences&rdquo; over planned probes; and an Army whistleblower says the post in Kuwait where Iran killed six soldiers had no counter-drone defense. Below the line: a tanker struck in Hormuz as Florida gas hits an eight-month low, Republican holdouts on Trump&rsquo;s judges, Nvidia&rsquo;s Tuesday earnings and the IMF&rsquo;s $1&nbsp;trillion warning, a Head Start wage-rule repeal, a 9% drop in foreign students, a Vulcan rocket lost off Cape Canaveral, JPMorgan&rsquo;s 24/7 dollar link with DBS, an Iran fight inside the Dec.&nbsp;11 funding bill, and Derby Lane&rsquo;s housing-and-casino plan.</p>
+  <p class="sub">Monday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-16-v2.html</code>.</p>
+  <p class="prov"><b>91 sources checked, 27 of them swept before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news index, Fox News front and politics page, Fox Business, BBC News front and its U.S. page, Guardian US, CBS News, NBC News, ABC News, CNBC world, PBS NewsHour, New York Post, Wall Street Journal and New York Times fronts (headlines only), Semafor, DW English, Fox&nbsp;13 Tampa Bay, WUSF, Tampa Bay Times, WTSP, and X&rsquo;s U.S. trends plus three X news searches. Politico, Axios and The Hill returned access-denied pages. AP article pages refused our fetches, so AP and Reuters reporting appears only where another outlet relays it or a search excerpt carries it. The Federal Register API worked for today&rsquo;s published documents; the public-inspection list for later documents returns at 8:45&nbsp;a.m., after this run.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for JPMorgan, UAP disclosure, Pasco County and Massie&rsquo;s Iran war-powers resolution, and compared the candidate list with every front swept. JPMorgan&rsquo;s new item is its 24/7 dollar link with DBS, which runs below the line. We found no new government UAP release since PURSUE Release&nbsp;07 on Oct.&nbsp;23. Pasco had only road closures and a phased park purchase. No war-powers vote is scheduled. Two things are underreported: the L3Harris lobbying and contract-extension record, which we found laid out only at CBS, and the Head Start rule, which we saw in no newsroom we swept. The only open brief-feedback issue (#1, Krak&oacute;w) is already applied and its wake condition is closed, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#faa-l3harris">The ground stop&rsquo;s contractor: no-bid extensions, lobbying, and a bill for Congress</a></li>
+    <li><a href="#shenzhen-chips">Shenzhen on Thursday, with chips in the background</a></li>
+    <li><a href="#doj-warren">A U.S. attorney warns Warren over probes she has not started</a></li>
+    <li><a href="#shuaiba">Kuwait: a whistleblower, Gold Star families and the Army&rsquo;s unreleased findings</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#hormuz-gas">A tanker struck in Hormuz; Florida gas at an eight-month low</a></li>
+    <li><a href="#judges">Republican holdouts slow Trump&rsquo;s last judges</a></li>
+    <li><a href="#nvidia-imf">Nvidia reports Tuesday; the IMF flags $1 trillion in circular AI financing</a></li>
+    <li><a href="#head-start">Head Start loses its wage and benefit requirements</a></li>
+    <li><a href="#intl-students">Foreign enrollment down 9%; new students down 15%</a></li>
+    <li><a href="#vulcan">Vulcan fails off Cape Canaveral with 40 Amazon satellites</a></li>
+    <li><a href="#jpm-dbs">JPMorgan and DBS open a 24/7 tokenized-dollar link</a></li>
+    <li><a href="#dec11-funding">Democrats weigh an Iran limit in the Dec.&nbsp;11 funding bill</a></li>
+    <li><a href="#derby-lane">Derby Lane: apartments under Live Local, and a casino site</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="faa-l3harris">
+  <h3>Records show the FAA extended L3Harris&rsquo;s telecom contract ten times without proper authorization as the company spent $23.9&nbsp;million lobbying; Duffy says he is &ldquo;stuck with&rdquo; it and wants more money</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">US politics &amp; policy</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 newsrooms (CBS News, NBC News, Fox News, BBC, Al Jazeera), plus Wall Street Journal and Fox Business headlines as signal only. The contract and lobbying record comes from CBS alone.</p>
+  <p><b>Continuation trigger:</b> new verifiable fact. CBS&rsquo;s review of inspector-general audits and Senate lobbying filings ties Friday&rsquo;s failure to a contract the FAA kept extending without competition, and Duffy has now named the two routers under test.</p>
+  <p>CBS reports that a 2024 audit by the Transportation Department&rsquo;s inspector general found the FAA made 10 &ldquo;improperly authorized&rdquo; extensions to the telecom contract it first awarded to Harris Corporation, now L3Harris, in 2002, adding 57 months and $1.5&nbsp;billion. The audit warned the FAA &ldquo;may be repetitively using these noncompetitive extensions for convenience.&rdquo; L3Harris has paid $23.9&nbsp;million to lobbyists since 2020, including Ballard Partners, a firm with deep White House ties. Its PAC gave to Transportation Committee chairman Sam Graves and ranking Democrat Rick Larsen. Congress later put $12.5&nbsp;billion for FAA modernization, including $4.75&nbsp;billion for telecom, into the One Big Beautiful Bill Act (<a href="https://www.cbsnews.com/news/faa-ground-stop-warnings-records/">CBS News</a>). Duffy told Fox News that L3Harris has taken routers from sites in Texas and Arkansas to its Florida headquarters for &ldquo;deep diagnostics,&rdquo; with FAA, Juniper and Cisco engineers, and that there is no sign of a foreign cyberattack (<a href="https://www.foxnews.com/us/duffy-investigators-examining-2-routers-nationwide-faa-ground-stop-no-signs-foreign-cyberattack">Fox News</a>). NBC says a copper-to-fiber swap in El Dorado, Arkansas, set off a recently replaced router in Amarillo, Texas, which flooded other centers. More than 3,500 of 5,170 lines have been converted, with the rest due by 2028 (<a href="https://www.nbcnews.com/news/us-news/flights-air-traffic-delays-groundstop-faa-duffy-rcna609545">NBC News</a>).</p>
+  <p><b>Why it matters to you.</b> Whoever gets the next tranche of air-traffic money, and on what terms, decides whether this happens again before Thanksgiving travel. The work is being tested at L3Harris&rsquo;s Florida headquarters, and the Wall Street Journal calls the company Washington&rsquo;s go-to fixer for troubled projects (<a href="https://www.wsj.com/business/airlines/the-defense-contractor-at-the-center-of-the-ground-stop-e20c4173">WSJ, headline only</a>). Duffy refused to apologize on &ldquo;Meet the Press,&rdquo; blaming decades of neglect. Trump wants another $50&nbsp;billion, while Democrats point to money already allocated and unspent (<a href="https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions">Al Jazeera</a>). By 7&nbsp;a.m. Monday, FlightAware counted about 8,365 delays and 533 cancellations, down from 26,392 and 2,858 on Sunday (NBC News). We could not confirm whether the fault was the installation or the equipment. Why: the FAA says it still does not know, and L3Harris&rsquo;s tests are not finished.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who owns the failure, and how big was it?</span>
+    <p><b>What is in dispute.</b> A dispute over interpretation and over numbers. Duffy says &ldquo;it&rsquo;s all of them,&rdquo; meaning past administrations of both parties. He also says contractors &ldquo;take our money and they provide really poor service.&rdquo; Democrats say the problem is execution, not funding. The scale differs too: Al Jazeera reports more than 9,000 cancellations and about 1.5&nbsp;million stranded passengers; the BBC, citing Bloomberg, says cancellations passed 17,000 by Sunday; Fox counts about 15,000 flights disrupted on Friday and Saturday.</p>
+    <p><b>Why the vantage differs.</b> Duffy is asking Congress for money and needs the failure to look inherited. L3Harris is defending a contract it has held for 24 years and says 70% of the copper-to-fiber switch is done (CBS). Democrats take the gavels in January and gain from showing waste. The tallies differ because they count different days and either cancellations alone or delays and cancellations together.</p>
+    <p><b>What it means for the reader.</b> Use FlightAware&rsquo;s daily counts for the size of the disruption, not the summary numbers. The policy test is whether new money comes with competition for the work or simply extends the same contract.</p>
+  </div>
+  <details>
+    <summary>Dig deeper: the audit trail CBS assembled</summary>
+    <p>2006: an audit warns the program is behind schedule. 2008: a follow-up flags reliability problems. 2009: a telecom outage delays more than 800 flights, and the inspector general finds the FAA failed to oversee Harris. 2012: Harris wins a $291&nbsp;million voice-equipment contract that is cancelled in 2018 after $160&nbsp;million is spent. 2024: the audit of the 10 improper extensions. September 2026: the inspector general warns that rushing upgrades could itself cause disruptions. All per <a href="https://www.cbsnews.com/news/faa-ground-stop-warnings-records/">CBS News</a>; we did not read the audit PDFs ourselves.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the L3Harris contract and the ground stop?</b></p>
+    <label><input type="radio" name="fb-faa-l3harris" value="ig-lobby"> If the inspector general or a committee opens a review of the no-bid extensions and L3Harris&rsquo;s lobbying</label>
+    <label><input type="radio" name="fb-faa-l3harris" value="50b-terms"> If Duffy&rsquo;s $50 billion request rides on the Dec.&nbsp;11 funding bill, and who would win the contracts</label>
+    <label><input type="radio" name="fb-faa-l3harris" value="router-tests"> Only if the router tests in Florida point to contractor error rather than worn-out equipment</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/faa-ground-stop-warnings-records/">CBS News</a> &middot;
+    <a href="https://www.nbcnews.com/news/us-news/flights-air-traffic-delays-groundstop-faa-duffy-rcna609545">NBC News</a> &middot;
+    <a href="https://www.foxnews.com/us/duffy-investigators-examining-2-routers-nationwide-faa-ground-stop-no-signs-foreign-cyberattack">Fox News</a> &middot;
+    <a href="https://www.bbc.com/news/articles/cw1mdlv0k2r4o">BBC</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/16/after-a-nationwide-ground-stop-us-faces-aviation-infrastructure-questions">Al Jazeera</a> &middot;
+    <a href="https://www.foxbusiness.com/fox-news-air-space/who-l3harris-federal-contractor-sec-duffy-says-may-have-caused-faa-outage">Fox Business (headline)</a> &middot;
+    <a href="https://www.wsj.com/business/airlines/the-defense-contractor-at-the-center-of-the-ground-stop-e20c4173">WSJ (headline)</a>
+  </p>
+</article>
+
+<article id="shenzhen-chips">
+  <h3>China confirms Xi will host Trump and Putin in Shenzhen on Thursday; Cantwell accuses Lutnick&rsquo;s Commerce Department of letting top AI chips reach China, and a Warren&ndash;Coons document deadline falls Tuesday</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (CNBC, NPR, NBC News, Semafor), plus a Wall Street Journal headline as signal.</p>
+  <p><b>Continuation trigger:</b> threshold event and new verifiable fact. Beijing&rsquo;s Monday confirmation fixes the date, and Sen. Maria Cantwell&rsquo;s Sunday letter puts the chip-export failures in front of Lutnick days before he flies with Trump.</p>
+  <p>China&rsquo;s Foreign Ministry said Monday the three leaders will meet Thursday in Shenzhen, on the sidelines of APEC. Spokeswoman Mao Ning called it the first face-to-face meeting of the three heads of state and said it had &ldquo;groundbreaking significance&rdquo; (<a href="https://www.nbcnews.com/world/china/trump-xi-putin-meeting-significance-rcna609548">NBC News</a>). The White House says Trump will raise cutting nuclear arsenals and the Iran war, not Ukraine (<a href="https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html">CNBC</a>). A White House official told NPR there is no expected deal on nuclear arms, calling the meeting an &ldquo;entry point,&rdquo; and that no separate Trump&ndash;Putin meeting is planned. Trump stops first at the ASEAN summit in Manila, and Elon Musk will join him in Shenzhen (<a href="https://text.npr.org/nx-s1-6041738">NPR</a>). Semafor reports Lutnick is expected on Air Force One, with Bessent also expected on the trip, and a senior official says the Nvidia scandal &ldquo;should not really have any bearing&rdquo; on it (<a href="https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china">Semafor</a>).</p>
+  <p><b>Why it matters to you.</b> Chip-export policy is the hinge for AI capex and for Nvidia&rsquo;s China revenue, and it is now a money-and-influence fight too. Cantwell, the top Democrat on Senate Commerce, wrote that Commerce &ldquo;resisted efforts to restrict companies flagged as national security threats.&rdquo; She noted that Cantor Fitzgerald, now run by Lutnick&rsquo;s sons, held $1.2&nbsp;billion in Nvidia stock when he was nominated. She also said the administration&rsquo;s 25% fee on some Nvidia chip sales to China creates &ldquo;a perverse financial incentive&rdquo; to approve exports. Separately, Sens. Elizabeth Warren and Chris Coons gave Lutnick, Secretary of State Marco Rubio and chief of staff Stephen Miller until Tuesday, Nov.&nbsp;17, to confirm they have ordered Nvidia-export records preserved (<a href="https://www.cnbc.com/2026/11/16/cantwell-lutnick-ai-chip-china.html">CNBC</a>). In the House, incoming Foreign Affairs chair Gregory Meeks is floating a chips-and-AI subpanel as committees fight over who leads (<a href="https://www.semafor.com/article/11/16/2026/democrats-debate-who-gets-oversight-of-ai">Semafor</a>). The Journal reports the administration will name Nvidia among AI &ldquo;national champions&rdquo; for overseas sales (<a href="https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344">WSJ, headline only</a>). We could not confirm whether Commerce has answered Cantwell. Why: CNBC said the department had not responded Monday, and we found no statement.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; summit of substance, or photo op?</span>
+    <p><b>What is in dispute.</b> A dispute over interpretation. Beijing frames the meeting as historic. Strategist David Roche told CNBC it is an &ldquo;almost 100% photo op&rdquo; and that China will not join arms talks until it reaches parity, which he puts about 10 years off. Former ambassador Edgard Kagan told NPR that Beijing fears being locked into a precedent. On chips, the White House says Nvidia will not come up; Cantwell and Warren are pressing for the opposite.</p>
+    <p><b>Why the vantage differs.</b> China gains standing simply by hosting. The White House wants a nuclear headline and to keep the Nvidia scandal off the table. Cantwell and Warren, soon in the majority, gain from tying Lutnick to the scandal before he testifies to Senate Banking in December. The analysts quoted advise investors and are paid to discount the pageantry.</p>
+    <p><b>What it means for the reader.</b> Judge Thursday by what is written down: any joint statement, any word on chip licenses or the 25% fee, and whether Tuesday&rsquo;s preservation deadline is met. Pictures alone change nothing for AI supply chains.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Shenzhen meeting and the chip fight?</b></p>
+    <label><input type="radio" name="fb-shenzhen-chips" value="chips-raised"> If chip licenses or the 25% Nvidia fee surface in Shenzhen despite the White House saying they won&rsquo;t</label>
+    <label><input type="radio" name="fb-shenzhen-chips" value="nov17"> If Lutnick, Rubio or Miller miss the Nov.&nbsp;17 Warren&ndash;Coons preservation deadline</label>
+    <label><input type="radio" name="fb-shenzhen-chips" value="arms-talks"> Only if Xi agrees in writing to join nuclear arms talks with Washington and Moscow</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/world/china/trump-xi-putin-meeting-significance-rcna609548">NBC News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/16/trump-xi-putin-ukraine-nuclear-tariffs-russia-iran-.html">CNBC (summit)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/16/cantwell-lutnick-ai-chip-china.html">CNBC (Cantwell)</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6041738">NPR</a> &middot;
+    <a href="https://www.semafor.com/article/11/15/2026/under-pressure-lutnick-joins-trump-in-china">Semafor (Lutnick)</a> &middot;
+    <a href="https://www.semafor.com/article/11/16/2026/democrats-debate-who-gets-oversight-of-ai">Semafor (oversight)</a> &middot;
+    <a href="https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344">WSJ (headline)</a>
+  </p>
+</article>
+
+<article id="doj-warren">
+  <h3>A Texas U.S. attorney warns Sen. Elizabeth Warren, the likely next Banking Committee chair, of &ldquo;significant legal consequences&rdquo; and gives her until Nov.&nbsp;23 to preserve records on probes of Trump associates</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; US financials</span>
+    <span class="chip fu">Continuation</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (NBC News, Fox News, Semafor), plus a Guardian live-blog headline as signal.</p>
+  <p><b>Continuation trigger:</b> material connection and threshold event. Aaron Reitz&rsquo;s campaign of letters, which began with Sen. Richard Blumenthal on Nov.&nbsp;11, now reaches the senator expected to oversee the big banks, with a dated deadline.</p>
+  <p>Reitz, the U.S. attorney for the Southern District of Texas and a former chief of staff to Sen. Ted Cruz, wrote that Warren seems &ldquo;eager to wield your future gavel like a tomahawk, hunting for the scalps of President Trump&rsquo;s private associates.&rdquo; The letter is full of jabs at her past claims of Native American ancestry (<a href="https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532">NBC News</a>). It cites the conspiracy-against-rights and color-of-law statutes, 18&nbsp;U.S.C. &sect;&sect;&nbsp;241 and 242. It demands written confirmation by 6&nbsp;p.m. ET on Monday, Nov.&nbsp;23, that she is preserving records. Failure &ldquo;may carry significant legal consequences&rdquo; (<a href="https://www.foxnews.com/politics/federal-prosecutor-warns-sen-warren-legal-consequences-records-arent-preserved-trump-linked-probes">Fox News</a>). Reitz posted the letter on X and Trump reposted it. Reitz has sent similar letters to Blumenthal and Sen. Elissa Slotkin. Warren&rsquo;s office did not respond Sunday night (NBC News).</p>
+  <p><b>Why it matters to you.</b> Warren on Face the Nation said tech CEOs, Wall Street executives and giant corporations that broke the law &ldquo;better get ready for some investigations,&rdquo; and Reitz quoted that back at her. If she takes the Banking gavel in January, JPMorgan and its peers, crypto firms and AI-in-finance deals are in her lane. Democrats have named Trump family businesses, corporate corruption, immigration enforcement and the Epstein case as their first targets (<a href="https://www.nbcnews.com/politics/white-house/democrats-say-trump-family-businesses-top-upcoming-investigations-rcna605987">NBC News</a>). Semafor reports they also plan probes of Africa minerals deals (<a href="https://www.semafor.com/article/11/16/2026/democrats-plan-probes-into-africa-minerals-deals">Semafor, headline only</a>). On Nov.&nbsp;11, NBC reported that a step like this against a sitting member would normally go through DOJ&rsquo;s Public Integrity Section, which has been shrunk (<a href="https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899">NBC News</a>). We could not confirm how Warren will answer or whether DOJ leadership approved this letter. Why: neither had said so publicly by Monday morning.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; protecting citizens, or deterring oversight?</span>
+    <p><b>What is in dispute.</b> A legal and constitutional dispute. Reitz says the senators&rsquo; document demands to private donors chill First Amendment association rights. Acting Deputy Attorney General Trent McCotter has backed him, saying DOJ &ldquo;will defend against threats to those rights.&rdquo; Blumenthal says DOJ is &ldquo;weaponizing&rdquo; itself to target Congress. Fox News notes that the letter does not establish Warren broke any law, and that legitimate congressional investigations have constitutional protection.</p>
+    <p><b>Why the vantage differs.</b> Reitz serves at the president&rsquo;s pleasure, ran unsuccessfully for Texas attorney general, and posts his letters publicly, so they work partly as signals to Trump&rsquo;s base. Warren and Blumenthal are about to gain subpoena power and gain from being seen as targets. NBC&rsquo;s point about Public Integrity is a structural observation, not a ruling. Fox&rsquo;s caveat comes from its legal desk.</p>
+    <p><b>What it means for the reader.</b> A preservation letter is not a charge. The thresholds to watch are Nov.&nbsp;23 and any grand-jury subpoena or court filing naming a senator. Short of that, this is a fight over what Wall Street and tech should expect from a Democratic Banking Committee.</p>
+  </div>
+  <details>
+    <summary>Dig deeper: the letters so far</summary>
+    <p>Wednesday, Nov.&nbsp;11: Warren, Blumenthal and Rep. Robert Garcia ask Trump fundraiser and National Park Foundation board member Meredith O&rsquo;Rourke to keep records on ballroom funding. The same day, Reitz orders Blumenthal to preserve records and the White House warns Democrats that probes could be a crime. Sen. Elissa Slotkin has received a similar letter; NBC does not give its date. Sunday: Warren, with the Nov.&nbsp;23 deadline. Blumenthal answered with a preservation demand of his own to Reitz (NBC News, Nov.&nbsp;11 and Nov.&nbsp;16).</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Justice Department&rsquo;s letters to Democratic senators?</b></p>
+    <label><input type="radio" name="fb-doj-warren" value="formal-step"> If Warren ignores the Nov.&nbsp;23 deadline and DOJ follows with a subpoena or court filing against a sitting senator</label>
+    <label><input type="radio" name="fb-doj-warren" value="banks-named"> If Warren&rsquo;s Banking agenda names specific Wall Street banks, crypto firms or tech chiefs as targets</label>
+    <label><input type="radio" name="fb-doj-warren" value="gulf-money"> If the Trump-family and Gulf-money probes produce subpoenas once Democrats hold the gavels in January</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/politics/congress/us-attorney-warns-sen-elizabeth-warren-investigating-trump-associates-rcna609532">NBC News (Warren)</a> &middot;
+    <a href="https://www.foxnews.com/politics/federal-prosecutor-warns-sen-warren-legal-consequences-records-arent-preserved-trump-linked-probes">Fox News</a> &middot;
+    <a href="https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899">NBC News (Blumenthal)</a> &middot;
+    <a href="https://www.nbcnews.com/politics/white-house/democrats-say-trump-family-businesses-top-upcoming-investigations-rcna605987">NBC News (targets)</a> &middot;
+    <a href="https://www.semafor.com/article/11/16/2026/democrats-plan-probes-into-africa-minerals-deals">Semafor (headline)</a>
+  </p>
+</article>
+
+<article id="shuaiba">
+  <h3>An Army major tells Congress the Kuwait post where Iran killed six soldiers on March&nbsp;1 had no counter-drone defense and no doctor; Gold Star families say the Army has admitted no mistakes</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CBS News and Time), plus an AP report relayed by Time. CBS has led the reporting since March.</p>
+  <p>Maj. Stephen Ramsbottom, wounded in the attack at Port Shuaiba, filed a whistleblower complaint on Friday with the House and Senate Armed Services committees. He says he twice raised the lack of protection from the air and was told, &ldquo;We don&rsquo;t have to worry about protection.&rdquo; He says a requested counter-drone system &ldquo;never arrived,&rdquo; and that the post had &ldquo;no physician, no fixed aid station, and only one ambulance.&rdquo; His lawyers want an independent investigation (<a href="https://time.com/article/2026/11/16/army-whistleblower-ramsbottom-port-shuaiba-warnings-iran-war-hegseth-democrats/">Time</a>). On Sunday&rsquo;s 60 Minutes, six soldiers said they had seen intelligence before the war that put Port Shuaiba on an Iranian target list. Weeks before the war, the Pentagon moved 90% of its ground forces out of Kuwait, but about 70 members of the 103rd Sustainment Command were sent to the port, about 65 miles from Iran. Joey Amor, whose wife, Master Sgt. Nicole Amor, was killed, said of the command: &ldquo;They killed my wife.&rdquo; The Pentagon declined to say whether the unit was denied adequate force protection, and two generals named by soldiers did not respond (<a href="https://www.cbsnews.com/news/military-families-want-answers-on-iran-war-deaths-60-minutes/">CBS News</a>).</p>
+  <p><b>Why it matters to you.</b> This is the war&rsquo;s deadliest single attack on U.S. troops, and 23 service members have now died in eight months (Time). The complaint lands as Congress argues over funding the war (see the Dec.&nbsp;11 item below) and as Iran keeps launching drones at U.S. sites in the Gulf. Whether commanders ignored warnings is an accountability question for the Pentagon. It is also a test of whether Gulf bases are now defended against cheap drones. Time&rsquo;s headline says Democrats are calling for a probe of military leaders; we read only the part of the story about the complaint.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what the Army has told families, and when</span>
+    <p><b>What is in dispute.</b> Facts and timing. On March&nbsp;2, Defense Secretary Pete Hegseth called the drone a &ldquo;squirter&rdquo; that slipped through to a &ldquo;fortified&rdquo; operations center. Pentagon spokesman Sean Parnell has said the site had &ldquo;6-foot walls&rdquo; (<a href="https://www.cbsnews.com/news/iran-strike-us-troops-kuwait-investigation-findings-families/">CBS News, July</a>). Soldiers say it had walls against car bombs and nothing against drones. On timing, CBS reported in July that the Army finished its investigation in June and privately briefed families on July&nbsp;9; Time cites AP to the same effect. Sunday&rsquo;s 60 Minutes says families &ldquo;are finally being briefed&rdquo; this week, and one widow said she had been briefed &ldquo;yesterday.&rdquo;</p>
+    <p><b>Why the vantage differs.</b> Hegseth and Parnell speak for the leadership whose decisions are in question. Ramsbottom was wounded there and accepts part of the blame himself. The families have seen the findings but not their public release. CBS&rsquo;s July story and its broadcast were reported months apart, which may explain the timing gap.</p>
+    <p><b>What it means for the reader.</b> We could not confirm whether there is a second round of briefings this week or whether the broadcast line reflects earlier taping. Why: the Army has not said, and the findings remain unpublished. The concrete next steps are any Armed Services inquiry and any public release of the June report.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Port Shuaiba complaint?</b></p>
+    <label><input type="radio" name="fb-shuaiba" value="hasc-sasc"> If Armed Services opens an inquiry into Ramsbottom&rsquo;s complaint or calls the two generals soldiers named</label>
+    <label><input type="radio" name="fb-shuaiba" value="release"> If the Army publishes its June findings or names commanders who will be held responsible</label>
+    <label><input type="radio" name="fb-shuaiba" value="other-posts"> If soldiers at other Gulf posts report the same missing drone defenses while Iran keeps firing</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/military-families-want-answers-on-iran-war-deaths-60-minutes/">CBS News (60 Minutes)</a> &middot;
+    <a href="https://time.com/article/2026/11/16/army-whistleblower-ramsbottom-port-shuaiba-warnings-iran-war-hegseth-democrats/">Time</a> &middot;
+    <a href="https://www.cbsnews.com/news/iran-strike-us-troops-kuwait-investigation-findings-families/">CBS News (July)</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar but not the lead slots. No per-item feedback; one question at the end of the section.</p>
+
+<article id="hormuz-gas">
+  <h3>A tanker is struck in the Strait of Hormuz and a third U.S. carrier group arrives, but Florida&rsquo;s average gas price falls to $3.62, an eight-month low</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip">Energy &amp; grid</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (ABC News, CBS News, Fox&nbsp;13 Tampa Bay relaying AAA).</p>
+  <p>The UK Maritime Trade Operations center says a tanker leaving the strait early Monday was &ldquo;struck by an unknown projectile,&rdquo; starting an engine-room fire, with all crew accounted for. A U.S. official told ABC the USS Theodore Roosevelt strike group entered Central Command&rsquo;s area Sunday, joining two other carriers among more than 20 Navy ships enforcing the blockade of Iranian ports (<a href="https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071">ABC News</a>). Iran says there will be no U.N. inspections of its damaged nuclear sites until the war is &ldquo;permanently ended.&rdquo; Foreign Minister Abbas Araghchi claims a 10-nation regional bloc backs his plan to reopen the strait within two days of a ceasefire; the other members have not confirmed that, and Washington calls Iran&rsquo;s conditions &ldquo;unacceptable&rdquo; (<a href="https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/">CBS News</a>). At home, AAA says Florida&rsquo;s average was $3.62 a gallon on Sunday, down 61 cents in a month and 91 cents below this year&rsquo;s high, as the IEA reports global supply now exceeds demand (<a href="https://www.fox13news.com/news/florida-gas-prices-drop-8-month-low">Fox&nbsp;13</a>). Why it matters: so far the price at the pump is following global supply, not the daily attacks. Al Jazeera&rsquo;s live-blog headline says Iran &ldquo;commandeered&rdquo; a U.S. surveillance drone; we could not read the blog&rsquo;s text, so we cannot confirm it (<a href="https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack">Al Jazeera, headline</a>).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; mine or missile?</span>
+    <p><b>What is in dispute.</b> A factual dispute. The Revolutionary Guard navy, via state news agency IRNA, says a tanker hit naval mines east of the strait on Sunday after switching off its navigation and entering a &ldquo;restricted zone.&rdquo; It offered no images. UKMTO&rsquo;s Monday report says an &ldquo;unknown projectile.&rdquo; Neither names the ship, so it is unclear whether these are the same incident.</p>
+    <p><b>Why the vantage differs.</b> Iran wants to enforce its claimed control of the strait while denying that it attacks ships. UKMTO relays what ship operators report, quickly and without attribution.</p>
+    <p><b>What it means for the reader.</b> Treat both as one-sided until the vessel and its flag are named. The pump price is the number to watch for Florida, and so far it is falling.</p>
+  </div>
+  <p class="sources"><b>Sources:</b> <a href="https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071">ABC News</a> &middot; <a href="https://www.cbsnews.com/live-updates/iran-war-us-nuclear-oil-strait-of-hormuz/">CBS News</a> &middot; <a href="https://www.fox13news.com/news/florida-gas-prices-drop-8-month-low">Fox&nbsp;13</a> &middot; <a href="https://www.aljazeera.com/news/liveblog/2026/11/16/iran-war-live-tehran-warns-it-may-strike-first-before-another-us-attack">Al Jazeera (headline)</a></p>
+</article>
+
+<article id="judges">
+  <h3>Two departing Republicans, Tillis and Cornyn, are blocking some of Trump&rsquo;s last judicial picks, with Judiciary Committee votes due Tuesday and a hearing Wednesday</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (Washington Examiner, Bloomberg Government, and Reuters as relayed by Korea&rsquo;s Herald Business).</p>
+  <p>Republicans hold the Judiciary Committee 12&ndash;10, so one Republican defection can stall a nominee. Tillis told the Washington Examiner, &ldquo;No way, because I&rsquo;ve got the deciding vote.&rdquo; The White House has already withdrawn Lee Rudofsky&rsquo;s nomination to the 8th Circuit after Arkansas&rsquo;s two Republican senators balked (<a href="https://www.washingtonexaminer.com/news/senate/4800345/gop-holdouts-complicate-trump-final-chances-reshape-us-courts/">Washington Examiner</a>). Cornyn, who lost his primary to a Trump-backed challenger, is withholding his blue slip for T. Elliot Gaiser, who heads the Justice Department&rsquo;s Office of Legal Counsel and is nominated for a Dallas judgeship. Without it Gaiser cannot appear at Wednesday&rsquo;s hearing. Oklahoma&rsquo;s Alan Armstrong withdrew his support for nominee Zach West, whom the committee takes up Tuesday. Of Trump&rsquo;s nominees, 57 have been confirmed this term and 23 are pending; the White House says it expects all of them confirmed this year (<a href="https://biz.heraldcorp.com/article/10938637">Herald Business, relaying Reuters</a>; <a href="https://news.bgov.com/texas-brief/cornyn-questions-process-for-judicial-nominees-texas-brief">Bloomberg Government</a>). Why it matters: these are lifetime seats, and the window closes when Democrats take the Senate in January.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.washingtonexaminer.com/news/senate/4800345/gop-holdouts-complicate-trump-final-chances-reshape-us-courts/">Washington Examiner</a> &middot; <a href="https://biz.heraldcorp.com/article/10938637">Herald Business (Reuters)</a> &middot; <a href="https://news.bgov.com/texas-brief/cornyn-questions-process-for-judicial-nominees-texas-brief">Bloomberg Government</a></p>
+</article>
+
+<article id="nvidia-imf">
+  <h3>Nvidia reports Tuesday after six straight losing weeks as 170,000 people sign a petition to bring back Huang; the IMF puts circular AI financing at just over $1&nbsp;trillion</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Core &mdash; Macro &amp; markets</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 (CNBC, Guardian, Fox Business).</p>
+  <p>Analysts expect revenue of $109.1&nbsp;billion, up 91%, according to LSEG. The stock has fallen six weeks running, its longest streak since 2012, and lost $1.7&nbsp;trillion in market value. Interim CEO Colette Kress faces questions on China sales and on Nvidia&rsquo;s deals with neoclouds (<a href="https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html">CNBC</a>). IMF chief Kristalina Georgieva said the world economy is &ldquo;standing on one leg on the AI leg.&rdquo; She said circular deals, where investment flows back to the investor as purchase orders, have grown to just over $1&nbsp;trillion, two-thirds of it borrowed. A UBS analyst estimates a pullback in Nvidia&rsquo;s financing could pull $50&nbsp;billion or more out of the system (<a href="https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html">CNBC</a>). Elon Musk, Garry Tan and Tim Sweeney back the &ldquo;Stand with Jensen&rdquo; petition; CNBC counts more than 170,000 signatures, the Guardian 165,000 (<a href="https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html">CNBC</a>; <a href="https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo">Guardian</a>). Bessent wants an outside CEO and says he has seen reporting that only 1% of chips sold to Singapore stayed there (<a href="https://www.foxbusiness.com/business-leaders/bessent-calls-nvidia-leadership-shake-up-amid-china-chip-scandal-urges-outside-ceo">Fox Business</a>). Why it matters: Tuesday&rsquo;s guidance on financing and China sets the tone for Anthropic&rsquo;s listing Thursday and for AI capex budgets.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html">CNBC (earnings)</a> &middot; <a href="https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html">CNBC (IMF)</a> &middot; <a href="https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html">CNBC (petition)</a> &middot; <a href="https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo">Guardian</a> &middot; <a href="https://www.foxbusiness.com/business-leaders/bessent-calls-nvidia-leadership-shake-up-amid-china-chip-scandal-urges-outside-ceo">Fox Business</a></p>
+</article>
+
+<article id="head-start">
+  <h3>A final rule strips the 2024 wage and benefit requirements from Head Start, which the administration says will save programs more than $2&nbsp;billion</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 (the Federal Register document itself). We found no newsroom coverage in our sweep.</p>
+  <p>The Administration for Children and Families published the rule Monday. It removes the wage and benefits requirements from the 2024 &ldquo;Supporting the Head Start Workforce&rdquo; rule, which it calls costly, overly prescriptive and out of line with the plain language of the Head Start Act. It estimates more than $2&nbsp;billion in future savings. The rule takes effect Friday, Jan.&nbsp;15, 2027 (<a href="https://www.federalregister.gov/documents/2026/11/16/2026-23279/restoring-flexibility-to-support-head-start-program-access">Federal Register</a>). Why it matters: decisions on staff pay and benefits go back to local programs, which ACF calls restoring &ldquo;local flexibility.&rdquo; We read only the abstract, not the preamble&rsquo;s cost analysis, and we have no reaction yet from providers or the rule&rsquo;s defenders. That is why this runs short.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/16/2026-23279/restoring-flexibility-to-support-head-start-program-access">Federal Register 2026-23279</a></p>
+</article>
+
+<article id="intl-students">
+  <h3>International enrollment at U.S. colleges fell 9% this fall and new students fell 15%, as a proposed $70,000 fee on post-graduation work permits hangs over schools</h3>
+  <div class="meta"><span class="chip">US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (AP via ABC News, Inside Higher Ed), both from the Institute of International Education&rsquo;s survey of about 800 schools.</p>
+  <p>Graduate enrollment fell 15%. Participation in Optional Practical Training, which lets graduates work in the U.S., fell 6%, the first drop in five years (<a href="https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026">Inside Higher Ed</a>). The Department of Homeland Security has proposed charging schools $70,000 for every student in the program; the rule is not final and is expected to be challenged in court (<a href="https://abcnews.com/US/wireStory/fewer-students-traveling-abroad-study-us-universities-report-138169810">AP via ABC News</a>). Why it matters: the program feeds technical and consulting hiring, and foreign tuition props up many graduate programs. The administration&rsquo;s case for the fee was not in the parts of either story we could read.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://abcnews.com/US/wireStory/fewer-students-traveling-abroad-study-us-universities-report-138169810">AP via ABC News</a> &middot; <a href="https://www.insidehighered.com/news/global/international-students-us/2026/11/16/international-student-enrollment-down-9-fall-2026">Inside Higher Ed</a></p>
+</article>
+
+<article id="vulcan">
+  <h3>ULA&rsquo;s Vulcan failed 10 minutes after launch from Cape Canaveral, losing 40 Amazon Leo satellites in the company&rsquo;s first outright failure in 20 years</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (Spaceflight Now, whose story CBS News also carries, and DW, drawing on Reuters).</p>
+  <p>It was the first of 38 Vulcan launches Amazon has bought for its Starlink rival. Amazon is also waiting for Blue Origin&rsquo;s New Glenn to fly again after an explosion on the pad in May (<a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/">Spaceflight Now</a>; <a href="https://www.cbsnews.com/news/vulcan-rocket-40-amazon-leo-internet-satellites-launch-mishap/">CBS News</a>). DW says the investigation could ground Vulcan for months and that SpaceX is no longer taking bookings for Falcon&nbsp;9 (<a href="https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931">DW</a>). Why it matters: U.S. launch capacity outside SpaceX just shrank, which affects the Space Coast&rsquo;s launch schedule and Amazon&rsquo;s effort to compete with Musk.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/">Spaceflight Now</a> &middot; <a href="https://www.cbsnews.com/news/vulcan-rocket-40-amazon-leo-internet-satellites-launch-mishap/">CBS News</a> &middot; <a href="https://www.dw.com/en/rocket-from-boeing-lockheed-firm-fails-mid-flight-destroys-payload-of-amazon-satellites/a-79953931">DW</a></p>
+</article>
+
+<article id="jpm-dbs">
+  <h3>JPMorgan&rsquo;s Kinexys and Singapore&rsquo;s DBS linked their blockchain deposit networks for round-the-clock dollar transfers; Ant International is the first client</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">Core &mdash; US financials</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (The Business Times and CoinDesk), plus DBS&rsquo;s announcement.</p>
+  <p>The link lets approved institutional clients move tokenized U.S. dollar deposits between the U.S. and Singapore at any hour, including weekends (<a href="https://www.businesstimes.com.sg/companies-markets/dbs-jpmorgan-launch-us-singapore-tokenised-deposit-service-institutions">The Business Times</a>; <a href="https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers">DBS</a>). CoinDesk notes that these are ordinary bank deposits on permissioned networks, not crypto. Moving money between regular accounts and the blockchain accounts still pauses for three hours on Saturdays (<a href="https://www.coindesk.com/business/2026/11/16/j-p-morgan-and-dbs-let-clients-move-dollars-across-borders-on-weekends">CoinDesk</a>). Why it matters: big banks are building their own answer to stablecoins. The first client is Ant Group&rsquo;s international arm, which may draw attention from a Congress focused on China. We could not confirm whether U.S. regulators reviewed the link. Why: neither bank addressed it in what we read.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.businesstimes.com.sg/companies-markets/dbs-jpmorgan-launch-us-singapore-tokenised-deposit-service-institutions">The Business Times</a> &middot; <a href="https://www.coindesk.com/business/2026/11/16/j-p-morgan-and-dbs-let-clients-move-dollars-across-borders-on-weekends">CoinDesk</a> &middot; <a href="https://www.dbs.com/newsroom/DBS_and_Kinexys_by_JP_Morgan_launch_industry_first_247_interoperability_solution_for_cross_border_tokenised_deposit_transfers">DBS announcement</a></p>
+</article>
+
+<article id="dec11-funding">
+  <h3>Senate Democrats&rsquo; leadership fight is turning into a fight over whether to limit Iran war spending in the bill due Dec.&nbsp;11, raising shutdown risk</h3>
+  <div class="meta"><span class="chip">Core &mdash; US debt &amp; fiscal</span><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 (Semafor, ABC News).</p>
+  <p>Chuck Schumer lists the &ldquo;power of the purse&rdquo; as one option for curbing the war. Chris Van Hollen, who is challenging him for leader, is a leading backer of a funding restriction. Semafor says the fight could lead to a shutdown on Friday, Dec.&nbsp;11, when current funding runs out (<a href="https://www.semafor.com/article/11/16/2026/democrats-leadership-fight-collides-with-iran-funding-debate">Semafor</a>). Van Hollen told ABC there is &ldquo;a very open lane&rdquo; and accused Schumer&rsquo;s team of trying to &ldquo;instill fear.&rdquo; Schumer says he has the votes to stay leader (<a href="https://abcnews.com/Politics/van-hollen-schumer-instill-fear-retain-senate-leadership/story?id=138155548">ABC News</a>). Why it matters: Republicans still control both chambers until January, so this is about leverage, not votes. The same bill is one place Duffy&rsquo;s air-traffic request could ride.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.semafor.com/article/11/16/2026/democrats-leadership-fight-collides-with-iran-funding-debate">Semafor</a> &middot; <a href="https://abcnews.com/Politics/van-hollen-schumer-instill-fear-retain-senate-leadership/story?id=138155548">ABC News</a></p>
+</article>
+
+<article id="derby-lane">
+  <h3>Plans for the 130-acre former Derby Lane site in north St. Petersburg include 380 rental homes under the Live Local Act and land for a relocated casino</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (WUSF, which credits St. Pete Rising).</p>
+  <p>Winter Park developer Hillpointe proposes 300 apartments and 80 rental townhomes on about 28 acres at 10490 Gandy Blvd.&nbsp;N. Florida&rsquo;s Live Local Act lets qualifying rental projects bypass some local zoning if at least 40% of units stay affordable for 30 years. Hillpointe has not said how many units would be income-restricted or what rents would be. The wider plan sets aside 7.7 acres on Gandy for a relocated gaming venue, plus commercial and industrial storage land (<a href="https://www.wusf.org/economy-business/2026-11-16/derby-lane-redevelopment-plans-revealed-housing-new-casino">WUSF</a>). Why it matters: it is another test of how far the state law can override Pinellas zoning, on one of the area&rsquo;s largest redevelopment sites.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/economy-business/2026-11-16/derby-lane-redevelopment-plans-revealed-housing-new-casino">WUSF</a></p>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these would you want promoted to a lead next time, and on what condition?</p>
+  <label><input type="radio" name="fb-also" value="hormuz-pump"> The Hormuz item, if a tanker strike pushes Florida&rsquo;s pump average back toward $4 before Thanksgiving</label>
+  <label><input type="radio" name="fb-also" value="judges-gaiser"> The judges fight, if Tillis or Cornyn sink Gaiser or West at this week&rsquo;s Judiciary sessions</label>
+  <label><input type="radio" name="fb-also" value="derby-council"> Derby Lane, if St. Petersburg moves to block the Live Local apartments or the casino needs a state gaming approval</label>
+</div>
+</article>
+
+<footer>
+  <p><b>Provenance.</b> 91 sources checked; 27 swept before any weighting category was consulted. Four leads and nine items below the line (13 stories). Three leads carry over from earlier editions, each with a stated trigger: the FAA ground stop (CBS&rsquo;s contract and lobbying records), Shenzhen and the chip fight (Beijing&rsquo;s confirmation of the date and Cantwell&rsquo;s letter), and the Justice Department&rsquo;s letters (Reitz&rsquo;s Nov.&nbsp;23 deadline for Warren). The Kuwait lead is new. Marker tallies: PS&nbsp;1 &middot; IC&nbsp;11 &middot; SS&nbsp;1 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: the cause of the router failure, Commerce&rsquo;s reply to Cantwell, Warren&rsquo;s answer and whether DOJ leadership approved the letter, the timing of the Army&rsquo;s briefings to families, what struck the tanker and whether Iran seized a U.S. drone, and whether regulators reviewed the JPMorgan&ndash;DBS link. Divergence boxes: 5. No comparison edition was opened before this draft was finished. Weekdays were re-derived from dates: Nov.&nbsp;16 is a Monday; Nov.&nbsp;17 a Tuesday; Nov.&nbsp;18 a Wednesday; Nov.&nbsp;19 a Thursday; Nov.&nbsp;23 a Monday; Dec.&nbsp;11 a Friday; Jan.&nbsp;15, 2027 a Friday.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-16-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <ul class="noted-list">
+    <li>About five million people have lost SNAP benefits since the One Big Beautiful Bill Act, and county offices are doubling as food pantries (<a href="https://text.npr.org/nx-s1-6034048">NPR</a>). Missed: a strong feature, but there was no new policy action today.</li>
+    <li>Fed Chair Kevin Warsh speaks Monday on technology, productivity and jobs, and October minutes come Wednesday (<a href="https://www.cnbc.com/2026/11/16/treasury-yields-bonds-inflation.html">CNBC</a>). Missed: a speech, not a decision; our standing rule runs the Fed on prints and decisions only.</li>
+    <li>Anthropic&rsquo;s listing is set for Thursday and is about six times oversubscribed, Semafor says (<a href="https://www.semafor.com/article/11/15/2026/anthropic-ipo-set-to-define-ai-trade">Semafor</a>). Missed: no new fact since yesterday&rsquo;s lead; noted inside the Nvidia item.</li>
+    <li>Japan&rsquo;s economy shrank at a 0.1% annual rate in the third quarter as energy costs from the Iran war hit consumers (<a href="https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html">CNBC</a>). Missed: the U.S. channel is indirect.</li>
+    <li>Zelensky again says Starshield speed limits are letting Russian drones through and urged the U.S. and Musk to lift them (<a href="https://www.bbc.com/news/articles/c6m25zg88k45o">BBC</a>). Missed: repeats Friday&rsquo;s complaint with no U.S. response.</li>
+    <li>Rep. Thomas Massie filed H.Con.Res.&nbsp;126 to end U.S. hostilities with Iran and says he will force a vote before he leaves (<a href="https://www.wlky.com/article/rep-thomas-massie-house-vote-end-iran-war-kentucky/74431258">WLKY</a>). Missed: no vote is scheduled.</li>
+    <li>NHTSA extended to Dec.&nbsp;10 the comment period on lighting rules for vehicles without manual controls (<a href="https://www.federalregister.gov/documents/2026/11/16/2026-23239/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped">Federal Register</a>). Missed: a procedural step.</li>
+    <li>The transplant system approved its first national policy for normothermic regional perfusion, which critics say breaks the dead-donor rule (<a href="https://text.npr.org/nx-s1-6032604">NPR</a>). Missed: an ethics fight with no decision date.</li>
+    <li>Pasco commissioners approved a phased $16&nbsp;million land purchase to expand Wesley Chapel District Park, with only the first $4&nbsp;million committed (<a href="https://hoodline.com/2026/11/pasco-approves-16m-land-buy-to-finally-expand-jammed-wesley-chapel-park/">Hoodline</a>). Missed: small, and years of budget votes remain.</li>
+    <li>Florida&rsquo;s university board approved New College&rsquo;s borrowing of up to $47.5&nbsp;million; the private investor is Aldina L.C., tied to the Sarasota Film Festival&rsquo;s chairman (<a href="https://www.wusf.org/politics-issues/2026-11-16/new-college-loan-deal-approved-florida-board-of-governors">WUSF</a>). Missed: the approval was expected after our Nov.&nbsp;12 item.</li>
+    <li>Banks are using AI to reshape hiring, but the revenue gains are hard to pin down (<a href="https://www.cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html">CNBC</a>). Missed: mostly European banks and no new U.S. figures.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
