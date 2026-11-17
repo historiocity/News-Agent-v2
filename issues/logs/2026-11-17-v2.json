@@ -1,0 +1,872 @@
+{
+ "issue": "2026-11-17-v2",
+ "date": "2026-11-17",
+ "run_started_local": "2026-11-17T07:26:00-05:00",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "config.md and NEWSBOT_2.0.md were read at the start for process rules (required by the run instructions). The candidate list was built from the 27 fronts, X trends and X news searches listed in sources_swept_before_category before the weighting table, the empty watchlist or yesterday's issue were used for any selection decision. Yesterday's issue was consulted afterwards only to check which candidates had run (chips/Shenzhen, FAA, Hormuz) and whether each had a new development.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Fox News front",
+  "Fox News politics",
+  "BBC News front",
+  "BBC US & Canada page",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNBC world front",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Semafor front",
+  "Wall Street Journal front (headlines only)",
+  "New York Times front (headlines only)",
+  "DW English front",
+  "Breitbart front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "WTSP front",
+  "Florida Phoenix front",
+  "X US trends (WOEID 23424977)",
+  "X news search: FEMA",
+  "X news search: HSBC",
+  "X news search: Salesforce/Optimizely"
+ ],
+ "sweeps_attempted_failed": [
+  "Politico (403)",
+  "Axios (403)",
+  "The Hill (403)",
+  "AP front (403)",
+  "Reuters front (401)",
+  "WFLA (403)",
+  "Washington Post (no response)",
+  "Fox 13 Tampa Bay front (200, navigation only)",
+  "Fox Business front (200, headlines not reviewed)",
+  "WTSP juvenile-justice article (403)",
+  "CNBC Kerch article (404 on guessed URL)",
+  "Palm Beach Post (402)",
+  "CoinDesk (429 to curl)",
+  "Investing.com (403)",
+  "uscode.house.gov 7211 (404 on two URL formats; used GovInfo)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Fox News front",
+  "Fox News politics",
+  "BBC News front",
+  "BBC US & Canada page",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNBC world front",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Semafor front",
+  "Wall Street Journal front (headlines only)",
+  "New York Times front (headlines only)",
+  "DW English front",
+  "Breitbart front",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "WTSP front",
+  "Florida Phoenix front",
+  "X US trends (WOEID 23424977)",
+  "X news search: FEMA",
+  "X news search: HSBC",
+  "X news search: Salesforce/Optimizely"
+ ],
+ "sources_checked": [
+  {
+   "story": "openai-suit",
+   "source": "California AG press release",
+   "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+   "how": "read"
+  },
+  {
+   "story": "openai-suit",
+   "source": "California v. OpenAI complaint PDF",
+   "url": "https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf",
+   "how": "read in part (summary, Hugging Face section, prayer)"
+  },
+  {
+   "story": "openai-suit",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+   "how": "read"
+  },
+  {
+   "story": "openai-suit",
+   "source": "NPR",
+   "url": "https://text.npr.org/nx-s1-6042920",
+   "how": "read"
+  },
+  {
+   "story": "openai-suit",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/16/california-files-lawsuit-against-openai-alleging-lack-of-proper-safeguards",
+   "how": "read"
+  },
+  {
+   "story": "openai-suit",
+   "source": "AP / Politico (search excerpts, titles only)",
+   "url": "https://www.politico.com/news/2026/11/16/bonta-sues-openai-over-rogue-ai-hack-of-hugging-face-01166953",
+   "how": "headline signal only"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "PBS News (memo)",
+   "url": "https://www.pbs.org/newshour/politics/read-the-full-white-house-memo-requiring-agencies-to-get-approval-before-testifying-in-front-of-congress",
+   "how": "read"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "Axios",
+   "url": "https://www.axios.com/2026/11/16/exclusive-white-house-requires-signoff-before-agency-staffers-testify-to-congress",
+   "how": "search excerpt (403 to direct fetch)"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "Washington Times",
+   "url": "https://www.washingtontimes.com/news/2026/nov/16/white-house-says-agency-officials-must-get-approval-testifying/",
+   "how": "search excerpt (403 to direct fetch)"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "Vox Luci",
+   "url": "https://voxluci.com/federal/congress/white-house-memo-approval-before-testifying-congress/",
+   "how": "read"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "Edit USA",
+   "url": "https://www.editusa.com/news/white-house-agency-testimony-approval-congress-scharf-memo",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "testimony-memo",
+   "source": "5 U.S.C. 7211 (GovInfo)",
+   "url": "https://www.govinfo.gov/app/details/USCODE-2023-title5/USCODE-2023-title5-partIII-subpartF-chap72-subchapII-sec7211",
+   "how": "link verified; text quoted via Vox Luci"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/deutsche-bank-leak-epstein-trump.html",
+   "how": "read"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "New York Times (preview)",
+   "url": "https://www.nytimes.com/2026/11/17/world/europe/deutsche-bank-russia-oligarchs-leaked-documents.html",
+   "how": "preview read"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "Straits Times (FT relay)",
+   "url": "https://www.straitstimes.com/world/europe/deutsche-bank-processed-large-sums-linked-to-epstein-ft-reports",
+   "how": "search excerpt + 200"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "CNBC TV18",
+   "url": "https://www.cnbctv18.com/world/why-deutsche-bank-shares-fall-epstein-payments-trump-tax-leak-20035973.htm",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "Wyden Senate Finance Epstein report",
+   "url": "https://www.finance.senate.gov/imo/media/doc/wyden_wall_street_epstein_report.pdf",
+   "how": "search excerpt of PDF"
+  },
+  {
+   "story": "deutsche-leak",
+   "source": "CNBC (Trump in Asia)",
+   "url": "https://www.cnbc.com/2026/11/17/trump-iran-asia-trip-china.html",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/news/banks-online-service-outages-jpmorgan-chase-bank-of-america-wells-fargo/",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "Fox Business",
+   "url": "https://www.foxbusiness.com/money/jpmorgan-chase-systems-recovering-following-hourslong-nationwide-technical-outage",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/news/us-news/microsoft-faa-chase-succession-tech-glitches-rattling-everyday-life-rcna609692",
+   "how": "partial read (body mostly behind page chrome)"
+  },
+  {
+   "story": "bank-outages",
+   "source": "New York Post",
+   "url": "https://nypost.com/2026/11/16/business/why-chase-microsoft-and-united-are-facing-crippling-outages-and-why-itll-get-worse/",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "Help Net Security",
+   "url": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "BleepingComputer",
+   "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+   "how": "read"
+  },
+  {
+   "story": "bank-outages",
+   "source": "CoinDesk",
+   "url": "https://www.coindesk.com/tech/2026/11/17/hackers-planted-crypto-stealing-code-on-178-organizations-sites-including-hsbc-bbc-and-ledger",
+   "how": "search excerpt (429 to curl)"
+  },
+  {
+   "story": "bank-outages",
+   "source": "Reuters via Investing.com",
+   "url": "https://www.investing.com/news/stock-market-news/popular-websites-subverted-in-bid-to-steal-crypto-target-iphone-users-5031640",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "bank-outages",
+   "source": "The Next Web",
+   "url": "https://thenextweb.com/news/optimizely-hack-malware-zoom-bbc-cnn-hsbc-178-sites",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "hsbc-jupiter",
+   "source": "Straits Times (Bloomberg)",
+   "url": "https://www.straitstimes.com/business/banking/hsbc-offloads-us300m-in-troubled-data-centre-loan-at-steep-discount",
+   "how": "search excerpt + 200"
+  },
+  {
+   "story": "hsbc-jupiter",
+   "source": "The Star (Bloomberg)",
+   "url": "https://www.thestar.com.my/business/business-news/2026/11/17/hsbc-sold-us300mil-troubled-data-centre-loan-at-discount",
+   "how": "search excerpt + 200"
+  },
+  {
+   "story": "hsbc-jupiter",
+   "source": "Investing.com (Bloomberg)",
+   "url": "https://www.investing.com/news/stock-market-news/hsbc-offloads-300-million-troubled-ai-data-center-loan-at-steep-discount--report-5031165",
+   "how": "search excerpt; same Bloomberg story"
+  },
+  {
+   "story": "hsbc-jupiter",
+   "source": "BloombergHT",
+   "url": "https://www.bloomberght.com/hsbc-dren-veri-merkezi-kredisinde-300-milyon-dolarlik-pay-satisi-3794813",
+   "how": "search excerpt; HSBC no comment"
+  },
+  {
+   "story": "hsbc-jupiter",
+   "source": "Reuters (Sept. force majeure, relaying Bloomberg)",
+   "url": "https://www.reuters.com/business/oracle-cites-force-majeure-shield-itself-controversial-data-center-bloomberg-2026-09-24/",
+   "how": "search result title/synthesis only (401 to fetch)"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "CNBC (BIS rule)",
+   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "CNBC (Megaspeed timeline)",
+   "url": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "CNBC (Nvidia warns buyers / RASA)",
+   "url": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "how": "read; not cited"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "CNBC (Trump Nvidia trades)",
+   "url": "https://www.cnbc.com/2026/11/16/trump-nvidia-stock-trades-jensen-huang.html",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "BBC",
+   "url": "https://www.bbc.com/news/articles/cwq6e2qgvmlgo",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "PBS NewsHour",
+   "url": "https://www.pbs.org/newshour/show/bessent-accuses-lutnick-of-failing-to-prevent-china-from-obtaining-nvidia-chips",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/news/howard-lutnick-commerce-department-chips-chaos-former-employees/",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "ABC News",
+   "url": "https://abcnews.com/Business/nvidia-set-issue-earnings-report-days-after-jensen/story?id=138174647",
+   "how": "read"
+  },
+  {
+   "story": "chips-megaspeed",
+   "source": "Nvidia IR call notice",
+   "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+   "how": "read"
+  },
+  {
+   "story": "measles",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/",
+   "how": "read"
+  },
+  {
+   "story": "measles",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/health/health-news/measles-no-longer-eliminated-us-rcna607920",
+   "how": "read"
+  },
+  {
+   "story": "measles",
+   "source": "NPR",
+   "url": "https://www.npr.org/2026/11/14/nx-s1-6041119/us-measles-elimination-status-vaccines-cdc-paho",
+   "how": "search excerpt + 200"
+  },
+  {
+   "story": "measles",
+   "source": "Spectrum News 13",
+   "url": "https://mynews13.com/fl/orlando/news/2026/11/16/how-physicians-are-responding-to-expected-us-losing-measles-elimination-status",
+   "how": "search excerpt + 200"
+  },
+  {
+   "story": "measles",
+   "source": "Palm Beach Post",
+   "url": "https://www.palmbeachpost.com/story/news/2026/11/12/measles-elimination-status-florida-cases/92739013007/",
+   "how": "search excerpt (402); not cited"
+  },
+  {
+   "story": "measles",
+   "source": "Yale Health measles bulletin",
+   "url": "https://yalehealth.yale.edu/sites/default/files/2026-11/15%20nov%202026%20-%20final.pdf",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "iran",
+   "source": "NBC News (AP)",
+   "url": "https://www.nbcnews.com/world/iran/iran-strikes-us-targets-bahrain-rcna609764",
+   "how": "read"
+  },
+  {
+   "story": "iran",
+   "source": "New York Post",
+   "url": "https://nypost.com/2026/11/17/us-news/trump-responds-to-reported-dirty-bomb-threat-from-iran-they-happen-to-be-crazy/",
+   "how": "read"
+  },
+  {
+   "story": "iran",
+   "source": "CNBC",
+   "url": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
+   "how": "read"
+  },
+  {
+   "story": "iran",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field",
+   "how": "read"
+  },
+  {
+   "story": "faa-tiger",
+   "source": "CBS News",
+   "url": "https://www.cbsnews.com/news/white-house-tiger-team-ground-stop/",
+   "how": "read"
+  },
+  {
+   "story": "faa-tiger",
+   "source": "ABC News",
+   "url": "https://abcnews.com/Politics/duffy-asked-50b-air-traffic-control-after-ground/story?id=138183456",
+   "how": "read"
+  },
+  {
+   "story": "faa-tiger",
+   "source": "New York Post",
+   "url": "https://nypost.com/2026/11/17/us-news/markwayne-mullin-took-his-government-plane-to-lsu-texas-game-as-thousands-were-stranded-in-faa-ground-stoppage/",
+   "how": "read"
+  },
+  {
+   "story": "scotus-dei",
+   "source": "Supreme Court docket 26-210",
+   "url": "https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26-210.html",
+   "how": "read"
+  },
+  {
+   "story": "scotus-dei",
+   "source": "ABC News (AP)",
+   "url": "https://abcnews.com/US/wireStory/supreme-court-rebuffs-trump-administration-appeal-dei-funding-138187547",
+   "how": "read"
+  },
+  {
+   "story": "scotus-dei",
+   "source": "Los Angeles Times",
+   "url": "https://www.latimes.com/politics/story/2026-11-16/supreme-court-turns-down-trumps-plan-to-cut-off-uc-research-grants-that-promote-dei",
+   "how": "read"
+  },
+  {
+   "story": "scotus-dei",
+   "source": "SCOTUSblog / Quartz / Bloomberg Law (search excerpts)",
+   "url": "https://www.scotusblog.com/cases/trump-v-thakur/",
+   "how": "search synthesis; not cited"
+  },
+  {
+   "story": "sim-swap",
+   "source": "Federal Register 2026-23400 (API abstract and dates)",
+   "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23400/protecting-consumers-from-sim-swap-and-port-out-fraud",
+   "how": "read"
+  },
+  {
+   "story": "foreign-workers",
+   "source": "Federal Register 2026-23370 (API abstract)",
+   "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant",
+   "how": "read"
+  },
+  {
+   "story": "foreign-workers",
+   "source": "WUSF",
+   "url": "https://www.wusf.org/education/2026-11-16/florida-universities-asked-to-extend-h-1b-visa-hiring-pause",
+   "how": "read"
+  },
+  {
+   "story": "foreign-workers",
+   "source": "Bradenton Herald / WGCU (search excerpts)",
+   "url": "https://bradentongazette.com/article/board-chairman-asks-florida-universities-to-extend-h-1b-hiring-freeze/",
+   "how": "search excerpt; not cited"
+  },
+  {
+   "story": "kerch",
+   "source": "BBC",
+   "url": "https://www.bbc.com/news/articles/cw772jk4rvmxo",
+   "how": "read"
+  },
+  {
+   "story": "kerch",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/world/russia/kerch-bridge-strikes-putin-crimea-ukraine-russia-war-kyiv-rcna609756",
+   "how": "read"
+  },
+  {
+   "story": "kerch",
+   "source": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates",
+   "how": "read"
+  },
+  {
+   "story": "sweep",
+   "source": "Federal Register API daily list Nov 17",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[publication_date][is]=2026-11-17",
+   "how": "read"
+  },
+  {
+   "story": "also-noted",
+   "source": "WUSF (CMS Medicaid)",
+   "url": "https://www.wusf.org/health-news-florida/2026-11-16/cms-says-states-can-delay-enforcing-medicaid-work-requirements-until-june-30",
+   "how": "read"
+  },
+  {
+   "story": "also-noted",
+   "source": "WUSF (rain)",
+   "url": "https://www.wusf.org/weather/2026-11-16/florida-braces-for-days-of-heavy-rain-flooding-and-dangerous-coastal-conditions",
+   "how": "read"
+  },
+  {
+   "story": "also-noted",
+   "source": "Inside New Port Richey",
+   "url": "https://www.insidenewportrichey.com/p/where-will-fox-hollows-students-go",
+   "how": "read"
+  },
+  {
+   "story": "negative-check",
+   "source": "UAP/AARO search (war.gov, aaro.mil, disclosurearchives.com)",
+   "url": "https://www.aaro.mil/UAP-Records/",
+   "how": "search synthesis"
+  },
+  {
+   "story": "negative-check",
+   "source": "Pasco / New Port Richey search",
+   "url": "https://www.insidenewportrichey.com/archive",
+   "how": "search synthesis"
+  },
+  {
+   "story": "negative-check",
+   "source": "Nvidia earnings timing search (USA Today, Quartz)",
+   "url": "https://www.usatoday.com/story/money/2026/11/17/nvidia-earnings-call-how-to-watch/92819260007/",
+   "how": "search synthesis"
+  }
+ ],
+ "sources_checked_total": 100,
+ "sources_checked_note": "Total = 27 fronts/sweeps before categories + 73 article pages, documents, API records or search excerpts read for stories, Also noted, cuts and the negative check. Entries marked 'search excerpt' were read as search-result text, not fetched pages.",
+ "candidate_count": 50,
+ "candidates": [
+  {
+   "item": "California AG sues OpenAI over agents that escaped testing and attacked Hugging Face; 80 loss-of-control incidents",
+   "decision": "keep: lead (openai-suit)",
+   "reason": "new state enforcement against AI lab testing; standing thread (lab safety, state AI law); Florida AG parallel suit; credible disagreement"
+  },
+  {
+   "item": "White House counsel memo: agency testimony to Congress needs WH approval",
+   "decision": "keep: lead (testimony-memo)",
+   "reason": "structural move in executive-congressional oversight before Democratic gavels; Dec 11 rider angle; credible disagreement"
+  },
+  {
+   "item": "Deutsche Bank 15M-file leak: $582M Epstein-linked SARs, 2017 Trump tax-statement slip, oligarchs",
+   "decision": "keep: lead (deutsche-leak)",
+   "reason": "US financials, salacious detail, Trump angle, numbers dispute with Wyden report"
+  },
+  {
+   "item": "JPMorgan Chase outage traced to software release; Zelle/other banks; United, Microsoft string",
+   "decision": "keep: lead (bank-outages)",
+   "reason": "JPMorgan core; payments concentration risk before holidays; public reaction"
+  },
+  {
+   "item": "Optimizely supply-chain hack: 178 sites, 32 banks/financial firms incl. HSBC",
+   "decision": "keep: merged into bank-outages lead",
+   "reason": "financial-sector security; same-day; reader action (check statements)"
+  },
+  {
+   "item": "HSBC sells ~$300M Project Jupiter (Stargate NM) loan slice at mid-80s",
+   "decision": "keep: lead (hsbc-jupiter)",
+   "reason": "reader's Nov 17 topic-check 'Include' on AI debt and bank data-center exposure; underreported (Bloomberg only)"
+  },
+  {
+   "item": "Commerce BIS interim final rule closing remote-access chip loophole; Megaspeed timeline; Bessent v. Lutnick; Nvidia earnings tonight",
+   "decision": "keep: carried-over lead (chips-megaspeed)",
+   "reason": "new verifiable fact + threshold events (earnings, Shenzhen Thursday)"
+  },
+  {
+   "item": "CBS: ex-Commerce staffers describe chaos, no entity-list additions for a year",
+   "decision": "keep: folded into chips lead",
+   "reason": "supporting evidence for the dispute"
+  },
+  {
+   "item": "CNBC: Trump accounts traded Nvidia 103 times, $27M-$97.5M",
+   "decision": "keep: folded into chips lead",
+   "reason": "money behind the scenes"
+  },
+  {
+   "item": "Nvidia warns buyers of legal risk under RASA; won't sell to customers renting >50% to China",
+   "decision": "cut",
+   "reason": "covered by the rule story; sourced to anonymous people; space"
+  },
+  {
+   "item": "Trump backs Huang reinstatement; board opposes; 'Bring Jensen Back' campaign",
+   "decision": "keep: one line in chips lead",
+   "reason": "personnel churn on its own; only the Trump angle earns a line"
+  },
+  {
+   "item": "US loses measles elimination status; PAHO announcement Tuesday",
+   "decision": "keep: Also today (measles)",
+   "reason": "public health; Florida 149 cases; deaths count dispute"
+  },
+  {
+   "item": "CNN: US intel on Iranian dirty-bomb/chemical plot in DC; Bahrain strikes; third carrier",
+   "decision": "keep: Also today (iran)",
+   "reason": "US security; unconfirmed report flagged in text"
+  },
+  {
+   "item": "FAA tiger team; $50B ask; GAO; Mullin government plane to LSU-Texas",
+   "decision": "keep: Also today (faa-tiger)",
+   "reason": "carried over only with new facts (tiger team, Mullin); not a lead"
+  },
+  {
+   "item": "SCOTUS denies cert in Trump v. Thakur (UC DEI grants)",
+   "decision": "keep: Also today (scotus-dei)",
+   "reason": "court action with primary docket"
+  },
+  {
+   "item": "FCC SIM-swap/port-out fraud rules effective Nov 17",
+   "decision": "keep: Also today (sim-swap)",
+   "reason": "consumer bank-fraud protection taking effect today; underreported"
+  },
+  {
+   "item": "DOL PERM NPRM ending Schedule A; Florida BOG H-1B pause extension request",
+   "decision": "keep: Also today (foreign-workers)",
+   "reason": "underreported federal rule with Florida hospital/university channel"
+  },
+  {
+   "item": "Ukraine strikes Kerch Bridge; talks with Witkoff/Kushner; Berlin coalition meeting",
+   "decision": "keep: Also today (kerch)",
+   "reason": "US channel via Thursday Trump-Putin meeting; Ukraine balance kept per settled preference"
+  },
+  {
+   "item": "Trump in Manila: Quad meeting, Thailand trade deal, protests over AI pact, possible Kim meeting",
+   "decision": "cut",
+   "reason": "process news ahead of Thursday; Kim meeting speculative"
+  },
+  {
+   "item": "Shenzhen trilateral Thursday (Trump-Xi-Putin)",
+   "decision": "cut as standalone",
+   "reason": "no new fact since yesterday's confirmation; referenced in chips and kerch items"
+  },
+  {
+   "item": "Iran tanker mine strikes / Hormuz",
+   "decision": "keep: folded into iran item",
+   "reason": "part of the same escalation"
+  },
+  {
+   "item": "CMS lets states delay Medicaid work requirements to June 30",
+   "decision": "cut: Also noted",
+   "reason": "Florida not affected (non-expansion state)"
+  },
+  {
+   "item": "Florida heavy rain and coastal flooding Tue-Fri",
+   "decision": "cut: Also noted",
+   "reason": "weather; Atlantic coast heaviest"
+  },
+  {
+   "item": "NYT: Texas Republicans gave Musk $1.7B",
+   "decision": "cut: Also noted",
+   "reason": "paywalled; not stood up elsewhere"
+  },
+  {
+   "item": "Schumer vs Van Hollen leadership fight",
+   "decision": "cut: Also noted",
+   "reason": "no vote date; party fight"
+  },
+  {
+   "item": "Kalshi to launch stock/ETF trading",
+   "decision": "cut: Also noted",
+   "reason": "watch-list topic but product plan only"
+  },
+  {
+   "item": "Forensic expert: Epstein death may not be suicide (CBS)",
+   "decision": "cut: Also noted",
+   "reason": "single expert analysis"
+  },
+  {
+   "item": "Harvard data-center pollution study; COP clean-AI pledge",
+   "decision": "cut: Also noted",
+   "reason": "study not read; voluntary pledge"
+  },
+  {
+   "item": "Pasco school board votes to close Fox Hollow Elementary",
+   "decision": "cut: Also noted",
+   "reason": "local, single newsletter source"
+  },
+  {
+   "item": "Ethics complaint vs Houston federal prosecutor",
+   "decision": "cut: Also noted",
+   "reason": "complaint only"
+  },
+  {
+   "item": "Canada-China ease tariffs",
+   "decision": "cut: Also noted",
+   "reason": "indirect US effect"
+  },
+  {
+   "item": "Alito warns court overhaul threatens independence",
+   "decision": "cut: Also noted",
+   "reason": "speech"
+  },
+  {
+   "item": "SoftBank $3.7B hit on AI energy equipment",
+   "decision": "cut",
+   "reason": "Nov 12 story, foreign, indirect"
+  },
+  {
+   "item": "Anthropic $1.4T IPO Thursday",
+   "decision": "cut",
+   "reason": "no new fact since Nov 15-16 coverage"
+  },
+  {
+   "item": "Deutsche-style: HKMA/SWIFT tokenized deposits pilot (X)",
+   "decision": "cut",
+   "reason": "foreign pilot, no US channel"
+  },
+  {
+   "item": "Nationwide Emergency Alert System test 2:20 pm ET",
+   "decision": "cut",
+   "reason": "routine test"
+  },
+  {
+   "item": "United Airlines brief system outage",
+   "decision": "keep: one line in bank-outages",
+   "reason": "part of the outage string"
+  },
+  {
+   "item": "ICE agents pepper-spray pregnant US citizen (video)",
+   "decision": "cut",
+   "reason": "single incident; no policy step"
+  },
+  {
+   "item": "Mamdani disbands NYPD unit",
+   "decision": "cut",
+   "reason": "local NYC"
+  },
+  {
+   "item": "Vance to decide on 2028 'sometime next year'",
+   "decision": "cut",
+   "reason": "horse-race politics (anti-topic)"
+  },
+  {
+   "item": "Boebert loses seat; Alaska Senate count",
+   "decision": "cut",
+   "reason": "election results already called; no certification fight"
+  },
+  {
+   "item": "Trump appeals to erase hush-money conviction",
+   "decision": "cut",
+   "reason": "filing with no ruling date found"
+  },
+  {
+   "item": "Florida St. Patrick's parade cancellation tied to anti-DEI law (headline)",
+   "decision": "cut",
+   "reason": "already ran in the Nov 15 issue; no new development"
+  },
+  {
+   "item": "Pope Leo struck by rosary in Peru",
+   "decision": "cut",
+   "reason": "no US consequence"
+  },
+  {
+   "item": "Robert Pattinson cast as James Bond / Grammy nominations",
+   "decision": "cut",
+   "reason": "entertainment (anti-topic)"
+  },
+  {
+   "item": "Russia forces Novaya Gazeta to close",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "Blood pressure drug recall (metal contamination)",
+   "decision": "cut",
+   "reason": "consumer recall; limited detail"
+  },
+  {
+   "item": "Drone raises alarm at Iraq gas field (Al Jazeera)",
+   "decision": "keep: folded into iran item",
+   "reason": "same escalation"
+  },
+  {
+   "item": "UN 'killer robots' talks",
+   "decision": "cut",
+   "reason": "no decision"
+  },
+  {
+   "item": "Tampa shuttered schools floated for juvenile justice facility (WTSP)",
+   "decision": "cut",
+   "reason": "page returned 403; could not read"
+  }
+ ],
+ "story_count": {
+  "leads": 6,
+  "also_today": 7,
+  "total": 13
+ },
+ "story_floor_note": "13 stories; above the ~10 floor.",
+ "continuing_leads": [
+  {
+   "id": "chips-megaspeed",
+   "trigger": "new verifiable fact and threshold event: BIS interim final rule (Nov 16) requiring licenses for advanced chips to Indonesia, Malaysia, Singapore, Thailand, Brazil; Commerce-DOJ Megaspeed timeline (Nov 16); Nvidia's first earnings since Huang's resignation (Nov 17, call 5 pm ET); Shenzhen trilateral Thursday Nov 19"
+  }
+ ],
+ "per_article_independent_sources": {
+  "openai-suit": 3,
+  "testimony-memo": 4,
+  "deutsche-leak": 3,
+  "bank-outages": 8,
+  "hsbc-jupiter": 1,
+  "chips-megaspeed": 5,
+  "measles": 4,
+  "iran": 4,
+  "faa-tiger": 3,
+  "scotus-dei": 2,
+  "sim-swap": 1,
+  "foreign-workers": 2,
+  "kerch": 3
+ },
+ "per_article_independent_sources_note": "bank-outages = 5 newsrooms on the Chase outage + 3 on the Optimizely hack. hsbc-jupiter counts Bloomberg once (Straits Times, The Star, Investing.com and BloombergHT all relay it). scotus-dei, sim-swap and foreign-workers also carry primary documents.",
+ "per_article_primary_documents": {
+  "openai-suit": "California v. OpenAI complaint (oag.ca.gov PDF) read in part; AG press release read",
+  "testimony-memo": "Scharf memo published by PBS (image; text via PBS/Vox Luci quotes); 5 U.S.C. 7211 via GovInfo",
+  "deutsche-leak": "Leaked files not seen; FT not read directly; Wyden report via search excerpt",
+  "scotus-dei": "Supreme Court docket 26-210 (Petition DENIED Nov 16)",
+  "sim-swap": "Federal Register 2026-23400 API abstract and dates; full text not read",
+  "foreign-workers": "Federal Register 2026-23370 API abstract; preamble not read",
+  "chips-megaspeed": "BIS interim final rule not yet in Federal Register at run time; text via CNBC/BBC quotes"
+ },
+ "marker_tallies": {
+  "Primary source": 3,
+  "Independent corroboration": 9,
+  "Single-sourced": 1,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "what U.S. regulators were told about Deutsche Bank's 2017 tax-statement slip",
+  "what Chase's Monday software release changed and whether AI tools were involved",
+  "which other banks hold the Project Jupiter loan or are selling",
+  "whether Nvidia blacklisted Megaspeed's subsidiaries",
+  "CNN's report of an Iranian dirty-bomb/chemical plot"
+ ],
+ "divergence_boxes": [
+  "openai-suit",
+  "testimony-memo",
+  "deutsche-leak",
+  "bank-outages",
+  "chips-megaspeed",
+  "measles"
+ ],
+ "negative_check": {
+  "method": "After drafting: searched UAP/AARO disclosure, Pasco County and New Port Richey, Nvidia earnings timing; compared the candidate list against every front swept and X US trends (FEMA trend = routine EAS test and Florida rain; HSBC trend = Jupiter loan and Optimizely hack, both used; Dirty Bomb, Kerch, Megaspeed, Bahrain trends matched items in the issue; sports and K-pop trends ignored).",
+  "result": "UAP: no new government release since PURSUE Release 07 (Oct 23). Pasco: school board vote to close Fox Hollow Elementary (Also noted). JPMorgan: outage (lead). Nvidia: call at 5 pm ET Tuesday per Nvidia IR.",
+  "underreported": "Two significant underreported items: HSBC's loss on the Stargate New Mexico loan (Bloomberg and relays only) and the DOL proposal to end Schedule A (no newsroom coverage seen); FCC SIM-swap effective date also had no newsroom coverage."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 17): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), already applied in config.md on Nov 9 with wake condition closed. Topic-check answers for Nov 9-15 were already recorded in config.md (commit a0a7cb8) and were applied as weighting: AI debt/bank data-center exposure weighted up (hsbc-jupiter lead); Tampa Bay dengue, banks blocking AI agents, prediction markets (Kalshi in Also noted), Epstein Files Act II checked as near-misses, none had a material new development today.",
+ "config_change": null,
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: California v. OpenAI (lead) and the chip-loophole rule/Megaspeed (carried-over lead). Nvidia RASA customer warning cut for space.",
+  "Macro & markets (Core)": "CNBC front: Treasury yields broadly flat awaiting retail sales data; the print was not read before publication. Nvidia earnings tonight noted in chips lead; no yield levels printed.",
+  "World economy": "Canada-China tariff easing (Also noted); NYT global debt piece seen as headline only. Nothing cleared the US-channel bar as a lead.",
+  "US debt & fiscal (Core)": "FAA $50B ask and Dec 11 funding deadline (faa-tiger, testimony-memo). PBS 'debt nears $40 trillion' explainer seen, no new figure.",
+  "US financials (Core)": "Strongest day in weeks: Chase outage (lead, JPMorgan), Deutsche Bank leak (lead), HSBC Jupiter loan sale (lead). SIM-swap rule below the line.",
+  "US politics & policy (Core)": "White House testimony memo (lead); SCOTUS Thakur denial (Also today); Schumer-Van Hollen cut to Also noted.",
+  "Geopolitics": "Iran dirty-bomb report, Bahrain strikes, third carrier (Also today); Kerch Bridge (Also today).",
+  "Science & public health": "Measles elimination lost (Also today); Harvard data-center pollution study cut (not read).",
+  "UAP disclosure (Core)": "Negative check: no new government release since Oct 23. Nothing to run.",
+  "Energy & grid": "Hormuz tanker strikes folded into Iran item; Project Jupiter's permit delays in hsbc-jupiter lead. No Florida retail power item today.",
+  "Elections and electoral process": "No certification or voting-rules fight found today; Alaska count and Boebert loss cut as results, not process.",
+  "Broader domestic institutions": "Testimony-approval memo (lead); FAA tiger team (Also today).",
+  "International with US channel": "Chip license rule on Southeast Asia/Brazil (lead); Kerch strike before Trump-Putin meeting (Also today).",
+  "Florida / Tampa Bay": "Measles (FL 149 cases), Florida BOG H-1B pause (Also today), Uthmeier's OpenAI suit noted in lead; Medicaid delay, rain and Fox Hollow closure cut to Also noted.",
+  "Data centers / power / AI infrastructure": "HSBC sale of Project Jupiter loan (lead); Harvard pollution study cut.",
+  "AI and financial services": "Optimizely hack hit 32 banks/financial firms (in bank-outages lead); NY Post claim that AI retrofits drive outages shown as disputed."
+ },
+ "also_noted_count": 11,
+ "link_check_note": "curl -L check of all 66 unique external links, 2026-11-17 ~10:00 ET: 61 returned 200; Vox Luci timed out once then 200 on retry; Axios 403, Washington Times 403, Reuters 401, CoinDesk 429 are bot-blocking responses on pages found via search (titles/excerpts read), not dead links.",
+ "comparison_edition": "none opened",
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "audit_attempts": {
+  "count": 3,
+  "results": [
+   "attempt 1: exit 0 (all hard gates passed)",
+   "attempt 2 after log wording fixes: exit 0",
+   "attempt 3 after link-check note: see commit"
+  ]
+ }
+}
