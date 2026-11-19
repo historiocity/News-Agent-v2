@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Thursday, 19 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Thursday, 19 November 2026 &middot; morning edition</div>
+  <h1>Shenzhen ends with a four-point statement and no deals; Anthropic trades today after a record sale; Iran widens its strikes as Congress fights over Pentagon money; Amendment&nbsp;3 starts cutting Pinellas buses; paying for access to Trump’s officials</h1>
+  <p class="summary">Five leads, seven below the line. The first Trump&ndash;Xi&ndash;Putin talks ended after about 80 minutes with a four-point statement on U.N. reform, fuel supply, court immunity and nuclear risk, but no deals; Anthropic opens on the Nasdaq today after an $81.3&nbsp;billion offering, the largest ever, carrying $900&nbsp;billion in compute commitments; Iran hit U.S. sites in Kuwait and Bahrain as Senate Republicans admit they lack the votes for party-line Pentagon money before the Dec.&nbsp;11 deadline; Pinellas transit set a $12 disabled-rider fare and St. Pete Beach dropped its trolley, both citing Amendment&nbsp;3; and contractor-sponsored access at a Mar-a-Lago gala and a foreign-held $TRUMP coin dinner. Below the line: the chip rule that takes effect today, FinCEN’s immigration-status proposal for bank customers, Denmark’s Greenland vote, Hegseth in Caracas as the Venezuelan TPS case returns to the Supreme Court, Florida’s ORION license outage, the Form&nbsp;6 ruling, and new data-center power numbers.</p>
+  <p class="sub">Thursday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-19-v2.html</code>.</p>
+  <p class="prov"><b>101 sources checked, 36 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front and news list, Al Jazeera news and U.S. pages, Fox News front and politics page, Fox Business, BBC News front and U.S. page, Guardian US, CBS News, NBC News, ABC News, CNN lite, CNBC world, PBS NewsHour, New York Post, Breitbart, Semafor, Wall Street Journal front (headlines only), DW, South China Morning Post, National Review, Daily Wire, Data Center Dynamics, WUSF, Tampa Bay Times, WTSP, Florida Phoenix, Fox&nbsp;13, Bay News&nbsp;9 (navigation only), Inside New Port Richey, X&rsquo;s U.S. trends plus two X news searches, and the Federal Register API for today&rsquo;s documents. AP, Reuters, Politico, Axios, The Hill, the New York Times, WFLA and Florida Politics returned access-denied pages; Newsmax and the Washington Post did not respond. Their reporting appears only where a search excerpt or another outlet carries it.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure, Pasco County and New Port Richey news, and JPMorgan, and compared the candidate list with every front swept and X&rsquo;s U.S. trends. No new government UAP release has appeared since the Oct.&nbsp;23 PURSUE tranche. Pasco&rsquo;s news is a sheriff&rsquo;s shopping-scam warning and a Pasco 2050 planning session; Pasco&rsquo;s tax collector appears in the ORION item. JPMorgan&rsquo;s news is the CFO succession and AI-agent payments test already noted Wednesday. Two things are underreported: FinCEN&rsquo;s proposal letting banks ask business owners about immigration status, which we found only in Treasury&rsquo;s own release and banking trade press, and the remote-access chip rule taking effect today, which drew wide coverage when announced Monday but almost none on its effective date. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed; no new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#shenzhen">Shenzhen: a four-point statement, no deals</a></li>
+    <li><a href="#anthropic">Anthropic’s record sale and today’s debut</a></li>
+    <li><a href="#iran-funding">Iran widens strikes; the Pentagon-money squeeze</a></li>
+    <li><a href="#amendment3">Amendment&nbsp;3 reaches Pinellas buses and the beach trolley</a></li>
+    <li><a href="#paid-access">Paying for access: the Mar-a-Lago gala and the coin dinner</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#chip-rule">The remote-access chip rule takes effect</a></li>
+    <li><a href="#fincen">FinCEN: banks may ask about immigration status</a></li>
+    <li><a href="#greenland">Denmark ratifies the Greenland deal</a></li>
+    <li><a href="#venezuela">Hegseth in Caracas; TPS back at the Supreme Court</a></li>
+    <li><a href="#fl-orion">Florida’s ORION license system fails again</a></li>
+    <li><a href="#fl-form6">Judge strikes Florida’s Form&nbsp;6 for local officials</a></li>
+    <li><a href="#data-centers">Data centers: 1.8% of U.S. power, and a county says no</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="shenzhen">
+  <h3>Trump, Xi and Putin end their first three-way talks with a four-point statement on U.N. reform, fuel supply, court immunity and nuclear risk, and no concrete deals</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6 newsrooms (CNN, Breitbart, Al Jazeera, CNBC, Semafor, New York Post).</p>
+  <p><b>Why this is back.</b> Wednesday’s issue previewed the summit. It returns because the threshold event happened: the three leaders met in Shenzhen on Thursday and issued a joint statement.</p>
+  <p>The talks were short. CNN timed them at 81 minutes and wrote that “the talks themselves were the deliverable” (<a href="https://lite.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways">CNN</a>). Trump opened by saying the three countries, “as the world’s three largest nuclear powers by far,” are “uniquely positioned to discuss how to reduce the number of nuclear weapons on earth” (<a href="https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html">CNBC</a>). The joint statement, in China’s English version, has four points: reform the U.N.; “increase the production and supply of refined petroleum products” and keep energy flows stable; treat immunity for state officials as “of paramount importance” and say the International Criminal Court “must not abuse” its jurisdiction; and hold a dialogue on reducing nuclear risks, repeating that “a nuclear war cannot be won and must never be fought” (<a href="https://www.breitbart.com/europe/2026/11/19/joint-statement-promising-u-n-reform-after-trump-xi-putin-talks/">Breitbart</a>).</p>
+  <p>CNN points out that the ICC clause matters most to Putin, who is wanted by that court. It also notes that Trump eased sanctions on Russian diesel to bring down prices pushed up by the Iran war, which indirectly lets that war enrich Russia. A Kremlin aide said Ukraine was the focus of the Trump&ndash;Putin meeting and that Putin left “in an excellent mood” (<a href="https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks">Al Jazeera</a>). Chinese officials had a Bloomberg reporter barred from the three-way session after she shouted a question about Jensen Huang during the Trump&ndash;Xi meeting; a White House official said it pushed to have her let back in and failed (<a href="https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/">New York Post</a>).</p>
+  <p>Republican senators were cool beforehand. Sen. Thom Tillis (R-N.C.): “I’d rather see a summit with our NATO members talking about how we’re going to beat Russia.” Florida’s Sen. Rick Scott said he was glad Trump was meeting them but “I don’t expect anything to happen, because these are two thugs that hate our way of life” (<a href="https://www.semafor.com/article/11/18/2026/republicans-warily-eye-trumps-meeting-with-putin-xi">Semafor</a>).</p>
+  <p><b>Why it matters to you.</b> Only the fuel pledge comes near your wallet, and it has no numbers or dates attached. The nuclear dialogue is the one item that could produce a dated meeting. We could not confirm whether any U.S. text of the statement differs from China’s English version; the White House had not published one in the sources we reached.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a historic pivot, or a photo-op?</span>
+    <p><b>What is in dispute.</b> Mostly interpretation, plus one small factual gap. Breitbart’s headline treats the statement as a win on U.N. and court reform and nonproliferation. CNN calls the talks themselves the deliverable and says it is not clear whether this was a pivot “or just another photo-op.” The length differs by account: CNN says 81 minutes, Chinese state media (as relayed by Breitbart) 90 minutes, and Al Jazeera puts the closed-door portion at about 55 minutes.</p>
+    <p><b>Why the vantage differs.</b> The Chinese text comes from the host government, which controls the wording and gains from looking like the convener of great powers. Breitbart relays that text with little analysis, and its readers mostly back Trump. CNN’s team was in Shenzhen but outside the room and writes for an audience more skeptical of Trump. The Republican senators quoted by Semafor spoke before the meeting and have their own NATO and China positions to defend.</p>
+    <p><b>What it means for the reader.</b> Judge it by what follows: a date and named negotiators for the nuclear dialogue, or any U.S. move on Russian fuel sanctions. Without those, the statement does not change anything for you.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Shenzhen talks?</b></p>
+    <label><input type="radio" name="fb-shenzhen" value="nuclear-date"> If the promised nuclear-risk dialogue gets a first meeting date and named U.S. negotiators</label>
+    <label><input type="radio" name="fb-shenzhen" value="diesel"> If the fuel-supply pledge turns into a dated U.S. change to Russian diesel sanctions that moves Florida pump prices</label>
+    <label><input type="radio" name="fb-shenzhen" value="icc"> If the court-immunity clause leads to a new U.S. action against the International Criminal Court</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://lite.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways">CNN (takeaways)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html">CNBC</a> &middot;
+    <a href="https://www.breitbart.com/europe/2026/11/19/joint-statement-promising-u-n-reform-after-trump-xi-putin-talks/">Breitbart (statement text)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks">Al Jazeera</a> &middot;
+    <a href="https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/">New York Post</a> &middot;
+    <a href="https://www.semafor.com/article/11/18/2026/republicans-warily-eye-trumps-meeting-with-putin-xi">Semafor</a>
+  </p>
+</article>
+
+<article id="anthropic">
+  <h3>Anthropic sold $81.3&nbsp;billion of stock at $83 a share, the largest IPO on record, and opens on the Nasdaq today with $900&nbsp;billion of compute commitments and founders holding majority control</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">AI and financial services</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 5 newsrooms (AP via PBS, NPR, BBC, Al Jazeera, CNBC), plus Anthropic’s own pricing release.</p>
+  <p><b>Why this is back.</b> Wednesday’s issue covered the run-up and the political backlash. It returns on a threshold event: the shares were priced above the range Wednesday night and start trading today.</p>
+  <p>Anthropic priced 980&nbsp;million shares at $83, above the $70&ndash;$78 range it set for 825&nbsp;million shares. Of those, 956,351,354 were sold by the company and 23,648,646 by “certain selling stockholders”; trading under the ticker ANT starts today, the deal closes Friday, and underwriters have a 30-day option on 147&nbsp;million more shares (<a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic</a>). By our arithmetic, that option would add about $12.2&nbsp;billion if used in full. AP puts the valuation at $1.5&nbsp;trillion (<a href="https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion">AP via PBS</a>).</p>
+  <p>The money is going somewhere already promised. AP reports that Anthropic has signed leases and other deals requiring about $900&nbsp;billion of spending on computing power and infrastructure in the coming years, $70&nbsp;billion of it in the next 12 months, and carries $6.2&nbsp;billion of debt it calls “substantial.” CNBC reports $33.24&nbsp;billion of revenue for the nine months to Sept.&nbsp;30 and a $104&nbsp;billion net loss, about $94.3&nbsp;billion of it from accounting changes in the value of convertible notes and similar instruments. The seven co-founders control 50.1% of the vote through a new “Founder LLC,” and 61.3% counting their own shares, enough to decide stockholder votes “for the foreseeable future.” More than 90 academics and AI-safety experts signed a “MisAnthropic Statement” accusing the company of racing to build the technology it warns about (<a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html">CNBC</a>).</p>
+  <p>The politics run both ways. The BBC notes that tech shares fell after the midterms on expectations that a Democratic Congress will be tougher on AI regulation (<a href="https://www.bbc.com/news/articles/c6742m39xgzxo">BBC</a>). A New York Post opinion piece argues the opposite risk: that the IPO “will flood billions to Dems” (<a href="https://nypost.com/2026/11/18/opinion/anthropic-ipo-will-flood-more-billions-to-democrats-far-left-causes-and-cult-y-effective-altruism-than-anything-previously/">New York Post opinion</a>). CNBC notes that Trump and senior officials have criticized the company’s stances on safety and regulation.</p>
+  <p><b>Why it matters to you.</b> For clients in financial services, Anthropic is now a public company with quarterly disclosures, which means more visibility into what it pays for compute and power. The $900&nbsp;billion in commitments ties directly to the AI-debt question you asked us to weight up. Watch what lenders and data-center builders do now that Anthropic can pay with stock as well as borrowed money.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how big was it, and who sold?</span>
+    <p><b>What is in dispute.</b> A definitional dispute over the headline number, plus one factual gap. NPR says the company raised about $79.4&nbsp;billion, $81.3&nbsp;billion counting shares sold by existing holders (<a href="https://text.npr.org/nx-s1-6046212">NPR</a>). Al Jazeera adds a $26&nbsp;billion private placement for $107.3&nbsp;billion in all, and says the company “and its seven co-founders” sold the shares (<a href="https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time">Al Jazeera</a>). Anthropic’s release names only “certain selling stockholders” and does not mention a private placement.</p>
+    <p><b>Why the vantage differs.</b> Anthropic’s release is a legal document limited to what the registration covers. Wire and broadcast accounts work from the prospectus and banker briefings on deadline, and the larger figure makes a better headline. Timing matters too: NPR published two headlines hours apart, “more than $100 billion” and “$81.3 billion.”</p>
+    <p><b>What it means for the reader.</b> Use $81.3&nbsp;billion as the IPO size, the figure every account agrees on. We could not confirm the $26&nbsp;billion private placement or that the founders themselves sold shares; only Al Jazeera reports either, and the company’s release does not.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Anthropic as a public company?</b></p>
+    <label><input type="radio" name="fb-anthropic" value="compute-sites"> If its compute deals turn into named data-center or power-plant projects in Florida or the Southeast</label>
+    <label><input type="radio" name="fb-anthropic" value="ai-debt"> If a Fed or bank-regulator report flags lending to AI builders like Anthropic as a risk for the big banks</label>
+    <label><input type="radio" name="fb-anthropic" value="control"> If Congress or the SEC challenges the founders’ 61% voting control or the company’s lobbying</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering">Anthropic (pricing release)</a> &middot;
+    <a href="https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion">AP via PBS</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6046212">NPR</a> &middot;
+    <a href="https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html">CNBC (live)</a> &middot;
+    <a href="https://www.bbc.com/news/articles/c6742m39xgzxo">BBC</a> &middot;
+    <a href="https://nypost.com/2026/11/18/opinion/anthropic-ipo-will-flood-more-billions-to-democrats-far-left-causes-and-cult-y-effective-altruism-than-anything-previously/">New York Post (opinion)</a>
+  </p>
+</article>
+
+<article id="iran-funding">
+  <h3>Iran strikes U.S. sites in Kuwait and Bahrain, Trump says Tehran is “looking at bio,” and Senate Republicans admit they lack 50 votes for party-line Pentagon money before the Dec.&nbsp;11 deadline</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Core &mdash; US debt &amp; fiscal</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 6 newsrooms (NBC News, Al Jazeera, Semafor, New York Post, Fox News, CNN).</p>
+  <p><b>Why this is back.</b> Iran’s Gulf strikes ran below the line Wednesday. It moves up on a material connection: the war’s cost is now tied to how Congress funds the military in the lame duck, and Democrats have decided not to use the December deadline to force an end to it.</p>
+  <p>Iran hit a U.S. air base in Kuwait and sites in Bahrain, home of the Navy’s 5th Fleet, after a U.S. jet struck a Revolutionary Guard missile site on Qeshm Island. Iran says its attacks answer U.S. drone surveillance and strikes on its communications towers. Trump has said new strikes are highly unlikely while sending a third aircraft carrier and thousands more troops (<a href="https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128">NBC News</a>). Iran’s Revolutionary Guard warned that Bahrain’s monarchy faces an existential threat (<a href="https://www.foxnews.com/world/iran-warns-bahrain-monarchy-survival-risk-amid-push-evict-us-fifth-fleet">Fox News</a>). Trump also called the Iran memorandum Vice President Vance negotiated in June a “waste of time,” though “not a mistake” (<a href="https://nypost.com/2026/11/18/us-news/trump-blasts-vance-negotiated-iran-deal-as-a-waste-of-time/">New York Post</a>).</p>
+  <p>In Washington, Senate Republicans are dropping, at least for now, their plan for a party-line defense bill because “if we had 50 votes” they would have done it, in Sen. Kevin Cramer’s words; they will negotiate with Democrats instead ahead of the Dec.&nbsp;11 funding deadline (<a href="https://www.semafor.com/article/11/19/2026/republicans-turn-to-democrats-for-pentagon-money">Semafor</a>). House Democrats, for their part, are backing away from using that deadline to force an end to the war. Incoming Foreign Affairs chair Gregory Meeks says they will have more control next year (<a href="https://www.semafor.com/article/11/19/2026/democrats-seem-to-back-away-from-shutdown-over-iran-war">Semafor</a>). The International Energy Agency says the war has cost 2.8&nbsp;billion barrels of oil from the Gulf, the largest disruption ever to world oil trade (<a href="https://www.nbcnews.com/world/middle-east/middle-east-conflict-triggers-biggest-disruption-ever-global-oil-trade-rcna610171">NBC News, Reuters</a>). But CNN reports Gulf exports are close to pre-war levels and oil prices have fallen sharply, which erodes Iran’s leverage and may push it toward escalation (<a href="https://lite.cnn.com/2026/11/19/middleeast/iran-war-oil-flow-escalation-intl">CNN</a>).</p>
+  <p><b>Why it matters to you.</b> The war’s pump-price effect is easing, but the funding fight decides whether a shutdown is possible in December. The bioweapons claim, if acted on, would change how the war is fought.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; is Iran pursuing bioweapons?</span>
+    <p><b>What is in dispute.</b> A factual claim without public evidence. Trump told Fox News that Iran is “looking at gases, looking at bio,” and offered no evidence. Secretary of State Rubio said the U.S. faces no “imminent threat,” and Homeland Security Secretary Mullin said there was no sign of an upcoming attack. A RUSI fellow told Al Jazeera that whether Iran has had such a program “has been debated for decades… without any firm conclusion” (<a href="https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence">Al Jazeera</a>).</p>
+    <p><b>Why the vantage differs.</b> Trump has the intelligence briefings and a political reason to justify a war he says he would fight again. Rubio and Mullin have the same access, but their job this week is calming a public already rattled by outages. Al Jazeera’s outside experts have no classified access and no stake in the administration’s line. CNN’s Tuesday report on a possible chemical plot against officials rested on U.S. intelligence sources we could not see.</p>
+    <p><b>What it means for the reader.</b> Treat the bioweapons claim as an assertion until an agency puts evidence on the record. We could not confirm it: no document or named official beyond the president has supported it publicly.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran war and its funding?</b></p>
+    <label><input type="radio" name="fb-iran" value="deal"> If Republicans and Democrats strike a Pentagon-funding deal before Dec.&nbsp;11 that limits or pays for the war</label>
+    <label><input type="radio" name="fb-iran" value="casualties"> If an Iranian strike on a Gulf base kills or wounds U.S. service members</label>
+    <label><input type="radio" name="fb-iran" value="evidence"> If an intelligence agency publicly backs or rebuts Trump’s bioweapons claim</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128">NBC News (strikes)</a> &middot;
+    <a href="https://www.nbcnews.com/world/middle-east/middle-east-conflict-triggers-biggest-disruption-ever-global-oil-trade-rcna610171">NBC News/Reuters (IEA)</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence">Al Jazeera</a> &middot;
+    <a href="https://www.semafor.com/article/11/19/2026/republicans-turn-to-democrats-for-pentagon-money">Semafor (Senate)</a> &middot;
+    <a href="https://www.semafor.com/article/11/19/2026/democrats-seem-to-back-away-from-shutdown-over-iran-war">Semafor (House)</a> &middot;
+    <a href="https://nypost.com/2026/11/18/us-news/trump-blasts-vance-negotiated-iran-deal-as-a-waste-of-time/">New York Post</a> &middot;
+    <a href="https://www.foxnews.com/world/iran-warns-bahrain-monarchy-survival-risk-amid-push-evict-us-fifth-fleet">Fox News</a> &middot;
+    <a href="https://lite.cnn.com/2026/11/19/middleeast/iran-war-oil-flow-escalation-intl">CNN</a>
+  </p>
+</article>
+
+<article id="amendment3">
+  <h3>Amendment&nbsp;3 reaches Pinellas: PSTA sets a $12 fare for some disabled riders and weighs cutting 25 of 40 bus routes, and St. Pete Beach stops paying for the beach trolley</h3>
+  <div class="meta">
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (Fox&nbsp;13, WUSF, Tampa Bay Times, WTSP), plus X’s summary of public reaction.</p>
+  <p><b>Why this is back.</b> Wednesday’s issue covered Tallahassee’s refusal to hold a special session and Pasco’s fire-fee study. It returns on new verifiable facts: two Pinellas votes this week that cut service and cite Amendment&nbsp;3 by name.</p>
+  <p>On Wednesday, the Pinellas Suncoast Transit Authority’s planning board adopted a $12 fare, up from $4.50, for disabled riders who live more than three-quarters of a mile outside regular routes. Staff had proposed $30 before riders pushed back. PSTA says the change hits about 950 riders a year, roughly 4% of its 25,000 disabled riders. It expects to lose $15&nbsp;million in the first year under Amendment&nbsp;3 and $22&nbsp;million in the second, and it is weighing cutting 25 of its 40 routes, including 12 core routes. “Fixed-route riders, paratransit riders, riders who have no other alternatives are going to lose service,” PSTA’s Bonnie Sato said (<a href="https://www.fox13news.com/news/psta-fare-hike-disabled-riders-facing-rate-increase-wake-amendment-3-passage">Fox&nbsp;13</a>; <a href="https://www.wtsp.com/article/news/local/psta-12-fare-disability-transportation-services-amendment-3/67-7a8cb327-7b9f-4776-9da9-a7d21e981ec3">WTSP</a>, headline only).</p>
+  <p>On Tuesday, St. Pete Beach commissioners voted unanimously to let their $242,000-a-year PSTA contract expire Dec.&nbsp;31, ending city support for the Suncoast Beach Trolley but keeping paratransit. The city expects to lose about $1&nbsp;million in property-tax revenue in fiscal 2028 and more than $2.4&nbsp;million the year after. Commissioner Karen Marriott warned that tourism workers who ride the trolley would end up driving instead (<a href="https://www.wusf.org/transportation/2026-11-19/st-pete-beach-trolley-cuts-could-hit-tourism-workers">WUSF</a>; <a href="https://www.tampabay.com/news/transportation/2026/11/18/st-pete-beach-trolley-amendment-3/">Tampa Bay Times</a>). We could not confirm whether the trolley will keep running into St. Pete Beach. WUSF says that decision is now PSTA’s, and none has been reported.</p>
+  <p><b>Why it matters to you.</b> These are the first concrete service cuts in the bay area tied to Amendment&nbsp;3. Pasco’s county budget faces the same math. If PSTA cuts routes, watch whether any north Pinellas routes near the Pasco line are on the list.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who owns the cuts?</span>
+    <p><b>What is in dispute.</b> A dispute over interpretation and blame. PSTA board member Richie Floyd says conservatives who backed Amendment&nbsp;3 “didn’t have anything to say today when it came time to actually cut services”; board member Barbara Haselden declined to answer whether she regretted supporting it (Fox&nbsp;13). Online, this week’s South Florida floods set off the same argument: critics say the amendment will defund drainage and water management, while supporters say property taxes doubled since 2019 without fixing infrastructure, so the problem is how the money was spent (<a href="https://x.com/i/trending/2123295566444523931">X public reaction</a>).</p>
+    <p><b>Why the vantage differs.</b> PSTA staff and Floyd run the service and see the riders; their interest is keeping funding. Supporters of the amendment are homeowners and officials who campaigned on tax relief, and their interest is showing that cuts are a choice. The X summary reflects whoever posts most, not a sample of voters.</p>
+    <p><b>What it means for the reader.</b> The first cuts are hitting the riders with the fewest alternatives. Watch whether county commissions find savings elsewhere or pass them on, and whether the Legislature backfills anything in the spring session.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Amendment&nbsp;3’s local cuts?</b></p>
+    <label><input type="radio" name="fb-amendment3" value="routes"> If PSTA votes on which routes to cut, especially those linking north Pinellas to Pasco</label>
+    <label><input type="radio" name="fb-amendment3" value="pasco-budget"> If Pasco County proposes a specific fee, tax or service cut to cover its lost revenue</label>
+    <label><input type="radio" name="fb-amendment3" value="backfill"> Only if the Legislature files a bill to backfill local governments in the 2027 session</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.fox13news.com/news/psta-fare-hike-disabled-riders-facing-rate-increase-wake-amendment-3-passage">Fox&nbsp;13</a> &middot;
+    <a href="https://www.wusf.org/transportation/2026-11-19/st-pete-beach-trolley-cuts-could-hit-tourism-workers">WUSF</a> &middot;
+    <a href="https://www.tampabay.com/news/transportation/2026/11/18/st-pete-beach-trolley-amendment-3/">Tampa Bay Times (lede only)</a> &middot;
+    <a href="https://www.wtsp.com/article/news/local/psta-12-fare-disability-transportation-services-amendment-3/67-7a8cb327-7b9f-4776-9da9-a7d21e981ec3">WTSP (headline only)</a> &middot;
+    <a href="https://x.com/i/trending/2123295566444523931">X story summary</a>
+  </p>
+</article>
+
+<article id="paid-access">
+  <h3>Paying for access: a Mar-a-Lago gala sold $50,000 roundtables with federal agency heads as Kash Patel skipped a House hearing, and a Singapore-linked firm tops the leaderboard for Sunday’s $TRUMP coin dinner</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (CNBC, The Hill, CBS News, NPR), plus TokenPost on the coin leaderboard.</p>
+  <p>The Big Blue Bash at Mar-a-Lago on Tuesday night, billed as a tribute to fallen federal officers, sold general admission for nearly $5,000, a VIP pass for $25,000, and a “private roundtable” with federal agency heads plus a night at the club for $50,000. A sponsor prospectus offered corporate packages up to $1&nbsp;million, including private briefings. The FBI confirmed that Director Kash Patel, Homeland Security Secretary Markwayne Mullin and Attorney General Todd Blanche attended, and said the event was “approved by Ethics.” CNBC found that the top named sponsor, Motorola Solutions, had about $237.1&nbsp;million in fiscal 2026 contract obligations from Justice and Homeland Security. Motorola says it did not take part in private briefings. CNBC also says there is no evidence the sponsorships influenced contracts (<a href="https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html">CNBC</a>).</p>
+  <p>The next morning, Patel missed the House Homeland Security Committee’s annual threats hearing and sent his deputy. Republican chairman Andrew Garbarino said the date was given to Patel in August and the director “made clear that he had no intention of appearing” (<a href="https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/">The Hill</a>, via search excerpt).</p>
+  <p>Separately, CBS News reports that FastX, a firm under GA Ventures Ltd. that appears to be less than a year old and has ties to Singapore, tops the public leaderboard for Trump’s Sunday dinner for the 185 largest holders of the $TRUMP meme coin, with nearly 1.8&nbsp;million tokens. The CEO of its parent company, who goes by one name, Addy, promotes a “Chinese $TRUMP coin community” hosted on Binance, which bars U.S. users. Financial disclosures show Trump has earned more than $1&nbsp;billion from crypto ventures this term. Sen. Richard Blumenthal, who is set to chair the Senate’s Permanent Subcommittee on Investigations, said Trump “has put a ‘For Sale’ sign on the White House” (<a href="https://www.cbsnews.com/news/trump-crypto-gala-fastx-meme-coin/">CBS News</a>). TokenPost counts 79 of the leaderboard’s 130 wallets as having used exchanges that bar U.S. customers (<a href="https://www.tokenpost.com/news/investing/60338">TokenPost</a>). Criticism also comes from the right: conservative host Ben Shapiro told NPR that a “whiff of corruption” around the White House, naming the family’s crypto business, helped cost Republicans the midterms (<a href="https://text.npr.org/nx-s1-6034593">NPR</a>).</p>
+  <p><b>Why it matters to you.</b> One event, in Palm Beach, sold time with the agency heads who award contracts and enforce the law. The other sells seats near the president to anonymous, often foreign, wallet holders. Democrats, who take over committee gavels in January, say they are preparing investigations into the president’s crypto businesses (CBS News).</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; why was Patel absent?</span>
+    <p><b>What is in dispute.</b> A factual dispute over Patel’s whereabouts, and an interpretive one over the gala. An FBI official told The Hill that Patel was in the field this week visiting offices in four states and that the committee was told weeks ago his deputy would appear. CNBC’s flight records show a Justice Department jet used by Patel before left West Palm Beach at 7:51 a.m. and landed outside Washington 20 minutes after the hearing began. On the gala, the FBI says ethics officials approved it; Public Citizen’s Craig Holman says it lets contractors “rub elbows with officials responsible for awarding those contracts” (CNBC).</p>
+    <p><b>Why the vantage differs.</b> The FBI is defending its director and has the travel records but has not released them. CNBC built its account from public flight data and ticketing pages, which show the plane but not who was aboard. Garbarino is a Republican chairman whose committee was snubbed for the second year running. Public Citizen is a watchdog with a long record of opposing paid access.</p>
+    <p><b>What it means for the reader.</b> We could not confirm Patel was on the jet; CNBC says it could not either. The open question is not his flight but who bought the $50,000 roundtable seats, which the organizers have not disclosed.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following paid access around the administration?</b></p>
+    <label><input type="radio" name="fb-access" value="contract"> If a gala sponsor that bought a private briefing wins a new Justice or Homeland Security contract</label>
+    <label><input type="radio" name="fb-access" value="coin-dinner"> If FastX or other foreign wallet holders get face time with Trump at Sunday’s coin dinner</label>
+    <label><input type="radio" name="fb-access" value="subpoena"> If Blumenthal’s subcommittee subpoenas the coin company or the gala organizers after January</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html">CNBC</a> &middot;
+    <a href="https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/">The Hill (search excerpt)</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-crypto-gala-fastx-meme-coin/">CBS News</a> &middot;
+    <a href="https://www.tokenpost.com/news/investing/60338">TokenPost</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6034593">NPR (Shapiro)</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar but not the length of a lead. One question about all of them follows the last item.</p>
+
+<article id="chip-rule">
+  <h3>The remote-access chip rule takes effect today; Nvidia has already stopped selling its licensed Hopper chips to China</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CNBC, CBS News), plus the Federal Register text, Commerce’s release and Singapore’s government statement.</p>
+  <p>Commerce’s interim final rule, published today and effective today, requires a license to ship top AI chips to data centers anywhere that give “a significant volume” of computing to companies headquartered in China, Macau or other D:5 countries. It also adds a license requirement for Indonesia, Malaysia, Singapore, Thailand and Brazil, with an exemption for U.S.-headquartered buyers that file reports, and formally rescinds the Biden-era AI Diffusion Rule. Comments are due Jan.&nbsp;19 (<a href="https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors">Federal Register</a>). Commerce says the rule was “written by and at the direction of” Treasury and the National Security Council (<a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">BIS</a>). A former NSC official told CNBC there is “a significant risk that Chinese companies will pivot from renting compute from data centers in Southeast Asia to renting compute from data centers in Virginia” (<a href="https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html">CNBC</a>). Nvidia’s interim CEO said it booked $2.4&nbsp;billion of licensed Hopper sales to China last quarter and has stopped shipping them (<a href="https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/">CBS News</a>). Singapore says it is seeking “trusted access” for its companies (<a href="https://www.mddi.gov.sg/newsroom/mddi-meti-joint-media-statement-on-us-interim-final-rule-on-addressing-remote-access-to-advanced-semiconductors/">Singapore MDDI</a>).</p>
+  <details><summary>Dig deeper</summary><p>The full rule text is on <a href="https://www.federalregister.gov/documents/full_text/text/2026/11/19/2026-23529.txt">federalregister.gov</a> (Federal Register pages 74970&ndash;74999). The U.S.-headquarters exemption is the gap CNBC’s experts flag; the reporting requirements are in a new Sec.&nbsp;743.10.</p></details>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors">Federal Register</a> &middot; <a href="https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">BIS</a> &middot; <a href="https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html">CNBC</a> &middot; <a href="https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/">CBS News</a> &middot; <a href="https://www.mddi.gov.sg/newsroom/mddi-meti-joint-media-statement-on-us-interim-final-rule-on-addressing-remote-access-to-advanced-semiconductors/">Singapore MDDI</a></p>
+</article>
+
+<article id="fincen">
+  <h3>FinCEN proposes letting banks ask business owners about immigration status and work authorization, and bars ITINs as a substitute for Social Security numbers</h3>
+  <div class="meta"><span class="chip">Core &mdash; US financials</span><span class="chip">AI and financial services</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 trade publication (ACAMS, via search excerpt), plus the Federal Register text and Treasury’s release. Underreported: we found no general-news coverage.</p>
+  <p>Published today, the proposal would let covered banks, “where warranted by other risk indicators or supervisory concerns,” collect information on whether the beneficial owners of business customers “possess lawful immigration status and employment authorization in the United States.” It would also make permanent the relief that stopped banks from re-verifying owners every time a business opens an account. Comments are due Jan.&nbsp;19, 2027 (<a href="https://www.federalregister.gov/documents/2026/11/19/2026-23614/customer-due-diligence-requirements-for-covered-financial-institutions">Federal Register</a>). Treasury Secretary Scott Bessent says it “cuts unnecessary burden” (<a href="https://home.treasury.gov/news/press-releases/sb0691/">Treasury</a>). ACAMS, the anti-money-laundering professional association, highlights that an ITIN would no longer be accepted in place of a Social Security number (<a href="https://www.acams.org/en/news/fincen-pitches-immigration-status-plan">ACAMS</a>, via search excerpt). We could not confirm how banks plan to use the new authority; no bank or trade group has commented on the record in the sources we reached.</p>
+  <details><summary>Dig deeper</summary><p>FinCEN estimates about 5.5&nbsp;million annual responses under the rule but says it cannot count how many business owners would be affected (<a href="https://www.federalregister.gov/documents/full_text/text/2026/11/19/2026-23614.txt">full text</a>). The proposal carries out section 3(b) of Executive Order 14406.</p></details>
+  <p class="sources"><b>Sources:</b> <a href="https://www.federalregister.gov/documents/2026/11/19/2026-23614/customer-due-diligence-requirements-for-covered-financial-institutions">Federal Register</a> &middot; <a href="https://home.treasury.gov/news/press-releases/sb0691/">Treasury</a> &middot; <a href="https://www.acams.org/en/news/fincen-pitches-immigration-status-plan">ACAMS</a></p>
+</article>
+
+<article id="greenland">
+  <h3>Denmark’s parliament ratifies the Greenland security deal 109&ndash;0, opening the way for new U.S. bases and a “Golden Dome” site</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (NBC News/Reuters, CNBC, Al Jazeera).</p>
+  <p>Danish lawmakers approved the September agreement 109 to 0. Because it is an executive agreement, the U.S. Senate does not vote on it; it takes effect once Denmark notifies Washington by diplomatic note (<a href="https://www.nbcnews.com/world/greenland/denmark-ratifies-trump-deal-greenland-expanding-us-military-role-rcna610161">NBC News/Reuters</a>). The deal paves the way for two new U.S. bases and a Golden Dome missile-defense installation (<a href="https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html">CNBC</a>; <a href="https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us">Al Jazeera</a>). A Copenhagen political scientist told Reuters it is “a beginning” that gives Washington leverage over mineral extraction; other experts say it adds little military access.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/world/greenland/denmark-ratifies-trump-deal-greenland-expanding-us-military-role-rcna610161">NBC News/Reuters</a> &middot; <a href="https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html">CNBC</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us">Al Jazeera</a></p>
+</article>
+
+<article id="venezuela">
+  <h3>Hegseth signs a military pact in Caracas and calls Venezuela a “compliant security partner,” as the Justice Department asks the Supreme Court a third time to end Venezuelans’ protected status before a Friday deadline</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CNN, Al Jazeera, the latter drawing on AFP, AP and Reuters).</p>
+  <p>On an unannounced visit, Defense Secretary Pete Hegseth signed an agreement for joint training and intelligence sharing with acting President Delcy Rodr&iacute;guez’s government, saying Venezuela “has gone from our most aggressive regional threat to a compliant security partner” (<a href="https://lite.cnn.com/2026/11/18/americas/us-venezuela-military-deal-hegseth-latam-intl">CNN</a>). The same day, the Justice Department filed an emergency application to stay Judge Edward Chen’s ruling restoring Temporary Protected Status for Venezuelans, which takes effect Friday. Federal lawyers say that without a stay they could have to release about 1,800 Venezuelans from detention and stop up to 332 removals (<a href="https://www.aljazeera.com/news/2026/11/19/trump-makes-third-supreme-court-bid-to-end-venezuelan-migrant-protections">Al Jazeera</a>). The administration now calls the Caracas government a partner while arguing in court that Venezuelans here have no protection from being sent back.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://lite.cnn.com/2026/11/18/americas/us-venezuela-military-deal-hegseth-latam-intl">CNN</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/18/us-defence-secretary-announces-military-partnership-on-trip-to-venezuela">Al Jazeera (Hegseth)</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/19/trump-makes-third-supreme-court-bid-to-end-venezuelan-migrant-protections">Al Jazeera (TPS)</a></p>
+</article>
+
+<article id="fl-orion">
+  <h3>Florida’s ORION license and registration system failed statewide again Wednesday; Pasco’s tax collector says the system’s troubles cost his county about $4&nbsp;million a year</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Tampa Bay Times, Breitbart, the latter citing News4Jax, Action News Jax and First Coast News).</p>
+  <p>The state’s driver-license and vehicle system “experienced a degradation of services” Wednesday, leaving tax collector offices unable to finish license renewals, titles and registrations; the department traced it to ORION but gave no cause or repair timeline (<a href="https://www.breitbart.com/local/2026/11/18/floridas-troubled-dmv-system-fails-again-blocking-license-renewals/">Breitbart</a>). Long lines formed at tax collector offices (<a href="https://www.tampabay.com/news/florida-politics/2026/11/18/florida-dmv-drivers-license-orion-fasano-adam-ross/">Tampa Bay Times</a>, caption only). ORION has failed repeatedly since its January launch; Hillsborough counted 12 outages in two months, and Pasco Tax Collector Mike Fasano estimates his county loses about $4&nbsp;million a year (Breitbart, citing WUSF’s June reporting). We could not confirm whether Wednesday’s failure is connected to the national outage wave; officials have not named a cause.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.breitbart.com/local/2026/11/18/floridas-troubled-dmv-system-fails-again-blocking-license-renewals/">Breitbart</a> &middot; <a href="https://www.tampabay.com/news/florida-politics/2026/11/18/florida-dmv-drivers-license-orion-fasano-adam-ross/">Tampa Bay Times (lede only)</a></p>
+</article>
+
+<article id="fl-form6">
+  <h3>A federal judge rules Florida’s expanded financial-disclosure law for city officials unconstitutional and plans a permanent injunction</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Elections and electoral process</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 (WLRN reporting carried by WUSF).</p>
+  <p>U.S. District Judge Melissa Damian ruled Nov.&nbsp;9 that the 2023 law (SB&nbsp;774) requiring municipal officers and candidates to disclose their exact net worth and every income source over $1,000 violates the First Amendment. She agreed with the 175 local officials who sued and will issue a permanent injunction; the parties must meet with the judge on its terms before month’s end. More than 100 officials reportedly resigned after the law passed, and the state Ethics Commission declined to comment, citing the litigation (<a href="https://www.wusf.org/courts-law/2026-11-18/federal-judge-financial-disclosure-law-for-florida-officials-is-unconstitutional">WUSF</a>). Those terms will settle how far the injunction reaches beyond the 175 plaintiffs, which matters for every city council, including New Port Richey’s. We saw no second outlet with the ruling.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/courts-law/2026-11-18/federal-judge-financial-disclosure-law-for-florida-officials-is-unconstitutional">WUSF/WLRN</a></p>
+</article>
+
+<article id="data-centers">
+  <h3>Harvard counts hyperscale data centers at 1.8% of U.S. electricity, and a Texas county refuses SpaceX a tax break for a $24&nbsp;billion data center and gas plant</h3>
+  <div class="meta"><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Energy &amp; grid</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CBS News, Semafor, Data Center Dynamics).</p>
+  <p>A Harvard study in <i>Nature Sustainability</i> found that 403 hyperscale data centers used 82 terawatt-hours, about 1.8% of U.S. electricity, from May 2024 to April 2025, roughly Missouri’s usage; the lead author says the count has since more than doubled, with about 2,000 more planned, and calls for public input “before data centers are built” (<a href="https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/">CBS News</a>). Semafor notes that most of that power came from fossil fuels (<a href="https://www.semafor.com/article/11/17/2026/us-data-center-emissions-rival-entire-countries">Semafor</a>). In Cameron County, Texas, commissioners voted Tuesday not to take up SpaceX’s tax-break request for a data center and gas-fired plant near Brownsville, valued at $24&nbsp;billion. That ends the request, though the project already holds a state air permit (<a href="https://www.datacenterdynamics.com/en/news/cameron-county-commissioners-reject-spacex-tax-break-request-for-24bn-texas-data-center/">Data Center Dynamics</a>). A county tax vote is the same lever Florida counties hold over data-center proposals.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/">CBS News</a> &middot; <a href="https://www.semafor.com/article/11/17/2026/us-data-center-emissions-rival-entire-countries">Semafor</a> &middot; <a href="https://www.datacenterdynamics.com/en/news/cameron-county-commissioners-reject-spacex-tax-break-request-for-24bn-texas-data-center/">Data Center Dynamics</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these would you want promoted to a lead next time, and on what condition?</p>
+  <label><input type="radio" name="fb-below" value="chip-virginia"> The chip rule, if U.S. cloud providers in Virginia are reported taking on Chinese customers who left Southeast Asia</label>
+  <label><input type="radio" name="fb-below" value="fincen-florida"> The FinCEN proposal, if Florida banks or credit unions say they will start asking business owners about immigration status</label>
+  <label><input type="radio" name="fb-below" value="orion-audit"> The ORION outage, if Pasco’s tax collector reports new losses or the Legislature orders an audit of the system</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 101 sources checked; 36 in the first sweep before any weighting category was consulted. Five leads and seven items below the line (12 stories). Four leads carry over from earlier editions, each with a stated trigger: Shenzhen (the talks took place and produced a statement), Anthropic (pricing and today&rsquo;s first trade), Iran (the link to Pentagon funding and the December deadline, plus the IEA&rsquo;s new estimate), and Amendment&nbsp;3 (two Pinellas votes this week). The paid-access lead is new. Marker tallies: PS&nbsp;2 &middot; IC&nbsp;9 &middot; SS&nbsp;1 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: any U.S. version of the Shenzhen statement, Anthropic&rsquo;s reported private placement and founder share sales, Iran&rsquo;s alleged bioweapons work, the trolley&rsquo;s future, Patel&rsquo;s presence on the jet, banks&rsquo; plans under the FinCEN proposal, and the cause of the ORION failure. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-19-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>The U.N.&rsquo;s top court ruled that Myanmar committed genocide against the Rohingya. (<a href="https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide">Al Jazeera</a>). Missed: historic, but no U.S. policy step attached today.</li>
+    <li>Elon Musk said his record $446&nbsp;million in midterm spending was &ldquo;pretty foolish&rdquo; and that he is &ldquo;not MAGA.&rdquo; (<a href="https://www.bbc.com/news/articles/cm9q8j2z3gg8o">BBC</a>). Missed: a personal statement with no new spending or policy move.</li>
+    <li>House Democrats nominated Hakeem Jeffries for speaker; the floor vote comes in January. (<a href="https://floridaphoenix.com/2026/11/18/repub/jeffries-chosen-to-lead-us-house-dems-poised-to-be-first-black-speaker/">Florida Phoenix</a>). Missed: expected, and nothing changes until the new Congress is sworn in.</li>
+    <li>An unvaccinated Pennsylvania resident died of measles. (<a href="https://www.aljazeera.com/news/2026/11/19/unvaccinated-pennsylvania-resident-dies-amid-historic-us-measles-resurgence">Al Jazeera</a>). Missed: the loss of elimination status ran Tuesday, and the death brings no new policy step.</li>
+    <li>Florida is scheduled to carry out its record 20th execution of the year today. (<a href="https://floridaphoenix.com/2026/11/18/florida-is-scheduled-to-carry-out-a-record-20th-execution-on-thursday/">Florida Phoenix</a>). Missed: a record, but no change in policy or law.</li>
+    <li>CNN sources say the FAA technician at the Arkansas site &ldquo;was only there to unlock the door&rdquo; while an L3Harris contractor installed the router behind the ground stop, contradicting the FAA chief. (<a href="https://lite.cnn.com/2026/11/18/politics/faa-contractor-oversight-ground-stop">CNN</a>). Missed: an important detail for the outage thread, which led Wednesday; waiting on the FAA&rsquo;s own inquiry.</li>
+    <li>A Houthi strike damaged the Riyadh tower housing Saudi Arabia&rsquo;s sovereign wealth fund. (<a href="https://nypost.com/2026/11/19/world-news/houthis-strike-saudi-arabia-pif-tower-in-riyadh-causing-damage/">New York Post</a>). Missed: folded into the Iran lead&rsquo;s regional picture; no direct U.S. effect.</li>
+    <li>The SEC proposed simplifying executive-pay disclosure, focusing it on the CEO and CFO; comments are due Jan.&nbsp;19. (<a href="https://www.federalregister.gov/documents/2026/11/19/2026-23555/executive-compensation-disclosure-reform">Federal Register</a>). Missed: a filing burden for issuers, little effect on a household.</li>
+    <li>CMS proposed a broad anti-fraud rule for Medicare, Medicaid and the ACA marketplaces, which it calls CRUSH. (<a href="https://www.federalregister.gov/documents/2026/11/19/2026-23461/medicare-medicaid-and-marketplace-programs-comprehensive-regulations-to-uncover-suspicious">Federal Register</a>). Missed: a proposal with comments due January; the effect on patients is not yet clear.</li>
+    <li>The U.N. nuclear watchdog says North Korea is expanding a uranium-enrichment facility. (<a href="https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says">Al Jazeera</a>). Missed: no U.S. response yet, and it is only loosely linked to the Shenzhen nuclear talk.</li>
+    <li>Ukraine struck the Crimean Bridge for the third time in a week. (<a href="https://lite.cnn.com/2026/11/18/europe/crimea-russia-bridge-ukraine-kerch-latam-intl">CNN</a>). Missed: the Ukraine balance is a settled preference, and the Shenzhen lead carries the U.S. side.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

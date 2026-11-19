@@ -1,0 +1,1038 @@
+{
+ "issue": "2026-11-19-v2",
+ "date": "2026-11-19",
+ "run_started_local": "2026-11-19T07:24:00-05:00",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_detail": "NEWSBOT_2.0.md, scripts/audit.py and config.md were read first for process rules (required by the run instructions). The candidate list was then built from the 36 fronts, X trends, two X news searches and the Federal Register API listed in sources_swept_before_category, before the weighting table, the watchlist (empty) or yesterday's issue were consulted for selection. Yesterday's issue was opened afterwards only for layout and to check which candidates were carry-overs needing a trigger.",
+ "sources_swept_before_category": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Al Jazeera US & Canada page",
+  "Fox News front",
+  "Fox News politics",
+  "Fox Business front",
+  "BBC News front",
+  "BBC US & Canada page",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNN lite front",
+  "CNBC world",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Breitbart front",
+  "Semafor front",
+  "Wall Street Journal front (headlines only)",
+  "DW top stories",
+  "South China Morning Post front",
+  "National Review front",
+  "Daily Wire front",
+  "Data Center Dynamics news",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "WTSP front",
+  "Florida Phoenix front",
+  "Fox 13 Tampa Bay front",
+  "Bay News 9 Tampa (navigation only)",
+  "Inside New Port Richey",
+  "X US trends (woeid 23424977)",
+  "X news search: 'news' (18h)",
+  "X news search: 'Florida' (24h)",
+  "Federal Register API, documents published 2026-11-19"
+ ],
+ "sweeps_attempted_failed": [
+  "AP front (403)",
+  "Reuters front (401)",
+  "Politico (403)",
+  "Axios (403)",
+  "The Hill front (403)",
+  "New York Times (403)",
+  "WFLA (403)",
+  "Florida Politics (403)",
+  "Newsmax (no response)",
+  "Washington Post (no response)",
+  "SCMP trilateral article (403)",
+  "WTSP PSTA article (403; headline used only)",
+  "ACAMS FinCEN article (403; search excerpt used)",
+  "The Hill Patel article (403; search excerpt used)"
+ ],
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "NPR news list (text.npr.org/1001)",
+  "Al Jazeera news index",
+  "Al Jazeera US & Canada page",
+  "Fox News front",
+  "Fox News politics",
+  "Fox Business front",
+  "BBC News front",
+  "BBC US & Canada page",
+  "Guardian US front",
+  "CBS News front",
+  "NBC News front",
+  "ABC News front",
+  "CNN lite front",
+  "CNBC world",
+  "PBS NewsHour front",
+  "New York Post front",
+  "Breitbart front",
+  "Semafor front",
+  "Wall Street Journal front (headlines only)",
+  "DW top stories",
+  "South China Morning Post front",
+  "National Review front",
+  "Daily Wire front",
+  "Data Center Dynamics news",
+  "WUSF front",
+  "Tampa Bay Times front",
+  "WTSP front",
+  "Florida Phoenix front",
+  "Fox 13 Tampa Bay front",
+  "Bay News 9 Tampa (navigation only)",
+  "Inside New Port Richey",
+  "X US trends (woeid 23424977)",
+  "X news search: 'news' (18h)",
+  "X news search: 'Florida' (24h)",
+  "Federal Register API, documents published 2026-11-19"
+ ],
+ "sources_checked": [
+  {
+   "story": "sweep",
+   "source": "NPR text front (text.npr.org)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "NPR news list (text.npr.org/1001)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Al Jazeera news index",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Al Jazeera US & Canada page",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Fox News front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Fox News politics",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Fox Business front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "BBC News front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "BBC US & Canada page",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Guardian US front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "CBS News front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "NBC News front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "ABC News front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "CNN lite front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "CNBC world",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "PBS NewsHour front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "New York Post front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Breitbart front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Semafor front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Wall Street Journal front (headlines only)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "DW top stories",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "South China Morning Post front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "National Review front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Daily Wire front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Data Center Dynamics news",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "WUSF front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Tampa Bay Times front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "WTSP front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Florida Phoenix front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Fox 13 Tampa Bay front",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Bay News 9 Tampa (navigation only)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Inside New Port Richey",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "X US trends (woeid 23424977)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "X news search: 'news' (18h)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "X news search: 'Florida' (24h)",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "sweep",
+   "source": "Federal Register API, documents published 2026-11-19",
+   "url": "",
+   "how": "front/sweep read before categories"
+  },
+  {
+   "story": "article/document",
+   "source": "lite.cnn.com",
+   "url": "https://lite.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cnbc.com",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "breitbart.com",
+   "url": "https://www.breitbart.com/europe/2026/11/19/joint-statement-promising-u-n-reform-after-trump-xi-putin-talks/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nypost.com",
+   "url": "https://nypost.com/2026/11/19/us-news/bloomberg-reporter-banned-from-summit-after-asking-trump-if-jensen-huangs-been-disloyal-to-the-us/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "semafor.com",
+   "url": "https://www.semafor.com/article/11/18/2026/republicans-warily-eye-trumps-meeting-with-putin-xi",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "anthropic.com",
+   "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "pbs.org",
+   "url": "https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cnbc.com",
+   "url": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "bbc.com",
+   "url": "https://www.bbc.com/news/articles/c6742m39xgzxo",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nypost.com",
+   "url": "https://nypost.com/2026/11/18/opinion/anthropic-ipo-will-flood-more-billions-to-democrats-far-left-causes-and-cult-y-effective-altruism-than-anything-previously/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "text.npr.org",
+   "url": "https://text.npr.org/nx-s1-6046212",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nbcnews.com",
+   "url": "https://www.nbcnews.com/world/iran/iran-widens-gulf-attacks-targeting-us-air-base-kuwait-sites-bahrain-rcna610128",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "foxnews.com",
+   "url": "https://www.foxnews.com/world/iran-warns-bahrain-monarchy-survival-risk-amid-push-evict-us-fifth-fleet",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nypost.com",
+   "url": "https://nypost.com/2026/11/18/us-news/trump-blasts-vance-negotiated-iran-deal-as-a-waste-of-time/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "semafor.com",
+   "url": "https://www.semafor.com/article/11/19/2026/republicans-turn-to-democrats-for-pentagon-money",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "semafor.com",
+   "url": "https://www.semafor.com/article/11/19/2026/democrats-seem-to-back-away-from-shutdown-over-iran-war",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nbcnews.com",
+   "url": "https://www.nbcnews.com/world/middle-east/middle-east-conflict-triggers-biggest-disruption-ever-global-oil-trade-rcna610171",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "lite.cnn.com",
+   "url": "https://lite.cnn.com/2026/11/19/middleeast/iran-war-oil-flow-escalation-intl",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/trump-claims-iran-is-developing-bioweapons-is-there-any-evidence",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "fox13news.com",
+   "url": "https://www.fox13news.com/news/psta-fare-hike-disabled-riders-facing-rate-increase-wake-amendment-3-passage",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "wtsp.com",
+   "url": "https://www.wtsp.com/article/news/local/psta-12-fare-disability-transportation-services-amendment-3/67-7a8cb327-7b9f-4776-9da9-a7d21e981ec3",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "wusf.org",
+   "url": "https://www.wusf.org/transportation/2026-11-19/st-pete-beach-trolley-cuts-could-hit-tourism-workers",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "tampabay.com",
+   "url": "https://www.tampabay.com/news/transportation/2026/11/18/st-pete-beach-trolley-amendment-3/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "x.com",
+   "url": "https://x.com/i/trending/2123295566444523931",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cnbc.com",
+   "url": "https://www.cnbc.com/2026/11/18/kash-patel-hearing-mar-a-lago-gala.html",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "thehill.com",
+   "url": "https://thehill.com/homenews/house/6227622-fbi-director-skips-threats-hearing/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cbsnews.com",
+   "url": "https://www.cbsnews.com/news/trump-crypto-gala-fastx-meme-coin/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "tokenpost.com",
+   "url": "https://www.tokenpost.com/news/investing/60338",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "text.npr.org",
+   "url": "https://text.npr.org/nx-s1-6034593",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "bis.gov",
+   "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cnbc.com",
+   "url": "https://www.cnbc.com/2026/11/18/nvidia-us-ai-chip-export-controls-data-centers-.html",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cbsnews.com",
+   "url": "https://www.cbsnews.com/news/nvidia-stops-shipping-hopper-chips-china/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "mddi.gov.sg",
+   "url": "https://www.mddi.gov.sg/newsroom/mddi-meti-joint-media-statement-on-us-interim-final-rule-on-addressing-remote-access-to-advanced-semiconductors/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23614/customer-due-diligence-requirements-for-covered-financial-institutions",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "home.treasury.gov",
+   "url": "https://home.treasury.gov/news/press-releases/sb0691/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "acams.org",
+   "url": "https://www.acams.org/en/news/fincen-pitches-immigration-status-plan",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nbcnews.com",
+   "url": "https://www.nbcnews.com/world/greenland/denmark-ratifies-trump-deal-greenland-expanding-us-military-role-rcna610161",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cnbc.com",
+   "url": "https://www.cnbc.com/2026/11/19/greenland-denmark-trump-security-military-bases.html",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/denmark-parliament-approves-security-deal-with-greenland-and-us",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "lite.cnn.com",
+   "url": "https://lite.cnn.com/2026/11/18/americas/us-venezuela-military-deal-hegseth-latam-intl",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/trump-makes-third-supreme-court-bid-to-end-venezuelan-migrant-protections",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/18/us-defence-secretary-announces-military-partnership-on-trip-to-venezuela",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "breitbart.com",
+   "url": "https://www.breitbart.com/local/2026/11/18/floridas-troubled-dmv-system-fails-again-blocking-license-renewals/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "tampabay.com",
+   "url": "https://www.tampabay.com/news/florida-politics/2026/11/18/florida-dmv-drivers-license-orion-fasano-adam-ross/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "wusf.org",
+   "url": "https://www.wusf.org/courts-law/2026-11-18/federal-judge-financial-disclosure-law-for-florida-officials-is-unconstitutional",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "cbsnews.com",
+   "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "semafor.com",
+   "url": "https://www.semafor.com/article/11/17/2026/us-data-center-emissions-rival-entire-countries",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "datacenterdynamics.com",
+   "url": "https://www.datacenterdynamics.com/en/news/cameron-county-commissioners-reject-spacex-tax-break-request-for-24bn-texas-data-center/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "bbc.com",
+   "url": "https://www.bbc.com/news/articles/cm9q8j2z3gg8o",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "floridaphoenix.com",
+   "url": "https://floridaphoenix.com/2026/11/18/repub/jeffries-chosen-to-lead-us-house-dems-poised-to-be-first-black-speaker/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/unvaccinated-pennsylvania-resident-dies-amid-historic-us-measles-resurgence",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "floridaphoenix.com",
+   "url": "https://floridaphoenix.com/2026/11/18/florida-is-scheduled-to-carry-out-a-record-20th-execution-on-thursday/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "lite.cnn.com",
+   "url": "https://lite.cnn.com/2026/11/18/politics/faa-contractor-oversight-ground-stop",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "nypost.com",
+   "url": "https://nypost.com/2026/11/19/world-news/houthis-strike-saudi-arabia-pif-tower-in-riyadh-causing-damage/",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23555/executive-compensation-disclosure-reform",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23461/medicare-medicaid-and-marketplace-programs-comprehensive-regulations-to-uncover-suspicious",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "aljazeera.com",
+   "url": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "article/document",
+   "source": "lite.cnn.com",
+   "url": "https://lite.cnn.com/2026/11/18/europe/crimea-russia-bridge-ukraine-kerch-latam-intl",
+   "how": "article page, document, headline or search excerpt cited in the issue"
+  },
+  {
+   "story": "negative check",
+   "source": "WebSearch: UAP disclosure AARO release November 2026 (disclosurearchives.com, first.contact timeline)",
+   "url": "",
+   "how": "post-draft negative check"
+  },
+  {
+   "story": "negative check",
+   "source": "WebSearch: Pasco County New Port Richey news Nov 18 2026 (Inside New Port Richey, Tampa Bay Beacons, Pasco News)",
+   "url": "",
+   "how": "post-draft negative check"
+  },
+  {
+   "story": "negative check",
+   "source": "WebSearch: JPMorgan Dimon news Nov 19 2026 (American Banker, NY Post, CNBC)",
+   "url": "",
+   "how": "post-draft negative check"
+  }
+ ],
+ "sources_checked_total": 101,
+ "sources_checked_note": "Total = 36 fronts/sweeps before categories + 62 unique article pages, documents, headlines or search excerpts cited in the issue (Federal Register HTML and full-text pages for the same document counted once) + 3 post-draft negative-check searches. Pages fetched but not used (NPR summary piece, Guardian and Fox Business Anthropic pieces, Verge/AFP/Yahoo Nvidia excerpts) are not counted.",
+ "candidate_count": 45,
+ "candidates": [
+  {
+   "item": "Trump–Xi–Putin trilateral in Shenzhen ends with 4-point joint statement (UN reform, refined fuel supply, ICC/immunity, nuclear-risk dialogue)",
+   "decision": "keep: lead (shenzhen), continuing",
+   "reason": "threshold event: the meeting took place and produced a statement; US channel via nuclear talks and fuel supply; credible disagreement on meaning"
+  },
+  {
+   "item": "Anthropic prices IPO at $83, $81.3B raised, trades on Nasdaq today; $900B compute commitments; founder control",
+   "decision": "keep: lead (anthropic), continuing",
+   "reason": "threshold event (pricing, first trade); AI/consulting and AI-debt weighting (topic check 'Include'); definitional divergence on size"
+  },
+  {
+   "item": "Iran widens Gulf strikes (Kuwait, Bahrain); Trump bioweapons claim; IEA 2.8bn barrels lost; GOP lacks votes for party-line Pentagon bill; Dems back off shutdown leverage",
+   "decision": "keep: lead (iran-funding), continuing",
+   "reason": "material connection: war cost tied to Dec 11 funding deadline; disputed claim worth a divergence box"
+  },
+  {
+   "item": "Amendment 3: PSTA adopts $12 disabled-rider fare, weighs cutting 25 of 40 routes; St. Pete Beach ends trolley contract",
+   "decision": "keep: lead (amendment3), continuing",
+   "reason": "new verifiable facts (two Pinellas votes this week); direct local effect near New Port Richey; public reaction and blame dispute"
+  },
+  {
+   "item": "Paid access: Mar-a-Lago Big Blue Bash $50K roundtables with agency heads, contractor sponsors; Patel skips House hearing; FastX tops $TRUMP coin dinner leaderboard",
+   "decision": "keep: lead (paid-access), new",
+   "reason": "behind-the-scenes money, Florida venue, bipartisan and right-of-center criticism; factual dispute on Patel whereabouts"
+  },
+  {
+   "item": "BIS remote-access chip IFR effective today; Nvidia stops licensed Hopper sales to China",
+   "decision": "keep: Also today (chip-rule)",
+   "reason": "primary document published/effective today; underreported on effective date; ran as lead Nov 17 so held below the line"
+  },
+  {
+   "item": "FinCEN CDD proposal: banks may collect immigration status/work authorization of beneficial owners; ITIN not accepted",
+   "decision": "keep: Also today (fincen)",
+   "reason": "underreported (Treasury + trade press only); Core US financials; affects bank customers"
+  },
+  {
+   "item": "Denmark ratifies Greenland security deal 109-0",
+   "decision": "keep: Also today (greenland)",
+   "reason": "clear US channel (bases, Golden Dome), decision event today"
+  },
+  {
+   "item": "Hegseth signs military pact in Caracas; DOJ third SCOTUS bid on Venezuelan TPS before Friday",
+   "decision": "keep: Also today (venezuela)",
+   "reason": "dated deadline (Friday), US policy contradiction worth noting"
+  },
+  {
+   "item": "Florida ORION license/registration outage; Pasco tax collector's $4M/yr loss estimate",
+   "decision": "keep: Also today (fl-orion)",
+   "reason": "directly affects reader (license renewals), Pasco angle"
+  },
+  {
+   "item": "Federal judge strikes SB 774 Form 6 expanded disclosure for municipal officials",
+   "decision": "keep: Also today (fl-form6)",
+   "reason": "Florida institutions; affects local councils including New Port Richey"
+  },
+  {
+   "item": "Harvard study: hyperscale data centers 1.8% of US electricity; Cameron County rejects SpaceX tax break for $24B data center",
+   "decision": "keep: Also today (data-centers)",
+   "reason": "data centers/power weighting; local public decision on tax deal"
+  },
+  {
+   "item": "ICJ rules Myanmar committed genocide against Rohingya",
+   "decision": "cut: Also noted",
+   "reason": "historic but no US policy step today"
+  },
+  {
+   "item": "Musk says $446M midterm spending 'pretty foolish', 'not MAGA'",
+   "decision": "cut: Also noted",
+   "reason": "personal statement, no policy or spending move"
+  },
+  {
+   "item": "House Democrats nominate Jeffries for speaker",
+   "decision": "cut: Also noted",
+   "reason": "expected; floor vote January"
+  },
+  {
+   "item": "Measles death in Pennsylvania",
+   "decision": "cut: Also noted",
+   "reason": "elimination-status loss already ran Tuesday; no new policy step"
+  },
+  {
+   "item": "Florida record 20th execution scheduled today",
+   "decision": "cut: Also noted",
+   "reason": "record but no policy change"
+  },
+  {
+   "item": "CNN exclusive: FAA had little oversight of L3Harris router work behind ground stop",
+   "decision": "cut: Also noted",
+   "reason": "outage thread led Wednesday; awaiting FAA inquiry"
+  },
+  {
+   "item": "Houthi strike damages Riyadh PIF tower",
+   "decision": "cut: Also noted",
+   "reason": "regional; folded into Iran picture"
+  },
+  {
+   "item": "SEC executive compensation disclosure reform proposal",
+   "decision": "cut: Also noted",
+   "reason": "issuer burden, low reader effect"
+  },
+  {
+   "item": "CMS CRUSH anti-fraud proposed rule",
+   "decision": "cut: Also noted",
+   "reason": "proposal only, effect unclear"
+  },
+  {
+   "item": "IAEA: North Korea expanding uranium enrichment",
+   "decision": "cut: Also noted",
+   "reason": "no US response today"
+  },
+  {
+   "item": "Crimean Bridge struck third time in a week",
+   "decision": "cut: Also noted",
+   "reason": "Ukraine settled-balance preference"
+  },
+  {
+   "item": "Nvidia earnings beat, board split over Huang return, SEC probe postpones disclosure",
+   "decision": "cut",
+   "reason": "led Wednesday; no new decision; Hopper halt carried in chip-rule item"
+  },
+  {
+   "item": "Tech-outage wave: Mullin hearing, Microsoft admission, Costco panic buying",
+   "decision": "cut",
+   "reason": "led Wednesday; hearing produced no named causes in sources reached"
+  },
+  {
+   "item": "Grand Theft Auto VI launch (top X trend)",
+   "decision": "cut",
+   "reason": "entertainment anti-topic"
+  },
+  {
+   "item": "Van Gogh $190.4M auction record",
+   "decision": "cut",
+   "reason": "art market, anti-topic"
+  },
+  {
+   "item": "CMA Awards / Taylor Swift",
+   "decision": "cut",
+   "reason": "celebrity anti-topic"
+  },
+  {
+   "item": "South Florida record flooding, states of emergency",
+   "decision": "cut",
+   "reason": "disruption without Tampa Bay effect; the Amendment 3 drainage debate it sparked is in the amendment3 divergence box"
+  },
+  {
+   "item": "Schumer vs Van Hollen Senate leadership fight; Van Hollen tech antitrust agenda",
+   "decision": "cut",
+   "reason": "intraparty contest, no vote scheduled"
+  },
+  {
+   "item": "Sanders vows Medicare for All push as HELP chair",
+   "decision": "cut",
+   "reason": "agenda statement, no bill text"
+  },
+  {
+   "item": "CMS lets states delay Medicaid work requirements to June 30",
+   "decision": "cut",
+   "reason": "dated Nov 16; minor"
+  },
+  {
+   "item": "Russian man arrested for spying on Palantir employees",
+   "decision": "cut",
+   "reason": "criminal case, no policy effect yet"
+  },
+  {
+   "item": "Senate committee rejects Trump NSF nominee",
+   "decision": "cut",
+   "reason": "personnel"
+  },
+  {
+   "item": "Cornyn blocks Trump Dallas judicial nominee",
+   "decision": "cut",
+   "reason": "personnel"
+  },
+  {
+   "item": "JPMorgan CFO succession; AI-agent payments test",
+   "decision": "cut",
+   "reason": "noted Wednesday; negative check found nothing new"
+  },
+  {
+   "item": "Walmart raises outlook; new car prices top $50K",
+   "decision": "cut",
+   "reason": "market/price moves for their own sake"
+  },
+  {
+   "item": "Intel 18A first external customer",
+   "decision": "cut",
+   "reason": "corporate milestone, low reader effect"
+  },
+  {
+   "item": "Rep. Anna Paulina Luna amendment barring dual citizens from Congress",
+   "decision": "cut",
+   "reason": "constitutional amendment with no path; Pinellas member but no vote"
+  },
+  {
+   "item": "U.S. Sugar 440M-gallon wastewater discharge; feds weigh shrimping in protected Florida reef",
+   "decision": "cut",
+   "reason": "environmental items without a decision date found today"
+  },
+  {
+   "item": "Hezbollah sanctions",
+   "decision": "cut",
+   "reason": "incremental"
+  },
+  {
+   "item": "UK Coalition of the Willing in Berlin with Witkoff and Kushner; US floats Donetsk-for-NATO",
+   "decision": "cut",
+   "reason": "Ukraine balance settled preference; no US decision"
+  },
+  {
+   "item": "Takaichi chilly reception at APEC",
+   "decision": "cut",
+   "reason": "no US channel"
+  },
+  {
+   "item": "Fox 'Americans misled on Social Security' report",
+   "decision": "cut",
+   "reason": "could not identify the underlying report from the headline; not stood up elsewhere"
+  },
+  {
+   "item": "Army lead azide detonation plume in Iowa",
+   "decision": "cut",
+   "reason": "local to Iowa"
+  }
+ ],
+ "story_count": {
+  "leads": 5,
+  "also_today": 7,
+  "total": 12
+ },
+ "story_floor_note": "12 stories; above the ~10 floor.",
+ "continuing_leads": [
+  {
+   "id": "shenzhen",
+   "trigger": "threshold event: the Nov 19 Trump-Xi-Putin trilateral took place and issued a four-point joint statement"
+  },
+  {
+   "id": "anthropic",
+   "trigger": "threshold event: IPO priced at $83 above range on Nov 18; first Nasdaq trade Nov 19"
+  },
+  {
+   "id": "iran-funding",
+   "trigger": "material connection and new verifiable fact: Senate GOP concedes it lacks 50 votes for a party-line Pentagon bill before the Dec 11 deadline, House Democrats drop shutdown leverage, IEA World Energy Outlook estimate of 2.8bn barrels lost; ran below the line Nov 18"
+  },
+  {
+   "id": "amendment3",
+   "trigger": "new verifiable facts: PSTA board adopted $12 paratransit fare Nov 18 and St. Pete Beach voted Nov 17 to end its trolley contract, both citing Amendment 3"
+  }
+ ],
+ "per_article_independent_sources": {
+  "shenzhen": 6,
+  "anthropic": 5,
+  "iran-funding": 6,
+  "amendment3": 4,
+  "paid-access": 4,
+  "chip-rule": 2,
+  "fincen": 1,
+  "greenland": 3,
+  "venezuela": 2,
+  "fl-orion": 2,
+  "fl-form6": 1,
+  "data-centers": 3
+ },
+ "per_article_independent_sources_note": "Counts are independent newsrooms. anthropic also uses Anthropic's own pricing release; chip-rule and fincen rest mainly on primary documents (Federal Register, BIS, Treasury, Singapore MDDI); fincen's one outside account is ACAMS trade press via search excerpt. amendment3 also cites X's story summary as public reaction. paid-access also cites TokenPost. The Hill (paid-access) and ACAMS (fincen) were read via search excerpts because direct fetches returned 403.",
+ "per_article_primary_documents": {
+  "chip-rule": "Federal Register 2026-23529 IFR (full text read in part) and BIS press release",
+  "fincen": "Federal Register 2026-23614 NPRM (full text read in part) and Treasury release sb0691",
+  "anthropic": "Anthropic pricing release (company document, not a government primary source)"
+ },
+ "marker_tallies": {
+  "Primary source": 2,
+  "Independent corroboration": 9,
+  "Single-sourced": 1,
+  "Unconfirmed": 0
+ },
+ "unconfirmed_claims_stated_in_text": [
+  "any U.S. text of the Shenzhen statement differing from China's English version",
+  "Anthropic's $26B private placement and founders selling shares (Al Jazeera only)",
+  "Iran bioweapons work (Trump assertion without public evidence)",
+  "whether the Suncoast Beach Trolley keeps serving St. Pete Beach",
+  "whether Patel was aboard the DOJ jet",
+  "how banks plan to use the FinCEN authority",
+  "the cause of the ORION failure and any link to the national outage wave"
+ ],
+ "divergence_boxes": [
+  "shenzhen",
+  "anthropic",
+  "iran-funding",
+  "amendment3",
+  "paid-access"
+ ],
+ "negative_check": {
+  "method": "After drafting: searched UAP/AARO disclosure, Pasco County and New Port Richey news, and JPMorgan; compared the candidate list against every front swept and X US trends (GTA 6, Shenzhen, Vladimir Putin, Myanmar/Rohingya, $ANT trends match leads or Also noted; others are entertainment).",
+  "result": "No new government UAP release since the Oct 23 PURSUE tranche. Pasco: sheriff copycat-site warning and Pasco 2050 session (not news that changes anything); Pasco's tax collector appears in fl-orion. JPMorgan: CFO succession and AI-agent payments test, already noted Nov 18.",
+  "underreported": "Two significant underreported items run below the line: FinCEN's immigration-status customer due diligence proposal (found only in Treasury's release, the Federal Register and banking trade press, no general-news coverage) and the remote-access chip rule's effective date (wide coverage at announcement Monday, almost none today)."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 19, ~07:30 ET): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), no comments, last updated Nov 8; already applied in config.md on Nov 9 with the wake condition closed. Topic-check answers (Nov 9-15) already in config.md were applied as weighting: AI debt and credit risk raised weight on Anthropic's $900B compute commitments and $6.2B debt; prediction markets, Tampa Bay dengue, banks blocking AI agents and Epstein Act II had no material new development today.",
+ "config_change": null,
+ "beat_coverage": {
+  "AI & tech industry (Core)": "Strongest: Anthropic IPO (lead); chip rule and Nvidia Hopper halt (Also today). Nvidia board/earnings cut as no new decision.",
+  "Macro & markets (Core)": "No print today; Treasury yields 'inch higher' headline only. Fed settled preference: prints and decisions only, so nothing ran. Walmart/car prices cut as price moves for their own sake.",
+  "World economy": "Shenzhen fuel-supply pledge and IEA outlook carried inside the shenzhen and iran-funding leads.",
+  "US debt & fiscal (Core)": "Pentagon funding and Dec 11 deadline inside iran-funding lead; PBS 'debt nears $40T' explainer was not news.",
+  "US financials (Core)": "FinCEN CDD proposal (Also today, underreported). JPMorgan negative check: CFO succession, AI-agent pilot already noted.",
+  "US politics & policy (Core)": "Paid-access lead; Venezuela TPS emergency application; Jeffries nomination and Senate leadership fight cut.",
+  "Geopolitics": "Shenzhen and Iran leads; Greenland ratification Also today; Crimea bridge and North Korea Also noted.",
+  "Science & public health": "Measles death (Also noted); CMS CRUSH and work-requirement delay cut. Nothing cleared.",
+  "UAP disclosure (Core)": "Negative check: no new AARO/PURSUE release since Oct 23. Nothing ran.",
+  "Energy & grid": "Harvard data-center electricity study in data-centers item; IEA WEO in iran-funding.",
+  "Elections and electoral process": "Form 6 ruling touches candidate disclosure; Musk spending regret Also noted.",
+  "Broader domestic institutions": "Patel skipping the threats hearing and contractor-sponsored access (lead); Form 6 ruling.",
+  "International with US channel": "Shenzhen, Greenland, Venezuela.",
+  "Florida / Tampa Bay": "Amendment 3 Pinellas cuts (lead); ORION outage with Pasco angle; Form 6 ruling; Mar-a-Lago gala; South Florida floods cut (no Tampa Bay effect).",
+  "Data centers / power / AI infrastructure": "Harvard 1.8% study and Cameron County tax-break rejection (Also today); chip rule's 'Virginia' loophole.",
+  "AI and financial services": "Anthropic's compute commitments and debt (AI-debt weighting); FinCEN proposal for banks."
+ },
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 64 unique external links, 2026-11-19 ~08:05 ET: 61 returned 200 after fixing one truncated New York Post URL; WTSP (403), ACAMS (403) and The Hill (403) are bot-blocking responses on pages labelled in the text as headline only or search excerpt, not dead links.",
+ "audit_attempts": {
+  "count": 1,
+  "results": [
+   "attempt 1 (~08:08 ET): exit 0, all hard gates passed; stories 12 (leads 5, also 7), continuations 4, radio groups 6, sources 101, no warnings"
+  ]
+ }
+}
