@@ -1028,11 +1028,11 @@
  "also_noted_count": 11,
  "comparison_edition": "none opened",
  "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
- "link_check_note": "curl -L check of all 64 unique external links, 2026-11-19 ~08:05 ET: 61 returned 200 after fixing one truncated New York Post URL; WTSP (403), ACAMS (403) and The Hill (403) are bot-blocking responses on pages labelled in the text as headline only or search excerpt, not dead links.",
+ "link_check_note": "curl -L check of all 64 unique external links, 2026-11-19 ~07:36 ET: 61 returned 200 after fixing one truncated New York Post URL; WTSP (403), ACAMS (403) and The Hill (403) are bot-blocking responses on pages labelled in the text as headline only or search excerpt, not dead links.",
  "audit_attempts": {
   "count": 1,
   "results": [
-   "attempt 1 (~08:08 ET): exit 0, all hard gates passed; stories 12 (leads 5, also 7), continuations 4, radio groups 6, sources 101, no warnings"
+   "attempt 1 (~07:37 ET): exit 0, all hard gates passed; stories 12 (leads 5, also 7), continuations 4, radio groups 6, sources 101, no warnings"
   ]
  }
 }
