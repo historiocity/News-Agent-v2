@@ -594,10 +594,11 @@
  "link_check_note": "curl -L check of all 48 unique links, 2026-11-20 ~07:40 ET: 44 returned 200; floridapolitics.com (403) and miamiherald.com (no response) block curl but were read in full via fetch; two thehill.com links (403) are bot-blocking on items labelled headline only.",
  "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
  "audit_attempts": {
-  "count": 2,
+  "count": 3,
   "results": [
    "attempt 1 (~07:41 ET): exit 0, all hard gates passed; stories 11 (leads 5, also 6), continuations 4, radio groups 6, sources 92, no warnings",
-   "attempt 2 (~07:43 ET, after a one-phrase summary wording fix and adding this field): exit 0, same counts, no warnings"
+   "attempt 2 (~07:43 ET, after a one-phrase summary wording fix and adding this field): exit 0, same counts, no warnings",
+   "attempt 3 (~07:44 ET, after correcting log timestamps, on the committed files): exit 0, same counts, no warnings"
   ]
  }
 }
