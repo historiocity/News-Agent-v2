@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 20 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Friday, 20 November 2026 &middot; morning edition</div>
+  <h1>The White House fires its cyber director after a week of outages; Congress opens Commerce&rsquo;s China chip files; the Senate passes the permitting overhaul; three weeks to the funding deadline; free legal work and well-timed trades around Trump</h1>
+  <p class="summary">Five leads, six below the line. The White House pushed out national cyber director Sean Cairncross after outages hit air traffic, Microsoft, the NSA and big banks; House Foreign Affairs released files showing Commerce approved more than 879,000 AI chips for Chinese buyers, and California subpoenaed Nvidia; the Senate passed the permitting and transmission bill 62&ndash;33 with a clause making hyperscalers pay for grid upgrades; Thune expects the debt limit to be punted to a Democratic Congress while the Dec.&nbsp;11 funding deadline waits on Democrats&rsquo; Dec.&nbsp;1 leadership vote; and Democrats say Kirkland &amp; Ellis did $11.8&nbsp;million in free work for Trump&rsquo;s agencies as his accounts bought Palantir and SpaceX around federal awards. Below the line: a vendor breach at JPMorgan, Visa and Mastercard; Anthropic&rsquo;s first day and Asia&rsquo;s chip sell-off; Kushner&rsquo;s Article&nbsp;5 idea for Ukraine; Venezuelan TPS stays suspended; DeSantis&rsquo;s flood-project vetoes; and a draft broadband fee.</p>
+  <p class="sub">Friday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-20-v2.html</code>.</p>
+  <p class="prov"><b>92 sources checked, 18 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera news page, BBC News front plus its U.S. and business feeds, Fox News front, politics page and politics feed, CNBC top-news feed, Guardian US feed, The Hill feed, Semafor feed, Tampa Bay Times feed, Fox&nbsp;13 feed, WFLA feed, the Federal Register API for today&rsquo;s rules, proposed rules and presidential documents, an X news search and X&rsquo;s U.S. trends. Politico, Axios and The Hill&rsquo;s front page returned access-denied pages, and WUSF&rsquo;s feed address returned not-found; their reporting appears only where a search excerpt or another outlet carries it.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure, Pasco County and New Port Richey news, and JPMorgan, and compared the candidate list with every front swept and X&rsquo;s U.S. trends (entertainment and K-pop, nothing news-bearing). No new government UAP release has appeared since the Oct.&nbsp;23 PURSUE tranche; former AARO director Sean Kirkpatrick&rsquo;s Nov.&nbsp;1 claim that resolution language was stripped from those files has drawn no Pentagon answer. Pasco&rsquo;s news is a search-warrant arrest in New Port Richey, a missing-person alert and a mixed-use rezoning request near Moon Lake, none at the bar. JPMorgan&rsquo;s news is the vendor breach below the line. Two things are underreported: the draft broadband fee for the Universal Service Fund, carried so far only by Fox News, and the detail in the Democrats&rsquo; law-firm letter that the administration sought free help with the Kennedy Center renaming and the arch. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed; no new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#outages">The outage week costs the cyber director his job</a></li>
+    <li><a href="#chips">Congress opens Commerce&rsquo;s China chip licenses; California subpoenas Nvidia</a></li>
+    <li><a href="#permitting">The Senate passes the permitting overhaul 62&ndash;33</a></li>
+    <li><a href="#funding">Dec.&nbsp;11 funding, the debt limit and the Democrats&rsquo; Dec.&nbsp;1 vote</a></li>
+    <li><a href="#trump-money">Free legal work and well-timed trades</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#jpm-breach">Vendor breach at JPMorgan, Visa and Mastercard</a></li>
+    <li><a href="#anthropic">Anthropic&rsquo;s first day, Asia&rsquo;s chip sell-off</a></li>
+    <li><a href="#ukraine">Kushner&rsquo;s Article&nbsp;5 idea for Ukraine</a></li>
+    <li><a href="#tps">Venezuelan TPS stays suspended</a></li>
+    <li><a href="#fl-flood">DeSantis&rsquo;s flood-project vetoes meet the floods</a></li>
+    <li><a href="#usf-fee">A draft broadband fee for the Universal Service Fund</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="outages">
+  <h3>The White House pushes out its national cyber director after a week of outages, and two senators hold the CISA nominee who would not say who won in 2020</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (outages led on Nov.&nbsp;18). Trigger: new verifiable fact &mdash; the national cyber director is out, confirmed by a White House official to NBC and CBS, and the CISA nominee now faces holds.</p>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (BBC, CNBC, The Guardian, Semafor), plus a Guardian commentary headline.</p>
+  <p>Sean Cairncross, national cyber director since August 2025, is leaving the job after a run of outages that included a nationwide aviation ground stop, a worldwide Microsoft Outlook outage, a reported blackout of the National Security Agency&rsquo;s classified network, and payment problems at large banks. Pentagon chief information officer Kirsten Davies will serve as acting director; a permanent director needs Senate confirmation, and from January the Senate is Democratic (<a href="https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html">CNBC</a>; <a href="https://www.theguardian.com/us-news/2026/nov/19/white-house-cyber-director-ousted">The Guardian</a>). Axios first reported that chief of staff Stephen Miller pushed the change because Cairncross &ldquo;lacked the strong cyber credentials to perform the job,&rdquo; and a person close to the White House told Reuters that &ldquo;the president fully supported firing&rdquo; him. The White House has not publicly given a reason (<a href="https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo">BBC</a>).</p>
+  <p>The agency below him is also leaderless. Sens. Thom Tillis (R-N.C.) and Ron Wyden (D-Ore.) said they would hold Trump&rsquo;s CISA nominee, Palantir security chief Michael LoSapio, after he denied at his hearing Thursday that there was an attack on the Capitol on Jan.&nbsp;6, 2021, and would not say who won the 2020 election. Sens. Maria Cantwell and Mike Rounds have asked DNI Jay Clayton&rsquo;s AI task force to &ldquo;launch a national effort&rdquo; against AI-enabled cyber threats, which a lobbyist and a Hill source told Semafor previews January&rsquo;s agenda (<a href="https://www.semafor.com/article/11/20/2026/outages-trigger-congressional-scrutiny-of-ai-enabled-attacks">Semafor</a>).</p>
+  <p><b>Why it matters to you.</b> Banks, flights and email all failed this month, and the people who coordinate the federal response are now acting officials or unconfirmed nominees. The fix the administration describes &mdash; companies rushing patches as AI finds old flaws &mdash; is the same work your clients&rsquo; IT shops are doing now.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; attack, maintenance, or something structural?</span>
+    <p><b>Dispute type.</b> Interpretive, over cause. Secretary of State Marco Rubio says there is &ldquo;zero evidence&rdquo; the outages are linked and &ldquo;we are not under systemic attack&rdquo;; the top intelligence official called them separate maintenance failures (BBC; The Guardian). The BBC&rsquo;s review found most began with an upgrade gone wrong, but that AI-found flaws in Java and PHP and malicious code in Optimizely were real security events (<a href="https://www.bbc.co.uk/news/articles/c6z0kly2lll7o">BBC explainer</a>). Experts Semafor spoke to say the government is largely telling the truth, but more instability is coming. Bruce Schneier&rsquo;s Guardian column argues the real culprit is the U.S. economy (<a href="https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy">The Guardian, headline only</a>).</p>
+    <p><b>Vantage, interests, access, timing.</b> Rubio and the DNI have the classified picture and an interest in calm; firing the director a day after the intelligence chief&rsquo;s all-clear sits awkwardly with that line. Semafor&rsquo;s sources are a tech lobbyist and a Hill aide who want legislation in January. Schneier is an independent security writer arguing a long-held thesis; we read only his headline.</p>
+    <p><b>What it means for you.</b> Nobody credible is claiming a coordinated attack. The live question is whether patch-driven failures keep coming, and who in Washington owns the response once Davies is acting and CISA has no confirmed head.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the outage wave and the cyber director&rsquo;s exit?</b></p>
+    <label><input type="radio" name="fb-outages" value="local"> When a Tampa Bay bank, utility or hospital reports an outage or breach that reaches customers here</label>
+    <label><input type="radio" name="fb-outages" value="nominee"> When Trump names a permanent cyber director or the LoSapio holds are lifted or broken on the floor</label>
+    <label><input type="radio" name="fb-outages" value="ai-attack"> Only if an investigator ties one of the outages to an AI-assisted attack rather than maintenance</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/20/sean-cairncross-white-house-cyber-director.html">CNBC</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/19/white-house-cyber-director-ousted">The Guardian</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo">BBC</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/c6z0kly2lll7o">BBC explainer</a> &middot;
+    <a href="https://www.semafor.com/article/11/20/2026/outages-trigger-congressional-scrutiny-of-ai-enabled-attacks">Semafor</a> &middot;
+    <a href="https://www.theguardian.com/commentisfree/2026/nov/20/cyber-attacks-outages-blame-economy">Schneier column (headline)</a>
+  </p>
+</article>
+
+<article id="chips">
+  <h3>House Foreign Affairs releases Commerce&rsquo;s license files: 3.4 million AI chips requested for China, more than 879,000 approved, some for firms the Pentagon lists as Chinese military companies; California subpoenas Nvidia</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="meta">Continuing lead (chip rules ran Nov.&nbsp;17 and 19). Trigger: new verifiable fact &mdash; the committee&rsquo;s release of license data under the Export Control Reform Act, and a state subpoena.</p>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, BBC, Semafor), plus the committee chairman&rsquo;s release.</p>
+  <p>The House Foreign Affairs Committee voted Thursday to release Bureau of Industry and Security records showing companies asked to sell 3.4&nbsp;million U.S. AI chips to China between December and May, and that BIS approved more than 879,000, including to Alibaba and Tencent, which the Pentagon designates as Chinese military companies. Chairman Brian Mast&rsquo;s release calls it &ldquo;the most detailed public disclosure in the history of the Export Control Reform Act&rdquo; and says it includes Nvidia requests that relied on &ldquo;possible chip-smuggling fronts&rdquo; (<a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">House Foreign Affairs Committee</a>). Ranking Democrat Gregory Meeks said BIS &ldquo;has failed to enforce the rules.&rdquo; Nvidia says it followed the rules in force and has stopped shipping H200s to China; it reported $2.4&nbsp;billion in quarterly revenue from H200 and related chips in China (<a href="https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html">CNBC</a>).</p>
+  <p>Separately, California Attorney General Rob Bonta served an investigative subpoena on Nvidia, probing whether the company&rsquo;s or former CEO Jensen Huang&rsquo;s actions let China obtain advanced chips or confidential information, and whether investors were misled. &ldquo;Companies cannot mislead their investors,&rdquo; Bonta said (<a href="https://www.bbc.co.uk/news/articles/cqn70vxp5p4no">BBC</a>). Semafor, citing Caixin, says China&rsquo;s tech giants are &ldquo;reeling&rdquo; at the prospect of new restrictions (<a href="https://www.semafor.com/article/11/20/2026/semiconductor-industry-under-the-microscope-since-nvidias-sales-to-china">Semafor</a>).</p>
+  <p><b>Why it matters to you.</b> This is the first hard number on how much of the administration&rsquo;s chip-for-revenue deal (a 25% U.S. cut on H200 sales, per CNBC) was actually licensed, and it arrives just as Democrats take the subpoena power in January. A state securities probe adds a second track that does not depend on Washington.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a security failure or a rounding error?</span>
+    <p><b>Dispute type.</b> Interpretive, over scale and meaning. Meeks says the administration&rsquo;s handling put &ldquo;our national security and technology edge at risk&rdquo;; Mast&rsquo;s release stresses approvals for military-designated firms and possible smuggling fronts. Bernstein analyst Stacy Rasgon told CNBC 879,000 is &ldquo;not that many,&rdquo; that BIS approved roughly one in four requests, and that H200 sales were &ldquo;a rounding error&rdquo; because Beijing limited imports.</p>
+    <p><b>Vantage, interests, access, timing.</b> The committee has the license files and a bipartisan interest in oversight; Mast is a Florida Republican breaking with the administration&rsquo;s line. Rasgon covers chip stocks for investors and judges by revenue, not by who received the chips. Nvidia is defending itself while facing a state subpoena. BIS says licensing was &ldquo;the product of deliberation&rdquo; among agencies.</p>
+    <p><b>What it means for you.</b> Both can be true: small in Nvidia&rsquo;s revenue, large as a policy signal. Watch who received chips, not how many. We could not confirm which designated military companies actually took delivery; the release covers approvals, not shipments.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the China chip licenses?</b></p>
+    <label><input type="radio" name="fb-chips" value="bonta"> When Bonta&rsquo;s subpoena turns into a lawsuit or a filing that says what Nvidia told investors</label>
+    <label><input type="radio" name="fb-chips" value="buyers"> When records show a military-designated buyer such as Alibaba or Tencent actually took delivery</label>
+    <label><input type="radio" name="fb-chips" value="revoke"> Only if Commerce revokes or suspends licenses it has already granted</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">House Foreign Affairs (Mast)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html">CNBC</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cqn70vxp5p4no">BBC</a> &middot;
+    <a href="https://www.semafor.com/article/11/20/2026/semiconductor-industry-under-the-microscope-since-nvidias-sales-to-china">Semafor</a>
+  </p>
+</article>
+
+<article id="permitting">
+  <h3>The Senate passes the permitting and transmission overhaul 62&ndash;33, with a clause making hyperscalers pay for grid upgrades; 15 Democrats and independents vote yes and the House is next</h3>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CNBC, NPR), plus the Senate roll call, the Senate press gallery&rsquo;s floor log and the bill author&rsquo;s release.</p>
+  <p>The Senate passed the Bipartisan American Affordability and Jobs Act Thursday night, 62&ndash;33, using H.R.&nbsp;2347 as the vehicle (<a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm">Senate roll call&nbsp;270</a>). Fifteen Democrats and independents voted yes, including Chuck Schumer, Ruben Gallego, Elissa Slotkin and the authors Martin Heinrich and Sheldon Whitehouse; Republicans Josh Hawley and Mike Rounds voted no (<a href="https://www.dailypress.senate.gov/thursday-november-19-2026/">Senate floor log</a>). The bill speeds environmental permitting, overhauls transmission rules, blocks the president from cancelling wind and solar projects that already have permits, and forces hyperscalers to pay for grid upgrades. Clean-power and oil-and-gas trade groups both praised it (<a href="https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html">CNBC</a>). Co-author Shelley Moore Capito called it &ldquo;a major step towards addressing the affordability concerns&rdquo; (<a href="https://www.epw.senate.gov/press/rep/senate-passes-capitos-bipartisan-american-affordability-and-jobs-act/">Senate EPW</a>).</p>
+  <p>NPR notes the price of a kilowatt-hour rose more than 6% in the past year and 39% in five years. Majority Leader John Thune says the bill will &ldquo;save the average household hundreds of dollars each year&rdquo; (<a href="https://text.npr.org/g-s1-154579">NPR</a>). We could not confirm any independent estimate of household savings; none of the sources we read cites one.</p>
+  <p><b>Why it matters to you.</b> This is the first federal law in years aimed directly at the power bill, and the first to make data-center builders carry part of the grid cost. It also shows how the new Democratic majority will split: affordability Democrats against climate and tribal-rights Democrats.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; cheaper power or a gas pipeline for data centers?</span>
+    <p><b>Dispute type.</b> Forecast and values. Whitehouse says Americans &ldquo;will quickly begin getting some relief&rdquo; and that data centers will pay for their power. Jeff Merkley calls it &ldquo;a bad deal&rdquo; that &ldquo;opens the gates to a flood of natural gas for data centers&rdquo;; Maria Cantwell and Alex Padilla object to the tribal-sovereignty and Clean Water Act changes; the Sierra Club and National Wildlife Federation oppose it (NPR). Ron Wyden pressed an amendment to keep data centers off public lands (CNBC).</p>
+    <p><b>Vantage, interests, access, timing.</b> The authors wrote the text and campaigned on affordability; the opponents represent Western states with tribal land and public land at stake. The industry groups on both sides gain from faster permits. Trump urged passage, which shapes House Republican votes. The savings claims are forecasts made on the day of passage.</p>
+    <p><b>What it means for you.</b> Bills will not move until projects are built. The near-term test is whether the House keeps the hyperscaler-pays clause intact.</p>
+  </div>
+  <details><summary>Dig deeper</summary><p>The roll call lists H.R.&nbsp;2347 under its original title, a tax bill on damages; the Senate used it as the shell for the permitting text. The floor log records that Sens. Cassidy, Cornyn, McConnell, Murphy and Tuberville did not vote.</p></details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the permitting bill?</b></p>
+    <label><input type="radio" name="fb-permitting" value="fl-rates"> When Duke Energy Florida or Tampa Electric cites the law in a rate case that changes bills here</label>
+    <label><input type="radio" name="fb-permitting" value="house"> When House leaders schedule the vote, or strip the clause that makes hyperscalers pay for grid upgrades</label>
+    <label><input type="radio" name="fb-permitting" value="opposition"> When tribes or local opponents sue to stop a specific project the law speeds up</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm">Senate roll call</a> &middot;
+    <a href="https://www.dailypress.senate.gov/thursday-november-19-2026/">Senate floor log</a> &middot;
+    <a href="https://www.epw.senate.gov/press/rep/senate-passes-capitos-bipartisan-american-affordability-and-jobs-act/">Senate EPW</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html">CNBC</a> &middot;
+    <a href="https://text.npr.org/g-s1-154579">NPR</a>
+  </p>
+</article>
+
+<article id="funding">
+  <h3>Three weeks to the Dec.&nbsp;11 funding deadline: Thune says the debt limit gets punted to a Democratic Congress, and Democrats&rsquo; leadership race, decided Dec.&nbsp;1, is freezing talks over Iran war money</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; US debt &amp; fiscal</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (the Pentagon-money squeeze led on Nov.&nbsp;19). Trigger: new verifiable fact &mdash; Thune&rsquo;s on-record forecast that the debt limit slips into 2027, and Senate Republicans&rsquo; decision to try a bipartisan route on defense money.</p>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Semafor, Fox News), across three articles.</p>
+  <p>Majority Leader John Thune told Semafor Thursday that Republicans likely lack the votes to raise the debt ceiling on a party-line basis in either chamber, that it &ldquo;probably ends up getting punted,&rdquo; and that with Treasury&rsquo;s extra steps the deadline falls in the second half of 2027. That means Trump negotiates the debt limit with a Democratic House and Senate. Funding past Dec.&nbsp;11 needs at least seven Senate Democrats, and Thune says Democrats told him they won&rsquo;t talk until their leadership race ends on Dec.&nbsp;1. Chris Van Hollen, challenging Chuck Schumer, wants language barring money for the Iran war (<a href="https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt">Semafor</a>).</p>
+  <p>Republicans weighed pushing the administration&rsquo;s $350&nbsp;billion defense request through reconciliation, then, after a closed-door meeting with Deputy Defense Secretary Steve Feinberg, chose to try a bipartisan bill first. A non-binding Iran war-powers resolution also failed in the Senate, even with Republicans Susan Collins, Lisa Murkowski and Rand Paul joining Democrats (<a href="https://www.foxnews.com/politics/dems-gop-rebels-fail-rein-trumps-iran-war-senate-bigger-battle-looms">Fox News</a>). Rosa DeLauro, the top House appropriations Democrat, wants a stopgap only through March and says Democrats are &ldquo;not going to be doing billions of dollars for a war of choice&rdquo; (<a href="https://www.foxnews.com/politics/democrats-enter-congressional-majority-government-shutdown">Fox News</a>).</p>
+  <p><b>Why it matters to you.</b> A shutdown in mid-December hits federal paychecks and contractors before the holidays; a debt-limit fight in 2027 is the next big Treasury-market risk. Both now run through a Democratic caucus that has not picked its leader.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who would cause a shutdown?</span>
+    <p><b>Dispute type.</b> Interpretive and political. Thune says he is &ldquo;increasingly concerned&rdquo; Democrats will start &ldquo;a third government shutdown this year&rdquo;; House Republicans Ryan Zinke and Mike Haridopolos of Florida told Fox they fear the same. Tim Kaine says Republicans would be the ones shutting the government &ldquo;to maintain an illegal war&rdquo; and &ldquo;we&rsquo;re not gonna shut government down.&rdquo; Chris Coons says Democrats are &ldquo;in a really tough place&rdquo; (Fox News).</p>
+    <p><b>Vantage, interests, access, timing.</b> Thune spoke on the record to Semafor and is setting blame before his majority ends; Fox&rsquo;s House sources are Republicans framing the new majority. Kaine and DeLauro speak for Democrats who campaigned against the war. Semafor had Thune directly; Fox had both parties&rsquo; senators. All of it is pre-negotiation positioning.</p>
+    <p><b>What it means for you.</b> Watch the Dec.&nbsp;1 Democratic vote: a Van Hollen win makes an Iran funding condition likely; a Schumer win points to a plain stopgap.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the December funding fight?</b></p>
+    <label><input type="radio" name="fb-funding" value="dec1"> When the Dec.&nbsp;1 Democratic leadership vote shows whether an Iran-money ban becomes the caucus demand</label>
+    <label><input type="radio" name="fb-funding" value="cr-text"> When stopgap text appears showing its end date and what it says about war funding</label>
+    <label><input type="radio" name="fb-funding" value="xdate"> Only if Treasury publishes a debt-limit date earlier than the second half of 2027</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt">Semafor</a> &middot;
+    <a href="https://www.foxnews.com/politics/dems-gop-rebels-fail-rein-trumps-iran-war-senate-bigger-battle-looms">Fox News (war powers)</a> &middot;
+    <a href="https://www.foxnews.com/politics/democrats-enter-congressional-majority-government-shutdown">Fox News (shutdown)</a>
+  </p>
+</article>
+
+<article id="trump-money">
+  <h3>Kirkland &amp; Ellis did at least $11.8&nbsp;million in free work for Trump&rsquo;s agencies, Democrats say, as a new disclosure shows his accounts bought Palantir and SpaceX around federal awards</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="meta">Continuing lead (paid access led on Nov.&nbsp;19). Trigger: material connection plus new verifiable facts &mdash; a new presidential financial disclosure and the Democrats&rsquo; law-firm letters, both dated Thursday.</p>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, Al Jazeera, NPR), plus the House Judiciary Democrats&rsquo; release.</p>
+  <p>Rep. Jamie Raskin and Sens. Richard Blumenthal and Adam Schiff say Kirkland &amp; Ellis provided at least $11.8&nbsp;million in free legal services after being threatened with an EEOC investigation: about $4&nbsp;million to Commerce, $2.2&nbsp;million to Defense, $1.6&nbsp;million to the Postal Service, $2&nbsp;million to the U.S. International Development Finance Corporation and $1.8&nbsp;million for the U.S.&ndash;Japan investment entity. They say the firm balked at helping rename the Kennedy Center and build the president&rsquo;s arch, and they sent follow-up letters to nine other firms, including Paul, Weiss, Skadden and Sullivan &amp; Cromwell (<a href="https://democrats-judiciary.house.gov/media-center/press-releases/after-one-law-firm-reveals-being-coerced-into-providing-118-million-in-free-legal-work-to-trump-administration-ranking-members-raskin-and-blumenthal-and-sen-schiff-slam-nine-other-law-firms-for-stonewalling-congressional">House Judiciary Democrats</a>; <a href="https://www.aljazeera.com/news/2026/11/20/democrats-say-law-firm-gave-11-8m-worth-of-service-to-trump-administration">Al Jazeera</a>).</p>
+  <p>Separately, CNBC&rsquo;s analysis of Trump&rsquo;s September disclosure counts 751 transactions worth roughly $40.9&nbsp;million to $148.1&nbsp;million. His accounts bought Palantir on Sept.&nbsp;2 and 9; HUD gave Palantir a $10.4&nbsp;million contract a week later and Homeland Security a $32.1&nbsp;million one on Sept.&nbsp;29. They bought $100,001&ndash;$250,000 of SpaceX debt on Sept.&nbsp;1, before NASA&rsquo;s $946&nbsp;million SpaceX expansion on Sept.&nbsp;18. The White House says independent managers make all trades, and CNBC says there is no evidence Trump directed them (<a href="https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html">CNBC</a>). Only CNBC has published this analysis, and we did not read the filing itself.</p>
+  <p><b>Why it matters to you.</b> These are the files a Democratic Congress will subpoena first. The law-firm letters are the most specific yet on what the settlements bought, and the trades show a president still holding single stocks in companies his agencies pay.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; coercion and conflicts, or managed at arm&rsquo;s length?</span>
+    <p><b>Dispute type.</b> Interpretive. The Democrats call the deals a &ldquo;corrupt bargain&rdquo; and &ldquo;unprecedented official coercion.&rdquo; White House spokesman Davis Ingle says &ldquo;all investment decisions are made entirely by independent managers&rdquo; (CNBC). From the right, Ben Shapiro told NPR a &ldquo;whiff of corruption&rdquo; around the White House, especially the family&rsquo;s World Liberty Financial crypto company, helped cost Republicans the midterms (<a href="https://text.npr.org/nx-s1-6034593">NPR</a>).</p>
+    <p><b>Vantage, interests, access, timing.</b> The Democrats received Kirkland&rsquo;s numbers two days after the election and will hold subpoena power from January. The White House has the account statements but has not released them. Shapiro campaigned for Trump in 2024 and now positions himself for 2028. CNBC worked from public disclosures and contracting records.</p>
+    <p><b>What it means for you.</b> No evidence yet shows Trump directed a trade or that a firm&rsquo;s free work bought a decision. The firms&rsquo; own records, which most have refused to produce, are what would show it.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the money around the White House?</b></p>
+    <label><input type="radio" name="fb-trumpmoney" value="arch"> When one of the nine other firms admits free work on the arch, the Kennedy Center or another Trump project</label>
+    <label><input type="radio" name="fb-trumpmoney" value="ig"> When an inspector general or ethics office opens a review of a trade timed to a contract award</label>
+    <label><input type="radio" name="fb-trumpmoney" value="gop-break"> When Republican senators, not just commentators, call for a blind trust or divestment</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://democrats-judiciary.house.gov/media-center/press-releases/after-one-law-firm-reveals-being-coerced-into-providing-118-million-in-free-legal-work-to-trump-administration-ranking-members-raskin-and-blumenthal-and-sen-schiff-slam-nine-other-law-firms-for-stonewalling-congressional">House Judiciary Democrats</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/20/democrats-say-law-firm-gave-11-8m-worth-of-service-to-trump-administration">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html">CNBC</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6034593">NPR</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar today. No per-item questions; one question on the whole tier follows the last item.</p>
+
+<article id="jpm-breach">
+  <h3>Hackers reached a vendor holding JPMorgan, Visa and Mastercard marketing data; the companies say names and emails may be exposed, not accounts</h3>
+  <div class="meta"><span class="chip">Core &mdash; US financials</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Fox&nbsp;13, Semafor), with JPMorgan&rsquo;s statement as quoted by Reuters and the WSJ via Fox&nbsp;13.</p>
+  <p>JPMorgan, Visa and Mastercard said a cyberattack on a third-party provider, which the Wall Street Journal places in the Asia-Pacific region, may have exposed customer information. JPMorgan says attackers reached &ldquo;certain marketing data&rdquo; that may include names and email addresses, that its own systems were not affected, that it will offer free credit monitoring, and that there is &ldquo;no connection&rdquo; to this week&rsquo;s payment disruption (<a href="https://www.fox13news.com/news/jp-morgan-service-providers-cyberattack-what-we-know">Fox&nbsp;13</a>). Semafor describes it as a ransomware attack (<a href="https://www.semafor.com/article/11/19/2026/third-party-breach-exposes-jpmorgan-visa-and-mastercard-customer-data">Semafor</a>). We could not confirm the vendor&rsquo;s name or how many customers are affected; no company has said. If you bank with Chase, expect phishing emails that use your real name.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.fox13news.com/news/jp-morgan-service-providers-cyberattack-what-we-know">Fox&nbsp;13</a> &middot; <a href="https://www.semafor.com/article/11/19/2026/third-party-breach-exposes-jpmorgan-visa-and-mastercard-customer-data">Semafor</a></p>
+</article>
+
+<article id="anthropic">
+  <h3>Anthropic closes its first day at $97.17, up 17% from its $83 offer price; overnight, Asian chip stocks fall 5&ndash;6% and SoftBank drops 14.5%</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Core &mdash; Macro &amp; markets</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (BBC, Al Jazeera, CNBC).</p>
+  <p>Anthropic opened at about $111.50, closed at $97.17 and ended worth roughly $1.76&nbsp;trillion, while the Nasdaq fell nearly 2.3% (<a href="https://www.bbc.co.uk/news/articles/c3x29ggenz12o">BBC</a>). On Friday Japan&rsquo;s Nikkei fell 5.1%, Korea&rsquo;s Kospi 5.2% and Taiwan&rsquo;s Taiex 6.2%; one economist told Al Jazeera the listing &ldquo;diverted liquidity from established AI plays&rdquo; rather than lifting them (<a href="https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears">Al Jazeera</a>). SoftBank, which has put $64.6&nbsp;billion into OpenAI, closed 14.48% lower, its worst day since August 2024 (<a href="https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html">CNBC</a>). It runs because of the AI-debt weighting you asked for: the companies most exposed to OpenAI and to chip demand took the hit, not the newcomer. Follow-up to the Nov.&nbsp;19 lead, now with the first trade.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.co.uk/news/articles/c3x29ggenz12o">BBC</a> &middot; <a href="https://www.aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears">Al Jazeera</a> &middot; <a href="https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html">CNBC</a></p>
+</article>
+
+<article id="ukraine">
+  <h3>Kushner says Russia is &ldquo;comfortable&rdquo; with an Article&nbsp;5-style guarantee for Ukraine and Trump is &ldquo;open&rdquo; to it; Moscow&rsquo;s deputy foreign minister calls any &ldquo;quasi membership&rdquo; unacceptable</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Geopolitics</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CNBC, Al Jazeera).</p>
+  <p>Speaking in Berlin with European leaders hours after the Shenzhen summit, envoy Jared Kushner said, &ldquo;I think we&rsquo;ve got the Russians comfortable with that concept where any security guarantee for Ukraine would be based on Article&nbsp;5,&rdquo; adding that such a U.S. commitment is &ldquo;a really, really big deal&rdquo; and must be in America&rsquo;s interest (<a href="https://www.cnbc.com/2026/11/20/kushner-ukraine-nato-russia-trump-putin.html">CNBC</a>). Russian Deputy Foreign Minister Sergei Ryabkov said any &ldquo;quasi membership&rdquo; for Kyiv was totally unacceptable, according to Russian state media, and analysts told Al Jazeera the idea &ldquo;stretches credulity&rdquo; (<a href="https://www.aljazeera.com/news/2026/11/20/kushner-says-russia-ok-with-nato-like-security-pact-for-ukraine-is-it">Al Jazeera</a>). An Article&nbsp;5-style pledge would be a treaty-scale U.S. commitment; Moscow&rsquo;s public line contradicts Kushner&rsquo;s account, and Russia struck Kyiv&rsquo;s bridges overnight (CNBC).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/20/kushner-ukraine-nato-russia-trump-putin.html">CNBC</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/20/kushner-says-russia-ok-with-nato-like-security-pact-for-ukraine-is-it">Al Jazeera</a></p>
+</article>
+
+<article id="tps">
+  <h3>The Ninth Circuit keeps Venezuelan TPS suspended until it rules, and the administration withdraws its Supreme Court request; Miami-Dade&rsquo;s mayor asks Congress to restore it this session</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (Al Jazeera, SCOTUSblog, Univision), plus the court&rsquo;s order.</p>
+  <p>A Ninth Circuit panel extended its administrative stay until seven days after it rules (<a href="https://storage.courtlistener.com/recap/gov.uscourts.ca9.0f33e6b0-a278-40ff-b9ad-fa3d844a4ed4/gov.uscourts.ca9.0f33e6b0-a278-40ff-b9ad-fa3d844a4ed4.109.0.pdf">order</a>), so Judge Edward Chen&rsquo;s order restoring protection for some 600,000 Venezuelans did not take effect today as scheduled (<a href="https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans">Al Jazeera</a>). The solicitor general then withdrew his Supreme Court application, saying he would return if the Ninth Circuit rules against the government; he had warned about 1,800 Venezuelans in detention could otherwise be released (<a href="https://www.scotusblog.com/2026/11/trump-administration-asks-supreme-court-to-block-lower-court-ruling-keeping-protected-status-in-/">SCOTUSblog</a>). Miami-Dade Mayor Daniella Levine Cava wrote to congressional leaders and Florida&rsquo;s delegation urging them to restore TPS &ldquo;in this session, not the next&rdquo; (<a href="https://www.univision.com/local/miami-wltv/alcaldesa-miami-dade-pide-restablecer-tps-venezolanos-20-noviembre">Univision</a>). Work permits for Florida&rsquo;s large Venezuelan community stay in limbo with no ruling date. Follow-up to the Nov.&nbsp;19 item; today&rsquo;s deadline passed without the restoration.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/11/19/us-appeals-court-lets-trump-end-tps-deportation-protections-for-venezuelans">Al Jazeera</a> &middot; <a href="https://www.scotusblog.com/2026/11/trump-administration-asks-supreme-court-to-block-lower-court-ruling-keeping-protected-status-in-/">SCOTUSblog</a> &middot; <a href="https://www.univision.com/local/miami-wltv/alcaldesa-miami-dade-pide-restablecer-tps-venezolanos-20-noviembre">Univision</a> &middot; <a href="https://storage.courtlistener.com/recap/gov.uscourts.ca9.0f33e6b0-a278-40ff-b9ad-fa3d844a4ed4/gov.uscourts.ca9.0f33e6b0-a278-40ff-b9ad-fa3d844a4ed4.109.0.pdf">Ninth Circuit order</a></p>
+</article>
+
+<article id="fl-flood">
+  <h3>As floods hit Broward and Miami-Dade, a Herald review finds DeSantis vetoed at least $9.6&nbsp;million in flood projects there this year, more than half of the $18.4&nbsp;million he cut statewide</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Miami Herald, Florida Politics), plus WBBH on Amendment&nbsp;3&rsquo;s start date.</p>
+  <p>The largest cuts were a $2&nbsp;million stormwater project in Hallandale Beach, vetoed two years running, and a $1.5&nbsp;million pump station in Miami&rsquo;s East Flagami. The Herald says the projects likely would not have been finished in time for this week&rsquo;s floods. DeSantis&rsquo;s office did not respond (<a href="https://www.miamiherald.com/news/politics-government/state-politics/article318156317.html">Miami Herald</a>). Florida Politics counted more than $23&nbsp;million in South Florida water, sewer and flood vetoes in June&rsquo;s budget, alongside $396&nbsp;million kept for water-quality work statewide (<a href="https://floridapolitics.com/archives/804999-from-homestead-to-hallandale-beach-gov-desantis-veto-pen-sinks-23m-in-water-projects/">Florida Politics</a>). Democratic Senate candidate Angie Nixon says the vetoes targeted Democratic areas and that Amendment&nbsp;3 will make local funding worse; state GOP chair Evan Power says Republican areas were hit too (Herald). Amendment&nbsp;3, which takes effect Jan.&nbsp;1, cuts property-tax revenue for every county, Pasco and Pinellas included (<a href="https://www.gulfcoastnewsnow.com/article/florida-lawmakers-resist-desantis-property-tax-plan/74481590">WBBH</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.miamiherald.com/news/politics-government/state-politics/article318156317.html">Miami Herald</a> &middot; <a href="https://floridapolitics.com/archives/804999-from-homestead-to-hallandale-beach-gov-desantis-veto-pen-sinks-23m-in-water-projects/">Florida Politics</a> &middot; <a href="https://www.gulfcoastnewsnow.com/article/florida-lawmakers-resist-desantis-property-tax-plan/74481590">WBBH</a></p>
+</article>
+
+<article id="usf-fee">
+  <h3>A draft bipartisan bill would put a Universal Service Fund fee on home broadband, adding up to $100 to internet bills, Fox News reports</h3>
+  <div class="meta"><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Fox News), which reviewed the draft.</p>
+  <p>Sens. Deb Fischer (R-Neb.) and Ben Ray Luj&aacute;n (D-N.M.) have been drafting a bill that would charge households and businesses with broadband a USF fee, raise the fee on cell lines, and set no cap on fund spending. The fund paid out more than $8&nbsp;billion last year while its contribution base fell 41% from 2018 to 2026, per figures Fox cites. Fischer called the report &ldquo;gossip&rdquo;; Luj&aacute;n&rsquo;s office said &ldquo;no proposal has been finalized&rdquo; (<a href="https://www.foxnews.com/politics/americans-could-face-100-hike-internet-bills-under-plan-eyed-lawmakers">Fox News</a>). We could not confirm whether the $100 figure is per month or per year, or how it was calculated, because the draft has not been published. Underreported: we found no other outlet on it.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.foxnews.com/politics/americans-could-face-100-hike-internet-bills-under-plan-eyed-lawmakers">Fox News</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="usf"> The broadband fee, if Fischer and Luj&aacute;n file a bill with a dollar figure per household</label>
+  <label><input type="radio" name="fb-below" value="floods"> DeSantis&rsquo;s flood vetoes, if Donalds&rsquo;s first budget restores the Hallandale and Flagami pump money</label>
+  <label><input type="radio" name="fb-below" value="breach"> The bank vendor breach, if the vendor is named or exposure goes beyond names and emails</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 92 sources checked; 18 in the first sweep before any weighting category was consulted. Five leads and six items below the line (11 stories). Four leads carry over from earlier editions, each with a stated trigger: the outage wave (the director&rsquo;s exit and the CISA holds), the chip licenses (the committee release and California&rsquo;s subpoena), the funding fight (Thune&rsquo;s debt-limit forecast and the GOP&rsquo;s bipartisan turn), and money around the White House (the new disclosure and law-firm letters). The permitting lead is new. Marker tallies: PS&nbsp;3 &middot; IC&nbsp;7 &middot; SS&nbsp;1 &middot; U&nbsp;0. Claims we could not confirm are stated in the text with reasons: an independent household-savings estimate for the permitting bill, which chip buyers took delivery, the breached vendor and number of customers, and the basis of the $100 broadband figure. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-20-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>The Fed&rsquo;s Philip Jefferson said the AI build-out is &ldquo;exerting upward pressure&rdquo; on inflation. (<a href="https://thehill.com/business/6231715-federal-reserve-ai-inflation/">The Hill</a>, headline only). Missed: Fed speeches don&rsquo;t run; your settled preference is prints and decisions only.</li>
+    <li>Lisa Cook&rsquo;s lawyer signals she won&rsquo;t attend the White House&rsquo;s Dec.&nbsp;14 hearing on firing her; Sen. Elizabeth Warren calls it a &ldquo;show trial.&rdquo; (<a href="https://www.semafor.com/article/11/20/2026/feds-lisa-cook-speaks-ahead-of-hearing">Semafor</a>). Missed: ran on Nov.&nbsp;18; nothing new until the hearing date.</li>
+    <li>U.S. measles cases this year have passed 5,700, more than twice all of 2025. (<a href="https://news.asu.edu/20261119-health-and-medicine-what-know-now-us-has-lost-measles-elimination-status">ASU News</a>). Missed: the loss of elimination status ran on Nov.&nbsp;17; no new policy step since.</li>
+    <li>Judge Steven Merryday in Tampa let Trump&rsquo;s defamation suit against the New York Times and Penguin Random House proceed. (<a href="https://thehill.com/media/6231675-trump-ny-times-lawsuit-proceeds/">The Hill</a>, headline only). Missed: an early ruling on motions to dismiss; no trial date.</li>
+    <li>The FDIC proposed rules for custodial deposits under the ROAD to Housing Act; comments are due Jan.&nbsp;19. (<a href="https://www.federalregister.gov/documents/2026/11/20/2026-23669/custodial-deposits-implementing-the-21st-century-road-to-housing-act">Federal Register</a>). Missed: a technical brokered-deposit change whose effect on depositors is not yet clear.</li>
+    <li>AMD shares fell on a short seller&rsquo;s report alleging China exposure. (<a href="https://www.cnbc.com/2026/11/19/amd-falls-on-short-seller-report-of-alleged-china-exposure.html">CNBC</a>). Missed: a stock move on an unverified short report; the license files in the chips lead are the documented version.</li>
+    <li>A Florida inspector general says she was fired for &ldquo;political reasons.&rdquo; (<a href="https://www.tampabay.com/news/florida-politics/2026/11/19/inspector-general-alligator-alcatraz-fired-emergency-management/">Tampa Bay Times</a>, paywalled beyond the lede). Missed: one account we could not read in full, and no policy step yet.</li>
+    <li>Amazon is warning New York customers of higher costs if Mayor Mamdani&rsquo;s delivery-worker law passes. (<a href="https://www.cnbc.com/2026/11/19/amazon-nyc-delivery-protection-act.html">CNBC</a>). Missed: a New York City fight with no Florida effect yet.</li>
+    <li>The Army postponed detonating unstable lead azide in Iowa after state lawmakers objected. (<a href="https://www.fox13news.com/news/what-is-lead-azide-from-iowa-army-explosion">Fox&nbsp;13</a>). Missed: a local hazard with no national policy change.</li>
+    <li>A poll for a free-market group finds 48% of likely voters in Texas and Florida back a federal billionaire tax. (<a href="https://www.semafor.com/article/11/19/2026/conservative-states-warm-to-billionaire-tax">Semafor</a>). Missed: polling, an anti-topic, with no bill moving.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
