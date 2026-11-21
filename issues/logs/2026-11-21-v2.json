@@ -1,0 +1,607 @@
+{
+ "date": "2026-11-21",
+ "edition": "2026-11-21-v2",
+ "filename": "issues/2026-11-21-v2.html",
+ "generated_at_et": "2026-11-21 ~07:37 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "Feeds, fronts and X were swept before any weighting category in config.md was consulted for topic choice (config.md and NEWSBOT_2.0.md were read at start for rules only). Yesterday's issue was opened for layout and repeat checks only after the candidate list existed.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "NYT home-page RSS (headlines only)",
+  "PBS NewsHour headlines RSS",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (returned a stale January 2025 feed; not used)",
+  "X news search (last 16h)",
+  "X US trends"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "NYT home-page RSS (headlines only)",
+  "PBS NewsHour headlines RSS",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (returned a stale January 2025 feed; not used)",
+  "X news search (last 16h)",
+  "X US trends"
+ ],
+ "access_denied": [
+  "axios.com article pages (403)",
+  "politico.com article pages (403)",
+  "thehill.com article pages (403; RSS worked)",
+  "apnews.com (403)",
+  "wfla.com article pages (403; RSS worked)",
+  "war.gov (403 to curl; read via search excerpt)",
+  "nytimes.com articles (403)",
+  "federalregister.gov API (empty response; no Saturday edition)",
+  "WSJ RSS (stale Jan 2025 file)"
+ ],
+ "candidate_list": [
+  {
+   "item": "Russian missiles and drone land in Poland near Koalicja 2026 drills; NATO 'grave violation'; Sparta II ship fire in Gulf of Finland",
+   "decision": "keep-lead",
+   "reason": "Treaty-ally territory hit; US Article 5 channel and peace-talk test; Trump vs Warsaw divergence on intent."
+  },
+  {
+   "item": "S&P 500 and Dow close in correction; Nasdaq worst week since 2020; Reuters: SEC examining Nvidia accounting",
+   "decision": "keep-lead",
+   "reason": "Threshold event plus new verifiable fact; AI debt/credit weighting from topic check; Treasury series confirms yield move."
+  },
+  {
+   "item": "Trump threatens ban/'tremendous tax' on US firms building data centers abroad",
+   "decision": "keep-lead",
+   "reason": "Data-center/power consequence; unscripted policy with no mechanism; voter backlash data."
+  },
+  {
+   "item": "EO 14438: federal contractors must notify White House of congressional requests",
+   "decision": "keep-lead",
+   "reason": "Primary document; hits consultancies/banks/AI vendors with federal contracts; underreported reach."
+  },
+  {
+   "item": "Pentagon PURSUE Release 08: 43 UAP files incl. BAASS vault plan, 2023 radar slide, CENTCOM videos",
+   "decision": "keep-lead",
+   "reason": "Core UAP beat; first release since Oct 23; primary release plus two newsrooms."
+  },
+  {
+   "item": "FBI NCIC database suspected breach; USDA farm payment system targeted",
+   "decision": "keep-also",
+   "reason": "New verifiable fact on outage/cyber thread; scope unknown so short item."
+  },
+  {
+   "item": "Citizens flood-insurance mandate from Jan 1 regardless of flood zone; Citizens CEO stepping down",
+   "decision": "keep-also",
+   "reason": "Direct household cost for Tampa Bay/Pasco homeowners; dated trigger."
+  },
+  {
+   "item": "Anthropic mathematician claims Claude-aided Riemann hypothesis proof",
+   "decision": "keep-also",
+   "reason": "Major AI capability claim, verification pending; marked unconfirmed."
+  },
+  {
+   "item": "IRGC claims two US drones over Hormuz; Treasury sanctions four oil trustees; FT: Trump weighing new strikes",
+   "decision": "keep-also",
+   "reason": "US war channel; primary sanctions release; drone claim unverified."
+  },
+  {
+   "item": "Guardian investigation: complaints up ~75% after CFPB dropped suits; Warren/Schumer/Van Hollen vow restoration",
+   "decision": "keep-also",
+   "reason": "Core US financials; underreported; single-sourced."
+  },
+  {
+   "item": "UN CCW agrees to 'elaborate' autonomous-weapons instrument by 2028 over US/Russia/Israel opposition",
+   "decision": "keep-also",
+   "reason": "AI policy with explicit US position."
+  },
+  {
+   "item": "Second judge (Brinkema) blocks Trump arch; DOJ to appeal",
+   "decision": "cut-also-noted",
+   "reason": "Narrow DC project; no wider policy effect."
+  },
+  {
+   "item": "DOJ Peltola 'Decoy Dan' probe: 50 FBI agents, 200+ subpoenas (Fox)",
+   "decision": "cut-also-noted",
+   "reason": "No charges or new step since Wednesday."
+  },
+  {
+   "item": "Casten/Lieu prediction-market insider-trading whistleblower bill; Huang bets (Semafor)",
+   "decision": "cut-also-noted",
+   "reason": "Topic-check watch item; bill introduction only."
+  },
+  {
+   "item": "Virginia first measles death of 2026",
+   "decision": "cut-also-noted",
+   "reason": "Elimination-status story ran Nov 17; no new federal step."
+  },
+  {
+   "item": "JPMorgan CFO succession (de Best for Barnum)",
+   "decision": "cut-also-noted",
+   "reason": "Personnel with no policy effect."
+  },
+  {
+   "item": "Bayer $7.25B Roundup settlement approved",
+   "decision": "cut-also-noted",
+   "reason": "Payout, not regulation."
+  },
+  {
+   "item": "Meta rethinks net-zero as AI emissions up 45%",
+   "decision": "cut-also-noted",
+   "reason": "Review, no decision; headline only."
+  },
+  {
+   "item": "Mexico captures FBI-wanted cartel boss (Sinaloa trend on X)",
+   "decision": "cut-also-noted",
+   "reason": "Details thin; no extradition step reported."
+  },
+  {
+   "item": "ICE training inspector-general findings (NYT)",
+   "decision": "cut-also-noted",
+   "reason": "Paywalled; report not found."
+  },
+  {
+   "item": "COP31 deadlock over fossil fuels",
+   "decision": "cut-also-noted",
+   "reason": "No clear US stake."
+  },
+  {
+   "item": "Florida FLHSMV license/registration system outage",
+   "decision": "cut-also-noted",
+   "reason": "Service outage, no cause or policy response."
+  },
+  {
+   "item": "Tillis holds CISA nominee and GAO nominee",
+   "decision": "cut",
+   "reason": "Ran Nov 20; holds already reported."
+  },
+  {
+   "item": "Jensen Huang to testify publicly before Senate Banking",
+   "decision": "cut",
+   "reason": "No date; folded context into AI lead decision; Dec 1 House interview already reported."
+  },
+  {
+   "item": "Trump press conference: Miller/Rubio/Vance succession talk",
+   "decision": "cut",
+   "reason": "Horse-race, anti-topic."
+  },
+  {
+   "item": "Kushner failed to disclose investment (Atlantic via Hill opinion)",
+   "decision": "cut",
+   "reason": "Opinion column headline only; could not read underlying report."
+  },
+  {
+   "item": "Navy budget pick has family investments in Trump Jr-linked contractor (FT)",
+   "decision": "cut",
+   "reason": "Paywalled; single headline."
+  },
+  {
+   "item": "Polar vortex breakdown threatens Europe gas stocks",
+   "decision": "cut",
+   "reason": "Europe-focused weather risk; no US price effect stated."
+  },
+  {
+   "item": "Data center construction costs up 13% (Turner & Townsend)",
+   "decision": "fold",
+   "reason": "Used as context in data-center lead."
+  },
+  {
+   "item": "NC Gov. Stein: roll back data-center subsidies",
+   "decision": "fold",
+   "reason": "Used in data-center divergence (headline only)."
+  },
+  {
+   "item": "Electoral College workaround (NPVIC) within reach",
+   "decision": "cut",
+   "reason": "No new state action this week."
+  },
+  {
+   "item": "GTA VI $3.8B launch",
+   "decision": "cut",
+   "reason": "Entertainment anti-topic."
+  },
+  {
+   "item": "Palisades fire arson conviction",
+   "decision": "cut",
+   "reason": "Crime without policy consequence."
+  },
+  {
+   "item": "Fiona the hippo death/Senate resolution",
+   "decision": "cut",
+   "reason": "Anti-topic."
+  },
+  {
+   "item": "Myanmar found responsible for genocide by ICJ",
+   "decision": "cut",
+   "reason": "No US channel beyond statements."
+  },
+  {
+   "item": "Senate GOP confirms judges in pre-holiday sprint",
+   "decision": "cut",
+   "reason": "Routine confirmations; no single consequential nominee identified."
+  },
+  {
+   "item": "Meta India offices protests",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "CrowdStrike reportedly in talks to buy Zscaler",
+   "decision": "cut",
+   "reason": "Unconfirmed deal report; market move."
+  },
+  {
+   "item": "Trump says he still has confidence in Lutnick",
+   "decision": "cut",
+   "reason": "No action."
+  },
+  {
+   "item": "Senate Democratic leader race (Van Hollen vs Schumer) and Israel",
+   "decision": "cut",
+   "reason": "Vote Dec 1; nothing new today."
+  },
+  {
+   "item": "Laurel Lee seeks top GOP Judiciary spot (TBT)",
+   "decision": "cut",
+   "reason": "Paywalled; committee assignment only."
+  },
+  {
+   "item": "DeSantis schedules state Senate special election",
+   "decision": "cut",
+   "reason": "South Florida seat; no local effect."
+  },
+  {
+   "item": "Tampa council changes that could pull power from mayor",
+   "decision": "cut",
+   "reason": "Charter step; ballot later; paywalled."
+  },
+  {
+   "item": "Waymo pulls cars from US freeways; Tampa angle",
+   "decision": "cut",
+   "reason": "Product/safety pause, no regulation."
+  },
+  {
+   "item": "US and Venezuela reestablish military ties (Semafor)",
+   "decision": "cut",
+   "reason": "Short Semafor item, two days old."
+  },
+  {
+   "item": "Mexico migrant caravan walks toward US border",
+   "decision": "cut",
+   "reason": "Movement, no policy step."
+  },
+  {
+   "item": "Zelensky says Crimean Bridge strikes a fair response",
+   "decision": "cut",
+   "reason": "Folded into Poland context only."
+  },
+  {
+   "item": "Iraq Basra power-station fire",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "Denmark expels Russian attache over assassination plot",
+   "decision": "cut",
+   "reason": "Mentioned in Al Jazeera; no US channel."
+  },
+  {
+   "item": "Gauteng coalition deals (X trend)",
+   "decision": "cut",
+   "reason": "Foreign local politics; no US channel."
+  },
+  {
+   "item": "Matt Taibbi joins The Free Press (X trend)",
+   "decision": "cut",
+   "reason": "Media personnel."
+  }
+ ],
+ "candidate_count": 51,
+ "selected": {
+  "leads": [
+   "poland",
+   "ai-rout",
+   "dc-abroad",
+   "contractors",
+   "uap"
+  ],
+  "also_today": [
+   "fbi-ncic",
+   "citizens-flood",
+   "riemann",
+   "iran",
+   "cfpb",
+   "autonomous-weapons"
+  ],
+  "total_stories": 11
+ },
+ "story_floor_note": "11 stories, above the ~10 target.",
+ "continuing_leads": [
+  {
+   "id": "ai-rout",
+   "trigger": "threshold event: S&P 500 and Dow closed in correction; new verifiable fact: Reuters reports SEC enforcement focus on Nvidia accounting"
+  },
+  {
+   "id": "contractors",
+   "trigger": "new verifiable fact: EO 14438 extends Nov 17 testimony sign-off rule to contractors and subcontractors with contract penalties"
+  }
+ ],
+ "per_article_sources": {
+  "poland": {
+   "independent_newsrooms": 4,
+   "names": [
+    "BBC",
+    "The Guardian",
+    "Al Jazeera",
+    "ERR"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "ai-rout": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CNBC",
+    "NPR",
+    "Fortune"
+   ],
+   "wire": [
+    "Reuters"
+   ],
+   "primary": [
+    "home.treasury.gov par yield curve"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "dc-abroad": {
+   "independent_newsrooms": 2,
+   "names": [
+    "CNBC",
+    "BBC"
+   ],
+   "headline_only": [
+    "Axios",
+    "Politico"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "contractors": {
+   "independent_newsrooms": 1,
+   "names": [
+    "CNBC (Reuters)"
+   ],
+   "primary": [
+    "whitehouse.gov EO 14438"
+   ],
+   "marker": "Primary source"
+  },
+  "uap": {
+   "independent_newsrooms": 2,
+   "names": [
+    "CBS News",
+    "BBC"
+   ],
+   "primary": [
+    "war.gov release (search excerpt)"
+   ],
+   "other": [
+    "UAP Browser index"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "fbi-ncic": {
+   "independent_newsrooms": 2,
+   "names": [
+    "CNBC (Reuters)",
+    "BBC"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "citizens-flood": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Fox 13"
+   ],
+   "official": [
+    "hcfl.gov",
+    "citizensfla.com"
+   ],
+   "headline_only": [
+    "Tampa Bay Times"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "riemann": {
+   "independent_newsrooms": 2,
+   "names": [
+    "BBC",
+    "Scientific American"
+   ],
+   "marker": "Unconfirmed"
+  },
+  "iran": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Al Jazeera"
+   ],
+   "primary": [
+    "home.treasury.gov sb0697"
+   ],
+   "headline_only": [
+    "FT"
+   ],
+   "marker": "Primary source"
+  },
+  "cfpb": {
+   "independent_newsrooms": 1,
+   "names": [
+    "The Guardian"
+   ],
+   "marker": "Single-sourced"
+  },
+  "autonomous-weapons": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Al Jazeera",
+    "CNBC (Reuters)"
+   ],
+   "marker": "Independent corroboration"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: searched UAP/PURSUE disclosure, Pasco County and New Port Richey news, and JPMorgan; compared candidate list against every front swept and X US trends (K-pop awards, sports, Sinaloa capture).",
+  "result": "UAP: Release 08 published Nov 20 (included as lead). Pasco: school fall break, Ridge Road 70-home proposal, restaurant inspection; none at bar. JPMorgan: CFO succession (Also noted); vendor breach ran Nov 20.",
+  "underreported": "Two underreported finds: EO 14438's reach into private contractors (one readable newsroom by publication) and the Guardian's CFPB complaint analysis (single outlet)."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Strongest: AI sell-off/Nvidia SEC probe (lead); Riemann claim and autonomous-weapons talks (Also today). Meta net-zero to Also noted.",
+  "Core - Macro & markets": "Correction threshold folded into AI lead with Treasury 10-yr series; no data print today; Fed speeches skipped per preference.",
+  "World economy": "Polar-vortex gas risk cut (Europe-only); nothing else with a clear US channel.",
+  "Core - US debt & fiscal": "Nothing new since Nov 20 funding/debt-limit lead; 10-yr yield move noted in AI lead.",
+  "Core - US financials": "CFPB Guardian investigation (Also today); JPMorgan CFO succession to Also noted.",
+  "Core - US politics & policy": "EO 14438 contractor order (lead); arch injunction to Also noted.",
+  "Geopolitics": "Poland missiles and Gulf of Finland ship (lead); Iran drones/sanctions (Also today).",
+  "Science & public health": "Virginia measles death to Also noted; Riemann claim counted under AI.",
+  "Core - UAP disclosure": "PURSUE Release 08 (lead).",
+  "Energy & grid": "Data-center tax threat tied to grid/power bills (lead); no rate case today.",
+  "Elections and electoral process": "Peltola DOJ probe to Also noted (no new step); NPVIC cut.",
+  "Broader domestic institutions": "Contractor order (lead); FBI NCIC breach (Also today); ICE training findings to Also noted.",
+  "International with US channel": "Poland (lead), Iran and CCW talks (Also today).",
+  "Florida / Tampa Bay": "Citizens flood mandate (Also today); FLHSMV outage to Also noted; Tampa charter, Laurel Lee, special election cut.",
+  "Data centers / power / AI infrastructure": "Overseas data-center tax threat (lead) with construction-cost and NC subsidy context.",
+  "AI and financial services": "AI credit risk framed in AI lead (bank data-center lending as the watch item); no AI-specific bank regulation today."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 21 morning): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), already applied Nov 9 with wake condition closed. Topic-check answers (Nov 9-15) applied as weighting: AI debt/credit risk -> AI lead framing; prediction markets -> Also noted (bill introduction, not material).",
+ "config_change": null,
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "sources_checked_total": 91,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "NYT home-page RSS (headlines only)",
+  "PBS NewsHour headlines RSS",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (returned a stale January 2025 feed; not used)",
+  "X news search (last 16h)",
+  "X US trends",
+  "Treasury Daily Par Yield Curve, November 2026 (home.treasury.gov)",
+  "Al Jazeera: Russian missiles hit Poland explainer",
+  "BBC: Russian missile hits Poland as allies hold exercise",
+  "Guardian: Russian missiles and drone hit Poland",
+  "Reuters: Poland condemns Russian provocation (search excerpt)",
+  "AP: Russian missiles land in Poland (search excerpt)",
+  "ERR: Russian cargo ship Sparta II on fire in Gulf of Finland",
+  "Kyiv Post: Trump downplays incursions (search excerpt)",
+  "Hromadske: Trump says missiles entered Poland by mistake (search excerpt)",
+  "Politico Europe: Tusk says incursion seems intentional (search excerpt)",
+  "AFP: Warsaw denounces intentional provocation (search excerpt)",
+  "CNBC: S&P 500 correction, five forces",
+  "NPR: The AI boom had a really bad week",
+  "Reuters: SEC Nvidia probe examining accounting",
+  "Fortune: Nvidia Singapore revenue reporting change (search excerpt)",
+  "Bloomberg Tax: Wall Street regulator probes Nvidia accounting (search excerpt)",
+  "Seoul Economic Daily: SEC probes Nvidia accounting (search excerpt)",
+  "The Verge: Nvidia closes week down 14%",
+  "CNBC: Jensen Huang to testify publicly before Senate Banking",
+  "CNBC: Trump vows to stop US companies building data centers abroad",
+  "BBC: Trump threatens ban on US firms building AI data centres overseas",
+  "Bloomberg Law: Trump threatens to tax firms building data centers abroad (search excerpt)",
+  "SiliconANGLE: Trump plan to tax data centers abroad (search excerpt)",
+  "CNBC: Data center construction costs soar 13%",
+  "Politico: NC governor on data-center subsidies (headline; page 403)",
+  "Axios: Trump floats tax on overseas data centers (headline; page 403)",
+  "White House: Executive Order 14438",
+  "White House: EO 14438 fact sheet (search excerpt)",
+  "CNBC/Reuters: Trump orders contractors to notify White House",
+  "Constilumen: EO 14438 explainer (search excerpt)",
+  "Department of War: Eighth release of UAP files (search excerpt; page 403 to curl)",
+  "CBS News: New UFO files show contractor planned underground vault",
+  "BBC: US declassifies more UFO footage",
+  "UAP Browser: Release 8 index",
+  "CNBC/Reuters: FBI criminal information database hacked",
+  "BBC: FBI investigating apparent hack of criminal database",
+  "Fox 13: Citizens will require flood insurance Jan. 1",
+  "Hillsborough County: flood coverage mandatory for Citizens customers",
+  "Citizens Property Insurance: flood requirement page (search excerpt)",
+  "Tampa Bay Times: Citizens CEO stepping down (headline; paywalled)",
+  "BBC: Anthropic worker says he may have proved Riemann hypothesis",
+  "Scientific American: Anthropic mathematician claims Riemann proof",
+  "Scientific American: Riemann proof almost certainly true, mathematicians attest",
+  "AI Frontier Post: Tao first impressions (search excerpt)",
+  "Al Jazeera: Iran says it downed US drones over Hormuz",
+  "Treasury: Operation Economic Outcast sanctions press release",
+  "Epoch Times: Treasury targets Iranian middlemen (search excerpt)",
+  "FT: Trump considering new Iran strikes (headline only)",
+  "Guardian: Senators vow to restore CFPB after Guardian investigation",
+  "Al Jazeera: Nations agree to elaborate rules on killer robots",
+  "CNBC/Reuters: Countries agree to UN talks on killer robots",
+  "NPR: Second judge blocks Trump's arch",
+  "Fox News: FBI and DOJ personnel investigating Peltola victory",
+  "ABC News: DOJ ramps up Alaska probe (search excerpt)",
+  "CBS News: DOJ subpoenas in Alaska Senate probe (search excerpt)",
+  "Newsweek: Other Dan Sullivan probe widens (search excerpt)",
+  "Semafor: Trading soars on Huang prediction-market bets",
+  "The Hill: Casten, Lieu prediction-market whistleblower bill (headline; page 403)",
+  "The Hill: Virginia first measles death of 2026 (headline; page 403)",
+  "NPR: Electoral College workaround may be within reach",
+  "CNBC: Polar vortex breakdown threatens gas stocks",
+  "Semafor: US and Venezuela reestablish military ties",
+  "Fox 13: Florida driver's license systems down",
+  "JPMorganChase newsroom: CFO succession (search excerpt)",
+  "Cybersecurity Dive: JPMorgan, Visa confirm vendor-hack data (search excerpt)",
+  "Guardian: Dimon on UK bank tax (search excerpt)",
+  "Inside New Port Richey: Pasco schools fall break (search excerpt)",
+  "Pasco News Online: New Port Richey items (search excerpt)",
+  "Hoodline: Ridge Road 70-home proposal (search excerpt)"
+ ],
+ "first_sweep_count": 22,
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 48 unique links, 2026-11-21 ~07:35 ET: 40 returned 200; 8 returned 403 to curl (thehill.com x2, axios.com x2, ft.com, nytimes.com, politico.com, war.gov). All 403 links are bot-blocking sites taken from their own RSS feeds or search results; the Hill/Axios/FT/NYT/Politico items are labelled headline only, and war.gov content was read via search excerpt.",
+ "audit_attempts": {
+  "count": 3,
+  "results": [
+   "attempt 1 (~07:33 ET): exit 0, all hard gates passed; stories 11 (leads 5, also 6), continuations 2, radio groups 6, sources 91, no warnings",
+   "attempt 2 (~07:36 ET, after two wording fixes in the UAP and AI leads): exit 0, same counts, no warnings",
+   "attempt 3 (~07:37 ET, after adding link-check and audit fields to this log; final files): exit 0, same counts, no warnings"
+  ]
+ }
+}

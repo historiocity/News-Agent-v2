@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 21 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 21 November 2026 &middot; morning edition</div>
+  <h1>Russian missiles land in Poland; the AI sell-off becomes a correction as the SEC looks at Nvidia&rsquo;s books; Trump threatens a tax on data centers built abroad; contractors told to clear Congress&rsquo;s requests with the White House; the Pentagon&rsquo;s eighth UFO release</h1>
+  <p class="summary">Five leads, six below the line. Two Russian missiles and a drone came down in southeastern Poland near allied drills, Warsaw called it intentional and NATO a &ldquo;grave violation,&rdquo; and on Saturday a Russian cargo ship burned in the Gulf of Finland; the S&amp;P&nbsp;500 and Dow closed in correction after the Nasdaq&rsquo;s worst week since March 2020, as Reuters reported the SEC is examining Nvidia&rsquo;s accounting; Trump said U.S. companies will be barred from building AI data centers abroad or face a &ldquo;tremendous tax,&rdquo; a plan his staff had not heard; an executive order tells federal contractors to notify the White House of any congressional request and withhold what it deems privileged; and the Pentagon&rsquo;s eighth UFO release includes a contractor&rsquo;s plan for a vault for &ldquo;exotic material or tissue.&rdquo; Below the line: a suspected breach of the FBI&rsquo;s national crime database; Citizens&rsquo; flood-insurance mandate from Jan.&nbsp;1; an Anthropic mathematician&rsquo;s Riemann claim; Iran&rsquo;s drone claims and new Treasury sanctions; a Guardian investigation of the CFPB; and U.N. talks on autonomous weapons.</p>
+  <p class="sub">Saturday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-21-v2.html</code>.</p>
+  <p class="prov"><b>91 sources checked, 22 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera, BBC front plus its U.S. and business feeds, CNBC, Guardian US, The Hill, Fox News politics and latest feeds, Semafor, Tampa Bay Times, Fox&nbsp;13, WFLA, Politico, Axios, NYT and FT headlines, PBS NewsHour, the WSJ world feed (which returned a stale January 2025 file and was not used), an X news search and X&rsquo;s U.S. trends. The Federal Register API returned nothing this morning (it does not publish on Saturdays), so the executive order below was read on whitehouse.gov. Axios, Politico and The Hill article pages returned access-denied pages; their items appear only as headlines.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure (the eighth release is a lead), Pasco County and New Port Richey news, and JPMorgan, and compared the candidate list with every front swept and X&rsquo;s U.S. trends (K-pop awards, sports and a Sinaloa capture; nothing else news-bearing). Pasco&rsquo;s news is schools&rsquo; fall break next week, a 70-home proposal on Ridge Road and a restaurant inspection, none at the bar. JPMorgan&rsquo;s news is a CFO succession, sent to Also noted. Two things are underreported: the executive order&rsquo;s reach into private contractors, which only one newsroom we could read had covered by this morning, and the Guardian&rsquo;s finding that complaints rose after the CFPB dropped suits. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed; no new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#poland">Russian missiles land in Poland near allied drills</a></li>
+    <li><a href="#ai-rout">The AI sell-off becomes a correction; the SEC and Nvidia&rsquo;s books</a></li>
+    <li><a href="#dc-abroad">Trump threatens a tax on data centers built abroad</a></li>
+    <li><a href="#contractors">Contractors told to clear Congress&rsquo;s requests with the White House</a></li>
+    <li><a href="#uap">The Pentagon&rsquo;s eighth UFO release</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#fbi-ncic">Suspected breach of the FBI&rsquo;s crime database</a></li>
+    <li><a href="#citizens-flood">Citizens&rsquo; flood mandate starts Jan.&nbsp;1</a></li>
+    <li><a href="#riemann">An Anthropic mathematician&rsquo;s Riemann claim</a></li>
+    <li><a href="#iran">Iran&rsquo;s drone claims and new Treasury sanctions</a></li>
+    <li><a href="#cfpb">The CFPB&rsquo;s dropped cases and rising complaints</a></li>
+    <li><a href="#autonomous-weapons">U.N. talks on autonomous weapons</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="poland">
+  <h3>Two Russian missiles and a drone come down in Poland near allied drills; Warsaw calls it intentional, NATO a &ldquo;grave violation,&rdquo; and a day later a Russian cargo ship burns in the Gulf of Finland</h3>
+  <div class="meta">
+    <span class="chip">International with US channel</span>
+    <span class="chip">Geopolitics</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (BBC, The Guardian, Al Jazeera, ERR), with Reuters and AP excerpts as signal.</p>
+  <p>During one of Russia&rsquo;s heaviest attacks on Ukraine, overnight into Friday, three objects crossed into Poland. Defense Minister W&#322;adys&#322;aw Kosiniak-Kamysz said a Kh-101 cruise missile hit a rural area at Nowy Lipowiec, about 50&nbsp;km from the Ukrainian border, a second suspected missile fell near Rudnik nad Sanem and a jet-powered drone near Mo&#322;odycz. No one was hurt. Prime Minister Donald Tusk said &ldquo;it is no coincidence&rdquo; the objects landed near Nowa D&#281;ba, where an 11-nation &ldquo;coalition of the willing&rdquo; exercise, Koalicja 2026, is training for a possible post-war mission in Ukraine. NATO Secretary General Mark Rutte called them &ldquo;grave violations of Polish airspace,&rdquo; said NATO jets were scrambled, and was due in Warsaw on Saturday. Russia did not comment (<a href="https://www.bbc.com/news/articles/cqx2x9dklxnro">BBC</a>; <a href="https://www.theguardian.com/world/2026/nov/20/russian-missiles-drone-poland-attacks-ukraine">The Guardian</a>).</p>
+  <p>Hours before, Trump had said, &ldquo;Putin has been landing drones in Poland and a couple of little missiles, by mistake.&rdquo; Poland is asking for more support under NATO&rsquo;s existing Eastern Sentry mission but has not invoked Article&nbsp;4, the consultation clause it used in September 2025 (<a href="https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond">Al Jazeera</a>). On Saturday, the Russian cargo ship <i>Sparta II</i>, bound from St. Petersburg toward Kaliningrad, caught fire in the Gulf of Finland after what Russian officials called a two-drone strike; it drifted into Finnish waters, Finland notified its allies, and Prime Minister Petteri Orpo wrote that &ldquo;war is spilling over into our immediate vicinity&rdquo; and that Ukraine &ldquo;has the right to fight back&rdquo; (<a href="https://news.err.ee/1610202715/russian-cargo-ship-catches-fire-in-gulf-of-finland-moscow-claims-drone-hit">ERR</a>). We could not confirm who launched the drones at the ship; no government had claimed it in the reports we read.</p>
+  <p><b>Why it matters to you.</b> A Russian cruise missile has now landed on the territory of a treaty ally that the United States is bound to defend, just as Washington&rsquo;s envoys are telling Europe that Moscow is &ldquo;comfortable&rdquo; with an Article&nbsp;5-style guarantee for Ukraine. How the White House describes this incident is a test of that pitch.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; accident or a message?</span>
+    <p><b>Dispute type.</b> Interpretive, over intent. Tusk calls it &ldquo;an intentional provocation&rdquo; timed to the drills; analyst Scott Lucas of University College Dublin told Al Jazeera it &ldquo;fits into a pattern&rdquo; of testing NATO. Trump, speaking before the Friday incident, called earlier landings a &ldquo;mistake.&rdquo;</p>
+    <p><b>Vantage, interests, access, timing.</b> Warsaw hosts the exercise and wants more NATO aircraft on its border, so it has reason to stress intent; it also has the debris and radar tracks. Trump is brokering talks with Putin and has reason to play incidents down; his remark came before this strike, and we found no White House statement on the Nowy Lipowiec missile itself. The outside analysts have no access to the radar data.</p>
+    <p><b>What it means for you.</b> Allies and Washington are describing the same events differently. If Poland calls an Article&nbsp;4 meeting, the U.S. will have to say in the room whether it agrees the strike was deliberate.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Russian strikes landing on NATO soil?</b></p>
+    <label><input type="radio" name="fb-poland" value="art4"> When Poland or another ally invokes Article&nbsp;4 and Washington must take a position at the table</label>
+    <label><input type="radio" name="fb-poland" value="wh-intent"> When the White House says on the record whether it sees the Nowy Lipowiec strike as deliberate</label>
+    <label><input type="radio" name="fb-poland" value="casualties"> Only if a strike kills someone or damages property on allied soil, or U.S. troops in Poland are repositioned</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.com/news/articles/cqx2x9dklxnro">BBC</a> &middot;
+    <a href="https://www.theguardian.com/world/2026/nov/20/russian-missiles-drone-poland-attacks-ukraine">The Guardian</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond">Al Jazeera</a> &middot;
+    <a href="https://news.err.ee/1610202715/russian-cargo-ship-catches-fire-in-gulf-of-finland-moscow-claims-drone-hit">ERR</a>
+  </p>
+</article>
+
+<article id="ai-rout">
+  <h3>The AI sell-off becomes a correction: the S&amp;P&nbsp;500 and Dow close 10% below their records after the Nasdaq&rsquo;s worst week since March 2020, and Reuters reports the SEC is examining Nvidia&rsquo;s accounting</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; Macro &amp; markets</span>
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (Anthropic&rsquo;s debut and Nvidia ran Nov.&nbsp;17&ndash;20). Trigger: threshold event &mdash; the S&amp;P&nbsp;500 and Dow closed in correction territory; and a new verifiable fact &mdash; the SEC probe&rsquo;s reported focus on Nvidia&rsquo;s accounting.</p>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, NPR, Fortune), plus Reuters&rsquo; exclusive and Treasury&rsquo;s own yield series.</p>
+  <p>On Friday the S&amp;P&nbsp;500 and the Dow closed in correction territory, more than 10% below their records; the Nasdaq Composite turned negative for 2026 and fell 10% on the week, its worst since March 2020; and the Nasdaq-100 briefly touched bear-market territory. Anthropic, which listed Thursday at $83, closed the week at $88.91 (<a href="https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html">CNBC</a>; <a href="https://text.npr.org/nx-s1-6048729">NPR</a>). Nvidia fell 14% Friday after Reuters reported, citing two people briefed, that SEC enforcement staff are scrutinizing &ldquo;potential accounting issues&rdquo;; the SEC declined to comment (<a href="https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">Reuters</a>). It is down nearly 40% in November.</p>
+  <p>Some on Wall Street link the probe to Nvidia&rsquo;s 2025 decision to stop breaking out Singapore revenue &mdash; $10.2&nbsp;billion, 22% of the total, in the quarter to July 2025 &mdash; by switching from customers&rsquo; billing location to their headquarters, a change Fortune examined on Nov.&nbsp;12. Columbia&rsquo;s Shiva Rajgopal said &ldquo;the timing is curious&rdquo; but also &ldquo;Nothing is illegal. It&rsquo;s disclosed&rdquo; (<a href="https://fortune.com/2026/11/12/nvidia-changed-earnings-report-format-singapore-revenue-megaspeed-probe-colette-kress/">Fortune</a>). We could not confirm what the SEC is examining; Reuters&rsquo; sources did not say, and the Singapore link is an inference by analysts and reporters. In bonds, buyers seeking safety pulled Treasury&rsquo;s 10-year par yield to 4.92% on Friday, from 5.04% on Thursday and 5.15% a week earlier (<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury</a>).</p>
+  <p><b>Why it matters to you.</b> You told us in the topic check to weight AI debt and credit risk. The build-out runs on borrowed money at a time when the Fed has raised rates once and officials are talking about more. A falling stock price is not the risk; lenders pulling back from data-center loans would be.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a reset or a bubble bursting?</span>
+    <p><b>Dispute type.</b> Forecast and interpretation. Wharton&rsquo;s Jeremy Siegel told CNBC the correction is a resetting of expectations after three years of double-digit returns. Haverford Trust&rsquo;s Hank Smith told NPR this sell-off is &ldquo;not going to be like the previous&rdquo; ones and AI could stay &ldquo;out of favor&rdquo; through next year &mdash; while arguing that, unlike 2000, the trade rests on profitable giants.</p>
+    <p><b>Vantage, interests, access, timing.</b> Siegel is the author of <i>Stocks for the Long Run</i> and a long-time equity bull; Smith runs client money and is speaking after the fall. Neither has inside knowledge of the SEC probe. Reuters&rsquo; sources are people briefed on an investigation the agency won&rsquo;t discuss.</p>
+    <p><b>What it means for you.</b> The forecasters disagree about how long this lasts, not about the cause. Watch the credit side and the Nvidia filings, not the daily index level.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the AI sell-off?</b></p>
+    <label><input type="radio" name="fb-airout" value="credit"> When a bank discloses losses on, or pulls back from, data-center loans</label>
+    <label><input type="radio" name="fb-airout" value="sec"> When the SEC, Nvidia or a court filing says what the accounting probe is actually about</label>
+    <label><input type="radio" name="fb-airout" value="jobs"> Only if it turns into layoffs or hiring freezes at AI consultancies and their bank clients</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html">CNBC</a> &middot;
+    <a href="https://text.npr.org/nx-s1-6048729">NPR</a> &middot;
+    <a href="https://fortune.com/2026/11/12/nvidia-changed-earnings-report-format-singapore-revenue-megaspeed-probe-colette-kress/">Fortune</a> &middot;
+    <a href="https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/">Reuters</a> &middot;
+    <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury par yield curve</a>
+  </p>
+</article>
+
+<article id="dc-abroad">
+  <h3>Trump says U.S. companies will be barred from building AI data centers abroad or pay a &ldquo;tremendous tax&rdquo;; his own staff had not heard the plan</h3>
+  <div class="meta">
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms read in full (CNBC, BBC), plus Axios and Politico headlines and CNBC&rsquo;s report on construction costs.</p>
+  <p>At his Friday press conference, Trump said: &ldquo;We&rsquo;re not going to allow our companies to build data centres outside of our country, because China will take all of them&rdquo; (<a href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko">BBC</a>). Companies &ldquo;can, but we&rsquo;re going to put a tremendous tax on them,&rdquo; he said, adding: &ldquo;I haven&rsquo;t even said that to my people. But I&rsquo;m telling them now&rdquo; (<a href="https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html">CNBC</a>). He named no rate, mechanism or legal authority. Alphabet, Amazon, Microsoft, Meta and Oracle already run centers abroad; Trump singled out Google&rsquo;s &euro;13&nbsp;billion Finland project, Meta has broken ground in Alberta, and Anthropic has agreed to lease a proposed site in Nova Scotia (BBC). Cloud providers did not respond to CNBC.</p>
+  <p>He also told communities: &ldquo;Make them pay you, make them pay your community, but take advantage &mdash; don&rsquo;t shut them off.&rdquo; Voters are cool on that. CNBC&rsquo;s survey found 64% of registered voters oppose a data center within 10 miles of home, and 13% support one (CNBC). U.S. data-center construction costs rose 13% this year, more than twice the global rate, according to Turner &amp; Townsend (<a href="https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html">CNBC</a>). North Carolina Gov. Josh Stein says subsidies should be rolled back: &ldquo;They should be subsidizing the ratepayers&rdquo; (<a href="https://www.politico.com/news/2026/11/19/josh-stein-north-carolina-data-centers-01176128">Politico</a>, headline only). We could not confirm any written policy; no order, rule or bill had been published as of this morning.</p>
+  <p><b>Why it matters to you.</b> If this became policy, more of the build-out would land on U.S. grids, where power bills and local fights are already the issue. It would also upend data-residency plans for your clients&rsquo; cloud vendors in Europe and Canada.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; build here, or make them pay?</span>
+    <p><b>Dispute type.</b> Policy direction. Trump wants all capacity onshore to beat China. Voters in CNBC&rsquo;s survey, and Democratic governors such as Stein, want fewer local projects or for the companies to cover grid costs.</p>
+    <p><b>Vantage, interests, access, timing.</b> Trump spoke off the cuff a day after his China summit; his staff had not been told. Stein runs a state competing for and pushing back on these projects. The companies have the most at stake abroad and said nothing Friday. Axios&rsquo;s report was available to us only as a headline.</p>
+    <p><b>What it means for you.</b> The onshore push and local resistance meet on your utility bill. Until a written order names a tax and its legal basis, treat this as a negotiating line.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Trump&rsquo;s threat against overseas data centers?</b></p>
+    <label><input type="radio" name="fb-dcabroad" value="written"> When a written order or bill names a tax rate and its legal authority</label>
+    <label><input type="radio" name="fb-dcabroad" value="ratecase"> When a utility or state commission ties a rate request to data centers brought back onshore</label>
+    <label><input type="radio" name="fb-dcabroad" value="company"> When Amazon, Google, Microsoft or Meta publicly pauses or defends a named foreign project, such as Finland</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html">CNBC</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cmde1lw9y54ko">BBC</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html">CNBC (construction costs)</a> &middot;
+    <a href="https://www.axios.com/2026/11/20/us-ai-trump-data-centers-overseas">Axios (headline)</a> &middot;
+    <a href="https://www.politico.com/news/2026/11/19/josh-stein-north-carolina-data-centers-01176128">Politico (headline)</a>
+  </p>
+</article>
+
+<article id="contractors">
+  <h3>An executive order tells federal contractors to notify the White House of any congressional request and withhold what it calls privileged, six weeks before Democrats take Congress</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="meta">Continuing lead (the White House&rsquo;s sign-off rule for agency testimony led on Nov.&nbsp;17). Trigger: new verifiable fact &mdash; a signed order extends the clearance rule from federal employees to private contractors and subcontractors, with contract penalties.</p>
+  <p class="src-count">Independent accounts compared: 1 newsroom (CNBC, carrying Reuters&rsquo; reporting), plus the text of the order.</p>
+  <p>Executive Order 14438, signed Friday, says all federal contractors &ldquo;must immediately&rdquo; notify the White House and their contracting agencies of &ldquo;any pending or future congressional request&rdquo; about their work with the executive branch, and follow instructions to withhold communications the White House or agency decides are privileged. It covers subcontractors. Agencies are to &ldquo;consider&rdquo; contract termination, suspension or debarment for those who don&rsquo;t comply, and the Office of Management and Budget is to write guidance, with no date set. The order says Congress cannot seek information &ldquo;without a valid legislative purpose&rdquo; and accuses &ldquo;certain congressional leaders&rdquo; of &ldquo;harassing private companies that contract with the Federal Government&rdquo; (<a href="https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting/">White House</a>).</p>
+  <p>CNBC, carrying Reuters&rsquo; reporting, says the order follows White House Counsel Will Scharf&rsquo;s directive this week requiring approval before agency employees testify, and that Scharf has said some Democratic investigations could amount to criminal conduct. Rep. Robert Garcia, set to chair House Oversight, has asked 12 Trump allies and relatives to preserve documents. The restrictions &ldquo;could face legal challenges,&rdquo; particularly if contractors are told to withhold material under subpoena (<a href="https://www.cnbc.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-before-giving-congress-information.html">CNBC</a>). We could not find a Democratic response to the order itself; CNBC said the offices of Garcia, Jeffries, Schumer and Warren did not respond Friday night.</p>
+  <p><b>Why it matters to you.</b> Consultancies, banks and AI vendors with federal work are contractors. When Warren&rsquo;s Banking Committee or Garcia&rsquo;s Oversight sends a letter in January, a client&rsquo;s first call now has to go to the White House, and its contracts are the leverage.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; protecting privilege, or blocking oversight?</span>
+    <p><b>Dispute type.</b> Legal and constitutional. The White House says it is protecting executive privilege and avoiding wasteful duplicate litigation. Reuters, via CNBC, describes it as part of a broader effort to limit Democratic investigations, and notes that courts can step in on privilege disputes.</p>
+    <p><b>Vantage, interests, access, timing.</b> The White House wrote the order and is a party to any fight. Reuters&rsquo; framing rests on the run of directives this month, not on any contractor&rsquo;s account. Democrats, who gain subpoena power on Jan.&nbsp;3, had not spoken by publication.</p>
+    <p><b>What it means for you.</b> A contractor caught between a subpoena and this order risks contempt on one side and losing contracts on the other until a court rules. Expect the test case to involve a company, not an agency.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the contractor order?</b></p>
+    <label><input type="radio" name="fb-contractors" value="named"> When a named consultancy, bank or AI vendor refuses a congressional request and cites the order</label>
+    <label><input type="radio" name="fb-contractors" value="omb"> When OMB publishes the compliance guidance and agencies start writing it into contracts</label>
+    <label><input type="radio" name="fb-contractors" value="court"> Only once a court rules on it, after Democrats subpoena their first contractor in January</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.whitehouse.gov/presidential-actions/2026/11/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting/">Executive Order 14438</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/21/trump-orders-federal-contractors-to-notify-white-house-before-giving-congress-information.html">CNBC / Reuters</a>
+  </p>
+</article>
+
+<article id="uap">
+  <h3>The Pentagon&rsquo;s eighth UFO release: 43 files, including a contractor&rsquo;s 2009 plan for an underground vault for &ldquo;exotic material or tissue&rdquo; that there is no record was ever built</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; UAP disclosure</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CBS News, BBC), plus the Department of War&rsquo;s release and the independent UAP Browser index.</p>
+  <p>On Friday the Department of War published Release&nbsp;08 under PURSUE, its UAP declassification program, at war.gov/UFO; spokesman Sean Parnell said the department is &ldquo;actively working on the next release&rdquo; (<a href="https://www.war.gov/News/Releases/Release/Article/4655441/department-of-war-publishes-eighth-release-of-unidentified-anomalous-phenomena/">Department of War</a>). The 43 files &mdash; 40 documents and three videos &mdash; take the archive from 478 to 521. They include six 1952 CIA documents, records of the Defense Intelligence Agency&rsquo;s AAWSAP program, 17 Air Force reports from 1956&ndash;57, and a radar slide from the All-domain Anomaly Resolution Office (<a href="https://uapbrowser.com/en/releases/release-08">UAP Browser</a>). The three clips were filmed from U.S. military platforms in the Middle East in 2020, 2023 and 2026 (<a href="https://www.bbc.co.uk/news/videos/cqdr1x8mypnko">BBC</a>).</p>
+  <p>The file drawing attention is a 538-page July 2009 report by Bigelow Aerospace Advanced Space Studies, a contractor on the DIA program, describing a planned North Las Vegas vault, buried 15 to 20 feet down, to store &ldquo;exotic material or tissue&rdquo; and &ldquo;hardware.&rdquo; There is no public record it was built; a DIA official later judged the company&rsquo;s reports of &ldquo;limited value,&rdquo; and the program ended in 2012. A copy surfaced online last year; this is its first official release. The newest data is a 2023 civil-radar slide: eight detections over 84 seconds at 55,000&ndash;70,000 feet, implying at least 1,650&nbsp;mph if they were one object, though the Pentagon says the data are &ldquo;not sufficient&rdquo; to show that (<a href="https://www.cbsnews.com/news/ufo-files-pentagon-contractor/">CBS News</a>). Yesterday&rsquo;s brief said there had been no release since Oct.&nbsp;23; this one came out Friday morning, after that check.</p>
+  <p><b>Why it matters to you.</b> This is the paperwork trail you asked us to track. The releases come roughly monthly and now include recent military video, but the archive is still only unresolved cases. The department says it reports resolved cases separately, as the law requires, and those reports are what would show what has been explained away.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; revelation or old contractor paperwork?</span>
+    <p><b>Dispute type.</b> Interpretive, over significance. CBS led with the vault for &ldquo;exotic material or tissue.&rdquo; UAP Browser calls the BAASS pages &ldquo;the contractor&rsquo;s accounts and plans, not confirmed findings,&rdquo; and notes most AAWSAP records &ldquo;do not describe any sighting.&rdquo;</p>
+    <p><b>Vantage, interests, access, timing.</b> The department chooses what is released and labels it unresolved; it has an interest in showing momentum. CBS had the documents the same morning and chose the most striking one. UAP Browser is an independent index that catalogs each file; we could not verify who runs it. The video was available to us only through the BBC&rsquo;s description, and the war.gov page blocked direct fetches.</p>
+    <p><b>What it means for you.</b> The headline item is a 2009 plan, not evidence of material. The new data are thin and qualified by the Pentagon itself.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the PURSUE releases?</b></p>
+    <label><input type="radio" name="fb-uap" value="resolved"> When a release includes the required reporting on resolved cases, so we see what was explained</label>
+    <label><input type="radio" name="fb-uap" value="corroborated"> When a file names recovered material or a program and a second agency or named witness backs it on the record</label>
+    <label><input type="radio" name="fb-uap" value="hearing"> Only if the new Democratic majority subpoenas AARO or holds a public hearing on the files</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.war.gov/News/Releases/Release/Article/4655441/department-of-war-publishes-eighth-release-of-unidentified-anomalous-phenomena/">Department of War</a> &middot;
+    <a href="https://www.cbsnews.com/news/ufo-files-pentagon-contractor/">CBS News</a> &middot;
+    <a href="https://www.bbc.co.uk/news/videos/cqdr1x8mypnko">BBC</a> &middot;
+    <a href="https://uapbrowser.com/en/releases/release-08">UAP Browser</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar today. No per-item questions; one question on the whole tier follows the last item.</p>
+
+<article id="fbi-ncic">
+  <h3>The FBI is investigating a suspected breach of the national crime database police use for warrants and background checks; NBC reports a separate attack on USDA&rsquo;s farm payment system</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CNBC carrying Reuters, BBC), both citing CNN&rsquo;s original report.</p>
+  <p>CNN, citing two people briefed, reported that the FBI is investigating an apparent compromise of the National Crime Information Center, the database federal, state and local police use to share warrants, criminal histories and background checks. It would be the second intrusion into an FBI system in recent months, after ShinyHunters reached a bureau jobs site in September. The FBI did not comment (<a href="https://www.cnbc.com/2026/11/21/fbis-criminal-information-database-hacked-cnn-reports.html">CNBC</a>). The BBC also notes NBC&rsquo;s report that USDA employees were told on Thursday that the farm payment system had been targeted (<a href="https://www.bbc.co.uk/news/articles/cvze7de86pk3o">BBC</a>). We could not confirm what, if anything, was taken from either system; neither agency has said.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/21/fbis-criminal-information-database-hacked-cnn-reports.html">CNBC / Reuters</a> &middot; <a href="https://www.bbc.co.uk/news/articles/cvze7de86pk3o">BBC</a></p>
+</article>
+
+<article id="citizens-flood">
+  <h3>From Jan.&nbsp;1, Citizens customers must carry flood insurance at renewal, flood zone or not</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Fox&nbsp;13), plus Hillsborough County&rsquo;s notice and Citizens&rsquo; own requirement page.</p>
+  <p>The last phase of a state law takes effect in six weeks: any new or renewing Citizens Property Insurance policy with wind coverage must include flood insurance, wherever the home sits; condo-unit owners and renters are exempt. Tens of thousands of Tampa Bay policyholders are affected, and Citizens has not said how much premiums will rise. United Policyholders advises comparing the federal flood program with private policies on both cost and coverage (<a href="https://www.fox13news.com/news/not-flood-zone-citizens-will-still-require-flood-insurance-starting-jan-1">Fox&nbsp;13</a>; <a href="https://hcfl.gov/newsroom/2026/11/13/flood-coverage-becomes-mandatory-for-citizens-property-insurance-customers-in-2027">Hillsborough County</a>; <a href="https://www.citizensfla.com/-/20230822-flood-insurance-requirements-for-coverage-limit">Citizens</a>). Separately, the Tampa Bay Times reports that Citizens&rsquo; CEO is stepping down (<a href="https://www.tampabay.com/news/florida-politics/2026/11/20/citizens-property-insurance-tim-cerio-hurricanes/">Tampa Bay Times</a>, headline only; paywalled).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.fox13news.com/news/not-flood-zone-citizens-will-still-require-flood-insurance-starting-jan-1">Fox&nbsp;13</a> &middot; <a href="https://hcfl.gov/newsroom/2026/11/13/flood-coverage-becomes-mandatory-for-citizens-property-insurance-customers-in-2027">Hillsborough County</a> &middot; <a href="https://www.citizensfla.com/-/20230822-flood-insurance-requirements-for-coverage-limit">Citizens</a></p>
+</article>
+
+<article id="riemann">
+  <h3>An Anthropic mathematician says Claude helped him prove the Riemann hypothesis; outside checkers say his machine-checkable proof compiles, and one final check is pending</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Unconfirmed</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (BBC, Scientific American across two articles).</p>
+  <p>Levent Alp&ouml;ge, a mathematician at Anthropic, said Friday, the day after its IPO, that over about six weeks he used a non-public version of Claude to prove the 167-year-old hypothesis about how prime numbers are distributed. He called the timing &ldquo;horrible&rdquo; and said the &ldquo;obvious cynical view&rdquo; is false. The proof, written in the Lean proof language, runs over 250,000 pages; Terence Tao said digesting it will take time (<a href="https://www.bbc.co.uk/news/articles/c6pqr2g7w059o">BBC</a>). MIT&rsquo;s Andrew Sutherland compiled it independently and said &ldquo;the chance that anything is fishy here is approximately zero&rdquo;; Imperial&rsquo;s Kevin Buzzard said a &ldquo;comparator run,&rdquo; which checks that the code doesn&rsquo;t quietly redefine the statement, was still pending (<a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American</a>; <a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Scientific American</a>). We could not confirm the comparator run has finished, and there is no peer review yet.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.co.uk/news/articles/c6pqr2g7w059o">BBC</a> &middot; <a href="https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/">Scientific American</a></p>
+</article>
+
+<article id="iran">
+  <h3>Iran&rsquo;s Revolutionary Guards claim two more U.S. drones over Hormuz as Treasury sanctions four Iranian &ldquo;oil trustees&rdquo;; the FT reports Trump is weighing new strikes</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom read in full (Al Jazeera), plus Treasury&rsquo;s release and an FT headline.</p>
+  <p>The IRGC said Saturday it shot down an MQ-9 and an MQ-1 over the Strait of Hormuz; the U.S. military did not comment. Foreign Minister Abbas Araghchi said Iran&rsquo;s seven conditions must be met before Hormuz reopens, and he ruled out shipping its 60%-enriched uranium abroad (<a href="https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled">Al Jazeera</a>). On Friday Treasury designated Mohammad Javad Bavand, Majid Taj, Mohammadhossein Servati and Mojtaba Arabnejad under what it called a campaign against regime insiders &ldquo;exploiting Iran&rsquo;s oil sector for personal gain&rdquo; despite the U.S. blockade (<a href="https://home.treasury.gov/news/press-releases/sb0697">Treasury</a>). The FT reports Trump is considering new strikes as the military warns of strain on forces (<a href="https://www.ft.com/content/2daf570c-189a-4362-a128-828c520b902e">FT</a>, headline only). We could not confirm the drone downings; the only source is Iranian state media.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled">Al Jazeera</a> &middot; <a href="https://home.treasury.gov/news/press-releases/sb0697">Treasury</a> &middot; <a href="https://www.ft.com/content/2daf570c-189a-4362-a128-828c520b902e">FT (headline)</a></p>
+</article>
+
+<article id="cfpb">
+  <h3>A Guardian investigation finds complaints rose about 75% against companies after the CFPB dropped its suits against them; Warren, Schumer and Van Hollen vow to rebuild the bureau</h3>
+  <div class="meta"><span class="chip">Core &mdash; US financials</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (The Guardian), whose own investigation this is.</p>
+  <p>The Guardian found that after the Consumer Financial Protection Bureau dropped more than 20 lawsuits against banks and companies, complaints against those firms rose by an average of more than 75%, often about the same conduct. The bureau has opened one public enforcement action since Director Rohit Chopra was fired on Jan.&nbsp;30, 2025, against about 30 a year before. Elizabeth Warren, in line to chair Senate Banking, promised an investigation; Chuck Schumer and Chris Van Hollen, rivals for majority leader, both pledged to restore the agency. A CFPB spokesperson called the old bureau a &ldquo;weaponized agency&rdquo; that used &ldquo;novel legal theories&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/20/senators-consumer-financial-protection-bureau">The Guardian</a>). The complaint analysis is the Guardian&rsquo;s own; we have not seen it replicated.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/us-news/2026/nov/20/senators-consumer-financial-protection-bureau">The Guardian</a></p>
+</article>
+
+<article id="autonomous-weapons">
+  <h3>128 countries agree to &ldquo;elaborate&rdquo; rules on autonomous weapons within two years, after the U.S., Russia and Israel blocked a push for binding limits</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Al Jazeera, CNBC carrying Reuters).</p>
+  <p>Talks under the Convention on Certain Conventional Weapons ended in Geneva after 4&nbsp;a.m. local time Saturday with a two-year mandate to &ldquo;elaborate&rdquo; an instrument on weapons that can pick and engage targets without a human decision. Some countries rejected the word &ldquo;negotiate.&rdquo; About 100 countries wanted binding rules quickly; the U.S., Russia and Israel opposed, and decisions need consensus (<a href="https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit">Al Jazeera</a>; <a href="https://www.cnbc.com/2026/11/21/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028.html">CNBC</a>). The Swiss chair called it a significant step; Stop Killer Robots called the mandate &ldquo;watered down.&rdquo;</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit">Al Jazeera</a> &middot; <a href="https://www.cnbc.com/2026/11/21/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028.html">CNBC / Reuters</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="citizens"> Citizens&rsquo; flood mandate, if the insurer or the state says what the added coverage will cost Pasco and Pinellas homeowners</label>
+  <label><input type="radio" name="fb-below" value="ncic"> The FBI database breach, if officials say warrant or background-check records were altered or taken</label>
+  <label><input type="radio" name="fb-below" value="riemann"> The Riemann claim, if the final check passes and Anthropic builds a product pitch around it</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 91 sources checked; 22 in the first sweep before any weighting category was consulted. Five leads and six items below the line (11 stories). Two leads carry over from earlier editions, each with a stated trigger: the AI sell-off (the correction threshold and the reported SEC focus on Nvidia&rsquo;s accounting) and the oversight fight (the signed contractor order). Poland, the data-center threat and the UFO release are new. Marker tallies: PS&nbsp;2 &middot; IC&nbsp;7 &middot; SS&nbsp;1 &middot; U&nbsp;1. Claims we could not confirm are stated in the text with reasons: who struck the <i>Sparta II</i>, what the SEC is examining at Nvidia, any written data-center policy, a Democratic response to the order, what was taken from the FBI and USDA systems, the Riemann comparator run, and Iran&rsquo;s drone claims. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-21-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>Judge Leonie Brinkema said she will block Trump&rsquo;s 250-foot arch indefinitely while Arlington County&rsquo;s suit proceeds; the Justice Department will appeal. (<a href="https://text.npr.org/nx-s1-6048675">NPR</a>). Missed: a Washington monument fight with no policy reach beyond it yet.</li>
+    <li>Fox News reports at least 50 FBI agents and more than 200 subpoenas in the &ldquo;Decoy Dan&rdquo; probe of Sen.-elect Mary Peltola&rsquo;s campaign. (<a href="https://www.foxnews.com/politics/dozens-fbi-doj-personnel-investigating-peltolas-alaska-victory">Fox News</a>). Missed: no charges and no new step since Wednesday; a charging decision would bring it back.</li>
+    <li>Reps. Sean Casten and Ted Lieu propose a whistleblower program for prediction-market insider trading, as Semafor counts more than 90 Huang-related bets. (<a href="https://thehill.com/homenews/house/6234775-casten-lieu-prediction-market-bill/">The Hill</a>, headline only; <a href="https://www.semafor.com/article/11/20/2026/trading-soars-on-jensen-huang-related-prediction-market-bets">Semafor</a>). Missed: a watch item from your topic check; a bill introduction, not a vote or enforcement action.</li>
+    <li>Virginia reported its first measles-related death of 2026. (<a href="https://thehill.com/policy/healthcare/6234958-virginia-child-measles-death-elimination-status/">The Hill</a>, headline only). Missed: the loss of elimination status ran Nov.&nbsp;17; no new federal step.</li>
+    <li>JPMorganChase named Bregje de Best to succeed Jeremy Barnum as CFO after first-quarter 2027 results. (<a href="https://www.jpmorganchase.com/newsroom/press-releases/2026/jpmorganchase-announces-bregje-de-best-will-succeed-jeremy-barnum-as-cfo">JPMorganChase</a>). Missed: an orderly succession with no policy effect.</li>
+    <li>A court approved Bayer&rsquo;s $7.25&nbsp;billion settlement of claims that Roundup causes cancer. (<a href="https://www.pbs.org/newshour/nation/court-approves-7-25-billion-bayer-settlement-over-claims-roundup-weed-killer-caused-cancer">PBS</a>, headline only). Missed: a payout schedule, not a regulatory change.</li>
+    <li>Meta is rethinking its net-zero goal as its AI emissions rose 45%. (<a href="https://www.axios.com/2026/11/19/meta-ai-emissions-rise">Axios</a>, headline only). Missed: a corporate review with no decision yet.</li>
+    <li>Mexico&rsquo;s army captured an FBI-wanted cartel boss in a raid in Sinaloa. (<a href="https://www.aljazeera.com/video/newsfeed/2026/11/21/mexico-captures-fbi-wanted-cartel-boss-in-military-raid">Al Jazeera</a>, video page). Missed: details were thin this morning; an extradition request would raise it.</li>
+    <li>Inspectors found a cascade of problems with ICE training during the immigration crackdown. (<a href="https://www.nytimes.com/2026/11/20/us/politics/training-ice-immigration-inspector-general.html">NYT</a>, headline only). Missed: we could not read the article or find the report itself.</li>
+    <li>The COP31 climate talks are deadlocked over fossil-fuel language. (<a href="https://www.bbc.co.uk/news/articles/c6ly5w40eg07o">BBC</a>, headline only). Missed: no clear U.S. role or commitment at stake.</li>
+    <li>Florida&rsquo;s driver-license and registration system went down again on Wednesday. (<a href="https://www.fox13news.com/news/florida-drivers-license-registration-systems-down-flhsmv-says">Fox&nbsp;13</a>). Missed: a service outage with no stated cause and no policy response.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
