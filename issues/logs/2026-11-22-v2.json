@@ -1,0 +1,588 @@
+{
+ "date": "2026-11-22",
+ "edition": "2026-11-22-v2",
+ "filename": "issues/2026-11-22-v2.html",
+ "generated_at_et": "2026-11-22 ~07:45 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "Feeds, fronts and X were swept before any weighting category in config.md was consulted for topic choice. config.md, NEWSBOT_2.0.md and audit.py were read at start for rules only; the Nov 21 issue was opened at start strictly as the required layout reference and was not used to pick topics; continuing leads were tested against Daily method Step 2 on new developments only.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale January 2025 file; not used)",
+  "AP top news (Cloudflare bot check; not read)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 14h)"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale January 2025 file; not used)",
+  "AP top news (Cloudflare bot check; not read)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 14h)"
+ ],
+ "access_denied": [
+  "apnews.com (Cloudflare check)",
+  "thehill.com article pages (403; RSS and search excerpts used)",
+  "axios.com article pages (403; search excerpts used)",
+  "news.usni.org (403; search excerpt used)",
+  "cbo.gov (403)",
+  "wfla.com article pages (403)",
+  "tampabay.com beyond the lede (paywall)",
+  "ft.com / nytimes.com (headline only)",
+  "WSJ RSS (stale Jan 2025 file)",
+  "Federal Register public inspection (offline Sundays; no view of Monday's documents)"
+ ],
+ "candidate_list": [
+  {
+   "item": "Iran hits ~25 tankers in a week, strikes Bahrain; Trump wants 'permanent' deal; Dems split on Dec 11 war funding",
+   "decision": "keep-lead",
+   "reason": "Threshold escalation plus material connection to Dec 11 deadline and Dec 1 Senate leader vote; credible disagreement inside Democratic caucus."
+  },
+  {
+   "item": "Trump says he'd work with Democrats on 10% credit-card rate cap",
+   "decision": "keep-lead",
+   "reason": "Core US financials (JPMorgan and peers); first real path for a cap with Warren as incoming Banking chair; bank industry vs supporters divergence."
+  },
+  {
+   "item": "DOE 202(c) orders keep Orlando's Stanton coal unit open; EDF prices ratepayer cost at $25.6M; order expires Nov 30",
+   "decision": "keep-lead",
+   "reason": "Florida energy bills plus data-center demand rationale; dated trigger; primary DOE order available; underplayed nationally."
+  },
+  {
+   "item": "NY AG seeks TRO against Kalshi sports contracts; Monday hearing; CFTC bid to block denied",
+   "decision": "keep-lead",
+   "reason": "Topic-check watch item now at enforcement stage; dated Monday hearing; state vs federal divergence."
+  },
+  {
+   "item": "GOP senators (Cotton, Kennedy) turn on Lutnick over Megaspeed chip sales; Huang to testify publicly; Dec 1 House interview",
+   "decision": "keep-lead",
+   "reason": "Carried only on new verifiable fact (Cotton on record, 2025 letter) and dated testimony; behind-the-scenes and salacious angle."
+  },
+  {
+   "item": "Trump confirms FBI NCIC breach, 'positive spin'; GAO finds 17 of 22 agencies short on zero trust",
+   "decision": "keep-also",
+   "reason": "New presidential confirmation plus primary GAO report; institutional consequence."
+  },
+  {
+   "item": "Amendment 3 cuts: Manatee freezes 118 jobs, pauses projects; Wesley Chapel cityhood study",
+   "decision": "keep-also",
+   "reason": "Local bar cleared: Pasco and Manatee fiscal consequences of a measure that passed this month."
+  },
+  {
+   "item": "ICE arrests on Seattle jet bridge and Princeton researcher at DCA; DHS policy on domestic flights",
+   "decision": "keep-also",
+   "reason": "Notable public reaction (governor, port) and a stated DHS policy during Thanksgiving travel week."
+  },
+  {
+   "item": "Guardian: CoreWeave's $47bn debt and Nvidia scandal exposure",
+   "decision": "keep-also",
+   "reason": "AI debt/credit risk weighted up by topic check; single-sourced but specific numbers; underreported."
+  },
+  {
+   "item": "CBO: Navy 2027 shipbuilding plan 18% over Navy estimate, Trump-class battleships",
+   "decision": "keep-also",
+   "reason": "Fiscal consequence; underreported in general news (two outlets found)."
+  },
+  {
+   "item": "Mexico captures 'El Chapo Isidro' with US intelligence; US seeks extradition",
+   "decision": "keep-also",
+   "reason": "US channel (FBI most-wanted, extradition, FTO-designated cartel ally)."
+  },
+  {
+   "item": "Toyota/Honda Takata airbag recall",
+   "decision": "cut-also-noted",
+   "reason": "Reader's 2017 Highlander not on Toyota list; useful pointer, not a story."
+  },
+  {
+   "item": "Bessent: no further Nvidia chip export restrictions needed",
+   "decision": "cut-also-noted",
+   "reason": "Headline only; could not read."
+  },
+  {
+   "item": "COP31 overtime over fossil-fuel language",
+   "decision": "cut-also-noted",
+   "reason": "No US commitment at stake."
+  },
+  {
+   "item": "Central Florida flooding along St. Johns",
+   "decision": "cut-also-noted",
+   "reason": "Outside Tampa Bay; no emergency declaration found."
+  },
+  {
+   "item": "Banks shift AI-agent liability to customers (X summary)",
+   "decision": "cut-also-noted",
+   "reason": "Watch item, but agreements and newsroom account not found."
+  },
+  {
+   "item": "Hubbard leads Foxx by 330 after recount",
+   "decision": "cut-also-noted",
+   "reason": "Single seat; headline only."
+  },
+  {
+   "item": "FT: AI server suppliers raise prices up to 45%",
+   "decision": "cut-also-noted",
+   "reason": "Paywalled; could not stand up."
+  },
+  {
+   "item": "Denmark accuses Russia of assassination plot against US-Ukrainian rapper",
+   "decision": "cut-also-noted",
+   "reason": "No US government response."
+  },
+  {
+   "item": "Palisades Fire arson conviction",
+   "decision": "cut-also-noted",
+   "reason": "Criminal verdict, no policy step."
+  },
+  {
+   "item": "Overton FDA nomination withdrawal; FDA leadership vacuum",
+   "decision": "cut-also-noted",
+   "reason": "No new nominee or decision; headline only."
+  },
+  {
+   "item": "Russian cargo ship Sparta II still burning in Gulf of Finland",
+   "decision": "cut",
+   "reason": "Ran Nov 21; no new fact on attribution."
+  },
+  {
+   "item": "Senate Democratic leader race Van Hollen v Schumer (Dec 1)",
+   "decision": "folded",
+   "reason": "Folded into Iran lead."
+  },
+  {
+   "item": "Vance stops short of endorsing Iran nuclear claim",
+   "decision": "folded",
+   "reason": "Folded into Iran lead."
+  },
+  {
+   "item": "Huang testimony and Wyden/Neal records demand",
+   "decision": "folded",
+   "reason": "Folded into Lutnick lead."
+  },
+  {
+   "item": "FT: Nscale slows hiring ahead of $35bn IPO",
+   "decision": "folded",
+   "reason": "Folded into CoreWeave item as headline signal."
+  },
+  {
+   "item": "Manatee leads nation in home permits",
+   "decision": "folded",
+   "reason": "Folded into Amendment 3 item."
+  },
+  {
+   "item": "Trump 'Russia hoax' remark on FBI hack",
+   "decision": "folded",
+   "reason": "Folded into cyber item."
+  },
+  {
+   "item": "Bayer Roundup $7.25bn settlement approved",
+   "decision": "cut",
+   "reason": "Ran in Also noted Nov 21; payout, not policy."
+  },
+  {
+   "item": "Virginia first measles death of 2026",
+   "decision": "cut",
+   "reason": "Ran Nov 21; no new federal step."
+  },
+  {
+   "item": "Mamdani plan to close Rikers by 2032",
+   "decision": "cut",
+   "reason": "NYC local, no reader channel."
+  },
+  {
+   "item": "Judge: USDA Rollins' Christian holiday emails unconstitutional",
+   "decision": "cut",
+   "reason": "One-off ruling, low consequence for reader."
+  },
+  {
+   "item": "Second judge blocks Trump arch",
+   "decision": "cut",
+   "reason": "Ran Nov 21 in Also noted; no new reach."
+  },
+  {
+   "item": "Trump ends minting of the penny",
+   "decision": "cut",
+   "reason": "Symbolic; long announced."
+  },
+  {
+   "item": "Republicans debate why they lost the midterms (NYT)",
+   "decision": "cut",
+   "reason": "Horse-race analysis (anti-topic)."
+  },
+  {
+   "item": "Trump administration accreditation 'secret weapon' against higher ed (The Hill)",
+   "decision": "cut",
+   "reason": "Headline only; no dated action found."
+  },
+  {
+   "item": "Pentagon restricted US-Canada defense socializing (Rounds)",
+   "decision": "cut",
+   "reason": "Headline only; could not read."
+  },
+  {
+   "item": "Abdul El-Sayed 'Trumpcare' pitch",
+   "decision": "cut",
+   "reason": "Political positioning, no proposal."
+  },
+  {
+   "item": "ICJ finds Myanmar committed genocide",
+   "decision": "cut",
+   "reason": "No direct US channel today."
+  },
+  {
+   "item": "Plant City murder-suicide; Hillsborough crimes",
+   "decision": "cut",
+   "reason": "Crime blotter (anti-topic)."
+  },
+  {
+   "item": "Citizens Property Insurance CEO stepping down",
+   "decision": "cut",
+   "reason": "Personnel change without stated policy effect (anti-topic)."
+  },
+  {
+   "item": "DeSantis schedules special election for South Florida state Senate seat",
+   "decision": "cut",
+   "reason": "Outside Tampa Bay."
+  },
+  {
+   "item": "Las Vegas GP, NWSL, other sports trends on X",
+   "decision": "cut",
+   "reason": "Sports (anti-topic)."
+  },
+  {
+   "item": "GTA VI sales records",
+   "decision": "cut",
+   "reason": "Entertainment (anti-topic)."
+  },
+  {
+   "item": "Princess of Wales remission; celebrity items",
+   "decision": "cut",
+   "reason": "Celebrity (anti-topic)."
+  },
+  {
+   "item": "Indonesia factory fire",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "Scientists report Wolbachia mosquitoes fend off dengue (WFLA, 403)",
+   "decision": "cut",
+   "reason": "Tampa Bay dengue is a watch item, but study could not be read; no local emergency."
+  }
+ ],
+ "candidate_count": 47,
+ "selected": {
+  "leads": [
+   "iran-gulf",
+   "card-cap",
+   "stanton",
+   "kalshi",
+   "lutnick"
+  ],
+  "also_today": [
+   "cyber-gaps",
+   "amendment3",
+   "ice-airports",
+   "coreweave",
+   "shipbuilding",
+   "chapo-isidro"
+  ],
+  "total_stories": 11
+ },
+ "story_floor_note": "11 stories, above the ~10 target.",
+ "continuing_leads": [
+  {
+   "id": "iran-gulf",
+   "trigger": "threshold event: ~25 tankers hit in a week (Al Jazeera count) and Iranian attacks on Bahrain after a ~2-month lull (CBS); material connection: war funding is the dividing line for the Dec 11 deadline and Dec 1 Senate Democratic leader vote"
+  },
+  {
+   "id": "lutnick",
+   "trigger": "new verifiable fact: Senate Intelligence chair Cotton on record that Commerce ignored warnings, backed by his public Oct 14 2025 Megaspeed letter; dated events: Huang's Dec 1 House interview and pledge of public Senate testimony"
+  }
+ ],
+ "per_article_sources": {
+  "iran-gulf": {
+   "independent_newsrooms": 6,
+   "names": [
+    "Al Jazeera",
+    "CBS News",
+    "CNBC (Reuters)",
+    "The Hill (search excerpt)",
+    "Axios (search excerpt)",
+    "Common Dreams"
+   ],
+   "also": [
+    "The Guardian"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "card-cap": {
+   "independent_newsrooms": 2,
+   "names": [
+    "AP (via PBS, CBS)",
+    "Axios (search excerpt)"
+   ],
+   "other": [
+    "ABA joint statement",
+    "AEI"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "stanton": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Inside Climate News via WUSF",
+    "Central Florida Public Media"
+   ],
+   "primary": [
+    "energy.gov DOE Order 202-26-42"
+   ],
+   "marker": "Primary source"
+  },
+  "kalshi": {
+   "independent_newsrooms": 2,
+   "names": [
+    "ABC News",
+    "CNBC (discloses Kalshi commercial tie)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "lutnick": {
+   "independent_newsrooms": 2,
+   "names": [
+    "The Guardian",
+    "CNBC"
+   ],
+   "headline_only": [
+    "The Hill"
+   ],
+   "primary": [
+    "cotton.senate.gov Oct 14 2025 letter"
+   ],
+   "marker": "Primary source"
+  },
+  "cyber-gaps": {
+   "independent_newsrooms": 3,
+   "names": [
+    "AP (via PBS)",
+    "CNBC",
+    "Fox News"
+   ],
+   "primary": [
+    "gao.gov GAO-27-108661"
+   ],
+   "marker": "Primary source"
+  },
+  "amendment3": {
+   "independent_newsrooms": 3,
+   "names": [
+    "WUSF",
+    "Suncoast Searchlight (via WUSF)",
+    "Tampa Bay Times (to paywall)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "ice-airports": {
+   "independent_newsrooms": 2,
+   "names": [
+    "ABC News",
+    "NBC News"
+   ],
+   "headline_only": [
+    "The Hill"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "coreweave": {
+   "independent_newsrooms": 1,
+   "names": [
+    "The Guardian"
+   ],
+   "headline_only": [
+    "FT"
+   ],
+   "marker": "Single-sourced"
+  },
+  "shipbuilding": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Navy Times",
+    "The Guardian"
+   ],
+   "other": [
+    "USNI reprint of CBO summary (search excerpt)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "chapo-isidro": {
+   "independent_newsrooms": 2,
+   "names": [
+    "BBC",
+    "AP (via PBS)"
+   ],
+   "marker": "Independent corroboration"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: searched UAP disclosure news, Pasco County and New Port Richey news, and JPMorgan (web and X news search); compared candidate list against every front swept and X US trends.",
+  "result": "UAP: nothing since Nov 20 Release 08. Pasco: library festival and missing-teen alert; none at bar. JPMorgan: vendor breach and CFO succession already reported Nov 20-21; X summary on AI-agent liability terms sent to Also noted as unconfirmed.",
+  "underreported": "Two underreported finds: the CBO Navy shipbuilding overrun (only two general-news outlets found) and the Guardian's CoreWeave debt analysis (no other newsroom match found)."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Lutnick/Megaspeed (lead); CoreWeave debt (Also today); FT server prices to Also noted.",
+  "Core - Macro & markets": "No data print on a Sunday; Fed skipped per preference; nothing cleared.",
+  "World economy": "COP31 cut (no US commitment); Iran oil-flow effects folded into Iran lead.",
+  "Core - US debt & fiscal": "CBO shipbuilding (Also today); Dec 11 funding deadline inside Iran lead.",
+  "Core - US financials": "Credit-card cap (lead); JPMorgan vendor breach/CFO already ran; AI-agent liability terms unconfirmed (Also noted).",
+  "Core - US politics & policy": "Card cap, Iran funding fight, Lutnick (leads).",
+  "Geopolitics": "Iran escalation (lead); Denmark plot claim to Also noted; Sparta II cut (no new fact).",
+  "Science & public health": "Dengue mosquito study unreadable (cut); measles ran Nov 21; health risk angle inside Stanton lead.",
+  "Core - UAP disclosure": "Nothing new since Release 08 (Nov 20); no item.",
+  "Energy & grid": "Stanton coal orders and ratepayer cost (lead).",
+  "Elections and electoral process": "Hubbard-Foxx recount to Also noted; Senate leader vote folded into Iran lead.",
+  "Broader domestic institutions": "GAO/FBI (Also today); ICE at airports (Also today); Kalshi courts (lead).",
+  "International with US channel": "Iran (lead); El Chapo Isidro capture (Also today).",
+  "Florida / Tampa Bay": "Stanton (lead, Central Florida with Tampa Bay grid angle); Amendment 3 Manatee/Wesley Chapel (Also today); St. Johns flooding to Also noted.",
+  "Data centers / power / AI infrastructure": "Stanton order rests on data-center demand forecasts (lead); CoreWeave financing (Also today).",
+  "AI and financial services": "Kalshi/prediction markets (lead); CoreWeave GPU-backed debt (Also today)."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 22 morning): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), applied Nov 9 with wake condition closed. Topic-check answers applied as weighting: prediction markets promoted to a lead on enforcement action (NY TRO hearing); AI debt/credit risk -> CoreWeave item; banks and AI agents kept to Also noted (unconfirmed).",
+ "config_change": null,
+ "also_noted_count": 10,
+ "comparison_edition": "none opened",
+ "sources_checked_total": 76,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale January 2025 file; not used)",
+  "AP top news (Cloudflare bot check; not read)",
+  "X US trends (WOEID 23424977)",
+  "X news search (last 14h)",
+  "WUSF/Inside Climate News: Stanton coal orders cost",
+  "Energy Department Order No. 202-26-42 page (energy.gov)",
+  "Central Florida Public Media: Stanton health risks (Nov 17)",
+  "web search: DOE 202(c) Stanton orders and OUC statement",
+  "PBS/AP: Trump credit-card cap",
+  "CBS News: credit-card cap",
+  "Fox 13: credit-card cap (AP)",
+  "Axios: credit-card cap (search excerpt; 403 direct)",
+  "ABA joint statement on rate caps (Jan 9, 2026)",
+  "AEI, Kupiec: 10% APR cap (Nov 17)",
+  "ABA Banking Journal: Morning Consult survey",
+  "ABC News: Kalshi TRO hearing",
+  "CNBC: state-federal prediction-market fight",
+  "Al Jazeera: Iran escalation in the Gulf",
+  "CBS News Iran live updates",
+  "CNBC/Reuters: two tanker attacks near Khasab",
+  "The Hill: House Democrats split on lame-duck shutdown (search excerpt; 403 direct)",
+  "Axios: House Democrats recoil at shutdown fight (search excerpt; 403 direct)",
+  "MinnPost D.C. Memo: shutdown over Iran (search excerpt)",
+  "Common Dreams: Van Hollen-Schumer vote Dec 1",
+  "Guardian: Vance and Iran nuclear claim",
+  "Guardian: Lutnick as Democrats' target",
+  "CNBC: Huang to testify publicly",
+  "Sen. Cotton press release, Oct 14 2025 (cotton.senate.gov)",
+  "The Hill: Cotton on Lutnick (headline)",
+  "PBS/AP: FBI NCIC breach",
+  "CNBC: Trump on FBI hack",
+  "Fox News: GAO 17 agencies",
+  "GAO-27-108661 product page (gao.gov)",
+  "WUSF: Manatee commissioners on Amendment 3",
+  "Suncoast Searchlight/WUSF: Manatee permits",
+  "Tampa Bay Times: Wesley Chapel cityhood (to paywall)",
+  "ABC News: Seattle airport ICE arrests",
+  "NBC News: Princeton researcher detained",
+  "Guardian: CoreWeave debt",
+  "Navy Times: CBO shipbuilding",
+  "Guardian: Trump-class warships",
+  "USNI: CBO shipbuilding summary (search excerpt; 403 direct)",
+  "BBC: El Chapo Isidro arrest",
+  "PBS/AP: Sinaloa violence after capture",
+  "Fox 13: Honda/Toyota Takata recall",
+  "Toyota pressroom / NHTSA 26V748 (search)",
+  "Al Jazeera: COP31 overtime",
+  "WUSF: Central Florida flooding",
+  "web search: Pasco/New Port Richey news (negative check)",
+  "web search: JPMorgan news (negative check)",
+  "X news search: JPMorgan/Pasco/UAP (negative check)"
+ ],
+ "first_sweep_count": 29,
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 50 unique links, 2026-11-22 ~07:50 ET: 38 returned 200; 12 returned 403 to curl (thehill.com x5, axios.com x2, ft.com x2, news.usni.org, aei.org, gao.gov). All are bot-blocking sites: The Hill/Axios/USNI/AEI text was read via search excerpts, GAO via a fetch tool, and FT/Hill headline-only items are labelled as such.",
+ "audit_attempts": {
+  "count": 2,
+  "results": [
+   "attempt 1 (~07:48 ET): exit 0, all hard gates passed; stories 11 (leads 5, also 6), continuations 2, radio groups 6, sources 76, no warnings",
+   "attempt 2 (~07:52 ET, after adding link-check and audit fields to this log; final files): exit 0, same counts, no warnings"
+  ]
+ }
+}

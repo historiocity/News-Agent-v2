@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Sunday, 22 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Sunday, 22 November 2026 &middot; morning edition</div>
+  <h1>Iran hits tankers and Bahrain as Democrats split over the Dec.&nbsp;11 war money; Trump offers Democrats a credit-card rate cap; Florida coal orders cost ratepayers $25.6&nbsp;million; Kalshi faces a Monday hearing in New York; Republicans turn on Lutnick</h1>
+  <p class="summary">Five leads, six below the line. Iran stepped up attacks in the Gulf, with about 25 tankers hit in a week and strikes on Bahrain, as House and Senate Democrats split over whether to risk a Dec.&nbsp;11 shutdown to cut off war money; Trump said he would work with Democrats to cap credit-card interest, which banks have fought all year; an analysis puts the cost to ratepayers of federal orders keeping an Orlando coal unit open at $25.6&nbsp;million, with the latest order expiring Nov.&nbsp;30; New York asks a judge on Monday to stop Kalshi&rsquo;s sports contracts after federal regulators failed to block the hearing; and Republican senators led by Tom Cotton say Commerce Secretary Howard Lutnick ignored warnings about the chip sales at the heart of the Nvidia scandal. Below the line: Trump confirms the FBI database breach as auditors find gaps at 17 agencies; Amendment&nbsp;3 cuts reach Manatee and Wesley Chapel; ICE arrests on airport jet bridges; CoreWeave&rsquo;s $47&nbsp;billion debt; budget scorekeepers price the Navy&rsquo;s battleships; and Mexico captures a cartel boss on the FBI&rsquo;s most-wanted list.</p>
+  <p class="sub">Sunday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-22-v2.html</code>.</p>
+  <p class="prov"><b>76 sources checked, 29 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera, the BBC front plus its U.S., world and business feeds, CNBC, Guardian U.S. and business, The Hill, Fox News politics and latest feeds, Semafor, Tampa Bay Times, Fox&nbsp;13, WFLA, WUSF, Politico, Axios, CBS, ABC, NBC, PBS NewsHour, NYT and FT headlines, the WSJ world feed (stale January 2025 file, not used), AP&rsquo;s front (a bot check, not read), and X&rsquo;s U.S. trends and news search. The Federal Register public-inspection list is offline on Sundays, so we have no view of Monday&rsquo;s documents. The Hill, Axios, USNI and cbo.gov pages refused direct fetches; we used their text only where a search index showed it, and we say so in each item.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure news, Pasco County and New Port Richey news, and JPMorgan, and compared the candidate list against every front swept and X&rsquo;s U.S. trends (Formula&nbsp;1 in Las Vegas, soccer, K-pop and Sunday greetings; nothing news-bearing). Nothing new on UAP since Friday&rsquo;s eighth Pentagon release. Pasco&rsquo;s news was a library festival and a missing-teen alert, neither at the bar. JPMorgan&rsquo;s news was a vendor breach and a CFO succession that ran on Friday and Saturday. Two items are underreported: the Navy shipbuilding cost estimate, which we found in only two general-news outlets, and the Guardian&rsquo;s look at CoreWeave&rsquo;s debt, which no other newsroom we could read had matched. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed; no new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#iran-gulf">Iran escalates in the Gulf; Democrats split over the Dec.&nbsp;11 war money</a></li>
+    <li><a href="#card-cap">Trump offers to work with Democrats on a credit-card rate cap</a></li>
+    <li><a href="#stanton">Federal orders keeping an Orlando coal unit open cost $25.6&nbsp;million</a></li>
+    <li><a href="#kalshi">New York&rsquo;s Monday hearing on Kalshi</a></li>
+    <li><a href="#lutnick">Republicans turn on Lutnick over the Megaspeed chip sales</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#cyber-gaps">Trump confirms the FBI breach; auditors find gaps at 17 agencies</a></li>
+    <li><a href="#amendment3">Amendment&nbsp;3 cuts reach Manatee and Wesley Chapel</a></li>
+    <li><a href="#ice-airports">ICE arrests on airport jet bridges</a></li>
+    <li><a href="#coreweave">CoreWeave&rsquo;s $47&nbsp;billion debt</a></li>
+    <li><a href="#shipbuilding">The Navy&rsquo;s battleships and an 18% shipbuilding overrun</a></li>
+    <li><a href="#chapo-isidro">Mexico captures &ldquo;El Chapo Isidro&rdquo;</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="iran-gulf">
+  <h3>Iran hits about 25 tankers in a week and strikes at U.S. bases in Bahrain; Trump says he wants a &ldquo;permanent&rdquo; deal; and Democrats split over risking a Dec.&nbsp;11 shutdown to cut off war money</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (Iran&rsquo;s widening strikes and the Pentagon money fight ran Nov.&nbsp;19). Trigger: threshold event &mdash; the most tanker strikes in a single week that we have seen reported, and attacks on Bahrain after a lull of about two months, by CBS News&rsquo;s count; and a material connection &mdash; the war is now the dividing line in the Dec.&nbsp;11 funding deadline and in the Dec.&nbsp;1 vote for Senate Democratic leader.</p>
+  <p class="src-count">Independent accounts compared: 6 newsrooms (Al Jazeera, CBS News, CNBC carrying Reuters, The Hill, Axios, Common Dreams), plus the Guardian on Vance.</p>
+  <p>Al Jazeera&rsquo;s Tehran correspondent counts about 25 tankers hit in and around the Strait of Hormuz since Nov.&nbsp;14. Britain&rsquo;s UKMTO counted 263 ships through the strait from Nov.&nbsp;12 to 18, 15% fewer than the week before, and 37 oil tankers, down from 52. The Revolutionary Guard says it hit U.S. positions at the al-Riffa and Awali bases in Bahrain and destroyed two Patriot radars, which we could not confirm; the claim comes only from the IRGC. U.S. Central Command denied an Iranian claim that a U.S. F-16 was damaged (<a href="https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf">Al Jazeera</a>). Bahrain said a strike on Saturday hit a civilian industrial facility, its fourth attempted attack in about a week, and on Saturday UKMTO reported two tankers hit by unidentified projectiles near Oman&rsquo;s Khasab (<a href="https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/">CBS News</a>; <a href="https://www.cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html">CNBC / Reuters</a>). Trump told Fox News on Saturday he wants a &ldquo;permanent&rdquo; deal so that a future &ldquo;incompetent president&rdquo; could not let Iran get a nuclear weapon. Foreign Minister Abbas Araghchi said the talks must be &ldquo;given a chance&rdquo; and the U.S. blockade &ldquo;must be lifted rationally.&rdquo;</p>
+  <p>In Washington, the money is the fight. Funding for most of the government runs out on Friday, Dec.&nbsp;11. Rep. Ro Khanna calls cutting war money a red line: &ldquo;I do think we&rsquo;ve got to get that money out.&rdquo; Rep. Rosa DeLauro, the top Democrat on House Appropriations, says it is &ldquo;not a red line&rdquo; and that &ldquo;shutting the government down doesn&rsquo;t stop the war&rdquo;; Rep. Gregory Meeks talks of conditions and amendments instead (<a href="https://thehill.com/homenews/house/6234623-house-lame-duck-shutdown-risk/">The Hill</a>, read through a search excerpt). Axios reports that Republican leaders will probably need a two-thirds vote, and so many Democratic votes, to pass any stopgap (<a href="https://www.axios.com/2026/11/19/government-shutdown-funding-iran-democrat">Axios</a>, read through a search excerpt). In the Senate, Chris Van Hollen is challenging Chuck Schumer for leader on a demand to halt war funding now; the secret-ballot vote is set for Tuesday, Dec.&nbsp;1, and he needs 28 votes (<a href="https://www.commondreams.org/news/van-hollen-schumer-vote">Common Dreams</a>). At the White House on Friday, Vance stopped short of endorsing Trump&rsquo;s claim that Iran was weeks from a bomb in February (<a href="https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon">The Guardian</a>).</p>
+  <p><b>Why it matters to you.</b> The war is now driving three things at once: oil and shipping costs that reach fuel prices in Florida, the first big test of the new Democratic majority before it is even seated, and who leads the Senate. A shutdown fight over war money would land in the middle of the holidays.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; how to end a war Democrats all oppose</span>
+    <p><b>Dispute type.</b> Strategy, not goal. Khanna and Rep. Yassamin Ansari will oppose any bill that does not bar money for offensive operations; DeLauro, Meeks and centrists such as Rep. Brad Schneider want to avoid a shutdown and use the January majority.</p>
+    <p><b>Vantage, interests, access, timing.</b> DeLauro negotiates the spending bill and wants the January agenda on schedule. Khanna and Van Hollen speak to an activist base energized by the midterms, and Van Hollen&rsquo;s leadership bid turns on the issue. The Hill and Axios quote members directly; Common Dreams is an advocacy outlet friendly to the Van Hollen camp. Iran&rsquo;s battle claims come from state media and are often denied by CENTCOM.</p>
+    <p><b>What it means for you.</b> A short stopgap with no war limits is the likeliest path, by the members&rsquo; own accounts, but it depends on how many Democrats follow Khanna. Watch the Dec.&nbsp;1 Senate vote as the first count.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran war&rsquo;s collision with the Dec.&nbsp;11 funding deadline?</b></p>
+    <label><input type="radio" name="fb-iran" value="bill-text"> When a stopgap bill or amendment that bars money for offensive operations in Iran gets a floor vote and we can see who backed it</label>
+    <label><input type="radio" name="fb-iran" value="leader-vote"> When the Dec.&nbsp;1 Senate Democratic leader vote turns on Van Hollen&rsquo;s defund demand</label>
+    <label><input type="radio" name="fb-iran" value="casualties"> Only if an Iranian strike causes U.S. casualties in Bahrain or Kuwait, or Congress schedules a new war-powers vote</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf">Al Jazeera</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/iran-war-trump-tehran-denies-chemical-weapons/">CBS News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/21/two-tanker-attacks-reported-near-omans-khasab-ukmto-says.html">CNBC / Reuters</a> &middot;
+    <a href="https://thehill.com/homenews/house/6234623-house-lame-duck-shutdown-risk/">The Hill</a> &middot;
+    <a href="https://www.axios.com/2026/11/19/government-shutdown-funding-iran-democrat">Axios</a> &middot;
+    <a href="https://www.commondreams.org/news/van-hollen-schumer-vote">Common Dreams</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon">The Guardian</a>
+  </p>
+</article>
+
+<article id="card-cap">
+  <h3>Trump says he would work with the incoming Democratic Congress to cap credit-card interest, reviving a 10% cap the banks beat back in January</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; US financials</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (the Associated Press, carried by PBS and CBS; Axios), plus statements from the bank trade groups and the American Enterprise Institute.</p>
+  <p>&ldquo;I would do it. These credit card companies have made a lot,&rdquo; Trump told Fox News on Saturday. Sen. Elizabeth Warren, expected to chair Senate Banking in January, answered: &ldquo;Let&rsquo;s cap credit card interest rates and save Americans money.&rdquo; The usual proposal is 10%; the median card rate is about 22.2%, according to a New York Fed survey in August. Researchers cited by AP estimate a 10% cap would save Americans about $100&nbsp;billion a year in interest while leaving the industry profitable with fewer rewards. Rep. Maxine Waters and, on the Republican side, Sen. Josh Hawley have backed caps (<a href="https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10">PBS / AP</a>). CBS works the arithmetic: on a $5,000 balance, interest would fall from about $100 a month to about $42 (<a href="https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics/">CBS News</a>). Trump also attacked fees: &ldquo;a bill that some guy set up in an office on Park Avenue&rdquo; (<a href="https://www.axios.com/2026/11/21/trump-credit-cards-rates-warren">Axios</a>, read through a search excerpt).</p>
+  <p>Trump promised a one-year 10% cap in January; nothing came of it after the industry pushed back and the Republican Congress showed little interest. Five bank groups, including the American Bankers Association and the Bank Policy Institute, said then that a cap &ldquo;would reduce credit availability&rdquo; and push borrowers to &ldquo;less regulated, more costly alternatives&rdquo; (<a href="https://www.aba.com/about-us/press-room/press-releases/rate-caps-statement">ABA</a>). On Nov.&nbsp;17 AEI&rsquo;s Paul Kupiec argued that a cap would mean cancelled near-prime accounts, higher fees and rationed rewards (<a href="https://www.aei.org/economics/a-10-percent-annual-percentage-rate-cap-will-send-credit-cards-back-to-the-future/">AEI</a>). There is no bill text or White House draft yet; we could not find one.</p>
+  <p><b>Why it matters to you.</b> JPMorgan and its direct competitors are among the big card issuers, and their trade groups led the January pushback. A president and a Democratic Banking chair on the same side is the first real path a cap has had, and it would reshape rewards, fees and who gets a card.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; relief or rationing?</span>
+    <p><b>Dispute type.</b> Forecast. Supporters cite about $100&nbsp;billion a year in savings; the banks and AEI forecast closed accounts for weaker borrowers and higher fees for everyone else. An ABA survey by Morning Consult found 55% to 30% opposition to a 10% cap if it meant higher annual fees.</p>
+    <p><b>Vantage, interests, access, timing.</b> Trump and Warren have both made affordability their pitch to voters. The banks would lose interest income, and the ABA commissioned the survey, whose questions were framed around costs to cardholders. AEI is a free-market think tank. The savings figure comes from researchers AP did not name in the copy we read.</p>
+    <p><b>What it means for you.</b> Both sides agree a cap would cut card profits; they disagree on who pays. The first test is whether Warren schedules a markup in January.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the credit-card rate cap?</b></p>
+    <label><input type="radio" name="fb-cardcap" value="markup"> When Warren&rsquo;s or Hawley&rsquo;s cap bill gets a Senate Banking markup date in the new Congress</label>
+    <label><input type="radio" name="fb-cardcap" value="issuers"> When JPMorgan, Capital One or the bank trade groups say which cards, customers or rewards they would cut under a cap</label>
+    <label><input type="radio" name="fb-cardcap" value="wh-text"> Only if the White House sends its own bill text or signs an order, not just interview remarks</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10">PBS / AP</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics/">CBS News</a> &middot;
+    <a href="https://www.axios.com/2026/11/21/trump-credit-cards-rates-warren">Axios</a> &middot;
+    <a href="https://www.aba.com/about-us/press-room/press-releases/rate-caps-statement">ABA</a> &middot;
+    <a href="https://www.aei.org/economics/a-10-percent-annual-percentage-rate-cap-will-send-credit-cards-back-to-the-future/">AEI</a>
+  </p>
+</article>
+
+<article id="stanton">
+  <h3>Federal emergency orders keeping an Orlando coal unit open have cost ratepayers $25.6&nbsp;million, an analysis finds; Washington cites Florida&rsquo;s data-center demand, and the latest order expires Nov.&nbsp;30</h3>
+  <div class="meta">
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Inside Climate News, published by WUSF; Central Florida Public Media), plus the Energy Department&rsquo;s order itself.</p>
+  <p>The Orlando Utilities Commission planned to put Stanton Unit&nbsp;1, a 464.5-megawatt coal unit running since 1987, into &ldquo;extended cold shutdown&rdquo; in mid-2026. The Energy Department ordered it kept available under the emergency power in section 202(c) of the Federal Power Act, first on June&nbsp;4 and again on Sept.&nbsp;1, in Order No.&nbsp;202-26-42, which runs through Monday, Nov.&nbsp;30 (<a href="https://www.energy.gov/ceser/federal-power-act-section-202c-orlando-utilities-commission-ouc-order-no-202-26-42">Energy Department</a>). The order finds an emergency in the &ldquo;Florida Peninsula&rdquo; grid region while noting that the national reliability organization, NERC, rates the area at &ldquo;Normal Risk&rdquo; for long-term adequacy; it rests the case on forecasts in which new generation and transmission lag behind &ldquo;new data centers and other large loads.&rdquo;</p>
+  <p>An Environmental Defense Fund analysis puts Stanton&rsquo;s cost to ratepayers at $25.6&nbsp;million, about $6.2&nbsp;million a month, and $593&nbsp;million for six such plants nationwide. A DOE spokesperson called the critics &ldquo;radical climate activists&rdquo; and said the orders &ldquo;likely saved hundreds of American lives&rdquo; at peak demand. OUC, which serves more than 288,000 customers in Orange and Osceola counties, says the cost claims rest on assumptions that &ldquo;do not reflect&rdquo; its own analysis, and its board will weigh a fuel-rate cut of about $5 a month in December. In Michigan, DOE issued a seventh order for the Campbell plant on Nov.&nbsp;13, after the D.C. Circuit found in September that there was no emergency there (<a href="https://www.wusf.org/environment/2026-11-22/trump-orders-keep-florida-coal-plant-running-cost-ratepayers-millions">WUSF / Inside Climate News</a>). Health experts and local leaders told Central Florida Public Media last week the unit poses significant risks to public health (<a href="https://www.cfpublic.org/environment/2026-11-17/health-experts-say-keeping-orlando-coal-plant-open-driving-up-risk">Central Florida Public Media</a>). We could not read EDF&rsquo;s analysis itself; the figures are as WUSF reported them.</p>
+  <p><b>Why it matters to you.</b> Data-center demand forecasts are part of Washington&rsquo;s case for keeping an old Florida plant running, and someone has now put a price on it. The bill lands on Orlando-area customers, not Pasco&rsquo;s, but the same regional demand argument could be made about Tampa Bay&rsquo;s utilities.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; emergency or expensive insurance?</span>
+    <p><b>Dispute type.</b> Factual and legal: whether an emergency exists, and what the unit costs to run. DOE says it does and the unit saves lives; EDF, Earthjustice and the Sierra Club say there is no emergency and the cost is $25.6&nbsp;million; OUC disputes the cost math but complies.</p>
+    <p><b>Vantage, interests, access, timing.</b> DOE wrote the order and defends its own authority. EDF and Earthjustice are suing over it, so their estimate is advocacy as well as analysis. OUC has the actual fuel and operating data and a board vote coming in December. The D.C. Circuit&rsquo;s Michigan ruling is the only court finding so far.</p>
+    <p><b>What it means for you.</b> Expect a third order before Nov.&nbsp;30 if DOE follows its Michigan pattern. Florida&rsquo;s first court test of the orders would decide whether the data-center argument holds up.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the federal orders keeping Florida coal units open?</b></p>
+    <label><input type="radio" name="fb-stanton" value="nov30"> When DOE issues, or lets lapse, a third Stanton order before the Nov.&nbsp;30 expiration</label>
+    <label><input type="radio" name="fb-stanton" value="tampa-bills"> When Duke Energy Florida, TECO or the Florida PSC tie data-center load to bills in Pasco, Pinellas or Hillsborough</label>
+    <label><input type="radio" name="fb-stanton" value="court"> Only if a court rules on the Earthjustice and EDF challenge to the Florida order</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.energy.gov/ceser/federal-power-act-section-202c-orlando-utilities-commission-ouc-order-no-202-26-42">Energy Department, Order No.&nbsp;202-26-42</a> &middot;
+    <a href="https://www.wusf.org/environment/2026-11-22/trump-orders-keep-florida-coal-plant-running-cost-ratepayers-millions">WUSF / Inside Climate News</a> &middot;
+    <a href="https://www.cfpublic.org/environment/2026-11-17/health-experts-say-keeping-orlando-coal-plant-open-driving-up-risk">Central Florida Public Media</a>
+  </p>
+</article>
+
+<article id="kalshi">
+  <h3>New York asks a state judge on Monday to stop Kalshi&rsquo;s sports contracts after a federal judge sent the case back and another refused the CFTC&rsquo;s bid to block the hearing</h3>
+  <div class="meta">
+    <span class="chip">AI and financial services</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (ABC News, CNBC). CNBC discloses a commercial relationship with Kalshi and a minority investment in it.</p>
+  <p>On Friday, U.S. District Judge Vernon Broderick refused to move New York Attorney General Letitia James&rsquo;s suit against Kalshi into federal court, ruling that prediction markets do not necessarily fall outside state jurisdiction. James then asked state Judge Melissa Crane for a temporary restraining order to stop Kalshi offering sports contracts without a state gaming license; a hearing is set for Monday. Kalshi&rsquo;s lawyer said the order would &ldquo;likely force the liquidation of all open positions.&rdquo; In an emergency call, a lawyer for the Commodity Futures Trading Commission asked a second federal judge, Lorna Schofield, to stop Crane from ruling, saying the order &ldquo;would completely shut down Kalshi&rsquo;s operations nationwide.&rdquo; Schofield refused: &ldquo;The requested application is denied&rdquo; (<a href="https://abcnews.go.com/US/kalshi-prediction-market-crippled-judge-grants-restraining-order/story?id=138329957">ABC News</a>).</p>
+  <p>It is one front in a wider war. Utah has filed 14 criminal charges against Kalshi and its founders, who are due in court on Dec.&nbsp;4; a Louisiana judge granted a restraining order on Nov.&nbsp;12; the CFTC has sued 12 states; and the Fourth Circuit ruled 2&ndash;1 this week that Maryland can enforce its gambling law. The Senate on Thursday passed a bipartisan bill barring contracts on terrorism, assassination or war. Kalshi ended its advisory deal with Donald Trump Jr. on Nov.&nbsp;12, pointing to his firm 1789 Capital&rsquo;s stake in rival Polymarket (<a href="https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html">CNBC</a>).</p>
+  <p><b>Why it matters to you.</b> You flagged prediction-market regulation as a watch item to promote on an enforcement action; a state court order that could close out positions nationwide is that. The fight also sets whether event contracts are regulated as finance or as gambling, which matters for every bank and broker building on them.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; market disruption or a licensing rule?</span>
+    <p><b>Dispute type.</b> Legal and factual. The CFTC and Kalshi say a state order would shut the platform nationwide; New York&rsquo;s lawyer Kate Rhodes Janofsky said &ldquo;there has been no evidence of market disruption&rdquo; and the suit does not seek to close Kalshi.</p>
+    <p><b>Vantage, interests, access, timing.</b> The CFTC is defending its claim to exclusive jurisdiction and has a single sitting commissioner. Kalshi is a $40&nbsp;billion company, by Rep. Ro Khanna&rsquo;s count, with every incentive to warn of chaos. James is enforcing state gambling law. ABC had the hearing record; CNBC has a commercial tie to Kalshi, which it discloses.</p>
+    <p><b>What it means for you.</b> Courts are splitting, and most observers expect the Supreme Court to settle it. Monday&rsquo;s ruling is the near-term marker.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the prediction-market fight?</b></p>
+    <label><input type="radio" name="fb-kalshi" value="crane"> When Judge Crane rules on New York&rsquo;s restraining-order request after Monday&rsquo;s hearing</label>
+    <label><input type="radio" name="fb-kalshi" value="scotus"> When the Supreme Court agrees to hear a state-versus-CFTC case on sports contracts</label>
+    <label><input type="radio" name="fb-kalshi" value="trump-ties"> When Democrats in the new Congress subpoena Kalshi or Polymarket over the Trump family&rsquo;s stakes and advisory roles</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.go.com/US/kalshi-prediction-market-crippled-judge-grants-restraining-order/story?id=138329957">ABC News</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/21/prediction-market-regulation-kalshi-cftc.html">CNBC</a>
+  </p>
+</article>
+
+<article id="lutnick">
+  <h3>Republican senators turn on Howard Lutnick: Tom Cotton says Commerce ignored his &ldquo;many letters&rdquo; about the Megaspeed chip pipeline, and Jensen Huang agrees to testify in public</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="meta">Continuing lead (Lutnick, Cantor and the chip licenses ran Nov.&nbsp;18 and 20). Trigger: new verifiable fact &mdash; the Republican Senate intelligence chair now says on the record that Commerce ignored his warnings, and his October 2025 letter asking Commerce to investigate Megaspeed is public; and a dated event &mdash; Huang&rsquo;s House interview on Dec.&nbsp;1 and his pledge to testify publicly in the Senate.</p>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (The Guardian, CNBC), plus Sen. Cotton&rsquo;s own 2025 letter and The Hill&rsquo;s headline on his remarks.</p>
+  <p>Jensen Huang resigned as Nvidia&rsquo;s chief executive this month over extramarital affairs, including one with Alice Huang, a former executive at Singapore-based Megaspeed whom U.S. intelligence agencies suspect of being a Chinese spy. Megaspeed allegedly served as a conduit for $4&nbsp;billion of Nvidia chips diverted to China. Treasury Secretary Scott Bessent has said Treasury, Defense, State and the trade representative wanted Megaspeed blacklisted months ago and that &ldquo;Commerce has the pen.&rdquo; Cotton told the Wall Street Journal Lutnick should have taken &ldquo;the threats of communist China more seriously&rdquo;; Sen. John Kennedy said Commerce &ldquo;greenlit $4bn of sales&rdquo; to &ldquo;the company of the spy&rdquo; and wants to know why. Ron Wyden and Richard Neal have told Lutnick to preserve all records on Nvidia export decisions. Trump gave Lutnick a vote of confidence on Friday (<a href="https://www.theguardian.com/us-news/2026/nov/22/howard-lutnick-nvidia-china">The Guardian</a>; <a href="https://thehill.com/policy/technology/6235143-senator-warned-commerce-lutnick-nvidia-chips/">The Hill</a>, headline only).</p>
+  <p>The paper trail is real: on Oct.&nbsp;14, 2025, Cotton released a letter asking Lutnick to investigate Megaspeed, a spin-off of a Chinese state-owned cloud company, for &ldquo;suspicious ownership, affiliations, or ties to U.S chip companies&rdquo; (<a href="https://www.cotton.senate.gov/news/press-releases/cotton-to-lutnick-investigate-chinese-government-spin-off-megaspeed-for-skirting-us-export-laws/">Sen. Tom Cotton</a>). Huang has agreed to a closed-door, transcribed interview with three House committees on Tuesday, Dec.&nbsp;1, and will testify publicly before Senate Banking; Chairman Tim Scott asked for Dec.&nbsp;3 and wants Lutnick too &ldquo;before Christmas,&rdquo; but no date is set (<a href="https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html">CNBC</a>). We could not find a Commerce Department response to Cotton&rsquo;s account in the reports we read, and we could not confirm the $4&nbsp;billion figure beyond the Guardian&rsquo;s reporting of the allegation.</p>
+  <p><b>Why it matters to you.</b> Export-control enforcement decides which AI chips reach China and which data centers get built where. If the story moves from Huang&rsquo;s private life to what Commerce knew, it becomes a fight over the department that licenses the AI supply chain.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; who sat on the warnings?</span>
+    <p><b>Dispute type.</b> Factual, inside the administration. Bessent places the delay at Commerce; Trump backs Lutnick; Cotton and Kennedy, both Republicans, say Commerce ignored warnings.</p>
+    <p><b>Vantage, interests, access, timing.</b> Bessent is shifting blame away from Treasury in a public dispute. Cotton chairs Senate Intelligence and wrote some of the warnings himself, so he has a record to defend as well as a China position to press. The Guardian piece leans on a Democratic adviser for framing. None of the accounts includes Commerce&rsquo;s internal record, which Wyden and Neal want preserved for the new Congress.</p>
+    <p><b>What it means for you.</b> Sworn testimony in December is the first chance to test any of these accounts. Until then, the confirmed fact is Cotton&rsquo;s 2025 letter, not what Commerce did with it.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Lutnick and the Megaspeed chip sales?</b></p>
+    <label><input type="radio" name="fb-lutnick" value="records"> When Commerce&rsquo;s internal records on the Megaspeed blacklist delay surface through a subpoena or the Wyden&ndash;Neal preservation demand</label>
+    <label><input type="radio" name="fb-lutnick" value="testimony"> When Huang&rsquo;s Dec.&nbsp;1 House interview or a Senate Banking hearing puts on record what Commerce was told</label>
+    <label><input type="radio" name="fb-lutnick" value="gop-resign"> Only if a Republican senator beyond Cotton and Kennedy calls for Lutnick to resign</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cotton.senate.gov/news/press-releases/cotton-to-lutnick-investigate-chinese-government-spin-off-megaspeed-for-skirting-us-export-laws/">Sen. Tom Cotton (Oct.&nbsp;14, 2025)</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/22/howard-lutnick-nvidia-china">The Guardian</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html">CNBC</a> &middot;
+    <a href="https://thehill.com/policy/technology/6235143-senator-warned-commerce-lutnick-nvidia-chips/">The Hill (headline)</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar today. No per-item questions; one question on the whole tier follows the last item.</p>
+
+<article id="cyber-gaps">
+  <h3>Trump confirms the FBI crime-database breach and says it may have a &ldquo;positive spin&rdquo;; congressional auditors find 17 of 22 agencies have not fully met federal zero-trust guidance</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (PBS carrying AP, CNBC, Fox News), plus the GAO report.</p>
+  <p>Asked about the National Crime Information Center breach on Fox News on Saturday, Trump said &ldquo;it&rsquo;s not good&rdquo; and later mused, &ldquo;Maybe we&rsquo;ll learn about the voter fraud&hellip; I always like to put things on a positive spin,&rdquo; and &ldquo;wouldn&rsquo;t it be great to learn about Russia, Russia, Russia?&rdquo; The FBI declined to comment; it is unclear what data was taken (<a href="https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database">PBS / AP</a>; <a href="https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html">CNBC</a>). Separately, the GAO reported on Nov.&nbsp;18 that only 5 of 22 civilian agencies fully addressed selected federal guidance in their zero-trust plans, issued 40 recommendations, and warned the rest face &ldquo;increased risk of cyberattacks&rdquo; (<a href="https://www.gao.gov/products/gao-27-108661">GAO</a>). Fox News reports that the Justice Department, which houses the FBI, cited resource limits for incomplete assessments (<a href="https://www.foxnews.com/politics/17-major-federal-agencies-flagged-cybersecurity-gaps-watchdog-warns-increased-attack-risk">Fox News</a>). We could not confirm any link between the breach and the recent outages; AP reported no immediate indication of one.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.gao.gov/products/gao-27-108661">GAO-27-108661</a> &middot; <a href="https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database">PBS / AP</a> &middot; <a href="https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html">CNBC</a> &middot; <a href="https://www.foxnews.com/politics/17-major-federal-agencies-flagged-cybersecurity-gaps-watchdog-warns-increased-attack-risk">Fox News</a></p>
+</article>
+
+<article id="amendment3">
+  <h3>Amendment&nbsp;3&rsquo;s tax cut reaches the counties: Manatee freezes 118 jobs and pauses projects that haven&rsquo;t broken ground, and a Pasco chamber weighs a Wesley Chapel cityhood study</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (WUSF, Suncoast Searchlight published by WUSF, Tampa Bay Times).</p>
+  <p>Manatee&rsquo;s administrator told commissioners the higher homestead exemption, $150,000 next year and $250,000 the year after, will cut county revenue by about $63&nbsp;million in year one and $113&nbsp;million in year two. The county has frozen 118 positions and will pause capital projects that haven&rsquo;t broken ground; one commissioner said consolidating departments is &ldquo;absolutely going to happen&rdquo; (<a href="https://www.wusf.org/politics-issues/2026-11-21/manatee-commissioners-warn-of-significant-reductions-following-amendment-3-passage">WUSF</a>). Manatee also issued 11,015 residential permits last year, the highest per-capita rate of any similar-sized U.S. county, so the cuts hit roads and schools that growth already strains (<a href="https://www.wusf.org/economy-business/2026-11-22/manatee-leads-nation-in-home-permits-as-infrastructure-struggles-to-keep-up">Suncoast Searchlight / WUSF</a>). In Pasco, the North Tampa Bay Chamber of Commerce is considering whether to study incorporating Wesley Chapel (<a href="https://www.tampabay.com/news/pasco/2026/11/21/wesley-chapel-amendment-3-property-taxes-incorporation-city/">Tampa Bay Times</a>, read to the paywall). We could not read the Times&rsquo; full account of why cityhood is back.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/politics-issues/2026-11-21/manatee-commissioners-warn-of-significant-reductions-following-amendment-3-passage">WUSF</a> &middot; <a href="https://www.wusf.org/economy-business/2026-11-22/manatee-leads-nation-in-home-permits-as-infrastructure-struggles-to-keep-up">Suncoast Searchlight / WUSF</a> &middot; <a href="https://www.tampabay.com/news/pasco/2026/11/21/wesley-chapel-amendment-3-property-taxes-incorporation-city/">Tampa Bay Times</a></p>
+</article>
+
+<article id="ice-airports">
+  <h3>Masked ICE officers arrest two people on a Seattle jet bridge and a Princeton researcher at Reagan National; DHS says it is working to stop people it deems illegal from flying</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (ABC News, NBC News), plus The Hill&rsquo;s headline on Gov. Ferguson.</p>
+  <p>Plainclothes, masked officers detained two people boarding an Alaska Airlines flight at Seattle-Tacoma on Saturday; DHS says its target was a man who overstayed his visa and that a woman who threw hot coffee at officers was also detained. Gov. Bob Ferguson called the video &ldquo;horrific and chilling,&rdquo; and the Port of Seattle said it was &ldquo;outraged&rdquo; and is asking DHS whether agreed airport protocols were breached (<a href="https://abcnews.go.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974">ABC News</a>). At Reagan National, ICE detained Eva Yi Xie, a 24-year-old Princeton neuroscience Ph.D. candidate whose lawyer says her asylum case has been pending for ten years; DHS says &ldquo;a pending application does not confer legal status&rdquo; and repeated that it is working to keep people it considers in the country illegally from flying domestically (<a href="https://www.nbcnews.com/news/us-news/princeton-neuroscientist-eva-yi-xie-ice-detained-rcna610603">NBC News</a>; <a href="https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/">The Hill</a>, headline only). We could not confirm the coffee account beyond DHS&rsquo;s statement.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://abcnews.go.com/US/washington-state-officials-condemn-ice-after-2-arrested/story?id=138349974">ABC News</a> &middot; <a href="https://www.nbcnews.com/news/us-news/princeton-neuroscientist-eva-yi-xie-ice-detained-rcna610603">NBC News</a> &middot; <a href="https://thehill.com/homenews/state-watch/6235558-ferguson-condemns-ice-airport-detention/">The Hill (headline)</a></p>
+</article>
+
+<article id="coreweave">
+  <h3>CoreWeave owes $47&nbsp;billion, with $10&nbsp;billion due next year, and the Nvidia scandal hits the company most tied to Nvidia&rsquo;s financing</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (The Guardian), with FT headlines as signal only.</p>
+  <p>The Guardian reports that CoreWeave, the &ldquo;neocloud&rdquo; that rents Nvidia chips to OpenAI, Anthropic and others, now owes $47&nbsp;billion, up about $12&nbsp;billion since a summer SEC filing listed 18 kinds of debt; more than $10&nbsp;billion falls due next year, it lost $709&nbsp;million last quarter, and interest is expected to top $1&nbsp;billion next quarter. Much of it is GPU-backed debt, secured on chips that lose value. Nvidia owns about 11% and agreed to buy $6.3&nbsp;billion of compute CoreWeave cannot sell (<a href="https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom">The Guardian</a>). The FT reports Nscale is slowing hiring ahead of a planned $35&nbsp;billion IPO (<a href="https://www.ft.com/content/98f5aa90-5581-45ed-8e9b-d72217c56df8">FT</a>, headline only). We could not check the debt figures against CoreWeave&rsquo;s own filings this morning.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom">The Guardian</a> &middot; <a href="https://www.ft.com/content/98f5aa90-5581-45ed-8e9b-d72217c56df8">FT (headline)</a></p>
+</article>
+
+<article id="shipbuilding">
+  <h3>Budget scorekeepers say the Navy&rsquo;s 30-year shipbuilding plan would cost 18% more than the Navy says, driven by 15 &ldquo;Trump-class&rdquo; battleships</h3>
+  <div class="meta"><span class="chip">Core &mdash; US debt &amp; fiscal</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Navy Times, The Guardian), plus USNI&rsquo;s reprint of the CBO summary seen through a search index.</p>
+  <p>The Congressional Budget Office estimates the Navy&rsquo;s 2027 plan at about $54&nbsp;billion a year in 2026 dollars, 18% above the Navy&rsquo;s estimate and 41% above average appropriations of the past five years; new construction alone runs $48.9&nbsp;billion a year against the Navy&rsquo;s $41.1&nbsp;billion. The plan grows the battle fleet from 286 ships to 398 by 2056 (<a href="https://www.navytimes.com/news/your-navy/2026/11/20/navys-2027-shipbuilding-plan-would-cost-54b-a-year-federal-agency-says/">Navy Times</a>; <a href="https://news.usni.org/2026/11/20/cbo-analysis-of-the-navys-fiscal-year-2027-shipbuilding-plan">USNI</a>). CBO says the 15 battleships cut against the Navy&rsquo;s own goal of spreading firepower across more ships; Senate appropriators have proposed zeroing the $1&nbsp;billion requested to start them. The acting Navy secretary, Hung Cao, conceded the Iran war is &ldquo;stretching&rdquo; the fleet (<a href="https://www.theguardian.com/us-news/2026/nov/21/trump-class-warships">The Guardian</a>). cbo.gov refused our fetch, so we read CBO&rsquo;s summary only as reprinted.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.navytimes.com/news/your-navy/2026/11/20/navys-2027-shipbuilding-plan-would-cost-54b-a-year-federal-agency-says/">Navy Times</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/21/trump-class-warships">The Guardian</a> &middot; <a href="https://news.usni.org/2026/11/20/cbo-analysis-of-the-navys-fiscal-year-2027-shipbuilding-plan">USNI (CBO summary)</a></p>
+</article>
+
+<article id="chapo-isidro">
+  <h3>Mexico captures &ldquo;El Chapo Isidro,&rdquo; on the FBI&rsquo;s ten-most-wanted list, using U.S. intelligence; at least 11 die in Sinaloa and Washington seeks extradition</h3>
+  <div class="meta"><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (BBC, PBS carrying AP).</p>
+  <p>Mexican special forces arrested Fausto Isidro Meza Flores in Guasave, Sinaloa, after a firefight that killed seven suspected gunmen and four soldiers; seven others were detained, including his cousin and second-in-command. Mexico&rsquo;s government said U.S. intelligence helped locate him. The FBI accuses him of &ldquo;flooding the US with fentanyl, cocaine, heroin,&rdquo; and the U.S. is seeking his extradition (<a href="https://www.bbc.co.uk/news/articles/ckz749ey0r75o">BBC</a>). AP notes he was a key ally of the &ldquo;Los Mayos&rdquo; faction of the Sinaloa Cartel, which the administration designated a terrorist organization, and that experts warn of a new wave of violence (<a href="https://www.pbs.org/newshour/world/mexico-detains-top-cartel-boss-el-chapo-isidro-setting-off-a-burst-of-violence-in-sinaloa">PBS / AP</a>). We could not confirm how the two governments split the operation; neither has said.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.co.uk/news/articles/ckz749ey0r75o">BBC</a> &middot; <a href="https://www.pbs.org/newshour/world/mexico-detains-top-cartel-boss-el-chapo-isidro-setting-off-a-burst-of-violence-in-sinaloa">PBS / AP</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="amendment3"> Amendment&nbsp;3 cuts, if Pasco County pauses road or fire projects near New Port Richey or Wesley Chapel moves to a formal cityhood study</label>
+  <label><input type="radio" name="fb-below" value="coreweave"> CoreWeave&rsquo;s debt, if a bank or private-credit lender marks down or pulls back from GPU-backed loans</label>
+  <label><input type="radio" name="fb-below" value="ice-air"> ICE at airports, if DHS publishes a boarding policy that reaches Tampa International during Thanksgiving week</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 76 sources checked; 29 in the first sweep before any weighting category was consulted. Five leads and six items below the line (11 stories). Two leads carry over from earlier editions, each with a stated trigger: the Iran war and the funding fight (a record week of tanker strikes, attacks on Bahrain, and the Dec.&nbsp;1 and Dec.&nbsp;11 dates) and Lutnick (Cotton&rsquo;s on-record account backed by his 2025 letter, and Huang&rsquo;s testimony dates). The card cap, the Stanton orders and Kalshi are new. Marker tallies: PS&nbsp;3 &middot; IC&nbsp;7 &middot; SS&nbsp;1. Claims we could not confirm are stated in the text with reasons: Iran&rsquo;s radar claims, any cap bill text, EDF&rsquo;s underlying analysis, Commerce&rsquo;s response to Cotton and the $4&nbsp;billion figure, any breach-outage link, the full Wesley Chapel story, DHS&rsquo;s coffee account, CoreWeave&rsquo;s filings and the U.S.&ndash;Mexico split of the raid. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-22-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>Toyota is recalling about 314,000 older vehicles over Takata passenger airbags; the list covers certain Corollas, Tundras, Sequoias, 2016&ndash;17 4Runners and some Lexus models, and does not include the Highlander (<a href="https://pressroom.toyota.com/toyota-recalls-front-passenger-airbags-in-certain-vehicles/">Toyota</a>; <a href="https://www.fox13news.com/news/over-1-million-more-honda-toyota-vehicles-recalled-over-risk-crashes">Fox&nbsp;13</a>). Missed: a 2017 Highlander is not on the list, though a VIN check at nhtsa.gov is the only sure test.</li>
+    <li>Bessent said no further restrictions are needed on Nvidia chip exports to China (<a href="https://www.pbs.org/newshour/politics/bessent-says-no-further-restrictions-are-needed-for-nvidia-chip-exports-to-china">PBS</a>, headline only). Missed: we could not read the article; it bears on the Lutnick lead if confirmed.</li>
+    <li>The COP31 climate talks went into a second day of overtime over fossil-fuel language (<a href="https://www.aljazeera.com/news/2026/11/22/fossil-fuel-impasse-pushes-cop31-climate-talks-into-second-day-of-overtime">Al Jazeera</a>). Missed: no U.S. commitment is at stake.</li>
+    <li>Flooding along the St. Johns River has hit Central Florida farms for the second time in two weeks (<a href="https://www.wusf.org/weather/2026-11-21/as-flooding-spreads-across-central-florida-farm-owners-work-to-get-animals-to-safety">WUSF</a>). Missed: outside Tampa Bay and no emergency declaration we could find.</li>
+    <li>An X news summary says Citi, JPMorgan and Bank of America changed customer agreements to make users liable for losses from third-party AI agents (<a href="https://x.com/i/trending/2123320807267226031">X</a>). Missed: one of your watch items, but we could not find the agreements or a newsroom account.</li>
+    <li>The Hill reports that Hubbard leads Foxx by 330 votes after a recount, with some House races still uncalled nearly three weeks after the election (<a href="https://thehill.com/homenews/campaign/6235449-hubbard-leads-foxx-recount/">The Hill</a>, headline only). Missed: one seat, no certification fight yet.</li>
+    <li>FT: AI server suppliers are raising prices up to 45% months after deals are signed (<a href="https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f">FT</a>, headline only). Missed: paywalled; we could not stand it up elsewhere.</li>
+    <li>Denmark accused Russia of plotting to assassinate a Ukrainian American rapper on Danish soil (<a href="https://www.bbc.co.uk/news/articles/cmde1lj4yjxno">BBC</a>). Missed: no U.S. government response we could find.</li>
+    <li>A federal jury convicted a man of starting the deadly 2025 Palisades Fire in Los Angeles (<a href="https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles">PBS</a>). Missed: a criminal verdict with no policy step attached.</li>
+    <li>Heidi Overton&rsquo;s withdrawal leaves no clear end to the FDA leadership vacuum (<a href="https://thehill.com/homenews/administration/6231959-fda-leadership-heidi-overton-nomination-withdrawal/">The Hill</a>, headline only). Missed: no new nominee or policy decision yet.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
