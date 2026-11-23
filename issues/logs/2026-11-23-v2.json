@@ -1,0 +1,666 @@
+{
+ "date": "2026-11-23",
+ "edition": "2026-11-23-v2",
+ "filename": "issues/2026-11-23-v2.html",
+ "generated_at_et": "2026-11-23 ~07:45 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "Feeds, fronts, the Federal Register API and X were swept before any weighting category in config.md was consulted for topic choice. NEWSBOT_2.0.md, config.md and audit.py were read at start for rules only; the Nov 22 issue was opened as the layout reference and to test carry-overs against Daily method Step 2, not to pick topics.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian US business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Federal Register API: Nov 23 rules, proposed rules, presidential documents",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Trump administration' (last 18h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'markets economy AI stocks' (last 18h)"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian US business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Federal Register API: Nov 23 rules, proposed rules, presidential documents",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Trump administration' (last 18h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'markets economy AI stocks' (last 18h)"
+ ],
+ "access_denied": [
+  "apnews.com (403)",
+  "floridapolitics.com (403)",
+  "axios.com article pages (403; search excerpts used)",
+  "thehill.com article pages (403; RSS headlines used)",
+  "dol.gov (403; search excerpt used)",
+  "law.justia.com (403; search excerpt used)",
+  "washingtonpost.com (no response; search excerpt used)",
+  "investing.com Reuters pages (403; search excerpts used)",
+  "wesh.com (403)",
+  "wfla.com article pages (403)",
+  "tampabay.com beyond the lede (paywall)",
+  "ft.com / nytimes.com / wsj.com (headline only)",
+  "Federal Register public inspection (offline until 8:45am)"
+ ],
+ "candidate_list": [
+  {
+   "item": "Tech outages: Clayton acting cyber director; Sunday shows; Delta failure at start of Thanksgiving travel",
+   "decision": "keep-lead",
+   "reason": "New verifiable fact (acting role) plus threshold event (holiday travel, Delta cancellations); reader flies from TPA and banks with majors; officials vs public disagree on cause."
+  },
+  {
+   "item": "Fifth Circuit en banc 9-8: House proxy quorum unconstitutional; PWFA blocked in Texas",
+   "decision": "keep-lead",
+   "reason": "Structural institutional ruling; reach to SECURE 2.0 and Electoral Count Reform Act underreported; dated cert deadline."
+  },
+  {
+   "item": "NYT: Alice Huang in contact with MSS officer; Clayton confirms investigation",
+   "decision": "keep-lead",
+   "reason": "Carried only on new on-record confirmation and dated account; salacious and national-security stakes; Dec 1 interview."
+  },
+  {
+   "item": "DOL final independent-contractor rule published today, effective Jan 22",
+   "decision": "keep-lead",
+   "reason": "Primary document today; reader's consulting work; barely on general-news fronts (underreported)."
+  },
+  {
+   "item": "Army to detonate Iowa lead azide despite court pause",
+   "decision": "keep-lead",
+   "reason": "Agency acting despite court order; public reaction; dated Wednesday event; accounts diverge on date."
+  },
+  {
+   "item": "Bessent warns Fed against overtightening; Dec 9 FOMC; PCE/GDP Wednesday",
+   "decision": "keep-also",
+   "reason": "Treasury pressure on Fed is news, but preference is prints and decisions only; kept short."
+  },
+  {
+   "item": "OKXICE tokenized stocks launch; ~90% of issuers objected",
+   "decision": "keep-also",
+   "reason": "Financial-services market structure touching reader's work; JPMorgan reportedly objected."
+  },
+  {
+   "item": "Democrats reach 258 House seats; Jeffries agenda",
+   "decision": "keep-also",
+   "reason": "Final shape of new Congress; stock-trading ban."
+  },
+  {
+   "item": "Iran: Rubio-Qatar meeting today; Iran vows means vs blockade; Houthis claim Rabigh",
+   "decision": "keep-also",
+   "reason": "Dated event plus refinery/fuel-price channel; lead yesterday, so kept below the line."
+  },
+  {
+   "item": "St. Johns record flood; Tampa Bay one-day watering through March",
+   "decision": "keep-also",
+   "reason": "Florida bar: local watering rules for Pasco/Pinellas plus statewide flood emergency."
+  },
+  {
+   "item": "Trump meme-coin dinner; US attorney warns senators off investigating",
+   "decision": "keep-also",
+   "reason": "Conflict-of-interest and a prosecutor warning senators; two independent newsrooms."
+  },
+  {
+   "item": "CrowdStrike to buy Zscaler $43.9B",
+   "decision": "cut-noted",
+   "reason": "Corporate deal, no policy step."
+  },
+  {
+   "item": "Kalshi NY hearing today",
+   "decision": "cut-noted",
+   "reason": "Ran as lead yesterday; no ruling at press time."
+  },
+  {
+   "item": "Ukraine sinks Russian corvette off Libya",
+   "decision": "cut-noted",
+   "reason": "No US channel stated."
+  },
+  {
+   "item": "COP31 collapses",
+   "decision": "cut-noted",
+   "reason": "No US commitment at stake."
+  },
+  {
+   "item": "DOJ admits deporting US citizen",
+   "decision": "cut-noted",
+   "reason": "Single case, single outlet."
+  },
+  {
+   "item": "Deltona cancels Christmas parade over Amendment 3",
+   "decision": "cut-noted",
+   "reason": "Amendment 3 ran yesterday; outside Tampa Bay."
+  },
+  {
+   "item": "Florida AG sues Leapfrog",
+   "decision": "cut-noted",
+   "reason": "Lawsuit filing, no ruling, one outlet (WUSF read after a corrected link)."
+  },
+  {
+   "item": "Schiff no-AI-bailouts resolution",
+   "decision": "cut-noted",
+   "reason": "Non-binding; weighting note under AI credit risk."
+  },
+  {
+   "item": "Hegseth ex-chief of staff calls for resignation",
+   "decision": "cut-noted",
+   "reason": "Personnel criticism without policy effect."
+  },
+  {
+   "item": "Capricor FDA denial",
+   "decision": "cut-noted",
+   "reason": "Single drug decision."
+  },
+  {
+   "item": "Medicaid work rules and disasters (CBS)",
+   "decision": "cut-noted",
+   "reason": "Feature; no new rule."
+  },
+  {
+   "item": "Trump EO on contractors and congressional requests",
+   "decision": "cut",
+   "reason": "Ran Nov 21; no new development."
+  },
+  {
+   "item": "AI sell-off / Nasdaq worst week; futures rebound",
+   "decision": "cut",
+   "reason": "Ran Nov 21 as correction; rebound is price move only; Fed angle carried in Bessent item."
+  },
+  {
+   "item": "Trump threatens tax on overseas data centers",
+   "decision": "cut",
+   "reason": "Ran Nov 21; no new step."
+  },
+  {
+   "item": "ICE arrests at Seattle airport",
+   "decision": "cut",
+   "reason": "Ran Nov 22; no new policy fact."
+  },
+  {
+   "item": "Lutnick: X summary of WSJ report Trump dropped plan to fire him after $25M donation",
+   "decision": "cut",
+   "reason": "Could not confirm beyond an X summary; WSJ unreadable."
+  },
+  {
+   "item": "DNC 2028 debate plan (12 debates, dark-money pledge)",
+   "decision": "cut",
+   "reason": "Campaign tactics (anti-topic)."
+  },
+  {
+   "item": "Trump vs Newsom on 548 death-row commutations",
+   "decision": "cut",
+   "reason": "State matter, no federal step."
+  },
+  {
+   "item": "Delta-only outage as separate story",
+   "decision": "cut",
+   "reason": "Folded into outages lead."
+  },
+  {
+   "item": "Bank outages/JPMorgan Nov 16",
+   "decision": "cut",
+   "reason": "Folded into outages lead."
+  },
+  {
+   "item": "US-China 'joint guardrails' on AI",
+   "decision": "cut",
+   "reason": "Statement only; no mechanism."
+  },
+  {
+   "item": "Labor Dept Schedule A nurse green-card proposal",
+   "decision": "cut",
+   "reason": "Proposal from Nov 17; comment stage; no new step."
+  },
+  {
+   "item": "Kim Jong Un rejects talks",
+   "decision": "cut",
+   "reason": "No change in US posture."
+  },
+  {
+   "item": "Microsoft $10M ballroom donation defended",
+   "decision": "cut",
+   "reason": "Old news restated."
+  },
+  {
+   "item": "Pinellas seeks state funding for preserves",
+   "decision": "cut",
+   "reason": "Budget request, early stage."
+  },
+  {
+   "item": "Temple Terrace industrial project approval",
+   "decision": "cut",
+   "reason": "Paywalled beyond lede; local land use, small."
+  },
+  {
+   "item": "David Jolly eyes 2030 governor run",
+   "decision": "cut",
+   "reason": "Horse race (anti-topic)."
+  },
+  {
+   "item": "Thanksgiving meal costs (NPR)",
+   "decision": "cut",
+   "reason": "Consumer feature."
+  },
+  {
+   "item": "Synthetic opioids / nitazenes (60 Minutes)",
+   "decision": "cut",
+   "reason": "Feature, no new policy."
+  },
+  {
+   "item": "Army Gold Star families / Iran drone strike investigation (60 Minutes)",
+   "decision": "cut",
+   "reason": "Feature, no new finding."
+  },
+  {
+   "item": "Stripe agent-wallet spending surge (X)",
+   "decision": "cut",
+   "reason": "Single X summary; not verifiable."
+  },
+  {
+   "item": "Tesla-SpaceX merger committees (X)",
+   "decision": "cut",
+   "reason": "Unconfirmed X summary."
+  },
+  {
+   "item": "FCC IoT Cyber Trust Mark NPRM",
+   "decision": "cut",
+   "reason": "Comment-stage labeling details."
+  },
+  {
+   "item": "Mamdani releases 9/11 records",
+   "decision": "cut",
+   "reason": "Local NYC."
+  },
+  {
+   "item": "Doctors who disagree with AI face legal risk (Axios)",
+   "decision": "cut",
+   "reason": "Could not read beyond headline (403)."
+  }
+ ],
+ "candidate_count": 46,
+ "selected": {
+  "leads": [
+   "outages",
+   "quorum",
+   "alice-huang",
+   "contractor-rule",
+   "iowa-army"
+  ],
+  "also_today": [
+   "bessent-fed",
+   "tokenized",
+   "house-258",
+   "iran-qatar",
+   "fl-water",
+   "meme-coin"
+  ],
+  "total_stories": 11
+ },
+ "story_floor_note": "11 stories, above the ~10 target.",
+ "continuing_leads": [
+  {
+   "id": "outages",
+   "trigger": "new verifiable fact: Clayton named acting national cyber director (Axios; Clayton statement); threshold event: Delta systems failure cancelled 202 flights Sunday at start of Thanksgiving travel (CBS)"
+  },
+  {
+   "id": "alice-huang",
+   "trigger": "new verifiable fact: DNI Clayton on record that Alice Huang and her firm are under investigation; NYT dated account of MSS contacts spring 2025-fall 2026"
+  }
+ ],
+ "per_article_sources": {
+  "outages": {
+   "independent_newsrooms": 7,
+   "names": [
+    "Axios (search excerpt)",
+    "CNBC",
+    "CBS News",
+    "NBC News",
+    "The Independent",
+    "Daily Wire",
+    "The Guardian"
+   ],
+   "headline_only": [
+    "Tampa Bay Times"
+   ],
+   "primary": [
+    "whitehouse.gov Davies release"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "quorum": {
+   "independent_newsrooms": 4,
+   "names": [
+    "AP via Fox 13",
+    "Bloomberg Law",
+    "CourtNews",
+    "Washington Post (search excerpt)"
+   ],
+   "primary": [
+    "Opinion via Justia (search excerpt)",
+    "congress.gov H.R. 2617"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "alice-huang": {
+   "independent_newsrooms": 4,
+   "names": [
+    "New York Times",
+    "CNBC",
+    "CBS News",
+    "Reuters via The Hindu"
+   ],
+   "also": [
+    "The Guardian (Kennedy)"
+   ],
+   "note": "MSS-contact claim rests on NYT alone; others downstream",
+   "marker": "Single-sourced"
+  },
+  "contractor-rule": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Transport Topics",
+    "Reuters (search excerpt)"
+   ],
+   "primary": [
+    "federalregister.gov 2026-23777",
+    "dol.gov (search excerpt)"
+   ],
+   "other": [
+    "Littler"
+   ],
+   "marker": "Primary source"
+  },
+  "iowa-army": {
+   "independent_newsrooms": 2,
+   "names": [
+    "CBS News",
+    "BBC"
+   ],
+   "headline_only": [
+    "AP via PBS",
+    "The Hill"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "bessent-fed": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CBS News",
+    "Semafor",
+    "CNBC"
+   ],
+   "primary": [
+    "treasury.gov par yield curve"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "tokenized": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CNBC",
+    "The Block",
+    "Tech Times"
+   ],
+   "primary": [
+    "sec.gov"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "house-258": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CBS News",
+    "BBC",
+    "The Guardian"
+   ],
+   "headline_only": [
+    "The Hill"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "iran-qatar": {
+   "independent_newsrooms": 4,
+   "names": [
+    "CBS News",
+    "CNBC (Reuters)",
+    "Iran International",
+    "Al Jazeera"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "fl-water": {
+   "independent_newsrooms": 2,
+   "names": [
+    "WUSF",
+    "ClickOrlando (WKMG)"
+   ],
+   "primary": [
+    "flgov.com EO"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "meme-coin": {
+   "independent_newsrooms": 2,
+   "names": [
+    "NBC News",
+    "The Guardian"
+   ],
+   "marker": "Independent corroboration"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: searched UAP disclosure news, Pasco County / New Port Richey news, and JPMorgan (web search); compared candidate list against every front swept and X US trends.",
+  "result": "UAP: nothing since Nov 20 Release 08. Pasco: school fall break and a missing-teen search; none at bar. JPMorgan: Nov 16 outage (folded into outages lead) and reported tokenization objection (folded into tokenized item, labelled unconfirmed).",
+  "underreported": "Two underreported finds: the reach of the Fifth Circuit quorum ruling beyond the PWFA (spelled out only in Bloomberg Law and CourtNews among outlets read) and the DOL independent-contractor final rule (trade/legal press and one wire story; on no general-news front swept)."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Strongest: outages/Clayton (lead) and Alice Huang (lead). CrowdStrike-Zscaler to Also noted; AI sell-off rebound cut as price move.",
+  "Core - Macro & markets": "Bessent vs Fed before Dec 9 (Also today) with Treasury series; no data print today; Wednesday PCE/GDP flagged.",
+  "World economy": "US-China AI guardrails statement cut; COP31 to Also noted (no US commitment).",
+  "Core - US debt & fiscal": "Nothing new cleared; Dec 11 funding deadline unchanged since yesterday.",
+  "Core - US financials": "JPMorgan outage folded into outages lead; JPMorgan's reported tokenization objection in tokenized item; Truist/Citizens analyst upgrades cut.",
+  "Core - US politics & policy": "Quorum ruling and contractor rule (leads); House 258 and meme-coin dinner (Also today).",
+  "Geopolitics": "Iran/Qatar (Also today); Ukraine-Libya to Also noted (no US channel).",
+  "Science & public health": "Capricor FDA and Medicaid/disasters to Also noted; nitazenes feature cut.",
+  "Core - UAP disclosure": "Nothing new since Nov 20 eighth release; no item.",
+  "Energy & grid": "Rabigh refinery claim inside Iran item; nothing domestic cleared.",
+  "Elections and electoral process": "House reaches 258 (Also today); Electoral Count Reform Act exposure inside quorum lead; DNC debates cut.",
+  "Broader domestic institutions": "Iowa Army vs court order (lead); quorum ruling (lead); Clayton dual role (lead).",
+  "International with US channel": "Iran/Qatar mediation (Also today); Alice Huang/MSS (lead).",
+  "Florida / Tampa Bay": "Water whiplash item (Also today); TPA outage angle in lead; Deltona and Leapfrog to Also noted; Temple Terrace and Weedon Island cut.",
+  "Data centers / power / AI infrastructure": "No new filing or rate case today; NPR global opposition feature and Fox opinion cut; overseas data-center tax ran Nov 21.",
+  "AI and financial services": "Tokenized stocks (Also today); contractor rule (lead, consulting); Stripe agent wallets cut (unverifiable)."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 23 morning): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), applied Nov 9 with wake condition closed; no new or recently closed brief-feedback issues. Topic-check weighting applied: AI debt/credit risk -> Schiff no-bailouts noted; prediction markets (Kalshi hearing) kept to Also noted pending ruling; banks and AI agents: nothing new verifiable.",
+ "config_change": null,
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "sources_checked_total": 124,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS",
+  "Guardian US business RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Federal Register API: Nov 23 rules, proposed rules, presidential documents",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Trump administration' (last 18h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'markets economy AI stocks' (last 18h)",
+  "Guardian: Americans outraged over tech outages",
+  "CNBC: Clayton warns of 'bumps in the road'",
+  "Daily Wire: mixed messaging on outages",
+  "Tampa Bay Times: Tampa airports prepare (headline/lede only)",
+  "Fox 13: digital disaster toolkit",
+  "NPR: Trump orders contractors to check with White House",
+  "CNBC: US probes Megaspeed, Alice Huang",
+  "Fox 13 / AP: pregnant workers ruling",
+  "CBS News: Army Iowa detonation court records",
+  "BBC: Army to detonate despite court order",
+  "CNBC: Treasury yields jump",
+  "NPR: AI boom had a really bad week",
+  "CNBC: CrowdStrike to buy Zscaler",
+  "CNBC: biggest premarket movers (Truist/Citizens)",
+  "CBS News: Iran live updates (blockade)",
+  "CBS News: Democrats' historic House majority",
+  "Tampa Bay Times: DeSantis flood-project vetoes (lede only)",
+  "CBS News: Medicaid work rules and disasters",
+  "ABC/AP: Trump to penalize overseas data centers",
+  "NPR: midterms largest win in 50 years",
+  "NPR: Thanksgiving meal costs",
+  "NPR: movement against data centers goes global",
+  "WUSF: record river levels flooding",
+  "WUSF: Pinellas watering schedule",
+  "NBC News: Deltona cancels Christmas parade",
+  "Tampa Bay Times: Temple Terrace industrial project (lede only)",
+  "WUSF: Pinellas seeks preserve funding",
+  "WUSF: David Jolly eyes 2030 run",
+  "Semafor: Bessent warns on Fed hike",
+  "Semafor: Schiff no-AI-bailouts resolution",
+  "Semafor: US, China eye joint AI guardrails",
+  "CBS News: Delta baggage system delays",
+  "CNBC: tokenized stocks face pushback",
+  "Guardian: DOJ admits deporting US citizen",
+  "NBC News: Trump meme-coin dinner",
+  "Guardian: third crypto gala",
+  "NBC News: Ukraine sinks Russian warship off Libya",
+  "CNBC: Zelenskyy on Libya drone operation",
+  "Semafor: Capricor FDA denial",
+  "New York Post: Hegseth ex-chief of staff",
+  "Fox News opinion: war against data centers",
+  "CBS News: Bessent Face the Nation transcript",
+  "Transport Topics: DOL contractor rule",
+  "CourtNews: Fifth Circuit proxy ruling",
+  "Bloomberg Law: proxy voting unconstitutional",
+  "The Independent: Clayton on more outages",
+  "Yahoo/HuffPost: Clayton acting cyber chief",
+  "The Verge: Alice Huang details",
+  "Treasury Daily Par Yield Curve (Nov 2026)",
+  "Bloomberg Government: Bessent overtightening (lede)",
+  "Al Jazeera: Iran talks with Qatari mediators",
+  "Iran International: Rubio to meet Qatari PM",
+  "ClickOrlando: Seminole flooding",
+  "BBC: Democrats largest House majority",
+  "NBC News: Chase outage",
+  "CNBC/Reuters: Houthis claim Saudi refinery attack",
+  "Guardian: Jeffries agenda",
+  "Axios (search excerpt): Clayton acting cyber director",
+  "whitehouse.gov: Davies nomination release",
+  "dol.gov (search excerpt): contractor final rule page",
+  "federalregister.gov: 2026-23777 contractor rule",
+  "Reuters via investing.com (search excerpt): contractor rule",
+  "Littler (search excerpt): contractor rule",
+  "Justia (search excerpt): Texas v. Blanche opinion",
+  "Washington Post (search excerpt): proxy ruling",
+  "AP (search excerpt): pregnant workers ruling",
+  "NYT Chinese edition (search): Alice Huang MSS timeline",
+  "Reuters via investing.com (search excerpt): Alice Huang NYT",
+  "The Hindu / Reuters: Alice Huang",
+  "Malay Mail: Alice Huang",
+  "Tech Times: OKXICE day-one status",
+  "The Block: OKXICE launch date",
+  "sec.gov: Innovation Exemption page",
+  "Reuters via investing.com (search excerpt): OKXICE launch",
+  "Seoul Economic Daily (search): Bessent",
+  "Al Araby (search): Qatar PM meets Rubio",
+  "flgov.com: EO 26-228",
+  "WESH (search excerpt; 403): St. Johns crest",
+  "Inside New Port Richey (search): Pasco school break",
+  "Pasco Sheriff news (search): missing person",
+  "war.gov (search): eighth UAP release",
+  "EarthSky (search): UAP release 8",
+  "AP (search excerpt): bank outages",
+  "Bloomberg Law (search): Kalshi nationwide shutdown threat",
+  "rg.org (search): Kalshi Monday hearing",
+  "Grant Thornton (search): tax committee chairs",
+  "federalregister.gov: FCC IoT cyber labeling NPRM 2026-23812",
+  "federalregister.gov: FCC USF vetting NPRM 2026-23830"
+ ],
+ "first_sweep_count": 36,
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 61 unique links, 2026-11-23 ~07:55 ET: 51 returned 200; 9 returned 403 to curl (law.justia.com, thehill.com x2, axios.com, congress.gov, dol.gov, investing.com, sec.gov, theblock.co) and washingtonpost.com timed out. All are bot-blocking sites whose text was read via search excerpts and is labelled as such. One WUSF link was truncated (404) and was corrected and re-checked (200).",
+ "audit_attempts": {
+  "count": 2,
+  "results": [
+   "attempt 1 (~07:50 ET): exit 0, all hard gates passed; stories 11 (leads 5, also 6), continuations 2, radio groups 6, sources 124, no warnings",
+   "attempt 2 (~07:58 ET, after correcting two links and adding link-check/audit fields; final files): exit 0, same counts, no warnings"
+  ]
+ }
+}

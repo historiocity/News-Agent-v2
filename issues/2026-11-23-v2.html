@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Monday, 23 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Monday, 23 November 2026 &middot; morning edition</div>
+  <h1>Officials tell Thanksgiving travelers to expect more outages as the spy chief takes over cyber policy; a court ruling on proxy votes puts a 2022 law in doubt; a new report on Alice Huang; a contractor rule for gig workers; the Army plans to blow up explosives despite a court order</h1>
+  <p class="summary">Five leads, six below the line. Washington&rsquo;s top intelligence official now also runs cyber policy, and he and the Treasury secretary told Americans on Sunday to expect more tech &ldquo;glitches&rdquo; as Delta&rsquo;s systems failed at the start of Thanksgiving week; a 9&ndash;8 appeals court ruling says the House broke the Constitution by counting proxies to pass the 2022 spending law, which also carried retirement and election-count rules; the New York Times says Alice Huang kept in touch with a Chinese spy agency officer during her affair with Nvidia&rsquo;s former chief; the Labor Department publishes a rule that makes it easier to treat workers as independent contractors; and the Army says it will detonate degraded explosives in Iowa on Wednesday despite a court order. Below the line: Bessent warns the Fed ahead of a December rate decision; tokenized stocks start trading after most companies said no; Democrats reach 258 House seats; Rubio meets Qatar&rsquo;s prime minister on Iran; Florida floods in the east while Tampa Bay stays on one-day watering; and Trump&rsquo;s meme-coin dinner.</p>
+  <p class="sub">Monday morning edition under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Filename: <code>2026-11-23-v2.html</code>.</p>
+  <p class="prov"><b>124 sources checked, 36 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera, the BBC front plus its U.S., world and business feeds, CNBC, Guardian U.S. and business, The Hill, Fox News politics and latest feeds, Semafor, Tampa Bay Times, Fox&nbsp;13, WFLA, WUSF, Politico, Axios, CBS, ABC, NBC, PBS NewsHour, NYT and FT headlines, the WSJ world feed, the Daily Wire, the New York Post, AP&rsquo;s front and Florida Politics (both refused the fetch, not read), today&rsquo;s Federal Register rules through its API, X&rsquo;s U.S. trends and four X news searches. The Federal Register public-inspection list was still offline when we swept (it returns at 8:45&nbsp;a.m.), so we have no view of tomorrow&rsquo;s documents. Axios, The Hill, dol.gov, the Washington Post, Justia and Reuters pages refused direct fetches; we used their text only where a search index showed it, and we say so in each item.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure news, Pasco County and New Port Richey news, and JPMorgan, and compared the candidate list against every front swept and X&rsquo;s U.S. trends (football, Monday greetings, the Libya warship and Zscaler). Nothing new on UAP since the Pentagon&rsquo;s eighth release on Nov.&nbsp;20. Pasco&rsquo;s news was the school fall break (classes resume Nov.&nbsp;30) and a missing-teen search, neither at the bar. JPMorgan&rsquo;s news was last week&rsquo;s outage, folded into the first lead, and its reported objection to tokenized trading, folded into an item below the line. Two items are underreported: how far the Fifth Circuit&rsquo;s quorum ruling could reach beyond the pregnancy law, which we found spelled out in only two legal-news outlets, and the Labor Department&rsquo;s contractor rule, which we found in trade and legal press and one wire story but on no general-news front we swept. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed; no new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#outages">More outages expected; Clayton takes over cyber policy</a></li>
+    <li><a href="#quorum">Appeals court: proxy votes can&rsquo;t make a House quorum</a></li>
+    <li><a href="#alice-huang">Alice Huang and a Chinese spy agency officer</a></li>
+    <li><a href="#contractor-rule">Labor Department&rsquo;s independent-contractor rule</a></li>
+    <li><a href="#iowa-army">The Army&rsquo;s Iowa detonation and the court order</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#bessent-fed">Bessent warns the Fed before its Dec.&nbsp;9 decision</a></li>
+    <li><a href="#tokenized">Tokenized stocks open after most companies object</a></li>
+    <li><a href="#house-258">Democrats reach 258 House seats</a></li>
+    <li><a href="#iran-qatar">Rubio meets Qatar&rsquo;s prime minister as Iran threatens the blockade</a></li>
+    <li><a href="#fl-water">Florida&rsquo;s water: record flood in the east, one-day watering here</a></li>
+    <li><a href="#meme-coin">Trump&rsquo;s third meme-coin dinner</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="outages">
+  <h3>Officials tell Americans to expect more &ldquo;glitches&rdquo; as Delta&rsquo;s systems fail at the start of Thanksgiving week, and the spy chief now doubles as acting cyber director</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (the outages ran Nov.&nbsp;18 and the cyber director&rsquo;s exit Nov.&nbsp;20). Trigger: new verifiable fact &mdash; Director of National Intelligence Jay Clayton will also serve as acting national cyber director, which he confirmed in a statement; and a threshold event &mdash; a Delta systems failure cancelled 202 flights on Sunday as about 6&nbsp;million people prepare to fly this week.</p>
+  <p class="src-count">Independent accounts compared: 7 newsrooms (Axios, CNBC, CBS News, NBC News, The Independent, the Daily Wire, The Guardian), plus the White House&rsquo;s own announcement.</p>
+  <p>Clayton will run the Office of the National Cyber Director until the Senate confirms Kirsten Davies, the Pentagon&rsquo;s chief information officer, whom Trump named on Nov.&nbsp;19 to replace Sean Cairncross (<a href="https://www.axios.com/2026/11/23/jay-clayton-acting-national-cyber-director">Axios</a>, read through a search excerpt; <a href="https://www.whitehouse.gov/releases/2026/11/president-trump-taps-pentagon-cyber-chief-kirsten-davies-as-national-cyber-director/">White House</a>). Clayton is already the administration&rsquo;s AI czar, so one official now explains the outages, assesses foreign threats and sets cyber defense policy. On CNN on Sunday he said Americans should be prepared for &ldquo;bumps in the road&rdquo; as old systems are rebuilt, and that &ldquo;we are going to have glitches, gaps, interruptions in service&rdquo; (<a href="https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html">CNBC</a>; <a href="https://www.independent.co.uk/tech/security/tech-outages-jay-clayton-ai-b3089706.html">The Independent</a>). Treasury Secretary Scott Bessent told CBS that bank customers should not worry, and that patches banks are making against AI-driven attacks &ldquo;may cause a glitch, which is what happened last week. J.P. Morgan went in&rdquo;; he compared it to a vaccine that makes &ldquo;your arm&rdquo; hurt (<a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS News transcript</a>). Chase&rsquo;s Nov.&nbsp;16 outage, which the bank blamed on a software bug, left some customers unable to reach their accounts or withdraw funds (<a href="https://www.nbcnews.com/business/consumer/outages-chase-banking-online-branches-rcna609673">NBC News</a>).</p>
+  <p>Travel is where it bites this week. On Sunday a network failure in Delta&rsquo;s baggage and weight-and-balance system forced a ground delay at Atlanta; Delta cancelled 202 flights, about 4% of the day, and said about 70% of more than 1,900 delays were tied to the automation. United had a similar failure a week earlier, and AAA expects nearly 6&nbsp;million domestic flyers for the holiday (<a href="https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/">CBS News</a>). The FAA&rsquo;s nationwide ground stop of nearly five hours on Nov.&nbsp;13 was blamed on a router upgrade. Transportation Secretary Sean Duffy and FAA chief Bryan Bedford have called claims that AI played a role &ldquo;completely unfounded,&rdquo; after Homeland Security Secretary Markwayne Mullin said on Fox that an unnamed tech expert blamed self-fixing AI code (<a href="https://www.dailywire.com/news/mixed-messaging-plagues-response-to-widespread-tech-outages">Daily Wire</a>). Readers who wrote to the Guardian blamed staff cuts and asked why one contractor&rsquo;s router could stop every flight (<a href="https://www.theguardian.com/us-news/2026/nov/23/us-tech-outages-flights-microsoft">The Guardian</a>). The Tampa Bay Times reports that Tampa-area airports are preparing for the rush; we could read only its headline (<a href="https://www.tampabay.com/news/2026/11/23/tampa-international-airport-tpa-thanksgiving-faa-ground-stop/">Tampa Bay Times</a>). We could not confirm that Clayton&rsquo;s acting role has a set end date; Axios says it lasts until Davies is confirmed, and no hearing is scheduled.</p>
+  <p><b>Why it matters to you.</b> If you fly from Tampa this week or bank online, the people in charge are telling you to expect more breakdowns, not fewer. Their stated cause, rushed upgrades against AI-era threats, also means more outages while the patching goes on.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; what is causing the outages, and who is in charge</span>
+    <p><b>Dispute type.</b> Facts and significance. Clayton, Duffy, the FAA and Microsoft say the failures were separate upgrade mistakes with no sign of an attack. Bessent ties the bank glitches to AI-driven security patches. Mullin floated AI-written code as a cause. Members of the public, in the Guardian&rsquo;s reader responses, doubt the official story.</p>
+    <p><b>Vantage, interests, access, timing.</b> Officials have intelligence access but also a stake in calming the public before the holiday; Clayton is now grading his own response. Mullin cited one unnamed expert. The Daily Wire, a conservative outlet, and former Trump aides it quotes want one White House message; the Guardian piece is self-selected reader testimony, not a survey.</p>
+    <p><b>What it means for you.</b> No official account yet names a single cause for all the failures. Plan travel and payments with a backup (a paper boarding pass, some cash) and treat claims of an attack, or of no risk at all, with care until a written review is published.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the outages and Clayton&rsquo;s new cyber role?</b></p>
+    <label><input type="radio" name="fb-outages" value="local-hit"> If an outage reaches Tampa International, Florida&rsquo;s driver-license system or bank ATMs in Pasco and Pinellas during Thanksgiving week</label>
+    <label><input type="radio" name="fb-outages" value="davies-hearing"> When the Senate schedules Kirsten Davies&rsquo;s confirmation hearing and senators question the FAA router contractor</label>
+    <label><input type="radio" name="fb-outages" value="written-cause"> Only if a written government review names AI-written code or a hostile actor as a cause</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.axios.com/2026/11/23/jay-clayton-acting-national-cyber-director">Axios</a> &middot;
+    <a href="https://www.whitehouse.gov/releases/2026/11/president-trump-taps-pentagon-cyber-chief-kirsten-davies-as-national-cyber-director/">White House</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html">CNBC</a> &middot;
+    <a href="https://www.independent.co.uk/tech/security/tech-outages-jay-clayton-ai-b3089706.html">The Independent</a> &middot;
+    <a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS transcript</a> &middot;
+    <a href="https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/">CBS News (Delta)</a> &middot;
+    <a href="https://www.nbcnews.com/business/consumer/outages-chase-banking-online-branches-rcna609673">NBC News</a> &middot;
+    <a href="https://www.dailywire.com/news/mixed-messaging-plagues-response-to-widespread-tech-outages">Daily Wire</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/23/us-tech-outages-flights-microsoft">The Guardian</a> &middot;
+    <a href="https://www.tampabay.com/news/2026/11/23/tampa-international-airport-tpa-thanksgiving-faa-ground-stop/">Tampa Bay Times</a>
+  </p>
+</article>
+
+<article id="quorum">
+  <h3>A 9&ndash;8 appeals court says the House broke the Constitution by counting proxies to pass the 2022 spending law; it blocks the pregnant-workers law only in Texas, but the reasoning reaches the rest of the bill</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (AP via Fox&nbsp;13, Bloomberg Law, CourtNews, the Washington Post), plus the opinion as posted on Justia.</p>
+  <p>The full Fifth Circuit ruled on Friday, Nov.&nbsp;20, in <i>Texas v. Blanche</i> that the House could not count members &ldquo;present&rdquo; by proxy toward a quorum. When the House passed the $1.7&nbsp;trillion Consolidated Appropriations Act on Dec.&nbsp;23, 2022, by 225&ndash;201, the court counted 226 members recorded by proxy, so fewer than a majority were in the room (<a href="https://www.courtnews.org/courts/fifth-circuit-proxy-voting-quorum-clause-pwfa-ruling">CourtNews</a>; <a href="https://law.justia.com/cases/federal/appellate-courts/ca5/24-10386/24-10386-2026-11-20.html">opinion on Justia</a>, read through a search excerpt). &ldquo;&lsquo;Proxy presence&rsquo; does not count,&rdquo; Judge Cory Wilson wrote. The court kept in place an order that bars federal enforcement of the Pregnant Workers Fairness Act, which requires employers to accommodate pregnancy, against Texas and its agencies, and nothing broader (<a href="https://news.bloomberglaw.com/us-law-week/congress-proxy-voting-found-unconstitutional-by-fifth-circuit">Bloomberg Law</a>). Advocates say the ruling invalidates the law in Texas, Louisiana and Mississippi; A Better Balance expects an appeal to the Supreme Court. The Trump Justice Department has defended the law (<a href="https://www.fox13news.com/news/pregnant-workers-workplace-protections-appeals-court">Fox&nbsp;13 / AP</a>).</p>
+  <p>The same bill carried far more than the pregnancy law, including the SECURE&nbsp;2.0 retirement changes and the Electoral Count Reform Act (<a href="https://www.congress.gov/bill/117th-congress/house-bill/2617">congress.gov, H.R.&nbsp;2617</a>). Election-law scholar Rick Hasen has pointed to the electoral-count law as exposed; a brief filed for Sen. Mitch McConnell warned that a strict presence rule could threaten Senate habits such as voice votes (<a href="https://www.courtnews.org/courts/fifth-circuit-proxy-voting-quorum-clause-pwfa-ruling">CourtNews</a>). Bloomberg Law notes that a Democrat won the Texas attorney general race, so the office that brought the case changes hands in January. The government has 90 days to seek Supreme Court review, which puts the deadline around Feb.&nbsp;18. We could not confirm whether the Justice Department will ask; it has not said.</p>
+  <p><b>Why it matters to you.</b> Florida sits in the Eleventh Circuit, so the pregnancy law still applies to Florida employers. The bigger stake is legal certainty: retirement-plan rules that employers and advisers already rely on, and the 2022 law that governs how Congress counts electoral votes in 2029, came out of the same vote.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; a narrow ruling or a broad one</span>
+    <p><b>Dispute type.</b> Significance. The majority says its decision covers only Texas&rsquo;s challenge to one law. Judge James Graves, for seven dissenters, asked why, if the whole act was passed unconstitutionally, the judgment covers &ldquo;one small sliver&rdquo; of it.</p>
+    <p><b>Vantage, interests, access, timing.</b> Texas&rsquo;s outgoing Republican attorney general brought the case; the federal government, under both parties, defended the law; A Better Balance wrote the law and is an advocate. Bloomberg Law and CourtNews read the full opinion; the Post and AP report it for general readers. The ruling lands six weeks before Texas&rsquo;s new Democratic attorney general takes office.</p>
+    <p><b>What it means for you.</b> Nothing changes in Florida today. Watch whether the Justice Department appeals and whether anyone sues over another part of the 2022 bill; either would turn a Texas case into a national one.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the proxy-quorum ruling?</b></p>
+    <label><input type="radio" name="fb-quorum" value="cert"> When the Justice Department files, or lets lapse, a Supreme Court petition before the roughly Feb.&nbsp;18 deadline</label>
+    <label><input type="radio" name="fb-quorum" value="secure2"> If someone sues to block another part of the 2022 bill, such as SECURE&nbsp;2.0 retirement rules or the Electoral Count Reform Act</label>
+    <label><input type="radio" name="fb-quorum" value="tx-ag"> Only if Texas&rsquo;s incoming Democratic attorney general moves to drop or settle the case in January</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.courtnews.org/courts/fifth-circuit-proxy-voting-quorum-clause-pwfa-ruling">CourtNews</a> &middot;
+    <a href="https://news.bloomberglaw.com/us-law-week/congress-proxy-voting-found-unconstitutional-by-fifth-circuit">Bloomberg Law</a> &middot;
+    <a href="https://www.fox13news.com/news/pregnant-workers-workplace-protections-appeals-court">Fox&nbsp;13 / AP</a> &middot;
+    <a href="https://www.washingtonpost.com/business/2026/11/21/pandemic-era-law-passed-unconstitutionally-because-proxy-voting-appeals-court-rules/">Washington Post</a> (search excerpt) &middot;
+    <a href="https://law.justia.com/cases/federal/appellate-courts/ca5/24-10386/24-10386-2026-11-20.html">Opinion (Justia)</a> &middot;
+    <a href="https://www.congress.gov/bill/117th-congress/house-bill/2617">congress.gov</a>
+  </p>
+</article>
+
+<article id="alice-huang">
+  <h3>The New York Times says Alice Huang kept in touch with a Chinese spy agency officer for more than a year during her affair with Nvidia&rsquo;s former chief; the spy chief confirms she and her firm are under investigation</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Single-sourced</span>
+  </div>
+  <p class="meta">Continuing lead (the Nvidia scandal ran most recently on Nov.&nbsp;22, through Lutnick). Trigger: new verifiable fact &mdash; Clayton said on the record on Sunday that &ldquo;there is an investigation ongoing into her firm and into her,&rdquo; and the Times published a dated account of her contacts with China&rsquo;s Ministry of State Security.</p>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (the New York Times, CNBC, CBS News, Reuters via The Hindu), plus the Guardian on Sen. John Kennedy. The spy-agency account rests on the Times alone; the others repeat it.</p>
+  <p>Citing people familiar with U.S. intelligence reports, the Times says Huang was in contact with a Ministry of State Security officer from spring 2025 until this fall, overlapping her relationship with Jensen Huang and Megaspeed&rsquo;s heavy buying of Nvidia chips, and that her business partner Kang Wei also worked with the same agency (<a href="https://cn.nytimes.com/technology/20261123/alice-huang-china-spy-agency-nvidia/">New York Times, Chinese edition</a>). Reuters could not reach her; Nvidia and the Chinese embassy did not respond (<a href="https://www.thehindu.com/news/international/alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-says-nyt/article71733237.ece">The Hindu / Reuters</a>). On ABC, Clayton confirmed the investigation and called Nvidia chips &ldquo;the jewel&rdquo;; the Wall Street Journal reported that a Huang associate, Li Ming, now on bail in Singapore, was &ldquo;deeply involved&rdquo; in Megaspeed. Singapore earlier found insufficient evidence that she made false declarations, gave her a &ldquo;stern warning,&rdquo; and said it had not investigated espionage (<a href="https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html">CNBC</a>). Bessent told CBS the administration wants Nvidia to say &ldquo;which level of the business knew,&rdquo; and that Nvidia dropped Megaspeed as a customer in August 2025 (<a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS transcript</a>). Sen. Kennedy called the affair the &ldquo;most expensive sex since Helen of Troy&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/22/jensen-huang-nvidia-john-kennedy">The Guardian</a>). Jensen Huang sits for House committee interviews on Dec.&nbsp;1 and an Nvidia lawyer on Dec.&nbsp;2 (CNBC). We could not confirm the intelligence reports themselves; the Times did not publish them and no official has described them on the record.</p>
+  <p><b>Why it matters to you.</b> This is the question under the whole affair: was America&rsquo;s most valuable chipmaker the target of a Chinese intelligence operation? The answer shapes export rules, Nvidia&rsquo;s leadership and the AI stocks in most retirement accounts.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; spy or not</span>
+    <p><b>Dispute type.</b> Facts. The Times&rsquo;s sources describe sustained contact with a named Chinese agency. Trump has played the scandal down, and Attorney General Todd Blanche and Clayton say the government has not concluded that she spied.</p>
+    <p><b>Vantage, interests, access, timing.</b> The Times&rsquo;s sources have seen intelligence reports but are anonymous, and some may want to push the administration. Officials have the same access but a stake in Nvidia&rsquo;s stability and in the Trump&ndash;Xi talks. Singapore investigated narrower questions. The story broke on a Sunday when Clayton and Bessent were already on the talk shows.</p>
+    <p><b>What it means for you.</b> &ldquo;In contact with&rdquo; is not the same as &ldquo;spying for.&rdquo; The first test is whether anything about Alice Huang becomes public from the Dec.&nbsp;1 interviews or a court filing.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Alice Huang thread?</b></p>
+    <label><input type="radio" name="fb-alice" value="dec1"> When Jensen Huang&rsquo;s Dec.&nbsp;1 House interview produces any public account of what he knew about her or Megaspeed</label>
+    <label><input type="radio" name="fb-alice" value="charges"> If prosecutors charge Alice Huang, Kang Wei or Megaspeed, or name Nvidia staff in a filing</label>
+    <label><input type="radio" name="fb-alice" value="second-source"> Only if a second outlet or a named official confirms the spy-agency contacts</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://cn.nytimes.com/technology/20261123/alice-huang-china-spy-agency-nvidia/">New York Times</a> &middot;
+    <a href="https://www.thehindu.com/news/international/alice-huang-in-touch-with-chinese-spy-agency-during-affair-with-nvidia-ceo-says-nyt/article71733237.ece">The Hindu / Reuters</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html">CNBC</a> &middot;
+    <a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS transcript</a> &middot;
+    <a href="https://www.theguardian.com/us-news/2026/nov/22/jensen-huang-nvidia-john-kennedy">The Guardian</a>
+  </p>
+</article>
+
+<article id="contractor-rule">
+  <h3>The Labor Department publishes its rule making it easier to treat workers as independent contractors; it takes effect Jan.&nbsp;22 and also governs family leave</h3>
+  <div class="meta">
+    <span class="chip">AI and financial services</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Transport Topics, Reuters via a search excerpt), plus the Federal Register text, the Labor Department&rsquo;s page (search excerpt) and law firm Littler.</p>
+  <p>The final rule, published today, replaces the 2024 six-factor test for who counts as an employee under federal wage law with a test much like the 2021 one, built on two &ldquo;core&rdquo; factors: how much control a worker has over the work, and the worker&rsquo;s chance for profit or loss from initiative or investment. It applies the same test to the Family and Medical Leave Act and takes effect Jan.&nbsp;22, 2027 (<a href="https://www.federalregister.gov/documents/2026/11/23/2026-23777/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical">Federal Register</a>). The department says it drew more than 16,000 comments, added examples for digital-platform workers, truck drivers and farm labor contractors, and that the rule does not change classification for tax purposes or override state law (<a href="https://www.dol.gov/agencies/whd/flsa/misclassification/2026rulemaking">Labor Department</a>, read through a search excerpt). The American Trucking Associations says it protects 350,000 independent truckers (<a href="https://www.ttnews.com/articles/final-independent-contractor">Transport Topics</a>). Reuters framed it as making it easier for companies to classify workers as contractors, who are not owed minimum wage, overtime or unemployment insurance (<a href="https://www.investing.com/news/economy-news/trump-administration-makes-it-easier-for-companies-to-classify-workers-as-contractors-5039730">Reuters</a>, search excerpt only). Littler, a management-side firm, notes there is still no bright-line test and a contractor agreement alone does not decide status (<a href="https://www.littler.com/news-analysis/asap/dol-releases-final-rule-regarding-independent-contractor-status">Littler</a>). We could not read the full 97-page preamble; the summary above comes from its abstract and the department&rsquo;s page.</p>
+  <p><b>Why it matters to you.</b> If you work as, or hire, consultants on 1099 terms, this is the federal test that decides whether overtime and family leave apply. The incoming Democratic Congress cannot easily undo it: a disapproval resolution would need Trump&rsquo;s signature.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; clarity or lost protections</span>
+    <p><b>Dispute type.</b> Significance. The department and trucking groups call it clarity for people who choose to work for themselves; Reuters&rsquo;s framing, and worker advocates in past rounds, stress that contractors lose wage-law protections.</p>
+    <p><b>Vantage, interests, access, timing.</b> The department wrote the rule; ATA lobbied for it; Littler advises employers. Reuters reported the announcement on Nov.&nbsp;19; today&rsquo;s publication starts the 60-day clock. We found no worker-group statement on today&rsquo;s text.</p>
+    <p><b>What it means for you.</b> Contracts and worker practices set before Jan.&nbsp;22 will be judged by this test. The rule has swung with every administration since 2021, so expect a lawsuit and, in 2029, possibly another rewrite.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the contractor rule?</b></p>
+    <label><input type="radio" name="fb-contractor" value="lawsuit"> When a union, a state attorney general or a worker group sues to block it before Jan.&nbsp;22</label>
+    <label><input type="radio" name="fb-contractor" value="reclassify"> If a gig platform or consulting firm publicly changes how it classifies workers because of it</label>
+    <label><input type="radio" name="fb-contractor" value="rider"> Only if Democrats try to block it with a rider on a must-pass spending bill</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.federalregister.gov/documents/2026/11/23/2026-23777/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical">Federal Register</a> &middot;
+    <a href="https://www.dol.gov/agencies/whd/flsa/misclassification/2026rulemaking">Labor Department</a> &middot;
+    <a href="https://www.ttnews.com/articles/final-independent-contractor">Transport Topics</a> &middot;
+    <a href="https://www.investing.com/news/economy-news/trump-administration-makes-it-easier-for-companies-to-classify-workers-as-contractors-5039730">Reuters</a> &middot;
+    <a href="https://www.littler.com/news-analysis/asap/dol-releases-final-rule-regarding-independent-contractor-status">Littler</a>
+  </p>
+</article>
+
+<article id="iowa-army">
+  <h3>The Army says it will detonate five tons of degraded explosives at an Iowa plant on Wednesday, arguing it does not have to obey a court order pausing it</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (CBS News, BBC), plus AP and The Hill headlines.</p>
+  <p>The Army found in March that 68 drums of lead azide, a volatile detonator compound stored for decades at the Iowa Army Ammunition Plant in Middletown, had begun to recrystallize. After environmental groups sued, a federal court paused the planned blast on Friday; CBS reports that the Eighth Circuit granted the emergency motion. In a filing late Saturday, the Justice Department said the Army will rely on an emergency exclusion in its EPA permit and act anyway, because falling temperatures raise the risk of an uncontrolled explosion: &ldquo;Protection of human health and the environment demand action now, not delay&rdquo; (<a href="https://www.bbc.co.uk/news/articles/cvglrx764gdxo">BBC</a>). On Sunday night the Army said it would detonate on Wednesday. The Iowa Environmental Council, Sierra Club and Earthjustice filed expert declarations disputing the risk of waiting and said &ldquo;this emergency is of the Army&rsquo;s own making&rdquo;; Iowa&rsquo;s Democratic senator-elect Josh Turek called for a full investigation (<a href="https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/">CBS News</a>). Residents near the plant had earlier been told to stay indoors for six hours because of a possible lead-dust plume reaching into Illinois (BBC). We could not confirm the court&rsquo;s response to the Army&rsquo;s filing; none had been reported by press time.</p>
+  <p><b>Why it matters to you.</b> The safety call may be right. The precedent is the issue: a federal agency telling a court it will act despite a pause order, under an emergency clause it reads for itself, the same week the White House limited what contractors may tell Congress.</p>
+  <div class="div">
+    <span class="t">Divergence &mdash; Tuesday or Wednesday, and whose emergency</span>
+    <p><b>Dispute type.</b> Facts. The BBC, citing Saturday&rsquo;s filing, says the Army would act by Nov.&nbsp;24 because cold made delay dangerous; CBS, reporting the Army&rsquo;s Sunday-night post, says Wednesday for &ldquo;optimal weather conditions,&rdquo; and notes the Army did not explain why a later date became safer.</p>
+    <p><b>Vantage, interests, access, timing.</b> The Army and EPA have the technical data but also the liability for decades of storage. The plaintiffs are advocacy groups with their own experts. CBS&rsquo;s account is the later one.</p>
+    <p><b>What it means for you.</b> The shifting date weakens the Army&rsquo;s claim that it cannot wait for a judge. Watch whether the court rules before Wednesday, and whether the Army proceeds if it does not.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iowa detonation?</b></p>
+    <label><input type="radio" name="fb-iowa" value="defy"> If the Army detonates while the court&rsquo;s pause is still in force, or the judge orders the Army to explain itself</label>
+    <label><input type="radio" name="fb-iowa" value="lead-tests"> When lead readings from the plume in Iowa or Illinois are published</label>
+    <label><input type="radio" name="fb-iowa" value="probe"> Only if Congress or the Army inspector general opens a probe into how the stockpile was left to degrade</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cbsnews.com/news/us-army-iowa-plant-detonation-court-records/">CBS News</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/cvglrx764gdxo">BBC</a> &middot;
+    <a href="https://www.pbs.org/newshour/nation/u-s-army-plans-to-invoke-emergency-provisions-to-detonate-bomb-making-chemicals-in-iowa">PBS / AP</a> (headline) &middot;
+    <a href="https://thehill.com/regulation/court-battles/6235838-army-plans-lead-azide-detonation/">The Hill</a> (headline)
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items that cleared the bar today. No per-item questions; one question on the whole tier follows the last item.</p>
+
+<article id="bessent-fed">
+  <h3>Bessent says the Fed may be making a &ldquo;policy mistake&rdquo; if it tightens too far, before its Dec.&nbsp;9 decision; inflation and growth figures come Wednesday</h3>
+  <div class="meta"><span class="chip">Core &mdash; Macro &amp; markets</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CBS News, Semafor, CNBC), plus Treasury&rsquo;s yield series.</p>
+  <p>On CBS, the Treasury secretary blamed last week&rsquo;s stock slide partly on Democrats&rsquo; stance on the AI build-out and partly on &ldquo;very hawkish remarks from the Federal Reserve,&rdquo; adding: &ldquo;Many people believe that they may be making a policy mistake if they over-tighten&rdquo; (<a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS transcript</a>). Semafor reports traders have pared bets on a half-point hike on Dec.&nbsp;9 (<a href="https://www.semafor.com/article/11/22/2026/bessent-warns-on-fed-hike-as-ai-bubble-fears-mount">Semafor</a>); CNBC, citing futures pricing, says a quarter-point rise is nearly fully expected, and that the revised third-quarter GDP and October&rsquo;s core PCE inflation are due Wednesday (<a href="https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html">CNBC</a>). In Treasury&rsquo;s own series, the two-year yield fell from 4.88% on Nov.&nbsp;13 to 4.63% on Nov.&nbsp;20 and the 10-year from 5.15% to 4.92% (<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury</a>). Wednesday&rsquo;s print, not the jawboning, is what decides the size of the move, and with it card and mortgage rates.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/">CBS transcript</a> &middot; <a href="https://www.semafor.com/article/11/22/2026/bessent-warns-on-fed-hike-as-ai-bubble-fears-mount">Semafor</a> &middot; <a href="https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html">CNBC</a> &middot; <a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611">Treasury</a></p>
+</article>
+
+<article id="tokenized">
+  <h3>Tokenized U.S. stocks start trading around the clock on an ICE&ndash;OKX venue today, with just six companies after about 90% of those named objected</h3>
+  <div class="meta"><span class="chip">AI and financial services</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, The Block, Tech Times), plus the SEC&rsquo;s exemption page.</p>
+  <p>OKXICE, run by NYSE owner Intercontinental Exchange and crypto exchange OKX, opens under the SEC&rsquo;s temporary &ldquo;Innovation Exemption,&rdquo; which lets a venue trade blockchain versions of a company&rsquo;s shares unless the company objects within 30 days; silence counts as consent (<a href="https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption">SEC</a>). Of 62 companies first named, 56 objected; launch stocks are Coinbase, Robinhood, Strategy, Circle, Securitize and BitGo, alongside dozens of ETFs, and co-chair Andrew Cuomo says companies will come around (<a href="https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html">CNBC</a>). The Block counts 67 objectors, including Meta, Home Depot, Netflix, Tesla and Costco (<a href="https://www.theblock.co/news/regulation/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-exemption-437342">The Block</a>); Tech Times, citing Cointelegraph, lists JPMorgan Chase among them, which we could not confirm from JPMorgan or a notice (<a href="https://www.techtimes.com/articles/331313/20261123/tokenized-stocks-open-monday-okxice-day-one-status-59-etfs-unconfirmed.htm">Tech Times</a>). Investor-relations teams say 24/7 trading upends when companies release news.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/23/tokenized-stocks-face-pushback-as-nyse-nasdaq-pivot-for-a-new-market-.html">CNBC</a> &middot; <a href="https://www.theblock.co/news/regulation/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-exemption-437342">The Block</a> &middot; <a href="https://www.techtimes.com/articles/331313/20261123/tokenized-stocks-open-monday-okxice-day-one-status-59-etfs-unconfirmed.htm">Tech Times</a> &middot; <a href="https://www.sec.gov/about/divisions-offices/division-trading-markets/innovation-exemption">SEC</a></p>
+</article>
+
+<article id="house-258">
+  <h3>Democrats reach 258 House seats, the most for either party since 1992, as Foxx concedes; Jeffries says a ban on members trading stocks comes &ldquo;very early&rdquo;</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CBS News, BBC, The Guardian), plus a Hill headline.</p>
+  <p>Chuck Hubbard beat Republican Virginia Foxx by 330 votes after a recount in North Carolina&rsquo;s 5th District, putting Democrats at 258 seats to at least 173, with races in Minnesota and Tennessee and two Louisiana December runoffs still open (<a href="https://www.cbsnews.com/news/democrats-historic-house-majority-since-1992/">CBS News</a>; <a href="https://www.bbc.co.uk/news/articles/c6vg29g7dlyno">BBC</a>). On CBS, incoming Speaker Hakeem Jeffries named affordability, health care and immigration as areas to explore with Trump and repeated his support for a stock-trading ban (<a href="https://www.theguardian.com/us-news/2026/nov/22/hakeem-jeffries-democrats-agenda">The Guardian</a>; <a href="https://thehill.com/homenews/house/6236202-jeffries-plans-congressional-stock-ban/">The Hill</a>, headline). Even with 56 Senate seats, Democrats lack the 60 votes to end filibusters and the two-thirds needed to override vetoes, so deals with Trump decide what becomes law.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/democrats-historic-house-majority-since-1992/">CBS News</a> &middot; <a href="https://www.bbc.co.uk/news/articles/c6vg29g7dlyno">BBC</a> &middot; <a href="https://www.theguardian.com/us-news/2026/nov/22/hakeem-jeffries-democrats-agenda">The Guardian</a> &middot; <a href="https://thehill.com/homenews/house/6236202-jeffries-plans-congressional-stock-ban/">The Hill</a></p>
+</article>
+
+<article id="iran-qatar">
+  <h3>Rubio meets Qatar&rsquo;s prime minister today on Iran mediation, as Tehran vows &ldquo;all available means&rdquo; against the U.S. blockade and Trump says new strikes could come next year</h3>
+  <div class="meta"><span class="chip">Geopolitics</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (CBS News, CNBC carrying Reuters, Iran International, Al Jazeera).</p>
+  <p>The State Department said Rubio meets Sheikh Mohammed bin Abdulrahman Al Thani in Washington on Monday; Trump told Fox that Iran&rsquo;s negotiators are &ldquo;professional tap dancers&rdquo; and that he expects exchanges of fire to go on (<a href="https://www.iranintl.com/en/202611235076">Iran International</a>). Iran had held talks with Qatari mediators and urged the U.S. to accept its conditions (<a href="https://www.aljazeera.com/news/2026/11/21/iran-says-held-talks-with-qatari-mediators-urges-us-to-accept-conditions">Al Jazeera</a>). On Monday Iran&rsquo;s foreign ministry called the blockade &ldquo;an act of military aggression&rdquo; and said it would use &ldquo;all available means&rdquo; against it (<a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/">CBS News</a>). The Houthis claimed a hit on Saudi Arabia&rsquo;s Rabigh refinery; the Saudi-led coalition said it downed a drone, and we could not confirm any damage (<a href="https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html">CNBC / Reuters</a>). A refinery hit on the Red Sea coast would feed straight into fuel prices.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.iranintl.com/en/202611235076">Iran International</a> &middot; <a href="https://www.aljazeera.com/news/2026/11/21/iran-says-held-talks-with-qatari-mediators-urges-us-to-accept-conditions">Al Jazeera</a> &middot; <a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/">CBS News</a> &middot; <a href="https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html">CNBC / Reuters</a></p>
+</article>
+
+<article id="fl-water">
+  <h3>Florida&rsquo;s water whiplash: the St. Johns River breaks its flood record above Lake Harney, while Tampa Bay counties stay on one-day-a-week watering through March</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (WUSF, WKMG News&nbsp;6 / ClickOrlando), plus the governor&rsquo;s emergency order.</p>
+  <p>After more than 20 inches of rain in three days in the hardest-hit areas, the river above Lake Harney in Seminole County broke its record on Sunday morning and was still rising, with major flooding near DeLand and Astor (<a href="https://www.wusf.org/weather/2026-11-22/record-river-levels-bring-prolonged-flooding-to-florida">WUSF</a>). Seminole, under a state of emergency since early November (<a href="https://www.flgov.com/eog/sites/default/files/executive-orders/2026/EO%2026-228.pdf">executive order</a>), says the area could stay at flood stage through December; well water is under floodwater in Geneva (<a href="https://www.clickorlando.com/news/local/2026/11/19/roads-homes-flooded-in-seminole-county-as-lake-harney-reaches-major-flood-stage/">ClickOrlando</a>). Here, Pasco, Pinellas, Hillsborough and four other counties remain under the regional water district&rsquo;s Modified Phase&nbsp;III shortage order through March&nbsp;31: one watering day a week on drinking, well or pond water, though Pinellas has widened reclaimed-water hours (<a href="https://www.wusf.org/environment/2026-11-22/pinellas-county-utilities-announces-new-watering-schedule">WUSF</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.wusf.org/weather/2026-11-22/record-river-levels-bring-prolonged-flooding-to-florida">WUSF (flooding)</a> &middot; <a href="https://www.clickorlando.com/news/local/2026/11/19/roads-homes-flooded-in-seminole-county-as-lake-harney-reaches-major-flood-stage/">ClickOrlando</a> &middot; <a href="https://www.flgov.com/eog/sites/default/files/executive-orders/2026/EO%2026-228.pdf">Executive order</a> &middot; <a href="https://www.wusf.org/environment/2026-11-22/pinellas-county-utilities-announces-new-watering-schedule">WUSF (watering)</a></p>
+</article>
+
+<article id="meme-coin">
+  <h3>Trump hosts a third dinner for top holders of his meme coin, now worth under $1, as a U.S. attorney warns two senators off investigating</h3>
+  <div class="meta"><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (NBC News, The Guardian).</p>
+  <p>The Sunday gala at Trump National in Sterling, Virginia, rewarded wallets that the Guardian says held $8.6&nbsp;million of $TRUMP, against $148&nbsp;million for the May 2025 dinner; Trump told guests, &ldquo;If we don&rsquo;t do it, China&rsquo;s going to do it&rdquo; (<a href="https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin">The Guardian</a>). The coin peaked at $74. NBC reports that Sen. Elizabeth Warren and Sen. Richard Blumenthal, who signed a letter demanding answers about the dinner, have received letters from Aaron Reitz, the U.S. attorney for the Southern District of Texas, warning them against investigating (<a href="https://www.nbcnews.com/politics/donald-trump/trump-hosts-exclusive-dinner-investors-declining-meme-coin-rcna610757">NBC News</a>). We could not read Reitz&rsquo;s letters, and his office has not described them publicly. Democrats say crypto ventures will be an early oversight target in January.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.theguardian.com/us-news/2026/nov/22/trump-cryptocurrency-gala-meme-coin">The Guardian</a> &middot; <a href="https://www.nbcnews.com/politics/donald-trump/trump-hosts-exclusive-dinner-investors-declining-meme-coin-rcna610757">NBC News</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="pce"> Bessent and the Fed, if Wednesday&rsquo;s core PCE print moves the Dec.&nbsp;9 decision toward a half-point hike</label>
+  <label><input type="radio" name="fb-below" value="tokens"> Tokenized stocks, if the SEC changes the 30-day objection rule or a bank like JPMorgan opens its own venue</label>
+  <label><input type="radio" name="fb-below" value="reitz"> The meme-coin dinner, if Reitz&rsquo;s letters to Warren and Blumenthal are made public or a senator refers them for review</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 124 sources checked; 36 in the first sweep before any weighting category was consulted. Five leads and six items below the line (11 stories). Two leads carry over from earlier editions, each with a stated trigger: the outages (Clayton&rsquo;s acting cyber role and Sunday&rsquo;s Delta failure at the start of holiday travel) and the Nvidia affair (Clayton&rsquo;s on-record confirmation of the investigation and the Times&rsquo;s dated account). The quorum ruling, the contractor rule and the Iowa detonation are new. Marker tallies: PS&nbsp;1 &middot; IC&nbsp;9 &middot; SS&nbsp;1. Claims we could not confirm are stated in the text with reasons: an end date for Clayton&rsquo;s acting role, whether the Justice Department will appeal the quorum ruling, the intelligence reports behind the Times story, the full contractor-rule preamble, the Iowa court&rsquo;s response, JPMorgan&rsquo;s reported objection, damage at Rabigh and the Reitz letters. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-23-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>CrowdStrike agreed to buy Zscaler in an all-stock deal valuing it at about $43.9&nbsp;billion, citing AI-driven cyber risk and the recent outages (<a href="https://www.cnbc.com/2026/11/23/crowdstrike-to-buy-zscaler.html">CNBC</a>). Missed: a corporate deal that closes in 2027 or later, with no policy step yet.</li>
+    <li>A New York judge hears the state&rsquo;s bid to block Kalshi&rsquo;s sports contracts today; Kalshi warns an order could disrupt its exchange nationwide (<a href="https://news.bloomberglaw.com/crypto/kalshi-faces-threat-of-nationwide-shutdown-in-new-york-case">Bloomberg Law</a>). Missed: ran as a lead yesterday; no ruling at press time.</li>
+    <li>Ukraine says seven naval drones sank the Russian corvette Merkury at Libya&rsquo;s Benghazi port, 1,500 miles from the front (<a href="https://www.nbcnews.com/world/ukraine/ukraine-sinks-russian-warship-merkury-libya-naval-drones-war-rcna610822">NBC News</a>). Missed: no U.S. response or channel stated yet.</li>
+    <li>The COP31 climate talks collapsed without a deal over fossil-fuel language (<a href="https://text.npr.org/nx-s1-6046195">NPR</a>). Missed: no U.S. commitment was at stake.</li>
+    <li>The Justice Department admitted in court that it deported a U.S. citizen, Brian Morales Garc&iacute;a of Austin, to Mexico in April (<a href="https://www.theguardian.com/us-news/2026/nov/23/trump-administration-deported-citizen-mexico">The Guardian</a>). Missed: one case, one outlet; watch for the court&rsquo;s ruling on dismissal.</li>
+    <li>Deltona, in Volusia County, cancelled its Christmas parade and &ldquo;effectively&rdquo; all city events, citing $23&nbsp;million in Amendment&nbsp;3 cuts by 2030 (<a href="https://www.nbcnews.com/politics/politics-news/lost-claus-florida-town-hit-states-voter-approved-property-tax-overhau-rcna610806">NBC News</a>). Missed: Amendment&nbsp;3 cuts ran yesterday; Deltona is outside Tampa Bay.</li>
+    <li>Florida&rsquo;s attorney general sued the Leapfrog Group in Seminole County on Friday, saying its hospital safety grades were &ldquo;arbitrary&rdquo; and that it punished hospitals that skipped its survey (<a href="https://www.wusf.org/health-news-florida/2026-11-23/uthmeier-sues-leapfrog-misleading-hospital-safety-grades-influenced-patient-decisions">WUSF</a>). Missed: a lawsuit filing with no ruling, and one outlet.</li>
+    <li>Sen. Adam Schiff plans a resolution saying Congress must not bail out AI companies if the boom falters (<a href="https://www.semafor.com/article/11/23/2026/schiff-plans-no-ai-bailouts-resolution">Semafor</a>). Missed: non-binding; a weighting note under your AI-credit-risk interest, not yet a development.</li>
+    <li>Hegseth&rsquo;s former chief of staff Joe Kasper told Politico the war secretary should resign (<a href="https://nypost.com/2026/11/23/us-news/former-pete-hegseth-chief-of-staff-joe-kasper-calls-on-war-secretary-to-resign/">New York Post</a>). Missed: criticism with no policy effect yet.</li>
+    <li>The FDA rejected Capricor&rsquo;s Duchenne cell therapy over data reliability, in an unusual public statement (<a href="https://www.semafor.com/article/11/23/2026/what-capricors-denial-says-about-the-fda">Semafor</a>). Missed: a single drug decision.</li>
+    <li>CBS reports Medicaid work requirements add hurdles for people after disasters (<a href="https://www.cbsnews.com/news/medicaid-work-rules-disasters/">CBS News</a>). Missed: a feature with no new rule or Florida figure.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>
