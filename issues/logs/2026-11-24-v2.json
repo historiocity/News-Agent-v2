@@ -1,0 +1,656 @@
+{
+ "date": "2026-11-24",
+ "edition": "2026-11-24-v2",
+ "filename": "issues/2026-11-24-v2.html",
+ "generated_at_et": "2026-11-24 ~07:55 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "RSS fronts, the Federal Register API and X (trends + news search) were swept before any weighting category in config.md was consulted for topic choice. NEWSBOT_2.0.md, config.md and audit.py were read at start for rules only; the Nov 21-23 issues were checked only to test carry-overs against Daily method Step 2 and for layout.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS (403; not read)",
+  "Guardian US business RSS (403; not read)",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Federal Register API: Nov 24 documents (all types)",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'economy markets Fed' (last 18h)"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS (403; not read)",
+  "Guardian US business RSS (403; not read)",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Federal Register API: Nov 24 documents (all types)",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'economy markets Fed' (last 18h)"
+ ],
+ "access_denied": [
+  "apnews.com (403)",
+  "floridapolitics.com (403)",
+  "theguardian.com RSS (403)",
+  "axios.com article pages (403; search excerpt used)",
+  "politico.com article pages (403; search excerpts used)",
+  "thehill.com article pages (403; search excerpts used)",
+  "wfla.com article pages (403; headline/search excerpt used)",
+  "wtsp.com (403)",
+  "ft.com (paywall; headlines only)",
+  "scmp.com (403)",
+  "ndtvprofit.com (403)",
+  "pbs.org article bodies (empty to our parser)"
+ ],
+ "candidate_list": [
+  {
+   "item": "Nvidia reinstates Jensen Huang; Trump 'I made the deal'; Megaspeed on Entity List; Congress Dec 1-3",
+   "decision": "keep-lead",
+   "reason": "Reversal of the board's Nov 17 position plus a new verifiable fact (Megaspeed blacklisting); president brokering a CEO return while holding the stock; congressional dates set."
+  },
+  {
+   "item": "Iran: IRGC says escorted tankers hit mines; Treasury sanctions shadow-banking network; WSJ on cyberattacks on ships",
+   "decision": "keep-lead",
+   "reason": "New primary-source Treasury action and a threshold claim (escorts failing); local channel through Tampa pump prices."
+  },
+  {
+   "item": "White House 'anomalies' request for Dec 11 stopgap: Golden Dome, submarines, Trump-class battleship, hemp",
+   "decision": "keep-lead",
+   "reason": "Dated deadline (Dec 11), Core fiscal, behind-the-scenes money and an Iran-war leverage fight among Democrats."
+  },
+  {
+   "item": "Raskin letters to Hadrian, Juul, Polymarket, GrabAGun over 1789 Capital",
+   "decision": "keep-lead",
+   "reason": "Behind-the-scenes money and influence; underplayed on TV fronts; touches prediction markets (topic-check Watch) and defense AI."
+  },
+  {
+   "item": "Axios: Anthropic/OpenAI staff fear unreleased models too unsafe to release",
+   "decision": "keep-lead",
+   "reason": "Standing lab-safety thread in settled preferences; consequence for reader's AI consulting work; single-sourced but wanted with label."
+  },
+  {
+   "item": "Iowa lead azide detonation: 8th Circuit declines to block; Army proceeds Wednesday",
+   "decision": "keep-also",
+   "reason": "Ran as a lead Nov 23; court ruling is a reversal of the pause, so a short update rather than a lead."
+  },
+  {
+   "item": "Ilhan Omar search records unsealed (169 pages)",
+   "decision": "keep-also",
+   "reason": "Notable public reaction and salacious-adjacent detail; no charge yet, so short."
+  },
+  {
+   "item": "Fed OIG probes Bowman over BofA blackout-period dinner",
+   "decision": "keep-also",
+   "reason": "Institutional/financial-regulation story touching US banks; not a Fed state-of-play item."
+  },
+  {
+   "item": "China extends suspension of gallium/germanium/antimony export ban to Jan 27",
+   "decision": "keep-also",
+   "reason": "Trade truce channel with US effect; tied in time to Nvidia."
+  },
+  {
+   "item": "DOL proposed ERISA loyalty rule curbing ESG in 401(k)s (Federal Register today)",
+   "decision": "keep-also",
+   "reason": "Primary document published today; financial services; underreported."
+  },
+  {
+   "item": "Florida OIR: $122.6M auto-insurance excess-profit refunds",
+   "decision": "keep-also",
+   "reason": "Local money for Florida policyholders; WFLA ran it this morning."
+  },
+  {
+   "item": "Signal blocks AI assistants; banks, United limit AI agents",
+   "decision": "keep-also",
+   "reason": "Topic-check Watch item (banks blocking AI agents); new step but not material enough for a lead."
+  },
+  {
+   "item": "NY Fed Williams: higher rates 'over time'",
+   "decision": "cut-also-noted",
+   "reason": "Settled preference: Fed prints and decisions only."
+  },
+  {
+   "item": "MacDill housing mold suit at 105 families; criminal probe",
+   "decision": "cut-also-noted",
+   "reason": "Amended complaint Nov 16; no new court action this week."
+  },
+  {
+   "item": "SEC proposes direct control of Consolidated Audit Trail",
+   "decision": "cut-also-noted",
+   "reason": "Market plumbing; comment period to Jan 25."
+  },
+  {
+   "item": "Trump one-year 10% credit-card cap (Fox interview)",
+   "decision": "cut-also-noted",
+   "reason": "No new fact since Nov 22 lead."
+  },
+  {
+   "item": "Rep. Jimmy Gomez resigns after Ethics report",
+   "decision": "cut-also-noted",
+   "reason": "Personnel churn with no policy effect (anti-topic)."
+  },
+  {
+   "item": "Thanksgiving storms on both coasts; record air travel",
+   "decision": "cut-also-noted",
+   "reason": "Disruption without structural change (altitude bar)."
+  },
+  {
+   "item": "Appeals court gives Trump path to erase hush-money conviction",
+   "decision": "cut-also-noted",
+   "reason": "Could read headline only; could not characterize ruling."
+  },
+  {
+   "item": "Pennsylvania ninth measles death",
+   "decision": "cut-also-noted",
+   "reason": "No Florida link."
+  },
+  {
+   "item": "Pentagon delays Patriot shipments to Ukraine (FT)",
+   "decision": "cut-also-noted",
+   "reason": "Paywalled, single source; Ukraine balance preference."
+  },
+  {
+   "item": "Food banks demand above pandemic levels",
+   "decision": "cut-also-noted",
+   "reason": "Feature without new national/Florida data."
+  },
+  {
+   "item": "Massachusetts sues over ICE courthouse arrests",
+   "decision": "cut-also-noted",
+   "reason": "One state filing, no ruling."
+  },
+  {
+   "item": "Seattle airport ICE arrests outrage",
+   "decision": "cut",
+   "reason": "Ran Nov 22; no new development clearing Step 2."
+  },
+  {
+   "item": "Newsom death-row commutations; Trump vows DOJ challenge and child-killer death penalty push",
+   "decision": "cut",
+   "reason": "Rhetoric and announcements, no filing yet."
+  },
+  {
+   "item": "Medicare for All back on drawing board; Trump opens door to health deal",
+   "decision": "cut",
+   "reason": "Early-stage positioning, no bill or deal."
+  },
+  {
+   "item": "CrowdStrike-Zscaler $44B",
+   "decision": "cut",
+   "reason": "Ran in Also noted Nov 23."
+  },
+  {
+   "item": "Ukraine sinks Russian warship off Libya",
+   "decision": "cut",
+   "reason": "Ran in Also noted Nov 23; no US channel change."
+  },
+  {
+   "item": "Russia nuclear satellite reports; NATO space threat",
+   "decision": "cut",
+   "reason": "Reports unconfirmed; no US policy step."
+  },
+  {
+   "item": "Sanofi to buy Insmed",
+   "decision": "cut",
+   "reason": "Single pharma deal, no reader channel."
+  },
+  {
+   "item": "Amazon drone crash, FAA probe",
+   "decision": "cut",
+   "reason": "Single incident."
+  },
+  {
+   "item": "Hegseth ex-chief of staff calls for resignation",
+   "decision": "cut",
+   "reason": "Ran in Also noted Nov 23."
+  },
+  {
+   "item": "DOJ admits deporting US citizen",
+   "decision": "cut",
+   "reason": "Ran Nov 23 Also noted."
+  },
+  {
+   "item": "Clayton named acting national cyber director",
+   "decision": "cut",
+   "reason": "Ran as part of Nov 23 lead."
+  },
+  {
+   "item": "Oregon and Virginia sue SpaceX/xAI over Grok sexualized images",
+   "decision": "cut",
+   "reason": "State AI litigation with no ruling yet; outweighed today."
+  },
+  {
+   "item": "DNC 2028 debate rules / dark money limits",
+   "decision": "cut",
+   "reason": "Campaign tactics (anti-topic)."
+  },
+  {
+   "item": "Polymarket/Kalshi midterm accuracy report",
+   "decision": "cut",
+   "reason": "Weak study; prediction-market watch item, no enforcement action."
+  },
+  {
+   "item": "Bitcoin and gold swings; CME margin hikes",
+   "decision": "cut",
+   "reason": "Price moves for their own sake."
+  },
+  {
+   "item": "Market rebound/Citadel 2018 comparison",
+   "decision": "cut",
+   "reason": "Price moves for their own sake."
+  },
+  {
+   "item": "Florida flooding / DeSantis second FEMA request",
+   "decision": "cut",
+   "reason": "Ran Nov 23; no FEMA decision yet."
+  },
+  {
+   "item": "Deltona parade cancel/restore over Amendment 3",
+   "decision": "cut",
+   "reason": "Amendment 3 county effects ran Nov 22; parade is restored; no Pasco action."
+  },
+  {
+   "item": "Florida Orlando halal slaughterhouse arrests",
+   "decision": "cut",
+   "reason": "Crime blotter without policy consequence."
+  },
+  {
+   "item": "Florida PSC rejects Duke data-center tariff; TECO tariff suspended",
+   "decision": "cut",
+   "reason": "Decisions dated Nov 3; ran earlier; nothing new today."
+  },
+  {
+   "item": "Hanoi blast; Colombia car bomb; Gaza strikes",
+   "decision": "cut",
+   "reason": "Foreign events with no US channel."
+  }
+ ],
+ "candidate_count": 44,
+ "selected": {
+  "leads": [
+   "nvidia",
+   "hormuz",
+   "stopgap",
+   "raskin-1789",
+   "ai-labs"
+  ],
+  "also_today": [
+   "iowa",
+   "omar",
+   "bowman",
+   "china-minerals",
+   "esg-401k",
+   "fl-auto",
+   "ai-agents"
+  ],
+  "total_stories": 12
+ },
+ "story_floor_note": "12 stories, above the ~10 target.",
+ "continuing_leads": [
+  {
+   "id": "nvidia",
+   "trigger": "reversal: Nvidia board reinstated Huang Nov 23 after saying Nov 17 it would not; new verifiable fact: Commerce added Megaspeed to the Entity List the same day"
+  },
+  {
+   "id": "hormuz",
+   "trigger": "new verifiable fact: Treasury/OFAC Nov 23 designations of 2+ dozen Iranian exchange houses and front firms; threshold event: IRGC claim that tankers under US escort hit mines (one fire confirmed by UKMTO)"
+  }
+ ],
+ "per_article_sources": {
+  "nvidia": {
+   "independent_newsrooms": 7,
+   "names": [
+    "CNBC",
+    "NPR",
+    "NBC News",
+    "ABC News",
+    "Semafor",
+    "The Independent (relaying FT)",
+    "Fox News"
+   ],
+   "headline_only": [
+    "Financial Times"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "hormuz": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CNBC",
+    "CBS News",
+    "Al Jazeera"
+   ],
+   "primary": [
+    "home.treasury.gov press release sb0699",
+    "ofac.treasury.gov recent actions 20261123"
+   ],
+   "data": [
+    "AAA Florida gas prices"
+   ],
+   "marker": "Primary source"
+  },
+  "stopgap": {
+   "independent_newsrooms": 4,
+   "names": [
+    "Politico (search excerpt)",
+    "The Hill (search excerpt)",
+    "Bloomberg Government (search excerpt)",
+    "Political.org"
+   ],
+   "marker": "Independent corroboration",
+   "note": "White House document not read; no public copy found."
+  },
+  "raskin-1789": {
+   "independent_newsrooms": 5,
+   "names": [
+    "NPR",
+    "MS NOW",
+    "Politico (search excerpt)",
+    "AP (search excerpt)",
+    "The Hill (search excerpt)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "ai-labs": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Axios (search excerpt)"
+   ],
+   "not_counted": [
+    "Digg, NDTV Profit, The Defiant, Crypto Briefing rewrites"
+   ],
+   "marker": "Single-sourced"
+  },
+  "iowa": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CBS News",
+    "NBC News",
+    "CNBC"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "omar": {
+   "independent_newsrooms": 4,
+   "names": [
+    "CBS News",
+    "NBC News",
+    "Fox News",
+    "Daily Wire"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "bowman": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Financial Times (headline)",
+    "Bloomberg Law",
+    "The Standard"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "china-minerals": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Xinhua",
+    "MLex",
+    "Bloomberg Law"
+   ],
+   "headline_only": [
+    "WSJ"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "esg-401k": {
+   "independent_newsrooms": 1,
+   "names": [
+    "CNBC"
+   ],
+   "primary": [
+    "federalregister.gov 2026-23936"
+   ],
+   "marker": "Primary source"
+  },
+  "fl-auto": {
+   "independent_newsrooms": 2,
+   "names": [
+    "WFLA (headline/search excerpt)",
+    "The Capitolist"
+   ],
+   "primary": [
+    "floir.gov announcement"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "ai-agents": {
+   "independent_newsrooms": 1,
+   "names": [
+    "CNBC"
+   ],
+   "primary": [
+    "signal.org blog"
+   ],
+   "marker": "Single-sourced"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: web searches for UAP disclosure news, Pasco County/New Port Richey news, JPMorgan, and Tampa Bay data-center/power news; compared the candidate list against every front swept and X US trends.",
+  "result": "UAP: nothing since Nov 20 Release 08. Pasco: school fall break and a runaway-teen search, neither at bar. JPMorgan: London digital-gold trade and SE Asia staffing, below bar. Florida PSC Duke/TECO data-center tariff actions dated Nov 3 and covered earlier. X trends were sports, greetings and foreign items.",
+  "underreported": "Two items judged underreported: Raskin's 1789 Capital letters (NPR, MS NOW, Politico, AP, The Hill, but on no TV-network front swept) and the DOL ERISA/ESG proposed rule (Federal Register plus one business outlet)."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Strongest: Huang reinstatement (lead) and AI-lab safety scoop (lead). Amazon/Decart, CrowdStrike cut.",
+  "Core - Macro & markets": "No print today; Williams speech to Also noted under the Fed preference; PCE and GDP due Wednesday. Market swings cut as price moves.",
+  "World economy": "China minerals pause (Also today) through the US trade-truce lens; UK/France items cut (no US channel).",
+  "Core - US debt & fiscal": "Dec 11 stopgap anomalies request (lead). No Treasury auction or CBO release of note today.",
+  "Core - US financials": "Bowman OIG probe (Also today); JPMorgan negative check found only a London digital-gold trade and staffing; Hadrian's JPMorganChase backing noted in 1789 lead.",
+  "Core - US politics & policy": "Stopgap and Raskin probe (leads); Omar records (Also today); hush-money appeal to Also noted (unread).",
+  "Geopolitics": "Hormuz (lead). Ukraine/Libya warship, Russia space reports cut (no new US step).",
+  "Science & public health": "Measles death to Also noted; CDC surveillance money folded into stopgap lead; nothing that changes how something works.",
+  "Core - UAP disclosure": "Negative check: nothing since Pentagon Release 08 on Nov 20; Senate/House UAP bills still in conference talk.",
+  "Energy & grid": "Hormuz oil and Tampa pump prices folded into lead; PSC data-center tariffs from Nov 3 (ran earlier).",
+  "Elections and electoral process": "DNC debate rules cut (campaign tactics); Gomez resignation to Also noted; no certification or map fights today.",
+  "Broader domestic institutions": "Raskin probe, Omar records, Bowman OIG, stopgap fight. Cleared via leads and Also today.",
+  "International with US channel": "China minerals pause; Iran sanctions. Cleared.",
+  "Florida / Tampa Bay": "Auto-insurance refunds (Also today); MacDill suit to Also noted; Pasco check: school break, runaway-teen search; Deltona parade cut.",
+  "Data centers / power / AI infrastructure": "Florida PSC Duke/TECO large-load tariffs dated Nov 3, ran earlier; nothing new today. Nvidia lead carries AI capex channel.",
+  "AI and financial services": "Signal/banks AI agents (Also today); DOL ESG 401(k) rule (Also today); SEC CAT proposal to Also noted."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 24 ~07:30 ET): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), applied Nov 9 with wake condition closed; no comments, no new or recently closed brief-feedback issues. Topic-check weighting from Nov 17 applied: banks blocking AI agents kept to Also today (no material development); prediction markets touched via Polymarket in the 1789 lead; AI credit risk: nothing new verifiable.",
+ "config_change": null,
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "sources_checked_total": 129,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "Guardian US RSS (403; not read)",
+  "Guardian US business RSS (403; not read)",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (headlines only)",
+  "AP top news (403; not read)",
+  "Florida Politics feed (403; not read)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Federal Register API: Nov 24 documents (all types)",
+  "X US trends (WOEID 23424977)",
+  "X news search: general (last 14h)",
+  "X news search: 'Florida' (last 24h)",
+  "X news search: 'economy markets Fed' (last 18h)",
+  "nv-cnbc-deal: https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+  "nv-cnbc-return: https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
+  "nv-cnbc-cong: https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-congress-trump.html",
+  "nv-cnbc-gov: https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
+  "nv-nbc: https://www.nbcnews.com/politics/congress/congress-criticism-jensen-huang-nvidia-reinstated-ceo-trump-rcna610926",
+  "nv-cbs: https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/",
+  "nv-cbs-cong: https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/",
+  "nv-abc: https://abcnews.com/US/trump-administration-assured-nvidia-huang-facing-criminal-charges/story?id=138405808",
+  "nv-pbs: https://www.pbs.org/newshour/politics/huangs-reinstatement-at-nvidia-sparks-fury-in-congress-as-lawmakers-move-forward-with-hearings",
+  "nv-fox: https://www.foxnews.com/politics/trump-directly-indirectly-intervened-get-nvidias-ceo-reinstated-potus-says",
+  "nv-foxsoc: https://www.foxnews.com/politics/trump-accused-socialism-communism-after-helping-scandal-plagued-nvidia-ceo-reclaim-top-job",
+  "nv-dw: https://www.dailywire.com/news/jensen-huang-gets-his-job-back-at-nvidia-after-board-reveals-who-weighed-in",
+  "nv-hill: https://thehill.com/policy/technology/6238401-jensen-huang-returns-nvidia-board/",
+  "nv-aj: https://www.aljazeera.com/features/2026/11/24/was-jensen-huang-too-big-to-fire-why-nvidia-trump-brought-him-back",
+  "nv-bbc: https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo",
+  "nv-npr: https://text.npr.org/nx-s1-6050910",
+  "nv-semafor: https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist",
+  "nv-cnbc-mega: https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html",
+  "nv-ft15: https://www.ft.com/content/67b0a070-c2a9-4229-885a-383cca657763",
+  "ir-cnbc: https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
+  "ir-cbs: https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/",
+  "ir-fox: https://www.foxnews.com/politics/bessent-gave-iran-weeks-before-nothing-left-trade-new-sanctions-expose-what-survived",
+  "cc-dw: https://www.dailywire.com/news/trump-wants-to-cap-credit-card-rates-for-one-year-heres-his-number",
+  "cc-fox: https://www.foxnews.com/opinion/trump-flirts-leftist-democrats-credit-cards-flirting-disaster",
+  "fed-cnbc: https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+  "fed-ft: https://www.ft.com/content/2c1fcdc0-eb16-4cee-9041-736527c2ae83",
+  "esg-cnbc: https://www.cnbc.com/2026/11/23/labor-department-esg-401k-rule.html",
+  "ai-cnbc: https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
+  "ai-axios: https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+  "om-cbs: https://www.cbsnews.com/news/congresswoman-ilhan-omar-house-raid-documents-release/",
+  "om-nbc: https://www.nbcnews.com/politics/congress/judge-unseals-court-documents-related-search-ilhan-omar-home-washingto-rcna611027",
+  "om-fox: https://www.foxnews.com/politics/unsealed-warrant-documents-for-ilhan-omars-dc-home-raid-reveal-decades-long-scope-of-investigation",
+  "om-dw: https://www.dailywire.com/news/breaking-judge-releases-documents-in-ilhan-omar-probe",
+  "pm-hill: https://thehill.com/policy/energy-environment/6238574-mike-levin-opposes-baaja/",
+  "rk-hill: https://thehill.com/homenews/house/6238445-house-democrats-investigate-1789-capital-links/",
+  "rk-npr: https://text.npr.org/nx-s1-6051028",
+  "an-hill: https://thehill.com/homenews/administration/6238980-white-house-requests-stopgap-funding/",
+  "hc-hill: https://thehill.com/policy/healthcare/6238566-el-sayed-floats-trump-care-plan/",
+  "fl-wfla: https://www.wfla.com/news/florida/122-6m-in-excess-profits-from-auto-insurers-to-be-returned-to-florida-policyholders/",
+  "fl-tbt: https://www.tampabay.com/news/military/2026/11/23/macdill-airforce-tampa-housing-harbor-bay/",
+  "fb-cnbc: https://www.cnbc.com/2026/11/24/us-food-banks-demand-snap.html",
+  "hm-pbs: https://www.pbs.org/newshour/politics/federal-appeals-court-gives-president-donald-trump-a-path-to-erasing-hush-money-conviction",
+  "io-cnbc: https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
+  "io-cbs: https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/",
+  "io-hill: https://thehill.com/policy/energy-environment/6239030-army-detonates-lead-munitions-iowa/",
+  "sl-pbs: https://www.pbs.org/newshour/politics/senate-leadership-vote-tests-newly-elected-democrats-promise-of-change",
+  "mcd-npr: https://text.npr.org/nx-s1-6047706",
+  "sb-pol: https://www.politico.com/live-updates/2026/11/23/congress/white-house-sends-year-end-anomalies-funding-request-to-congress-01181298",
+  "sb-polorg: https://political.org/2026/11/23/white-house-sends-congress-anomalies-request-for-billions-in-add-ons-to-stopgap-funding-bill/",
+  "rk-pol: https://www.politico.com/news/2026/11/24/jamie-raskin-donald-trump-jr-oversight-01181306",
+  "rk-msnow: https://www.ms.now/news/house-democrats-four-companies-donald-trump-jr",
+  "rk-ap: https://apnews.com/article/us-congress-donald-trump-jr-1789-investigation-f51c0cd43c57326ab8540ac661dca2ac",
+  "ir-tsy: https://home.treasury.gov/news/press-releases/sb0699",
+  "ir-aj: https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks",
+  "gas-wtsp: https://www.wtsp.com/article/traffic/gas-prices/florida-lower-gas-prices-thanksgiving-aaa/67-a7c44878-0e8d-4fea-a248-b79ad610eefd",
+  "nv-ind: https://www.independent.co.uk/news/world/americas/us-politics/trump-jensen-huang-nvidia-shares-b3090466.html",
+  "bw-bl: https://news.bloomberglaw.com/banking-law/feds-watchdog-probes-whether-bowman-broke-communications-rules",
+  "bw-sed: https://en.sedaily.com/world/2026/11/24/trump-picked-fed-vice-chair-faces-probe-over-blackout",
+  "bw-std: https://www.thestandard.com.hk/finance/article/349458/Feds-Bowman-under-investigation-over-blackout-period-dinner",
+  "cn-xh: https://english.news.cn/20261124/826a5769e61d4d5aa14d256dbfb9fc20/c.html",
+  "cn-scmp: https://www.scmp.com/economy/global-economy/article/3375609/china-approves-2-month-extension-select-us-export-restrictions",
+  "cn-bl: https://news.bloomberglaw.com/environment-and-energy/china-extends-pause-on-us-minerals-ban-to-maintain-truce-1",
+  "fl-floir: https://floir.gov/newsroom/archives/item-details/2026/11/19/commissioner-mike-yaworsky-secures-over--122.6-million-in-excess-profits-from-auto-insurers",
+  "fl-herald: https://www.miamiherald.com/news/politics-government/state-politics/article318215145.html",
+  "fl-capitolist: https://thecapitolist.com/florida-auto-insurers-to-return-122-6-million-in-excess-profits/",
+  "mc-stripes: https://www.stripes.com/branches/air_force/2026-11-19/lawsuit-105-families-mold-macdill-housing-23519839.html",
+  "mc-wfla: https://www.wfla.com/news/hillsborough-county/itll-stop-when-its-fixed-450-macdill-afb-residents-named-in-lawsuit-against-housing-company-alleging-toxic-mold/",
+  "mc-tb28: https://www.tampabay28.com/news/local-news/i-team-investigates/macdill-air-force-base-housing-lawsuit-grows-to-105-military-families-alleging-unsafe-conditions-mold",
+  "ai-ndtv: https://www.ndtvprofit.com/technology/will-be-able-to-trick-us-anthropic-openai-staff-sound-alarm-over-unreleased-ai-models-12370626",
+  "sb-foxjeff: https://www.foxnews.com/politics/jeffries-faces-online-fury-cryptic-answer-dems-risk-govt-shutdown-political-games",
+  "io-bbc: https://www.bbc.co.uk/news/articles/cr2klqzqx1qvo",
+  "hm-pbs2: https://www.pbs.org/newshour/politics/federal-appeals-court-gives-president-donald-trump-a-path-to-erasing-hush-money-conviction",
+  "sg-blog: https://signal.org/blog/",
+  "dc-wtsp: https://www.wtsp.com/article/news/local/duke-energy-data-center-plan-rejected-florida/67-a4f8f68b-61c8-4a42-ab0d-9aa651f1942c",
+  "dc-scout: https://colocationscout.com/news-tampa-electric-data-center-tariff-llcs-1-18-98-per-kw-2m-per-mw-security.html",
+  "dc-psc: https://www.psc.state.fl.us/weekly-order-details?endDate=November+20%2C+2026&startDate=November+16%2C+2026",
+  "Federal Register API: 2026-23936 (DOL ESG proposed rule) abstract and comment date",
+  "Federal Register API: 2026-23951 (SEC CAT proposed rule) abstract and comment date",
+  "Search excerpt: Bloomberg Law / The Banker / SquawkNews on Bowman OIG probe",
+  "Search excerpt: MLex and SCMP on China export-control suspension",
+  "Search excerpt: Politico, The Hill, Bloomberg Government on anomalies request",
+  "Search excerpt: Axios AI-lab safety scoop (and Digg/NDTV/Defiant rewrites, not counted)",
+  "Search excerpt: Stars and Stripes, PR Newswire, WFLA, Tampa Bay 28, mysuncoast on MacDill suit",
+  "Search excerpt: Florida OIR, Miami Herald, WFLA, Capitolist, Insurance Business on auto refunds",
+  "Search excerpt: AP, NPR, Politico, MS NOW, The Hill on Raskin letters",
+  "Search excerpt: FT Chinese, Investing.com, Independent, IBTimes, AA on Trump Nvidia shares",
+  "Search excerpt: Treasury, OFAC, US Embassy, Al Jazeera, Reuters on Iran designations",
+  "Search excerpt: WTSP, Gasolytics, Stacker, AAA on Florida gas prices",
+  "AAA gas prices, Florida page (gasprices.aaa.com)",
+  "Search (negative check): Pasco County / New Port Richey news (Pasco Sheriff, Inside New Port Richey)",
+  "Search (negative check): UAP disclosure news (war.gov release 08, Disclosure Age)",
+  "Search (negative check): JPMorgan news (CoinDesk, The Edge)",
+  "Search (negative check): Tampa Bay data center power (Colocation Scout, Florida PSC, WTSP)",
+  "Search: Florida PSC Duke data-center tariff (Florida Phoenix, Food & Water Watch, PSC order)"
+ ],
+ "first_sweep_count": 35,
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 57 unique links, 2026-11-24 ~07:55 ET: 47 returned 200; 10 returned 403 to curl (apnews.com, thehill.com x2, axios.com, ft.com x3, politico.com x2, wfla.com). All are bot-blocking or paywalled sites whose text was read via search excerpts or headlines and is labelled as such.",
+ "audit_attempts": {
+  "count": 3,
+  "results": [
+   "attempt 1 (~07:50 ET, HTML only): exit 0; stories 12 (leads 5, also 7), continuations 2, radio groups 6, sources 129; warning: no process log supplied",
+   "attempt 2 (~07:55 ET, with log): exit 0, all hard gates passed, no warnings",
+   "attempt 3 (~07:58 ET, final files): exit 0, all hard gates passed; stories 12 (leads 5, also 7), continuations 2, radio groups 6, sources 129, no warnings"
+  ]
+ }
+}
