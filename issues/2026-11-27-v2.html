@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Friday, 27 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Friday, 27 November 2026 &middot; morning edition</div>
+  <h1>Trump calls the upgraded GDP figure &ldquo;fake&rdquo; and wants an investigation; new Section&nbsp;301 tariffs on 14 economies; two Italians killed in Kuwait as Iran denies a role; Trump&rsquo;s accounts traded Nvidia 44 times; S&amp;P puts Nvidia&rsquo;s AA rating on watch as Citi and JPMorgan shop AI loans</h1>
+  <p class="summary">Five leads, eight below the line. Trump demands an investigation after the Commerce Department raised third-quarter growth to 4.3% from 3.4%, calling the pre-election figure a &ldquo;purposeful&rdquo; error, while the agency&rsquo;s revisions run on a fixed calendar; the trade office proposes new Section&nbsp;301 tariffs on 14 economies, with outlets disagreeing on how big the China increase is; two Italian technicians die in a drone strike in Kuwait that Kuwait and Italy blame on Iran and Iran denies; the BBC counts at least 44 Nvidia trades in Trump&rsquo;s accounts this year as Nvidia freezes Southeast Asian orders; and S&amp;P warns it may cut Nvidia&rsquo;s credit rating while Citi and JPMorgan market AI loan portfolios. Below the line: a judge blocks the FCC&rsquo;s ABC license review, a second ruling against the new birthright order, Fulton County&rsquo;s ballot order paused, breaches at FinCEN and the Air Force cloud, SpaceX&rsquo;s orbital data-center approval, Iowa&rsquo;s first lead tests, FEMA aid for six Florida counties, and Amendment&nbsp;3&rsquo;s squeeze on Pasco and Pinellas budgets.</p>
+  <p class="sub">Friday morning edition, the day after Thanksgiving, under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Many newsrooms ran holiday features and Black Friday guides, so the candidate pool was thinner than a weekday; it still held 13 stories that cleared the bar. Filename: <code>2026-11-27-v2.html</code>.</p>
+  <p class="prov"><b>114 sources checked, 36 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera, the BBC front plus its U.S., world and business feeds, CNBC top news and finance, The Hill, Fox News politics and latest, Semafor, Tampa Bay Times, Fox&nbsp;13, WFLA, WUSF, Politico, Axios, CBS, ABC, NBC, PBS NewsHour, NYT and FT headlines, the Daily Wire, the New York Post, Breitbart, Reason, the Washington Examiner, today&rsquo;s Federal Register through its API, X&rsquo;s U.S. trends and three X news searches. The Guardian refused the fetch; the WSJ feed returned stale January 2025 items and was not used. The Hill, Axios, WFLA, Investing.com and Benzinga article pages refused direct fetches; where we use them we read their text through a search index and say so.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure news, JPMorgan, Pasco County and New Port Richey news, and Tampa Bay power and data-center news, and compared the candidate list with every front swept and X&rsquo;s U.S. trends (Black Friday, football and entertainment). We found no new UAP release or filing. JPMorgan&rsquo;s only new item was its part in the AI-loan sales, which is in the fifth lead. Pasco&rsquo;s news was traffic deaths and the Amendment&nbsp;3 budget squeeze, which is below the line. We found no new Tampa Bay data-center or rate filing. Two items are underreported: the Air Force cloud breach and FinCEN&rsquo;s systems incident, which we found only on ABC and in Reuters&rsquo; story as carried by others, and on no TV-network front we swept; and Amendment&nbsp;3&rsquo;s cost to Pasco, which we found only in local outlets. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed. No new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#gdp-probe">Trump wants the GDP revision investigated</a></li>
+    <li><a href="#tariffs-301">New Section&nbsp;301 tariffs on 14 economies</a></li>
+    <li><a href="#kuwait-iran">Two Italians killed in Kuwait; Iran denies it</a></li>
+    <li><a href="#nvidia-trades">Trump&rsquo;s 44 Nvidia trades; Nvidia freezes Southeast Asia orders</a></li>
+    <li><a href="#ai-credit">Nvidia&rsquo;s rating on watch; banks shop AI loans</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#fcc-abc">Judge blocks the FCC&rsquo;s ABC license review</a></li>
+    <li><a href="#birthright">Second court blocks the new birthright order</a></li>
+    <li><a href="#fulton">Fulton County ballot order paused</a></li>
+    <li><a href="#breaches">Breaches at FinCEN and the Air Force cloud</a></li>
+    <li><a href="#spacex">FCC clears SpaceX&rsquo;s orbital data centers</a></li>
+    <li><a href="#iowa">Iowa: first lead tests due</a></li>
+    <li><a href="#fl-fema">FEMA aid for six Florida counties</a></li>
+    <li><a href="#amendment3">Amendment&nbsp;3 hits Pasco and Pinellas budgets</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="gdp-probe">
+  <h3>Trump calls pre-election growth figures &ldquo;FAKE&rdquo; and demands an investigation after Commerce raises third-quarter GDP to 4.3% from 3.4%</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; Macro &amp; markets</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (the AP, as carried by PBS NewsHour; CBS News), plus the Bureau of Economic Analysis release itself and X&rsquo;s summary of reaction.</p>
+  <p>On Wednesday the Bureau of Economic Analysis published its second estimate of third-quarter growth: real GDP rose at a 4.3% annual rate, revised up 0.9 percentage point from the first estimate, mainly because investment and consumer spending were revised up (<a href="https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026">BEA</a>). Second-quarter growth was 2.2%. Inflation in the release did not change: the PCE price index rose 2.1% and the core index 2.5%, both as first estimated. The next estimate is due Dec.&nbsp;23.</p>
+  <p>On Thanksgiving morning Trump posted that &ldquo;the REAL Numbers on the Economy, published before the Election, were FAKE,&rdquo; called the change a &ldquo;massive, and purposeful, error&rdquo; and asked for &ldquo;an immediate investigation&rdquo; (<a href="https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department">AP via PBS NewsHour</a>). His complaint is that the stronger number arrived after the Nov.&nbsp;3 midterms, which gave Democrats both houses. CBS notes that he gave no evidence and that the department revises GDP and jobs data routinely (<a href="https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/">CBS News</a>). The Commerce Department, which runs the bureau and is led by his own appointee, did not respond on the holiday.</p>
+  <p><b>Why it matters to you.</b> GDP, jobs and inflation figures set what the Fed does with rates and what your bank and your investments price in. The AP says this is the latest of several attacks on data that did not match Trump&rsquo;s account of the economy. An investigation of the statistical agencies, whoever runs it, would put pressure on the numbers that markets and businesses rely on.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> motive and process. Was this a deliberate pre-election understatement, or a normal scheduled revision?</p>
+    <p><b>Each side&rsquo;s vantage:</b> Trump is the party hurt by the midterm result and offers no evidence. His interest is a story that the economy was stronger than voters were told. The AP and CBS, which reported on Thursday, point to BEA&rsquo;s published method: revisions come on a pre-set calendar as fuller data arrive. BEA&rsquo;s own release attributes the change to upward revisions in investment and consumer spending. It does not address Trump. On X, supporters cheered the post and critics mocked it. That is reaction, not evidence.</p>
+    <p><b>What it means for you:</b> nothing we read suggests the first estimate was manipulated, and Trump offered no evidence. The thing to watch is any formal step. A named investigator, or a change at the top of BEA, would be a real institutional event.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the fight over the GDP figures?</b></p>
+    <label><input type="radio" name="fb-gdp" value="named-probe"> If Commerce or the White House names who will run the investigation, or removes BEA&rsquo;s director</label>
+    <label><input type="radio" name="fb-gdp" value="dec23"> If the Dec.&nbsp;23 third estimate moves growth again and Trump attacks that release too</label>
+    <label><input type="radio" name="fb-gdp" value="gop-chair"> Only if a Republican committee chair backs the probe in writing</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026">BEA release</a> &middot;
+    <a href="https://www.pbs.org/newshour/politics/trump-calls-gdp-figures-fake-and-demands-an-investigation-of-commerce-department">AP via PBS NewsHour</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/">CBS News</a>
+  </p>
+</article>
+
+<article id="tariffs-301">
+  <h3>The trade office proposes Section&nbsp;301 tariffs on 14 economies, from China and the EU to Japan and Vietnam, to replace the levies the Supreme Court struck down; reports differ on the China rate</h3>
+  <div class="meta">
+    <span class="chip">World economy</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (ABC News, CBS News, BBC, The Daily Wire), plus X&rsquo;s summary of market reaction. We could not read the trade office&rsquo;s notice. It is not yet in the Federal Register, and the trade office&rsquo;s press page returned an error.</p>
+  <p>U.S. Trade Representative Jamieson Greer&rsquo;s office announced on Wednesday that it had found the manufacturing policies of 14 economies &ldquo;unreasonable&rdquo; under Section&nbsp;301 of the Trade Act of 1974: China, the European Union, Japan, India, South Korea, Taiwan, Vietnam, Thailand, Indonesia, Malaysia, Singapore, Switzerland, Bangladesh and Cambodia (<a href="https://abcnews.com/Politics/trump-admin-proposes-new-tariffs-china-eu-12/story?id=138442698">ABC News</a>). Investigations of Mexico and Norway are still open. The legal basis is new because the Supreme Court ruled in February that the emergency-powers law does not allow tariffs. The proposed duties are aimed at specific products, and a senior official said they would not stack on existing duties, except for China&rsquo;s (<a href="https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/">CBS News</a>).</p>
+  <p>The BBC&rsquo;s economics editor says the rates are &ldquo;upper ceilings&rdquo; that are open to negotiation and are not due before January or February, after consultation. He says China&rsquo;s 20% matches the rate in last year&rsquo;s Trump&ndash;Xi truce, which expires in mid-January, and that Beijing has not retaliated (<a href="https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o">BBC</a>). Capital Economics told CBS the move is &ldquo;not as alarming as it looks&rdquo; because it largely replaces earlier tariffs. The Daily Wire&rsquo;s account leads with the countries hit and frames it as Trump&rsquo;s new attempt after the Supreme Court setback (<a href="https://www.dailywire.com/news/trump-takes-another-swing-at-tariffs-after-supreme-court-setback">Daily Wire</a>).</p>
+  <p><b>Why it matters to you.</b> The average statutory U.S. tariff rate is now 11.2%, by the Yale Budget Lab&rsquo;s count cited by CBS, and the final rates will feed into the prices of goods imported from these 14 economies next year. The incoming Speaker, Hakeem Jeffries, has said the new House will try to repeal the Trump tariffs in its first 100 days (BBC), so the final rates will be set while Democrats control Congress.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> factual. What is the China rate, and who is on the list?</p>
+    <p><b>Each source&rsquo;s vantage:</b> ABC, which spoke with a senior official, says China faces an extra 20%, which could double to 40% if Beijing breaks the truce, on top of existing 25% tech-transfer tariffs. CBS puts China&rsquo;s total rate at 45%. CBS also reports that Brazil will be among the hardest hit, through duties on sugar and a new 10% levy on aircraft. ABC&rsquo;s list of 14 does not include Brazil, and neither does the BBC. A summary on X said rates run &ldquo;up to 40% on China, 35% on Vietnam&rdquo;; we found no newsroom that gives the Vietnam figure.</p>
+    <p><b>What it means for you:</b> the final notice will settle the numbers. Until then, treat 45% as one outlet&rsquo;s total for China. We could not confirm the Brazil sugar and aircraft duties because no other account we read mentions them.</p>
+  </div>
+  <details><summary>Dig deeper</summary>
+    <p>The BBC notes a second legal track. Over half of Canada&rsquo;s tariffs rest on Section&nbsp;338 of the 1930 Smoot&ndash;Hawley act, and 25 states are suing to strike down the separate forced-labour tariffs (<a href="https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o">BBC</a>). For many trading partners, the BBC says, the duties now rest on two legal bases.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the new tariff round?</b></p>
+    <label><input type="radio" name="fb-tariffs" value="final-notice"> When the final Section&nbsp;301 notice publishes rates on household goods like appliances and electronics</label>
+    <label><input type="radio" name="fb-tariffs" value="china-truce"> If China retaliates or the truce lapses at its mid-January expiry</label>
+    <label><input type="radio" name="fb-tariffs" value="repeal-bill"> Only if a House repeal bill draws Republican co-sponsors</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://abcnews.com/Politics/trump-admin-proposes-new-tariffs-china-eu-12/story?id=138442698">ABC News</a> &middot;
+    <a href="https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/">CBS News</a> &middot;
+    <a href="https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o">BBC</a> &middot;
+    <a href="https://www.dailywire.com/news/trump-takes-another-swing-at-tariffs-after-supreme-court-setback">Daily Wire</a>
+  </p>
+</article>
+
+<article id="kuwait-iran">
+  <h3>Two Italian technicians are killed in a drone strike in Kuwait, the first European civilians to die in the Iran war; Kuwait and Italy blame Iran, Tehran calls it a set-up, and Trump says the war ends &ldquo;whenever I want&rdquo;</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">International with US channel</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (the war ran as a lead on Nov.&nbsp;22 and 24). Trigger: new verifiable fact. The first European civilian deaths of the war, an unusual Iranian denial, and Israel saying it is ready to strike Iran without U.S. forces.</p>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (Al Jazeera, CBS News, CNBC), plus AAA&rsquo;s Florida fuel-price data.</p>
+  <p>Drones hit military sites in Kuwait on Thursday. Italy&rsquo;s foreign minister, Antonio Tajani, told the Senate that one was an air-defence station where two Rheinmetall Italia technicians were servicing radar antennas; they were killed by falling shrapnel after the drones were shot down (<a href="https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility">Al Jazeera</a>). Kuwait&rsquo;s army blamed Iranian attacks. Iran&rsquo;s military said it carried out no operations in the area, and Foreign Minister Abbas Araghchi called the strike &ldquo;a precooked recipe for war&rdquo; (<a href="https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html">CNBC</a>). Iran&rsquo;s embassy in Rome &ldquo;categorically&rdquo; rejected the charge (<a href="https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/">CBS News</a>).</p>
+  <p>Israel&rsquo;s military spokesman said it is ready to strike Iran &ldquo;at any moment,&rdquo; even without U.S. forces, after Jared Kushner said Israel needs to leave its &ldquo;wartime mindset&rdquo; (CNBC). Trump told PBS late Thursday that victory was &ldquo;at hand&rdquo; and would come &ldquo;whenever I want it to be&rdquo;; on a Thanksgiving call with troops he said Iran still had &ldquo;every chance to make a deal&rdquo; (CNBC). At Mar-a-Lago he played down Russian and Chinese intelligence help to Tehran: &ldquo;we spy on them too&rdquo; (CBS).</p>
+  <p><b>Why it matters to you.</b> The pump price has been falling, not rising. Florida regular averages $3.36 today, down from $3.49 a week ago and $4.05 a month ago, and Tampa&ndash;St.&nbsp;Petersburg is $3.33. That is still above $3.05 a year ago (<a href="https://gasprices.aaa.com/?state=FL">AAA</a>). A strike by Israel on its own, or a widening war that now draws in NATO allies&rsquo; citizens, is the risk to that drop. Democrats who take Congress in January want to end the war, but analysts quoted by Al Jazeera doubt their approach to Iran would differ fundamentally (<a href="https://www.aljazeera.com/news/2026/11/27/democrats-want-to-end-trumps-iran-war-but-how-different-are-they">Al Jazeera</a>).</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> attribution. Who launched the drones?</p>
+    <p><b>Each side&rsquo;s vantage:</b> Kuwait&rsquo;s army and Italy&rsquo;s foreign minister were closest to the scene and say the drones were &ldquo;of Iranian origin.&rdquo; Both are U.S. partners. Iran has mostly not denied its strikes on U.S. assets in Gulf states during this war. Here it denies the strike outright and offers to help investigate, which is unusual. Al Jazeera, writing from Doha, sets out both readings. No independent investigator has reported.</p>
+    <p><b>What it means for you:</b> if Iran is shown to have done it, expect European pressure for tougher action; Ursula von der Leyen already called for more pressure on Iran (CBS). If not, the question becomes who wants a wider war. Either way the attribution decides whether Europe moves closer to Washington&rsquo;s side.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the Iran war this week?</b></p>
+    <label><input type="radio" name="fb-iran" value="nato-ally"> If Italy or another NATO ally changes its Gulf deployment because of the Kuwait deaths</label>
+    <label><input type="radio" name="fb-iran" value="fl-gas"> If Florida regular gas climbs back above $4 a gallon</label>
+    <label><input type="radio" name="fb-iran" value="israel-solo"> Only if Israel strikes Iran without U.S. forces</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility">Al Jazeera</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html">CNBC</a> &middot;
+    <a href="https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/">CBS News live updates</a> &middot;
+    <a href="https://www.aljazeera.com/news/2026/11/27/democrats-want-to-end-trumps-iran-war-but-how-different-are-they">Al Jazeera analysis</a> &middot;
+    <a href="https://gasprices.aaa.com/?state=FL">AAA Florida</a>
+  </p>
+</article>
+
+<article id="nvidia-trades">
+  <h3>The BBC finds Trump&rsquo;s accounts bought or sold Nvidia shares at least 44 times this year, as Nvidia freezes orders from four Southeast Asian countries and chip sellers are told to rule out Chinese renters</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; AI &amp; tech industry</span>
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (Huang&rsquo;s reinstatement led on Nov.&nbsp;24). Trigger: new verifiable fact. The BBC&rsquo;s review of Trump&rsquo;s ethics disclosures, and Nvidia&rsquo;s order freeze in Southeast Asia.</p>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (BBC, CNBC, Semafor, Breitbart), plus headlines from The Hill and the Washington Examiner that we could not read past.</p>
+  <p>BBC Verify reviewed Trump&rsquo;s filings with the Office of Government Ethics and counted at least 44 Nvidia trades from January to September. Purchases were worth between $5.2&nbsp;million and $17&nbsp;million and sales between $4.4&nbsp;million and $12&nbsp;million; the filings give only ranges. His portfolios held $12.5&nbsp;million to $58&nbsp;million of Nvidia at the end of 2025 (<a href="https://www.bbc.co.uk/news/articles/cq772vk664yvo">BBC</a>). The disclosures stop before Huang&rsquo;s Nov.&nbsp;12 resignation and his return, which Trump says he arranged. The White House says the portfolio is run by third parties and that Trump has no say in trades.</p>
+  <p>Meanwhile the export clampdown is biting. Semafor reports that Nvidia has frozen orders for buyers in Malaysia, Singapore, Thailand and Indonesia, countries where Chinese firms have rented Nvidia chips legally; Nvidia&rsquo;s Singapore arm booked $104&nbsp;billion in 2025 (<a href="https://www.semafor.com/article/11/26/2026/nvidia-halts-chip-shipments-to-southeast-asian-countries">Semafor</a>). Chip sellers are telling cloud renters they cannot buy Nvidia chips if any capacity will be rented to Chinese companies, under a Commerce rule in force since Nov.&nbsp;19, CNBC&rsquo;s sources say (<a href="https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html">CNBC</a>). Breitbart, citing CNBC, reports that deals for thousands of B300 chips are circulating as sellers dump inventory (<a href="https://www.breitbart.com/tech/2026/11/26/nvidia-chip-sellers-scramble-to-find-customers-after-government-tightens-china-remote-access-rules/">Breitbart</a>). We could not confirm Semafor&rsquo;s report of the order freeze. Nvidia has not commented in anything we read, and no second outlet reports it independently.</p>
+  <p><b>Why it matters to you.</b> Nvidia is more than 6% of the S&amp;P&nbsp;500, by State Street&rsquo;s figure cited by the BBC, so it is in most retirement accounts. The president both trades the stock and brokered its chief executive&rsquo;s return, and senators are vowing to crack down on AI-chip leaks to China, with Commerce Secretary Lutnick &ldquo;in the hot seat,&rdquo; according to The Hill&rsquo;s headline (<a href="https://thehill.com/homenews/senate/6243590-lutnick-nvidia-chip-export-controversy/">The Hill</a>). On the right, a Washington Examiner opinion piece is headlined &ldquo;Trump shouldn&rsquo;t be picking Nvidia&rsquo;s CEO&rdquo; (<a href="https://www.washingtonexaminer.com/op-eds/4815620/jensen-huang-reinstated-nvidia-ceo/">Washington Examiner</a>).</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> conflict of interest. Does the trading record matter?</p>
+    <p><b>Each side&rsquo;s vantage:</b> the White House, speaking for the president, says independent managers make every decision. The BBC worked from public filings and says it cannot tell how big the trades were, or whether any fell during this month&rsquo;s swings. Democrats running for president in 2028 call the Nvidia affair corruption, according to Politico&rsquo;s headline; they gain from the charge. Conservative critics object to a president choosing a company&rsquo;s chief executive at all, not to the trades.</p>
+    <p><b>What it means for you:</b> the November trades will appear only in Trump&rsquo;s next disclosure. Until then, the documented facts are the 44 trades and his own claim that he &ldquo;made the deal.&rdquo;</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following Trump, Huang and Nvidia?</b></p>
+    <label><input type="radio" name="fb-nvidia" value="disclosure"> When Trump&rsquo;s next ethics filing shows whether his accounts traded Nvidia between Nov.&nbsp;12 and Nov.&nbsp;23</label>
+    <label><input type="radio" name="fb-nvidia" value="senate-ras"> If the Senate schedules a vote on the Remote Access Security Act</label>
+    <label><input type="radio" name="fb-nvidia" value="lutnick-hearing"> Only if Lutnick is called to testify under oath about the Megaspeed warnings</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.bbc.co.uk/news/articles/cq772vk664yvo">BBC Verify</a> &middot;
+    <a href="https://www.semafor.com/article/11/26/2026/nvidia-halts-chip-shipments-to-southeast-asian-countries">Semafor</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html">CNBC</a> &middot;
+    <a href="https://www.breitbart.com/tech/2026/11/26/nvidia-chip-sellers-scramble-to-find-customers-after-government-tightens-china-remote-access-rules/">Breitbart</a> &middot;
+    <a href="https://thehill.com/homenews/senate/6243590-lutnick-nvidia-chip-export-controversy/">The Hill (headline)</a> &middot;
+    <a href="https://www.politico.com/news/2026/11/23/democrats-2028-nvidia-trump-corruption-message-01181056">Politico (headline)</a>
+  </p>
+</article>
+
+<article id="ai-credit">
+  <h3>S&amp;P puts Nvidia&rsquo;s AA rating on watch for a cut within 90 days, and Citi and JPMorgan market portfolios of AI loans to shift risk, Semafor reports</h3>
+  <div class="meta">
+    <span class="chip">AI and financial services</span>
+    <span class="chip">Core &mdash; US financials</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CNBC, Semafor, Reuters as carried by Investing.com), plus Benzinga&rsquo;s reports, read through a search index, as was the Investing.com page.</p>
+  <p>S&amp;P Global Ratings placed Nvidia&rsquo;s AA rating on CreditWatch with negative implications on Wednesday. It said a cut of one notch, to AA-, could come within 90 days if &ldquo;deficiencies&rdquo; in management and governance persist. It cited the long tenure of directors who have sat on the board since 1993 and the lack of a succession plan (<a href="https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html">CNBC</a>). Moody&rsquo;s, which cut its outlook to stable on Nov.&nbsp;18, said Huang&rsquo;s return &ldquo;reduces near-term uncertainty&rdquo; and left its Aa1 rating unchanged (<a href="https://www.investing.com/news/stock-market-news/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-5051652">Reuters via Investing.com</a>). Semafor explains why the rating matters: Nvidia often backs the debt, leases and hardware purchases of weaker AI companies, which in effect lends them its credit standing (<a href="https://www.semafor.com/article/11/26/2026/nvidias-credit-rating-the-ai-trades-collateral-is-at-risk">Semafor</a>).</p>
+  <p>Separately, Semafor reports that banks including Citi and JPMorgan are marketing portfolios of AI-related loans. Some use synthetic risk transfers, which keep loans on the books while investors take the loss risk. Some banks are cutting exposure; others want room to lend more (<a href="https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt">Semafor</a>). Benzinga, relaying the report, says Citi declined to comment and that Oracle and CoreWeave default-swap spreads hit records this week, citing Reuters (<a href="https://www.benzinga.com/markets/tech/26/11/63664911/citigroup-jpmorgan-chase-banks-reportedly-shop-ai-loans-synthetic-risk-transfer">Benzinga</a>). We could not confirm the bank portfolio sales independently. Every other account we found repeats Semafor&rsquo;s report, and no sizes, borrowers or buyers have been named.</p>
+  <p><b>Why it matters to you.</b> This is the AI-credit thread you asked us on Nov.&nbsp;17 to weight up, and it touches JPMorgan directly. When banks pass AI risk to funds and insurers, the risk moves out of sight rather than going away, as Semafor puts it. That matters for anyone holding bank stocks or credit funds, and it makes AI borrowing cost more if Nvidia&rsquo;s rating falls.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> interpretation. Did Huang&rsquo;s return fix the governance problem?</p>
+    <p><b>Each agency&rsquo;s vantage:</b> S&amp;P, writing Wednesday after the reinstatement, says the return &ldquo;does not sufficiently answer&rdquo; questions about board oversight. It plans to meet the board and would take a harder view if export rules were &ldquo;circumvented or violated,&rdquo; Benzinga reports (<a href="https://www.benzinga.com/markets/tech/26/11/63659241/sp-global-ratings-nvidia-negative-credit-watch-moodys-jensen-huang-return">Benzinga</a>). Moody&rsquo;s, the same day, calls the return stabilising and the new compliance committee &ldquo;constructive.&rdquo; Both see the same public facts and weigh the board differently.</p>
+    <p><b>What it means for you:</b> a split between rating agencies usually ends when one of them acts. The S&amp;P meeting with Nvidia&rsquo;s board, and anything that comes out of the export investigations, will decide it.</p>
+  </div>
+  <details><summary>Dig deeper</summary>
+    <p>On the day of Moody&rsquo;s Nov.&nbsp;18 move, Bloomberg reported Nvidia&rsquo;s five-year default swaps at 121 basis points, about 20 lower than a week earlier. Credit markets were calmer than the stock (<a href="https://www.moneycontrol.com/world/nvidia-s-outlook-cut-to-stable-by-moody-s-on-governance-concerns-article-14084029.html">Bloomberg via Moneycontrol</a>). In May the FT reported that JPMorgan and MUFG had spent more than six months selling $38&nbsp;billion of construction debt for an Oracle-leased data-center project (<a href="https://www.ft.com/content/08aba5e4-5834-4e79-a48d-989a2c5bad0f">FT</a>). The strain on bank balance sheets was visible six months ago.</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following AI debt at the banks?</b></p>
+    <label><input type="radio" name="fb-aicredit" value="sp-cut"> If S&amp;P actually cuts Nvidia to AA- inside its 90-day window</label>
+    <label><input type="radio" name="fb-aicredit" value="jpm-earnings"> If JPMorgan names an AI-loan risk transfer or loss in its January earnings</label>
+    <label><input type="radio" name="fb-aicredit" value="regulator"> Only if the Fed or the OCC publicly flags bank concentration in AI lending</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html">CNBC</a> &middot;
+    <a href="https://www.investing.com/news/stock-market-news/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-5051652">Reuters via Investing.com</a> &middot;
+    <a href="https://www.semafor.com/article/11/26/2026/nvidias-credit-rating-the-ai-trades-collateral-is-at-risk">Semafor (rating)</a> &middot;
+    <a href="https://www.semafor.com/article/11/26/2026/banks-look-to-dump-ai-debt">Semafor (banks)</a> &middot;
+    <a href="https://www.benzinga.com/markets/tech/26/11/63664911/citigroup-jpmorgan-chase-banks-reportedly-shop-ai-loans-synthetic-risk-transfer">Benzinga</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items below the line: each has one confidence label and its own source count.</p>
+
+<article id="fcc-abc">
+  <h3>A federal judge blocks the FCC&rsquo;s early review of ABC&rsquo;s eight station licenses, finding it likely retaliation for speech Trump disliked</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CBS News, CNBC, Reason).</p>
+  <p>Judge Loren AliKhan&rsquo;s 45-page ruling bars the FCC from further action on the early renewals while ABC&rsquo;s suit proceeds. It cites at least 11 times Trump publicly urged the agency to pull ABC&rsquo;s licenses, and says Chairman Brendan Carr &ldquo;has taken President Trump&rsquo;s rhetoric as his marching orders&rdquo; (<a href="https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/">CBS News</a>). She found ABC had already changed how it booked candidates on &ldquo;The View&rdquo; and &ldquo;Jimmy Kimmel Live!&rdquo; (<a href="https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html">CNBC</a>). The FCC calls the ruling &ldquo;wrong on the facts and wrong on the law.&rdquo; Reason notes the agency had not used early review in more than half a century (<a href="https://reason.com/2026/11/26/a-federal-judge-blocks-the-fccs-review-of-abcs-licenses-saying-it-likely-violates-the-first-amendment/">Reason</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/judge-temporarily-blocks-fcc-from-reviewing-abc-licenses/">CBS News</a> &middot; <a href="https://www.cnbc.com/2026/11/26/fcc-disney-abc-stations-judge-block.html">CNBC</a> &middot; <a href="https://reason.com/2026/11/26/a-federal-judge-blocks-the-fccs-review-of-abcs-licenses-saying-it-likely-violates-the-first-amendment/">Reason</a></p>
+</article>
+
+<article id="birthright">
+  <h3>A second federal judge blocks Trump&rsquo;s new birthright-citizenship order for a certified class of children</h3>
+  <div class="meta"><span class="chip">Core &mdash; US politics &amp; policy</span><span class="chip">Primary source</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Reason&rsquo;s Volokh Conspiracy), plus the court record on GovInfo and Justia and Fox News&rsquo;s headline.</p>
+  <p>Judge Christopher Cooper in Washington granted a class-wide preliminary injunction on Nov.&nbsp;25 against Executive Order 14418. The order tried to deny citizenship to U.S.-born children whose parents work for foreign governments without diplomatic immunity, children born through commercial surrogacy, and children with a parent suspected of gang or terror links. Cooper held that after the Supreme Court&rsquo;s ruling in <i>Trump v. Barbara</i> the president &ldquo;cannot carve out new exceptions&rdquo; (<a href="https://www.govinfo.gov/app/details/USCOURTS-dcd-1_26-cv-03377/USCOURTS-dcd-1_26-cv-03377-0">court record, GovInfo</a>; <a href="https://law.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1:2026cv03377/297026/52/">opinion, Justia</a>). The class covers children born on or after Aug.&nbsp;6. Reason&rsquo;s Volokh Conspiracy calls it very similar to a September Maryland ruling, with a slightly wider class (<a href="https://reason.com/volokh/2026/11/26/second-district-court-rules-against-trumps-new-birthright-citizenship-executive-order/">Reason</a>). Fox&rsquo;s headline stresses that Trump had called the judge a &ldquo;hater&rdquo; (<a href="https://www.foxnews.com/politics/trumps-birthright-citizenship-restrictions-struck-down-dc-federal-judge-called-hater">Fox News</a>). A joint status report is due Dec.&nbsp;4.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.govinfo.gov/app/details/USCOURTS-dcd-1_26-cv-03377/USCOURTS-dcd-1_26-cv-03377-0">GovInfo</a> &middot; <a href="https://reason.com/volokh/2026/11/26/second-district-court-rules-against-trumps-new-birthright-citizenship-executive-order/">Reason</a> &middot; <a href="https://www.foxnews.com/politics/trumps-birthright-citizenship-restrictions-struck-down-dc-federal-judge-called-hater">Fox News (headline)</a></p>
+</article>
+
+<article id="fulton">
+  <h3>A Georgia judge pauses her own order that Fulton County hand its 2020 ballot images to the Trump-aligned State Election Board</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (NBC News).</p>
+  <p>Superior Court Judge Kelly Lee Ellerbe halted the handover hours before Wednesday&rsquo;s 5&nbsp;p.m. deadline while the county appeals. Her one-page order gave no reasons (<a href="https://www.nbcnews.com/politics/elections/judge-halts-order-fulton-county-copies-2020-ballots-georgia-election-rcna611353">NBC News</a>). The board is controlled by allies of the president, and Fulton has long been a target of Trump allies seeking support for false claims of widespread fraud. The appeal will test whether a state board can compel a county&rsquo;s election records.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.nbcnews.com/politics/elections/judge-halts-order-fulton-county-copies-2020-ballots-georgia-election-rcna611353">NBC News</a></p>
+</article>
+
+<article id="breaches">
+  <h3>Hackers breach the Air Force&rsquo;s Cloud One platform, Reuters reports, as Treasury&rsquo;s FinCEN takes systems offline after &ldquo;unauthorized access&rdquo;</h3>
+  <div class="meta"><span class="chip">Broader domestic institutions</span><span class="chip">AI and financial services</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Reuters, as carried by HuffPost and the New York Post; ABC News).</p>
+  <p>Reuters&rsquo; sources say an intrusion at Cloud One, the Air Force&rsquo;s shared cloud built on Microsoft, Amazon, Oracle and Alphabet, was found in the past month during an upgrade. It hosts personnel, pay and munitions-tracking systems. Cyber Command has been called in, migrations are paused, and Reuters could not learn who did it or whether data were taken (<a href="https://www.huffpost.com/entry/us-air-force-cloud-one-hack_n_6b096996e4b084fa2e17d141">Reuters via HuffPost</a>; <a href="https://nypost.com/2026/11/27/us-news/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/">New York Post</a>). The Air Force would not comment. Separately, FinCEN says a &ldquo;cybersecurity incident&rdquo; gave someone access to &ldquo;a limited subset&rdquo; of its systems. FinCEN receives banks&rsquo; suspicious-activity reports. Its BSA e-filing site still works (<a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822">ABC News</a>). They follow the FBI crime-database breach Trump confirmed, which we covered on Nov.&nbsp;22. We judge this underreported for its stakes: we found it on no TV-network front we swept.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.huffpost.com/entry/us-air-force-cloud-one-hack_n_6b096996e4b084fa2e17d141">Reuters via HuffPost</a> &middot; <a href="https://nypost.com/2026/11/27/us-news/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/">New York Post</a> &middot; <a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822">ABC News</a></p>
+</article>
+
+<article id="spacex">
+  <h3>The FCC approves SpaceX&rsquo;s plan for up to a million data-center satellites, and Musk doubles his Trump Accounts share pledge to about $18&nbsp;billion</h3>
+  <div class="meta"><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (BBC, the AP via PBS NewsHour, CBS News).</p>
+  <p>The FCC on Wednesday cleared SpaceX&rsquo;s &ldquo;Starmind&rdquo; plan for solar-powered satellites that would run AI computing in orbit, the first approval of its kind. Chairman Carr called it &ldquo;a bold new frontier&rdquo;; Amazon called it &ldquo;a lofty ambition rather than a real plan,&rdquo; and astronomers warn it would undermine views of the night sky (<a href="https://www.bbc.co.uk/news/articles/cwp836l8n1jgo">BBC</a>; <a href="https://www.pbs.org/newshour/nation/fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical">AP via PBS</a>). The BBC links the pitch to growing opposition to data centers on the ground. SpaceX also said it will give every U.S. child two shares through Trump Accounts, matched by Musk, for about $18&nbsp;billion in total (<a href="https://www.cbsnews.com/news/elon-musk-spacex-shares-trump-accounts/">CBS News</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.co.uk/news/articles/cwp836l8n1jgo">BBC</a> &middot; <a href="https://www.pbs.org/newshour/nation/fcc-says-spacex-can-deploy-1-million-satellites-for-data-centers-in-space-scientists-are-skeptical">AP via PBS NewsHour</a> &middot; <a href="https://www.cbsnews.com/news/elon-musk-spacex-shares-trump-accounts/">CBS News</a></p>
+</article>
+
+<article id="iowa">
+  <h3>After the Iowa detonation, the EPA reports no airborne lead so far, with first lab results on 1,000-plus samples due as early as today</h3>
+  <div class="meta"><span class="chip">Science &amp; public health</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (CBS News, BBC, NBC News).</p>
+  <p>The Army destroyed about five tons of degraded lead azide at the Middletown plant on Wednesday and called it a &ldquo;huge success&rdquo; (<a href="https://www.bbc.co.uk/news/articles/cwg7l5ve251ko">BBC</a>). The EPA took more than 1,500 samples before and more than 1,000 after, at homes, schools, farms and the Mississippi watershed. It says no airborne lead has been detected and lab results could start arriving Friday (<a href="https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/">CBS News</a>). Residents still fear the outcome (<a href="https://www.nbcnews.com/news/us-news/army-says-detonation-bomb-chemicals-iowa-success-rcna611434">NBC News</a>). CBS&rsquo;s sources describe a chaotic run-up inside the administration over who failed to raise the alarm sooner. The New York Times reports, in a headline we could not read past, that the Army knew of the risk much earlier.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/">CBS News</a> &middot; <a href="https://www.bbc.co.uk/news/articles/cwg7l5ve251ko">BBC</a> &middot; <a href="https://www.nbcnews.com/news/us-news/army-says-detonation-bomb-chemicals-iowa-success-rcna611434">NBC News</a> &middot; <a href="https://www.nytimes.com/2026/11/26/us/iowa-lead-ammunition-stockpile-history.html">NYT (headline)</a></p>
+</article>
+
+<article id="fl-fema">
+  <h3>Trump approves FEMA disaster aid for six Florida counties flooded since Oct.&nbsp;31, mostly Palm Beach and the Treasure Coast; none is in Tampa Bay</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (WLRN, West Palm Now), plus the state emergency agency&rsquo;s notice and X&rsquo;s summary of the signing.</p>
+  <p>Individual aid covers Brevard, Indian River, Martin, Okeechobee, Palm Beach and St.&nbsp;Lucie counties; debris and emergency costs are covered in those counties minus St.&nbsp;Lucie, plus Hardee (<a href="https://www.floridadisaster.org/news-media/news/icymi-president-donald-j.-trump-approves-major-disaster-declaration-for-florida">Florida Division of Emergency Management</a>). Palm Beach alone estimates $53&nbsp;million in need. DeSantis has also asked for Broward and Miami-Dade to be added (<a href="https://www.wlrn.org/weather/2026-11-25/flood-damage-in-palm-beach-county-how-to-apply-for-new-federal-disaster-assistance-through-fema">WLRN</a>). The application deadline is Jan.&nbsp;23, 2027, and FEMA has not yet approved money for roads and public buildings (<a href="https://westpalmnow.com/palm-beach-county-fema-flood-aid-disaster-declaration/">West Palm Now</a>). Trump held a signing with local officials at Mar-a-Lago on Thanksgiving, though FEMA announced the approval on Tuesday; the state had asked on Nov.&nbsp;9. We could not confirm the &ldquo;$100&nbsp;million&rdquo; total circulating on X, because no official or newsroom account we read gives a figure. Pasco and Pinellas are not covered.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.floridadisaster.org/news-media/news/icymi-president-donald-j.-trump-approves-major-disaster-declaration-for-florida">FDEM</a> &middot; <a href="https://www.wlrn.org/weather/2026-11-25/flood-damage-in-palm-beach-county-how-to-apply-for-new-federal-disaster-assistance-through-fema">WLRN</a> &middot; <a href="https://westpalmnow.com/palm-beach-county-fema-flood-aid-disaster-declaration/">West Palm Now</a></p>
+</article>
+
+<article id="amendment3">
+  <h3>Amendment&nbsp;3&rsquo;s tax cut lands on Tampa Bay budgets: Safety Harbor weighs cutting its holiday events, and Pasco faces the largest loss of taxable value in the region</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Tampa Bay Times, Bay News&nbsp;9), plus a Tampa consultancy&rsquo;s parcel model.</p>
+  <p>Safety Harbor is weighing spending cuts that put its Fourth of July and holiday events at risk. Residents are rallying, and the Safety Harbor Resort and Spa says it will help pay for the tree lighting and fireworks (<a href="https://www.tampabay.com/news/pinellas/2026/11/26/safety-harbor-holiday-christmas-events-amendment-3-tax-cuts/">Tampa Bay Times</a>; we could read only the photo caption past the paywall). Closer to you, HCP Associates&rsquo; model of the 2026 tax roll finds Pasco loses the biggest share of county taxable value in the region: 21.2% when the non-school homestead exemption rises to $150,000 next year, and 34.5% at $250,000 in 2028. Homesteads are 47.8% of Pasco&rsquo;s tax base (<a href="https://www.hcpassociates.com/insights/two-weeks-later/">HCP Associates</a>). Pasco&rsquo;s mosquito-control district expects to lose about $2.7&nbsp;million, or 20%, in the first year, with a dengue outbreak under way (<a href="https://baynews9.com/fl/tampa/news/2026/11/06/florida-tax-relief-could-affect-how-pasco-county-fights-mosquitoes">Bay News&nbsp;9</a>). If you own a homestead, your county (not school) tax bill falls; the fights over fire, mosquito and park services follow.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.tampabay.com/news/pinellas/2026/11/26/safety-harbor-holiday-christmas-events-amendment-3-tax-cuts/">Tampa Bay Times</a> &middot; <a href="https://www.hcpassociates.com/insights/two-weeks-later/">HCP Associates</a> &middot; <a href="https://baynews9.com/fl/tampa/news/2026/11/06/florida-tax-relief-could-affect-how-pasco-county-fights-mosquitoes">Bay News&nbsp;9</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="fcc-appeal"> The FCC&ndash;ABC ruling, if the FCC appeals or opens a review of another network&rsquo;s stations</label>
+  <label><input type="radio" name="fb-below" value="pasco-cuts"> Amendment&nbsp;3, once Pasco commissioners vote on specific service cuts or new fees</label>
+  <label><input type="radio" name="fb-below" value="cloud-one"> The Air Force Cloud One breach, if theft of personnel or munitions data is confirmed</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 114 sources checked; 36 in the first sweep before any weighting category was consulted. Five leads and eight items below the line (13 stories). Two leads carry over from earlier editions, each with a stated trigger: the Iran war (deaths of two Italian civilians in Kuwait, Iran&rsquo;s denial and Israel&rsquo;s threat to act alone) and Nvidia (the BBC&rsquo;s review of Trump&rsquo;s trades and the Southeast Asia order freeze). Each item gives its own count of independent accounts. Pages read only through a search index or as headlines are marked in the text. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-27-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>A Nov.&nbsp;23 presidential memorandum, published today, directs the attorney general to seek federal death sentences for murders of minors and murders tied to rape, child sexual exploitation, kidnapping or trafficking, and to speed federal executions by opposing &ldquo;dilatory&rdquo; appeals (<a href="https://www.federalregister.gov/documents/2026/11/27/2026-24236/expeditious-enforcement-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous">Federal Register</a>). Missed: a directive with no new case or date attached.</li>
+    <li>Zelensky told the BBC that Trump calling Putin a &ldquo;friend&rdquo; is &ldquo;strange&rdquo; and warned of a major Russian strike on Ukraine&rsquo;s grid (<a href="https://www.bbc.co.uk/news/articles/c820q9wgrpyyo">BBC</a>; <a href="https://www.pbs.org/newshour/world/zelenskyy-warns-of-imminent-major-russian-attack-on-ukraines-power-grid">PBS NewsHour</a>). Missed: your settled preference holds Ukraine at its current weight, and this is rhetoric, not a move.</li>
+    <li>Mexico&rsquo;s President Claudia Sheinbaum rebuked a new U.S. DEA tip line for reporting cartels as &ldquo;interference&rdquo; (<a href="https://www.cbsnews.com/news/us-opens-hotline-tips-cartels-angering-mexico/">CBS News</a>; <a href="https://thehill.com/policy/international/6244966-sheinbaum-rebukes-dea-tip-line/">The Hill, headline</a>). Missed: a diplomatic spat with no policy change yet.</li>
+    <li>New IRS audits of top earners have dropped sharply, The Hill reports (<a href="https://thehill.com/business/6244500-irs-audits-high-earners/">The Hill</a>). Missed: the page refused our fetch and we could not see the figures.</li>
+    <li>Jeffries endorsed a major Medicare expansion, a lower eligibility age and coverage for all children, and Trump signalled openness to working with Democrats on health care (<a href="https://www.nbcnews.com/news/us-news/democrats-healthcare-medicare-macys-parade-performers-morning-rundown-rcna611527">NBC News</a>). Missed: positioning before January, with no bill.</li>
+    <li>The S&amp;P&nbsp;500 entered a correction on Nov.&nbsp;20, 11.6% below its Oct.&nbsp;6 high (<a href="https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html">CNBC</a>). Missed: a price move on its own; the cause is covered in the AI-credit lead.</li>
+    <li>Trump goes to Arizona next week for an expansion of TSMC&rsquo;s chip factories (<a href="https://www.pbs.org/newshour/politics/trump-heads-to-arizona-next-week-for-a-high-stakes-expansion-of-tsmcs-computer-chip-factories">PBS NewsHour</a>). Missed: a scheduled visit; it runs when something is announced.</li>
+    <li>Thanksgiving storms cut power to more than 850,000 customers on the East Coast and grounded flights (<a href="https://thehill.com/policy/energy-environment/6244928-thanksgiving-storm-flight-delays-power-outages/">The Hill</a>). Missed: weather disruption with no Florida effect.</li>
+    <li>SAP is reportedly weighing at least 10,000 job cuts in an AI push (<a href="https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html">CNBC headline</a>). Missed: foreign corporate restructuring reported second-hand, with no U.S. channel yet.</li>
+    <li>Court records from a shareholder suit say Commerce demanded about 10% of Intel in exchange for releasing $8.9&nbsp;billion in CHIPS grants (X news summary). Missed: we found only X&rsquo;s summary and could not read the filing.</li>
+    <li>Florida&rsquo;s attorney general wants a doctor stripped of his license over 149 alleged illegal abortions (<a href="https://www.fox13news.com/news/florida-ag-calls-doctor-lose-medical-license-over-149-alleged-illegal-abortions">Fox&nbsp;13</a>). Missed: one licensing case with no change in the law.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,668 @@
+{
+ "date": "2026-11-27",
+ "edition": "2026-11-27-v2",
+ "filename": "issues/2026-11-27-v2.html",
+ "generated_at_et": "2026-11-27 ~08:30 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "RSS fronts across left, centre and right outlets, the Federal Register API and X (trends + news searches) were swept before any weighting category in config.md was consulted for topic choice. NEWSBOT_2.0.md, config.md and audit.py were read at start for rules only; the Nov 22-24 issues were checked afterwards only to test carry-overs against Daily method Step 2 and for layout.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale Jan 2025 items; not used)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "Guardian US RSS (403; not read)",
+  "Federal Register API, documents published 2026-11-27 (page 1)",
+  "X US trends (WOEID 23424977)",
+  "X news search: top news last 24h",
+  "X news search: Trump GDP revision",
+  "X news search: Florida Tampa Bay"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale Jan 2025 items; not used)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "Guardian US RSS (403; not read)",
+  "Federal Register API, documents published 2026-11-27 (page 1)",
+  "X US trends (WOEID 23424977)",
+  "X news search: top news last 24h",
+  "X news search: Trump GDP revision",
+  "X news search: Florida Tampa Bay"
+ ],
+ "access_denied": [
+  "theguardian.com RSS (403)",
+  "thehill.com article pages (403; headlines or search excerpts used)",
+  "axios.com article pages (403)",
+  "wfla.com article pages (403)",
+  "investing.com (403; search excerpts used)",
+  "benzinga.com (403; search excerpts used)",
+  "ft.com (paywall; search excerpt of May article)",
+  "nytimes.com (paywall; headline only)",
+  "politico.com article (403; headline only)",
+  "law.justia.com (403 to curl; search excerpt used)",
+  "ustr.gov press page (404)",
+  "tampabay.com (paywall beyond caption)",
+  "foxnews.com article bodies (did not render to our parser)",
+  "nypost.com Iran video page (shell only)"
+ ],
+ "candidate_list": [
+  {
+   "item": "Trump demands probe of BEA GDP revision (Q3 4.3% from 3.4%)",
+   "decision": "keep-lead",
+   "reason": "Institutional: president attacks statistical agency; primary BEA release readable; clear disagreement."
+  },
+  {
+   "item": "USTR Section 301 tariffs on 14 economies",
+   "decision": "keep-lead",
+   "reason": "Replaces struck-down tariffs; prices next year; outlets disagree on China rate and Brazil."
+  },
+  {
+   "item": "Two Italians killed in Kuwait drone strike; Iran denies; Israel ready to strike alone; Trump 'whenever I want'",
+   "decision": "keep-lead (continuing)",
+   "reason": "New verifiable fact; attribution dispute; Florida pump-price channel."
+  },
+  {
+   "item": "BBC Verify: Trump accounts traded Nvidia 44 times; Nvidia freezes SE Asia orders; neocloud rule",
+   "decision": "keep-lead (continuing)",
+   "reason": "New documented facts on conflict of interest and export clampdown."
+  },
+  {
+   "item": "S&P CreditWatch negative on Nvidia; Citi/JPMorgan shop AI loans; Oracle/CoreWeave CDS records",
+   "decision": "keep-lead",
+   "reason": "Topic-check 'Include' item (AI debt) with new development; JPMorgan named."
+  },
+  {
+   "item": "Judge blocks FCC early review of ABC licenses",
+   "decision": "keep-also",
+   "reason": "Significant First Amendment / agency ruling; no further step yet."
+  },
+  {
+   "item": "Second judge blocks new birthright EO 14418 (class injunction)",
+   "decision": "keep-also",
+   "reason": "Primary court record; follows Supreme Court's Barbara ruling."
+  },
+  {
+   "item": "Fulton County judge pauses 2020 ballot handover order",
+   "decision": "keep-also",
+   "reason": "Elections category; single source but material precedent."
+  },
+  {
+   "item": "Air Force Cloud One breach (Reuters) + FinCEN cyber incident",
+   "decision": "keep-also",
+   "reason": "Underreported federal breaches; financial-crimes data involved."
+  },
+  {
+   "item": "FCC approves SpaceX 1M orbital data-center satellites; Musk Trump Accounts share pledge",
+   "decision": "keep-also",
+   "reason": "Data-center policy first; reader's AI work."
+  },
+  {
+   "item": "Iowa detonation: EPA no airborne lead, results due Friday",
+   "decision": "keep-also",
+   "reason": "New results pending; ran Nov 23/24 so held below the line."
+  },
+  {
+   "item": "Florida major disaster declaration, six counties",
+   "decision": "keep-also",
+   "reason": "Florida bar; not Tampa Bay but state-level."
+  },
+  {
+   "item": "Amendment 3: Safety Harbor cuts; Pasco biggest taxable-value loss",
+   "decision": "keep-also",
+   "reason": "Directly hits reader's county; local bar."
+  },
+  {
+   "item": "Presidential memorandum on capital sentences (FR)",
+   "decision": "also-noted",
+   "reason": "Directive with no case or date."
+  },
+  {
+   "item": "Zelensky criticises Trump-Putin friendship; warns of grid strike",
+   "decision": "also-noted",
+   "reason": "Ukraine preference holds current weight; rhetoric."
+  },
+  {
+   "item": "Mexico rebukes DEA tip line",
+   "decision": "also-noted",
+   "reason": "Diplomatic spat, no policy change."
+  },
+  {
+   "item": "IRS audits of top earners drop",
+   "decision": "also-noted",
+   "reason": "Page blocked; figures not seen."
+  },
+  {
+   "item": "Jeffries Medicare expansion; Trump openness on health care",
+   "decision": "also-noted",
+   "reason": "Positioning, no bill."
+  },
+  {
+   "item": "S&P 500 correction",
+   "decision": "also-noted",
+   "reason": "Price move for its own sake; cause in AI-credit lead."
+  },
+  {
+   "item": "Trump to visit TSMC Arizona next week",
+   "decision": "also-noted",
+   "reason": "Scheduled visit."
+  },
+  {
+   "item": "Thanksgiving storms, 850K outages",
+   "decision": "also-noted",
+   "reason": "No Florida effect."
+  },
+  {
+   "item": "SAP weighing 10,000 job cuts",
+   "decision": "also-noted",
+   "reason": "Foreign restructuring, no US channel."
+  },
+  {
+   "item": "Intel 10% stake demand in court docs",
+   "decision": "also-noted",
+   "reason": "X summary only; filing not read."
+  },
+  {
+   "item": "Florida AG seeks doctor's license over abortions",
+   "decision": "also-noted",
+   "reason": "Single licensing case."
+  },
+  {
+   "item": "Macy's parade postponed; $1.7M balloon cost",
+   "decision": "cut",
+   "reason": "Disruption, entertainment."
+  },
+  {
+   "item": "Black Friday / consumer trade-offs features",
+   "decision": "cut",
+   "reason": "Feature coverage, no new data."
+  },
+  {
+   "item": "Iranian state media AI video threatening US tech HQs",
+   "decision": "cut",
+   "reason": "Propaganda; page did not render; no action."
+  },
+  {
+   "item": "Nvidia CEO comeback misogyny debate (PBS/AP)",
+   "decision": "cut",
+   "reason": "Commentary on a story already in a lead."
+  },
+  {
+   "item": "Gaza/Amnesty report; Netanyahu trial",
+   "decision": "cut",
+   "reason": "No new US channel today."
+  },
+  {
+   "item": "Spain election; New Zealand coalition; EU budget talks",
+   "decision": "cut",
+   "reason": "Foreign elections without US relationship change."
+  },
+  {
+   "item": "Strobe Talbott, Andy Taylor deaths",
+   "decision": "cut",
+   "reason": "Obituaries."
+  },
+  {
+   "item": "Depardieu trial order",
+   "decision": "cut",
+   "reason": "Celebrity/crime."
+  },
+  {
+   "item": "Davenport Airbnb shooting; Florida detective killed by wrong-way driver",
+   "decision": "cut",
+   "reason": "Crime without policy consequence."
+  },
+  {
+   "item": "Kalshi perps volume; Utah drops charges vs Kalshi founders",
+   "decision": "cut",
+   "reason": "Prediction-market watch item; nothing material this week beyond Nov 24 coverage."
+  },
+  {
+   "item": "Musk/SpaceX shares rise; Anthropic $1T market cap",
+   "decision": "cut",
+   "reason": "Price moves."
+  },
+  {
+   "item": "ECB chief pick Hernandez de Cos",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "US-led consortium buys Lukoil assets (Semafor)",
+   "decision": "cut",
+   "reason": "Headline only; not stood up."
+  },
+  {
+   "item": "DOJ ordered to fight 97,000 ICE detainee suits (Fox)",
+   "decision": "cut",
+   "reason": "Page did not render; could not verify the number."
+  },
+  {
+   "item": "Kim vows more nuclear weapons",
+   "decision": "cut",
+   "reason": "Rhetoric, no new act."
+  },
+  {
+   "item": "Medicaid cut for 280,000 legal immigrants (X)",
+   "decision": "cut",
+   "reason": "Took effect Oct 1; not new."
+  },
+  {
+   "item": "Pinellas mosque redevelopment questions (WUSF)",
+   "decision": "cut",
+   "reason": "Local zoning dispute below bar."
+  },
+  {
+   "item": "Gulf reef fish Amendment 63 proposed rule (FR)",
+   "decision": "cut",
+   "reason": "Fisheries rule; abstract not reviewed in time; no consequence identified."
+  },
+  {
+   "item": "Huw Edwards documentary backlash (X)",
+   "decision": "cut",
+   "reason": "UK media, no US channel."
+  }
+ ],
+ "candidate_count": 43,
+ "selected": {
+  "leads": [
+   "gdp-probe",
+   "tariffs-301",
+   "kuwait-iran",
+   "nvidia-trades",
+   "ai-credit"
+  ],
+  "also_today": [
+   "fcc-abc",
+   "birthright",
+   "fulton",
+   "breaches",
+   "spacex",
+   "iowa",
+   "fl-fema",
+   "amendment3"
+  ],
+  "total_stories": 13
+ },
+ "story_floor_note": "13 stories, above the ~10 target, despite a thin day-after-Thanksgiving news flow (holiday features and Black Friday guides dominated fronts).",
+ "continuing_leads": [
+  {
+   "id": "kuwait-iran",
+   "trigger": "new verifiable fact: two Italian civilians killed in Kuwait drone strike Nov 26 (first European civilian deaths of the war), Iran's explicit denial, Israel says it will strike without US forces"
+  },
+  {
+   "id": "nvidia-trades",
+   "trigger": "new verifiable fact: BBC Verify count of 44 Nvidia trades in Trump's OGE disclosures; Semafor report of Nvidia order freeze in Malaysia, Singapore, Thailand, Indonesia; CNBC on neocloud buyer restrictions"
+  }
+ ],
+ "per_article_sources": {
+  "gdp-probe": {
+   "independent_newsrooms": 2,
+   "names": [
+    "AP via PBS NewsHour",
+    "CBS News"
+   ],
+   "primary": [
+    "bea.gov GDP second estimate"
+   ],
+   "other": [
+    "X news summary"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "tariffs-301": {
+   "independent_newsrooms": 4,
+   "names": [
+    "ABC News",
+    "CBS News",
+    "BBC",
+    "Daily Wire"
+   ],
+   "other": [
+    "X news summary"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "Brazil sugar/aircraft duties (CBS only)"
+   ]
+  },
+  "kuwait-iran": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Al Jazeera",
+    "CBS News",
+    "CNBC"
+   ],
+   "data": [
+    "AAA Florida gas prices"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "nvidia-trades": {
+   "independent_newsrooms": 4,
+   "names": [
+    "BBC",
+    "CNBC",
+    "Semafor",
+    "Breitbart"
+   ],
+   "headline_only": [
+    "The Hill",
+    "Washington Examiner",
+    "Politico"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "Nvidia SE Asia order freeze (Semafor only)"
+   ]
+  },
+  "ai-credit": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CNBC",
+    "Semafor",
+    "Reuters via Investing.com"
+   ],
+   "relays": [
+    "Benzinga"
+   ],
+   "background": [
+    "Bloomberg via Moneycontrol",
+    "FT (May)"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "Citi/JPMorgan AI-loan portfolio sales (Semafor only)"
+   ]
+  },
+  "fcc-abc": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CBS News",
+    "CNBC",
+    "Reason"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "birthright": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Reason/Volokh"
+   ],
+   "primary": [
+    "govinfo.gov docket",
+    "Justia opinion"
+   ],
+   "headline_only": [
+    "Fox News"
+   ],
+   "marker": "Primary source"
+  },
+  "fulton": {
+   "independent_newsrooms": 1,
+   "names": [
+    "NBC News"
+   ],
+   "marker": "Single-sourced"
+  },
+  "breaches": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Reuters (via HuffPost, NY Post)",
+    "ABC News"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "spacex": {
+   "independent_newsrooms": 3,
+   "names": [
+    "BBC",
+    "AP via PBS",
+    "CBS News"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "iowa": {
+   "independent_newsrooms": 3,
+   "names": [
+    "CBS News",
+    "BBC",
+    "NBC News"
+   ],
+   "headline_only": [
+    "NYT"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "fl-fema": {
+   "independent_newsrooms": 2,
+   "names": [
+    "WLRN",
+    "West Palm Now"
+   ],
+   "primary": [
+    "floridadisaster.org"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "$100 million total circulating on X"
+   ]
+  },
+  "amendment3": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Tampa Bay Times",
+    "Bay News 9"
+   ],
+   "other": [
+    "HCP Associates model"
+   ],
+   "marker": "Independent corroboration"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: searches for UAP disclosure news, JPMorgan, Pasco County/New Port Richey news, Tampa Bay data-center/power news; compared candidate list against every front swept and X US trends.",
+  "result": "UAP: no new release or filing found. JPMorgan: only the AI-loan portfolio report (in lead 5). Pasco: traffic deaths and Amendment 3 budget squeeze (below the line). No new Tampa Bay data-center or rate filing. X trends were Black Friday, football and entertainment.",
+  "underreported": "Two items judged underreported: the Air Force Cloud One breach plus FinCEN incident (Reuters relays and ABC only; on no TV-network front swept), and Amendment 3's cost to Pasco (local outlets only)."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Strongest: Nvidia trades/export clampdown (lead). SpaceX orbital data centers below the line. SAP cuts to Also noted.",
+  "Core - Macro & markets": "GDP revision fight (lead, institutional angle). S&P 500 correction cut to Also noted as a price move. No Fed print today.",
+  "World economy": "Section 301 tariffs (lead) through the US-policy lens; ECB chief and EU budget cut.",
+  "Core - US debt & fiscal": "Nothing new on issuance, auctions or CBO today; AI debt crowding out Treasurys noted inside the AI-credit lead via Semafor.",
+  "Core - US financials": "Citi/JPMorgan AI-loan sales and Nvidia rating watch (lead). FinCEN breach below the line.",
+  "Core - US politics & policy": "Tariffs, birthright ruling, FCC-ABC ruling. Capital-sentences memo to Also noted.",
+  "Geopolitics": "Kuwait strike / Iran war (lead). Zelensky remarks and North Korea cut.",
+  "Science & public health": "Iowa EPA testing below the line; measles and hep B items seen but no new data.",
+  "Core - UAP disclosure": "Nothing new found in sweep or negative check.",
+  "Energy & grid": "No new grid or rate filing; storm outages (850K) cut as disruption; Florida pump price used inside Iran lead.",
+  "Elections and electoral process": "Fulton County ballot order paused (below the line).",
+  "Broader domestic institutions": "GDP probe (lead), FCC-ABC, Air Force/FinCEN breaches.",
+  "International with US channel": "Kuwait strike, tariffs.",
+  "Florida / Tampa Bay": "Amendment 3 Pasco/Pinellas squeeze and FEMA six-county declaration below the line; AG abortion-license case to Also noted.",
+  "Data centers / power / AI infrastructure": "SpaceX orbital data centers below the line; Nvidia SE Asia freeze in lead.",
+  "AI and financial services": "AI-loan risk transfers at Citi/JPMorgan (lead)."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 27 ~07:30 ET): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), applied Nov 9, wake condition closed, no comments. No new or recently closed brief-feedback issues. Nov 17 topic-check weighting applied: AI debt/credit risk weighted up and made a lead on a new development; banks blocking AI agents, prediction markets, dengue and Epstein Act II had no material development.",
+ "config_change": null,
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "sources_checked_total": 114,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC world RSS",
+  "BBC business RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT home-page RSS (headlines only)",
+  "FT home RSS (headlines only)",
+  "WSJ world RSS (stale Jan 2025 items; not used)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "Guardian US RSS (403; not read)",
+  "Federal Register API, documents published 2026-11-27 (page 1)",
+  "X US trends (WOEID 23424977)",
+  "X news search: top news last 24h",
+  "X news search: Trump GDP revision",
+  "X news search: Florida Tampa Bay",
+  "Federal Register API page 2 (2026-11-27)",
+  "Federal Register API, USTR documents (newest)",
+  "Federal Register full text 2026-24236 (capital sentences memorandum)",
+  "ustr.gov press releases (404)",
+  "BEA GDP second estimate Q3 2026",
+  "AP via PBS NewsHour: Trump GDP probe",
+  "The Hill: Trump GDP probe (403)",
+  "CBS News: Trump Thanksgiving / GDP",
+  "Axios: Trump GDP (403)",
+  "ABC News: Section 301 tariffs",
+  "CBS News: tariffs on 14 trading partners",
+  "BBC Faisal Islam: tariffs less of a threat",
+  "Daily Wire: tariffs after Supreme Court setback",
+  "Al Jazeera: Italians killed in Kuwait",
+  "CBS News Iran live updates",
+  "CNBC: Italians killed / Trump Iran",
+  "CNBC Iran URL guess (404)",
+  "Al Jazeera: Democrats and the Iran war",
+  "New York Post: Iran AI video (page shell only)",
+  "BBC: Nvidia sex scandal and White House (Nov 13)",
+  "BBC Verify: Trump Nvidia trades",
+  "BBC: Trump's rescue of Huang brings political risks",
+  "CNBC: neoclouds told to rule out Chinese renters",
+  "Semafor: Nvidia halts SE Asia shipments",
+  "Breitbart: Nvidia chip sellers scramble",
+  "PBS: Trump to Arizona / TSMC (headline only parsed)",
+  "Semafor: banks look to dump AI debt",
+  "Semafor: Nvidia credit rating at risk",
+  "CNBC: S&P 500 in correction",
+  "CNBC: S&P Global Nvidia rating watch",
+  "Investing.com/Reuters: Moody's cuts Nvidia outlook Nov 18 (search index)",
+  "Investing.com/Reuters: Moody's on reinstatement (search index; 403 direct)",
+  "Benzinga: S&P CreditWatch / Moody's (search index; 403 direct)",
+  "Benzinga: Citi/JPMorgan AI loans (search index; 403 direct)",
+  "Moneycontrol/Bloomberg: Moody's outlook (search index)",
+  "MLQ.ai relay of Semafor (search index)",
+  "BP Info relay of Semafor (search index)",
+  "FT May 2026: banks offload data-centre debt (search index)",
+  "CBS News: judge blocks FCC ABC review",
+  "CNBC: FCC Disney ABC injunction",
+  "Reason: judge blocks FCC review",
+  "NBC Morning Rundown (healthcare)",
+  "NBC News: Fulton County ballots order paused",
+  "Reason/Volokh: birthright ruling",
+  "Fox News: birthright (page shell; headline used)",
+  "GovInfo: Nathan v. Trump docket",
+  "Justia: Nathan v. Trump opinion (search index)",
+  "CourtListener: Nathan order (search index)",
+  "ACLU: Nathan opinion PDF (search index)",
+  "CourtNews: second judge halts order (search index)",
+  "ABC News: FinCEN cybersecurity incident",
+  "New York Post: Air Force Cloud One (Reuters)",
+  "HuffPost: Air Force Cloud One (Reuters)",
+  "Investing.com: Air Force breach (403)",
+  "Clarin / Bloomberg Law / The Citizen relays of Reuters breach (search index)",
+  "WFLA: IRS audits (403)",
+  "Fox News: DOJ ICE lawsuits (page shell)",
+  "WUSF: Wasserman Schultz flood aid (nav only parsed)",
+  "Tampa Bay Times: Safety Harbor Amendment 3 (caption only; paywall)",
+  "PBS/AP: FCC approves SpaceX satellites",
+  "BBC: SpaceX million satellites",
+  "CBS News: Musk SpaceX shares Trump Accounts",
+  "CBS News: Iowa EPA results",
+  "BBC: Army Iowa blast",
+  "NBC News: Iowa residents",
+  "AAA Florida gas prices",
+  "Bay News 9: Pasco mosquito control and Amendment 3",
+  "HCP Associates: Amendment 3 parcel model",
+  "St. Petersburg Business News: Pinellas FY2027 budget (search index)",
+  "Move With Momentum: Pasco Amendment 3 (search index)",
+  "Axios Tampa Bay: Amendment 3 (search index)",
+  "Florida Division of Emergency Management: disaster declaration",
+  "WLRN: Palm Beach FEMA aid",
+  "West Palm Now: FEMA aid (search index)",
+  "Fox 35 Orlando: disaster declaration (search index)",
+  "CBS12: disaster declaration (search index)",
+  "Original News-Agent issues/2026-09-05.html and 2026-09-10.html (radio format reference)",
+  "GitHub issues list on News-Agent-v2 (feedback check)"
+ ],
+ "first_sweep_count": 36,
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L check of all 64 unique links, 2026-11-27 ~08:25 ET: 53 returned 200; 11 returned 403 to curl (thehill.com x4, benzinga.com x2, investing.com, ft.com, nytimes.com, politico.com, law.justia.com). All are bot-blocking or paywalled sites whose text was read via search excerpts or headlines and is labelled as such in the brief.",
+ "audit_attempts": {
+  "count": 2,
+  "results": [
+   "attempt 1 (~08:28 ET, with log): exit 0, all hard gates passed; stories 13 (leads 5, also 8), continuations 2, radio groups 6, sources 114, no warnings",
+   "attempt 2 (~08:30 ET, final files): exit 0, all hard gates passed; stories 13 (leads 5, also 8), continuations 2, radio groups 6, sources 114, no warnings"
+  ]
+ }
+}
