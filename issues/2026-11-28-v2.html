@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Brief — Saturday, 28 November 2026 (News Bot 2.0)</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1a1a18; --muted:#6b6a66; --rule:#e0ddd6; --link:#1c4f8a; --chip:#eeeae3; --box:#f4f1ea; --accent:#8a3324; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16161a; --fg:#e8e6e1; --muted:#96948d; --rule:#2e2e34; --link:#8ab4e8; --chip:#25252b; --box:#1e1e24; --accent:#d98b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif; }
+  .wrap { max-width:42rem; margin:0 auto; padding:2.25rem 1.25rem 4rem; }
+  header { border-bottom:2px solid var(--fg); padding-bottom:1rem; margin-bottom:1.5rem; }
+  h1 { margin:0; font-size:1.85rem; letter-spacing:-0.02em; line-height:1.15; }
+  .kicker { color:var(--muted); font-size:.9rem; margin-bottom:.35rem; }
+  .sub { color:var(--muted); margin-top:.45rem; font-size:.95rem; }
+  .summary { margin-top:.9rem; font-size:1rem; line-height:1.55; }
+  .prov { margin-top:.8rem; font-size:.84rem; color:var(--muted); line-height:1.55; border-left:2px solid var(--rule); padding-left:.75rem; }
+  nav { margin:0 0 2rem; padding:0 0 1rem; border-bottom:1px solid var(--rule); }
+  nav .nav-heading { margin:0 0 .55rem; font-size:1rem; }
+  nav ol { margin:0; padding-left:1.2rem; }
+  nav li { margin:.25rem 0; }
+  nav .also { margin:.6rem 0 0; padding-top:.5rem; border-top:1px solid var(--rule); font-size:.95rem; }
+  a { color:var(--link); }
+  article { margin:0 0 2.4rem; padding-bottom:1.6rem; border-bottom:1px solid var(--rule); }
+  article h3 { margin:0 0 .35rem; font-size:1.28rem; line-height:1.25; font-weight:bold; }
+  h2.section { margin:2.5rem 0 .5rem; padding-top:1rem; border-top:2px solid var(--fg); font-size:1.1rem; letter-spacing:.06em; text-transform:uppercase; }
+  .secnote { color:var(--muted); font-size:.9rem; margin:0 0 1.2rem; }
+  .meta { color:var(--muted); font-size:.86rem; margin-bottom:.7rem; }
+  .chip { display:inline-block; background:var(--chip); padding:.08rem .4rem; border-radius:3px; font-size:.78rem; margin-right:.25rem; white-space:nowrap; }
+  .chip.new { background:transparent; border:1px solid var(--link); color:var(--link); }
+  .chip.fu { background:transparent; border:1px solid var(--accent); color:var(--accent); }
+  .sources { font-size:.88rem; color:var(--muted); margin-top:.8rem; }
+  .div { background:var(--box); border-left:3px solid var(--rule); padding:.7rem .9rem; margin:1rem 0 0; font-size:.94rem; }
+  .div p { margin:.4rem 0; }
+  .div .t { font-weight:bold; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+  details { margin-top:.8rem; }
+  details summary { cursor:pointer; color:var(--link); }
+  footer { color:var(--muted); font-size:.88rem; }
+  .fb { margin-top:1rem; font-size:.9rem; }
+  .fb p { margin:.6rem 0 .2rem; }
+  .fb label { display:block; margin:.15rem 0; }
+  .src-count { font-size:.86rem; color:var(--muted); margin:.35rem 0 .6rem; }
+  .noted-list { margin:.6rem 0 0; padding-left:1.2rem; }
+  .noted-list li { margin:.45rem 0; font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">The Brief &middot; News Bot 2.0 &middot; Saturday, 28 November 2026 &middot; morning edition</div>
+  <h1>The biggest U.S. bank failure since 2024; up to two million children off food stamps as Florida&rsquo;s rolls fall 22%; a 15th blockade runner disabled as Iran vows to break the blockade; the House&rsquo;s permitting vote next week; the USAID files fight</h1>
+  <p class="summary">Five leads, seven below the line. Regulators close Indiana&rsquo;s United Fidelity Bank, the largest U.S. failure since April 2024, costing the FDIC fund $1.83&nbsp;billion, with three Florida branches passing to First Citizens; the Times reports as many as two million children have lost food stamps since the 2025 law, and Florida&rsquo;s SNAP rolls are down 22% in a year; U.S. aircraft disable another ship running the Iran blockade as Tehran&rsquo;s navy chief vows to break it; the House plans to vote next week on the permitting overhaul that makes data centers pay for their grid upgrades; and Democrats and Republicans fight over unredacted USAID files the administration posted online. Below the line: the Dec.&nbsp;11 funding fight over Iran-war money, Putin&rsquo;s invitation to the Miami G20, Florida&rsquo;s coming insurance fight, OpenAI&rsquo;s countersuit against Apple, Google&rsquo;s interest in more SpaceX computing, Texas&rsquo;s new attorney general dropping the Ten Commandments law, and Los Angeles schools switching off Google&rsquo;s AI summaries.</p>
+  <p class="sub">Saturday morning edition, under the binding Daily method in <code>NEWSBOT_2.0.md</code>: wide net first, categories used only for weighting. Holiday features and Black Friday stories filled most fronts, and the Federal Register does not publish on Saturdays, so there was no new federal register list to sweep today. Twelve stories still cleared the bar. Filename: <code>2026-11-28-v2.html</code>.</p>
+  <p class="prov"><b>120 sources checked, 37 of them in the first sweep before any weighting category was consulted.</b> First sweep: NPR text front, Al Jazeera, the BBC front plus its U.S., world and business feeds, CNBC top news, finance and tech, The Hill, Fox News politics and latest, Semafor, Tampa Bay Times, Fox&nbsp;13, WFLA, WUSF, Bay News&nbsp;9, Politico, Axios, CBS, ABC, NBC, PBS NewsHour, NYT, FT and MarketWatch headlines, the Daily Wire, the New York Post, Breitbart, Reason, the Washington Examiner, ProPublica, DW, NHK, X&rsquo;s U.S. trends and an X news search. The Guardian refused the fetch. The Hill, WFLA, Politico and USA Today article pages refused direct fetches, and the Times is paywalled; where we use them we say how we read them.<br><br>
+  <b>Check for missed stories:</b> after drafting we searched for UAP disclosure news, JPMorgan, Pasco County and New Port Richey news, and Tampa Bay power and data-center news, and compared the candidate list with every front swept and X&rsquo;s U.S. trends (mostly sports, Thai TV and Small Business Saturday). The only new UAP items were a Fox recap of the Nov.&nbsp;20 Pentagon release, which ran here on Nov.&nbsp;21, and an anonymous-source claim on X; both are in Also noted. We found nothing new on JPMorgan. Pasco&rsquo;s news was holiday closures. The Tampa Bay power news we found was the state regulators&rsquo; Nov.&nbsp;20 suspension of Tampa Electric&rsquo;s data-center tariff, which is in the fourth lead. One item is underreported: Florida&rsquo;s 22% drop in food-stamp enrollment, which we found in the Florida Phoenix and a policy group&rsquo;s report but on no Tampa Bay TV front. The only brief-feedback issue on file (#1, Krak&oacute;w) was applied on Nov.&nbsp;9 and its wake condition is closed. No new feedback arrived, so <code>config.md</code> needed no change.</p>
+</header>
+
+<nav>
+  <p class="nav-heading"><b>In this issue</b></p>
+  <ol>
+    <li><a href="#bank">United Fidelity Bank fails; First Citizens takes it</a></li>
+    <li><a href="#snap">Children losing food stamps; Florida down 22%</a></li>
+    <li><a href="#iran">A 15th blockade runner disabled; Iran vows to break it</a></li>
+    <li><a href="#baaja">House permitting vote next week</a></li>
+    <li><a href="#usaid">The USAID files fight</a></li>
+  </ol>
+  <p class="also"><b>Also today</b></p>
+  <ol>
+    <li><a href="#shutdown">Dec.&nbsp;11 funding fight turns on Iran-war money</a></li>
+    <li><a href="#g20">Putin&rsquo;s Miami G20 invitation</a></li>
+    <li><a href="#flins">Florida&rsquo;s coming insurance fight</a></li>
+    <li><a href="#openai">OpenAI countersues Apple</a></li>
+    <li><a href="#spacex">Google wants more SpaceX computing</a></li>
+    <li><a href="#texas">Texas drops its Ten Commandments defense</a></li>
+    <li><a href="#lausd">Los Angeles schools switch off Google&rsquo;s AI</a></li>
+  </ol>
+  <p class="also"><a href="#also-noted">Also noted</a></p>
+</nav>
+
+<h2 class="section" id="leads">Leads</h2>
+
+<article id="bank">
+  <h3>Regulators close Indiana&rsquo;s United Fidelity Bank, the largest U.S. bank failure since April 2024; First Citizens takes its 22 branches, three of them in Florida, and the FDIC&rsquo;s fund takes a $1.83&nbsp;billion loss</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; US financials</span>
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Reuters, as carried by the New York Post; The Bank Slate), plus the OCC and FDIC releases, First Citizens&rsquo; announcement and the bank&rsquo;s own branch page.</p>
+  <p>On Friday the Office of the Comptroller of the Currency closed United Fidelity Bank, fsb, of Evansville, Ind. It found the bank &ldquo;in an unsafe or unsound condition&rdquo; and likely unable to pay its obligations, and named the FDIC receiver. The bank had about $5.9&nbsp;billion in assets on Sept.&nbsp;30 (<a href="https://occ.gov/news-issuances/news-releases/2026/nr-occ-2026-106.html">OCC</a>). The FDIC sold it whole to First-Citizens Bank &amp; Trust of Raleigh, N.C. Depositors become First Citizens customers and keep &ldquo;all of their funds and deposit insurance coverage.&rdquo; The 22 branches in Indiana, Illinois, Florida, Colorado and the U.S. Virgin Islands reopen as First Citizens branches today where they keep Saturday hours, and on Monday elsewhere. The FDIC puts the cost to its Deposit Insurance Fund at $1.83&nbsp;billion (<a href="https://www.fdic.gov/news/press-releases/2026/first-citizens-bank-trust-company-raleigh-north-carolina-assumes">FDIC</a>). Reuters calls it the biggest U.S. bank failure since Philadelphia&rsquo;s Republic Bank closed in April 2024 with $6&nbsp;billion in assets (<a href="https://nypost.com/2026/11/28/business/united-fidelity-bank-shut-in-biggest-us-bank-failure-in-2-years-first-citizens-buys-assets">Reuters via the New York Post</a>).</p>
+  <p>First Citizens says its winning bid carried an asset discount of about $2.6&nbsp;billion and no deposit premium. It takes on $4.5&nbsp;billion of deposits and $3.1&nbsp;billion of loans, plus Pedcor Homes, the bank&rsquo;s real-estate development and management arm (<a href="https://newsroom.firstcitizens.com/2026-11-27-First-Citizens-Bank-Enters-into-Whole-Bank-Purchase-of-United-Fidelity-Bank,-fsb">First Citizens</a>). The bank&rsquo;s Florida branches are in Fort Myers, Destin and Fort Walton Beach (<a href="https://www.unitedfidelity.com/ufb-florida-banking-centers/">United Fidelity</a>). None is in Tampa Bay.</p>
+  <p>What went wrong is in the bank&rsquo;s last quarterly filing, as read by The Bank Slate. Multifamily housing loans were 89% of the loan book, and 71% of all loans had stopped accruing interest. The bank lost $249.6&nbsp;million in the first nine months of 2026 and charged off $362.6&nbsp;million in loans, almost all multifamily. Its total capital ratio was 7.26%, below the 8% minimum for an adequately capitalized bank. Regulators had warned it: the OCC put it under a consent order in October 2023 that called it in &ldquo;troubled condition,&rdquo; and the Fed signed a written agreement with its parent companies in June 2024 (<a href="https://www.thebankslate.com/2026/11/first-citizens-lands-black-friday-deal-after-united-fidelity-fails/">The Bank Slate</a>).</p>
+  <p>One gap: the FDIC says no one lost money on deposits, but its transfer excludes brokered deposits held through Cede &amp; Co., and it tells those holders to call their broker (<a href="https://www.fdic.gov/bank-failures/frequently-asked-questions-united-fidelity-bank-fsb-evansville">FDIC FAQ</a>). The Bank Slate counts about $1&nbsp;billion in brokered deposits. We could not confirm how much of that sits outside the transfer, because neither the FDIC nor First Citizens breaks it out.</p>
+  <p><b>Why it matters to you.</b> The insurance fund is paid for by premiums on insured banks, so this $1.83&nbsp;billion loss is a cost to the industry, JPMorgan and its rivals included, rather than to taxpayers. If you hold brokered CDs, the brokerage that sold them is the one to call, not the bank. And a lender that failed almost entirely on apartment loans is a warning about commercial real estate that other lenders will be asked about.</p>
+  <details><summary>Dig deeper</summary>
+    <p>The Bank Slate&rsquo;s numbers are extreme even for a failed bank. Annualized net charge-offs were 42.32% of average loans against a peer median of 0.03%. Nonaccrual loans totalled $2.16&nbsp;billion, yet the loan-loss allowance was $6.3&nbsp;million. In a note to its filing, the bank said the loans were current before it moved them to nonaccrual. United Fidelity grew partly by buying eight failed banks, and First Citizens is the buyer that took Silicon Valley Bank out of receivership in 2023 (<a href="https://www.thebankslate.com/2026/11/first-citizens-lands-black-friday-deal-after-united-fidelity-fails/">The Bank Slate</a>; <a href="https://www.bankregreports.com/banks/united-fidelity-bank-fsb-391575/credit-quality/">BankRegReports call-report data</a>).</p>
+  </details>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the United Fidelity failure?</b></p>
+    <label><input type="radio" name="fb-ufb" value="peers"> If regulators or analysts name other lenders with the same apartment-loan concentration, especially any Florida bank</label>
+    <label><input type="radio" name="fb-ufb" value="brokered"> If brokered-CD holders turn out to face losses or long delays getting their money</label>
+    <label><input type="radio" name="fb-ufb" value="second-failure"> Only if a second bank with more than $1&nbsp;billion in assets fails before the end of the year</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://occ.gov/news-issuances/news-releases/2026/nr-occ-2026-106.html">OCC</a> &middot;
+    <a href="https://www.fdic.gov/news/press-releases/2026/first-citizens-bank-trust-company-raleigh-north-carolina-assumes">FDIC release</a> &middot;
+    <a href="https://www.fdic.gov/bank-failures/frequently-asked-questions-united-fidelity-bank-fsb-evansville">FDIC FAQ</a> &middot;
+    <a href="https://newsroom.firstcitizens.com/2026-11-27-First-Citizens-Bank-Enters-into-Whole-Bank-Purchase-of-United-Fidelity-Bank,-fsb">First Citizens</a> &middot;
+    <a href="https://nypost.com/2026/11/28/business/united-fidelity-bank-shut-in-biggest-us-bank-failure-in-2-years-first-citizens-buys-assets">Reuters via New York Post</a> &middot;
+    <a href="https://www.thebankslate.com/2026/11/first-citizens-lands-black-friday-deal-after-united-fidelity-fails/">The Bank Slate</a>
+  </p>
+</article>
+
+<article id="snap">
+  <h3>As many as two million children have lost food stamps since the 2025 law, the Times reports; Florida&rsquo;s rolls are down 22% in a year, and a new federal cut is open for comment until Dec.&nbsp;10</h3>
+  <div class="meta">
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip">Florida / Tampa Bay</span>
+    <span class="chip new">New</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (The New York Times, read through a syndicated copy because the Times page is paywalled; the Florida Phoenix; PBS News; the AP, read through a search excerpt), plus the Federal Register notice and analyses by Georgetown&rsquo;s Center for Children and Families and the Florida Policy Institute.</p>
+  <p>Republicans said children would be spared when they cut food stamps last year. &ldquo;If you have young children at home, your benefits are unaffected by this bill,&rdquo; Rep. Dusty Johnson of South Dakota said. The Times reports that as many as two million children, about one in eight who had benefits, have lost them. The figure is a national projection by the Center on Budget and Policy Priorities, a left-leaning group, from a 29-state sample in which the number of children on SNAP fell 14% after the law passed. The Times says the overall drop is already twice what the Congressional Budget Office predicted. Part of the cause, it reports, is the law&rsquo;s penalties for states with high error rates, which push states to demand more proof of eligibility (<a href="https://www.nytimes.com/2026/11/28/us/politics/millions-of-children-are-losing-food-stamps.html">New York Times</a>, read via <a href="https://dnyuz.com/2026/11/28/millions-of-children-are-losing-food-stamps/">DNYUZ</a>).</p>
+  <p>In Florida, 2,219,639 people were on SNAP in July 2026, down 22% from 2,849,239 in July 2025. The state&rsquo;s own unofficial error rate has been rising, to 14.61% through May, even after the Legislature put $4&nbsp;million toward a machine-learning contractor to cut errors. There is a perverse twist: the federal law delays the state&rsquo;s share of grocery costs for states whose error rates are above 13.3%. Florida&rsquo;s official 2025 rate, 12.97%, could put the state on the hook for 15% of benefit costs. Gov.-elect Byron Donalds calls the anti-fraud push the &ldquo;prudent, common-sense thing&rdquo; for every state (<a href="https://floridaphoenix.com/2026/11/25/florida-snap-error-rates-are-on-the-rise/">Florida Phoenix</a>). The Florida Policy Institute estimates that about 9,753 lawfully present immigrants lost eligibility, and that new work rules put the benefits of about 181,217 people at risk (<a href="https://www.floridapolicy.org/posts/participation-in-snap-falls-sharply-across-florida-after-congress-makes-drastic-program-cuts">Florida Policy Institute</a>).</p>
+  <p>The next step has a date. A USDA proposal published Nov.&nbsp;10 would limit automatic SNAP eligibility to households that get cash-type assistance from TANF, the federal welfare program; comments close Dec.&nbsp;10 (<a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">Federal Register</a>). The AP reports that USDA expects about 6.3&nbsp;million more people could lose eligibility by fiscal 2029, and that the change reaches free school meals (<a href="https://apnews.com/article/snap-trump-administration-school-lunches-2090300a697f6cebe56bbfe1b30ec16a">AP</a>).</p>
+  <p><b>Why it matters to you.</b> This is money that leaves Pasco and Pinellas grocery stores and lands on food banks and school cafeterias. It is also a state budget question for Donalds&rsquo;s first session: the state already pays about $50&nbsp;million a year more in administrative costs, and a grocery-cost share could follow.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> cause. Are eligible families being lost to paperwork, or are ineligible people and fraud being removed?</p>
+    <p><b>Each side&rsquo;s vantage:</b> CBPP, whose estimate the Times uses, opposed the cuts and built its national figure from state data, some of it unpublished. Louisiana&rsquo;s SNAP director told the Times there was no way to know how many people who lost aid were still eligible, but that &ldquo;tens of thousands&rdquo; probably were; she also listed better jobs and the work rules as possible causes. The Republican sponsors the Times quoted did not respond. Donalds, who supported the law in Congress, frames the drop in Florida as cleaning up waste and fraud (<a href="https://floridaphoenix.com/2026/11/25/florida-snap-error-rates-are-on-the-rise/">Florida Phoenix</a>). PBS reported in September that some critics of the program call the decline a win and note that many leavers joined under pandemic-era rules (<a href="https://www.pbs.org/newshour/nation/more-than-1-2-million-children-have-lost-snap-benefits-since-last-july-experts-explain-why">PBS News</a>).</p>
+    <p><b>What it means for you:</b> the size of the drop is not in dispute; the share of eligible families in it is. Nobody we read has a count of that, so treat &ldquo;two million children&rdquo; as an estimate of who left the rolls, not of who was wrongly cut.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the food-stamp cuts?</b></p>
+    <label><input type="radio" name="fb-snap" value="fl-cost-share"> If Florida&rsquo;s official error rate decides whether the state owes a grocery-cost share, and Donalds puts it in his budget</label>
+    <label><input type="radio" name="fb-snap" value="usda-final"> If USDA finalizes the TANF eligibility rule after comments close on Dec.&nbsp;10</label>
+    <label><input type="radio" name="fb-snap" value="local-demand"> If Pasco or Pinellas food banks or school districts report a measurable jump in need</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.nytimes.com/2026/11/28/us/politics/millions-of-children-are-losing-food-stamps.html">New York Times</a> (via <a href="https://dnyuz.com/2026/11/28/millions-of-children-are-losing-food-stamps/">DNYUZ</a>) &middot;
+    <a href="https://floridaphoenix.com/2026/11/25/florida-snap-error-rates-are-on-the-rise/">Florida Phoenix</a> &middot;
+    <a href="https://www.floridapolicy.org/posts/participation-in-snap-falls-sharply-across-florida-after-congress-makes-drastic-program-cuts">Florida Policy Institute</a> &middot;
+    <a href="https://www.federalregister.gov/documents/2026/11/10/2026-22936/supplemental-nutrition-assistance-program-reforming-categorical-eligibility">Federal Register</a> &middot;
+    <a href="https://apnews.com/article/snap-trump-administration-school-lunches-2090300a697f6cebe56bbfe1b30ec16a">AP</a> &middot;
+    <a href="https://www.pbs.org/newshour/nation/more-than-1-2-million-children-have-lost-snap-benefits-since-last-july-experts-explain-why">PBS News</a> &middot;
+    <a href="https://ccf.georgetown.edu/2026/11/09/millions-of-low-income-children-are-losing-both-medicaid-chip-coverage-and-snap-benefits/">Georgetown CCF</a>
+  </p>
+</article>
+
+<article id="iran">
+  <h3>U.S. aircraft disable another ship running the Iran blockade as Iran&rsquo;s navy chief vows to break it; the FT says U.S. forces fought off drones at a British base, and Bessent joins officials living on military bases</h3>
+  <div class="meta">
+    <span class="chip">Geopolitics</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (the Iran war led on Nov.&nbsp;22, 24 and 27). Trigger: new verifiable fact. Central Command&rsquo;s strike on the Pacific Archer, the Iranian navy commander&rsquo;s on-air vow to break the blockade, and the FT&rsquo;s report that U.S. forces repelled drones at RAF Lakenheath with Iran suspected.</p>
+  <p class="src-count">Independent accounts compared: 4 newsrooms (the AP, as carried by PBS NewsHour; DW; Breitbart; Reuters, as carried by CNBC), plus AAA&rsquo;s Tampa Bay price series. The FT&rsquo;s drone report is paywalled and was read only through Reuters&rsquo; summary.</p>
+  <p>A U.S. aircraft fired &ldquo;precision munitions&rdquo; at the stern of the Palau-flagged bulk carrier Pacific Archer in the Gulf of Oman on Thursday, after it left the Iranian port of Bandar Abbas. Its propulsion was disabled and the crew was unharmed, Central Command said. The AP counts it as at least the 15th ship disabled since the blockade began in the spring. On state television Iran&rsquo;s navy commander, Shahram Irani, promised operations &ldquo;that will not only break the naval blockade but also drive the enemy out of the region&rsquo;s waters&rdquo; (<a href="https://www.pbs.org/newshour/world/u-s-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports">AP via PBS NewsHour</a>). Breitbart quotes the Revolutionary Guards&rsquo; aerospace commander, Majid Mousavi: &ldquo;Breaking the blockade is a mission and a firm resolve.&rdquo; It also reports Irani saying the supreme leader had lifted geographic limits on Iran&rsquo;s operations. On Thanksgiving, Trump told sailors that &ldquo;not one ship has gotten through to Iran&rdquo; (<a href="https://www.breitbart.com/politics/2026/11/27/u-s-disables-ship-attempting-to-breach-iran-blockade-tehran-threatens-military-action-from-air-and-sea/">Breitbart</a>).</p>
+  <p>The war is also reaching U.S. bases and officials outside the Gulf. The Financial Times reported that the U.S. military repelled about six drones at RAF Lakenheath in England this month, and that Iran is suspected. Britain&rsquo;s Ministry of Defence confirmed only that police and U.S. Air Force security responded to unauthorized drone activity on Nov.&nbsp;13 and that it was &ldquo;quickly resolved&rdquo; (<a href="https://www.cnbc.com/2026/11/28/us-military-repelled-drones-at-uk-airbase-this-month-ft-reports.html">Reuters via CNBC</a>). We could not confirm an Iranian link: the FT cites unnamed people, the drones were not recovered, and Tehran has denied earlier incidents in Britain. Separately, CNN reported that about six senior officials, among them Treasury Secretary Scott Bessent, Secretary of State Marco Rubio and War Secretary Pete Hegseth, now live on military installations. Bessent said of Iran&rsquo;s threats: &ldquo;I&rsquo;m not going to be cowered.&rdquo; We read CNN&rsquo;s report through Breitbart&rsquo;s account of it (<a href="https://www.breitbart.com/politics/2026/11/27/half-dozen-trump-officials-moved-military-housing-iranian-death-threats/">Breitbart</a>).</p>
+  <p><b>Why it matters to you: the oil-to-pump chain.</b> The AP, citing Rystad Energy, says oil flows in the first two weeks of November fell about 20%, to around 13&nbsp;million barrels a day, from October levels close to prewar (<a href="https://www.pbs.org/newshour/world/u-s-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports">AP via PBS NewsHour</a>). So far that has not reached your tank. AAA&rsquo;s Tampa&ndash;St.&nbsp;Petersburg&ndash;Clearwater average for regular is $3.30 this morning, down from $4.01 a month ago, though still above $3.06 a year ago (<a href="https://gasprices.aaa.com/?state=FL">AAA</a>). An Iranian attack on shipping or a U.S. warship is what could turn it back up.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> numbers and timeline. How many ships has the blockade stopped, and when did it start?</p>
+    <p><b>Each side&rsquo;s vantage:</b> Central Command, which runs the blockade, says it has redirected 158 ships and disabled six. DW and Breitbart repeat that figure (<a href="https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950">DW</a>). The AP, keeping its own tally, says the Pacific Archer is at least the 15th disabled since the spring and the sixth since the blockade resumed in July after a summer pause. DW says the blockade was launched in mid-July. Trump, whose interest is to show the blockade working, says no ship has got through. Iran&rsquo;s Revolutionary Guards claim tankers are using routes of their own; the AP says that could not be verified.</p>
+    <p><b>What it means for you:</b> &ldquo;six&rdquo; is a count since July, not the total. Treat claims from either government about ships getting through or being stopped as advocacy until someone independent tracks them.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the blockade fight?</b></p>
+    <label><input type="radio" name="fb-iran" value="warship"> If Iran attacks a U.S. warship or a vessel under U.S. escort, as its navy chief now threatens</label>
+    <label><input type="radio" name="fb-iran" value="tampa-pump"> If Tampa Bay gas prices start rising again because of the blockade</label>
+    <label><input type="radio" name="fb-iran" value="homeland"> If officials confirm an Iranian link to the Lakenheath drones or a plot against a Cabinet member</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.pbs.org/newshour/world/u-s-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports">AP via PBS NewsHour</a> &middot;
+    <a href="https://www.dw.com/en/us-disables-ship-in-gulf-of-oman-under-iran-blockade/a-80082950">DW</a> &middot;
+    <a href="https://www.breitbart.com/politics/2026/11/27/u-s-disables-ship-attempting-to-breach-iran-blockade-tehran-threatens-military-action-from-air-and-sea/">Breitbart (blockade)</a> &middot;
+    <a href="https://www.breitbart.com/politics/2026/11/27/half-dozen-trump-officials-moved-military-housing-iranian-death-threats/">Breitbart (housing)</a> &middot;
+    <a href="https://www.cnbc.com/2026/11/28/us-military-repelled-drones-at-uk-airbase-this-month-ft-reports.html">Reuters via CNBC</a> &middot;
+    <a href="https://gasprices.aaa.com/?state=FL">AAA Florida</a>
+  </p>
+</article>
+
+<article id="baaja">
+  <h3>The House plans to vote next week on the Senate&rsquo;s permitting overhaul, which makes data centers pay for their own grid upgrades; seven Democratic committee leaders call it &ldquo;fatally flawed,&rdquo; and Republican leaders need every member present</h3>
+  <div class="meta">
+    <span class="chip">Data centers / power / AI infrastructure</span>
+    <span class="chip">Energy &amp; grid</span>
+    <span class="chip fu">Continuing</span>
+    <span class="chip">Independent corroboration</span>
+  </div>
+  <p class="meta">Continuing lead (Senate passage led on Nov.&nbsp;20). Trigger: threshold event. A House floor vote is scheduled for the week of Nov.&nbsp;30.</p>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (the Deseret News, as carried by KSL; NPR; the Washington Examiner, lede only behind its login), plus two Florida Public Service Commission records and a Florida Phoenix report carried by the Citrus County Chronicle.</p>
+  <p>House Republican leaders plan to bring the Bipartisan American Affordability and Jobs Act to the floor sometime next week, sources told the Deseret News. To pass it by simple majority they first need a procedural &ldquo;rule&rdquo; vote, which the minority usually opposes. That puts the weight on Republican attendance: 21 Republicans were absent last week, forcing an early start to the Thanksgiving recess. &ldquo;Barring any serious medical issue, we need every Republican to be here,&rdquo; Speaker Mike Johnson wrote. Seven House Democrats who lead tribal and natural-resources panels urged colleagues to vote against the &ldquo;fatally flawed&rdquo; bill. Two Democratic senators who co-sponsored it, Martin Heinrich and Sheldon Whitehouse, are lobbying for it; Heinrich says there is &ldquo;no alternative&rdquo; that can become law without Republican votes and Trump&rsquo;s signature. Any House change sends it back to the Senate (<a href="https://www.ksl.com/article/news/politics/house-republican-leaders-tee-up-major-permitting-bill-in-final-weeks-of-majority/51648144">Deseret News via KSL</a>). The Examiner says many House Democrats will vote no unless provisions on permit certainty, tribal sovereignty, data centers and endangered species change (<a href="https://www.washingtonexaminer.com/policy/energy-and-environment/4815147/what-house-democrats-want-bipartisan-permitting-reform-bill">Washington Examiner</a>).</p>
+  <p>The bill is nearly 500 pages and passed the Senate 62&ndash;33 with one amendment. Trump has said he will sign it. It is backed by energy companies, big tech, some Democrats and a mix of labor and environmental groups (<a href="https://www.npr.org/transcripts/nx-s1-6046134">NPR</a>).</p>
+  <p><b>Why it matters to you.</b> Florida has already run this experiment at state level. A 2026 state law requires customers drawing 50 megawatts or more to bear their full cost of service. On Nov.&nbsp;3 regulators voted 5&ndash;0 to reject Duke Energy Florida&rsquo;s data-center tariff for failing to show it met that test (<a href="https://www.chronicleonline.com/news/local/florida-public-service-commission-rejects-duke-energy-s-data-center-plan/article_c64bb92b-3abc-50cf-bb78-4bd10c0923c7.html">Florida Phoenix via Citrus County Chronicle</a>). Duke serves much of Pinellas and Pasco. On Nov.&nbsp;20 they suspended Tampa Electric&rsquo;s version for more staff review. Tampa Electric&rsquo;s plan would charge data centers for 600 megawatts of new storage, 600 megawatts from rebuilding Big Bend Unit&nbsp;4, and transmission to serve up to a gigawatt of data-center demand (<a href="https://www.floridapsc.com/pscfiles/library/filings/2026/08006-2026/08006-2026.pdf">PSC order</a>). Whether that cost stays off your bill is being decided in those dockets now. The federal bill would set a national floor of the same kind.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> trade-off. Faster building and lower bills, or weaker environmental and tribal protections?</p>
+    <p><b>Each side&rsquo;s vantage:</b> Supporters include Xan Fishman of the Bipartisan Policy Center, who calls it &ldquo;actually a big-deal bill,&rdquo; and the energy and tech companies that would build faster under it. Their interest is speed. Critics include Wesley Furlong of the Native American Rights Fund, who says tribes were not consulted, and Sarah Gonzalez-Rothi, a Biden-era White House official. They argue it would make permits nearly impossible to challenge and could make it easier to put data centers on public land, even as it makes them pay their own power costs (<a href="https://www.npr.org/transcripts/nx-s1-6046134">NPR</a>).</p>
+    <p><b>What it means for you:</b> neither critic NPR quoted objects to making data centers pay their own power costs; their objections are permits, tribes and public land. House Democrats&rsquo; list of changes does include data-center provisions, so watch whether amendments touch the cost clause, because it is the piece aimed at your bill.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the permitting bill?</b></p>
+    <label><input type="radio" name="fb-baaja" value="passes-fl"> If it passes and Duke or Tampa Electric says whether it changes their Florida data-center tariffs</label>
+    <label><input type="radio" name="fb-baaja" value="absences"> If the rule vote fails because Republicans stay home, and we can name who skipped it</label>
+    <label><input type="radio" name="fb-baaja" value="amended"> Only if the House rewrites the data-center cost clause and sends the bill back to the Senate</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.ksl.com/article/news/politics/house-republican-leaders-tee-up-major-permitting-bill-in-final-weeks-of-majority/51648144">Deseret News via KSL</a> &middot;
+    <a href="https://www.npr.org/transcripts/nx-s1-6046134">NPR</a> &middot;
+    <a href="https://www.washingtonexaminer.com/policy/energy-and-environment/4815147/what-house-democrats-want-bipartisan-permitting-reform-bill">Washington Examiner</a> &middot;
+    <a href="https://www.floridapsc.com/pscfiles/library/filings/2026/08006-2026/08006-2026.pdf">Florida PSC order on Tampa Electric</a> &middot;
+    <a href="https://www.chronicleonline.com/news/local/florida-public-service-commission-rejects-duke-energy-s-data-center-plan/article_c64bb92b-3abc-50cf-bb78-4bd10c0923c7.html">Florida Phoenix via Citrus County Chronicle</a>
+  </p>
+</article>
+
+<article id="usaid">
+  <h3>The administration posts 248 internal USAID records online with staff names unredacted; Democrats ask for the files with personal data to come down, Sen. Schmitt answers &ldquo;No way,&rdquo; and the files stay up</h3>
+  <div class="meta">
+    <span class="chip">Broader domestic institutions</span>
+    <span class="chip">Core &mdash; US politics &amp; policy</span>
+    <span class="chip new">New</span>
+    <span class="chip">Primary source</span>
+  </div>
+  <p class="src-count">Independent accounts compared: 2 newsrooms (Breitbart; The Washington Post, whose lede we read through a search excerpt because the page did not load), plus the Democrats&rsquo; letter as published by the Senate Foreign Relations Committee and X&rsquo;s summary of reaction. USAID.gov refused our direct fetch, so we did not read the files ourselves.</p>
+  <p>USAID&rsquo;s website came back online on Tuesday as nothing but a trove of internal documents, which it says show how the agency &ldquo;was weaponized to advance a radical agenda fundamentally at odds with American values.&rdquo; The Washington Post reports that the files are unredacted and include videos of internal presentations, reports and staff emails, posted without captions or context (<a href="https://www.washingtonpost.com/national-security/2026/11/27/trump-administration-reboots-usaid-website-with-unredacted-memos-emails/">Washington Post</a>). Breitbart describes 248 records in a 1.1-gigabyte archive from 2021 to 2024. They include a 92-page &ldquo;Disinformation Primer&rdquo; and 2022 messages in which staff asked Facebook to pull down posts. A State Department spokesperson told Newsweek the department &ldquo;welcomes&rdquo; the release (<a href="https://www.breitbart.com/politics/2026/11/27/sen-eric-schmitt-rejects-democrat-demand-pull-usaid-files-no-way/">Breitbart</a>).</p>
+  <p>On Wednesday the top Democrats on the two foreign-affairs committees, Sen. Jeanne Shaheen and Rep. Gregory Meeks, wrote to Secretary of State Marco Rubio and acting USAID Administrator Bill Woolf. They said the links include personally identifiable information &ldquo;in likely contravention of federal law and regulations.&rdquo; They called the selective publishing an effort to &ldquo;sow disinformation,&rdquo; and asked that files containing personal data be removed, not the whole archive (<a href="https://www.foreign.senate.gov/press/dem/release/shaheen-meeksdemand-answers-on-administrations-selective-release-of-usaid-files">Senate Foreign Relations Committee</a>). Sen. Eric Schmitt of Missouri, who sued the Biden administration over its social-media contacts when he was the state&rsquo;s attorney general, replied on X: &ldquo;No way. It&rsquo;s time to end the grift.&rdquo; He wants the Justice Department to investigate. Sen. Bernie Moreno of Ohio wants Congress to examine how much USAID money &ldquo;made its way back into dark money accounts funding Democrats&rdquo; (<a href="https://www.breitbart.com/politics/2026/11/27/sen-bernie-moreno-investigate-how-much-usaid-money-went-into-dark-money-accounts-funding-democrats/">Breitbart</a>).</p>
+  <p>Posts on X attach dollar figures to named newsrooms, such as Reuters and Politico, and X&rsquo;s summary says those outlets describe the payments as subscriptions or services (<a href="https://x.com/i/trending/2126564693456376050">X summary</a>). We could not confirm the figures or the outlets&rsquo; responses, because we did not read the payment records in the files and found no newsroom report that checked them.</p>
+  <p><b>Why it matters to you.</b> This is the opening of a records war that will get bigger in January, when Democrats take Congress and Republicans lose the gavel. A government website publishing staff names is also a test of the Privacy Act, and the precedent cuts both ways for whichever party holds the next archive.</p>
+  <div class="div">
+    <p class="t">Divergence</p>
+    <p><b>Dispute type:</b> framing and legality. Transparency about a misused agency, or a curated release that breaks privacy law?</p>
+    <p><b>Each side&rsquo;s vantage:</b> The administration chose which files to post and wrote the framing on the page. Its interest is justifying the agency&rsquo;s closure. Shaheen and Meeks are minority ranking members whose letter carries no legal force; their interest is defending the agency&rsquo;s record, and they also claim its closure caused &ldquo;millions of preventable deaths,&rdquo; which we did not check. Schmitt and Moreno have campaigned against USAID for years and point to the files as proof. Only the Post, among the newsrooms we read, independently describes the unredacted names. Breitbart, which quotes the files at greatest length, reads them as evidence of censorship.</p>
+    <p><b>What it means for you:</b> the documents are real government records, but they are a selection. Wait for a newsroom or an inspector general to test specific claims, especially dollar figures, before treating them as findings.</p>
+  </div>
+  <div class="fb">
+    <p><b>Under what conditions should we keep following the USAID files?</b></p>
+    <label><input type="radio" name="fb-usaid" value="takedown"> If the State Department takes any files down, or an inspector general or court acts on the privacy complaint</label>
+    <label><input type="radio" name="fb-usaid" value="newsroom-money"> If someone checks the files&rsquo; payment records against the dollar figures being posted about named newsrooms</label>
+    <label><input type="radio" name="fb-usaid" value="retaliation"> If former staff or local partners named in the files report threats or retaliation abroad</label>
+  </div>
+  <p class="sources"><b>Sources:</b>
+    <a href="https://www.foreign.senate.gov/press/dem/release/shaheen-meeksdemand-answers-on-administrations-selective-release-of-usaid-files">Shaheen&ndash;Meeks letter</a> &middot;
+    <a href="https://www.washingtonpost.com/national-security/2026/11/27/trump-administration-reboots-usaid-website-with-unredacted-memos-emails/">Washington Post</a> &middot;
+    <a href="https://www.breitbart.com/politics/2026/11/27/sen-eric-schmitt-rejects-democrat-demand-pull-usaid-files-no-way/">Breitbart (Schmitt)</a> &middot;
+    <a href="https://www.breitbart.com/politics/2026/11/27/sen-bernie-moreno-investigate-how-much-usaid-money-went-into-dark-money-accounts-funding-democrats/">Breitbart (Moreno)</a> &middot;
+    <a href="https://x.com/i/trending/2126564693456376050">X summary</a>
+  </p>
+</article>
+
+<h2 class="section" id="also-today">Also today</h2>
+<p class="secnote">Shorter items below the line: each has one confidence label and its own source count.</p>
+
+<article id="shutdown">
+  <h3>Thirteen days to the Dec.&nbsp;11 funding deadline, the price of a stopgap is Iran-war money: Senate Democrats offer munitions funding in exchange for limits on offensive operations</h3>
+  <div class="meta"><span class="chip">Core &mdash; US debt &amp; fiscal</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (Fox News; Politico and The Washington Post, both headline and search excerpt only, because their pages refused our fetch or are paywalled).</p>
+  <p>Republicans want up to $350&nbsp;billion in emergency money for the war and the Pentagon. Sen. Tim Kaine says a small group of Democrats would fund some of it, especially to rebuild depleted munitions, on a short stopgap into early next year, if offensive operations are barred unless Congress authorizes them. He would allow exceptions for defending U.S. troops and evacuating Americans. Sen. Bernie Sanders wants the war ended outright (<a href="https://www.foxnews.com/politics/senate-gop-takes-risky-bet-dems-holiday-shutdown-deadline-looms-its-gamble">Fox News</a>). Politico reported the Democrats&rsquo; draft on Nov.&nbsp;20 (<a href="https://www.politico.com/newsletters/inside-congress/2026/11/20/dems-draft-a-curb-on-iran-war-cash-01177672">Politico</a>), and the Post reported on Nov.&nbsp;23 that Senate Republican leaders had signalled openness to cutting off war funding (<a href="https://www.washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding/">Washington Post, headline</a>). Both chambers return Monday.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.foxnews.com/politics/senate-gop-takes-risky-bet-dems-holiday-shutdown-deadline-looms-its-gamble">Fox News</a> &middot; <a href="https://www.politico.com/newsletters/inside-congress/2026/11/20/dems-draft-a-curb-on-iran-war-cash-01177672">Politico</a> &middot; <a href="https://www.washingtonpost.com/business/2026/11/23/senate-gop-leaders-signal-openness-cutting-off-iran-war-funding/">Washington Post</a></p>
+</article>
+
+<article id="g20">
+  <h3>Trump says Putin is welcome at the Dec.&nbsp;14&ndash;15 G20 summit in Miami, after a bipartisan group of House members asked him to withdraw the invitation over Russian intelligence help to Iran</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">International with US channel</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (Kyiv Post; Anadolu Agency&rsquo;s A&nbsp;News; CBS News, video summary), plus Rep. Pat Ryan&rsquo;s release.</p>
+  <p>&ldquo;If he wanted to come, he certainly can,&rdquo; Trump told reporters at Mar-a-Lago on Thursday; &ldquo;If it were up to me, I&rsquo;d like to have him.&rdquo; He said he doubted Putin would come, and the Kremlin said no decision had been made (<a href="https://www.kyivpost.com/post/91344">Kyiv Post</a>). A Nov.&nbsp;19 letter led by Reps. Pat Ryan, Gil Cisneros and Don Bacon, signed by 17 members by Ryan&rsquo;s count and 20 by Anadolu&rsquo;s, cites reports that Russia gave Iran satellite imagery that may have helped Iranian strikes on U.S. forces, including the March attack on Prince Sultan Air Base that wounded 12 Americans. It says at least 23 U.S. service members have died in the war (<a href="https://patryan.house.gov/media/press-releases/pat-ryan-leads-bipartisan-letter-urging-president-trump-rescind-vladimir">Rep. Ryan</a>; <a href="https://www.anews.com.tr/americas/2026/11/24/bipartisan-us-lawmakers-urge-trump-to-rescind-putins-g20-invitation">A&nbsp;News</a>; <a href="https://www.cbsnews.com/video/lawmakers-ask-trump-to-rescind-putins-g20-invitation-over-alleged-intelligence-sharing-with-iran/">CBS News</a>). Putin has not attended a G20 in person since 2019.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.kyivpost.com/post/91344">Kyiv Post</a> &middot; <a href="https://www.anews.com.tr/americas/2026/11/24/bipartisan-us-lawmakers-urge-trump-to-rescind-putins-g20-invitation">A&nbsp;News</a> &middot; <a href="https://www.cbsnews.com/video/lawmakers-ask-trump-to-rescind-putins-g20-invitation-over-alleged-intelligence-sharing-with-iran/">CBS News</a> &middot; <a href="https://patryan.house.gov/media/press-releases/pat-ryan-leads-bipartisan-letter-urging-president-trump-rescind-vladimir">Rep. Ryan</a></p>
+</article>
+
+<article id="flins">
+  <h3>Florida&rsquo;s next insurance fight takes shape: Gov.-elect Donalds wants to end the hurricane Cat Fund&rsquo;s 25% cash-buildup charge, and the new Senate president, a Bradenton insurance agent, warns that could shift costs to consumers</h3>
+  <div class="meta"><span class="chip">Florida / Tampa Bay</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Insurance Journal, which draws on WUSF), plus WFLA&rsquo;s headline; WFLA&rsquo;s page refused our fetch.</p>
+  <p>Senate President Jim Boyd, who runs a family insurance agency in Bradenton, said affordability bills will be priorities in the session that starts March&nbsp;2. He did not say which ones, and said lawmakers must be careful with the Florida Hurricane Catastrophe Fund. Donalds has proposed ending its buildup factor, a 25% charge on top of what insurers pay for the fund&rsquo;s reinsurance, and has pledged a scorecard for insurers that may include grades on claims payments. Boyd credits the 2022 reforms for lower premiums and says the Amendment&nbsp;3 property-tax cut can be handled in the regular session, without a special session (<a href="https://www.insurancejournal.com/news/southeast/2026/11/19/893153.htm">Insurance Journal</a>; <a href="https://www.wfla.com/news/politics/florida-lawmakers-weigh-new-property-insurance-proposals/">WFLA, headline</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.insurancejournal.com/news/southeast/2026/11/19/893153.htm">Insurance Journal</a> &middot; <a href="https://www.wfla.com/news/politics/florida-lawmakers-weigh-new-property-insurance-proposals/">WFLA</a></p>
+</article>
+
+<article id="openai">
+  <h3>OpenAI countersues Apple, accusing it of taking hardware secrets through a rehired engineer and pressing shared suppliers not to work on OpenAI&rsquo;s devices; Apple calls it a distraction</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Independent corroboration</span></div>
+  <p class="src-count">Independent accounts compared: 3 newsrooms (BBC, CBS News, 9to5Mac).</p>
+  <p>The counterclaim, filed Friday in federal court in Northern California, says a former OpenAI employee who returned to Apple sent &ldquo;dozens of OpenAI documents&rdquo; about an unreleased device to his personal phone and presented OpenAI&rsquo;s plans to senior Apple staff &ldquo;at Apple&rsquo;s request&rdquo; (<a href="https://www.bbc.co.uk/news/articles/cm15ekqvlezeo">BBC</a>). It also says Apple&rsquo;s employment rules are &ldquo;a trap that can be sprung whenever Apple sees an opportunity to slow down a potential competitor.&rdquo; Apple says OpenAI has already been ordered to stop using Apple&rsquo;s confidential information (<a href="https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/">CBS News</a>), and 9to5Mac reports the claim that Apple is &ldquo;coercing and threatening&rdquo; suppliers (<a href="https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/">9to5Mac</a>). The outlets differ on when Apple&rsquo;s own suit was filed: CBS says June, the BBC July.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.bbc.co.uk/news/articles/cm15ekqvlezeo">BBC</a> &middot; <a href="https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/">CBS News</a> &middot; <a href="https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/">9to5Mac</a></p>
+</article>
+
+<article id="spacex">
+  <h3>Musk says Google wants to rent more computing from SpaceX, which already bills Google $920&nbsp;million a month under a deal running to 2029</h3>
+  <div class="meta"><span class="chip">Data centers / power / AI infrastructure</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Reuters, as carried by CNBC), relaying Musk&rsquo;s post on X.</p>
+  <p>Musk gave no details, and none of the companies answered Reuters. The existing deal, from October this year to June 2029, covers about 110,000 Nvidia GPUs and related hardware. SpaceX disclosed compute agreements with Anthropic and Google worth more than $70&nbsp;billion in all, and this month said it would spend more than $74&nbsp;billion on new supercomputer sites at Starbase, Texas, and in Cochise County, Arizona (<a href="https://www.cnbc.com/2026/11/28/musk-says-google-wants-to-rent-more-computing-capacity-from-spacex.html">Reuters via CNBC</a>). We could not confirm Google&rsquo;s interest; the only source is Musk.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.cnbc.com/2026/11/28/musk-says-google-wants-to-rent-more-computing-capacity-from-spacex.html">Reuters via CNBC</a></p>
+</article>
+
+<article id="texas">
+  <h3>Texas&rsquo;s Democratic attorney general-elect says he will not defend the law putting the Ten Commandments in every classroom, and his predecessor is already using that at the Supreme Court</h3>
+  <div class="meta"><span class="chip">Elections and electoral process</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (Fox News, relaying a Dallas Morning News interview), plus The Hill&rsquo;s headline; The Hill refused our fetch.</p>
+  <p>&ldquo;My jurisprudential opinion is that the law is unconstitutional,&rdquo; Nathan Johnson, the first Democrat elected Texas attorney general in nearly three decades, told the Morning News. The Fifth Circuit upheld the law in April. Outgoing Attorney General Ken Paxton&rsquo;s office has cited Johnson&rsquo;s stance in asking the justices not to take up a challenge (<a href="https://www.foxnews.com/politics/texas-attorney-general-elect-refuses-defend-ten-commandments-classroom-law">Fox News</a>; <a href="https://thehill.com/homenews/state-watch/6245846-texas-ag-johnson-ten-commandments/">The Hill, headline</a>). It is an early sign of what a Democratic attorney general changes in Texas courtrooms.</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.foxnews.com/politics/texas-attorney-general-elect-refuses-defend-ten-commandments-classroom-law">Fox News</a> &middot; <a href="https://thehill.com/homenews/state-watch/6245846-texas-ag-johnson-ten-commandments/">The Hill</a></p>
+</article>
+
+<article id="lausd">
+  <h3>Los Angeles schools quietly switch off Google&rsquo;s AI Overviews on student laptops, as Google says search and AI cannot be separated</h3>
+  <div class="meta"><span class="chip">Core &mdash; AI &amp; tech industry</span><span class="chip">Single-sourced</span></div>
+  <p class="src-count">Independent accounts compared: 1 newsroom (the AP, as carried by PBS NewsHour).</p>
+  <p>The half-million-student district made no announcement; it says the suspension keeps student experiences &ldquo;age-appropriate and safe.&rdquo; Its chief information officer told a board committee, &ldquo;We can change the default search engine literally overnight.&rdquo; Google&rsquo;s education vice president told the New York Times that if schools ban AI, students &ldquo;will not have access to search.&rdquo; Hundreds of Google employees have petitioned to let schools turn the AI off (<a href="https://www.pbs.org/newshour/education/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features">AP via PBS NewsHour</a>).</p>
+  <p class="sources"><b>Sources:</b> <a href="https://www.pbs.org/newshour/education/as-google-threatens-to-cut-schools-search-access-los-angeles-blocks-ai-features">AP via PBS NewsHour</a></p>
+</article>
+
+<p><b>On the items below the line.</b></p>
+<div class="fb" id="also-tier-fb">
+  <p>Which of these should become a lead, and on what development?</p>
+  <label><input type="radio" name="fb-below" value="iran-cr"> The Dec.&nbsp;11 funding fight, if limits on offensive Iran operations make it into the stopgap text</label>
+  <label><input type="radio" name="fb-below" value="miami-putin"> The Miami G20, if the Kremlin confirms Putin will attend in person</label>
+  <label><input type="radio" name="fb-below" value="cat-fund"> Florida insurance, once Donalds or a legislator files a bill to end the Cat Fund buildup charge</label>
+</div>
+
+<footer>
+  <p><b>Provenance.</b> 120 sources checked; 37 in the first sweep before any weighting category was consulted. Five leads and seven items below the line (12 stories). Two leads carry over from earlier editions, each with a stated trigger: the Iran blockade (the Pacific Archer strike, Iran&rsquo;s vow to break the blockade, and the Lakenheath drone report) and the permitting bill (the House floor vote scheduled for the week of Nov.&nbsp;30). Each item gives its own count of independent accounts. Pages read only through a search index, a syndicated copy or a headline are marked in the text. No comparison edition was opened.</p>
+  <p><b>Feedback.</b> Open a labelled <code>brief-feedback</code> issue on <a href="https://github.com/historiocity/News-Agent-v2/issues/new?labels=brief-feedback">News-Agent-v2</a>.</p>
+  <p>Published as <code>issues/2026-11-28-v2.html</code>. Audit gate: <code>scripts/audit.py</code>. Daily method: <code>NEWSBOT_2.0.md</code>.</p>
+</footer>
+<details id="also-noted">
+  <summary>Also noted</summary>
+  <h2 class="section">Also noted</h2>
+  <ul class="noted-list">
+    <li>Fox News lists &ldquo;10 wild finds&rdquo; in the Pentagon&rsquo;s Nov.&nbsp;20 UFO release, including a 1,650&nbsp;mph radar track and troops sent to Skinwalker Ranch (<a href="https://www.foxnews.com/us/flying-saucers-1650-mph-radar-track-skinwalker-ranch-troops-10-wild-finds-unsealed-ufo-files">Fox News</a>). Missed: a recap of a release this brief led with on Nov.&nbsp;21; no new files.</li>
+    <li>A journalist&rsquo;s anonymous sources say officials are weighing a statement that some UAP involve non-human intelligence (<a href="https://x.com/i/trending/2126001038683746505">X summary</a>). Missed: anonymous sources only, no document, and X says no decision exists.</li>
+    <li>For 2027, 638,000 Medicare beneficiaries in 193 counties have no Medicare Advantage plan with drug coverage, up from 399,000 (<a href="https://www.kff.org/medicare/medicare-advantage-plan-availability-varies-widely-by-county-for-2027/">KFF</a>; <a href="https://www.marketwatch.com/story/coming-next-year-medicare-advantage-plans-without-drug-coverage-for-almost-640-000-people-and-fewer-choices-for-the-rest-25242d69">MarketWatch, headline</a>). Missed: none of those counties is in Florida.</li>
+    <li>The Hill says the odds of a Fed rate hike are rising after the GDP revision (<a href="https://thehill.com/business/6245247-trump-demands-gdp-investigation-inflation/">The Hill, headline</a>). Missed: your settled preference is Fed prints and decisions only; the decision is Dec.&nbsp;9.</li>
+    <li>Spain votes Sunday; CBS says the far right could reach power for the first time in decades, and CNBC says the result could pull Madrid closer to Washington (<a href="https://www.cbsnews.com/news/spain-elections-pedro-sanchez-peoples-party-vox/">CBS News, headline</a>; <a href="https://www.cnbc.com/2026/11/27/spain-election-trump-sanchez.html">CNBC, headline</a>). Missed: a foreign election before any result.</li>
+    <li>Taiwan&rsquo;s opposition Kuomintang won the Taipei mayor&rsquo;s race in Saturday&rsquo;s local elections, a test before the 2028 presidential vote (<a href="https://www.dw.com/en/polls-close-in-taiwan-s-closely-watched-local-elections/a-80083086">DW</a>). Missed: local races with no direct change in China policy yet.</li>
+    <li>Kim Jong-un says nuclear non-proliferation &ldquo;has collapsed&rdquo; and that North Korea will keep building its arsenal (<a href="https://www.breitbart.com/asia/2026/11/27/kim-jong-un-nuclear-non-proliferation-has-collapsed-north-korea-boosting-nuke-capabilities/">Breitbart</a>). Missed: rhetoric with no new test or deployment.</li>
+    <li>Al Jazeera examines why Congo&rsquo;s current Ebola outbreak is its deadliest, and Uganda has begun Africa&rsquo;s first mRNA Ebola vaccine trial (<a href="https://www.aljazeera.com/features/longform/2026/11/28/the-perfect-storm-behind-congos-deadliest-ebola-outbreak">Al Jazeera</a>; <a href="https://www.aljazeera.com/news/2026/11/28/uganda-starts-mrna-ebola-vaccine-trial-in-first-for-africa">Al Jazeera</a>). Missed: no U.S. case or travel measure.</li>
+    <li>An analysis finds Russian sabotage in Europe rising, with a &ldquo;risk of mass-casualty incident&rdquo; (<a href="https://thehill.com/policy/international/6245694-russian-sabotage-ukraine-war-zelensky-trump-putin-friend/">The Hill, headline</a>). Missed: we could read only the headline.</li>
+    <li>Democrats are lining up investigations of Trump, his administration and his business associates for January; Rep. Robert Garcia told officials to &ldquo;lawyer up&rdquo; (<a href="https://www.washingtonexaminer.com/news/house/4815560/who-investigate-trump-next-congress-fight-back/">Washington Examiner</a>). Missed: plans, not subpoenas, until the new Congress sits.</li>
+    <li>A bipartisan Senate bill from Bernie Moreno and Elissa Slotkin would bar connected cars with Chinese or Russian parts or software (<a href="https://x.com/i/trending/2125982196485787967">X summary</a>). Missed: we found only X&rsquo;s summary and no bill text or vote date.</li>
+  </ul>
+</details>
+
+</div>
+</body>
+</html>

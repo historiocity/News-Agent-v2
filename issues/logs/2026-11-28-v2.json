@@ -1,0 +1,700 @@
+{
+ "date": "2026-11-28",
+ "edition": "2026-11-28-v2",
+ "filename": "issues/2026-11-28-v2.html",
+ "generated_at_et": "2026-11-28 ~08:45 ET",
+ "outside_watchlist_first": true,
+ "outside_watchlist_first_note": "RSS fronts across left, centre and right outlets plus X US trends and an X news search were swept before any weighting category in config.md was consulted for topic choice. NEWSBOT_2.0.md, config.md and audit.py were read first for rules only; earlier v2 issues were opened afterwards only to test carry-overs against Daily method Step 2 and for layout. The Federal Register does not publish on Saturday, so no FR list was available today.",
+ "broad_sweeps": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "BBC world RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "CNBC tech RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Bay News 9 Tampa RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT homepage RSS (headlines)",
+  "FT home RSS (headlines)",
+  "MarketWatch/Dow Jones top stories RSS (headlines)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "ProPublica RSS",
+  "DW all-news RSS",
+  "NHK World radio RSS",
+  "X US trends (WOEID 23424977)",
+  "X news search: 'US news' (24h)"
+ ],
+ "sources_swept_before_categories": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "BBC world RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "CNBC tech RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Bay News 9 Tampa RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT homepage RSS (headlines)",
+  "FT home RSS (headlines)",
+  "MarketWatch/Dow Jones top stories RSS (headlines)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "ProPublica RSS",
+  "DW all-news RSS",
+  "NHK World radio RSS",
+  "X US trends (WOEID 23424977)",
+  "X news search: 'US news' (24h)"
+ ],
+ "access_denied": [
+  "theguardian.com RSS (403)",
+  "thehill.com article pages (403)",
+  "wfla.com article pages (403)",
+  "nytimes.com (paywall; read via DNYUZ syndicated copy)",
+  "politico.com (403; search excerpt)",
+  "usatoday.com (402)",
+  "usaid.gov (403)",
+  "washingtonpost.com (no response; search excerpts)",
+  "marketwatch.com (404 to curl; headline)",
+  "wtsp.com (403)",
+  "baynews9.com hemp article (500)",
+  "miamiherald.com (no response)"
+ ],
+ "candidate_list": [
+  {
+   "item": "United Fidelity Bank failure, FDIC $1.83B loss, Florida branches",
+   "decision": "keep-lead",
+   "reason": "Largest US failure since Apr 2024; Core US financials; primary OCC/FDIC docs; three Florida branches."
+  },
+  {
+   "item": "Children losing SNAP (NYT/CBPP); Florida rolls -22%; USDA rule comments Dec 10",
+   "decision": "keep-lead",
+   "reason": "Underreported Florida angle; dated decision; credible disagreement over cause."
+  },
+  {
+   "item": "Iran blockade: Pacific Archer disabled, Iran navy vow, Lakenheath drones, officials in military housing",
+   "decision": "keep-lead (continuing)",
+   "reason": "New verifiable facts; oil-to-pump chain checked against AAA Tampa."
+  },
+  {
+   "item": "BAAJA permitting bill House vote week of Nov 30; Florida PSC data-center tariffs",
+   "decision": "keep-lead (continuing)",
+   "reason": "Threshold event; data-center cost clause ties to Duke/TECO Florida dockets."
+  },
+  {
+   "item": "USAID Files release and Shaheen-Meeks privacy letter vs Schmitt/Moreno",
+   "decision": "keep-lead",
+   "reason": "Institutional records fight; behind-the-scenes money claims; clear divergence; primary Senate letter."
+  },
+  {
+   "item": "Dec 11 funding deadline: Iran-war funding limits as price of stopgap",
+   "decision": "keep-also",
+   "reason": "Moving fiscal deadline; overlaps Iran lead but distinct mechanism."
+  },
+  {
+   "item": "Putin's invitation to Miami G20 Dec 14-15; congressional letter",
+   "decision": "keep-also",
+   "reason": "Florida host; Iran-intelligence channel; dated summit."
+  },
+  {
+   "item": "Florida insurance: Donalds Cat Fund buildup vs Senate President Boyd",
+   "decision": "keep-also",
+   "reason": "Florida household costs; pre-session positioning, single newsroom."
+  },
+  {
+   "item": "OpenAI countersues Apple over trade secrets",
+   "decision": "keep-also",
+   "reason": "AI industry legal fight with supplier-pressure claims."
+  },
+  {
+   "item": "Musk: Google wants more SpaceX compute",
+   "decision": "keep-also",
+   "reason": "AI infrastructure capacity signal; single source flagged."
+  },
+  {
+   "item": "Texas AG-elect won't defend Ten Commandments law",
+   "decision": "keep-also",
+   "reason": "Concrete post-election change in state legal position before SCOTUS."
+  },
+  {
+   "item": "LA schools disable Google AI Overviews",
+   "decision": "keep-also",
+   "reason": "AI adoption backlash in public institutions; Google says search and AI inseparable."
+  },
+  {
+   "item": "Fox recap of Pentagon UFO Release 08",
+   "decision": "also-noted",
+   "reason": "Recap of Nov 20 release already led Nov 21."
+  },
+  {
+   "item": "Christopher Sharp anonymous UAP non-human claim",
+   "decision": "also-noted",
+   "reason": "Anonymous sources, no document."
+  },
+  {
+   "item": "Medicare Advantage: 638k without drug-coverage MA plans in 2027",
+   "decision": "also-noted",
+   "reason": "No Florida county affected."
+  },
+  {
+   "item": "Fed rate-hike odds rising (The Hill)",
+   "decision": "also-noted",
+   "reason": "Settled preference: Fed prints/decisions only."
+  },
+  {
+   "item": "Spain election Sunday",
+   "decision": "also-noted",
+   "reason": "Foreign election before result."
+  },
+  {
+   "item": "Taiwan local elections; KMT wins Taipei",
+   "decision": "also-noted",
+   "reason": "No direct China-policy change yet."
+  },
+  {
+   "item": "Kim Jong-un: NPT collapsed",
+   "decision": "also-noted",
+   "reason": "Rhetoric only."
+  },
+  {
+   "item": "Congo Ebola outbreak; Uganda mRNA trial",
+   "decision": "also-noted",
+   "reason": "No US case or travel measure."
+  },
+  {
+   "item": "Russian sabotage in Europe analysis",
+   "decision": "also-noted",
+   "reason": "Headline only."
+  },
+  {
+   "item": "Democrats' planned investigations of Trump in 2027",
+   "decision": "also-noted",
+   "reason": "Plans, not subpoenas."
+  },
+  {
+   "item": "Connected Vehicle Security Act (Moreno-Slotkin)",
+   "decision": "also-noted",
+   "reason": "Only X summary found."
+  },
+  {
+   "item": "Air Force Cloud One breach follow-ups",
+   "decision": "cut",
+   "reason": "Ran below the line Nov 27; no new fact."
+  },
+  {
+   "item": "Iowa lead azide detonation; EPA says no lead increase",
+   "decision": "cut",
+   "reason": "Ran Nov 27; follow-up without policy change."
+  },
+  {
+   "item": "Mexico DEA tip line row",
+   "decision": "cut",
+   "reason": "In Nov 27 Also noted; no new move."
+  },
+  {
+   "item": "Medicaid cut for lawfully present immigrants; Nov 24 lawsuit",
+   "decision": "cut",
+   "reason": "X summary only; lawsuit not read."
+  },
+  {
+   "item": "DHS Secretary Mullin denies regret report",
+   "decision": "cut",
+   "reason": "Personnel gossip, no policy effect."
+  },
+  {
+   "item": "Long Beach police leave ICE agents (Oct 17 bodycam)",
+   "decision": "cut",
+   "reason": "Month-old incident, crime/politics clash without policy change."
+  },
+  {
+   "item": "Deportations leave single parents (X)",
+   "decision": "cut",
+   "reason": "X summary only."
+  },
+  {
+   "item": "National Popular Vote compact debate",
+   "decision": "cut",
+   "reason": "Commentary; no new state action found."
+  },
+  {
+   "item": "Stocks' best week since 2022; Black Friday rally",
+   "decision": "cut",
+   "reason": "Price move for its own sake."
+  },
+  {
+   "item": "Black Friday record spending (Adobe)",
+   "decision": "cut",
+   "reason": "Retail stat, no policy consequence."
+  },
+  {
+   "item": "Thanksgiving storms, outages",
+   "decision": "cut",
+   "reason": "Weather disruption, no Florida effect."
+  },
+  {
+   "item": "American Airlines jets clip wings at Reagan National",
+   "decision": "cut",
+   "reason": "Disruption, not development."
+  },
+  {
+   "item": "Afghanistan school blast",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "Kenya cult leader convicted",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "EU budget deadlock / Ukraine loan",
+   "decision": "cut",
+   "reason": "Ukraine held at current weight; no US move."
+  },
+  {
+   "item": "Zelensky 'strange' Trump-Putin remark",
+   "decision": "cut",
+   "reason": "Rhetoric, in Nov 27 Also noted."
+  },
+  {
+   "item": "Sen. Deb Fischer's husband's death",
+   "decision": "cut",
+   "reason": "Personal tragedy, not policy."
+  },
+  {
+   "item": "Andrea Stewart-Cousins death",
+   "decision": "cut",
+   "reason": "No policy consequence for reader."
+  },
+  {
+   "item": "Davenport Airbnb shooting",
+   "decision": "cut",
+   "reason": "Crime blotter."
+  },
+  {
+   "item": "Pharma company moving production to US (Breitbart)",
+   "decision": "cut",
+   "reason": "Single partisan source, company not material."
+  },
+  {
+   "item": "Hemp-derived THC federal restrictions in December",
+   "decision": "cut",
+   "reason": "Bay News 9 page returned 500; folded into funding fight context only via search."
+  },
+  {
+   "item": "St. Pete Beach ferry amid PSTA transit cuts",
+   "decision": "cut",
+   "reason": "Local, early-stage proposal."
+  },
+  {
+   "item": "CDC cause of Florida-bound cruise outbreak",
+   "decision": "cut",
+   "reason": "Page refused; one-off outbreak."
+  },
+  {
+   "item": "Argentina bans central bank printing",
+   "decision": "cut",
+   "reason": "No US channel."
+  },
+  {
+   "item": "Musk $18B SpaceX stock pledge for kids",
+   "decision": "cut",
+   "reason": "Older (45h) and promotional."
+  },
+  {
+   "item": "Saudi Vision 2030 spending shift",
+   "decision": "cut",
+   "reason": "No clear US channel today."
+  }
+ ],
+ "candidate_count": 49,
+ "selected": {
+  "leads": [
+   "bank",
+   "snap",
+   "iran",
+   "baaja",
+   "usaid"
+  ],
+  "also_today": [
+   "shutdown",
+   "g20",
+   "flins",
+   "openai",
+   "spacex",
+   "texas",
+   "lausd"
+  ],
+  "total_stories": 12
+ },
+ "story_floor_note": "12 stories, above the ~10 target, on a thin holiday Saturday dominated by Black Friday and sports.",
+ "continuing_leads": [
+  {
+   "id": "iran",
+   "trigger": "new verifiable fact: CENTCOM disabled M/V Pacific Archer (Nov 26); Iranian navy commander's televised vow to break the blockade; FT/Reuters report of drones repelled at RAF Lakenheath with Iran suspected"
+  },
+  {
+   "id": "baaja",
+   "trigger": "threshold event: House floor vote scheduled for week of Nov 30 (Deseret News); seven House Democratic committee leaders' opposition letter"
+  }
+ ],
+ "per_article_sources": {
+  "bank": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Reuters via New York Post",
+    "The Bank Slate"
+   ],
+   "primary": [
+    "OCC release",
+    "FDIC release",
+    "FDIC FAQ"
+   ],
+   "other": [
+    "First Citizens release",
+    "BankRegReports",
+    "United Fidelity branch page"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "share of ~$1B brokered deposits outside the transfer"
+   ]
+  },
+  "snap": {
+   "independent_newsrooms": 4,
+   "names": [
+    "New York Times (via DNYUZ)",
+    "Florida Phoenix",
+    "PBS News",
+    "AP (search excerpt)"
+   ],
+   "primary": [
+    "Federal Register 2026-22936"
+   ],
+   "other": [
+    "Georgetown CCF",
+    "Florida Policy Institute"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "iran": {
+   "independent_newsrooms": 4,
+   "names": [
+    "AP via PBS NewsHour",
+    "DW",
+    "Breitbart",
+    "Reuters via CNBC"
+   ],
+   "other": [
+    "AAA Florida"
+   ],
+   "marker": "Independent corroboration",
+   "unconfirmed": [
+    "Iranian link to Lakenheath drones"
+   ]
+  },
+  "baaja": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Deseret News via KSL",
+    "NPR",
+    "Washington Examiner"
+   ],
+   "primary": [
+    "Florida PSC order PSC-2026-0414-PCO-EI"
+   ],
+   "other": [
+    "Florida Phoenix via Citrus County Chronicle"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "usaid": {
+   "independent_newsrooms": 2,
+   "names": [
+    "Breitbart",
+    "Washington Post (search excerpt)"
+   ],
+   "primary": [
+    "Senate Foreign Relations Committee release of Shaheen-Meeks letter"
+   ],
+   "other": [
+    "X summary"
+   ],
+   "marker": "Primary source",
+   "unconfirmed": [
+    "dollar figures to named newsrooms circulating on X"
+   ]
+  },
+  "shutdown": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Fox News",
+    "Politico (search excerpt)",
+    "Washington Post (headline)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "g20": {
+   "independent_newsrooms": 3,
+   "names": [
+    "Kyiv Post",
+    "Anadolu/A News",
+    "CBS News video"
+   ],
+   "primary": [
+    "Rep. Ryan release (house.gov)"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "flins": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Insurance Journal"
+   ],
+   "other": [
+    "WFLA headline"
+   ],
+   "marker": "Single-sourced"
+  },
+  "openai": {
+   "independent_newsrooms": 3,
+   "names": [
+    "BBC",
+    "CBS News",
+    "9to5Mac"
+   ],
+   "marker": "Independent corroboration"
+  },
+  "spacex": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Reuters via CNBC"
+   ],
+   "marker": "Single-sourced",
+   "unconfirmed": [
+    "Google's interest (Musk only)"
+   ]
+  },
+  "texas": {
+   "independent_newsrooms": 1,
+   "names": [
+    "Fox News (relaying Dallas Morning News)"
+   ],
+   "other": [
+    "The Hill headline"
+   ],
+   "marker": "Single-sourced"
+  },
+  "lausd": {
+   "independent_newsrooms": 1,
+   "names": [
+    "AP via PBS NewsHour"
+   ],
+   "marker": "Single-sourced"
+  }
+ },
+ "negative_check": {
+  "method": "After drafting: searches for UAP disclosure news, JPMorgan, Pasco County/New Port Richey news, Tampa Bay power and data-center news; compared candidate list with every front swept and X US trends.",
+  "result": "UAP: only a Fox recap of the Nov 20 release (led Nov 21) and an anonymous-source X claim; both to Also noted. JPMorgan: nothing new. Pasco: holiday closures only. Tampa Bay power: PSC's Nov 20 suspension of TECO's large-load tariff, folded into the BAAJA lead.",
+  "underreported": "Judged underreported: Florida's 22% year-on-year SNAP enrollment drop and rising DCF error rate, found in the Florida Phoenix and the Florida Policy Institute but on no Tampa Bay TV front swept; included in the SNAP lead.",
+  "feedback_check": "gh issue list --state all: only #1 (Krakow), applied Nov 9, wake condition closed."
+ },
+ "beat_coverage": {
+  "Core - AI & tech industry": "Strongest: OpenAI countersuit vs Apple and LA schools disabling Google AI (below the line). No model-release news cleared the bar.",
+  "Core - Macro & markets": "Nothing cleared: Fed rate-hike odds to Also noted under settled Fed preference; stock rally cut as price move.",
+  "World economy": "Spain election and EU budget deadlock seen; no US-policy channel today. G20 summit item carries the US channel.",
+  "Core - US debt & fiscal": "Dec 11 funding deadline with Iran-war supplemental (below the line).",
+  "Core - US financials": "United Fidelity Bank failure (lead). JPMorgan: nothing new found.",
+  "Core - US politics & policy": "SNAP cuts and USDA rule (lead); USAID files (lead).",
+  "Geopolitics": "Iran blockade escalation (lead); Kim NPT remarks to Also noted.",
+  "Science & public health": "Congo Ebola and Uganda mRNA trial to Also noted (no US channel). SNAP has a public-health dimension.",
+  "Core - UAP disclosure": "No new release or filing; Fox recap and anonymous X claim to Also noted.",
+  "Energy & grid": "Oil-to-pump chain inside Iran lead (AAA Tampa falling); BAAJA grid provisions (lead).",
+  "Elections and electoral process": "Texas AG-elect reversal (below the line); National Popular Vote debate cut.",
+  "Broader domestic institutions": "USAID files records fight (lead); Democrats' planned investigations to Also noted.",
+  "International with US channel": "Miami G20 Putin invitation (below the line); Lakenheath drones inside Iran lead.",
+  "Florida / Tampa Bay": "Florida SNAP drop, UFB Florida branches, Duke/TECO tariffs, Cat Fund fight, Miami G20. Pasco had only holiday closures.",
+  "Data centers / power / AI infrastructure": "BAAJA data-center cost clause and Florida PSC dockets (lead); SpaceX compute for Google (below the line).",
+  "AI and financial services": "Nothing new cleared; Florida Legislature funding a machine-learning contractor to cut SNAP errors noted in SNAP lead."
+ },
+ "feedback_applied": "gh issue list --state all on News-Agent-v2 (Nov 28 ~07:35 ET): only issue #1 (brief-feedback 2026-11-08c-v2, Krakow), applied Nov 9, wake condition closed. No new or recently closed brief-feedback issues. Nov 17 topic-check weighting respected (prediction markets, dengue, Epstein Act II, banks blocking AI agents: no material development found).",
+ "config_change": null,
+ "also_noted_count": 11,
+ "comparison_edition": "none opened",
+ "radio_format_reference": "Read original historiocity/News-Agent issues 2026-09-05, 09-12, 09-20 and 10-01 (via gh api) for the per-lead, story-specific option format.",
+ "sources_checked_total": 120,
+ "first_sweep_count": 37,
+ "sources_checked_list": [
+  "NPR text front (text.npr.org)",
+  "Al Jazeera all-news RSS",
+  "BBC News front RSS",
+  "BBC US & Canada RSS",
+  "BBC business RSS",
+  "BBC world RSS",
+  "CNBC top-news RSS",
+  "CNBC finance RSS",
+  "CNBC tech RSS",
+  "The Hill RSS",
+  "Fox News politics feed",
+  "Fox News latest feed",
+  "Semafor RSS",
+  "Tampa Bay Times RSS",
+  "Fox 13 Tampa Bay RSS",
+  "WFLA RSS",
+  "WUSF RSS",
+  "Bay News 9 Tampa RSS",
+  "Politico politics RSS",
+  "Axios RSS",
+  "CBS News latest RSS",
+  "ABC News top stories RSS",
+  "NBC News RSS",
+  "PBS NewsHour headlines RSS",
+  "NYT homepage RSS (headlines)",
+  "FT home RSS (headlines)",
+  "MarketWatch/Dow Jones top stories RSS (headlines)",
+  "Daily Wire RSS",
+  "New York Post RSS",
+  "Breitbart RSS",
+  "Reason RSS",
+  "Washington Examiner RSS",
+  "ProPublica RSS",
+  "DW all-news RSS",
+  "NHK World radio RSS",
+  "X US trends (WOEID 23424977)",
+  "X news search: 'US news' (24h)",
+  "X news search: United Fidelity Bank FDIC",
+  "X news search: UFO files unsealed",
+  "X news search: Florida",
+  "Reuters via New York Post: United Fidelity failure",
+  "OCC news release 2026-106",
+  "FDIC press release: First Citizens assumes United Fidelity",
+  "FDIC FAQ: United Fidelity",
+  "FDIC failed-bank page: United Fidelity (search excerpt)",
+  "First Citizens newsroom release",
+  "The Bank Slate: First Citizens lands Black Friday deal",
+  "BankRegReports: United Fidelity credit quality",
+  "United Fidelity Florida banking centers page (search excerpt)",
+  "Fox News: 10 wild finds in unsealed UFO files",
+  "AP via PBS NewsHour: US disables ship in blockade",
+  "DW: US disables ship in Gulf of Oman",
+  "Breitbart: US disables ship, Tehran threatens",
+  "Reuters via CNBC: drones at RAF Lakenheath (FT report)",
+  "Breitbart: officials moved into military housing (CNN report)",
+  "Iran International / Fox / India Today / CNN Espanol on military housing (search excerpts)",
+  "USA Today: Trump officials on military bases (refused fetch, 402)",
+  "Breitbart: Schmitt rejects USAID file removal",
+  "Breitbart: Moreno on USAID dark money",
+  "Senate Foreign Relations Committee: Shaheen-Meeks letter",
+  "Washington Post: USAID website reboot (search excerpt)",
+  "CryptRing: USAID files removal request (search excerpt)",
+  "political.org: Schmitt rejects removal",
+  "USAID.gov (refused fetch, 403)",
+  "NYT: Millions of children losing food stamps (via DNYUZ syndicated copy)",
+  "Political Wire summary of NYT SNAP story",
+  "Florida Phoenix: Florida SNAP error rates rising",
+  "Florida Policy Institute: SNAP participation falls in Florida",
+  "Georgetown CCF: children losing Medicaid and SNAP",
+  "PBS News: 1.2 million children lost SNAP (search excerpt)",
+  "AP: USDA plan to tighten SNAP (search excerpt)",
+  "Washington Post: SNAP change threatens school meals (search excerpt)",
+  "Federal Register API: 2026-22936 SNAP categorical eligibility",
+  "USDA FNA proposed-rule page (search excerpt)",
+  "Deseret News via KSL: House tees up permitting bill",
+  "NPR transcript: permitting bill heads to House",
+  "Washington Examiner: House Democratic holdouts on permitting (lede)",
+  "Holland & Knight: Senate passes permitting package",
+  "Florida Phoenix via Citrus County Chronicle: PSC rejects Duke data-center plan",
+  "Florida PSC order PSC-2026-0414-PCO-EI (TECO large-load tariff)",
+  "Florida PSC docket 20260146 pages (search excerpt)",
+  "WTSP: PSC rejects Duke plan (refused fetch, 403)",
+  "BBC: OpenAI counter-sues Apple",
+  "CBS News: OpenAI countersues Apple",
+  "9to5Mac: OpenAI countersues Apple",
+  "Business Standard: OpenAI accuses Apple (search excerpt)",
+  "Reuters via CNBC: Musk says Google wants SpaceX compute",
+  "Fox News: Senate GOP bet on Democrats before shutdown deadline",
+  "Orlando Citizen: Congress returns Nov 30 (read, not used: unknown outlet, chair error)",
+  "Politico Inside Congress: Dems draft curb on Iran war cash (search excerpt)",
+  "Washington Post: GOP leaders signal openness to cutting Iran war funding (search excerpt)",
+  "The Hill: Dec 11 shutdown deadline (search excerpt)",
+  "Rep. Pat Ryan release: G20 letter",
+  "Rep. Gil Cisneros release: G20 letter (search excerpt)",
+  "Anadolu / A News: lawmakers urge Trump to rescind Putin invite",
+  "Kyiv Post: Trump welcomes Putin to G20",
+  "CBS News video: rescind Putin's G20 invitation",
+  "Insurance Journal: Boyd elected Florida Senate president",
+  "WFLA: Florida lawmakers weigh insurance proposals (refused fetch, search excerpt)",
+  "Tampa Free Press: Donalds insurance plan (search excerpt; fetch redirected)",
+  "Fox News: Texas AG-elect won't defend Ten Commandments law",
+  "The Hill: Texas AG-elect (refused fetch, headline)",
+  "AP via PBS NewsHour: LA schools block Google AI features",
+  "KFF: Medicare Advantage availability 2027",
+  "MarketWatch: MA plans without drug coverage (headline; 404 to curl)",
+  "Miami Herald: Florida loses most MA plans (search excerpt)",
+  "AAA Florida gas prices (Tampa metro)",
+  "Washington Examiner: who's investigating Trump next Congress (lede)",
+  "WUSF: St. Pete Beach ferry amid transit cuts",
+  "Al Jazeera: Congo Ebola outbreak",
+  "DW: Taiwan local elections",
+  "Breitbart: pharma moving production to US",
+  "Breitbart: Kim Jong-un says non-proliferation collapsed (headline)",
+  "The Hill: Russian sabotage in Europe (headline)",
+  "CBS News: Spain election (headline)",
+  "CNBC: Spain election (headline)",
+  "The Hill: rate-hike chances rise (refused fetch, headline)",
+  "Pasco County government: Thanksgiving closures (search excerpt)",
+  "Inside New Port Richey issue #87 (search excerpt)",
+  "Pasco Sheriff's Office (search excerpt)"
+ ],
+ "audit_note": "Current audit.py does not enforce candidate-list shape or the 10-story floor (pending user approval).",
+ "link_check_note": "curl -L on 63 unique links (Nov 28 ET): 53 returned 200; 10 bot-blocked (403 apnews, gasprices.aaa.com, 3 thehill, nytimes, politico, wfla; no response from 2 washingtonpost). All 10 URLs came from publisher feeds or search results and resolved in search; none fabricated.",
+ "audit_attempts": [
+  {
+   "attempt": 1,
+   "exit": 0,
+   "output": "Stories parsed: 12 (leads=5, also=7); Continuations: 2; Radio groups: 6; Sources checked: 120; All hard gates passed."
+  },
+  {
+   "attempt": 2,
+   "exit": 0,
+   "note": "re-run after adding link_check_note"
+  }
+ ]
+}
